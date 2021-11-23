@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@600;800&display=swap");
+
+body {
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: 600;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin: 40px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.3vh solid;
+  font-size: 0.7em;
+}
+
+.menu div {
+  border-top-left-radius: 1.5vh;
+  border-top-right-radius: 1.5vh;
+  padding: 1vh;
+}
+
+.menu div:first-child {
+  background-color: thistle;
+}
+
+.menu div:nth-child(2) {
+  background-color: wheat;
+}
+
+.menu div:nth-child(3) {
+  background-color: cornflowerblue;
+}
+
+.menu div:nth-child(4) {
+  background-color: teal;
+}
+
+.menu div:last-child {
+  background-color: salmon;
+}
+
+.nav {
+  width: 100%;
+  border-bottom: 0.3vh solid;
+  padding: 0.5vh 0;
+  font-size: 0.7em;
+}
+
+main {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100%;
+}
+
+ul {
+  border-right: 0.3vh solid;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:active,
+a:visited {
+  color: black;
+}
+
+.folder {
+  margin-top: 1vh;
+}
+
+.folder-keyword {
+  font-size: 0.8em;
+}
+
+.foloder-file {
+  font-size: 0.7em;
+  margin-left: 4vw;
+}
+
+.foloder-file div {
+  margin-top: 1vh;
+}
