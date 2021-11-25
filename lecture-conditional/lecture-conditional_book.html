@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/component.css" />
-    <link rel="stylesheet" href="../css/lecture-main.css" />
-    <title>Lecture</title>
+    <title>코딩다이어리</title>
   </head>
   <body>
     <header>
       <h1><a href="../index.html">코딩 다이어리</a></h1>
       <div class="menu">
         <div>연습장(예정)</div>
-        <div><a href="../lecture-main/lecture-main.html">강의노트</a></div>
+        <div><a href="lecture.html">강의노트</a></div>
         <div>포트폴리오(예정)</div>
         <div>언어(예정)</div>
         <div>뉴스(예정)</div>
@@ -101,35 +100,64 @@
         </li>
       </ul>
       <div class="contents">
-        <div class="lecture-main_title">
-          이 페이지는 다음에 대한 공부 기록입니다
-        </div>
-        <div class="lecture-main_class">JAVA(자바), Python(파이썬) 기반의</div>
-        <div class="lecture-main_class">
-          AI 활용 응용 소프트웨어 개발자 양성 과정
-        </div>
-        <div class="lecture-main_date">2021.11.10. ~ 2022.05.18.</div>
-        <div class="lecture-main_ref">참고자료 바로가기</div>
-        <div class="lecture-main_ref_link">
-          <a
-            href="https://www.orentec.co.kr/booklist/JAVA_BASIC_2/book_sub1.php"
-            >윤성우의 열혈 Java 프로그래밍</a
-          >
-        </div>
-        <div class="lecture-main_ref_link">
-          <a href="https://www.youtube.com/watch?v=grEKMHGYyns"
-            >freeCodeCamp youtube</a
-          >
-        </div>
-        <div class="lecture-main_ref_link">
-          <a href="https://www.w3schools.com/java/default.asp">w3schools</a>
-        </div>
-        <div class="lecture-main_ref_link">
-          <a
-            href="https://www.youtube.com/watch?v=jdTsJzXmgU0&list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck"
-            >생활코딩</a
-          >
-        </div>
+        <div class="contents_title">Conditional-21.11.12.</div>
+        <pre>
+
+
+          if else(104p)
+          
+              - 구조
+          
+                  if(조건){						==> 조건은 true o false 반환
+          
+                      조건 true일 때 실행되는 영역
+          
+                  }else if(조건){
+          
+                      첫 번째 조건이 false이고
+          
+                      두 번째 조건이 true일 때 실행되는 영역
+          
+                  }else{
+          
+                    선행의 조건들이 모두 false일 때 실행되는 영역
+          
+                  }
+          
+              - tips
+          
+                - if, if절, else절에 속한 문장이 모두 하나인 경우 중괄호 생략가능
+          
+                - else if는 사실 if else를 중첩시킨 결과이다
+          
+          
+          switch 와 block(112p)
+          
+              - else if 가 많다면 switch가 더 좋은 선택이 될 수도
+          
+              - 구조
+          
+                  switch(n){
+          
+                  case1:					  ==> case, defualt : Label 붙이기(위치 표시 목적)
+          
+                  case2:						     때문에 들여쓰기 하지않음
+          
+                      n이 2이면 여기서부터 실행	==> 이전의 case는 무시
+          
+                      break;				==> break : switch문을 벗어나겠다
+          
+                  case3: 
+          
+                      n이 3이면 여기서부터 실행
+          
+                  default:
+          
+                      해당 케이스가 없으면 여기서부터 실행
+          
+                  }
+          </pre
+        >
       </div>
     </main>
   </body>

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/component.css" />
-    <link rel="stylesheet" href="../css/lecture-main.css" />
-    <title>Lecture</title>
+    <title>코딩다이어리</title>
   </head>
   <body>
     <header>
       <h1><a href="../index.html">코딩 다이어리</a></h1>
       <div class="menu">
         <div>연습장(예정)</div>
-        <div><a href="../lecture-main/lecture-main.html">강의노트</a></div>
+        <div><a href="lecture.html">강의노트</a></div>
         <div>포트폴리오(예정)</div>
         <div>언어(예정)</div>
         <div>뉴스(예정)</div>
@@ -101,35 +100,82 @@
         </li>
       </ul>
       <div class="contents">
-        <div class="lecture-main_title">
-          이 페이지는 다음에 대한 공부 기록입니다
-        </div>
-        <div class="lecture-main_class">JAVA(자바), Python(파이썬) 기반의</div>
-        <div class="lecture-main_class">
-          AI 활용 응용 소프트웨어 개발자 양성 과정
-        </div>
-        <div class="lecture-main_date">2021.11.10. ~ 2022.05.18.</div>
-        <div class="lecture-main_ref">참고자료 바로가기</div>
-        <div class="lecture-main_ref_link">
-          <a
-            href="https://www.orentec.co.kr/booklist/JAVA_BASIC_2/book_sub1.php"
-            >윤성우의 열혈 Java 프로그래밍</a
-          >
-        </div>
-        <div class="lecture-main_ref_link">
-          <a href="https://www.youtube.com/watch?v=grEKMHGYyns"
-            >freeCodeCamp youtube</a
-          >
-        </div>
-        <div class="lecture-main_ref_link">
-          <a href="https://www.w3schools.com/java/default.asp">w3schools</a>
-        </div>
-        <div class="lecture-main_ref_link">
-          <a
-            href="https://www.youtube.com/watch?v=jdTsJzXmgU0&list=PLuHgQVnccGMCeAy-2-llhw3nWoQKUvQck"
-            >생활코딩</a
-          >
-        </div>
+        <div class="contents_title">Loop-21.11.15.</div>
+        <pre>
+
+
+          Java while Loop
+          
+              - Loops can execute a block of code as long as a specified condition is reached
+          
+              - Syntax
+          
+                  while(condition){
+          
+                    code block
+          
+                  }
+          
+              - Don’t forget to increase the variable used in the condition, otherwise the loop will never end
+          
+          
+          Do / while Loop
+          
+              - Is a variant of the while loop
+          
+              - This loop execute the code block once before checking if the condition is true
+          
+              - Syntax
+          
+                  do{
+          
+                    code block
+          
+                  }while(condition);
+          
+          
+          Java For Loop
+          
+              - Use “for” when you know exactly how many times you want to loop through a block of code
+          
+              - Syntax
+          
+                  for(S1;S2;S3){
+          
+                    code block
+          
+                  }
+          
+                  - S1 is executed (once) before the execution of the code block
+          
+                  - S2 defines the condition for executing the code block
+          
+                  - S3 is executed(everytime) after the code block has been executed
+          
+          
+          For-Each Loop
+          
+              - Syntax
+          
+                  for(type variableName : arrayName){
+                    
+                    code block
+          
+                  }
+          
+              - It is used exclusively to loop through elements in an array
+          
+          
+          Java Break and Continue
+          
+              - “break” statement can be used to jump out of a loop
+          
+              - “continue” statement breaks one iteration(in the loop)
+              
+                if a specified condition occurs and continues with the next iteration
+          
+          </pre
+        >
       </div>
     </main>
   </body>
