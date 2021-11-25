@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/component.css" />
+    <title>코딩다이어리</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">코딩 다이어리</a></h1>
+      <div class="menu">
+        <div>연습장(예정)</div>
+        <div><a href="lecture.html">강의노트</a></div>
+        <div>포트폴리오(예정)</div>
+        <div>언어(예정)</div>
+        <div>뉴스(예정)</div>
+      </div>
+      <div class="nav">경로</div>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <div class="folder">
+            <span class="folder-button">.</span>
+            <span class="folder-keyword">Intro/var</span>
+          </div>
+          <div class="foloder-file" id="hidden">
+            <div class="folder-file_date">
+              <a href="../lecture-intro/lecture-intro_day.html">day1</a>
+            </div>
+            <div class="folder-file_book">
+              <a href="../lecture-intro/lecture-intro_book.html">열혈자바</a>
+            </div>
+            <div class="folder-file_eng">
+              <a href="../lecture-intro/lecture-intro_w3s.html">w3s</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="folder">
+            <span class="folder-button">.</span>
+            <span class="folder-keyword">Operator</span>
+          </div>
+          <div class="foloder-file" id="hidden">
+            <div class="folder-file_date">
+              <a href="../lecture-operator/lecture-operator_day.html">day2</a>
+            </div>
+            <div class="folder-file_book">
+              <a href="../lecture-operator/lecture-operator_book.html"
+                >열혈자바</a
+              >
+            </div>
+            <div class="folder-file_eng">
+              <a href="../lecture-operator/lecture-operator_w3s.html">w3s</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="contents">
+        <div class="contents_title">Intro-21.11.10.</div>
+        <pre>
+
+
+          Java
+          
+              - programming language
+          
+              - it used for 	- Web, Desktop, Mobile app(specially Android)
+          
+                    - Web servers and app servers
+          
+                    - Db connection
+          
+                    - Games
+          
+          
+          Start Java
+          
+              - Check Java in windows
+          
+                  - Search in the start-bar for Java.
+          
+                  - Type the following in Command Prompt
+          
+                    C:\Users\YourName > java -version
+          
+                  - If do not have Java, can download at oracle
+          
+              - Step for windows
+          
+                  1. Go to "System Properties"
+
+                      - can be found on
+
+                        Control panel>System and security>System>Advanced System Settings
+          
+                  2. Click on the "Enviroment variables" under the "Advanced tab"
+          
+                  3. Select the "Path" variable in System variables
+          
+                  4. Click on "New" and add the Path where Java is installed followed by \bin
+
+                      - C:\Program Files\Java\jdk-10\bin
+          
+                  5. Then "OK" and save settings
+          
+          
+          Java Quick start
+          
+              - In Java every app begins with class name
+
+                and that class must match the file name
+          
+              - create "Main.java" file (any text editor)
+
+                  public class Main{
+
+                    public static void main(String[] args) {
+
+                      System.out.println("Hello");
+                      
+                    }
+
+                  }
+          
+              - Save file and open cmd
+          
+              - navigate to the directory where saved file and type "javac Main.java"
+
+                C:\Users\YourName > javac Main.java
+          
+              - This will compile your code
+          
+              - Type "java main" to run the file
+          
+              - The output should read "Hello“
+          
+              
+          Java syntax
+          
+              - A class should always start with un uppercase first letter
+          
+              - Java is case-sensitive : "MyClass" ≠ "myclass"
+          
+          
+          The main() Method
+          
+              - Any code inside the main() method will be executed
+          
+              - Every program must contain the main() method
+          
+          
+          Java Comments
+          
+            - Make it more readable
+          
+            - Or prevent execution when testing alternative code
+          
+            - Single-line comments
+
+                // start with two forward slashes
+
+                Any text between // and the end of the line, is ignored by Java
+          
+            - Multi-line comments
+
+                /* start with, and ends with */
+
+                between /* and */ is called "comment block", is ignored by Java
+          
+          
+          Java variables
+          
+              - variables are containers for storing data values
+          
+              - different type of variables
+
+                  String - store text, surrounded by double quotes
+
+                  int - integers without decimals
+
+                  float - floating point numbers with decimals
+
+                  char - single character surrounded by single quotes
+                  
+                  boolean - values with two states(true o false)
+          
+
+          Declaring(creating) variables
+          
+              - Specify the type and assign it a value
+          
+              - Syntax :
+
+                type variableName = value ;
+          
+              - if you assign a new value to existing variable,
+              
+                it will overwrite the previous value
+          
+          
+          Final variables
+          
+              - add "final" keyword, it will declare the variable
+                
+                as "final" o "constant", unchangeable
+          
+              - final int i = 5; then, i = 20; will generate un error
+          
+          
+          Declare many variables
+          
+              - To declare more than one variable of the same type
+            
+              - use c omma-separated list
+
+                int a = 1, b = 2. c = 3;
+          
+          
+          Display variables
+          
+              - println() method is often used to display variables
+          
+              - use the “+” character
+
+                ex) System.out.println(“Hello” + name);
+          
+                - Can use “+” to add a variable to another.
+
+                  ex) String fullName = firstName + lastName;
+          
+                - For numeric value, “+” works as a methematical operator
+          
+          
+          Java Identifiers
+          
+              int minutesPerHour = 60; //Good!
+          
+              int m = 60; // not easy to understand
+          
+              - variables must be identified with identifiers(unique name)
+          
+              - to use descriptive names
+
+                  in order to create understandable and maintainable
+          
+          
+          The gernal rules for naming variable
+          
+              - Name can contain letter, digit, underscore, dollar sign
+          
+              - must begin with a letter
+          
+              - should start with lowercase, can't contain whitespace
+          
+              - can also begin with _ and $
+          
+              - case-sensitive “myVar” ≠ “myvar”
+              
+              - reserved words(like Java keywords) can’t use
+          </pre
+        >
+      </div>
+    </main>
+  </body>
+</html>

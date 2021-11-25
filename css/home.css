@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@600;800&display=swap");
+
+body {
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: 600;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+  padding-top: 150px;
+  margin-bottom: 50px;
+}
+
+main {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.colorbox {
+  height: 200px;
+  width: 150px;
+  position: relative;
+  margin: 10px;
+}
+
+.infobox {
+  background-color: white;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:nth-child(1) .colorbox {
+  background-color: thistle;
+}
+a:nth-child(2) .colorbox {
+  background-color: wheat;
+}
+a:nth-child(3) .colorbox {
+  background-color: cornflowerblue;
+}
+a:nth-child(4) .colorbox {
+  background-color: teal;
+}
+a:nth-child(5) .colorbox {
+  background-color: salmon;
+}
+
+a:active {
+  color: black;
+}
+.colorbox:hover {
+  box-shadow: 0px 0px 3px black;
+  transform: scale(1.1);
+}
