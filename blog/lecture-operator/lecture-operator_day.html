@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/component.css" />
+    <title>코딩다이어리</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">코딩 다이어리</a></h1>
+      <div class="menu">
+        <div>연습장(예정)</div>
+        <div><a href="lecture.html">강의노트</a></div>
+        <div>포트폴리오(예정)</div>
+        <div>언어(예정)</div>
+        <div>뉴스(예정)</div>
+      </div>
+      <div class="nav">경로</div>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <div class="folder">
+            <span class="folder-button">.</span>
+            <span class="folder-keyword">Intro/var</span>
+          </div>
+          <div class="foloder-file" id="hidden">
+            <div class="folder-file_date">
+              <a href="../lecture-intro/lecture-intro_day.html">day1</a>
+            </div>
+            <div class="folder-file_book">
+              <a href="../lecture-intro/lecture-intro_book.html">열혈자바</a>
+            </div>
+            <div class="folder-file_eng">
+              <a href="../lecture-intro/lecture-intro_w3s.html">w3s</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="folder">
+            <span class="folder-button">.</span>
+            <span class="folder-keyword">Operator</span>
+          </div>
+          <div class="foloder-file" id="hidden">
+            <div class="folder-file_date">
+              <a href="../lecture-operator/lecture-operator_day.html">day2</a>
+            </div>
+            <div class="folder-file_book">
+              <a href="../lecture-operator/lecture-operator_book.html"
+                >열혈자바</a
+              >
+            </div>
+            <div class="folder-file_eng">
+              <a href="../lecture-operator/lecture-operator_w3s.html">w3s</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="contents">
+        <div class="contents_title">Intro-21.11.11.</div>
+        <pre>
+
+
+            2일차 수업
+            
+            =======================================================================================
+            
+            복습
+            
+            tips
+            
+                ; : 세미콜론, 실행문장의 마침표
+            
+                주석 : //
+            
+                    설명을 적거나, 혹은 메모하거나 등등 할 때 하는 기술
+            
+                    실제 프로그래밍에 영향이 없는 문장
+            
+            
+            출력문(컴퓨터의 응답) : console 이라는 화면에 보임
+            
+                System.out.print(“안녕”)
+            
+                    - 안녕(줄바꿈 없음, 엔터없음)
+            
+                System.out.println(“안녕”)
+            
+                    - 안녕(줄바꿈있음, 엔터있음)
+            
+            
+            문자, 문자열
+            
+                - 문자 : 한글자 ‘’(싱글쿼터) ‘a’, “a”
+            
+                - 문자열 : 한글자 이상 “” (더블쿼터) ‘hello’(오류), “hello”
+            
+                - "+" : 문자열 합치기
+            
+            
+            변수
+            
+                - 변수 선언
+            
+                    자료형 변수이름
+            
+                    - int a;
+            
+                - 변수 대입(초기화)
+            
+                    변수이름 = 값
+            
+                    - a = 1;
+            
+                - 변수 선언과 대입(초기화)를 동시에
+            
+                    - int b = 1;
+            
+                - 주의사항
+            
+                    가능한 특수문자 ( $ _ ) * 공백은 특수문자 취급해서 안됨
+            
+                    숫자 시작 안됨
+            
+                    키워드 안됨
+            
+                    한글은 되도록 기피
+            
+                    자료형 변수이름
+            
+            
+            자료형
+            
+                - 자료형의 기본
+            
+                    정수형 : byte > short > int > long
+            
+                    실수형 : float > double
+            
+                    문자형 : char
+            
+                    문자열형 : String
+            
+                    논리형 : boolean
+            
+                - 자료형 형변환
+            
+                    자료형이 있어야 변수를 선언할 수 있고,
+            
+                    변수의 자료형에 맞는 값을 넣어줘야한다.
+            
+                    맞는 값이라고 생각되지만 컴퓨터 입장에서는 다른 자료형이라고 문제가 발생할 때,
+            
+                    우리는 형변환을 해줘야한다.
+            
+                    컴퓨터 입장에서는 각 각의 자료형은 모두 다릅니다.
+            
+                    자료형이 다르다는 것은 담은 그릇이 다르다.
+            
+                - 형변환 유형
+            
+                    - 자동(묵시적) 강제(명시적)
+            
+                        - 자동 -> 작은 그릇에서 큰 그릇으로 옮길 때는 자동 변경
+            
+                        - 강제 -> 큰 그릇에서 작은 그릇으로 옮길 때 강제로 변경
+            
+                            강제일 때는 값이 변할 수도 있다.
+            
+                                예시
+            
+                                    int i = 360;
+                                    
+                                    강제 형변환 작은 그릇 = (작은그릇)큰 그릇, 큰그릇 = (큰그릇)작은 그릇
+            
+                                    byte b = (byte) i; 강제 형변환
+            
+                                    int I = 360 출력, byte b = 104 출력
+            
+            =======================================================================================
+            
+            2일차 수업
+            
+            tips
+            
+                debug : 오류를 찾아내는 행위
+            
+                    개발도구에서는 디버그모드 지원
+            
+                    코드를 한줄씩 실행해보면서 컴퓨터 동작을 제어하면서 오류를 검색하는 방법: 디버깅한다
+            
+                브레이크포인트 (중단점, 시스템이 멈추는 포인트) : 줄에 대고 더블클릭
+            
+            
+            상수의 데이터 타입
+            
+                - 정수형
+            
+                    - 기본자료형 : int (숫자를 쓰면 컴퓨터는 일단 int 형이라고 생각하고 작성)
+            
+                    - 기본자료형을 원하지 않을 때 예시
+            
+                        long ll = 2147483648L;
+            
+                        int형의 최대범위를 넘어서 오류가 나기 때문에
+            
+                        컴퓨터에게 int형이 아닌 Long으로 기본자료형을 변경해주세요 라는 의미로
+            
+                        L이라는 영어를 끝에 붙인다.
+                    
+                - 실수형
+            
+                    - 기본자료형 : double
+            
+                    - 실수를 쓰면 컴퓨터는 일단 double형이라고 생각하고 작성
+            
+                    - 기본자료형을 원하지 않을 때 예시
+            
+                        float f = 1.1f;
+            
+                        float = double
+            
+                        컴퓨터에게 double형이 아닌 float으로 기본자료형을 변경해주세요 라는 의미로
+            
+                        f라는 영어를 끝에 붙인다.
+            
+            
+            operator
+            
+            연산자
+            
+                + 더하기
+            
+                - 빼기
+            
+                * 곱하기
+            
+                / 나누기
+            
+                % 나누기를 하고 난 나머지
+            
+            
+            단항연산자 + - ++ --
+            
+                + : 양수를 표현하는 연산자(보통 생략)
+            
+                - : 음수를 표현하는 연산자
+            
+                ++ : 증가연산자 : 값을 +1 해줍니다.
+            
+                -- : 감소연산자 : 값을 –1 해줍니다.
+            
+                ++, --이 앞이면 명령이 실행 전에 값 변경, 뒷면 실행 후에 값 변경
+            
+                - 변수 ++, 변수 -- : 어떠한 코드가 실행한 후에 변수에 담긴 값을 +1, -1을 하고 실행
+            
+                - ++변수, --변수 : 어떠한 코드가 실행하기 전에 변수에 담긴 값을 +1, -1을 하고 실행
+            
+            
+            대입연산자
+            
+                =
+            
+                변수 선언
+            
+                a = 1 : 변수 a 에 1을 대입한다.
+            
+                += -= *= /= %= |= &= ^=
+            
+                변수에 연산후 대입
+            
+                a += 2 는 a = a + 2 와 동일
+            
+            
+            boolean
+            
+                - 논리형 자료형
+            
+                - 값이 참과 거짓을 담을 수 있는 자료형
+            
+                - boolean, bool 이라고도 표현합니다.
+            
+                - true, false
+            
+                - 제어문에서 활용
+            
+                    조건문 : A일 때, B일 때, A가 참일 때, A가 거짓일 때
+            
+                    반복문 : A < 10 A가 1부터 하나씩 거쳐서 작을 때는 반복, 아닐 때는 그만
+            
+            
+            비교연산자
+            
+                == : 수학에서 같다(=)와 동일한 의미
+            
+                != : 다르다
+            
+                > < >= <= : 크기 비교
+            
+                문자열을 비교할 때, ==는 주소값(저장된 위치) 비교함
+            
+                A.equals(B) 사용 권장
+            
+            
+            논리연산자
+            
+                && : and, 둘다 true일 경우에만 true
+            
+                || : or, 둘 중 하나만 true 여도 true
+            
+                ! : not, 조건의 결과를 반대의 결과로 변경
+            
+                주의 : 1 < a < 2 는 잘못된 식
+            
+                    진행 과정 1 < a = true or false >> true or false < 2 으로 진행되면서 오류남
+            
+            
+            조건문
+            
+                if(조건:참과 거짓을 구분){
+            
+                조건이 참일 경우에만 실행}
+            
+                else{if문이 참이 아닐 때 실행}
+                
+            </pre
+        >
+      </div>
+    </main>
+  </body>
+</html>
