@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="https://spongebob53.github.io/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-11-28T18:17:29+09:00</updated>
-  <id>https://spongebob53.github.io/tag/lecture/feed.xml</id>
+  <link href="https://spongebob53.github.io/coding-diary//tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://spongebob53.github.io/coding-diary//" rel="alternate" type="text/html" />
+  <updated>2021-11-28T18:32:53+09:00</updated>
+  <id>https://spongebob53.github.io/coding-diary//tag/lecture/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">lecture - 1일차</title>
-      <link href="https://spongebob53.github.io/lecture-day1" rel="alternate" type="text/html" title="lecture - 1일차" />
+      <link href="https://spongebob53.github.io/coding-diary//lecture-day1" rel="alternate" type="text/html" title="lecture - 1일차" />
       <published>2021-11-28T01:40:00+09:00</published>
       <updated>2021-11-28T01:40:00+09:00</updated>
-      <id>https://spongebob53.github.io/lecture-day1</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-day1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <id>https://spongebob53.github.io/coding-diary//lecture-day1</id>
+      <content type="html" xml:base="https://spongebob53.github.io/coding-diary//lecture-day1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture 강좌는 여러 절로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -302,11 +302,11 @@ str a = &quot; &quot;; 공백도 가능함
   
     <entry>
       <title type="html">lecture - 2일차</title>
-      <link href="https://spongebob53.github.io/lecture-day2" rel="alternate" type="text/html" title="lecture - 2일차" />
+      <link href="https://spongebob53.github.io/coding-diary//lecture-day2" rel="alternate" type="text/html" title="lecture - 2일차" />
       <published>2021-11-28T01:40:00+09:00</published>
       <updated>2021-11-28T01:40:00+09:00</updated>
-      <id>https://spongebob53.github.io/lecture-day2</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-day2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <id>https://spongebob53.github.io/coding-diary//lecture-day2</id>
+      <content type="html" xml:base="https://spongebob53.github.io/coding-diary//lecture-day2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture 강좌는 여러 절로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
