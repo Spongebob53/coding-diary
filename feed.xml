@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://spongebob53.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://spongebob53.github.io/" rel="alternate" type="text/html" /><updated>2021-11-28T18:17:29+09:00</updated><id>https://spongebob53.github.io/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">lecture - 2일차</title><link href="https://spongebob53.github.io/lecture-day2" rel="alternate" type="text/html" title="lecture - 2일차" /><published>2021-11-28T01:40:00+09:00</published><updated>2021-11-28T01:40:00+09:00</updated><id>https://spongebob53.github.io/lecture-day2</id><content type="html" xml:base="https://spongebob53.github.io/lecture-day2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture 강좌는 여러 절로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-day1&quot;&gt;lecture - 1일차&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-day2&quot;&gt;lecture - 2일차&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2일차 수업&lt;/p&gt;
+
+&lt;p&gt;==================================&lt;/p&gt;
+
+&lt;p&gt;복습&lt;/p&gt;
+
+&lt;p&gt;tips&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;; : 세미콜론, 실행문장의 마침표
+
+주석 : //
+
+    설명을 적거나, 혹은 메모하거나 등등 할 때 하는 기술
+
+    실제 프로그래밍에 영향이 없는 문장
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;출력문(컴퓨터의 응답) : console 이라는 화면에 보임&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;System.out.print(“안녕”)
+
+    - 안녕(줄바꿈 없음, 엔터없음)
+
+System.out.println(“안녕”)
+
+    - 안녕(줄바꿈있음, 엔터있음)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;문자, 문자열&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 문자 : 한글자 ‘’(싱글쿼터) ‘a’, “a”
+
+- 문자열 : 한글자 이상 “” (더블쿼터) ‘hello’(오류), “hello”
+
+- &quot;+&quot; : 문자열 합치기
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;변수&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 변수 선언
+
+    자료형 변수이름
+
+    - int a;
+
+- 변수 대입(초기화)
+
+    변수이름 = 값
+
+    - a = 1;
+
+- 변수 선언과 대입(초기화)를 동시에
+
+    - int b = 1;
+
+- 주의사항
+
+    가능한 특수문자 ( $ _ ) * 공백은 특수문자 취급해서 안됨
+
+    숫자 시작 안됨
+
+    키워드 안됨
+
+    한글은 되도록 기피
+
+    자료형 변수이름
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;자료형&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 자료형의 기본
+
+    정수형 : byte &amp;gt; short &amp;gt; int &amp;gt; long
+
+    실수형 : float &amp;gt; double
+
+    문자형 : char
+
+    문자열형 : String
+
+    논리형 : boolean
+
+- 자료형 형변환
+
+    자료형이 있어야 변수를 선언할 수 있고,
+
+    변수의 자료형에 맞는 값을 넣어줘야한다.
+
+    맞는 값이라고 생각되지만 컴퓨터 입장에서는 다른 자료형이라고 문제가 발생할 때,
+
+    우리는 형변환을 해줘야한다.
+
+    컴퓨터 입장에서는 각 각의 자료형은 모두 다릅니다.
+
+    자료형이 다르다는 것은 담은 그릇이 다르다.
+
+- 형변환 유형
+
+    - 자동(묵시적) 강제(명시적)
+
+        - 자동 -&amp;gt; 작은 그릇에서 큰 그릇으로 옮길 때는 자동 변경
+
+        - 강제 -&amp;gt; 큰 그릇에서 작은 그릇으로 옮길 때 강제로 변경
+
+            강제일 때는 값이 변할 수도 있다.
+
+                예시
+
+                    int i = 360;
+
+                    강제 형변환 작은 그릇 = (작은그릇)큰 그릇, 큰그릇 = (큰그릇)작은 그릇
+
+                    byte b = (byte) i; 강제 형변환
+
+                    int I = 360 출력, byte b = 104 출력
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;==================================&lt;/p&gt;
+
+&lt;p&gt;2일차 수업&lt;/p&gt;
+
+&lt;p&gt;tips&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debug : 오류를 찾아내는 행위
+
+    개발도구에서는 디버그모드 지원
+
+    코드를 한줄씩 실행해보면서 컴퓨터 동작을 제어하면서 오류를 검색하는 방법: 디버깅한다
+
+브레이크포인트 (중단점, 시스템이 멈추는 포인트) : 줄에 대고 더블클릭
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;상수의 데이터 타입&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 정수형
+
+    - 기본자료형 : int (숫자를 쓰면 컴퓨터는 일단 int 형이라고 생각하고 작성)
+
+    - 기본자료형을 원하지 않을 때 예시
+
+        long ll = 2147483648L;
+
+        int형의 최대범위를 넘어서 오류가 나기 때문에
+
+        컴퓨터에게 int형이 아닌 Long으로 기본자료형을 변경해주세요 라는 의미로
+
+        L이라는 영어를 끝에 붙인다.
+
+- 실수형
+
+    - 기본자료형 : double
+
+    - 실수를 쓰면 컴퓨터는 일단 double형이라고 생각하고 작성
+
+    - 기본자료형을 원하지 않을 때 예시
+
+        float f = 1.1f;
+
+        float = double
+
+        컴퓨터에게 double형이 아닌 float으로 기본자료형을 변경해주세요 라는 의미로
+
+        f라는 영어를 끝에 붙인다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;operator&lt;/p&gt;
+
+&lt;p&gt;연산자&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+ 더하기
+
+- 빼기
+
+* 곱하기
+
+/ 나누기
+
+% 나누기를 하고 난 나머지
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;단항연산자 + - ++ –&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+ : 양수를 표현하는 연산자(보통 생략)
+
+- : 음수를 표현하는 연산자
+
+++ : 증가연산자 : 값을 +1 해줍니다.
+
+-- : 감소연산자 : 값을 –1 해줍니다.
+
+++, --이 앞이면 명령이 실행 전에 값 변경, 뒷면 실행 후에 값 변경
+
+- 변수 ++, 변수 -- : 어떠한 코드가 실행한 후에 변수에 담긴 값을 +1, -1을 하고 실행
+
+- ++변수, --변수 : 어떠한 코드가 실행하기 전에 변수에 담긴 값을 +1, -1을 하고 실행
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;대입연산자&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;=
+
+변수 선언
+
+a = 1 : 변수 a 에 1을 대입한다.
+
++= -= *= /= %= |= &amp;amp;= ^=
+
+변수에 연산후 대입
+
+a += 2 는 a = a + 2 와 동일
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;boolean&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 논리형 자료형
+
+- 값이 참과 거짓을 담을 수 있는 자료형
+
+- boolean, bool 이라고도 표현합니다.
+
+- true, false
+
+- 제어문에서 활용
+
+    조건문 : A일 때, B일 때, A가 참일 때, A가 거짓일 때
+
+    반복문 : A &amp;lt; 10 A가 1부터 하나씩 거쳐서 작을 때는 반복, 아닐 때는 그만
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;비교연산자&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;== : 수학에서 같다(=)와 동일한 의미
+
+!= : 다르다
+
+&amp;gt; &amp;lt; &amp;gt;= &amp;lt;= : 크기 비교
+
+문자열을 비교할 때, ==는 주소값(저장된 위치) 비교함
+
+A.equals(B) 사용 권장
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;논리연산자&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;amp;&amp;amp; : and, 둘다 true일 경우에만 true
+
+|| : or, 둘 중 하나만 true 여도 true
+
+! : not, 조건의 결과를 반대의 결과로 변경
+
+주의 : 1 &amp;lt; a &amp;lt; 2 는 잘못된 식
+
+    진행 과정 1 &amp;lt; a = true or false &amp;gt;&amp;gt; true or false &amp;lt; 2 으로 진행되면서 오류남
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;조건문&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if(조건:참과 거짓을 구분){
+
+조건이 참일 경우에만 실행}
+
+else{if문이 참이 아닐 때 실행}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">Lecture 강좌는 여러 절로 구성되어 있습니다. lecture - 1일차 lecture - 2일차</summary></entry><entry><title type="html">lecture - 1일차</title><link href="https://spongebob53.github.io/lecture-day1" rel="alternate" type="text/html" title="lecture - 1일차" /><published>2021-11-28T01:40:00+09:00</published><updated>2021-11-28T01:40:00+09:00</updated><id>https://spongebob53.github.io/lecture-day1</id><content type="html" xml:base="https://spongebob53.github.io/lecture-day1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture 강좌는 여러 절로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-day1&quot;&gt;lecture - 1일차&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-day2&quot;&gt;lecture - 2일차&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;1일차 수업&lt;/p&gt;
+
+&lt;p&gt;원활한 수업을 위해!&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 크롬 카톡 팀뷰어 설치
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;개발 환경 구축하기&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- java
+- eclipse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;java&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- java 썬에서 개발, oak가 java로 새롭게 탄생 제임스 고슬링 oracle에서 인수
+
+- 자바 프로그램 과정
+
+- 자바 컴파일 바이트코드 || 인터프리터 실행결과
+
+- 장점
+
+    객체지향언어
+
+    플랫폼(특정환경)에 독립적
+
+- 단점
+
+    그래픽 처리속도 중요한 app에는 적합하지않음
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;java 설치과정&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- jdk 검색 후 oracle에서 java 8 64비트 download
+
+- jdk 관리자권한 실행
+
+- 자바 설치후 환경변수 설정해야함
+
+- 내 pc/속성/고급시스템설정/고급/환경변수/시스템변수/새로만들기/
+
+- 변수이름 JAVA_HOME
+
+- 변수 값 C:\Program Files\Java\jdk1.8.0_311\bin
+
+- path 변수 편집
+
+- 새로만들기 C:\Program Files\Java\jdk1.8.0_311\bin
+
+- cmd에서 java, javac 검색하면 설치 확인가능
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;eclipse 설치과정&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- eclipse 설치후 실행
+
+- eclipse ide for java developers 선택
+
+- 오류 날 경우 eclipse 들어가서 download button 밑에
+
+    download package로 따로 설치가능
+
+- workspace 경로 설정해주기!
+
+개발환경 완성!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;eclipse 사용하기&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 좌측 package explorer - project 구분
+
+- 하단 problems 등등 - 작업 결과물 확인
+
+- window/showview에서 package explorer처럼 다양한 창 띄울 수있음
+
+- window/preferences eclipse 설정창 설정 변경 가능
+
+- new project 만들기! class 만들기! name에 이름 설정하고
+
+    public static void main 체크하기
+
+- ctrl + f11 run 단축키
+
+- class {} 하나의 덩이
+
+- 클래스 중괄호 안에다가 저희가 원하는 프로그래밍을 작성하는 것
+
+- 단축키:
+
+    // : 주석 달기
+
+    ctrl / : 여러줄 주석 or 있는거 주석만들기 풀고 싶을 때도 똑같이 하면 됨
+
+    ctrl spacebar : 코드 목록 나옴
+
+    syso : System.out.println() 단축키
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;수업 시작하겠습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package text;
+
+public class first {
+
+    public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    System.out.print(&quot;수업시작하겠습니다.&quot;)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;programming&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 프로그래밍을 하려면 언어를 통해서 특수한 문구를 작성
+
+- 우리가 작성하는건 “입력” System.in
+
+- 컴퓨터는 우리에게 “응답” System.out
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;variable&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 데이터를 담기위한 메모리 공간
+
+- 변수 선언하기
+
+    - 변수 이름에는 대문자, 숫자, 언더바, 달러 만으로는 선언 불가능
+
+    - 숫자로 시작하지 못함
+
+    - 변수 이름에는 공백 포함 안됨
+
+    - 변수 이름에는 정의된 키워드 안됨
+
+    - 변수 이름 중복 안됨
+
+- 선언방식
+
+    - 자료형 (공백) 변수 이름 = 내용
+
+            ex) int num = 3; num이라는 변수에 숫자3을 대입(초기화)한다.
+
+    - 프로그래밍에서의 = 은 뒤에 있는 값을 앞에 있는 값으로 대입한다는 의미
+
+    - 변수 값 변경도 가능 ex) num = 2;
+
+    - 자료형
+
+        - 정수형 : byte, short, int, long 소수점이 없는 숫자.
+
+                    표현할 수 있는 숫자의 범위별로.
+
+                    int 끼리 사칙연산하면 결과값도 int로나옴 주의!
+
+            - 범위 :
+
+                byte : 표현가능범위 1byte 범위(-128 ~ 127) 2^8 범위숫자
+
+                short : 표현가능범위 2byte 범위(2^16 범위) 대충3만
+
+                int : 표현가능범위 4byte 범위(2^32 범위) 대충21억
+
+                long : 표현가능범위 8byte 범위(2^64 범위)
+
+            - 참고 : 컴퓨터의 용량단위
+
+                bit &amp;lt; b &amp;lt; kb &amp;lt; mb &amp;lt; gb
+
+                bit 2진수(0,1)
+
+                8bit = 1byte
+
+                1024b = 1kb
+
+        - 실수형 : float, double 소수점이 있는 숫자
+
+            float : 범위 소수점 6자리까지(4바이트)
+
+            double : 범위 소수점 15자리까지 가능(8바이트)
+
+        - 문자형 : char 한 글자 ex) char c = &apos;a&apos;
+
+        - 문자열형 : String 문자형의 복수 ex) String str = &quot;안녕&quot;
+
+        - 논리형 : boolean 참과 거짓만 표현하는 자료형 [TRUE, FALSE]
+
+
+사칙연산
+
+- str + int + int 결과는 str,int 가 아니라 str으로 나옴
+
+- ((str +int)+int) 이렇게 처리하기 때문
+
+- str + (int+int) 형변환 ()가 필요함
+
+
+var tips
+
+int b = 1;
+
+int d;
+
+b = d; 뒤에 있는 값을 앞에 있는 값으로 대입하겠다는 뜻
+
+뒤에 있는 값이 없기 때문에 오류
+
+str a = &quot; &quot;; 공백도 가능함
+
+
+형변환 : 처음에 선언한 자료형이 다르지만 같도록 변경하여 사용하는 기술
+
+        표현범위가 좁은 타입에서 넓은 타입으로 이동 가능, 반대는 불가
+
+    - 묵시적 타입 변환(자동) (인정해주는 느낌)
+
+        컴퓨터 판단 하에 형변환이 가능한 부분이면 알아서 변환
+
+        정수형이나 실수형끼리 형변환이 필요할 때 작동
+
+    - 명시적 타입 변환(강제)
+
+        넓은 타입이 좁은 타입으로 가기위해서 강제로 해줌
+
+        short s, byte b 일 때,
+
+        b = (byte)s;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">Lecture 강좌는 여러 절로 구성되어 있습니다. lecture - 1일차 lecture - 2일차</summary></entry><entry><title type="html">note - 두두둥</title><link href="https://spongebob53.github.io/note-basic-copy" rel="alternate" type="text/html" title="note - 두두둥" /><published>2021-11-27T22:40:00+09:00</published><updated>2021-11-27T22:40:00+09:00</updated><id>https://spongebob53.github.io/note-basic%20copy</id><content type="html" xml:base="https://spongebob53.github.io/note-basic-copy">&lt;p&gt;이곳은 노트입니다&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="note" /><summary type="html">이곳은 노트입니다</summary></entry><entry><title type="html">note - test</title><link href="https://spongebob53.github.io/note-test" rel="alternate" type="text/html" title="note - test" /><published>2021-11-27T22:40:00+09:00</published><updated>2021-11-27T22:40:00+09:00</updated><id>https://spongebob53.github.io/note-test</id><content type="html" xml:base="https://spongebob53.github.io/note-test">&lt;p&gt;이곳은 노트입니다!!!&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="note" /><summary type="html">이곳은 노트입니다!!!</summary></entry><entry><title type="html">Gettysburg Address</title><link href="https://spongebob53.github.io/gettysburg-address" rel="alternate" type="text/html" title="Gettysburg Address" /><published>1863-11-19T19:18:00+09:00</published><updated>1863-11-19T19:18:00+09:00</updated><id>https://spongebob53.github.io/gettysburg-address</id><content type="html" xml:base="https://spongebob53.github.io/gettysburg-address">&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+
+&lt;p&gt;Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.&lt;/p&gt;
+
+&lt;p&gt;But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.&lt;/p&gt;</content><author><name>abraham</name></author><summary type="html">Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</summary></entry></feed>

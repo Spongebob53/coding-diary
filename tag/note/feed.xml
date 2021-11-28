@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://spongebob53.github.io/tag/note/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
+  <updated>2021-11-28T18:17:29+09:00</updated>
+  <id>https://spongebob53.github.io/tag/note/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Coding Diary | </title>
+  
+
+  
+    <subtitle>개발 기록</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">note - 두두둥</title>
+      <link href="https://spongebob53.github.io/note-basic-copy" rel="alternate" type="text/html" title="note - 두두둥" />
+      <published>2021-11-27T22:40:00+09:00</published>
+      <updated>2021-11-27T22:40:00+09:00</updated>
+      <id>https://spongebob53.github.io/note-basic%20copy</id>
+      <content type="html" xml:base="https://spongebob53.github.io/note-basic-copy">&lt;p&gt;이곳은 노트입니다&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="note" />
+      
+
+      
+        <summary type="html">이곳은 노트입니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">note - test</title>
+      <link href="https://spongebob53.github.io/note-test" rel="alternate" type="text/html" title="note - test" />
+      <published>2021-11-27T22:40:00+09:00</published>
+      <updated>2021-11-27T22:40:00+09:00</updated>
+      <id>https://spongebob53.github.io/note-test</id>
+      <content type="html" xml:base="https://spongebob53.github.io/note-test">&lt;p&gt;이곳은 노트입니다!!!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="note" />
+      
+
+      
+        <summary type="html">이곳은 노트입니다!!!</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
