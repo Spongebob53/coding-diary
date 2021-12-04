@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-04T13:34:19+09:00</updated>
+  <updated>2021-12-04T20:06:39+09:00</updated>
   <id>https://spongebob53.github.io/author/Spongebob53/feed.xml</id>
 
   
@@ -37,13 +37,13 @@
       <published>2021-12-01T18:00:00+09:00</published>
       <updated>2021-12-01T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-static_constructor</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-static_constructor">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-static_constructor">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -65,9 +65,9 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;15일차-수업&quot;&gt;15일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;15일차-수업&quot;&gt;15일차 수업&lt;/h2&gt;
 
-&lt;h2 id=&quot;복습&quot;&gt;========복습========&lt;/h2&gt;
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
 
 &lt;h3 id=&quot;메소드&quot;&gt;메소드&lt;/h3&gt;
 
@@ -94,9 +94,9 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h2&gt;
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
 
-&lt;h1 id=&quot;15일차-수업-1&quot;&gt;15일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;15일차-수업-1&quot;&gt;15일차 수업&lt;/h2&gt;
 
 &lt;h3 id=&quot;스코프&quot;&gt;스코프&lt;/h3&gt;
 
@@ -227,7 +227,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -240,13 +240,13 @@
       <published>2021-11-30T18:00:00+09:00</published>
       <updated>2021-11-30T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-return</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-return">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-return">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -268,9 +268,9 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;14일차-수업&quot;&gt;14일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;14일차-수업&quot;&gt;14일차 수업&lt;/h2&gt;
 
-&lt;h2 id=&quot;복습&quot;&gt;========복습========&lt;/h2&gt;
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
 
 &lt;h3 id=&quot;예시&quot;&gt;예시&lt;/h3&gt;
 
@@ -391,9 +391,9 @@
 
 &lt;p&gt;parameter : 매개변수, 메소드에서 사용할 변수명&lt;/p&gt;
 
-&lt;h2 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h2&gt;
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
 
-&lt;h1 id=&quot;14일차-수업-1&quot;&gt;14일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;14일차-수업-1&quot;&gt;14일차 수업&lt;/h2&gt;
 
 &lt;h3 id=&quot;메소드-1&quot;&gt;메소드&lt;/h3&gt;
 
@@ -500,7 +500,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -581,13 +581,13 @@
       <published>2021-11-26T18:00:00+09:00</published>
       <updated>2021-11-26T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-class</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-class">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-class">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -609,9 +609,9 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;13일차-수업&quot;&gt;13일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;13일차-수업&quot;&gt;13일차 수업&lt;/h2&gt;
 
-&lt;h2 id=&quot;복습&quot;&gt;========복습========&lt;/h2&gt;
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
 
 &lt;h3 id=&quot;객체지향&quot;&gt;객체지향&lt;/h3&gt;
 
@@ -705,9 +705,9 @@
   &lt;li&gt;파라미터와 인자는 개수, 자료형, 순서 가 동일해야한다&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h2&gt;
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
 
-&lt;h1 id=&quot;13일차-수업-1&quot;&gt;13일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;13일차-수업-1&quot;&gt;13일차 수업&lt;/h2&gt;
 
 &lt;h3 id=&quot;클래스&quot;&gt;클래스&lt;/h3&gt;
 
@@ -827,7 +827,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -840,13 +840,13 @@
       <published>2021-11-25T18:00:00+09:00</published>
       <updated>2021-11-25T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-method</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-method">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-method">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -868,9 +868,9 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;12일차-수업&quot;&gt;12일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;12일차-수업&quot;&gt;12일차 수업&lt;/h2&gt;
 
-&lt;h2 id=&quot;복습&quot;&gt;========복습========&lt;/h2&gt;
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
 
 &lt;p&gt;요구사항 : 사용자에게 학생의 과목 점수를 취합하여
 개인별 과목 점수와 총점, 과목별 학생들의 합계를 구하는 프로그램을 만들어 주세요&lt;/p&gt;
@@ -954,9 +954,9 @@
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h2&gt;
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
 
-&lt;h1 id=&quot;12일차-수업-1&quot;&gt;12일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;12일차-수업-1&quot;&gt;12일차 수업&lt;/h2&gt;
 
 &lt;h3 id=&quot;절차지향-프로그래밍&quot;&gt;절차지향 프로그래밍&lt;/h3&gt;
 
@@ -1162,7 +1162,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -1175,13 +1175,13 @@
       <published>2021-11-24T18:00:00+09:00</published>
       <updated>2021-11-24T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-array3</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array3">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-array3">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -1203,9 +1203,9 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;11일차-수업&quot;&gt;11일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;11일차-수업&quot;&gt;11일차 수업&lt;/h2&gt;
 
-&lt;h2 id=&quot;복습&quot;&gt;========복습========&lt;/h2&gt;
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
 
 &lt;h3 id=&quot;배열&quot;&gt;배열&lt;/h3&gt;
 
@@ -1255,9 +1255,9 @@
 
 &lt;p&gt;배열은 자료형으로 선언 » 배열도 자료형&lt;/p&gt;
 
-&lt;h2 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h2&gt;
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
 
-&lt;h1 id=&quot;11일차-수업-1&quot;&gt;11일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;11일차-수업-1&quot;&gt;11일차 수업&lt;/h2&gt;
 
 &lt;h3 id=&quot;다차원-배열&quot;&gt;다차원 배열&lt;/h3&gt;
 
@@ -1328,7 +1328,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -1341,13 +1341,13 @@
       <published>2021-11-22T18:00:00+09:00</published>
       <updated>2021-11-22T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-array2</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array2">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-array2">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -1369,9 +1369,9 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;9일차-수업&quot;&gt;9일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;9일차-수업&quot;&gt;9일차 수업&lt;/h2&gt;
 
-&lt;h2 id=&quot;복습&quot;&gt;========복습========&lt;/h2&gt;
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
 
 &lt;h3 id=&quot;제어문&quot;&gt;제어문&lt;/h3&gt;
 
@@ -1419,9 +1419,9 @@
 
 &lt;p&gt;배열과 반복문은 배부분 같이 쓰임(값 입력과 출력하는 과정이 반복되기 때문에)&lt;/p&gt;
 
-&lt;h2 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h2&gt;
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
 
-&lt;h1 id=&quot;9일차-수업-1&quot;&gt;9일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;9일차-수업-1&quot;&gt;9일차 수업&lt;/h2&gt;
 
 &lt;p&gt;sort : array 요소 정렬해주는 기능&lt;/p&gt;
 
@@ -1462,7 +1462,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -1475,13 +1475,13 @@
       <published>2021-11-19T18:00:00+09:00</published>
       <updated>2021-11-19T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-array1</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array1">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-array1">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -1503,7 +1503,7 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;8일차-수업&quot;&gt;8일차 수업&lt;/h1&gt;
+&lt;h2 id=&quot;8일차-수업&quot;&gt;8일차 수업&lt;/h2&gt;
 
 &lt;h3 id=&quot;교재-416p-참고&quot;&gt;교재 416p 참고&lt;/h3&gt;
 
@@ -1655,7 +1655,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -1668,13 +1668,13 @@
       <published>2021-11-18T18:00:00+09:00</published>
       <updated>2021-11-18T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-exam_prime</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-exam_prime">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-exam_prime">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
@@ -1696,7 +1696,7 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;7일차-시험&quot;&gt;7일차 시험&lt;/h1&gt;
+&lt;h2 id=&quot;7일차-시험&quot;&gt;7일차 시험&lt;/h2&gt;
 
 &lt;p&gt;소수 판별 로직 짜기&lt;/p&gt;
 
@@ -1755,7 +1755,7 @@
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
