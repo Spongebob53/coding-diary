@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-04T13:14:23+09:00</updated>
+  <updated>2021-12-04T13:34:19+09:00</updated>
   <id>https://spongebob53.github.io/author/Spongebob53/feed.xml</id>
 
   
@@ -32,12 +32,20 @@
 
   
     <entry>
-      <title type="html">lecture - Static / Constructor</title>
-      <link href="https://spongebob53.github.io/lecture-static_constructor" rel="alternate" type="text/html" title="lecture - Static / Constructor" />
+      <title type="html">Java - Static / Constructor</title>
+      <link href="https://spongebob53.github.io/lecture-static_constructor" rel="alternate" type="text/html" title="Java - Static / Constructor" />
       <published>2021-12-01T18:00:00+09:00</published>
       <updated>2021-12-01T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-static_constructor</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-static_constructor">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-static_constructor">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -219,7 +227,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -227,12 +235,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - Return</title>
-      <link href="https://spongebob53.github.io/lecture-return" rel="alternate" type="text/html" title="lecture - Return" />
+      <title type="html">Java - Return</title>
+      <link href="https://spongebob53.github.io/lecture-return" rel="alternate" type="text/html" title="Java - Return" />
       <published>2021-11-30T18:00:00+09:00</published>
       <updated>2021-11-30T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-return</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-return">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-return">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -484,7 +500,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -560,12 +576,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - Class</title>
-      <link href="https://spongebob53.github.io/lecture-class" rel="alternate" type="text/html" title="lecture - Class" />
+      <title type="html">Java - Class</title>
+      <link href="https://spongebob53.github.io/lecture-class" rel="alternate" type="text/html" title="Java - Class" />
       <published>2021-11-26T18:00:00+09:00</published>
       <updated>2021-11-26T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-class</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-class">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-class">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -803,7 +827,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -811,12 +835,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - Method</title>
-      <link href="https://spongebob53.github.io/lecture-method" rel="alternate" type="text/html" title="lecture - Method" />
+      <title type="html">Java - Method</title>
+      <link href="https://spongebob53.github.io/lecture-method" rel="alternate" type="text/html" title="Java - Method" />
       <published>2021-11-25T18:00:00+09:00</published>
       <updated>2021-11-25T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-method</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-method">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-method">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -1130,7 +1162,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -1138,12 +1170,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - Array3</title>
-      <link href="https://spongebob53.github.io/lecture-array3" rel="alternate" type="text/html" title="lecture - Array3" />
+      <title type="html">Java - Array3</title>
+      <link href="https://spongebob53.github.io/lecture-array3" rel="alternate" type="text/html" title="Java - Array3" />
       <published>2021-11-24T18:00:00+09:00</published>
       <updated>2021-11-24T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-array3</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array3">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-array3">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -1288,7 +1328,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -1296,12 +1336,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - Array2</title>
-      <link href="https://spongebob53.github.io/lecture-array2" rel="alternate" type="text/html" title="lecture - Array2" />
+      <title type="html">Java - Array2</title>
+      <link href="https://spongebob53.github.io/lecture-array2" rel="alternate" type="text/html" title="Java - Array2" />
       <published>2021-11-22T18:00:00+09:00</published>
       <updated>2021-11-22T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-array2</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array2">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-array2">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -1414,7 +1462,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -1422,12 +1470,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - Array1</title>
-      <link href="https://spongebob53.github.io/lecture-array1" rel="alternate" type="text/html" title="lecture - Array1" />
+      <title type="html">Java - Array1</title>
+      <link href="https://spongebob53.github.io/lecture-array1" rel="alternate" type="text/html" title="Java - Array1" />
       <published>2021-11-19T18:00:00+09:00</published>
       <updated>2021-11-19T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-array1</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array1">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-array1">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -1599,7 +1655,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
@@ -1607,12 +1663,20 @@
     </entry>
   
     <entry>
-      <title type="html">lecture - exam_prime</title>
-      <link href="https://spongebob53.github.io/lecture-exam_prime" rel="alternate" type="text/html" title="lecture - exam_prime" />
+      <title type="html">Java - exam_prime</title>
+      <link href="https://spongebob53.github.io/lecture-exam_prime" rel="alternate" type="text/html" title="Java - exam_prime" />
       <published>2021-11-18T18:00:00+09:00</published>
       <updated>2021-11-18T18:00:00+09:00</updated>
       <id>https://spongebob53.github.io/lecture-exam_prime</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-exam_prime">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-exam_prime">&lt;p&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/p&gt;
+
+&lt;p&gt;JAVA(자바), Python(파이썬) 기반의&lt;/p&gt;
+
+&lt;p&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/p&gt;
+
+&lt;p&gt;2021.11.10. ~ 2022.05.18.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
   Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -1691,7 +1755,7 @@
       
 
       
-        <summary type="html">Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor</summary>
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다</summary>
       
 
       
