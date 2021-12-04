@@ -8,43 +8,67 @@
     
       
       <item>
-        <title>lecture - 2일차</title>
+        <title>lecture - Static / Constructor</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture 강좌는 여러 절로 구성되어 있습니다.
+  Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-day1&quot;&gt;lecture - 1일차&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-day2&quot;&gt;lecture - 2일차&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
-        <pubDate>Sun, 28 Nov 2021 01:40:00 +0900</pubDate>
+        <pubDate>Wed, 01 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-day2</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-day2</guid>
+        https://spongebob53.github.io/lecture-static_constructor</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-static_constructor</guid>
       </item>
       
     
       
       <item>
-        <title>lecture - 1일차</title>
+        <title>lecture - Return</title>
         
           <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture 강좌는 여러 절로 구성되어 있습니다.
+  Lecture는 여러 파트로 구성되어 있습니다.
 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-day1&quot;&gt;lecture - 1일차&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-day2&quot;&gt;lecture - 2일차&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
         
-        <pubDate>Sun, 28 Nov 2021 01:40:00 +0900</pubDate>
+        <pubDate>Tue, 30 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-day1</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-day1</guid>
+        https://spongebob53.github.io/lecture-return</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-return</guid>
       </item>
       
     
@@ -78,16 +102,397 @@
     
       
       <item>
-        <title>Gettysburg Address</title>
+        <title>lecture - Class</title>
         
-          <description>&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 </description>
         
-        <pubDate>Thu, 19 Nov 1863 19:18:00 +0900</pubDate>
+        <pubDate>Fri, 26 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/gettysburg-address</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/gettysburg-address</guid>
+        https://spongebob53.github.io/lecture-class</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-class</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Method</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Thu, 25 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-method</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-method</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Array3</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 24 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-array3</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-array3</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Array2</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 22 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-array2</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-array2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Array1</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 19 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-array1</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-array1</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - exam_prime</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Thu, 18 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-exam_prime</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-exam_prime</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Loop_practice</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-loop</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Scanner</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Tue, 16 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-scanner</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-scanner</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Loop</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Mon, 15 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-loop</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Conditional</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Fri, 12 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-conditional</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-conditional</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Operator</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Thu, 11 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-operator</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-operator</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>lecture - Intro/var</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-intro_var</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-intro_var</guid>
       </item>
       
     

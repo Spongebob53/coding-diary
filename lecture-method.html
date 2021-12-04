@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>
+      lecture - Method
+    </title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.edited.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/syntax.css"
+    />
+
+    <!-- custom.css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/custom.css"
+    />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--webfont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--syntax.css 추가-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/syntax.css"
+    />
+
+    <!-- highlight.js -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+    <style>
+      .hljs {
+        background: none;
+      }
+    </style>
+
+    <!--[if IE]>
+      <style>
+        p,
+        ol,
+        ul {
+          width: 100%;
+        }
+        blockquote {
+          width: 100%;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="개발 기록" />
+    <link rel="shortcut icon" href="https://spongebob53.github.io/assets/built/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://spongebob53.github.io/lecture-method" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Coding Diary" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="lecture - Method" />
+    <meta property="og:description" content="Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor 12일차 수업 ========복습======== 요구사항 : 사용자에게 학생의 과목 점수를 취합하여 개인별 과목 점수와 총점, 과목별 학생들의 합계를 구하는 프로그램을 만들어 주세요 Scanner sc = new Scanner(System.in); System.out.println("성적 취합 프로그램입니다."); System.out.println("학생의 수를" />
+    <meta property="og:url" content="https://spongebob53.github.io/lecture-method" />
+    <meta property="og:image" content="https://spongebob53.github.io/assets/built/images/background-lecture.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2021-11-25T18:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-11-25T18:00:00+09:00" />
+    <meta property="article:tag" content="Lecture" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="lecture - Method" />
+    <meta name="twitter:description" content="Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor 12일차 수업 ========복습======== 요구사항 : 사용자에게 학생의 과목 점수를 취합하여 개인별 과목 점수와 총점, 과목별 학생들의 합계를 구하는 프로그램을 만들어 주세요 Scanner sc = new Scanner(System.in); System.out.println("성적 취합 프로그램입니다."); System.out.println("학생의 수를" />
+    <meta name="twitter:url" content="https://spongebob53.github.io/" />
+    <meta name="twitter:image" content="https://spongebob53.github.io/assets/built/images/background-lecture.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Coding Diary" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Lecture" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Coding Diary",
+        "logo": "https://spongebob53.github.io/"
+    },
+    "url": "https://spongebob53.github.io/lecture-method",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://spongebob53.github.io/assets/built/images/background-lecture.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://spongebob53.github.io/lecture-method"
+    },
+    "description": "Lecture는 여러 파트로 구성되어 있습니다. Intro/var Operator Conditional Loop Scanner Loop_practice Exam_prime Array1 Array2 Array3 Method Class Return Static/Constructor 12일차 수업 ========복습======== 요구사항 : 사용자에게 학생의 과목 점수를 취합하여 개인별 과목 점수와 총점, 과목별 학생들의 합계를 구하는 프로그램을 만들어 주세요 Scanner sc = new Scanner(System.in); System.out.println("성적 취합 프로그램입니다."); System.out.println("학생의 수를"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="lecture - Method" href="/feed.xml" />
+
+  </head>
+  <body
+    class="post-template"
+  >
+    <div class="site-wrapper">
+      <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+      <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://spongebob53.github.io/">Coding Diary</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+  <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+  <li class="nav-about" role="menuitem">
+    <a href="/about/">About</a>
+  </li>
+  <li class="nav-lecture" role="menuitem">
+    <a href="/tag/lecture/">Lecture</a>
+  </li>
+  <li class="nav-note" role="menuitem">
+    <a href="/tag/note/">Note</a>
+  </li>
+  <li class="nav-portfolio" role="menuitem">
+    <a href="/tag/portfolio/">Portfolio</a>
+  </li>
+  <li class="nav-archive" role="menuitem">
+    <a href="/archive.html">All Posts</a>
+  </li>
+  <li class="nav-archive" role="menuitem">
+    <a href="/author_archive.html">Tag별 Posts</a>
+  </li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-lecture post tag-lecture ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="25 November 2021">25 November 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/lecture/'>LECTURE</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">lecture - Method</h1>
+            </header>
+
+            <!--
+            
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-lecture.png)">
+            </figure>
+            
+            -->
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p><span class="table-of-contents-list">
+  Lecture는 여러 파트로 구성되어 있습니다.
+</span></p>
+<ul class="table-of-contents-list">
+  <li><a href="./lecture-intro_var">Intro/var</a></li>
+  <li><a href="./lecture-operator">Operator</a></li>
+  <li><a href="./lecture-conditional">Conditional</a></li>
+  <li><a href="./lecture-loop">Loop</a></li>
+  <li><a href="./lecture-scanner">Scanner</a></li>
+  <li><a href="./lecture-loop_practice">Loop_practice</a></li>
+  <li><a href="./lecture-exam_prime">Exam_prime</a></li>
+  <li><a href="./lecture-array1">Array1</a></li>
+  <li><a href="./lecture-array2">Array2</a></li>
+  <li><a href="./lecture-array3">Array3</a></li>
+  <li><a href="./lecture-method">Method</a></li>
+  <li><a href="./lecture-class">Class</a></li>
+  <li><a href="./lecture-return">Return</a></li>
+  <li><a href="./lecture-static_constructor">Static/Constructor</a></li>
+</ul>
+
+<h1 id="12일차-수업">12일차 수업</h1>
+
+<h2 id="복습">========복습========</h2>
+
+<p>요구사항 : 사용자에게 학생의 과목 점수를 취합하여
+개인별 과목 점수와 총점, 과목별 학생들의 합계를 구하는 프로그램을 만들어 주세요</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"성적 취합 프로그램입니다."</span><span class="o">);</span>
+
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"학생의 수를 입력해주세요"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">student</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+<span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"과목의 수를 입력해주세요"</span><span class="o">);</span>
+<span class="kt">int</span> <span class="n">subjectNum</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+<span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+
+<span class="nc">String</span><span class="o">[]</span> <span class="n">subject</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span> <span class="o">[</span><span class="n">subjectNum</span><span class="o">];</span>
+
+<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">subjectNum</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">"번째 과목을 입력해주세요"</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">subjectName</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+    <span class="n">subject</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">subjectName</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kt">int</span><span class="o">[][]</span> <span class="n">getScore</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span> <span class="o">[</span><span class="n">student</span><span class="o">][</span><span class="n">subjectNum</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
+
+
+<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">student</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">"번째 학생의 점수를 입력합니다."</span><span class="o">);</span>
+    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">subjectNum</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">subject</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="s">" 점수를 입력해주세요"</span><span class="o">);</span>
+        <span class="kt">int</span> <span class="n">score</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+        <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+        <span class="n">getScore</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">score</span><span class="o">;</span>
+        <span class="n">sum</span> <span class="o">+=</span> <span class="n">score</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="n">getScore</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">subjectNum</span><span class="o">]</span> <span class="o">=</span> <span class="n">sum</span><span class="o">;</span>
+<span class="o">}</span>
+
+
+<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">student</span><span class="o">+</span><span class="mi">2</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">subjectNum</span><span class="o">+</span><span class="mi">2</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"\t"</span><span class="o">);</span>
+        <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">j</span> <span class="o">==</span> <span class="n">subjectNum</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"총점"</span><span class="o">);</span>
+            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">subject</span><span class="o">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">student</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"합계"</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">);</span>
+            <span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">j</span> <span class="o">==</span> <span class="n">subjectNum</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+                <span class="kt">int</span> <span class="n">totalsum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">student</span><span class="o">;</span> <span class="n">k</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="n">totalsum</span> <span class="o">+=</span> <span class="n">getScore</span><span class="o">[</span><span class="n">k</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
+                <span class="o">}</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">totalsum</span><span class="o">);</span>
+            <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                <span class="kt">int</span> <span class="n">subsum</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">student</span><span class="o">;</span> <span class="n">k</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="n">subsum</span> <span class="o">+=</span> <span class="n">getScore</span><span class="o">[</span><span class="n">k</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
+                <span class="o">}</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">subsum</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">"번 \t"</span><span class="o">);</span>
+            <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">j</span> <span class="o">==</span> <span class="n">subjectNum</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">getScore</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">);</span>
+                <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">getScore</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="s">"\t"</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="-끝-">======== 끝 ========</h2>
+
+<h1 id="12일차-수업-1">12일차 수업</h1>
+
+<h3 id="절차지향-프로그래밍">절차지향 프로그래밍</h3>
+
+<p>상단에서 하단으로 작성</p>
+
+<p>만약에 같은 코드가 필요하면 다시 작성</p>
+
+<p>대표적인 언어 : C 언어</p>
+
+<p>실행 순서가 정해져 있어서 코드의 순서가 바뀌면 결과가 달라진다</p>
+
+<p>장점 : “순서” o “절차”가 컴퓨터의 처리 구조와 비슷해서 실행속도가 빠름</p>
+
+<p>단점 : 개발할 때는 좋은데 수정할 때 어렵다</p>
+
+<h3 id="객체지향-프로그래밍">객체지향 프로그래밍</h3>
+
+<p>“객체”라는 것을 이용해서 프로그래밍을 하겠다</p>
+
+<p>OOP(Object Orientied Programming)</p>
+
+<p>대표적인 언어 : Java, Python</p>
+
+<p>객체 : 코드의 블록(“{ }”로 감싸진 ( ex) for, if문 ), 열심히 생각해봐야하는 단어</p>
+
+<p>블록마다 역할을 부여하고 설계하면</p>
+
+<ul>
+  <li>블록을 사용하여 알맞은 공간에 넣기도 하고, 모양도 변형할 수 있음</li>
+</ul>
+
+<p>언어에서 지원하는 기능을 사용해야하기 때문에 “문법” 배워야함</p>
+
+<p>“문법”을 이용해 “설계”까지 나아가는 것이 목표</p>
+
+<h3 id="캡슐화부품화">캡슐화(부품화)</h3>
+
+<p>부품화하는 과정 : 문법</p>
+
+<p>부품을 재조립하는 과정 : 설계</p>
+
+<p>적당한 부품화가 제일 중요</p>
+
+<p>메소드 : 연관된 부품끼리 사용하는 것들을 그룹핑(그룹화 한다)</p>
+
+<p>부품은 내부코드를 몰라도 누구나 사용할 수 있어야함</p>
+
+<p>인터페이스 : 서로 다른 부품이지만 연결할 때 만큼은 둘 다 호환이 되어야 한다</p>
+
+<p>객체를 규격화, 표준화 한다</p>
+
+<h3 id="메소드">메소드</h3>
+
+<p>프로그래밍 할 때 가장 작은 단위(java 파일 내에서 실행되는 가장 작은 단위)</p>
+
+<ul>
+  <li>
+    <p>윈도우운영체제 &gt; 폴더 &gt; 파일 &gt; 파일내용</p>
+  </li>
+  <li>
+    <p>자바프로젝트 &gt; 패키지 &gt; 클래스 &gt; 메소드</p>
+  </li>
+</ul>
+
+<p>메소드 안에서는 변수선언, 제어문 작성, 배열 작성 등 프로그래밍을 구현하는 문장들의 묶음</p>
+
+<p>반복적으로 사용하기 위한 프로그래밍 : 메소드 단위 작성</p>
+
+<p>문제가 발생하면 해당 메소드로 가서 유지보수</p>
+
+<p>기능을 찾기 위해서 main 메소드 내부를 찾을 필요가 없어 가독성 상승</p>
+
+<p>컴파일(실행)을 할 때 컴퓨터가 클래스 밑에 있는 모든 메소드를 가장 먼저 생성</p>
+
+<p>구조</p>
+
+<ul>
+  <li>
+    <p>접근제어자 반환타입 메소드이름(매개변수) { }</p>
+
+    <ul>
+      <li>
+        <p>접근제어자, 매개변수 생략가능</p>
+      </li>
+      <li>
+        <p>반환타입, 메소드이름 필수</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>public static void test(){ 코드 블록 }</p>
+
+    <ul>
+      <li>
+        <p>선언부 : class { } 안에 작성하며, 다른 메소드 안에 작성하지 못한다</p>
+      </li>
+      <li>
+        <p>접근 제어자 : public</p>
+
+        <ul>
+          <li>해당 메소드를 접근할 수 있는 범위(클래스, 패키지 등등)</li>
+        </ul>
+      </li>
+      <li>
+        <p>반환타입 : void</p>
+
+        <ul>
+          <li>
+            <p>메소드도 프로그램이기 때문에 실행, 종료가 있음</p>
+          </li>
+          <li>
+            <p>종료했을 때 반환되는 데이터의 타입</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>메소드 이름 : test</p>
+
+        <ul>
+          <li>변수처럼 메소드를 호출할 때 사용</li>
+        </ul>
+      </li>
+      <li>
+        <p>매개변수목록 : ( ) 괄호 안의 값</p>
+
+        <ul>
+          <li>메소드가 호출 될 때 메소드에서 사용할 값의 변수들</li>
+        </ul>
+      </li>
+      <li>
+        <p>{ } 중괄호로 마무리</p>
+
+        <ul>
+          <li>구현하는 부분</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>호출하기</p>
+
+<ul>
+  <li>메소드 이름();</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-</span> <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">{</span> <span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>클래스 안 메소드 중에 가장 먼저 실행되는 메소드</p>
+  </li>
+  <li>
+    <p>java 파일 내에 main 메소드가 없으면 실행하지 못함</p>
+  </li>
+  <li>
+    <p>main 안에서 호출해야 실행 가능</p>
+  </li>
+</ul>
+
+<h3 id="매개변수--메소드에서-사용할-변수-파라미터">매개변수 : 메소드에서 사용할 변수, 파라미터</h3>
+
+<p>메소드 이름(argument(인자));</p>
+
+<p>인자는 메소드에서도 정의가 되어있어야함</p>
+
+<p>매개변수 : 인자로 넘어올 값을 함수 내에서 사용하기 위한 변수로 미리 선언 하는 값</p>
+
+<p>자료형과 변수 이름 작성해주면 매개변수 준비완료</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">static</span> <span class="kt">void</span> <span class="nf">numbering</span><span class="o">(</span><span class="kt">int</span> <span class="n">limit</span><span class="o">){</span> <span class="n">code</span> <span class="n">block</span> <span class="o">};</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>매개변수가 2개 이상일 경우 각각 자료형과 변수명을 작성해주면 됨</p>
+  </li>
+  <li>
+    <p>각 매개변수간 구분은 쉼표(,)</p>
+  </li>
+  <li>
+    <p>인자와 매개변수의 작성순서, 개수, 데이터 타입은 동일해야함</p>
+  </li>
+</ul>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            <!--
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Coding Diary</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+            
+            -->
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/Spongebob53">Spongebob53</a></h4>
+                                
+                                    <p><a href="https://github.com/Spongebob53">Spongebob53 GitHub</a></p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/Spongebob53">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            var this_page_url = 'https://spongebob53.github.io/lecture-method';
+                            var this_page_identifier = '/lecture-method';
+                            var this_page_title = 'lecture - Method';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Coding Diary &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/lecture/">Lecture</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-static_constructor">lecture - Static / Constructor</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-return">lecture - Return</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-class">lecture - Class</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/lecture/">
+                                
+                                    See all 13 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/lecture-class">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/lecture-class">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Lecture</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">lecture - Class</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>
+  Lecture는 여러 파트로 구성되어 있습니다.
+
+
+  Intro/var
+  Operator
+  Conditional
+  Loop
+  Scanner
+  Loop_practice
+  Exam_prime
+  Array1
+  Array2
+  Array3
+  Method
+  Class
+  Return
+  Static/Constructor
+
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Spongebob53/">Spongebob53</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      2 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/lecture-array3">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/lecture-array3">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Lecture</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">lecture - Array3</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>
+  Lecture는 여러 파트로 구성되어 있습니다.
+
+
+  Intro/var
+  Operator
+  Conditional
+  Loop
+  Scanner
+  Loop_practice
+  Exam_prime
+  Array1
+  Array2
+  Array3
+  Method
+  Class
+  Return
+  Static/Constructor
+
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Spongebob53/">Spongebob53</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="https://spongebob53.github.io/">
+            
+            <span>Coding Diary</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">lecture - Method</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=lecture+-+Method&amp;url=https://spongebob53.github.iolecture-method"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://spongebob53.github.iolecture-method"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+      <!-- Previous/next page links - displayed on every page -->
+      
+
+      <!-- The footer at the very bottom of the screen -->
+      <footer class="site-footer outer">
+        <div class="site-footer-content inner">
+          <section class="copyright">
+            <a href="https://spongebob53.github.io/">Coding Diary</a>
+            &copy; 2021
+          </section>
+          <section class="poweredby">
+            Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+            <a href="https://pages.github.com/" target="_blank" rel="noopener"
+              >GitHub Pages</a
+            >
+            using
+            <a
+              href="https://github.com/jekyllt/jasper2"
+              target="_blank"
+              rel="noopener"
+              >Jasper2</a
+            >
+          </section>
+          <nav class="site-footer-nav">
+            <a href="/">Latest Posts</a>
+             
+            <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+    <div id="subscribe" class="subscribe-overlay">
+      <a class="subscribe-overlay-close" href="#"></a>
+      <div class="subscribe-overlay-content">
+        
+        <h1 class="subscribe-overlay-title">Subscribe to Coding Diary</h1>
+        <p class="subscribe-overlay-description">
+          Stay up to date! Get all the latest &amp; greatest posts delivered
+          straight to your inbox
+        </p>
+        <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+      </div>
+    </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("pre code").each(function (i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
+    </script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/jquery.fitvids.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
+    ></script>
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-xxxxxxxx-x', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+     <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+ 
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+  </body>
+</html>
