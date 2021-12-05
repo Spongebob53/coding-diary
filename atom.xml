@@ -50,6 +50,20 @@
     
       
       <item>
+        <title>lecture - 2일차</title>
+        
+          <description>&lt;p&gt;강의입니다!&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 29 Nov 2021 01:40:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-day2</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-day2</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>note - test</title>
         
           <description>&lt;p&gt;이곳은 노트입니다!!!&lt;/p&gt;
@@ -246,6 +260,27 @@
     
       
       <item>
+        <title>W3schools - Data Type</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 15 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-datatype</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-datatype</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Loop</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -262,6 +297,27 @@
         <link>
         https://spongebob53.github.io/lecture-loop</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Variables</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 12 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-variable</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-variable</guid>
       </item>
       
     
@@ -288,6 +344,27 @@
     
       
       <item>
+        <title>W3schools - Syntax</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 11 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-syntax</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-syntax</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Operator</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -304,6 +381,41 @@
         <link>
         https://spongebob53.github.io/lecture-operator</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-operator</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Intro/Setup</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-intro_setup</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-intro_setup</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Portfolio</title>
+        
+          <description>&lt;p&gt;포트폴리오를 위한 페이지를 작성할 예정 입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-intro_setup</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-intro_setup</guid>
       </item>
       
     

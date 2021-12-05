@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-05T13:52:05+09:00</updated>
+  <updated>2021-12-05T19:55:08+09:00</updated>
   <id>https://spongebob53.github.io/tag/lecture/feed.xml</id>
 
   
@@ -501,6 +501,40 @@
 
       
         <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">lecture - 2일차</title>
+      <link href="https://spongebob53.github.io/lecture-day2" rel="alternate" type="text/html" title="lecture - 2일차" />
+      <published>2021-11-29T01:40:00+09:00</published>
+      <updated>2021-11-29T01:40:00+09:00</updated>
+      <id>https://spongebob53.github.io/lecture-day2</id>
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-day2">&lt;p&gt;강의입니다!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">강의입니다!</summary>
       
 
       
@@ -1794,240 +1828,6 @@
 &lt;p&gt;강제로 조건을 벗어나게 하거나,&lt;/p&gt;
 
 &lt;p&gt;break를 이용한다&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Java - Scanner</title>
-      <link href="https://spongebob53.github.io/lecture-scanner" rel="alternate" type="text/html" title="Java - Scanner" />
-      <published>2021-11-16T18:00:00+09:00</published>
-      <updated>2021-11-16T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/lecture-scanner</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-scanner">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture는 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;5일차-수업&quot;&gt;5일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;h3 id=&quot;열혈-java-프로그래밍&quot;&gt;열혈 java 프로그래밍&lt;/h3&gt;
-
-&lt;p&gt;20p 처음 설치할 때 : 명령프롬프트에 java, javac를 입력해본다&lt;/p&gt;
-
-&lt;p&gt;25p java 작성과 실행&lt;/p&gt;
-
-&lt;p&gt;28~29p java라는 언어가 시스템에서 어떻게 구성이 되는지&lt;/p&gt;
-
-&lt;p&gt;30p java 구성 : 코딩할 때 기초(들여쓰기와 주석)&lt;/p&gt;
-
-&lt;p&gt;34p&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;들여쓰기 : 우리가 편하기 보기위한 표기방법, 개발자들 간의 암묵적인 규칙&lt;/p&gt;
-
-    &lt;p&gt;영역 또는 의미의 구분을 ndl해서 일정 간격 왼쪽에서 띄운 후 문장을 입력하는 것&lt;/p&gt;
-
-    &lt;p&gt;코딩을 하다보면 각 문장들에 영역이 있는데&lt;/p&gt;
-
-    &lt;p&gt;같은 아이들끼리 같은 라인에 작성하여 같은 영역에서 실행한다는 것을 확인할 수 있도록&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;주석 : 코딩에 대해 간단하게 한줄요약 해놓은 표기법&lt;/p&gt;
-
-    &lt;p&gt;//한줄주석 /&lt;em&gt;여러줄 주석&lt;/em&gt;/&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;40p 변수&lt;/p&gt;
-
-&lt;p&gt;56p 유니코드&lt;/p&gt;
-
-&lt;p&gt;64p 상수, 형변환&lt;/p&gt;
-
-&lt;p&gt;70p “\” escape sequence : 컴퓨터가 사용하는 특정기호(“ ‘ 등)을 문자로 사용하기 위해 사용하는 기술&lt;/p&gt;
-
-&lt;p&gt;77p java 연산자&lt;/p&gt;
-
-&lt;p&gt;103p chapter5 가장 중요한 부분&lt;/p&gt;
-
-&lt;p&gt;실행 흐름(상위에서 하위로 내려온다) 컨트롤(condition 조건문, loop 반복문)하는 것이 목적&lt;/p&gt;
-
-&lt;p&gt;if 와 switch&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;값이 정해져있다 &amp;gt; switch 사용&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;값이 범위다 &amp;gt; if 사용&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;5일차-수업-1&quot;&gt;5일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;반복문&quot;&gt;반복문&lt;/h3&gt;
-
-&lt;p&gt;for&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;초기값&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;증감연산&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;실행&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;코드&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;while - 반복 조건 확인, 조건에 따라서 반복 영역 실행 여부&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;초기값&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;실행&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;코드&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;증감연산&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;do/while - 반복영역을 1회 실행 후 반복 조건 확인, 조건에 따라서 반복 영역 실행여부&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;초기값&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;실행코드&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;증감연산&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;jre&quot;&gt;JRE&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Java에서 지원하는 라이브러리&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;JRE 안에는 많은 클래스가 있음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;class : Java로 작성된 소스를 컴파일한 파일&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;class를 활용해서 우리가 마치 작성한 것처럼 사용할 수 있는 것이 자바의 장점&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;scanner&quot;&gt;Scanner&lt;/h3&gt;
-
-&lt;p&gt;정수 실수 문자열 등 사용자가 입력한 내용을 컴퓨터로 전달해주는 역할&lt;/p&gt;
-
-&lt;p&gt;클래스명 변수명 = new; 스캐너 사용 준비 명령어&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Scanner sc = new Scanner(System.in);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;동작시키는 명령어 - 변수명.명령어&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;String :&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;클래스변수명.nextLine() : 한줄을 전체 읽는 명령어(띄어쓰기까지 포함)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;클래스변수명.next() : 한줄을 읽는 명령어(띄어쓰기 전까지)&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;int :&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;클래스변수명.nextInt() : 한줄을 읽는 명령어(숫자만, 띄어쓰기 전까지)&lt;/p&gt;
-
-        &lt;p&gt;저장하기&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;저장할 변수 = 스캐너변수명.읽는 명령어&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;주의사항&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;띄어쓰기를 기준으로 값을 가져옴&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;띄어쓰기를 포함한 값을 입력한다면,&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;첫 번째 스캐너가 띄어쓰기 전까지의 단어를 입력받고&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;두 번째 스캐너가 호출될 때 남아있는 단어를 입력받음&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;만약에 입력할 단어에 띄어쓰기가 포함될 것같으면 nextLine() 사용&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;또는 nextLine()을 변수에 저장하지 않고 사용만하면 띄어쓰기 이후는 없어지는 효과&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
 
       
       

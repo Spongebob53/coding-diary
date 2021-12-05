@@ -172,6 +172,9 @@ into the {body} of the default.hbs template -->
   <li class="nav-lecture" role="menuitem">
     <a href="/tag/lecture/">Lecture</a>
   </li>
+  <li class="nav-w3schools" role="menuitem">
+    <a href="/tag/w3schools/">W3schools</a>
+  </li>
   <li class="nav-note" role="menuitem">
     <a href="/tag/note/">Note</a>
   </li>
@@ -240,6 +243,15 @@ into the {body} of the default.hbs template -->
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  Lecture는 여러 파트로 구성되어 있습니다.  Intro/var  Operator  Conditional  Loop  Scanner  Loop_practice  Exam_prime  Array1  Array2  Array3  Method  Class  Return  Static/Constructor14일차 수업========복습========예시class Yesterday {\t\t//클래스 정의: name Yesterday\tString str;\t\t\t//필드 선언 : 선언만 한 필드, 대입을 하려면 메소드를 이용\tint ii = 1;\t\t\t//선언과 대입(초기화) 동시에 가능\tstr = \"hello\";\t\t//대입만 하려고 하면 오류\tvoid test(){\t\t//메소드 정의 : name test\t    //변수 선언, 제어문, 출력문 등\t}\t\t\t        //필드를 활용하여 데이터를 등록, 수정, 삭제 등등 하는 기능\tvoid testPram(int i, String s){        //매개변수를 이용하여 메소드에서 사용하고자하는 시작값을 정의        //호출할 때 매개 변수의 순서, 자료형, 개수를 작성하여 값을 입력해줘야함        //호출이 정확하게 이뤄지면 호출과 동시에 시스템에 등록(선언)        //시스템에 우리가 보이지 않게 실행        //int i = 호출할 때 입력한 숫자        //String s = 호출할 때 입력한 글자\t}클래스  (하고자 하는 약속) : 설계도, 정의서, 틀구조      필드(상태, 스펙 등등)          클래스 내에서 저장하고 사용해야 하는 데이터, 변수            메소드          필드의 데이터를 가지고 변경, 관리하는 기능, 데이터와 무관한 기능도 가능      인스턴스  클래스를 객체화(new)정의서나 설계를 실제로 구현하는 것이 인스턴스시스템에서 사용하도록 등록한 것 : 클래스를 인스턴스화 했다동일한 클래스를 2번 new(인스턴스)를 하면 2개의 인스턴스가 생성됨이 2개의 인스턴스는 서로 다른 구현체(객체)  호출Yesterday y = new Yesterday();      클래스 내에 있는 필드를 호출                  클래스를 인스턴스화 한 변수명. 필드명                  y.str                            클래스에서 정의된 필드에 값을 대입(초기화)                  y.str = “hi”;                            클래스 내에 있는 메소드를 호출                              클래스를 인스턴스화 한 변수명. 메소드명                                y.test();                              메소드괄호안에 값이 있다 : 매개변수가 정의된 것임매개변수가 정의가 되어있다 : 인자(아규먼트)를 작성해야한다인자는 매개변수의 순서, 자료형, 개수 일치해야함y.testPram(0, null);argument : 인자(전달인자), 메소드의 입력값parameter : 매개변수, 메소드에서 사용할 변수명======== 끝 ========14일차 수업메소드클래스 내에 있는 필드의 데이터나 별도의 데이터를 수정하는 기능그러기 때문에 클래스 내에 존재해야함메소드 내 메소드는 불가능() : 파라미터 값이 선언되는 공간  그 공간에는 해당 메소드를 호출할 때 사용할 변수를 미리 받을 수 있도록 정의하는 공간외부입력 받은 값을 우리는 내부에서 작업을 해야함      외부입력 : 메소드 호출할 때 작성하는 인자        내부 : 호출된 메소드 안  메소드 호출 : 클래스명.메소드  같은 클래스 내의 메소드는 클래스명을 생략 가능내부에서 작업을 한 결과를 다시 외부 전달해줘야 우리가 원하는 흐름이 완성됨외부 호출 &gt; 내부처리 &gt; 외부 결과 전달외부 호출 &gt; 내부처리 &gt; 내부에서 처리한 결과를 다른 메소드에서 호출다른 메소드에 필요한 값을 내부에서부터 받아야 함return메소드에서 결과를 우리가 원하는 공간에 데려올 수 있다!void      반환값이 없다 » 호출이 완료되고 나서 나는 너에게 줄게 없다        return을 할 때 return 값에 대한 자료형 선언을 담당 : void  return이 있다 &gt; void를 쓸 수 없다, 반환값이 있다, 반환값에 대한 자료형이 있다  int String 등을 사용해서 리턴값에 대한 자료형을 void 대신에 선언,예시public static int calc(int a, int  b){    int result = a + b;    result result;}      메소드 호출이 되고 해당 줄까지 진행이 되고 난 후에        return 이라는 반환 키워드를 이용해서 호출을 한 메소드로 다음 값을 전달        return을 만나면 바로 반환을 시작 : 반환 대상은 result 라는 변수에 담긴 값        break처럼 return을 만나면 메소드가 바로 종료        return; =&gt; 반환하는 값이 없다 &gt; void 허용  ",
       "url": "/lecture-return"
+  }
+  ,
+  
+  "lecture-day2": {
+      "title": "lecture - 2일차",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "강의입니다!",
+      "url": "/lecture-day2"
   }
   ,
   
@@ -333,12 +345,30 @@ into the {body} of the default.hbs template -->
   }
   ,
   
+  "w3schools-datatype": {
+      "title": "W3schools - Data Type",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJava Data TypesData types are devided into two groups      primitive : byte, short, int, long                  float, double                    boolean, char                  Non-primitive : String, Arrays, Classes  Primitive Data TypeThe type specifies the size and type of variable valueIt has no additional method8 primitive data type in Java      interger(store whole) : byte(1byte) &lt; short(2bytes) &lt; int(4bytes) &lt; long(8bytes)        floating point(store fractional) : float(4bytes) &lt; double(8bytes)          sufficient for storing 6~7 / 15 decimal digit            boolean(1bit) : store true o false        char(2bytes) : store a single character/letter or ASCII        * Scientific number                  “e” indicate the power of 10                    “12E3” means “12000”                  * Alternatively can use ASCII value          char var = 65; output “A”      Non-primitive Data Typecalled reference type(they refer to object)The main different between Non-primitive and primitive                   primitive      Non-primitive                  start      lower      upper              size      depend on data type      all the same              value      always has      can be null              mean      predefined      be created by the programmer                     can not      can call method to perform certain operation      Java type Castingassign a value of one primitive data type to another      Widening casting(automatically) : converting a smaller to large          byte &lt; short &lt; char &lt; int &lt; long &lt; float &lt; double            Narrowing casting(manually)          must be done manually by placing the type in parentheses in front of the value      double d = 9.78d;int i = (int)d;",
+      "url": "/w3schools-datatype"
+  }
+  ,
+  
   "lecture-loop": {
       "title": "Java - Loop",
           "author": "Spongebob53",
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  Lecture는 여러 파트로 구성되어 있습니다.  Intro/var  Operator  Conditional  Loop  Scanner  Loop_practice  Exam_prime  Array1  Array2  Array3  Method  Class  Return  Static/Constructor4일차 수업========복습========자료형컴퓨터에서 우리가 입력한 값에 대한 성격정수형, 실수형, 문자열, 문자열형, 논리형자료형을 이용해서 변수 선언  int i;대입(초기화) : “=” 대입연산자 : 뒤에 있는 값을 앞에 넣어라  i = 0;선언과 대입을 동시에  int b = 0;형변환정수형에서 long 표현의 범위가 제일 큰 친구      long ll : 1L;        1L : int인 1을 Long으로 변경해라 라는 뜻        int는 long 보다 작은그릇 » 자동변환이 되는데 왜 1L 쓰냐? 미리 형변환한거  float ff = 1.1f;      1.1f : 1.1 기본 double 형        double은 float 보다 큰 그릇 » 강제형변환이 필수, 그래서 float를 이용할 때 항상 f 작성해야함  byte &lt; short &lt; int &lt; long &lt; float &lt; double형변환은 대입 연산자와 같이 사용하며, 항상 앞뒤 변수의 자료형이 같게다른 자료형끼리 변환을 할 때, 가끔은 값에 오류가 날 수도 있음연산자산술연산자 : +-*/ %(mod:나머지를 표현), 우선순위(수학과 동일)대입연산자 : = += -= *= /= %=      i += 1; »» i = i +1;        왼쪽에 있는 변수(값)에 오른쪽에 있는 변수(값)을 계산한 뒤, 왼쪽에 있는 변수(값)에 대입  증감연산자 : ++ –      ++변수, –변수 : 값을 먼저 +1, -1을 한 뒤 문장을 실행        +1, -1 » 실행        변수++, 변수– : 문장을 실행한 뒤 변수에 담긴 값을 +1. -1을 한다.        실행 » +1, -1  비교연산자 : == != &gt; &lt; &gt;= &lt;=  조건문을 작성할 때 주로 사용, 참과 거짓을 표현하는 방법            논리연산자 : &amp;&amp;(and)             (or) !(not)        비교연산자가 2개 이상 필요할 때 사용한다삼항연산자 : 값 = (조건) ? 참값1 : 거짓값2;  result = (num1 &gt; num2) ? num1 : num2;if : 제어문 중에 조건문if (조건문) {실행코드}  조건을 통해서 프로그래밍을 제어하는문장if (조건문) {실행코드} else {실행코드}  조건 결과에 따라 참일 경우에만 실행if (조건문) {실행코드} else if (조건문) {실행코드}  조건 결과에 따라 참과 거짓에 대한 결과를 다르게if (조건문) {실행코드} else if (조건문) {실행코드} else {실행코드}  조건 결과를 여러 그룹으로 나누어 참과 거짓에 대한 결과를 출력switch : 제어문 중에 조건문조건에 따른 결과 값을 통해서 프로그래밍을 제어하는 문장if문은 참과 거짓이지만switch문은 특정 “값”을 대상으로 제어break를 통해서 실행을 중단한다  예시switch(조건){case 값1:    실행코드;    break;case 값2:    실행코드;    break;default:    실행코드}======== 끝 ========4일차 수업tipsctrl shif f 코드 이쁘게 정리ctrl spacebar 자동완성기능ctrl d 한줄 지우기ctrl f11 실행ctrl shift o 코드에 필요한 패키지 자동 importctrl alt 방향키 위아래 코드 이동alt 방향키 위아래 코드 이동f2 이름 바꾸기window 단축키window e 파일탐색기window r 실행창      cmd 명령프롬프트, notepad 메모장, calc 계산기        mspaint 그림판, excel 엑셀, regedit 레스트리편집  반복문컴퓨터를 사용하는 이유 : 편리하기 위함(반복노동 줄이기)컴퓨터에게 특정 조건동안 무한하게 반복하도록 하는 문장while / for  while – 조건이 참일 때 반복, 거짓일 때 종료    while (조건) {    실행코드    증감연산}            for – 진행방식                  초기값 확인,                    초기값으로 종료조건에 대해 참과 거짓 판단                    참이면 반복 및 증감연산, 거짓이면 종료            for (초기값, 종료조건, 증감연산) {    실행코드}",
       "url": "/lecture-loop"
+  }
+  ,
+  
+  "w3schools-variable": {
+      "title": "W3schools - Variables",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJava variablesvariables are containers for storing data values different type of variables      String - store text, surrounded by double quotes        int - integers without decimals        float - floating point numbers with decimals        char - single character surrounded by single quotes        boolean - values with two states(true o false)  Declaring(creating) variablesSpecify the type and assign it a value      Syntax :    type variableName = value ;  if you assign a new value to existing variable, it will overwrite the previous valueFinal variablesadd “final” keyword, it will declare the variable as “final” o “constant”, unchangeable  final int i = 5; then, i = 20; will generate un errorDeclare many variablesTo declare more than one variable of the same typeuse c omma-separated listint a = 1, b = 2, c = 3;Display variablesprintln() method is often used to display variablesuse the “+” characterSystem.out.println(“Hello” + name);Can use “+” to add a variable to another.String fullName = firstName + lastName;For numeric value, “+” works as a methematical operatorJava Identifiersint minutesPerHour = 60; //Good!int m = 60; // not easy to understandvariables must be identified with identifiers(unique name)To use descriptive names in order to create understandable and maintainableThe gernal rules for naming variableName can contain letter, digit, underscore, dollar signmust begin with a lettershould start with lowercase, can’t contain whitespacecan also begin with _ and $case-sensitive “myVar” ≠ “myvar”reserved words(like Java keywords) can’t use",
+      "url": "/w3schools-variable"
   }
   ,
   
@@ -351,12 +381,39 @@ into the {body} of the default.hbs template -->
   }
   ,
   
+  "w3schools-syntax": {
+      "title": "W3schools - Syntax",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJava syntaxA class should always start with un uppercase first letterJava is case-sensitive : “MyClass” ≠ “myclass”The main() MethodAny code inside the main() method will be executedEvery program must contain the main() methodJava CommentsMake it more readableOr prevent execution when testing alternative codeSingle-line comments      // start with two forward slashes          Any text between // and the end of the line, is ignored by Java      Multi-line comments  /_ start with, and ends with _/          between /_ and _/ is called “comment block”, is ignored by Java      ",
+      "url": "/w3schools-syntax"
+  }
+  ,
+  
   "lecture-operator": {
       "title": "Java - Operator",
           "author": "Spongebob53",
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  Lecture는 여러 파트로 구성되어 있습니다.  Intro/var  Operator  Conditional  Loop  Scanner  Loop_practice  Exam_prime  Array1  Array2  Array3  Method  Class  Return  Static/Constructor2일차 수업========복습========tips      ; : 세미콜론, 실행문장의 마침표        주석 : //                  설명을 적거나, 혹은 메모하거나 등등 할 때 하는 기술                    실제 프로그래밍에 영향이 없는 문장            출력문컴퓨터의 응답 : console 이라는 화면에 보임입력문  System.out.print(“안녕”)출력문안녕  줄바꿈 없음, 엔터없음입력문    System.out.println(“안녕”)출력문안녕  줄바꿈있음, 엔터있음문자, 문자열문자 : 한글자 ‘’(싱글쿼터) ‘a’, “a”문자열 : 한글자 이상 “” (더블쿼터) ‘hello’(오류), “hello””+” : 문자열 합치기변수      변수 선언                  자료형 변수이름                  int a;                          변수 대입(초기화)                  변수이름 = 값                  a = 1;                          변수 선언과 대입(초기화)를 동시에          int b = 1;            주의사항                  가능한 특수문자 ( $ _ ) * 공백은 특수문자 취급해서 안됨                    숫자 시작 안됨                    키워드 안됨                    한글은 되도록 기피                    자료형 변수이름            자료형      자료형의 기본                  정수형 : byte &gt; short &gt; int &gt; long                    실수형 : float &gt; double                    문자형 : char                    문자열형 : String                    논리형 : boolean                  자료형 형변환                  자료형이 있어야 변수를 선언할 수 있고,                    변수의 자료형에 맞는 값을 넣어줘야한다.                    맞는 값이라고 생각되지만 컴퓨터 입장에서는 다른 자료형이라고 문제가 발생할 때,                    우리는 형변환을 해줘야한다.                    컴퓨터 입장에서는 각 각의 자료형은 모두 다릅니다.                    자료형이 다르다는 것은 담은 그릇이 다르다.                  형변환 유형                  자동(묵시적) 강제(명시적)                              자동 -&gt; 작은 그릇에서 큰 그릇으로 옮길 때는 자동 변경                                강제 -&gt; 큰 그릇에서 작은 그릇으로 옮길 때 강제로 변경                                          강제일 때는 값이 변할 수도 있다.                                                      예시                                                                  int i = 360;                                                                    강제 형변환 작은 그릇 = (작은그릇)                                                                    큰 그릇, 큰그릇 = (큰그릇)작은 그릇                                                                    byte b = (byte) i; 강제 형변환                                                                    int I = 360 출력, byte b = 104 출력                                                                                                                                    ======== 끝 ========2일차 수업tips      debug : 오류를 찾아내는 행위                  개발도구에서는 디버그모드 지원                    코드를 한줄씩 실행해보면서 컴퓨터 동작을 제어하면서                    오류를 검색하는 방법: 디버깅한다                  브레이크포인트 (중단점, 시스템이 멈추는 포인트) : 줄에 대고 더블클릭  상수의 데이터 타입      정수형                  기본자료형 : int (숫자를 쓰면 컴퓨터는 일단 int 형이라고 생각하고 작성)                    기본자료형을 원하지 않을 때 예시                              long ll = 2147483648L;                                int형의 최대범위를 넘어서 오류가 나기 때문에                                컴퓨터에게 int형이 아닌 Long으로 기본자료형을 변경해주세요 라는 의미로                                L이라는 영어를 끝에 붙인다.                                    실수형                  기본자료형 : double                    실수를 쓰면 컴퓨터는 일단 double형이라고 생각하고 작성                    기본자료형을 원하지 않을 때 예시                              float f = 1.1f;                                float = double                                컴퓨터에게 double형이 아닌 float으로 기본자료형을 변경해주세요 라는 의미로                                f라는 영어를 끝에 붙인다.                              operator연산자- 더하기* 빼기- 곱하기/ 나누기% 나누기를 하고 난 나머지단항연산자 + - ++ –+ : 양수를 표현하는 연산자(보통 생략)- : 음수를 표현하는 연산자++ : 증가연산자 : 값을 +1 해줍니다.– : 감소연산자 : 값을 –1 해줍니다.      ++, –이 앞이면 명령이 실행 전에 값 변경, 뒷면 실행 후에 값 변경                  변수 ++, 변수 – : 어떠한 코드가 실행한 후에 변수에 담긴 값을 +1, -1을 하고 실행                    ++변수, –변수 : 어떠한 코드가 실행하기 전에 변수에 담긴 값을 +1, -1을 하고 실행            대입연산자=변수 선언a = 1 : 변수 a 에 1을 대입한다.+= -= *= /= %= |= &amp;= ^=변수에 연산후 대입a += 2 는 a = a + 2 와 동일boolean논리형 자료형값이 참과 거짓을 담을 수 있는 자료형boolean, bool 이라고도 표현합니다.true, false      제어문에서 활용                  조건문 : A일 때, B일 때, A가 참일 때, A가 거짓일 때                    반복문 : A &lt; 10 A가 1부터 하나씩 거쳐서 작을 때는 반복, 아닐 때는 그만            비교연산자== : 수학에서 같다(=)와 동일한 의미!= : 다르다&gt; &lt; &gt;= &lt;= : 크기 비교문자열을 비교할 때, ==는 주소값(저장된 위치) 비교함A.equals(B) 사용 권장논리연산자&amp;&amp; : and, 둘다 true일 경우에만 true|| : or, 둘 중 하나만 true 여도 true! : not, 조건의 결과를 반대의 결과로 변경      주의 : 1 &lt; a &lt; 2 는 잘못된 식          진행 과정 1 &lt; a = true or false » true or false &lt; 2 으로 진행되면서 오류남      조건문if(조건:참과 거짓을 구분){조건이 참일 경우에만 실행}else{if문이 참이 아닐 때 실행}",
       "url": "/lecture-operator"
+  }
+  ,
+  
+  "w3schools-intro-setup": {
+      "title": "W3schools - Intro/Setup",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJavaprogramming languageit used for      Web, Desktop, Mobile app(specially Android)        Web servers and app servers        Db connection        Games  Start JavaCheck Java in windows      Search in the start-bar for Java.        Type the following in Command Prompt  C:\\Users\\YourName &gt; java -version  If do not have Java, can download at oracleStep for windows      Go to “System Properties”                  can be found on        Control panel&gt;System and security&gt;System&gt;Advanced System Settings                  Click on the “Enviroment variables” under the “Advanced tab”        Select the “Path” variable in System variables        Click on “New” and add the Path where Java is installed followed by \\bin          C:\\Program Files\\Java\\jdk-10\\bin            Then “OK” and save settings  Java Quick startIn Java every app begins with class name and that class must match the file namecreate “Main.java” file (any text editor)  public class Main{    public static void main(String[] args) {      System.out.println(\"Hello\");    }  }Save file and open cmdnavigate to the directory where saved file and type “javac Main.java”C:\\Users\\YourName &gt; javac Main.javaThis will compile your codeType “java main” to run the fileThe output should read “Hello”",
+      "url": "/w3schools-intro_setup"
+  }
+  ,
+  
+  "w3schools-intro-setup": {
+      "title": "Portfolio",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "포트폴리오를 위한 페이지를 작성할 예정 입니다.",
+      "url": "/w3schools-intro_setup"
   }
   ,
   
