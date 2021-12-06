@@ -50,20 +50,6 @@
     
       
       <item>
-        <title>lecture - 2일차</title>
-        
-          <description>&lt;p&gt;강의입니다!&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 29 Nov 2021 01:40:00 +0900</pubDate>
-        <link>
-        https://spongebob53.github.io/lecture-day2</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-day2</guid>
-      </item>
-      
-    
-      
-      <item>
         <title>note - test</title>
         
           <description>&lt;p&gt;이곳은 노트입니다!!!&lt;/p&gt;
@@ -73,20 +59,6 @@
         <link>
         https://spongebob53.github.io/note-test</link>
         <guid isPermaLink="true">https://spongebob53.github.io/note-test</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>note - 두두둥</title>
-        
-          <description>&lt;p&gt;이곳은 노트입니다&lt;/p&gt;
-</description>
-        
-        <pubDate>Sat, 27 Nov 2021 22:40:00 +0900</pubDate>
-        <link>
-        https://spongebob53.github.io/note-basic-copy</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-basic-copy</guid>
       </item>
       
     
@@ -155,6 +127,27 @@
     
       
       <item>
+        <title>W3schools - Array</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 22 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-array</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-array</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Array2</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -171,6 +164,27 @@
         <link>
         https://spongebob53.github.io/lecture-array2</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-array2</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Loop</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 19 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-loop</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-loop</guid>
       </item>
       
     
@@ -197,6 +211,27 @@
     
       
       <item>
+        <title>W3schools - Conditional</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 18 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-conditional</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-conditional</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - exam_prime</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -218,6 +253,27 @@
     
       
       <item>
+        <title>W3schools - String/Math</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 17 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-string_math</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-string_math</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Loop_practice</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -232,8 +288,29 @@
         
         <pubDate>Wed, 17 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-loop</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop</guid>
+        https://spongebob53.github.io/lecture-loop_practice</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop_practice</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Operator</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 16 Nov 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-operator</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-operator</guid>
       </item>
       
     
@@ -414,8 +491,8 @@
         
         <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-intro_setup</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-intro_setup</guid>
+        https://spongebob53.github.io/portfolio-first</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/portfolio-first</guid>
       </item>
       
     

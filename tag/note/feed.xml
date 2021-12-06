@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/note/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-05T19:55:08+09:00</updated>
+  <updated>2021-12-06T23:28:05+09:00</updated>
   <id>https://spongebob53.github.io/tag/note/feed.xml</id>
 
   
@@ -30,40 +30,6 @@
   
   
 
-  
-    <entry>
-      <title type="html">note - 두두둥</title>
-      <link href="https://spongebob53.github.io/note-basic-copy" rel="alternate" type="text/html" title="note - 두두둥" />
-      <published>2021-11-27T22:40:00+09:00</published>
-      <updated>2021-11-27T22:40:00+09:00</updated>
-      <id>https://spongebob53.github.io/note-basic%20copy</id>
-      <content type="html" xml:base="https://spongebob53.github.io/note-basic-copy">&lt;p&gt;이곳은 노트입니다&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="note" />
-      
-
-      
-        <summary type="html">이곳은 노트입니다</summary>
-      
-
-      
-      
-    </entry>
   
     <entry>
       <title type="html">note - test</title>

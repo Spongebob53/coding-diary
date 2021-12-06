@@ -246,30 +246,12 @@ into the {body} of the default.hbs template -->
   }
   ,
   
-  "lecture-day2": {
-      "title": "lecture - 2일차",
-          "author": "Spongebob53",
-          "category": "",
-          "content": "강의입니다!",
-      "url": "/lecture-day2"
-  }
-  ,
-  
   "note-test": {
       "title": "note - test",
           "author": "Spongebob53",
           "category": "",
           "content": "이곳은 노트입니다!!!",
       "url": "/note-test"
-  }
-  ,
-  
-  "note-basic-copy": {
-      "title": "note - 두두둥",
-          "author": "Spongebob53",
-          "category": "",
-          "content": "이곳은 노트입니다",
-      "url": "/note-basic-copy"
   }
   ,
   
@@ -300,12 +282,30 @@ into the {body} of the default.hbs template -->
   }
   ,
   
+  "w3schools-array": {
+      "title": "W3schools - Array",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava ArraysArrays are used to store multiple values in a single variableDeclare an array  (define the variable type)(square barckets) (variable name);String[] cars;Insert value to itString[] cars = {“Volvo”, “BMW”};  can use an array literal (place the values in a comma separated list, inside curly braces)Access the Elements of an Array      access an array element by referring to the index number        array indexes start with 0  cars[0]; ==&gt; VolvoChange an Array Element  To Change the value of a specific element, refer to the index numbercars[0] = “Opel”;Array length  find out how many elements an array has, use the length propertycars.length ==&gt; 2Loop Through an ArrayUse for loop, use .length, can loop through the array elementsLoop Through an Array with For-Eachexclusively to loop through elements in arrayfor(type variable : arrayName) {  code block}Multidimentional ArraysIs an array of arraysint[][] myNumbers = {1, 2, {3,4}, {5,6,7}};      //each array within its own set of curly bracesint x = myNumbers[1][2]; ==&gt; 7      //access the third element in the second array of myNumbersCan also use a for loop inside another for loop to get the elements of a two-dimentional arrayfor(int i = 0; i &lt; myNumbers.length; ++i){  for(int j = 0; j &lt; myNumbers[i].length; ++j){    System.out.println(myNumbers[i][j];  }}",
+      "url": "/w3schools-array"
+  }
+  ,
+  
   "lecture-array2": {
       "title": "Java - Array2",
           "author": "Spongebob53",
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  Lecture는 여러 파트로 구성되어 있습니다.  Intro/var  Operator  Conditional  Loop  Scanner  Loop_practice  Exam_prime  Array1  Array2  Array3  Method  Class  Return  Static/Constructor9일차 수업========복습========제어문프로그램의 흐름을 제어하기 위한 기능상단에서부터 하단으로 실행이되는데조건문(if, switch)  필요에 의해 조건을 사용하여 프로그램에서 실행할 문장을 제어반복문(for, while)  필요에 의해 반복을 사용하여 프로그램에서 중복된 코드를 작성하지 않아서 재사용성, 가독성 증가배열자료형이 같은 값들을 묶은 변수, 연관된 정보를 그룹화한 것(java특성) 자료형을 선언, 배열 속 값은 무조건 자료형이 같아야 함(java특성) 배열을 선언할 때 무조건 크기를 할당 해야합니다.  지정된 크기에는 항상 0, null 이라는 값으로 초기값이 존재index(배열의 순서)는 항상 0부터 시작한다  배열 속 각각의 값을 호출하기 위해서는 인덱스번호로 지정을 해야함배열의 요소 : 배열에 담긴 값(배열을 선언할 때 사용한 자료형과 동일)배열의 길이,크기 : 배열의 마지막 인덱스까지의 개수(초기에 선언한 크기)배열의 입력받을 값에 대한 자료형, 크기를 무조건 지정해줘야한다크기를 보여주는 기능 : 배열 변수이름.length배열과 반복문은 배부분 같이 쓰임(값 입력과 출력하는 과정이 반복되기 때문에)======== 끝 ========9일차 수업sort : array 요소 정렬해주는 기능요소 정렬 해보기  예시  for(int i = 0; i &lt; comLotto.length; i++){    int tmp = 0; //임시변수    for(int j = 0; j &lt; comLotto.length-1-i; j++){      if(comLotto[j] &gt; comLotto[j+1]{        tmp = comLotto[j];        comLotto[j] = comLotto[j+1];        comLotto[j+1] = tmp;      }    }  }",
       "url": "/lecture-array2"
+  }
+  ,
+  
+  "w3schools-loop": {
+      "title": "W3schools - Loop",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava while LoopLoops can execute a block of code as long as a specified condition is reachedwhile(condition){  code block}Don’t forget to increase the variable used in the condition, otherwise the loop will never endDo / while LoopIs a variant of the while loopThis loop execute the code block once before checking if the condition is truedo{  code block}while(condition);Java For LoopUse “for” when you know exactly how many times you want to loop through a block of codefor(S1;S2;S3){  code block}S1 is executed (once) before the execution of the code blockS2 defines the condition for executing the code blockS3 is executed(everytime) after the code block has been executedFor-Each Loopfor(type variableName : arrayName){  code block}It is used exclusively to loop through elements in an arrayJava Break and Continue“break” statement can be used to jump out of a loop“continue” statement breaks one iteration(in the loop)  if a specified condition occurs and continues with the next iteration",
+      "url": "/w3schools-loop"
   }
   ,
   
@@ -318,6 +318,15 @@ into the {body} of the default.hbs template -->
   }
   ,
   
+  "w3schools-conditional": {
+      "title": "W3schools - Conditional",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava BooleansBoolean expression : returns a Boolean value(true o false)Can use a comparision operatorJava if-else“if”      to specify a block of code to be executed        if a specified condition is true  “else”  if a same condition is false“else if”  new condition to test if the first falseshort hand if-else(Ternary Operator)variable = (condition) ? expressionTrue : expressionFalse      why “ternary”?          because it consists of three operands      “switch”  to specify many alternative blocks of code to be executedSwitchswitch(expression){     //evaluated oncecase x:     //The value of expression is compared with the values of each case  code block  break;    //Java reaches a “break” keyword, it breaks out of the switch block, it ignores the execution of all the rest of the code in the switch blockcase y:  code block  break;default:    //if there is no case match, associated block of code is executed  code block}",
+      "url": "/w3schools-conditional"
+  }
+  ,
+  
   "lecture-exam-prime": {
       "title": "Java - exam_prime",
           "author": "Spongebob53",
@@ -327,12 +336,30 @@ into the {body} of the default.hbs template -->
   }
   ,
   
-  "lecture-loop": {
+  "w3schools-string-math": {
+      "title": "W3schools - String/Math",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava StringsStoring textString variable contains a collection of characters  surrounded by double quotesactually, object      which contain method          that can perform certain operations on strings      Method()length() length of a stringtoUpperCase(), toLowerCase()indexOf()  index of the first occurrence of a specified text in a string(including whitespace)concat() : concatenation(“+”)  ex) name.concat(lastName);Special CharactersStrings must be written within quotes  Java misunderstand special charactersUse backslash“\\” escape character5 other escape sequences      \\n new line        \\r carriage return          move cursor to the beginning of the string and overwrite            \\t tab        \\b backspace        \\f form feed  Hello it was \\f great meetingoutput “Hello it was                    great metting”Adding numbers and stringsIf you add a number and a string, the result will be a string concatenationJava MathMath.max(x,y) : find the highest value of x and ymin(x,y) : lowestabs(x) : absolutesqrt(x) : square rootrandom() : returns random number between 0.0(inclusive) ~ 1.0(exclusive)",
+      "url": "/w3schools-string_math"
+  }
+  ,
+  
+  "lecture-loop-practice": {
       "title": "Java - Loop_practice",
           "author": "Spongebob53",
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  Lecture는 여러 파트로 구성되어 있습니다.  Intro/var  Operator  Conditional  Loop  Scanner  Loop_practice  Exam_prime  Array1  Array2  Array3  Method  Class  Return  Static/Constructor6일차 수업========복습========제어문 : 프로그램이 진행하고 있는 흐름을 제어하기 위한 문장      조건문 : if / switch        반복문 : for / while / do while  Scanner자바에서 지원해주는 라이브러리 중에 있는 기능 중 하나개발자(사용자)가 입력한 값을 저장해주는 기능사용법      스캐너 변수만들기          Scanner sc = new Scanner(System.in);            입력받기                  sc.nextLine(); // 띄어쓰기 포함                    sc.next(); //띄어쓰기까지                    sc.nextInt(); //데이터 타입별                  변수에 저장하기          a = sc.next(); // 변수 = 스캐너입력      ======== 끝 ========6일차 수업for / while 연습반복문을 종료하는 두가지 방법강제로 조건을 벗어나게 하거나,break를 이용한다",
-      "url": "/lecture-loop"
+      "url": "/lecture-loop_practice"
+  }
+  ,
+  
+  "w3schools-operator": {
+      "title": "W3schools - Operator",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava operators      divides the operators into the following groups          Arithmetic, Comparison, Assignment, Logical, Bitwise      Arithmetic operatorAddition + Subtraction - Multiplication * Division /Modulus % : Returns the division remainderIncrement ++ : Increase the value of a variable by 1decrement – : decrease the value of a variable by 1Assignment operator(=) assign the value to variable  += -= *= /= %=calculate a value to variable                              &amp;=          = ^= »= «= about bitwise, learn later                    Java comparison operatorEqual == Not equal != Greater than &gt;less than &lt; and or equal &gt;=, &lt;=Logical operatorLogical and : &amp;&amp;            Logical or :             Logical not : !",
+      "url": "/w3schools-operator"
   }
   ,
   
@@ -349,7 +376,7 @@ into the {body} of the default.hbs template -->
       "title": "W3schools - Data Type",
           "author": "Spongebob53",
           "category": "",
-          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJava Data TypesData types are devided into two groups      primitive : byte, short, int, long                  float, double                    boolean, char                  Non-primitive : String, Arrays, Classes  Primitive Data TypeThe type specifies the size and type of variable valueIt has no additional method8 primitive data type in Java      interger(store whole) : byte(1byte) &lt; short(2bytes) &lt; int(4bytes) &lt; long(8bytes)        floating point(store fractional) : float(4bytes) &lt; double(8bytes)          sufficient for storing 6~7 / 15 decimal digit            boolean(1bit) : store true o false        char(2bytes) : store a single character/letter or ASCII        * Scientific number                  “e” indicate the power of 10                    “12E3” means “12000”                  * Alternatively can use ASCII value          char var = 65; output “A”      Non-primitive Data Typecalled reference type(they refer to object)The main different between Non-primitive and primitive                   primitive      Non-primitive                  start      lower      upper              size      depend on data type      all the same              value      always has      can be null              mean      predefined      be created by the programmer                     can not      can call method to perform certain operation      Java type Castingassign a value of one primitive data type to another      Widening casting(automatically) : converting a smaller to large          byte &lt; short &lt; char &lt; int &lt; long &lt; float &lt; double            Narrowing casting(manually)          must be done manually by placing the type in parentheses in front of the value      double d = 9.78d;int i = (int)d;",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava Data TypesData types are devided into two groups      primitive : byte, short, int, long                  float, double                    boolean, char                  Non-primitive : String, Arrays, Classes  Primitive Data TypeThe type specifies the size and type of variable valueIt has no additional method8 primitive data type in Java      interger(store whole) : byte(1byte) &lt; short(2bytes) &lt; int(4bytes) &lt; long(8bytes)        floating point(store fractional) : float(4bytes) &lt; double(8bytes)          sufficient for storing 6~7 / 15 decimal digit            boolean(1bit) : store true o false        char(2bytes) : store a single character/letter or ASCII        * Scientific number                  “e” indicate the power of 10                    “12E3” means “12000”                  * Alternatively can use ASCII value          char var = 65; output “A”      Non-primitive Data Typecalled reference type(they refer to object)The main different between Non-primitive and primitive                   primitive      Non-primitive                  start      lower      upper              size      depend on data type      all the same              value      always has      can be null              mean      predefined      be created by the programmer                     can not      can call method to perform certain operation      Java type Castingassign a value of one primitive data type to another      Widening casting(automatically) : converting a smaller to large          byte &lt; short &lt; char &lt; int &lt; long &lt; float &lt; double            Narrowing casting(manually)          must be done manually by placing the type in parentheses in front of the value      double d = 9.78d;int i = (int)d;",
       "url": "/w3schools-datatype"
   }
   ,
@@ -367,7 +394,7 @@ into the {body} of the default.hbs template -->
       "title": "W3schools - Variables",
           "author": "Spongebob53",
           "category": "",
-          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJava variablesvariables are containers for storing data values different type of variables      String - store text, surrounded by double quotes        int - integers without decimals        float - floating point numbers with decimals        char - single character surrounded by single quotes        boolean - values with two states(true o false)  Declaring(creating) variablesSpecify the type and assign it a value      Syntax :    type variableName = value ;  if you assign a new value to existing variable, it will overwrite the previous valueFinal variablesadd “final” keyword, it will declare the variable as “final” o “constant”, unchangeable  final int i = 5; then, i = 20; will generate un errorDeclare many variablesTo declare more than one variable of the same typeuse c omma-separated listint a = 1, b = 2, c = 3;Display variablesprintln() method is often used to display variablesuse the “+” characterSystem.out.println(“Hello” + name);Can use “+” to add a variable to another.String fullName = firstName + lastName;For numeric value, “+” works as a methematical operatorJava Identifiersint minutesPerHour = 60; //Good!int m = 60; // not easy to understandvariables must be identified with identifiers(unique name)To use descriptive names in order to create understandable and maintainableThe gernal rules for naming variableName can contain letter, digit, underscore, dollar signmust begin with a lettershould start with lowercase, can’t contain whitespacecan also begin with _ and $case-sensitive “myVar” ≠ “myvar”reserved words(like Java keywords) can’t use",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava variablesvariables are containers for storing data values different type of variables      String - store text, surrounded by double quotes        int - integers without decimals        float - floating point numbers with decimals        char - single character surrounded by single quotes        boolean - values with two states(true o false)  Declaring(creating) variablesSpecify the type and assign it a value      Syntax :    type variableName = value ;  if you assign a new value to existing variable, it will overwrite the previous valueFinal variablesadd “final” keyword, it will declare the variable as “final” o “constant”, unchangeable  final int i = 5; then, i = 20; will generate un errorDeclare many variablesTo declare more than one variable of the same typeuse c omma-separated listint a = 1, b = 2, c = 3;Display variablesprintln() method is often used to display variablesuse the “+” characterSystem.out.println(“Hello” + name);Can use “+” to add a variable to another.String fullName = firstName + lastName;For numeric value, “+” works as a methematical operatorJava Identifiersint minutesPerHour = 60; //Good!int m = 60; // not easy to understandvariables must be identified with identifiers(unique name)To use descriptive names in order to create understandable and maintainableThe gernal rules for naming variableName can contain letter, digit, underscore, dollar signmust begin with a lettershould start with lowercase, can’t contain whitespacecan also begin with _ and $case-sensitive “myVar” ≠ “myvar”reserved words(like Java keywords) can’t use",
       "url": "/w3schools-variable"
   }
   ,
@@ -385,7 +412,7 @@ into the {body} of the default.hbs template -->
       "title": "W3schools - Syntax",
           "author": "Spongebob53",
           "category": "",
-          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJava syntaxA class should always start with un uppercase first letterJava is case-sensitive : “MyClass” ≠ “myclass”The main() MethodAny code inside the main() method will be executedEvery program must contain the main() methodJava CommentsMake it more readableOr prevent execution when testing alternative codeSingle-line comments      // start with two forward slashes          Any text between // and the end of the line, is ignored by Java      Multi-line comments  /_ start with, and ends with _/          between /_ and _/ is called “comment block”, is ignored by Java      ",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJava syntaxA class should always start with un uppercase first letterJava is case-sensitive : “MyClass” ≠ “myclass”The main() MethodAny code inside the main() method will be executedEvery program must contain the main() methodJava CommentsMake it more readableOr prevent execution when testing alternative codeSingle-line comments      // start with two forward slashes          Any text between // and the end of the line, is ignored by Java      Multi-line comments  /_ start with, and ends with _/          between /_ and _/ is called “comment block”, is ignored by Java      ",
       "url": "/w3schools-syntax"
   }
   ,
@@ -403,17 +430,17 @@ into the {body} of the default.hbs template -->
       "title": "W3schools - Intro/Setup",
           "author": "Spongebob53",
           "category": "",
-          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data TypeJavaprogramming languageit used for      Web, Desktop, Mobile app(specially Android)        Web servers and app servers        Db connection        Games  Start JavaCheck Java in windows      Search in the start-bar for Java.        Type the following in Command Prompt  C:\\Users\\YourName &gt; java -version  If do not have Java, can download at oracleStep for windows      Go to “System Properties”                  can be found on        Control panel&gt;System and security&gt;System&gt;Advanced System Settings                  Click on the “Enviroment variables” under the “Advanced tab”        Select the “Path” variable in System variables        Click on “New” and add the Path where Java is installed followed by \\bin          C:\\Program Files\\Java\\jdk-10\\bin            Then “OK” and save settings  Java Quick startIn Java every app begins with class name and that class must match the file namecreate “Main.java” file (any text editor)  public class Main{    public static void main(String[] args) {      System.out.println(\"Hello\");    }  }Save file and open cmdnavigate to the directory where saved file and type “javac Main.java”C:\\Users\\YourName &gt; javac Main.javaThis will compile your codeType “java main” to run the fileThe output should read “Hello”",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  W3schools은 여러 파트로 구성되어 있습니다.  Intro/Setup  Syntax  Variable  Data Type  Operator  String/Math  Conditional  Loop  ArrayJavaprogramming languageit used for      Web, Desktop, Mobile app(specially Android)        Web servers and app servers        Db connection        Games  Start JavaCheck Java in windows      Search in the start-bar for Java.        Type the following in Command Prompt  C:\\Users\\YourName &gt; java -version  If do not have Java, can download at oracleStep for windows      Go to “System Properties”                  can be found on        Control panel&gt;System and security&gt;System&gt;Advanced System Settings                  Click on the “Enviroment variables” under the “Advanced tab”        Select the “Path” variable in System variables        Click on “New” and add the Path where Java is installed followed by \\bin          C:\\Program Files\\Java\\jdk-10\\bin            Then “OK” and save settings  Java Quick startIn Java every app begins with class name and that class must match the file namecreate “Main.java” file (any text editor)  public class Main{    public static void main(String[] args) {      System.out.println(\"Hello\");    }  }Save file and open cmdnavigate to the directory where saved file and type “javac Main.java”C:\\Users\\YourName &gt; javac Main.javaThis will compile your codeType “java main” to run the fileThe output should read “Hello”",
       "url": "/w3schools-intro_setup"
   }
   ,
   
-  "w3schools-intro-setup": {
+  "portfolio-first": {
       "title": "Portfolio",
           "author": "Spongebob53",
           "category": "",
           "content": "포트폴리오를 위한 페이지를 작성할 예정 입니다.",
-      "url": "/w3schools-intro_setup"
+      "url": "/portfolio-first"
   }
   ,
   

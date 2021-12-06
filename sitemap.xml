@@ -36,39 +36,7 @@
     </url>
     
     <url>
-        <loc>https://spongebob53.github.io/lecture-day2.html</loc>
-        
-        <lastmod>2021-11-29T01:40:00+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
         <loc>https://spongebob53.github.io/note-test.html</loc>
-        
-        <lastmod>2021-11-27T22:40:00+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://spongebob53.github.io/note-basic-copy.html</loc>
         
         <lastmod>2021-11-27T22:40:00+09:00</lastmod>
         
@@ -132,9 +100,41 @@
     </url>
     
     <url>
+        <loc>https://spongebob53.github.io/w3schools-array.html</loc>
+        
+        <lastmod>2021-11-22T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://spongebob53.github.io/lecture-array2.html</loc>
         
         <lastmod>2021-11-22T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/w3schools-loop.html</loc>
+        
+        <lastmod>2021-11-19T18:00:00+09:00</lastmod>
         
 
         
@@ -164,6 +164,22 @@
     </url>
     
     <url>
+        <loc>https://spongebob53.github.io/w3schools-conditional.html</loc>
+        
+        <lastmod>2021-11-18T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://spongebob53.github.io/lecture-exam_prime.html</loc>
         
         <lastmod>2021-11-18T18:00:00+09:00</lastmod>
@@ -180,9 +196,41 @@
     </url>
     
     <url>
-        <loc>https://spongebob53.github.io/lecture-loop.html</loc>
+        <loc>https://spongebob53.github.io/w3schools-string_math.html</loc>
         
         <lastmod>2021-11-17T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/lecture-loop_practice.html</loc>
+        
+        <lastmod>2021-11-17T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/w3schools-operator.html</loc>
+        
+        <lastmod>2021-11-16T18:00:00+09:00</lastmod>
         
 
         
@@ -324,7 +372,7 @@
     </url>
     
     <url>
-        <loc>https://spongebob53.github.io/w3schools-intro_setup.html</loc>
+        <loc>https://spongebob53.github.io/portfolio-first.html</loc>
         
         <lastmod>2021-11-10T18:00:00+09:00</lastmod>
         

@@ -11,7 +11,7 @@
 
 
     <title>
-      lecture - 1일차
+      W3schools - Conditional
     </title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,6 +37,27 @@
       rel="stylesheet"
       type="text/css"
       href="/assets/built/custom.css"
+    />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--webfont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--syntax.css 추가-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/syntax.css"
     />
 
     <!-- highlight.js -->
@@ -66,30 +87,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="개발 기록" />
     <link rel="shortcut icon" href="https://spongebob53.github.io/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://spongebob53.github.io/lecture-day1" />
+    <link rel="canonical" href="https://spongebob53.github.io/w3schools-conditional" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Coding Diary" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="lecture - 1일차" />
-    <meta property="og:description" content="Lecture 강좌는 여러 절로 구성되어 있습니다. lecture - 1일차 lecture - 2일차 1일차 수업 원활한 수업을 위해! - 크롬 카톡 팀뷰어 설치 개발 환경 구축하기 - java - eclipse java - java 썬에서 개발, oak가 java로 새롭게 탄생 제임스 고슬링 oracle에서 인수 - 자바 프로그램 과정 - 자바 컴파일 바이트코드" />
-    <meta property="og:url" content="https://spongebob53.github.io/lecture-day1" />
-    <meta property="og:image" content="https://spongebob53.github.io/assets/built/images/background-lecture.png" />
+    <meta property="og:title" content="W3schools - Conditional" />
+    <meta property="og:description" content="이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Java Booleans Boolean expression : returns a Boolean value(true o false) Can use a comparision operator Java if-else “if” to specify a block" />
+    <meta property="og:url" content="https://spongebob53.github.io/w3schools-conditional" />
+    <meta property="og:image" content="https://spongebob53.github.io/assets/built/images/background-w3schools.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-11-28T01:40:00+09:00" />
-    <meta property="article:modified_time" content="2021-11-28T01:40:00+09:00" />
-    <meta property="article:tag" content="Lecture" />
+    <meta property="article:published_time" content="2021-11-18T18:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-11-18T18:00:00+09:00" />
+    <meta property="article:tag" content="W3schools" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="lecture - 1일차" />
-    <meta name="twitter:description" content="Lecture 강좌는 여러 절로 구성되어 있습니다. lecture - 1일차 lecture - 2일차 1일차 수업 원활한 수업을 위해! - 크롬 카톡 팀뷰어 설치 개발 환경 구축하기 - java - eclipse java - java 썬에서 개발, oak가 java로 새롭게 탄생 제임스 고슬링 oracle에서 인수 - 자바 프로그램 과정 - 자바 컴파일 바이트코드" />
+    <meta name="twitter:title" content="W3schools - Conditional" />
+    <meta name="twitter:description" content="이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Java Booleans Boolean expression : returns a Boolean value(true o false) Can use a comparision operator Java if-else “if” to specify a block" />
     <meta name="twitter:url" content="https://spongebob53.github.io/" />
-    <meta name="twitter:image" content="https://spongebob53.github.io/assets/built/images/background-lecture.png" />
+    <meta name="twitter:image" content="https://spongebob53.github.io/assets/built/images/background-w3schools.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Coding Diary" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Lecture" />
+    <meta name="twitter:data2" content="W3schools" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -104,18 +125,18 @@
         "name": "Coding Diary",
         "logo": "https://spongebob53.github.io/"
     },
-    "url": "https://spongebob53.github.io/lecture-day1",
+    "url": "https://spongebob53.github.io/w3schools-conditional",
     "image": {
         "@type": "ImageObject",
-        "url": "https://spongebob53.github.io/assets/built/images/background-lecture.png",
+        "url": "https://spongebob53.github.io/assets/built/images/background-w3schools.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://spongebob53.github.io/lecture-day1"
+        "@id": "https://spongebob53.github.io/w3schools-conditional"
     },
-    "description": "Lecture 강좌는 여러 절로 구성되어 있습니다. lecture - 1일차 lecture - 2일차 1일차 수업 원활한 수업을 위해! - 크롬 카톡 팀뷰어 설치 개발 환경 구축하기 - java - eclipse java - java 썬에서 개발, oak가 java로 새롭게 탄생 제임스 고슬링 oracle에서 인수 - 자바 프로그램 과정 - 자바 컴파일 바이트코드"
+    "description": "이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Java Booleans Boolean expression : returns a Boolean value(true o false) Can use a comparision operator Java if-else “if” to specify a block"
 }
     </script>
 
@@ -128,7 +149,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="lecture - 1일차" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="W3schools - Conditional" href="/feed.xml" />
 
   </head>
   <body
@@ -144,20 +165,21 @@ into the {body} of the default.hbs template -->
 <header class="site-header outer">
     <div class="inner">
         <nav class="site-nav">
-    <div class="site-nav-left">
-        
-            
-                <a class="site-nav-logo" href="https://spongebob53.github.io/">Coding Diary</a>
-            
-        
-        
-            <ul class="nav" role="menu">
+  <div class="site-nav-left">
+     
+    <a class="site-nav-logo" href="https://spongebob53.github.io/"
+      >Coding Diary</a
+    >
+       <ul class="nav" role="menu">
   <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
   <li class="nav-about" role="menuitem">
     <a href="/about/">About</a>
   </li>
   <li class="nav-lecture" role="menuitem">
     <a href="/tag/lecture/">Lecture</a>
+  </li>
+  <li class="nav-w3schools" role="menuitem">
+    <a href="/tag/w3schools/">W3schools</a>
   </li>
   <li class="nav-note" role="menuitem">
     <a href="/tag/note/">Note</a>
@@ -172,18 +194,16 @@ into the {body} of the default.hbs template -->
     <a href="/author_archive.html">Tag별 Posts</a>
   </li>
 </ul>
-
-        
+ 
+  </div>
+  <div class="site-nav-right">
+    <div class="social-links">
+       
     </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-            
-            
-        </div>
-        
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
-        
-    </div>
+    
+    <a class="subscribe-button" href="#subscribe">Search</a>
+    
+  </div>
 </nav>
 
     </div>
@@ -195,267 +215,119 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-lecture post tag-lecture ">
+        <article class="post-full  tag-w3schools post tag-w3schools ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="28 November 2021">28 November 2021</time>
+                    <time class="post-full-meta-date" datetime="18 November 2021">18 November 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/lecture/'>LECTURE</a>
+                               <a href='/tag/w3schools/'>W3SCHOOLS</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">lecture - 1일차</h1>
+                <h1 class="post-full-title">W3schools - Conditional</h1>
             </header>
 
             <!--
             
-            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-lecture.png)">
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-w3schools.png)">
             </figure>
             
             -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><span class="table-of-contents-list">
-  Lecture 강좌는 여러 절로 구성되어 있습니다.
+                    <div>이 페이지는 다음에 대한 공부 기록입니다</div>
+
+<div>
+  <h3><a href="https://www.w3schools.com/">W3schools</a></h3>
+</div>
+
+<div>Lecture에서 배웠던 내용을 복습하며 작성했습니다</div>
+
+<p><span class="table-of-contents-list">
+  W3schools은 여러 파트로 구성되어 있습니다.
 </span></p>
 <ul class="table-of-contents-list">
-  <li><a href="./lecture-day1">lecture - 1일차</a></li>
-  <li><a href="./lecture-day2">lecture - 2일차</a></li>
+  <li><a href="./w3schools-intro_setup">Intro/Setup</a></li>
+  <li><a href="./w3schools-syntax">Syntax</a></li>
+  <li><a href="./w3schools-variable">Variable</a></li>
+  <li><a href="./w3schools-datatype">Data Type</a></li>
+  <li><a href="./w3schools-operator">Operator</a></li>
+  <li><a href="./w3schools-string_math">String/Math</a></li>
+  <li><a href="./w3schools-conditional">Conditional</a></li>
+  <li><a href="./w3schools-loop">Loop</a></li>
+  <li><a href="./w3schools-array">Array</a></li>
 </ul>
 
-<p>1일차 수업</p>
+<h3 id="java-booleans">Java Booleans</h3>
 
-<p>원활한 수업을 위해!</p>
+<p>Boolean expression : returns a Boolean value(true o false)</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 크롬 카톡 팀뷰어 설치
+<p>Can use a comparision operator</p>
+
+<h3 id="java-if-else">Java if-else</h3>
+
+<p>“if”</p>
+
+<ul>
+  <li>
+    <p>to specify a block of code to be executed</p>
+  </li>
+  <li>
+    <p>if a specified condition is true</p>
+  </li>
+</ul>
+
+<p>“else”</p>
+
+<ul>
+  <li>if a same condition is false</li>
+</ul>
+
+<p>“else if”</p>
+
+<ul>
+  <li>new condition to test if the first false</li>
+</ul>
+
+<p>short hand if-else(Ternary Operator)</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">variable</span> <span class="o">=</span> <span class="o">(</span><span class="n">condition</span><span class="o">)</span> <span class="o">?</span> <span class="n">expressionTrue</span> <span class="o">:</span> <span class="n">expressionFalse</span>
 </code></pre></div></div>
 
-<p>개발 환경 구축하기</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- java
-- eclipse
-</code></pre></div></div>
-
-<p>java</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- java 썬에서 개발, oak가 java로 새롭게 탄생 제임스 고슬링 oracle에서 인수
-
-- 자바 프로그램 과정
-
-- 자바 컴파일 바이트코드 || 인터프리터 실행결과
-
-- 장점
-
-    객체지향언어
-
-    플랫폼(특정환경)에 독립적
-
-- 단점
-
-    그래픽 처리속도 중요한 app에는 적합하지않음
-</code></pre></div></div>
-
-<p>java 설치과정</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- jdk 검색 후 oracle에서 java 8 64비트 download
-
-- jdk 관리자권한 실행
-
-- 자바 설치후 환경변수 설정해야함
-
-- 내 pc/속성/고급시스템설정/고급/환경변수/시스템변수/새로만들기/
-
-- 변수이름 JAVA_HOME
-
-- 변수 값 C:\Program Files\Java\jdk1.8.0_311\bin
-
-- path 변수 편집
-
-- 새로만들기 C:\Program Files\Java\jdk1.8.0_311\bin
-
-- cmd에서 java, javac 검색하면 설치 확인가능
-</code></pre></div></div>
-
-<p>eclipse 설치과정</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- eclipse 설치후 실행
-
-- eclipse ide for java developers 선택
-
-- 오류 날 경우 eclipse 들어가서 download button 밑에
-
-    download package로 따로 설치가능
-
-- workspace 경로 설정해주기!
-
-개발환경 완성!
-</code></pre></div></div>
-
-<p>eclipse 사용하기</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 좌측 package explorer - project 구분
-
-- 하단 problems 등등 - 작업 결과물 확인
-
-- window/showview에서 package explorer처럼 다양한 창 띄울 수있음
-
-- window/preferences eclipse 설정창 설정 변경 가능
-
-- new project 만들기! class 만들기! name에 이름 설정하고
-
-    public static void main 체크하기
-
-- ctrl + f11 run 단축키
-
-- class {} 하나의 덩이
-
-- 클래스 중괄호 안에다가 저희가 원하는 프로그래밍을 작성하는 것
-
-- 단축키:
-
-    // : 주석 달기
-
-    ctrl / : 여러줄 주석 or 있는거 주석만들기 풀고 싶을 때도 똑같이 하면 됨
-
-    ctrl spacebar : 코드 목록 나옴
-
-    syso : System.out.println() 단축키
-</code></pre></div></div>
-
-<p>수업 시작하겠습니다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package text;
-
-public class first {
-
-    public static void main(String[] args) {
-    // TODO Auto-generated method stub
-    System.out.print("수업시작하겠습니다.")
-    }
-}
-</code></pre></div></div>
-
-<p>programming</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 프로그래밍을 하려면 언어를 통해서 특수한 문구를 작성
-
-- 우리가 작성하는건 “입력” System.in
-
-- 컴퓨터는 우리에게 “응답” System.out
-</code></pre></div></div>
-
-<p>variable</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 데이터를 담기위한 메모리 공간
-
-- 변수 선언하기
-
-    - 변수 이름에는 대문자, 숫자, 언더바, 달러 만으로는 선언 불가능
-
-    - 숫자로 시작하지 못함
-
-    - 변수 이름에는 공백 포함 안됨
-
-    - 변수 이름에는 정의된 키워드 안됨
-
-    - 변수 이름 중복 안됨
-
-- 선언방식
-
-    - 자료형 (공백) 변수 이름 = 내용
-
-            ex) int num = 3; num이라는 변수에 숫자3을 대입(초기화)한다.
-
-    - 프로그래밍에서의 = 은 뒤에 있는 값을 앞에 있는 값으로 대입한다는 의미
-
-    - 변수 값 변경도 가능 ex) num = 2;
-
-    - 자료형
-
-        - 정수형 : byte, short, int, long 소수점이 없는 숫자.
-
-                    표현할 수 있는 숫자의 범위별로.
-
-                    int 끼리 사칙연산하면 결과값도 int로나옴 주의!
-
-            - 범위 :
-
-                byte : 표현가능범위 1byte 범위(-128 ~ 127) 2^8 범위숫자
-
-                short : 표현가능범위 2byte 범위(2^16 범위) 대충3만
-
-                int : 표현가능범위 4byte 범위(2^32 범위) 대충21억
-
-                long : 표현가능범위 8byte 범위(2^64 범위)
-
-            - 참고 : 컴퓨터의 용량단위
-
-                bit &lt; b &lt; kb &lt; mb &lt; gb
-
-                bit 2진수(0,1)
-
-                8bit = 1byte
-
-                1024b = 1kb
-
-        - 실수형 : float, double 소수점이 있는 숫자
-
-            float : 범위 소수점 6자리까지(4바이트)
-
-            double : 범위 소수점 15자리까지 가능(8바이트)
-
-        - 문자형 : char 한 글자 ex) char c = 'a'
-
-        - 문자열형 : String 문자형의 복수 ex) String str = "안녕"
-
-        - 논리형 : boolean 참과 거짓만 표현하는 자료형 [TRUE, FALSE]
-
-
-사칙연산
-
-- str + int + int 결과는 str,int 가 아니라 str으로 나옴
-
-- ((str +int)+int) 이렇게 처리하기 때문
-
-- str + (int+int) 형변환 ()가 필요함
-
-
-var tips
-
-int b = 1;
-
-int d;
-
-b = d; 뒤에 있는 값을 앞에 있는 값으로 대입하겠다는 뜻
-
-뒤에 있는 값이 없기 때문에 오류
-
-str a = " "; 공백도 가능함
-
-
-형변환 : 처음에 선언한 자료형이 다르지만 같도록 변경하여 사용하는 기술
-
-        표현범위가 좁은 타입에서 넓은 타입으로 이동 가능, 반대는 불가
-
-    - 묵시적 타입 변환(자동) (인정해주는 느낌)
-
-        컴퓨터 판단 하에 형변환이 가능한 부분이면 알아서 변환
-
-        정수형이나 실수형끼리 형변환이 필요할 때 작동
-
-    - 명시적 타입 변환(강제)
-
-        넓은 타입이 좁은 타입으로 가기위해서 강제로 해줌
-
-        short s, byte b 일 때,
-
-        b = (byte)s;
+<ul>
+  <li>
+    <p>why “ternary”?</p>
+
+    <ul>
+      <li>because it consists of three operands</li>
+    </ul>
+  </li>
+</ul>
+
+<p>“switch”</p>
+
+<ul>
+  <li>to specify many alternative blocks of code to be executed</li>
+</ul>
+
+<h3 id="switch">Switch</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="o">(</span><span class="n">expression</span><span class="o">){</span>     <span class="c1">//evaluated once</span>
+<span class="k">case</span> <span class="nl">x:</span>     <span class="c1">//The value of expression is compared with the values of each case</span>
+  <span class="n">code</span> <span class="n">block</span>
+  <span class="k">break</span><span class="o">;</span>    <span class="c1">//Java reaches a “break” keyword, it breaks out of the switch block, it ignores the execution of all the rest of the code in the switch block</span>
+<span class="k">case</span> <span class="nl">y:</span>
+  <span class="n">code</span> <span class="n">block</span>
+  <span class="k">break</span><span class="o">;</span>
+<span class="k">default</span><span class="o">:</span>    <span class="c1">//if there is no case match, associated block of code is executed</span>
+  <span class="n">code</span> <span class="n">block</span>
+<span class="o">}</span>
 </code></pre></div></div>
 
                 </div>
@@ -467,15 +339,30 @@ str a = " "; 공백도 가능함
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Subscribe to Coding Diary</h3>
                     <p>Get the latest posts delivered right to your inbox</p>
-                    <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+                    <span id="searchform" method="post" action="/subscribe/" class="">
+  <input class="confirm" type="hidden" name="confirm" />
+  <input class="location" type="hidden" name="location" />
+  <input class="referrer" type="hidden" name="referrer" />
 
-    <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
-    </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
+  <div class="form-group">
+    <input
+      class="subscribe-email"
+      onkeyup="myFunc()"
+      id="searchtext"
+      type="text"
+      name="searchtext"
+      placeholder="Search..."
+    />
+  </div>
+  <script type="text/javascript">
+    function myFunc() {
+      if (event.keyCode == 13) {
+        var url = encodeURIComponent($("#searchtext").val());
+        location.href = "/search.html?query=" + url;
+      }
+    }
+  </script>
+</span>
 
                 </section>
             
@@ -513,13 +400,13 @@ str a = " "; 공백도 가능함
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'https://spongebob53.github.io/lecture-day1';
-                            var this_page_identifier = '/lecture-day1';
-                            var this_page_title = 'lecture - 1일차';
+                            var this_page_url = 'https://spongebob53.github.io/w3schools-conditional';
+                            var this_page_identifier = '/w3schools-conditional';
+                            var this_page_title = 'W3schools - Conditional';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
-                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.src = 'https://coding-diary53.disqus.com/embed.js';
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
@@ -549,7 +436,7 @@ str a = " "; 공백도 가능함
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Coding Diary &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/lecture/">Lecture</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/w3schools/">W3schools</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -559,18 +446,97 @@ str a = " "; 공백도 가능함
                                 
                                 
                                   
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
                                     
                                         
                                         
-                                            <li><a href="/lecture-day2">lecture - 2일차</a></li>
+                                            <li><a href="/w3schools-array">W3schools - Array</a></li>
                                         
                                     
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/w3schools-loop">W3schools - Loop</a></li>
+                                        
+                                    
+                                  
+                                
                                   
                                 
                                   
                                     
                                   
                                 
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/w3schools-string_math">W3schools - String/Math</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                                   
@@ -580,9 +546,9 @@ str a = " "; 공백도 가능함
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/lecture/">
+                            <a href="/tag/w3schools/">
                                 
-                                    See all 1 posts  →
+                                    See all 8 posts  →
                                 
                             </a>
                         </footer>
@@ -596,12 +562,12 @@ str a = " "; 공백도 가능함
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/lecture-day2">
+            <a class="post-card-image-link" href="/lecture-array1">
                 <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/lecture-day2">
+            <a class="post-card-content-link" href="/lecture-array1">
                 <header class="post-card-header">
                     
                         
@@ -611,17 +577,17 @@ str a = " "; 공백도 가능함
                         
                     
 
-                    <h2 class="post-card-title">lecture - 2일차</h2>
+                    <h2 class="post-card-title">Java - Array1</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>
-  Lecture 강좌는 여러 절로 구성되어 있습니다.
+                        <p>이 페이지는 다음에 대한 공부 기록입니다
 
+JAVA(자바), Python(파이썬) 기반의
 
-  lecture - 1일차
-  lecture - 2일차
+AI 활용 응용 소프트웨어 개발자 양성 과정
 
+2021.11.10. ~ 2022.05.18.
 
 </p>
                     
@@ -641,7 +607,7 @@ str a = " "; 공백도 가능함
                 <span class="reading-time">
                     
                     
-                      2 min read
+                      1 min read
                     
                 </span>
             </footer>
@@ -656,26 +622,33 @@ str a = " "; 공백도 가능함
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/note-test">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/background-note.png)"></div>
+            <a class="post-card-image-link" href="/lecture-exam_prime">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/note-test">
+            <a class="post-card-content-link" href="/lecture-exam_prime">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Note</span>
+                                <span class="post-card-tags">Lecture</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">note - test</h2>
+                    <h2 class="post-card-title">Java - exam_prime</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>이곳은 노트입니다!!!
+                        <p>이 페이지는 다음에 대한 공부 기록입니다
+
+JAVA(자바), Python(파이썬) 기반의
+
+AI 활용 응용 소프트웨어 개발자 양성 과정
+
+2021.11.10. ~ 2022.05.18.
+
 </p>
                     
                 </section>
@@ -716,18 +689,18 @@ str a = " "; 공백도 가능함
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">lecture - 1일차</div>
+    <div class="floating-header-title">W3schools - Conditional</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=lecture+-+1%EC%9D%BC%EC%B0%A8&amp;url=https://spongebob53.github.iolecture-day1"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=W3schools+-+Conditional&amp;url=https://spongebob53.github.iow3schools-conditional"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://spongebob53.github.iolecture-day1"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://spongebob53.github.iow3schools-conditional"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
@@ -761,18 +734,16 @@ str a = " "; 공백도 가능함
             <a href="https://pages.github.com/" target="_blank" rel="noopener"
               >GitHub Pages</a
             >
-            using
-            <a
-              href="https://github.com/jekyllt/jasper2"
-              target="_blank"
-              rel="noopener"
-              >Jasper2</a
-            >
           </section>
           <nav class="site-footer-nav">
-            <a href="/">Latest Posts</a>
+            <a
+              href="https://github.com/Spongebob53"
+              target="_blank"
+              rel="noopener"
+              >Spongebob53</a
+            >
              
-            <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+            <a href="/">Latest Posts</a>
           </nav>
         </div>
       </footer>
@@ -784,20 +755,31 @@ str a = " "; 공백도 가능함
       <a class="subscribe-overlay-close" href="#"></a>
       <div class="subscribe-overlay-content">
         
-        <h1 class="subscribe-overlay-title">Subscribe to Coding Diary</h1>
-        <p class="subscribe-overlay-description">
-          Stay up to date! Get all the latest &amp; greatest posts delivered
-          straight to your inbox
-        </p>
-        <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+        <h1 class="subscribe-overlay-title">Search Coding Diary</h1>
+        <span id="searchform" method="post" action="/subscribe/" class="">
+  <input class="confirm" type="hidden" name="confirm" />
+  <input class="location" type="hidden" name="location" />
+  <input class="referrer" type="hidden" name="referrer" />
 
-    <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
-    </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
+  <div class="form-group">
+    <input
+      class="subscribe-email"
+      onkeyup="myFunc()"
+      id="searchtext"
+      type="text"
+      name="searchtext"
+      placeholder="Search..."
+    />
+  </div>
+  <script type="text/javascript">
+    function myFunc() {
+      if (event.keyCode == 13) {
+        var url = encodeURIComponent($("#searchtext").val());
+        location.href = "/search.html?query=" + url;
+      }
+    }
+  </script>
+</span>
 
       </div>
     </div>
