@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://spongebob53.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://spongebob53.github.io/" rel="alternate" type="text/html" /><updated>2021-12-07T07:27:07+09:00</updated><id>https://spongebob53.github.io/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">Java - Static / Constructor</title><link href="https://spongebob53.github.io/lecture-static_constructor" rel="alternate" type="text/html" title="Java - Static / Constructor" /><published>2021-12-01T18:00:00+09:00</published><updated>2021-12-01T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-static_constructor</id><content type="html" xml:base="https://spongebob53.github.io/lecture-static_constructor">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://spongebob53.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://spongebob53.github.io/" rel="alternate" type="text/html" /><updated>2021-12-10T08:10:34+09:00</updated><id>https://spongebob53.github.io/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">Java - Access Modifier / Extends</title><link href="https://spongebob53.github.io/lecture-access_modifier_extends" rel="alternate" type="text/html" title="Java - Access Modifier / Extends" /><published>2021-12-09T18:00:00+09:00</published><updated>2021-12-09T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-access_modifier_extends</id><content type="html" xml:base="https://spongebob53.github.io/lecture-access_modifier_extends">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
@@ -24,6 +24,711 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;19일차-수업&quot;&gt;19일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;h3 id=&quot;작명-규칙&quot;&gt;작명 규칙&lt;/h3&gt;
+
+&lt;p&gt;camel : 단어와 단어 사이를 대문자로 구분&lt;/p&gt;
+
+&lt;p&gt;snake : 단어와 단어 사이를 _ 로 구분&lt;/p&gt;
+
+&lt;p&gt;class는 대문자로 시작&lt;/p&gt;
+
+&lt;p&gt;variable, method 소문자로 시작 : 다른 사람들이 보고 파악할 수 있도록 작성해 주는 것이 좋음&lt;/p&gt;
+
+&lt;p&gt;프로젝트 팀원이나 회사 규칙에 맞춰서 작성하면 됨&lt;/p&gt;
+
+&lt;h3 id=&quot;overloading&quot;&gt;overloading&lt;/h3&gt;
+
+&lt;p&gt;method, parameter 조건 충족하면 가능&lt;/p&gt;
+
+&lt;p&gt;method의 이름과, parameter(순서 개수 자료형)이 동일해야하고 리턴값과는 무관&lt;/p&gt;
+
+&lt;h3 id=&quot;package&quot;&gt;package&lt;/h3&gt;
+
+&lt;p&gt;클래스를 묶은 집합, 폴더&lt;/p&gt;
+
+&lt;p&gt;기능적으로 비슷하거나 사용이 용이하도록 파일을 관리, 이름 충돌문제 해결&lt;/p&gt;
+
+&lt;p&gt;구분자는 dot(.)&lt;/p&gt;
+
+&lt;p&gt;import&lt;/p&gt;
+
+&lt;p&gt;import를 통해서 패키지 안에 있는 클래스를 현재 클래스에서 사용할 수 있도록 권한 부여&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;import 패키지명.클래스명&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;import 시 이름이 겹치면 클래스명에 직접적으로 패키지를 작성합니다&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;19일차-수업-1&quot;&gt;19일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;정보은닉&quot;&gt;정보은닉&lt;/h3&gt;
+
+&lt;p&gt;사용자가 굳이 알 필요없는 정보는 숨기고, 최소한의 정보로만 프로그래밍을 할 수 있어야 한다&lt;/p&gt;
+
+&lt;h3 id=&quot;접근제어자--access-modifier&quot;&gt;접근제어자 : access modifier&lt;/h3&gt;
+
+&lt;p&gt;맨 앞에 선언, 1개만 가능하고 생략 시엔 default로&lt;/p&gt;
+
+&lt;p&gt;private(class) &amp;lt; protected(subclass) &amp;lt; default(package) &amp;lt; public(all)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;private&lt;/p&gt;
+
+    &lt;p&gt;같은 클래스 안에서 사용가능&lt;/p&gt;
+
+    &lt;p&gt;private를 작성한 클래스 내에서 해결을 해야함&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;protected&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;default&lt;/p&gt;
+
+    &lt;p&gt;기본값&lt;/p&gt;
+
+    &lt;p&gt;같은 패키지 안에서 사용가능&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;public&lt;/p&gt;
+
+    &lt;p&gt;클래스의 접근제어자 중에 최대 허용 범위를 가진 접근제어자&lt;/p&gt;
+
+    &lt;p&gt;default 와 헷갈리지 않게 주의&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;private-변수-접근하기&quot;&gt;private 변수 접근하기&lt;/h3&gt;
+
+&lt;p&gt;외부에서 입력해주고 출력해주는 메소드를 만들어야함&lt;/p&gt;
+
+&lt;p&gt;마우스 우클릭 » Source » generate Getters and Setters 하면 편하게 만들 수 있음&lt;/p&gt;
+
+&lt;p&gt;명명규칙 : get변수명()&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//외부로 반환하는 메소드&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getAbc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;abc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//	내부로 저장하는 메소드&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setAbc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;abc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;abc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;abc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;상속&quot;&gt;상속&lt;/h3&gt;
+
+&lt;p&gt;매우 중요!! 313p 참조 객체지향 프로그래밍 필수&lt;/p&gt;
+
+&lt;p&gt;새로운 클래스로 재정의&lt;/p&gt;
+
+&lt;p&gt;상속을 이용하면 기존의 정의된 클래스(부모)의 모든 필드와 메소드를 물려받아&lt;/p&gt;
+
+&lt;p&gt;새로운 클래스(자식)의 재정의 및 추가 생성 가능&lt;/p&gt;
+
+&lt;p&gt;기존의 정의된 클래스 : 부모 , 상위, 기초 클래스&lt;/p&gt;
+
+&lt;p&gt;상속받은 클래스 : 자식, 하위, 파생 클래스&lt;/p&gt;
+
+&lt;h3 id=&quot;extends&quot;&gt;extends&lt;/h3&gt;
+
+&lt;p&gt;상속을 진행하는 키워드&lt;/p&gt;
+
+&lt;p&gt;class 자식 클래스명 extends 부모 클래스명 {—}&lt;/p&gt;
+
+&lt;p&gt;접근제어자가 private, default 로 선언된 변수는 사용 불가능&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;public 혹은 protected&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;자식 클래스의 인스턴스가 생성될 때&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;상위클래스의 생성자가 먼저 호출되고, 하위 클래스의 생성자를 호출한다&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;필드와 파라미터가 중복될 때 this를 사용했던 것처럼, 상위클래스의 필드는 super.로 구분한다&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;static과 별개로 생각해서 사용&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;classarray&quot;&gt;classArray&lt;/h3&gt;
+
+&lt;p&gt;클래스를 이용한 배열&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;클래스의 형태(인스턴스)를 5칸가진배열&lt;/p&gt;
+
+&lt;p&gt;Car[0] : 배열 한 칸에 들어있는 Car 인스턴스&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - Modifier</title><link href="https://spongebob53.github.io/w3schools-modifier" rel="alternate" type="text/html" title="W3schools - Modifier" /><published>2021-12-09T18:00:00+09:00</published><updated>2021-12-09T18:00:00+09:00</updated><id>https://spongebob53.github.io/w3schools-modifier</id><content type="html" xml:base="https://spongebob53.github.io/w3schools-modifier">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  W3schools은 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;modifier&quot;&gt;Modifier&lt;/h3&gt;
+
+&lt;p&gt;Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes, attributes, methods, and constructors&lt;/p&gt;
+
+&lt;p&gt;Divide modifiers into two groups&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Access modifiers&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;controls the access level&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Non-access modifiers&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;don’t control access level, but provides other functionality&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;access-modifier&quot;&gt;Access modifier&lt;/h3&gt;
+
+&lt;p&gt;For class&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;public : accessible by any other class&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;default 　: accessible by classes in the same package&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;if you don’t specify a modifier&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For attribute, method, constructor&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;public : accessible for all classes&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;private : only accessible within the declared class&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;default : only accessible in the same package&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;protected : the code is a accessible in the same package and subclasses&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;non-access-modifier&quot;&gt;Non-access modifier&lt;/h3&gt;
+
+&lt;p&gt;For class&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;final : the class can’t be inherited by other classes&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;abstract : the class can’t be used to create objects&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;to access an abstract class, it must be inherited from another class&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For attribute, method&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;final : Can’t be overridden/modified&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;static : belongs to the class, rather than an object&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;abstract : can only be used in an abstract class, and can only be used on methods&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;the method doesn’t have a body, the body is provided by the subclass&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;transient : be skipped when serializing the object containing them&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;synchronized : methods can only be accessed by one thread at a time&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;volatile : the value of an attribute is not cached thread-locally, and is always read from the “main memory”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">Java - Overloading / String</title><link href="https://spongebob53.github.io/lecture-overloading_String" rel="alternate" type="text/html" title="Java - Overloading / String" /><published>2021-12-08T18:00:00+09:00</published><updated>2021-12-08T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-overloading_String</id><content type="html" xml:base="https://spongebob53.github.io/lecture-overloading_String">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;18일차-수업&quot;&gt;18일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;h3 id=&quot;생성자&quot;&gt;생성자&lt;/h3&gt;
+
+&lt;p&gt;인스턴스를 만들 때 마지막 단계&lt;/p&gt;
+
+&lt;p&gt;클래스에 정의한 변수 생성되고 그 다음에 생성자 메소드 호출&lt;/p&gt;
+
+&lt;p&gt;호출한 메소드 내의 내용을 하나씩 실행하면서 생성자 메소드를 마무리&lt;/p&gt;
+
+&lt;p&gt;다른 메소드들이랑 다르게 void(반환자료형이 없고, 리턴도 없음)&lt;/p&gt;
+
+&lt;p&gt;생성자가 하나도 없다면 기본 생성자를 시스템이서 만들어주고 생성자가 있다면 기본 생성자를 만들어 주지 않는다&lt;/p&gt;
+
+&lt;p&gt;우리가 정의한 생성자의 모양대로만 new 인스턴스를 할 수 있다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;만약에 생성자에 파라미터가 2개 있는 생성자를 만들었다&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;이 다음 부터는 클래스를 인스턴스화 할 때 무조건 인자를 2개 넣어야한다!&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;인자를 넣지 않는 인스턴스는 더 이상 만들지 못함&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;과정&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인스턴스 만들기(new를 한다) » 생성자 메소드가 1회 호출된다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;모양&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;public 클래스명(){—}&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;overriding&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;생성자는 여러 개 만들 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;this&quot;&gt;this&lt;/h3&gt;
+
+&lt;p&gt;메소드 안 지역변수는 메소드가 끝나고 저장되지 않기 때문에 남기고 싶다면 전역변수에 대입을 해줘야함&lt;/p&gt;
+
+&lt;p&gt;지역변수와 전역변수의 이름이 겹치는 상황이 있을 때 this를 이용하여 전역변수와 지역변수를 구분&lt;/p&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;18일차-수업-1&quot;&gt;18일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;이름-규칙&quot;&gt;이름 규칙&lt;/h3&gt;
+
+&lt;p&gt;변수 : 소문자&lt;/p&gt;
+
+&lt;p&gt;메소드 : 소문자&lt;/p&gt;
+
+&lt;p&gt;클래스 : 첫글자 대문자&lt;/p&gt;
+
+&lt;p&gt;가독성을 높이기 위한 방법&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;className&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// camel&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;class_name&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//snake&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;정보-은닉&quot;&gt;정보 은닉&lt;/h3&gt;
+
+&lt;p&gt;변수의 메소드를 아무나 볼 수 있는 것이 아니라 사용을 하려는 사람에게만 권한을 주는 것&lt;/p&gt;
+
+&lt;p&gt;패키지, 클래스, 메소드 등&lt;/p&gt;
+
+&lt;h3 id=&quot;접근제어자&quot;&gt;접근제어자&lt;/h3&gt;
+
+&lt;p&gt;public, protected, private, default&lt;/p&gt;
+
+&lt;h3 id=&quot;overloading&quot;&gt;overloading&lt;/h3&gt;
+
+&lt;p&gt;메소드를 중복해서 정의하는 것&lt;/p&gt;
+
+&lt;p&gt;메소드 시그니처&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;메소드를 정의할 때 쓰는 파라미터 요소(리스트)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;메소드 시그니처가 다르면 같은 이름을 가질 수 있음, 반환타입과는 무관&lt;/p&gt;
+
+&lt;h3 id=&quot;timer-깔끔하게-구현해보기&quot;&gt;timer 깔끔하게 구현해보기&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Timer22&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+	&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;째깍째깍 현재시간은 &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;시 &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;분&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;초 입니다!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Invalid Value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Invalid Value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;윤년&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Invalid Value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;년은 윤년입니다&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;년은 윤년이 아닙니다&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;string&quot;&gt;String&lt;/h3&gt;
+
+&lt;p&gt;문자열을 담는 자료형&lt;/p&gt;
+
+&lt;p&gt;package java.lang 에 있는 클래스&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//파라미터의 정의가 없는 생성자&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//파라미터의 정의가 있는 생성자&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;안녕&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//자바에서 보편적으로 사용하는 코드이기 때문에 예외적으로 문법을 무시한 케이스&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//배열이라 길이를 구할 수 있음&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;charAt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//특정 인덱스 번호에 있는 문자를 반환&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compareTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//특정 문자열 비교하는 문장 차이나는 개수만큼 출력, 대소문자도 구분&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;concat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//문자열을 더하는 메소드, 원본 데이터에 영향 없음&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//문자열에서 문자 검색, 없을 경우 -1&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 소문자 변환&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;toUpperCase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 대문자 변환&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//문자열 자르기 (인자 하나 begin 인자 둘 begin end)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//문자열 분리하기, 인자(분리하는 기준)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//문자열 중에 문자를 str1 =&amp;gt; str2 바꿔버리는 것&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//앞 뒤로 공백을 제거&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;valueOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//모든 자료형을 문자열로 바꿔줌&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">Java - Package</title><link href="https://spongebob53.github.io/lecture-package" rel="alternate" type="text/html" title="Java - Package" /><published>2021-12-06T18:00:00+09:00</published><updated>2021-12-06T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-package</id><content type="html" xml:base="https://spongebob53.github.io/lecture-package">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;16일차-수업&quot;&gt;16일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;h3 id=&quot;변수--제어문--메소드--클래스&quot;&gt;변수 &amp;lt; 제어문 &amp;lt; 메소드 &amp;lt; 클래스&lt;/h3&gt;
+
+&lt;h3 id=&quot;클래스&quot;&gt;클래스&lt;/h3&gt;
+
+&lt;p&gt;필드(변수), 메소드를 통해 하나의 정의서를 작성하면 다른 클래스에서 호출하여 변수와 메소드를 사용할 수 있음&lt;/p&gt;
+
+&lt;p&gt;호출하는 과정 : 인스턴스(new)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;클래스명 인스턴스명 = new 클래스명();&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;new를 각 메소드 마다 사용을 하면 데이터가 꼬일 위험성이 있음&lt;/p&gt;
+
+&lt;p&gt;이를 해결하기 위해 필드와 파라미터를 이용&lt;/p&gt;
+
+&lt;p&gt;인스턴스 내 필드, 메소드를 사용하기 위해서는&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;인스턴스명.변수명&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;인스턴스명.메소드명()&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;메소드&quot;&gt;메소드&lt;/h3&gt;
+
+&lt;p&gt;필요한 데이터를 전달 : 파라미터와 인자&lt;/p&gt;
+
+&lt;p&gt;메소드 정의하는 법&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;반환 자료형 메소드(파라미터) {…}&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;void : 기본형(반환하는 데이터의 자료형이 없을 때)&lt;/p&gt;
+
+&lt;p&gt;반환 데이터가 있을 경우&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터의 자료형을 입력(int String boolean double 등)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;메소드 내에서 return 과 반환값을 입력&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;파라미터와 인자는 개수 제한이 없으나, 반환값은 1개&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;클래스도 반환자료형이 가능&lt;/p&gt;
+
+&lt;h3 id=&quot;파라미터&quot;&gt;파라미터&lt;/h3&gt;
+
+&lt;p&gt;현재 메소드를 호출한 메소드로부터 데이터를 받아야할 때 정의하는 값&lt;/p&gt;
+
+&lt;p&gt;메소드를 정의할 때 파라미터를 작성했다면 메소드를 호출할 때도 파라미터에 맞는 데이터를 무조건 작성해야함&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;인자와 파라미터는 순서, 개수, 자료형이 일치해야함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;인스턴스&quot;&gt;인스턴스&lt;/h3&gt;
+
+&lt;p&gt;클래스를 이용하여 인스턴스화(객체화)&lt;/p&gt;
+
+&lt;p&gt;클래스에 정의된 내용을 가진 모양으로 메모리 상에 등록&lt;/p&gt;
+
+&lt;h3 id=&quot;총-복습&quot;&gt;총 복습&lt;/h3&gt;
+
+&lt;p&gt;프로그래밍을 할 때, 처음엔 모든 것을 main method에서 처리 했음&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;가독성도 떨어지고, 하나의 변수값을 변경하면 그에 해당 하는 모든 값이 변경되는 불편함 존재&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;서로 다른 변수끼리 영향 없이 유지되거나, 코드 재사용의 필요성&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;클래스를 이용해서 각각의 인스턴스를 생성함&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;필요한 경우에 따라서 해당 인스턴스만 수정, 변경 등이 가능&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;수정, 변경을 하더라도 다른 인스턴스에 영향이 없게 프로그래밍&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;각각의 프로그램을 부품화(객체지향 프로그래밍)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;이전에는 문제가 나면 모든 소스코드가 오류&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;인스턴스 이후 오류난 클래스 혹은 메소드만 수정!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;but, 공통으로 사용하고 싶은 사례들이 생김&lt;/p&gt;
+
+&lt;p&gt;static&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;정적변수, 모든 클래스가 공통으로 사용하는 고정값&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;인스턴스와 별개로 클래스에서 바로 사용가능 하도록 만드는 키워드&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;필드와 메소드에 사용 가능&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;static을 사용시 인스턴스를 생성하지 않아도 됨&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;16일차-수업-1&quot;&gt;16일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;package&quot;&gt;Package&lt;/h3&gt;
+
+&lt;p&gt;자바에서 말하는 폴더 개념, 클래스와 인터페이스의 집합&lt;/p&gt;
+
+&lt;p&gt;협업하면서 같은 클래스 이름이 충돌할 때, 패키지라는 계층구조로 문제를 해결할 수 있음&lt;/p&gt;
+
+&lt;p&gt;패키지 안에는 패키지를 포함할 수 있고, dot(.)으로 구분한다&lt;/p&gt;
+
+&lt;p&gt;패키지는 모든 자바파일의 첫 줄에 작성&lt;/p&gt;
+
+&lt;p&gt;패키지의 경로가 전체 작성이 되어야함&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;day1206&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;import&quot;&gt;import&lt;/h3&gt;
+
+&lt;p&gt;다른 패키지에 있는 클래스를 현재 클래스에서 사용하기 위한 기능&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;javalang&quot;&gt;Java.lang&lt;/h3&gt;
+
+&lt;p&gt;자바에서는 우리가 자주 사용하는 것들을 좀 더 편하게 사용할 수 있도록 지원&lt;/p&gt;
+
+&lt;p&gt;이 패키지 안에 있는 내용은 자료형, 자주사용하는 값들을 미리 다 생성&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.lang.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//생략된 채로 import 되어있음&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">Java - Static / Constructor</title><link href="https://spongebob53.github.io/lecture-static_constructor" rel="alternate" type="text/html" title="Java - Static / Constructor" /><published>2021-12-01T18:00:00+09:00</published><updated>2021-12-01T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-static_constructor</id><content type="html" xml:base="https://spongebob53.github.io/lecture-static_constructor">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;15일차-수업&quot;&gt;15일차 수업&lt;/h2&gt;
@@ -259,6 +964,11 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;14일차-수업&quot;&gt;14일차 수업&lt;/h2&gt;
@@ -498,6 +1208,11 @@
   &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;13일차-수업&quot;&gt;13일차 수업&lt;/h2&gt;
@@ -812,695 +1527,4 @@
     &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myObj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// Create an object of Main&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;myObj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;myPublicMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// Call the public method on the object&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">W3schools - Method</title><link href="https://spongebob53.github.io/w3schools-method" rel="alternate" type="text/html" title="W3schools - Method" /><published>2021-11-25T18:00:00+09:00</published><updated>2021-11-25T18:00:00+09:00</updated><id>https://spongebob53.github.io/w3schools-method</id><content type="html" xml:base="https://spongebob53.github.io/w3schools-method">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  W3schools은 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;java-methods&quot;&gt;Java Methods&lt;/h3&gt;
-
-&lt;p&gt;Is a block of code which only runs when it is called&lt;/p&gt;
-
-&lt;p&gt;Can pass data, known as parameters, into a method&lt;/p&gt;
-
-&lt;p&gt;Be used to perform certain actions, known as functions&lt;/p&gt;
-
-&lt;p&gt;Why use method? To reuse code&lt;/p&gt;
-
-&lt;h3 id=&quot;create-method&quot;&gt;Create method&lt;/h3&gt;
-
-&lt;p&gt;Must be declared within a class&lt;/p&gt;
-
-&lt;p&gt;It is defined with the name of the method, followed by parentheses&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;codeblock&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;static&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;means that the method belongs to the Main class&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;void&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;means that this method does not have a return value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;myMethod&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;name of method&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;call-method&quot;&gt;Call method&lt;/h3&gt;
-
-&lt;p&gt;Write the method’s name followed by two parentheses and semicolon&lt;/p&gt;
-
-&lt;p&gt;Can also be called multiple time&lt;/p&gt;
-
-&lt;h3 id=&quot;java-method-parameters&quot;&gt;Java method parameters&lt;/h3&gt;
-
-&lt;p&gt;Information can be passed to methods as parameter&lt;/p&gt;
-
-&lt;p&gt;parameters act as variables inside the method&lt;/p&gt;
-
-&lt;p&gt;parameters are specified after the method name, inside the parentheses&lt;/p&gt;
-
-&lt;p&gt;Can add as many parameters as you want, just separate them with a comma&lt;/p&gt;
-
-&lt;p&gt;when a parameter is passed to the method, it is called an argument&lt;/p&gt;
-
-&lt;p&gt;when multiple parameters&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;the method call must have the same number of arguments as there are parameters and the arguments must be passed in the same order&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;return&quot;&gt;Return&lt;/h3&gt;
-
-&lt;p&gt;“void” keyword indicates that the method should not return a value&lt;/p&gt;
-
-&lt;p&gt;if you want the method to return a value, use a primitive data type(int char…) instead of void
-and use the “return” keyword inside the method&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;method-overloading&quot;&gt;Method overloading&lt;/h3&gt;
-
-&lt;p&gt;with method overloading, multiple methods can have the same name with different parameters&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;scope&quot;&gt;Scope&lt;/h3&gt;
-
-&lt;p&gt;In java, variable are only accessible inside the region they are created&lt;/p&gt;
-
-&lt;p&gt;method scope&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;variables declared directly inside a method are available anywhere in the method&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;block scope&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;variables declared inside blocks of code are only accessible by the code&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;between the curly braces, which follows the line in which the variable was declared&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;it can belong to an if, while, or for statement.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;In the case of for statements&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;variables declared in the statement itself are also available inside the block’s scope&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;recursion&quot;&gt;Recursion&lt;/h3&gt;
-
-&lt;p&gt;Is the technique of making a function call itself.&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">Java - Method</title><link href="https://spongebob53.github.io/lecture-method" rel="alternate" type="text/html" title="Java - Method" /><published>2021-11-25T18:00:00+09:00</published><updated>2021-11-25T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-method</id><content type="html" xml:base="https://spongebob53.github.io/lecture-method">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture는 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;12일차-수업&quot;&gt;12일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;p&gt;요구사항 : 사용자에게 학생의 과목 점수를 취합하여
-개인별 과목 점수와 총점, 과목별 학생들의 합계를 구하는 프로그램을 만들어 주세요&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;성적 취합 프로그램입니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;학생의 수를 입력해주세요&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;과목의 수를 입력해주세요&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;번째 과목을 입력해주세요&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;subject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;번째 학생의 점수를 입력합니다.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; 점수를 입력해주세요&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;sc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;총점&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;합계&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalsum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;totalsum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalsum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subsum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;student&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;subsum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subsum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;번 \t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subjectNum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getScore&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;12일차-수업-1&quot;&gt;12일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;절차지향-프로그래밍&quot;&gt;절차지향 프로그래밍&lt;/h3&gt;
-
-&lt;p&gt;상단에서 하단으로 작성&lt;/p&gt;
-
-&lt;p&gt;만약에 같은 코드가 필요하면 다시 작성&lt;/p&gt;
-
-&lt;p&gt;대표적인 언어 : C 언어&lt;/p&gt;
-
-&lt;p&gt;실행 순서가 정해져 있어서 코드의 순서가 바뀌면 결과가 달라진다&lt;/p&gt;
-
-&lt;p&gt;장점 : “순서” o “절차”가 컴퓨터의 처리 구조와 비슷해서 실행속도가 빠름&lt;/p&gt;
-
-&lt;p&gt;단점 : 개발할 때는 좋은데 수정할 때 어렵다&lt;/p&gt;
-
-&lt;h3 id=&quot;객체지향-프로그래밍&quot;&gt;객체지향 프로그래밍&lt;/h3&gt;
-
-&lt;p&gt;“객체”라는 것을 이용해서 프로그래밍을 하겠다&lt;/p&gt;
-
-&lt;p&gt;OOP(Object Orientied Programming)&lt;/p&gt;
-
-&lt;p&gt;대표적인 언어 : Java, Python&lt;/p&gt;
-
-&lt;p&gt;객체 : 코드의 블록(“{ }”로 감싸진 ( ex) for, if문 ), 열심히 생각해봐야하는 단어&lt;/p&gt;
-
-&lt;p&gt;블록마다 역할을 부여하고 설계하면&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;블록을 사용하여 알맞은 공간에 넣기도 하고, 모양도 변형할 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;언어에서 지원하는 기능을 사용해야하기 때문에 “문법” 배워야함&lt;/p&gt;
-
-&lt;p&gt;“문법”을 이용해 “설계”까지 나아가는 것이 목표&lt;/p&gt;
-
-&lt;h3 id=&quot;캡슐화부품화&quot;&gt;캡슐화(부품화)&lt;/h3&gt;
-
-&lt;p&gt;부품화하는 과정 : 문법&lt;/p&gt;
-
-&lt;p&gt;부품을 재조립하는 과정 : 설계&lt;/p&gt;
-
-&lt;p&gt;적당한 부품화가 제일 중요&lt;/p&gt;
-
-&lt;p&gt;메소드 : 연관된 부품끼리 사용하는 것들을 그룹핑(그룹화 한다)&lt;/p&gt;
-
-&lt;p&gt;부품은 내부코드를 몰라도 누구나 사용할 수 있어야함&lt;/p&gt;
-
-&lt;p&gt;인터페이스 : 서로 다른 부품이지만 연결할 때 만큼은 둘 다 호환이 되어야 한다&lt;/p&gt;
-
-&lt;p&gt;객체를 규격화, 표준화 한다&lt;/p&gt;
-
-&lt;h3 id=&quot;메소드&quot;&gt;메소드&lt;/h3&gt;
-
-&lt;p&gt;프로그래밍 할 때 가장 작은 단위(java 파일 내에서 실행되는 가장 작은 단위)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;윈도우운영체제 &amp;gt; 폴더 &amp;gt; 파일 &amp;gt; 파일내용&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;자바프로젝트 &amp;gt; 패키지 &amp;gt; 클래스 &amp;gt; 메소드&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;메소드 안에서는 변수선언, 제어문 작성, 배열 작성 등 프로그래밍을 구현하는 문장들의 묶음&lt;/p&gt;
-
-&lt;p&gt;반복적으로 사용하기 위한 프로그래밍 : 메소드 단위 작성&lt;/p&gt;
-
-&lt;p&gt;문제가 발생하면 해당 메소드로 가서 유지보수&lt;/p&gt;
-
-&lt;p&gt;기능을 찾기 위해서 main 메소드 내부를 찾을 필요가 없어 가독성 상승&lt;/p&gt;
-
-&lt;p&gt;컴파일(실행)을 할 때 컴퓨터가 클래스 밑에 있는 모든 메소드를 가장 먼저 생성&lt;/p&gt;
-
-&lt;p&gt;구조&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;접근제어자 반환타입 메소드이름(매개변수) { }&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;접근제어자, 매개변수 생략가능&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;반환타입, 메소드이름 필수&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;public static void test(){ 코드 블록 }&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;선언부 : class { } 안에 작성하며, 다른 메소드 안에 작성하지 못한다&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;접근 제어자 : public&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;해당 메소드를 접근할 수 있는 범위(클래스, 패키지 등등)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;반환타입 : void&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;p&gt;메소드도 프로그램이기 때문에 실행, 종료가 있음&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;종료했을 때 반환되는 데이터의 타입&lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;메소드 이름 : test&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;변수처럼 메소드를 호출할 때 사용&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;매개변수목록 : ( ) 괄호 안의 값&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;메소드가 호출 될 때 메소드에서 사용할 값의 변수들&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;{ } 중괄호로 마무리&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;구현하는 부분&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;호출하기&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;메소드 이름();&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;클래스 안 메소드 중에 가장 먼저 실행되는 메소드&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;java 파일 내에 main 메소드가 없으면 실행하지 못함&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;main 안에서 호출해야 실행 가능&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;매개변수--메소드에서-사용할-변수-파라미터&quot;&gt;매개변수 : 메소드에서 사용할 변수, 파라미터&lt;/h3&gt;
-
-&lt;p&gt;메소드 이름(argument(인자));&lt;/p&gt;
-
-&lt;p&gt;인자는 메소드에서도 정의가 되어있어야함&lt;/p&gt;
-
-&lt;p&gt;매개변수 : 인자로 넘어올 값을 함수 내에서 사용하기 위한 변수로 미리 선언 하는 값&lt;/p&gt;
-
-&lt;p&gt;자료형과 변수 이름 작성해주면 매개변수 준비완료&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;numbering&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;limit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;매개변수가 2개 이상일 경우 각각 자료형과 변수명을 작성해주면 됨&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;각 매개변수간 구분은 쉼표(,)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;인자와 매개변수의 작성순서, 개수, 데이터 타입은 동일해야함&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">Java - Array3</title><link href="https://spongebob53.github.io/lecture-array3" rel="alternate" type="text/html" title="Java - Array3" /><published>2021-11-24T18:00:00+09:00</published><updated>2021-11-24T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-array3</id><content type="html" xml:base="https://spongebob53.github.io/lecture-array3">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture는 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;11일차-수업&quot;&gt;11일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;h3 id=&quot;배열&quot;&gt;배열&lt;/h3&gt;
-
-&lt;p&gt;변수도 똑같은 곳에서 저장해서 꺼내서 쓰고 싶을 때&lt;/p&gt;
-
-&lt;p&gt;배열 만드는 과정&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;자료형 &amp;gt; 출력문 &amp;gt; 제어문 &amp;gt; 배열&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;1 1 » 반복적으로 쓰기 싫다, 코드를 재사용하고싶다. - 등등&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;if, switch : 선택적 실행&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;for, while : 반복적 실행&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;내가 쓴 코드가 실행을 하지 않거나, 내가 쓴 코드가 반복되거나&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;한 변수에 “다수”의 값을 넣는 기술 : 여러번 &amp;gt; 반복적&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;배열 &amp;gt; 반복문을 같이 자주 사용한다&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;배열에 규칙적으로 값을 넣는다 » 반복문을 사용하여 배열의 시작부터 끝까지 값을 넣는다&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;배열 선언의 의미&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;지금부터 이곳에는 같은 자료형만 쓰일 것이다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;배열은 자료형으로 선언 » 배열도 자료형&lt;/p&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;11일차-수업-1&quot;&gt;11일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;다차원-배열&quot;&gt;다차원 배열&lt;/h3&gt;
-
-&lt;p&gt;2차원 배열 이상 배열을 의미, 배열의 값 속에 또 다른 배열을 가지는 배열&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;2차원 배열 : 배열의 값 속에 1차원 배열이 있는 배열&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;3차원 배열 : 배열의 값 속에 2차원 배열이 있는 배열&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;선언&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;int[][] arr = new int[행의 개수(세로)][열의 개수(가로)];&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2차원 배열 대입하면서 넣기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;뒤 숫자를 비우면 배열 안에 배열의 크기를 가변적으로 변경가능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][];&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;tips&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;배열에 넣을 값도 규칙만 있다면 반복문으로 대체 가능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;aarr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">Java - Array2</title><link href="https://spongebob53.github.io/lecture-array2" rel="alternate" type="text/html" title="Java - Array2" /><published>2021-11-22T18:00:00+09:00</published><updated>2021-11-22T18:00:00+09:00</updated><id>https://spongebob53.github.io/lecture-array2</id><content type="html" xml:base="https://spongebob53.github.io/lecture-array2">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture는 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;9일차-수업&quot;&gt;9일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;h3 id=&quot;제어문&quot;&gt;제어문&lt;/h3&gt;
-
-&lt;p&gt;프로그램의 흐름을 제어하기 위한 기능&lt;/p&gt;
-
-&lt;p&gt;상단에서부터 하단으로 실행이되는데&lt;/p&gt;
-
-&lt;p&gt;조건문(if, switch)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;필요에 의해 조건을 사용하여 프로그램에서 실행할 문장을 제어&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;반복문(for, while)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;필요에 의해 반복을 사용하여 프로그램에서 중복된 코드를 작성하지 않아서 재사용성, 가독성 증가&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;배열&quot;&gt;배열&lt;/h3&gt;
-
-&lt;p&gt;자료형이 같은 값들을 묶은 변수, 연관된 정보를 그룹화한 것&lt;/p&gt;
-
-&lt;p&gt;(java특성) 자료형을 선언, 배열 속 값은 무조건 자료형이 같아야 함&lt;/p&gt;
-
-&lt;p&gt;(java특성) 배열을 선언할 때 무조건 크기를 할당 해야합니다.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;지정된 크기에는 항상 0, null 이라는 값으로 초기값이 존재&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;index(배열의 순서)는 항상 0부터 시작한다&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;배열 속 각각의 값을 호출하기 위해서는 인덱스번호로 지정을 해야함&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;배열의 요소 : 배열에 담긴 값(배열을 선언할 때 사용한 자료형과 동일)&lt;/p&gt;
-
-&lt;p&gt;배열의 길이,크기 : 배열의 마지막 인덱스까지의 개수(초기에 선언한 크기)&lt;/p&gt;
-
-&lt;p&gt;배열의 입력받을 값에 대한 자료형, 크기를 무조건 지정해줘야한다&lt;/p&gt;
-
-&lt;p&gt;크기를 보여주는 기능 : 배열 변수이름.length&lt;/p&gt;
-
-&lt;p&gt;배열과 반복문은 배부분 같이 쓰임(값 입력과 출력하는 과정이 반복되기 때문에)&lt;/p&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;9일차-수업-1&quot;&gt;9일차 수업&lt;/h2&gt;
-
-&lt;p&gt;sort : array 요소 정렬해주는 기능&lt;/p&gt;
-
-&lt;p&gt;요소 정렬 해보기&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;예시&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//임시변수&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;comLotto&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry></feed>
