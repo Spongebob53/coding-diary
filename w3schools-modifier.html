@@ -94,17 +94,17 @@
     <meta property="og:site_name" content="Coding Diary" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="W3schools - Modifier" />
-    <meta property="og:description" content="이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Method Class/Static Constructor Modifier Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes," />
+    <meta property="og:description" content="이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Method Class/Static Constructor Modifier Package Inheritance Modifier Public modifier keyword is an access modifier, meaning that it is used to set the access" />
     <meta property="og:url" content="https://spongebob53.github.io/w3schools-modifier" />
     <meta property="og:image" content="https://spongebob53.github.io/assets/built/images/background-w3schools.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-12-09T18:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-12-09T18:00:00+09:00" />
+    <meta property="article:published_time" content="2021-12-08T18:00:00+09:00" />
+    <meta property="article:modified_time" content="2021-12-08T18:00:00+09:00" />
     <meta property="article:tag" content="W3schools" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="W3schools - Modifier" />
-    <meta name="twitter:description" content="이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Method Class/Static Constructor Modifier Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes," />
+    <meta name="twitter:description" content="이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Method Class/Static Constructor Modifier Package Inheritance Modifier Public modifier keyword is an access modifier, meaning that it is used to set the access" />
     <meta name="twitter:url" content="https://spongebob53.github.io/" />
     <meta name="twitter:image" content="https://spongebob53.github.io/assets/built/images/background-w3schools.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -136,7 +136,7 @@
         "@type": "WebPage",
         "@id": "https://spongebob53.github.io/w3schools-modifier"
     },
-    "description": "이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Method Class/Static Constructor Modifier Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes,"
+    "description": "이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다 W3schools은 여러 파트로 구성되어 있습니다. Intro/Setup Syntax Variable Data Type Operator String/Math Conditional Loop Array Method Class/Static Constructor Modifier Package Inheritance Modifier Public modifier keyword is an access modifier, meaning that it is used to set the access"
 }
     </script>
 
@@ -219,7 +219,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime=" 9 December 2021"> 9 December 2021</time>
+                    <time class="post-full-meta-date" datetime=" 8 December 2021"> 8 December 2021</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -265,6 +265,9 @@ into the {body} of the default.hbs template -->
   <li><a href="./w3schools-method">Method</a></li>
   <li><a href="./w3schools-class_static">Class/Static</a></li>
   <li><a href="./w3schools-constructor">Constructor</a></li>
+  <li><a href="./w3schools-modifier">Modifier</a></li>
+  <li><a href="./w3schools-package">Package</a></li>
+  <li><a href="./w3schools-inheritance">Inheritance</a></li>
 </ul>
 
 <h3 id="modifier">Modifier</h3>
@@ -373,6 +376,64 @@ into the {body} of the default.hbs template -->
     <p>volatile : the value of an attribute is not cached thread-locally, and is always read from the “main memory”</p>
   </li>
 </ul>
+
+<h3 id="encapsulation">Encapsulation</h3>
+
+<p>Is to make sure that “sensitive” data is hidden from user</p>
+
+<ul>
+  <li>
+    <p>declare class variable/attributes as private</p>
+  </li>
+  <li>
+    <p>provide public “get” and “set” methods to access and update the value of a private variable</p>
+  </li>
+</ul>
+
+<h3 id="get-and-set">Get and Set</h3>
+
+<p>Private variables can only be accessed within the same class</p>
+
+<p>It is possible to access them if we provide public get and set methods</p>
+
+<p>get method</p>
+
+<ul>
+  <li>return the variable value</li>
+</ul>
+
+<p>set method</p>
+
+<ul>
+  <li>sets the value</li>
+</ul>
+
+<p>Syntax for both is that</p>
+
+<ul>
+  <li>start with either “get” or “set”, followed by the name of the variable with the first letter in upper case</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>		<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span><span class="o">{</span>
+			<span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+			<span class="c1">//getter</span>
+			<span class="kd">public</span> <span class="nc">String</span> <span class="nf">getName</span><span class="o">(){</span>
+				<span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+			<span class="o">}</span>
+			<span class="c1">//setter</span>
+			<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="nc">String</span> <span class="n">newName</span><span class="o">){</span>
+				<span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">newName</span><span class="o">;</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="why-encapsulation">Why encapsulation?</h3>
+
+<p>Better control of class attributes and methods</p>
+
+<p>Can change one part of the code without affecting other parts</p>
+
+<p>Increased security of data</p>
 
                 </div>
             </section>
@@ -491,6 +552,28 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/w3schools-inheritance">W3schools - Inheritance</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/w3schools-package">W3schools - Package</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                  
+                                
                                   
                                 
                                   
@@ -518,8 +601,6 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/w3schools-class_static">W3schools - Class/Static</a></li>
-                                        
                                     
                                   
                                 
@@ -528,8 +609,6 @@ into the {body} of the default.hbs template -->
                                   
                                     
                                         
-                                        
-                                            <li><a href="/w3schools-method">W3schools - Method</a></li>
                                         
                                     
                                   
@@ -626,7 +705,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/w3schools/">
                                 
-                                    See all 12 posts  →
+                                    See all 14 posts  →
                                 
                             </a>
                         </footer>
@@ -635,9 +714,6 @@ into the {body} of the default.hbs template -->
             
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
-            
-
-            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
 
@@ -689,6 +765,66 @@ AI 활용 응용 소프트웨어 개발자 양성 과정
                     
                     
                       1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/lecture-overloading_String">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/lecture-overloading_String">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Lecture</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Java - Overloading / String</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>이 페이지는 다음에 대한 공부 기록입니다
+
+JAVA(자바), Python(파이썬) 기반의
+
+AI 활용 응용 소프트웨어 개발자 양성 과정
+
+2021.11.10. ~ 2022.05.18.
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Spongebob53/">Spongebob53</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      2 min read
                     
                 </span>
             </footer>

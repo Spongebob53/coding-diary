@@ -8,7 +8,28 @@
     
       
       <item>
-        <title>W3schools - Modifier</title>
+        <title>W3schools - Inheritance</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 10 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-inheritance</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-inheritance</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Package</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
@@ -22,8 +43,8 @@
         
         <pubDate>Thu, 09 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-modifier</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-modifier</guid>
+        https://spongebob53.github.io/w3schools-package</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-package</guid>
       </item>
       
     
@@ -50,6 +71,27 @@
     
       
       <item>
+        <title>W3schools - Modifier</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 08 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-modifier</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-modifier</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Overloading / String</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -66,6 +108,36 @@
         <link>
         https://spongebob53.github.io/lecture-overloading_String</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-overloading_String</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>note - 1차 프로젝트(4조) 리뷰</title>
+        
+          <description>&lt;p&gt;프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 07 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/note-1project4</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/note-1project4</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>note - 1차 프로젝트(1조) 리뷰</title>
+        
+          <description>&lt;p&gt;프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 06 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/note-1project1</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/note-1project1</guid>
       </item>
       
     
@@ -162,8 +234,8 @@
         
         <pubDate>Sat, 27 Nov 2021 22:40:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/note-test</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-test</guid>
+        https://spongebob53.github.io/note-test-copy</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/note-test-copy</guid>
       </item>
       
     
