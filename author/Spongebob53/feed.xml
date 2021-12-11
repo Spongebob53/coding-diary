@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-11T12:27:02+09:00</updated>
+  <updated>2021-12-11T19:53:01+09:00</updated>
   <id>https://spongebob53.github.io/author/Spongebob53/feed.xml</id>
 
   
@@ -546,232 +546,6 @@
     </entry>
   
     <entry>
-      <title type="html">W3schools - Modifier</title>
-      <link href="https://spongebob53.github.io/w3schools-modifier" rel="alternate" type="text/html" title="W3schools - Modifier" />
-      <published>2021-12-08T18:00:00+09:00</published>
-      <updated>2021-12-08T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-modifier</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-modifier">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  W3schools은 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;modifier&quot;&gt;Modifier&lt;/h3&gt;
-
-&lt;p&gt;Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes, attributes, methods, and constructors&lt;/p&gt;
-
-&lt;p&gt;Divide modifiers into two groups&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Access modifiers&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;controls the access level&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Non-access modifiers&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;don’t control access level, but provides other functionality&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;access-modifier&quot;&gt;Access modifier&lt;/h3&gt;
-
-&lt;p&gt;For class&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;public : accessible by any other class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;default 　: accessible by classes in the same package&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;if you don’t specify a modifier&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For attribute, method, constructor&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;public : accessible for all classes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;private : only accessible within the declared class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;default : only accessible in the same package&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;protected : the code is a accessible in the same package and subclasses&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;non-access-modifier&quot;&gt;Non-access modifier&lt;/h3&gt;
-
-&lt;p&gt;For class&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;final : the class can’t be inherited by other classes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;abstract : the class can’t be used to create objects&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;to access an abstract class, it must be inherited from another class&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For attribute, method&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;final : Can’t be overridden/modified&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;static : belongs to the class, rather than an object&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;abstract : can only be used in an abstract class, and can only be used on methods&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;the method doesn’t have a body, the body is provided by the subclass&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;transient : be skipped when serializing the object containing them&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;synchronized : methods can only be accessed by one thread at a time&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;volatile : the value of an attribute is not cached thread-locally, and is always read from the “main memory”&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;encapsulation&quot;&gt;Encapsulation&lt;/h3&gt;
-
-&lt;p&gt;Is to make sure that “sensitive” data is hidden from user&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;declare class variable/attributes as private&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;provide public “get” and “set” methods to access and update the value of a private variable&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;get-and-set&quot;&gt;Get and Set&lt;/h3&gt;
-
-&lt;p&gt;Private variables can only be accessed within the same class&lt;/p&gt;
-
-&lt;p&gt;It is possible to access them if we provide public get and set methods&lt;/p&gt;
-
-&lt;p&gt;get method&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;return the variable value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;set method&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sets the value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Syntax for both is that&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;start with either “get” or “set”, followed by the name of the variable with the first letter in upper case&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//getter&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//setter&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;why-encapsulation&quot;&gt;Why encapsulation?&lt;/h3&gt;
-
-&lt;p&gt;Better control of class attributes and methods&lt;/p&gt;
-
-&lt;p&gt;Can change one part of the code without affecting other parts&lt;/p&gt;
-
-&lt;p&gt;Increased security of data&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">note - 1차 프로젝트(6조) 리뷰</title>
       <link href="https://spongebob53.github.io/note-1project6" rel="alternate" type="text/html" title="note - 1차 프로젝트(6조) 리뷰" />
       <published>2021-12-08T18:00:00+09:00</published>
@@ -779,10 +553,8 @@
       <id>https://spongebob53.github.io/note-1project6</id>
       <content type="html" xml:base="https://spongebob53.github.io/note-1project6">&lt;p&gt;프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰&lt;/p&gt;
 
-&lt;p&gt;6조 선택 이유 - 도전적인 주제로 두근거리게 했다! 보자마자 이 프로젝트는 꼭 뜯어보고 싶었다&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;6조 선택 이유 - 도전적인 주제로 두근거리게 했다!
+보자마자 이 프로젝트는 꼭 뜯어보고 싶었다&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;comsleep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
@@ -1145,6 +917,232 @@
     </entry>
   
     <entry>
+      <title type="html">W3schools - Modifier</title>
+      <link href="https://spongebob53.github.io/w3schools-modifier" rel="alternate" type="text/html" title="W3schools - Modifier" />
+      <published>2021-12-08T18:00:00+09:00</published>
+      <updated>2021-12-08T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/w3schools-modifier</id>
+      <content type="html" xml:base="https://spongebob53.github.io/w3schools-modifier">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  W3schools은 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;modifier&quot;&gt;Modifier&lt;/h3&gt;
+
+&lt;p&gt;Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes, attributes, methods, and constructors&lt;/p&gt;
+
+&lt;p&gt;Divide modifiers into two groups&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Access modifiers&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;controls the access level&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Non-access modifiers&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;don’t control access level, but provides other functionality&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;access-modifier&quot;&gt;Access modifier&lt;/h3&gt;
+
+&lt;p&gt;For class&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;public : accessible by any other class&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;default 　: accessible by classes in the same package&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;if you don’t specify a modifier&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For attribute, method, constructor&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;public : accessible for all classes&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;private : only accessible within the declared class&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;default : only accessible in the same package&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;protected : the code is a accessible in the same package and subclasses&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;non-access-modifier&quot;&gt;Non-access modifier&lt;/h3&gt;
+
+&lt;p&gt;For class&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;final : the class can’t be inherited by other classes&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;abstract : the class can’t be used to create objects&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;to access an abstract class, it must be inherited from another class&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For attribute, method&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;final : Can’t be overridden/modified&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;static : belongs to the class, rather than an object&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;abstract : can only be used in an abstract class, and can only be used on methods&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;the method doesn’t have a body, the body is provided by the subclass&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;transient : be skipped when serializing the object containing them&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;synchronized : methods can only be accessed by one thread at a time&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;volatile : the value of an attribute is not cached thread-locally, and is always read from the “main memory”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;encapsulation&quot;&gt;Encapsulation&lt;/h3&gt;
+
+&lt;p&gt;Is to make sure that “sensitive” data is hidden from user&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;declare class variable/attributes as private&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;provide public “get” and “set” methods to access and update the value of a private variable&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;get-and-set&quot;&gt;Get and Set&lt;/h3&gt;
+
+&lt;p&gt;Private variables can only be accessed within the same class&lt;/p&gt;
+
+&lt;p&gt;It is possible to access them if we provide public get and set methods&lt;/p&gt;
+
+&lt;p&gt;get method&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;return the variable value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;set method&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sets the value&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Syntax for both is that&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;start with either “get” or “set”, followed by the name of the variable with the first letter in upper case&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;c1&quot;&gt;//getter&lt;/span&gt;
+			&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;c1&quot;&gt;//setter&lt;/span&gt;
+			&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;why-encapsulation&quot;&gt;Why encapsulation?&lt;/h3&gt;
+
+&lt;p&gt;Better control of class attributes and methods&lt;/p&gt;
+
+&lt;p&gt;Can change one part of the code without affecting other parts&lt;/p&gt;
+
+&lt;p&gt;Increased security of data&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">note - 1차 프로젝트(4조) 리뷰</title>
       <link href="https://spongebob53.github.io/note-1project4" rel="alternate" type="text/html" title="note - 1차 프로젝트(4조) 리뷰" />
       <published>2021-12-07T18:00:00+09:00</published>
@@ -1226,6 +1224,300 @@ E_FirstFloor.java
 &lt;p&gt;이런 분들의 지식이 점점 더 늘어나면 어떤 결과가 나올지 기대된다!&lt;/p&gt;
 
 &lt;p&gt;앞으로도 보고 배울게 많은 분들이라 생각한다&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="note" />
+      
+
+      
+        <summary type="html">프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Portfolio - Java Game</title>
+      <link href="https://spongebob53.github.io/portfolio-java_game" rel="alternate" type="text/html" title="Portfolio - Java Game" />
+      <published>2021-12-06T18:00:00+09:00</published>
+      <updated>2021-12-06T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/portfolio-java_game</id>
+      <content type="html" xml:base="https://spongebob53.github.io/portfolio-java_game">&lt;p&gt;&lt;a href=&quot;https://github.com/Spongebob53/Project1-king_of_dungeon_master&quot;&gt;결과물&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/hansoo0724&quot;&gt;팀원 블로그 바로가기&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;프로젝트-기록&quot;&gt;프로젝트 기록&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;주제 : 자유롭게 게임 제작&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;주제선정-과정&quot;&gt;주제선정 과정&lt;/h3&gt;
+
+&lt;p&gt;의견 1 - 포커, 화투, 주사위 게임&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;반려 사유 – 사행성 게임으로 치중될 위험성이 높다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;의견 2 – 유희왕 카드&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;반려 사유 – 확률에만 의존하는 게임에, 프로젝트의 크기가 기한 대비 작다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;의견 3 – 메이플스토리&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;반려 사유 – 기능이 너무 많아 지금 실력으로 기한 내 구현 가능성이 낮다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;절충안 – TCG 장르와 RPG 장르의 진행방식을 합쳐보자,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;필수 구현항목과, 추후 업데이트 방식으로 구현할 항목을 나누어&lt;/li&gt;
+  &lt;li&gt;기한 내 구현 가능하도록 프로젝트의 안정성을 우선으로 하자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;개발-계획-수립&quot;&gt;개발 계획 수립&lt;/h3&gt;
+
+&lt;p&gt;필수 구현 항목을 기준으로, 전체 게임 스토리 제작과 진행방식을 정한 뒤 연관성이 높은 항목끼리 분류하고 class로 묶는다&lt;/p&gt;
+
+&lt;p&gt;각 class 별 난이도를 고려하여 역할 분담을 한다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;개발 속도가 비교적 낮은 팀원에게 개발 자유도가 높은 character 관련 class 배정, 전체적인 개발 속도 균형을 맞추고자 함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;개발 과정에서 구현하고자 하는 세부적인 정보들을 field로 선별하고&lt;/p&gt;
+
+&lt;p&gt;개발 시 효율성을 높이고, 위험성을 최소화 하고자 class와 field의 변수명을 같이 지음&lt;/p&gt;
+
+&lt;h3 id=&quot;사용자-정의서-작성&quot;&gt;사용자 정의서 작성&lt;/h3&gt;
+
+&lt;p&gt;게임 관련 배경 지식이 많은 팀원이 게임 내 세부 수치, 스토리 보드를 기반으로 작성하였고&lt;/p&gt;
+
+&lt;p&gt;다른 팀원이 전체 프로그램에 대한 flow chart를 작성, 초안 완성&lt;/p&gt;
+
+&lt;h3 id=&quot;개발-시작&quot;&gt;개발 시작&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dg, Boss class 담당 맡음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dg&quot;&gt;Dg&lt;/h3&gt;
+
+&lt;p&gt;main 메소드에서 흐름에 따라 코드 먼저 작성 후 연관된 변수, 기능에 따라 4개의 메소드(몹 설정, 몹 등장, 레벨업, 던전플레이)로 나누었음&lt;/p&gt;
+
+&lt;p&gt;static을 언제 사용해야하는지에 대해 개인적인 기준을 갖게 되었음&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;일단 무분별한 static은 지양하고,
+랜덤숫자 선택 메소드나, y/n 입력확인 메소드처럼 광범위하고 빈번하게 쓰일 경우 static이 더 나은 것 같다는 판단&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;혹은 유저네임처럼 변하지 않는 값, class간 이동이 잦은 필드의 경우 static을 사용했을 때 활용성이 높아 유용했음&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;파라미터의 수나 타입이 다른 같은 이름의 메소드를 만들 수도 있다는 걸 알게 됨&lt;/p&gt;
+
+&lt;p&gt;outer: 라벨링을 해주면 다중 반복문 사용시 편리함! 한번에 라벨링된 반복문까지 break, continue를 할 수 있음&lt;/p&gt;
+
+&lt;h3 id=&quot;boss&quot;&gt;Boss&lt;/h3&gt;
+
+&lt;p&gt;Dg 와 동일한 방식으로 코드를 먼저 작성하고, 보스플레이, 결투, 승리, 패배 4가지의 class로 나눔&lt;/p&gt;
+
+&lt;p&gt;필드를 변수에 담고 변수를 변경시에 변경값은 필드에 반영되지 않는다는 것을 알게 됨&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;여러 메소드의 이부분에서 에러가 발생하였고, 주의가 필요한 작업인 듯함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;메소드의 파라미터 값이 많거나, return값이 많으면 array로 대체하는 것도 괜찮은 방법같고,&lt;/p&gt;
+
+&lt;p&gt;여러값을 return 할수 있는 class를 따로 만들어 사용하는 방법도 있음&lt;/p&gt;
+
+&lt;h3 id=&quot;프로젝트-후기&quot;&gt;프로젝트 후기&lt;/h3&gt;
+
+&lt;p&gt;처음부터 목표는 “좋은 결과”가 아닌 “좋은 과정”을 삼았음&lt;/p&gt;
+
+&lt;p&gt;퀄리티 높은 결과물보다 협업을 통한 프로젝트 과정을 중요시함&lt;/p&gt;
+
+&lt;p&gt;협업이 목표가 아니라면 자바의 객체지향성이란 메리트를 온전히 이용하지 못한다고 생각했기 때문에.&lt;/p&gt;
+
+&lt;p&gt;객체 지향성이란 성격을 최대한으로 이용하기 위해서 클래스와 메소드, 필드를 나누고 변수 이름을 작업 시작 전에 팀원과 같이 결정함&lt;/p&gt;
+
+&lt;p&gt;의도했던 바와 같이 실제 각 팀원의 개발 속도, 내용과 무관하게 프로그램 속에 개개인의 개성이 담긴 코드를 녹여낼 수 있었고,&lt;/p&gt;
+
+&lt;p&gt;최종본을 만들 때에도 각자 맡은 서로의 클래스에 호출을 통해 이어주는 몇 번의 작업으로 통합 작업을 끝낼 수 있었음&lt;/p&gt;
+
+&lt;p&gt;“객체지향”의 장점이 너무나도 돋보이는 기회였음&lt;/p&gt;
+
+&lt;p&gt;왜 자바를 많이 이용하는지 깨닫게 됨&lt;/p&gt;
+
+&lt;p&gt;처음부터 큰 크림에 복잡하거나 조급하지 않아 하드코딩을 하지 않게 되고,&lt;/p&gt;
+
+&lt;p&gt;오류가 나도 프로그램 전체가 아닌 메소드, 필드 단위의 확인 절차에 디버깅 시간도 단축되고,&lt;/p&gt;
+
+&lt;p&gt;무엇보다 “객체”를 이용하면 프로그램의 확장성이 좋아 아이디어를 구현하기 최적화된 환경이라 생각됨&lt;/p&gt;
+
+&lt;h3 id=&quot;kpt&quot;&gt;KPT&lt;/h3&gt;
+
+&lt;p&gt;Keep&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;구현할 프로그램의 로직을 짜고&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;클래스별 역할 분담을 하고&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;코드작성 전 클래스와 필드명을 팀원과 같이 짓는다&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Problem&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;최종 제출까지 시간이 얼마 남지 않았을 때, 오류 수정 과정에서 일방적으로 진행했던 잘못을 저질렀다&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;팀원 간의 불화가 있을 가능성이 높았고, 팀원의 노력에 대한 부분을 충분히 고려하지 못했다&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Try&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;다행이 운이 좋아서 큰 불화가 없었지만, 다른 팀의 갈등과정을 지켜보며 개발 시작 전에 서로 간 지켜야할 점들을 토의하고 시작해봐야겠다&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="portfolio" />
+      
+
+      
+        <summary type="html">결과물</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">note - 1차 프로젝트(1조) 리뷰</title>
+      <link href="https://spongebob53.github.io/note-1project1" rel="alternate" type="text/html" title="note - 1차 프로젝트(1조) 리뷰" />
+      <published>2021-12-06T18:00:00+09:00</published>
+      <updated>2021-12-06T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/note-1project1</id>
+      <content type="html" xml:base="https://spongebob53.github.io/note-1project1">&lt;p&gt;프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰&lt;/p&gt;
+
+&lt;p&gt;1조 선택 이유 - “JAVA의 탑” 이라는 아이디어가 너무 마음에 들었다&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/PostList.naver?blogId=xdo19&quot;&gt;1조 팀원1 블로그 가기&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start_game&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Q : ““을 입력한 이유가 있나? 아래 예시가 더 깔끔하지 않나?&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start_game&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A : 제 코드를 조원분께 이해시켜야 했기 때문에 가독성을 늘리고 더 명확한 해설이 되었으면 해서 이렇게 작성했습니다&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Q : if 와 switch의 조건이 동일해 보이는데 2중으로 사용한 이유가 있을까?&lt;/p&gt;
+
+&lt;p&gt;A : 저도 못찾아낸 허점..&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(;;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Q : 랜덤값 추출 시 중복 제거에 대한 접근법이 쉽고 간단해서 좋았다!&lt;/p&gt;
+
+&lt;p&gt;A : 두가지 변수의 중복제거이기 때문에 가능했고, 변수가 많았다면 어려웠을 것이라 생각합니다&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;stage1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Qz&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Qz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;문제 난이도 조절도 구현 했으면 좋겠다 라는 생각이 들었는데, 문제 출현 빈도를 통해서 난이도를 구현했다! 또다른 기발한 방법&lt;/p&gt;
+
+&lt;p&gt;Q : Scanner 인스턴스가 절반 이상의 클래스에서 생성 되고 있는데 static 변수로 활용하면 편하지 않을까?&lt;/p&gt;
+
+&lt;p&gt;A : 최대한 static을 사용하지 말고 작성해보려 했고, 설계 단계에서 조금 더 힘을 쏟았다면 달라졌을 것이라 생각합니다&lt;/p&gt;
+
+&lt;p&gt;Q : 중간중간 입력값 확인 과정이 없는 부분은 아쉬웠다! 실행 중에 성급하게 입력하거나 오타로 죽는 경우가 다수 발생 했다&lt;/p&gt;
+
+&lt;p&gt;A : 이런 처리가 가능하다는 것을 다른 메소드에서 보여주었기 때문에 굳이 해야하나? 라는 생각으로 넘겼습니다&lt;/p&gt;
+
+&lt;p&gt;Q : 코드별 주석이 있어서 이해하기 편했다, 다음 개발에 참고해야겠다&lt;/p&gt;
+
+&lt;p&gt;A : 가독성을 높이고 다른 사람에게 코드 이해를 쉽게 시켜주기 위함의 목적이 강했기 때문이라고 생각합니다&lt;/p&gt;
+
+&lt;h3 id=&quot;전체-후기&quot;&gt;전체 후기&lt;/h3&gt;
+
+&lt;p&gt;각 문제별 case를 지정해 사용자에게 출력을 해주는데, 문제 출력과 정답을 같은 배열에 넣어 반복되는 코드를 충분히 줄일 수 있을 것으로 보인다. 하드코딩이라 아쉬운 부분&lt;/p&gt;
+
+&lt;p&gt;플레이어도, 개발자도 JAVA에 대해 공부할 수 있는 컨텐츠를 제작했다
+지금의 우리에게 가장 최고의 선택이 될 수 있는 주제가 아닐까 하는 생각이 들었고,
+아이디어와 열정이 돋보여 기회가 된다면 이런 열정을 같이 쏟아보고싶다&lt;/p&gt;
+
+&lt;p&gt;잘 사용하지 않는 변수, 코드의 나열 방식, 개성이 돋보이는 주석, 특히 인스턴스가 코드 중간중간, 사전에 선언해서 준비한게 아닌, 꼭 필요한 순간에 생성이 된다는 점에서 코드 전체를 파악한 누군가가 대부분의 코드를 작성했다는 느낌이 들었다&lt;/p&gt;
+
+&lt;p&gt;비난하고자 하는 의미가 아니라, 같은 기간 동안 프로젝트를 진행해왔던 학생의 입장에서 이 프로젝트에 참여한 각 팀원들의 입장에 모두 공감이 되어 안쓰러웠다&lt;/p&gt;</content>
 
       
       
@@ -1474,216 +1766,6 @@ E_FirstFloor.java
 
       
         <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">note - 1차 프로젝트(1조) 리뷰</title>
-      <link href="https://spongebob53.github.io/note-1project1" rel="alternate" type="text/html" title="note - 1차 프로젝트(1조) 리뷰" />
-      <published>2021-12-06T18:00:00+09:00</published>
-      <updated>2021-12-06T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/note-1project1</id>
-      <content type="html" xml:base="https://spongebob53.github.io/note-1project1">&lt;p&gt;프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰&lt;/p&gt;
-
-&lt;p&gt;1조 선택 이유 - “JAVA의 탑” 이라는 아이디어가 너무 마음에 들었다&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/PostList.naver?blogId=xdo19&quot;&gt;1조 팀원1 블로그 가기&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start_game&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Q : ““을 입력한 이유가 있나? 아래 예시가 더 깔끔하지 않나?&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start_game&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A : 제 코드를 조원분께 이해시켜야 했기 때문에 가독성을 늘리고 더 명확한 해설이 되었으면 해서 이렇게 작성했습니다&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_sel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Q : if 와 switch의 조건이 동일해 보이는데 2중으로 사용한 이유가 있을까?&lt;/p&gt;
-
-&lt;p&gt;A : 저도 못찾아낸 허점..&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(;;){&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;r2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Q : 랜덤값 추출 시 중복 제거에 대한 접근법이 쉽고 간단해서 좋았다!&lt;/p&gt;
-
-&lt;p&gt;A : 두가지 변수의 중복제거이기 때문에 가능했고, 변수가 많았다면 어려웠을 것이라 생각합니다&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;stage1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Qz&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Qz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;문제 난이도 조절도 구현 했으면 좋겠다 라는 생각이 들었는데, 문제 출현 빈도를 통해서 난이도를 구현했다! 또다른 기발한 방법&lt;/p&gt;
-
-&lt;p&gt;Q : Scanner 인스턴스가 절반 이상의 클래스에서 생성 되고 있는데 static 변수로 활용하면 편하지 않을까?&lt;/p&gt;
-
-&lt;p&gt;A : 최대한 static을 사용하지 말고 작성해보려 했고, 설계 단계에서 조금 더 힘을 쏟았다면 달라졌을 것이라 생각합니다&lt;/p&gt;
-
-&lt;p&gt;Q : 중간중간 입력값 확인 과정이 없는 부분은 아쉬웠다! 실행 중에 성급하게 입력하거나 오타로 죽는 경우가 다수 발생 했다&lt;/p&gt;
-
-&lt;p&gt;A : 이런 처리가 가능하다는 것을 다른 메소드에서 보여주었기 때문에 굳이 해야하나? 라는 생각으로 넘겼습니다&lt;/p&gt;
-
-&lt;p&gt;Q : 코드별 주석이 있어서 이해하기 편했다, 다음 개발에 참고해야겠다&lt;/p&gt;
-
-&lt;p&gt;A : 가독성을 높이고 다른 사람에게 코드 이해를 쉽게 시켜주기 위함의 목적이 강했기 때문이라고 생각합니다&lt;/p&gt;
-
-&lt;h3 id=&quot;전체-후기&quot;&gt;전체 후기&lt;/h3&gt;
-
-&lt;p&gt;각 문제별 case를 지정해 사용자에게 출력을 해주는데, 문제 출력과 정답을 같은 배열에 넣어 반복되는 코드를 충분히 줄일 수 있을 것으로 보인다. 하드코딩이라 아쉬운 부분&lt;/p&gt;
-
-&lt;p&gt;플레이어도, 개발자도 JAVA에 대해 공부할 수 있는 컨텐츠를 제작했다
-지금의 우리에게 가장 최고의 선택이 될 수 있는 주제가 아닐까 하는 생각이 들었고,
-아이디어와 열정이 돋보여 기회가 된다면 이런 열정을 같이 쏟아보고싶다&lt;/p&gt;
-
-&lt;p&gt;잘 사용하지 않는 변수, 코드의 나열 방식, 개성이 돋보이는 주석, 특히 인스턴스가 코드 중간중간, 사전에 선언해서 준비한게 아닌, 꼭 필요한 순간에 생성이 된다는 점에서 코드 전체를 파악한 누군가가 대부분의 코드를 작성했다는 느낌이 들었다&lt;/p&gt;
-
-&lt;p&gt;비난하고자 하는 의미가 아니라, 같은 기간 동안 프로젝트를 진행해왔던 학생의 입장에서 이 프로젝트에 참여한 각 팀원들의 입장에 모두 공감이 되어 안쓰러웠다&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="note" />
-      
-
-      
-        <summary type="html">프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - Constructor</title>
-      <link href="https://spongebob53.github.io/w3schools-constructor" rel="alternate" type="text/html" title="W3schools - Constructor" />
-      <published>2021-12-01T18:00:00+09:00</published>
-      <updated>2021-12-01T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-constructor</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-constructor">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  W3schools은 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;constructors&quot;&gt;Constructors&lt;/h3&gt;
-
-&lt;p&gt;Is a special method that is used to initialize objects.&lt;/p&gt;
-
-&lt;p&gt;The constructor is called when an object of a class is called it can be used to set initial values for object attributes&lt;/p&gt;
-
-&lt;p&gt;Constructor name must match the class name, and can’t have a return type&lt;/p&gt;
-
-&lt;p&gt;All classes have constructors by default(if you do not create a class constructor yourself, java creates one for you, then, you are not able to set initial values for object attributes&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myObj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myObj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// output 5&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;parametersconstructor&quot;&gt;Parameters(Constructor)&lt;/h3&gt;
-
-&lt;p&gt;Can also take parameters, which is used to initialize attrubutes&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modelYear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modelName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;modelYear&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;modelName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1969&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Mustang&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;modelYear&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;modelName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//output 1969 Mustang&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
       
 
       

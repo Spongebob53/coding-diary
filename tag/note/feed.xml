@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/note/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-11T12:27:02+09:00</updated>
+  <updated>2021-12-11T19:53:01+09:00</updated>
   <id>https://spongebob53.github.io/tag/note/feed.xml</id>
 
   
@@ -39,10 +39,8 @@
       <id>https://spongebob53.github.io/note-1project6</id>
       <content type="html" xml:base="https://spongebob53.github.io/note-1project6">&lt;p&gt;프로젝트 발표중 인상 깊었던 세 팀에 대한 코드 리뷰&lt;/p&gt;
 
-&lt;p&gt;6조 선택 이유 - 도전적인 주제로 두근거리게 했다! 보자마자 이 프로젝트는 꼭 뜯어보고 싶었다&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;6조 선택 이유 - 도전적인 주제로 두근거리게 했다!
+보자마자 이 프로젝트는 꼭 뜯어보고 싶었다&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;comsleep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
