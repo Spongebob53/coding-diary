@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/portfolio/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-11T19:53:01+09:00</updated>
+  <updated>2021-12-12T18:52:17+09:00</updated>
   <id>https://spongebob53.github.io/tag/portfolio/feed.xml</id>
 
   
@@ -93,6 +93,10 @@
 &lt;p&gt;게임 관련 배경 지식이 많은 팀원이 게임 내 세부 수치, 스토리 보드를 기반으로 작성하였고&lt;/p&gt;
 
 &lt;p&gt;다른 팀원이 전체 프로그램에 대한 flow chart를 작성, 초안 완성&lt;/p&gt;
+
+&lt;h3 id=&quot;flow-chart&quot;&gt;flow-chart&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/built/images/project1-flow_chart.jpg&quot; alt=&quot;project1-flow_chart&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;개발-시작&quot;&gt;개발 시작&lt;/h3&gt;
 

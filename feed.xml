@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://spongebob53.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://spongebob53.github.io/" rel="alternate" type="text/html" /><updated>2021-12-11T19:53:01+09:00</updated><id>https://spongebob53.github.io/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">W3schools - Inheritance</title><link href="https://spongebob53.github.io/w3schools-inheritance" rel="alternate" type="text/html" title="W3schools - Inheritance" /><published>2021-12-10T18:00:00+09:00</published><updated>2021-12-10T18:00:00+09:00</updated><id>https://spongebob53.github.io/w3schools-inheritance</id><content type="html" xml:base="https://spongebob53.github.io/w3schools-inheritance">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://spongebob53.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://spongebob53.github.io/" rel="alternate" type="text/html" /><updated>2021-12-12T18:52:17+09:00</updated><id>https://spongebob53.github.io/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">W3schools - Inheritance</title><link href="https://spongebob53.github.io/w3schools-inheritance" rel="alternate" type="text/html" title="W3schools - Inheritance" /><published>2021-12-10T18:00:00+09:00</published><updated>2021-12-10T18:00:00+09:00</updated><id>https://spongebob53.github.io/w3schools-inheritance</id><content type="html" xml:base="https://spongebob53.github.io/w3schools-inheritance">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -1036,6 +1036,10 @@ E_FirstFloor.java
 &lt;p&gt;게임 관련 배경 지식이 많은 팀원이 게임 내 세부 수치, 스토리 보드를 기반으로 작성하였고&lt;/p&gt;
 
 &lt;p&gt;다른 팀원이 전체 프로그램에 대한 flow chart를 작성, 초안 완성&lt;/p&gt;
+
+&lt;h3 id=&quot;flow-chart&quot;&gt;flow-chart&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/built/images/project1-flow_chart.jpg&quot; alt=&quot;project1-flow_chart&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;개발-시작&quot;&gt;개발 시작&lt;/h3&gt;
 
