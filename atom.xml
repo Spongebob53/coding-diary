@@ -8,6 +8,84 @@
     
       
       <item>
+        <title>W3schools - Abstraction</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-abstraction</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-abstraction</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>note - 유용한 사이트</title>
+        
+          <description>&lt;h3 id=&quot;first-of-all&quot;&gt;First of all&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/note-link</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/note-link</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java - Interface / Try Catch</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-interface_trycatch</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-interface_trycatch</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java - Abstract / Interface</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 14 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-abstract_interface</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-abstract_interface</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>W3schools - Inheritance</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -121,8 +199,8 @@
         
         <pubDate>Wed, 08 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-overloading_String</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-overloading_String</guid>
+        https://spongebob53.github.io/lecture-overloading_string</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-overloading_string</guid>
       </item>
       
     

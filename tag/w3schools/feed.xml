@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-12T18:52:17+09:00</updated>
+  <updated>2021-12-16T07:10:25+09:00</updated>
   <id>https://spongebob53.github.io/tag/w3schools/feed.xml</id>
 
   
@@ -30,6 +30,164 @@
   
   
 
+  
+    <entry>
+      <title type="html">W3schools - Abstraction</title>
+      <link href="https://spongebob53.github.io/w3schools-abstraction" rel="alternate" type="text/html" title="W3schools - Abstraction" />
+      <published>2021-12-15T18:00:00+09:00</published>
+      <updated>2021-12-15T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/w3schools-abstraction</id>
+      <content type="html" xml:base="https://spongebob53.github.io/w3schools-abstraction">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  W3schools은 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;abstraction&quot;&gt;Abstraction&lt;/h3&gt;
+
+&lt;p&gt;Data abstraction is the process of hiding certain details and showing only essential information&lt;/p&gt;
+
+&lt;p&gt;Abstraction can be achived with either abstract class or interface&lt;/p&gt;
+
+&lt;p&gt;Why and when to use abstract class and method?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;to achive security&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;hide certain details and and only show the important details of an object&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;abstract&quot;&gt;Abstract&lt;/h3&gt;
+
+&lt;p&gt;Is a non-access modifier&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;abstract class is a restricted class that cannot be used to create object (it must be inherited from another class)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;it can have both abstract and regular methods&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;abstract method cans only be used in an abstract class, and it does not have a body&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;the body is provide by the subclass, must override it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Zzz&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pig&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pig&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wee&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;interface&quot;&gt;Interface&lt;/h3&gt;
+
+&lt;p&gt;Why and when to use interface?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“multiple inheritance”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Is a completely abstract class&lt;/p&gt;
+
+&lt;p&gt;To access the interface methods, the interface must be implemented(kinda like inherited) by another class with the “implements” keyword(instead of extends) the body of the interface method is provided by the “implement” class&lt;/p&gt;
+
+&lt;p&gt;Its methods are by default “abstract” and “public”&lt;/p&gt;
+
+&lt;p&gt;Its attributes are by default “public”, “static” and “final”&lt;/p&gt;
+
+&lt;p&gt;Cannot contain a constructor&lt;/p&gt;
+
+&lt;p&gt;To implement multiple interfaces, separate them with a comma&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FirstInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SecondInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myOtherMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DemoClass&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FirstInterface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SecondInterface&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pritnln&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myOtherMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;abstract-and-interface&quot;&gt;abstract and interface&lt;/h3&gt;
+
+&lt;p&gt;Can’t be used to create objects&lt;/p&gt;
+
+&lt;p&gt;Abstract method do not have a body, must override&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">W3schools - Inheritance</title>
@@ -64,6 +222,7 @@
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;inheritance&quot;&gt;Inheritance&lt;/h3&gt;
@@ -204,6 +363,7 @@
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;java-package--api&quot;&gt;Java Package &amp;amp; API&lt;/h3&gt;
@@ -358,6 +518,7 @@
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;modifier&quot;&gt;Modifier&lt;/h3&gt;
@@ -584,6 +745,7 @@
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;constructors&quot;&gt;Constructors&lt;/h3&gt;
@@ -687,6 +849,7 @@
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;oopobject-oriented-programming&quot;&gt;OOP(Object Oriented Programming)&lt;/h3&gt;
@@ -839,6 +1002,7 @@
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;java-methods&quot;&gt;Java Methods&lt;/h3&gt;
@@ -1034,6 +1198,7 @@ and use the “return” keyword inside the method&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;java-arrays&quot;&gt;Java Arrays&lt;/h3&gt;
@@ -1181,6 +1346,7 @@ and use the “return” keyword inside the method&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;java-while-loop&quot;&gt;Java while Loop&lt;/h3&gt;
@@ -1298,6 +1464,7 @@ and use the “return” keyword inside the method&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./w3schools-abstract&quot;&gt;Abstract&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;java-booleans&quot;&gt;Java Booleans&lt;/h3&gt;
@@ -1365,163 +1532,6 @@ and use the “return” keyword inside the method&lt;/p&gt;
   &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - String/Math</title>
-      <link href="https://spongebob53.github.io/w3schools-string_math" rel="alternate" type="text/html" title="W3schools - String/Math" />
-      <published>2021-11-17T18:00:00+09:00</published>
-      <updated>2021-11-17T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-string_math</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-string_math">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  W3schools은 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-intro_setup&quot;&gt;Intro/Setup&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-syntax&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-datatype&quot;&gt;Data Type&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-string_math&quot;&gt;String/Math&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-class_static&quot;&gt;Class/Static&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-constructor&quot;&gt;Constructor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-modifier&quot;&gt;Modifier&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./w3schools-inheritance&quot;&gt;Inheritance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;java-strings&quot;&gt;Java Strings&lt;/h3&gt;
-
-&lt;p&gt;Storing text&lt;/p&gt;
-
-&lt;p&gt;String variable contains a collection of characters&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;surrounded by double quotes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;actually, object&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;which contain method&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;that can perform certain operations on strings&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;method&quot;&gt;Method()&lt;/h3&gt;
-
-&lt;p&gt;length() length of a string&lt;/p&gt;
-
-&lt;p&gt;toUpperCase(), toLowerCase()&lt;/p&gt;
-
-&lt;p&gt;indexOf()&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;index of the first occurrence of a specified text in a string(including whitespace)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;concat() : concatenation(“+”)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ex) name.concat(lastName);&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;special-characters&quot;&gt;Special Characters&lt;/h3&gt;
-
-&lt;p&gt;Strings must be written within quotes&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Java misunderstand special characters&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Use backslash“\” escape character&lt;/p&gt;
-
-&lt;p&gt;5 other escape sequences&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;\n new line&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;\r carriage return&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;move cursor to the beginning of the string and overwrite&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;\t tab&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;\b backspace&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;\f form feed&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;was&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;great&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;meeting&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;was&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;great&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;metting&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;adding-numbers-and-strings&quot;&gt;Adding numbers and strings&lt;/h3&gt;
-
-&lt;p&gt;If you add a number and a string, the result will be a string concatenation&lt;/p&gt;
-
-&lt;h3 id=&quot;java-math&quot;&gt;Java Math&lt;/h3&gt;
-
-&lt;p&gt;Math.max(x,y) : find the highest value of x and y&lt;/p&gt;
-
-&lt;p&gt;min(x,y) : lowest&lt;/p&gt;
-
-&lt;p&gt;abs(x) : absolute&lt;/p&gt;
-
-&lt;p&gt;sqrt(x) : square root&lt;/p&gt;
-
-&lt;p&gt;random() : returns random number between 0.0(inclusive) ~ 1.0(exclusive)&lt;/p&gt;</content>
 
       
       
