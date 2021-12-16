@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-16T07:10:25+09:00</updated>
+  <updated>2021-12-16T23:38:23+09:00</updated>
   <id>https://spongebob53.github.io/tag/lecture/feed.xml</id>
 
   
@@ -30,6 +30,116 @@
   
   
 
+  
+    <entry>
+      <title type="html">Java - Throws</title>
+      <link href="https://spongebob53.github.io/lecture-throws" rel="alternate" type="text/html" title="Java - Throws" />
+      <published>2021-12-16T18:00:00+09:00</published>
+      <updated>2021-12-16T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/lecture-throws</id>
+      <content type="html" xml:base="https://spongebob53.github.io/lecture-throws">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
+  Lecture는 여러 파트로 구성되어 있습니다.
+&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;24일차-수업&quot;&gt;24일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;h3 id=&quot;인터페이스와-추상클래스&quot;&gt;인터페이스와 추상클래스&lt;/h3&gt;
+
+&lt;p&gt;자식클래스가 상속받아야 구현이 가능하고, 오버라이딩을 해야한다&lt;/p&gt;
+
+&lt;h3 id=&quot;예외처리&quot;&gt;예외처리&lt;/h3&gt;
+
+&lt;p&gt;try { — }catch(오류){ — } finally { — }&lt;/p&gt;
+
+&lt;p&gt;오류가 발생할 것을 예상하고 그 문장을 try 블록에 작성하여&lt;/p&gt;
+
+&lt;p&gt;오류가 발생하더라도 프로그램이 종료되지 않고 정상 진행되도록 하는 문장&lt;/p&gt;
+
+&lt;p&gt;Exception 클래스의 자식 클래스들로 많은 오류 타입들이 있다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;오류 타입 클래스를 상속받으면 새로운 이름의 예외처리 클래스를 만들 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;try 문에서 말하는 오류 : 오타가 아니라 실제 프로그램에서 발생하는 오류&lt;/p&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;24일차-수업-1&quot;&gt;24일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;runtimeexception&quot;&gt;RuntimeException&lt;/h3&gt;
+
+&lt;p&gt;실행 중에 오류가 발생할 수도 있고, 안할 수도 있고&lt;/p&gt;
+
+&lt;h3 id=&quot;exception&quot;&gt;Exception&lt;/h3&gt;
+
+&lt;p&gt;실행하기 전부터 에러날 것을 이미 예측 가능한 상태 =&amp;gt; 무조건 try catch 써야함&lt;/p&gt;
+
+&lt;h3 id=&quot;throws&quot;&gt;throws&lt;/h3&gt;
+
+&lt;p&gt;예외가 발생하면 예외를 뒤로 미룬다&lt;/p&gt;
+
+&lt;p&gt;메소드에서 발생한 예외를 호출한 메소드로 전달&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Java - Interface / Try Catch</title>
@@ -70,6 +180,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;23일차-수업&quot;&gt;23일차 수업&lt;/h2&gt;
@@ -231,6 +342,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;22일차-수업&quot;&gt;22일차 수업&lt;/h2&gt;
@@ -381,6 +493,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;19일차-수업&quot;&gt;19일차 수업&lt;/h2&gt;
@@ -603,6 +716,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;18일차-수업&quot;&gt;18일차 수업&lt;/h2&gt;
@@ -829,6 +943,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;16일차-수업&quot;&gt;16일차 수업&lt;/h2&gt;
@@ -1058,6 +1173,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;15일차-수업&quot;&gt;15일차 수업&lt;/h2&gt;
@@ -1268,6 +1384,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;14일차-수업&quot;&gt;14일차 수업&lt;/h2&gt;
@@ -1548,6 +1665,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;13일차-수업&quot;&gt;13일차 수업&lt;/h2&gt;
@@ -1814,6 +1932,7 @@
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;./lecture-throws&quot;&gt;Throws&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;12일차-수업&quot;&gt;12일차 수업&lt;/h2&gt;
@@ -2090,179 +2209,6 @@
     &lt;p&gt;인자와 매개변수의 작성순서, 개수, 데이터 타입은 동일해야함&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Java - Array3</title>
-      <link href="https://spongebob53.github.io/lecture-array3" rel="alternate" type="text/html" title="Java - Array3" />
-      <published>2021-11-24T18:00:00+09:00</published>
-      <updated>2021-11-24T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/lecture-array3</id>
-      <content type="html" xml:base="https://spongebob53.github.io/lecture-array3">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;
-  Lecture는 여러 파트로 구성되어 있습니다.
-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-intro_var&quot;&gt;Intro/var&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-operator&quot;&gt;Operator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-conditional&quot;&gt;Conditional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop&quot;&gt;Loop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-scanner&quot;&gt;Scanner&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-loop_practice&quot;&gt;Loop_practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-exam_prime&quot;&gt;Exam_prime&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array1&quot;&gt;Array1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array2&quot;&gt;Array2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-array3&quot;&gt;Array3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-method&quot;&gt;Method&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-return&quot;&gt;Return&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-static_constructor&quot;&gt;Static/Constructor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-package&quot;&gt;Package&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-overloading_string&quot;&gt;Overloading/String&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;./lecture-access_modifier_extends&quot;&gt;Access modifier/Extends&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-abstract_interface&quot;&gt;Abstract/Interface&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;./lecture-interface_trycatch&quot;&gt;Interface/TryCatch&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;11일차-수업&quot;&gt;11일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;h3 id=&quot;배열&quot;&gt;배열&lt;/h3&gt;
-
-&lt;p&gt;변수도 똑같은 곳에서 저장해서 꺼내서 쓰고 싶을 때&lt;/p&gt;
-
-&lt;p&gt;배열 만드는 과정&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;자료형 &amp;gt; 출력문 &amp;gt; 제어문 &amp;gt; 배열&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;1 1 » 반복적으로 쓰기 싫다, 코드를 재사용하고싶다. - 등등&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;if, switch : 선택적 실행&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;for, while : 반복적 실행&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;내가 쓴 코드가 실행을 하지 않거나, 내가 쓴 코드가 반복되거나&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;한 변수에 “다수”의 값을 넣는 기술 : 여러번 &amp;gt; 반복적&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;배열 &amp;gt; 반복문을 같이 자주 사용한다&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;배열에 규칙적으로 값을 넣는다 » 반복문을 사용하여 배열의 시작부터 끝까지 값을 넣는다&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;배열 선언의 의미&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;지금부터 이곳에는 같은 자료형만 쓰일 것이다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;배열은 자료형으로 선언 » 배열도 자료형&lt;/p&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;11일차-수업-1&quot;&gt;11일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;다차원-배열&quot;&gt;다차원 배열&lt;/h3&gt;
-
-&lt;p&gt;2차원 배열 이상 배열을 의미, 배열의 값 속에 또 다른 배열을 가지는 배열&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;2차원 배열 : 배열의 값 속에 1차원 배열이 있는 배열&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;3차원 배열 : 배열의 값 속에 2차원 배열이 있는 배열&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;선언&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;int[][] arr = new int[행의 개수(세로)][열의 개수(가로)];&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2차원 배열 대입하면서 넣기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;}};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;뒤 숫자를 비우면 배열 안에 배열의 크기를 가변적으로 변경가능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[][]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][];&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;arr2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;tips&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;배열에 넣을 값도 규칙만 있다면 반복문으로 대체 가능&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;aarr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       

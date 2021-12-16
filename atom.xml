@@ -8,6 +8,102 @@
     
       
       <item>
+        <title>Practice - 문자열 내림차순으로 배치하기</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-string_descending</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-string_descending</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 직사각형 별찍기</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-squarestar</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-squarestar</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 정수 제곱근 판별</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-squareroot</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-squareroot</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 소수 만들기</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-makeprime</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-makeprime</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 소수 찾기</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-findprime</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-findprime</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java - Throws</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-throws</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-throws</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>W3schools - Abstraction</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -65,6 +161,36 @@
     
       
       <item>
+        <title>Practice - x 만큼 간격이 있는 n개의 숫자</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 14 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-spacingx</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-spacingx</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 약수의 개수와 덧셈</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 14 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-divisor_calc</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-divisor_calc</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Abstract / Interface</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -81,6 +207,21 @@
         <link>
         https://spongebob53.github.io/lecture-abstract_interface</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-abstract_interface</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - K번째 수</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 13 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-kth</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-kth</guid>
       </item>
       
     

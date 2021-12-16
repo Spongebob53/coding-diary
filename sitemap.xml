@@ -8,6 +8,102 @@
 
     
     <url>
+        <loc>https://spongebob53.github.io/practice-string_descending.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-squarestar.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-squareroot.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-makeprime.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-findprime.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/lecture-throws.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://spongebob53.github.io/w3schools-abstraction.html</loc>
         
         <lastmod>2021-12-15T18:00:00+09:00</lastmod>
@@ -56,9 +152,57 @@
     </url>
     
     <url>
+        <loc>https://spongebob53.github.io/practice-spacingx.html</loc>
+        
+        <lastmod>2021-12-14T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-divisor_calc.html</loc>
+        
+        <lastmod>2021-12-14T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://spongebob53.github.io/lecture-abstract_interface.html</loc>
         
         <lastmod>2021-12-14T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-kth.html</loc>
+        
+        <lastmod>2021-12-13T18:00:00+09:00</lastmod>
         
 
         
