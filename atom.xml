@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>Reference - Java Keyword</title>
+        
+          <description>&lt;h2 id=&quot;java-reserved-keywords&quot;&gt;Java reserved keywords&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 19 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/reference-java_keyword</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_keyword</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Practice - 문자열 내림차순으로 배치하기</title>
         
           <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
@@ -83,6 +98,51 @@
     
       
       <item>
+        <title>Practice - 콜라츠 추측</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-collatz</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-collatz</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 행렬의 덧셈</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-arrplus</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-arrplus</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Practice - 평균 구하기</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://programmers.co.kr/&quot;&gt;programmers 바로가기&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/practice-arraverage</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/practice-arraverage</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Java - Throws</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -91,7 +151,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -112,7 +172,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -148,7 +208,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -199,7 +259,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -235,7 +295,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -256,7 +316,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -277,7 +337,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -298,7 +358,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -334,7 +394,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -400,7 +460,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -421,7 +481,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -442,7 +502,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -463,7 +523,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -498,7 +558,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -519,7 +579,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -540,7 +600,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -561,7 +621,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -582,7 +642,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -603,7 +663,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -624,7 +684,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -645,7 +705,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -666,7 +726,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -687,7 +747,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -708,7 +768,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -729,7 +789,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -750,7 +810,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -771,7 +831,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -792,7 +852,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -813,7 +873,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -834,7 +894,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -855,7 +915,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -876,7 +936,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -897,7 +957,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -918,7 +978,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         
@@ -939,7 +999,7 @@
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
 &lt;/div&gt;
 
-&lt;div&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
@@ -974,7 +1034,7 @@
 
 &lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 </description>
         

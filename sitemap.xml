@@ -8,6 +8,22 @@
 
     
     <url>
+        <loc>https://spongebob53.github.io/reference-java_keyword.html</loc>
+        
+        <lastmod>2021-12-19T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://spongebob53.github.io/practice-string_descending.html</loc>
         
         <lastmod>2021-12-16T18:00:00+09:00</lastmod>
@@ -73,6 +89,54 @@
     
     <url>
         <loc>https://spongebob53.github.io/practice-findprime.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-collatz.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-arrplus.html</loc>
+        
+        <lastmod>2021-12-16T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://spongebob53.github.io/practice-arraverage.html</loc>
         
         <lastmod>2021-12-16T18:00:00+09:00</lastmod>
         
