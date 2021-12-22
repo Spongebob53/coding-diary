@@ -8,16 +8,73 @@
     
       
       <item>
-        <title>Reference - Java Keyword</title>
+        <title>W3schools - Exception</title>
         
-          <description>&lt;h2 id=&quot;java-reserved-keywords&quot;&gt;Java reserved keywords&lt;/h2&gt;
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
 
 </description>
         
-        <pubDate>Sun, 19 Dec 2021 18:00:00 +0900</pubDate>
+        <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/reference-java_keyword</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_keyword</guid>
+        https://spongebob53.github.io/w3schools-exception</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-exception</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Reference - Java String</title>
+        
+          <description>&lt;h2 id=&quot;java-math-methods&quot;&gt;Java Math methods&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/reference-java_string</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_string</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Reference - Java Math</title>
+        
+          <description>&lt;h2 id=&quot;java-string-methods&quot;&gt;Java String methods&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/reference-java_math</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_math</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java - List</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-list</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-list</guid>
       </item>
       
     
@@ -35,7 +92,7 @@
 
 </description>
         
-        <pubDate>Fri, 17 Dec 2021 18:00:00 +0900</pubDate>
+        <pubDate>Mon, 20 Dec 2021 18:00:00 +0900</pubDate>
         <link>
         https://spongebob53.github.io/w3schools-wrapper_class</link>
         <guid isPermaLink="true">https://spongebob53.github.io/w3schools-wrapper_class</guid>
@@ -44,7 +101,7 @@
     
       
       <item>
-        <title>W3schools - Scanner / Date</title>
+        <title>W3schools - Hash / Iterator</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
@@ -56,16 +113,52 @@
 
 </description>
         
-        <pubDate>Fri, 17 Dec 2021 18:00:00 +0900</pubDate>
+        <pubDate>Mon, 20 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-scanner_date</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-scanner_date</guid>
+        https://spongebob53.github.io/w3schools-hash_iterator</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-hash_iterator</guid>
       </item>
       
     
       
       <item>
-        <title>W3schools - Exception</title>
+        <title>Java - Generic</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 20 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-generic</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-generic</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Reference - Java Keyword</title>
+        
+          <description>&lt;h2 id=&quot;java-reserved-keywords&quot;&gt;Java reserved keywords&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sun, 19 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/reference-java_keyword</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_keyword</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - List</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
@@ -79,8 +172,8 @@
         
         <pubDate>Fri, 17 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-exception</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-exception</guid>
+        https://spongebob53.github.io/w3schools-list</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-list</guid>
       </item>
       
     
@@ -102,6 +195,27 @@
         <link>
         https://spongebob53.github.io/lecture-clone</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-clone</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Scanner / Date</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-scanner_date</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-scanner_date</guid>
       </item>
       
     
