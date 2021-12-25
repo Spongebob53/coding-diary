@@ -8,6 +8,111 @@
     
       
       <item>
+        <title>HTML - Intro</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 24 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-html_intro</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-html_intro</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - Thread / Lambda</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-thread_lambda</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-thread_lambda</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java - Lambda / Thread</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-lambda_thread</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-lambda_thread</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - RegEx</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 22 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-regex</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-regex</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Java - Map</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 22 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/lecture-map</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/lecture-map</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>W3schools - Exception</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -486,6 +591,27 @@
         <link>
         https://spongebob53.github.io/lecture-abstract_interface</link>
         <guid isPermaLink="true">https://spongebob53.github.io/lecture-abstract_interface</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - InnerClass</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 13 Dec 2021 18:00:00 +0900</pubDate>
+        <link>
+        https://spongebob53.github.io/w3schools-innerclass</link>
+        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-innerclass</guid>
       </item>
       
     

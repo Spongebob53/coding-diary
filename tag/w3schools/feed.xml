@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://spongebob53.github.io/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-22T09:28:29+09:00</updated>
+  <updated>2021-12-25T19:44:19+09:00</updated>
   <id>https://spongebob53.github.io/tag/w3schools/feed.xml</id>
 
   
@@ -30,6 +30,291 @@
   
   
 
+  
+    <entry>
+      <title type="html">W3schools - Thread / Lambda</title>
+      <link href="https://spongebob53.github.io/w3schools-thread_lambda" rel="alternate" type="text/html" title="W3schools - Thread / Lambda" />
+      <published>2021-12-23T18:00:00+09:00</published>
+      <updated>2021-12-23T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/w3schools-thread_lambda</id>
+      <content type="html" xml:base="https://spongebob53.github.io/w3schools-thread_lambda">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;thread&quot;&gt;Thread&lt;/h3&gt;
+
+&lt;p&gt;Allows a program to operate more efficiently by doing multiple things at the same time&lt;/p&gt;
+
+&lt;p&gt;Can be used to perform complicated tasks in the background without interrupting the main program&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Be created by extending the Thread&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thrd&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// overriding run() method&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// to implements the Runnable interface&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Inter&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Runnable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;// running Thread&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;Thrd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thrd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;thread1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;// running Thread&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;Inter&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The major difference is that when a class extends the Thread class, you can’t any other class,&lt;/p&gt;
+
+&lt;p&gt;But by implementing the Runnable interface, it is possibel to extend from anoteher class as well&lt;/p&gt;
+
+&lt;h3 id=&quot;concurrency-problems&quot;&gt;Concurrency Problems&lt;/h3&gt;
+
+&lt;p&gt;Threads run at the same time as other parts of the program, there is no way to know in which order the code will run&lt;/p&gt;
+
+&lt;p&gt;When the threads and main program are reading and writing the same var, the value are unpredictable&lt;/p&gt;
+
+&lt;p&gt;The problems that result from this are called concurrency problems&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Wait for the thread to finish&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isAlive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// to avoid concurrency problems&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// use isAlive() method of the thread to check whether the thread has finished running before using any attributes that the thread can change&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Waiting...&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Update amount and print its value&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Main: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Main: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;lambda&quot;&gt;Lambda&lt;/h3&gt;
+
+&lt;p&gt;Is a short block of code which takes in parameters and returns a value&lt;/p&gt;
+
+&lt;p&gt;They do not need a name and they can be implemented right in the body of a method&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;Expression&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;limited&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;They&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;immediately&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assignments&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;statements&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;complex&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operations&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;used&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curly&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;braces&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;If&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;needs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;statement&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Lambda expressions are usually passed as parameters to a function&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);});&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Lambda expressions can be stored in var if the var’s type is an interface which has only one method&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Consumer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Interger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);};&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Create a method witch takes a lambda expression as a parameter&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringFunction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// In main method&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;StringFunction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printFormatted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ask&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// In Main class&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;printFormatted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringFunction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - RegEx</title>
+      <link href="https://spongebob53.github.io/w3schools-regex" rel="alternate" type="text/html" title="W3schools - RegEx" />
+      <published>2021-12-22T18:00:00+09:00</published>
+      <updated>2021-12-22T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/w3schools-regex</id>
+      <content type="html" xml:base="https://spongebob53.github.io/w3schools-regex">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;regular-expressions&quot;&gt;Regular Expressions&lt;/h3&gt;
+
+&lt;p&gt;Is a sequence of characters that forms a search pattern&lt;/p&gt;
+
+&lt;p&gt;When you search for data in a text, you can use this pattern to describe what you searching for&lt;/p&gt;
+
+&lt;p&gt;Find out if there are any occurrences of the word “w3schools” in a sentence:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.regex.Matcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// Used to search for the pattern&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.regex.Pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// Defines a pattern&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// another class(PatternSyntaxException) : Indicate syntax error in a regular expression pattern&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// “w3schools” is being searched for in a sentence&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Pattern&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;w3schools&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;CASE_INSENSITIVE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// create pattern, use the Pattern.compile() method&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// first parameter indicates which pattern is being searched for&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// second parameter(optional) has a flag to indicates that the search should be case-insensitive&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Matcher&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matcher&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;matcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Visit W3Schools!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// matcher() method is used to search for the pattern in a string&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// It returns Matcher objext which contains information about the search that was perfromed&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matchFound&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// It returns true if the pattern was found in the string&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matchFound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Match found&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Match not found&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Output will be Match found&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;flags&quot;&gt;Flags&lt;/h3&gt;
+
+&lt;p&gt;In the compile() method change how the search is performed&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pattern.CASE_INSENSITIVE : The case of letters will be ignored&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pattern.LITERAL : Special characters in the pattern will not have any special meaning&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pattern.UNICODE_CASE : Use it together with the CASE_INSENSITIVE flag to also ignore the case the case of letters outside of the English alphabet&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;patterns&quot;&gt;Patterns&lt;/h3&gt;
+
+&lt;p&gt;[abc] : Find one character from the options between the brackets&lt;/p&gt;
+
+&lt;p&gt;[^abc] : Find one character NOT between the brackets&lt;/p&gt;
+
+&lt;p&gt;[0-9] : Find one character from the range 0 to 9&lt;/p&gt;
+
+&lt;h3 id=&quot;metacharacters&quot;&gt;Metacharacters&lt;/h3&gt;
+
+&lt;p&gt;Are characters with a special meaning&lt;/p&gt;
+
+&lt;p&gt;| : Find a match for any one of the patters separated by | as in: cat|dog|fish&lt;/p&gt;
+
+&lt;p&gt;. : Find just on instance of any character&lt;/p&gt;
+
+&lt;p&gt;^ : Finds a match as the beginning of a string as in: ^Hello&lt;/p&gt;
+
+&lt;p&gt;$ : Finds a match at the end of the string as in: World$&lt;/p&gt;
+
+&lt;p&gt;\d : Find a digit&lt;/p&gt;
+
+&lt;p&gt;\s : Find a whitespace character&lt;/p&gt;
+
+&lt;p&gt;\b : Find a match at the beginning of a word: \bWORD, or at the end of a word: WORD\b&lt;/p&gt;
+
+&lt;p&gt;\uxxxx : Find the Unicode character specified by the hexadecimal number xxxx&lt;/p&gt;
+
+&lt;h3 id=&quot;quantifiers&quot;&gt;Quantifiers&lt;/h3&gt;
+
+&lt;p&gt;Define quantities&lt;/p&gt;
+
+&lt;p&gt;n+ : Matches any string that contains at least one n&lt;/p&gt;
+
+&lt;p&gt;n* : Matches any string that contains zero or more occrrences of n&lt;/p&gt;
+
+&lt;p&gt;n? : Matches any string that contains zero or one occurences of n&lt;/p&gt;
+
+&lt;p&gt;n{x} : Matches any string that contains a sequence of X n’s&lt;/p&gt;
+
+&lt;p&gt;n{x,y} : Matches any string that contains a sequence of X to Y n’s&lt;/p&gt;
+
+&lt;p&gt;n{x,} : Matches any string that contains a sequence of at least X n’s&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">W3schools - Exception</title>
@@ -902,12 +1187,12 @@ The ‘try catch’ is finished.
     </entry>
   
     <entry>
-      <title type="html">W3schools - Inheritance</title>
-      <link href="https://spongebob53.github.io/w3schools-inheritance" rel="alternate" type="text/html" title="W3schools - Inheritance" />
-      <published>2021-12-10T18:00:00+09:00</published>
-      <updated>2021-12-10T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-inheritance</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-inheritance">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - InnerClass</title>
+      <link href="https://spongebob53.github.io/w3schools-innerclass" rel="alternate" type="text/html" title="W3schools - InnerClass" />
+      <published>2021-12-13T18:00:00+09:00</published>
+      <updated>2021-12-13T18:00:00+09:00</updated>
+      <id>https://spongebob53.github.io/w3schools-innerclass</id>
+      <content type="html" xml:base="https://spongebob53.github.io/w3schools-innerclass">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -921,434 +1206,32 @@ The ‘try catch’ is finished.
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;inheritance&quot;&gt;Inheritance&lt;/h3&gt;
+&lt;h3 id=&quot;inner-classes&quot;&gt;Inner Classes&lt;/h3&gt;
 
-&lt;p&gt;Why and when to use Inheritance?&lt;/p&gt;
+&lt;p&gt;The purpose of nested classes(class within a class)is to group classes that belong together&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;useful for code reusability!&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Which makes your code more readable and maintainable&lt;/p&gt;
 
-&lt;p&gt;It is possible to inherit attributes and methods from one class to anoter&lt;/p&gt;
-
-&lt;p&gt;Inheritance concept&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;subclass(child)&lt;/p&gt;
-
-    &lt;p&gt;the class that inherits from anoter class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;superclass(parent)&lt;/p&gt;
-
-    &lt;p&gt;the class being inherited from&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To inherit from a class use the “extends” keyword&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vehicle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;brand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Ford&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;honk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Tuut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tuut&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Vehicle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modelName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Mustang&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;honk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// call the method(from the Vehicle class)&lt;/span&gt;
-						&lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;brand&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myCar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;modelName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;polymorphism&quot;&gt;Polymorphism&lt;/h3&gt;
-
-&lt;p&gt;Means “many forms”, and it occurs when we have many classes that are related to each other by inheritance&lt;/p&gt;
-
-&lt;p&gt;It uses methods to perform different task&lt;/p&gt;
-
-&lt;p&gt;This allows us to perform a single action in different ways&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;animal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;makes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sound&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pig&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pig&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wee&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dog&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;says&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bow&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wow&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myAnimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myPig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myDog&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Dog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;myAnimal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;myPig&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;myDog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;animalSound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OuterClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;InnerClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// can be private or protected or static&lt;/span&gt;
+		&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;myInnerMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// In main method&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;OuterClass&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myOuter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OuterClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// to access the inner class, create an object of the outer class&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;OuterClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;InnerClass&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myInner&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myOuter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;InnerClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// and then create an object of the inner class&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// if innerclass is static   “OuterClass.InnerClass myInner = new OuterClass.InnerClass();”&lt;/span&gt;
+	&lt;span class=&quot;c1&quot;&gt;// can access it without creating an object of the outer class&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myInner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myOuter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// output will be 15;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Systme&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myInner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;myInnerMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// output will be 10;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// how to access outer class from inner class&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - Package</title>
-      <link href="https://spongebob53.github.io/w3schools-package" rel="alternate" type="text/html" title="W3schools - Package" />
-      <published>2021-12-09T18:00:00+09:00</published>
-      <updated>2021-12-09T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-package</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-package">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;java-package--api&quot;&gt;Java Package &amp;amp; API&lt;/h3&gt;
-
-&lt;p&gt;A package in Java is used to group related classes.&lt;/p&gt;
-
-&lt;p&gt;As a folder in a file directory.&lt;/p&gt;
-
-&lt;p&gt;Use packages to avoid name conflicts, and to write a better maintainable code.&lt;/p&gt;
-
-&lt;p&gt;Divided into two categories&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Built-in Packages(from the Java API)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;User-defined Packages&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;built-in-packages&quot;&gt;Built-in Packages&lt;/h3&gt;
-
-&lt;p&gt;The Java API is a library of prewritten classes, included in the JDE&lt;/p&gt;
-
-&lt;p&gt;The library contains components for managing input, database programming, and more&lt;/p&gt;
-
-&lt;p&gt;The complete list can be found at Oracle&lt;/p&gt;
-
-&lt;p&gt;The library is divided into packages and classes&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;meaning can either import a single class(along with its methods and attributes), or a whole package that contain all the classes tha belong to the specified package&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To use a class or a package from the library, need to use “import” keyword&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;package.name.Class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;package.name.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;import-a-class&quot;&gt;Import a class&lt;/h3&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//java.util is a package, while Scanner is a class of the java.util&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;myClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myObj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Scanner&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//create an object of the class and use any of the available methods found in the Scanner class documentation&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myObj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Username&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;import-a-package&quot;&gt;Import a package&lt;/h3&gt;
-
-&lt;p&gt;To import a whole package, end the sentence with an asterisk sign(*)&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.*&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;//import all the classes in the java.util package&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;user-difined-package&quot;&gt;User-difined package&lt;/h3&gt;
-
-&lt;p&gt;To create your own package, use the “package” keyword&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;mypack&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MypackageClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;This&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;!”);&lt;/span&gt;
-	&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;save the file as MypackageClass.java, and compile it&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\Users\Your Name&amp;gt;javac MyPackageClass.java
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then, compile the package&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\Users\Your Name&amp;gt;javac –d . MypackageClass.java
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;“-d” keyword specifies the destination for where to save the class file&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You can use any directory name&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;if you want to keep the package within the same directory, use the dot(.)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - Modifier</title>
-      <link href="https://spongebob53.github.io/w3schools-modifier" rel="alternate" type="text/html" title="W3schools - Modifier" />
-      <published>2021-12-08T18:00:00+09:00</published>
-      <updated>2021-12-08T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-modifier</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-modifier">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;modifier&quot;&gt;Modifier&lt;/h3&gt;
-
-&lt;p&gt;Public modifier keyword is an access modifier, meaning that it is used to set the access level for classes, attributes, methods, and constructors&lt;/p&gt;
-
-&lt;p&gt;Divide modifiers into two groups&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Access modifiers&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;controls the access level&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Non-access modifiers&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;don’t control access level, but provides other functionality&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;access-modifier&quot;&gt;Access modifier&lt;/h3&gt;
-
-&lt;p&gt;For class&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;public : accessible by any other class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;default 　: accessible by classes in the same package&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;if you don’t specify a modifier&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For attribute, method, constructor&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;public : accessible for all classes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;private : only accessible within the declared class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;default : only accessible in the same package&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;protected : the code is a accessible in the same package and subclasses&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;non-access-modifier&quot;&gt;Non-access modifier&lt;/h3&gt;
-
-&lt;p&gt;For class&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;final : the class can’t be inherited by other classes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;abstract : the class can’t be used to create objects&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;to access an abstract class, it must be inherited from another class&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For attribute, method&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;final : Can’t be overridden/modified&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;static : belongs to the class, rather than an object&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;abstract : can only be used in an abstract class, and can only be used on methods&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;the method doesn’t have a body, the body is provided by the subclass&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;transient : be skipped when serializing the object containing them&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;synchronized : methods can only be accessed by one thread at a time&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;volatile : the value of an attribute is not cached thread-locally, and is always read from the “main memory”&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;encapsulation&quot;&gt;Encapsulation&lt;/h3&gt;
-
-&lt;p&gt;Is to make sure that “sensitive” data is hidden from user&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;declare class variable/attributes as private&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;provide public “get” and “set” methods to access and update the value of a private variable&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;get-and-set&quot;&gt;Get and Set&lt;/h3&gt;
-
-&lt;p&gt;Private variables can only be accessed within the same class&lt;/p&gt;
-
-&lt;p&gt;It is possible to access them if we provide public get and set methods&lt;/p&gt;
-
-&lt;p&gt;get method&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;return the variable value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;set method&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sets the value&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Syntax for both is that&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;start with either “get” or “set”, followed by the name of the variable with the first letter in upper case&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;		&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//getter&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-			&lt;span class=&quot;c1&quot;&gt;//setter&lt;/span&gt;
-			&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-				&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;why-encapsulation&quot;&gt;Why encapsulation?&lt;/h3&gt;
-
-&lt;p&gt;Better control of class attributes and methods&lt;/p&gt;
-
-&lt;p&gt;Can change one part of the code without affecting other parts&lt;/p&gt;
-
-&lt;p&gt;Increased security of data&lt;/p&gt;</content>
 
       
       
