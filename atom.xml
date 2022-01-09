@@ -4,7 +4,112 @@
     <title> - Articles</title>
     <description>개발 기록</description>
     <link>
-    https://spongebob53.github.io</link>
+    http://localhost:4000</link>
+    
+      
+      <item>
+        <title>JS - Window / Event</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 07 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-JS-window_event</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-JS-window_event</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>JS - Node</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 06 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-JS-node</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-JS-node</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>JS - Array / Function / Node</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 05 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-JS-array_function_node</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-JS-array_function_node</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>JS - Array / DOM</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 04 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-JS-array_DOM</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-JS-array_DOM</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>JS - Intro</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 03 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-JS-intro</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-JS-intro</guid>
+      </item>
+      
     
       
       <item>
@@ -22,8 +127,8 @@
         
         <pubDate>Fri, 31 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-css_pseudo_path</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-css_pseudo_path</guid>
+        http://localhost:4000/lecture-css_pseudo_path</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-css_pseudo_path</guid>
       </item>
       
     
@@ -43,8 +148,8 @@
         
         <pubDate>Thu, 30 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-css_selector</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-css_selector</guid>
+        http://localhost:4000/lecture-css_selector</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-css_selector</guid>
       </item>
       
     
@@ -64,8 +169,8 @@
         
         <pubDate>Wed, 29 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-css_display_position</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-css_display_position</guid>
+        http://localhost:4000/lecture-css_display_position</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-css_display_position</guid>
       </item>
       
     
@@ -85,8 +190,8 @@
         
         <pubDate>Tue, 28 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-css_intro</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-css_intro</guid>
+        http://localhost:4000/lecture-css_intro</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-css_intro</guid>
       </item>
       
     
@@ -106,8 +211,8 @@
         
         <pubDate>Mon, 27 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_style_guide</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_style_guide</guid>
+        http://localhost:4000/w3schools-html_style_guide</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_style_guide</guid>
       </item>
       
     
@@ -127,8 +232,8 @@
         
         <pubDate>Mon, 27 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_id_class</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_id_class</guid>
+        http://localhost:4000/w3schools-html_id_class</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_id_class</guid>
       </item>
       
     
@@ -148,8 +253,8 @@
         
         <pubDate>Mon, 27 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-html_input_semantic</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-html_input_semantic</guid>
+        http://localhost:4000/lecture-html_input_semantic</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-html_input_semantic</guid>
       </item>
       
     
@@ -169,8 +274,8 @@
         
         <pubDate>Sun, 26 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_layout</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_layout</guid>
+        http://localhost:4000/w3schools-html_layout</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_layout</guid>
       </item>
       
     
@@ -190,8 +295,8 @@
         
         <pubDate>Sat, 25 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_responsive</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_responsive</guid>
+        http://localhost:4000/w3schools-html_responsive</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_responsive</guid>
       </item>
       
     
@@ -211,8 +316,8 @@
         
         <pubDate>Sat, 25 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_head</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_head</guid>
+        http://localhost:4000/w3schools-html_head</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_head</guid>
       </item>
       
     
@@ -232,8 +337,8 @@
         
         <pubDate>Sat, 25 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_encode_charset</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_encode_charset</guid>
+        http://localhost:4000/w3schools-html_encode_charset</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_encode_charset</guid>
       </item>
       
     
@@ -253,8 +358,8 @@
         
         <pubDate>Fri, 24 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-html_intro</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-html_intro</guid>
+        http://localhost:4000/w3schools-html_intro</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-html_intro</guid>
       </item>
       
     
@@ -274,8 +379,8 @@
         
         <pubDate>Fri, 24 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-html_intro</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-html_intro</guid>
+        http://localhost:4000/lecture-html_intro</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-html_intro</guid>
       </item>
       
     
@@ -295,8 +400,8 @@
         
         <pubDate>Thu, 23 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-thread_lambda</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-thread_lambda</guid>
+        http://localhost:4000/w3schools-thread_lambda</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-thread_lambda</guid>
       </item>
       
     
@@ -316,8 +421,8 @@
         
         <pubDate>Thu, 23 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-lambda_thread</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-lambda_thread</guid>
+        http://localhost:4000/lecture-lambda_thread</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-lambda_thread</guid>
       </item>
       
     
@@ -337,8 +442,8 @@
         
         <pubDate>Wed, 22 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-regex</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-regex</guid>
+        http://localhost:4000/w3schools-regex</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-regex</guid>
       </item>
       
     
@@ -358,8 +463,8 @@
         
         <pubDate>Wed, 22 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-map</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-map</guid>
+        http://localhost:4000/lecture-map</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-map</guid>
       </item>
       
     
@@ -379,8 +484,8 @@
         
         <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-exception</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-exception</guid>
+        http://localhost:4000/w3schools-exception</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-exception</guid>
       </item>
       
     
@@ -394,8 +499,8 @@
         
         <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/reference-java_string</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_string</guid>
+        http://localhost:4000/reference-java_string</link>
+        <guid isPermaLink="true">http://localhost:4000/reference-java_string</guid>
       </item>
       
     
@@ -409,8 +514,8 @@
         
         <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/reference-java_math</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_math</guid>
+        http://localhost:4000/reference-java_math</link>
+        <guid isPermaLink="true">http://localhost:4000/reference-java_math</guid>
       </item>
       
     
@@ -430,8 +535,8 @@
         
         <pubDate>Tue, 21 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-list</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-list</guid>
+        http://localhost:4000/lecture-list</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-list</guid>
       </item>
       
     
@@ -451,8 +556,8 @@
         
         <pubDate>Mon, 20 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-wrapper_class</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-wrapper_class</guid>
+        http://localhost:4000/w3schools-wrapper_class</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-wrapper_class</guid>
       </item>
       
     
@@ -472,8 +577,8 @@
         
         <pubDate>Mon, 20 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-hash_iterator</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-hash_iterator</guid>
+        http://localhost:4000/w3schools-hash_iterator</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-hash_iterator</guid>
       </item>
       
     
@@ -493,8 +598,8 @@
         
         <pubDate>Mon, 20 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-generic</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-generic</guid>
+        http://localhost:4000/lecture-generic</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-generic</guid>
       </item>
       
     
@@ -508,8 +613,8 @@
         
         <pubDate>Sun, 19 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/reference-java_keyword</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/reference-java_keyword</guid>
+        http://localhost:4000/reference-java_keyword</link>
+        <guid isPermaLink="true">http://localhost:4000/reference-java_keyword</guid>
       </item>
       
     
@@ -529,8 +634,8 @@
         
         <pubDate>Fri, 17 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-list</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-list</guid>
+        http://localhost:4000/w3schools-list</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-list</guid>
       </item>
       
     
@@ -550,8 +655,8 @@
         
         <pubDate>Fri, 17 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-clone</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-clone</guid>
+        http://localhost:4000/lecture-clone</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-clone</guid>
       </item>
       
     
@@ -571,8 +676,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-scanner_date</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-scanner_date</guid>
+        http://localhost:4000/w3schools-scanner_date</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-scanner_date</guid>
       </item>
       
     
@@ -592,8 +697,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-enum</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-enum</guid>
+        http://localhost:4000/w3schools-enum</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-enum</guid>
       </item>
       
     
@@ -607,8 +712,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-string_descending</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-string_descending</guid>
+        http://localhost:4000/practice-string_descending</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-string_descending</guid>
       </item>
       
     
@@ -622,8 +727,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-squarestar</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-squarestar</guid>
+        http://localhost:4000/practice-squarestar</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-squarestar</guid>
       </item>
       
     
@@ -637,8 +742,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-squareroot</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-squareroot</guid>
+        http://localhost:4000/practice-squareroot</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-squareroot</guid>
       </item>
       
     
@@ -652,8 +757,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-makeprime</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-makeprime</guid>
+        http://localhost:4000/practice-makeprime</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-makeprime</guid>
       </item>
       
     
@@ -667,8 +772,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-findprime</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-findprime</guid>
+        http://localhost:4000/practice-findprime</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-findprime</guid>
       </item>
       
     
@@ -682,8 +787,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-collatz</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-collatz</guid>
+        http://localhost:4000/practice-collatz</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-collatz</guid>
       </item>
       
     
@@ -697,8 +802,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-arrplus</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-arrplus</guid>
+        http://localhost:4000/practice-arrplus</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-arrplus</guid>
       </item>
       
     
@@ -712,8 +817,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-arraverage</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-arraverage</guid>
+        http://localhost:4000/practice-arraverage</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-arraverage</guid>
       </item>
       
     
@@ -733,8 +838,8 @@
         
         <pubDate>Thu, 16 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-throws</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-throws</guid>
+        http://localhost:4000/lecture-throws</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-throws</guid>
       </item>
       
     
@@ -754,8 +859,8 @@
         
         <pubDate>Wed, 15 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-abstraction</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-abstraction</guid>
+        http://localhost:4000/w3schools-abstraction</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-abstraction</guid>
       </item>
       
     
@@ -769,8 +874,8 @@
         
         <pubDate>Wed, 15 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/note-link</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-link</guid>
+        http://localhost:4000/note-link</link>
+        <guid isPermaLink="true">http://localhost:4000/note-link</guid>
       </item>
       
     
@@ -790,8 +895,8 @@
         
         <pubDate>Wed, 15 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-interface_trycatch</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-interface_trycatch</guid>
+        http://localhost:4000/lecture-interface_trycatch</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-interface_trycatch</guid>
       </item>
       
     
@@ -805,8 +910,8 @@
         
         <pubDate>Tue, 14 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-spacingx</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-spacingx</guid>
+        http://localhost:4000/practice-spacingx</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-spacingx</guid>
       </item>
       
     
@@ -820,8 +925,8 @@
         
         <pubDate>Tue, 14 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-divisor_calc</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-divisor_calc</guid>
+        http://localhost:4000/practice-divisor_calc</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-divisor_calc</guid>
       </item>
       
     
@@ -841,8 +946,8 @@
         
         <pubDate>Tue, 14 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-abstract_interface</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-abstract_interface</guid>
+        http://localhost:4000/lecture-abstract_interface</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-abstract_interface</guid>
       </item>
       
     
@@ -862,8 +967,8 @@
         
         <pubDate>Mon, 13 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-innerclass</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-innerclass</guid>
+        http://localhost:4000/w3schools-innerclass</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-innerclass</guid>
       </item>
       
     
@@ -877,8 +982,8 @@
         
         <pubDate>Mon, 13 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/practice-kth</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/practice-kth</guid>
+        http://localhost:4000/practice-kth</link>
+        <guid isPermaLink="true">http://localhost:4000/practice-kth</guid>
       </item>
       
     
@@ -898,8 +1003,8 @@
         
         <pubDate>Fri, 10 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-inheritance</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-inheritance</guid>
+        http://localhost:4000/w3schools-inheritance</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-inheritance</guid>
       </item>
       
     
@@ -919,8 +1024,8 @@
         
         <pubDate>Thu, 09 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-package</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-package</guid>
+        http://localhost:4000/w3schools-package</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-package</guid>
       </item>
       
     
@@ -940,8 +1045,8 @@
         
         <pubDate>Thu, 09 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-access_modifier_extends</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-access_modifier_extends</guid>
+        http://localhost:4000/lecture-access_modifier_extends</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-access_modifier_extends</guid>
       </item>
       
     
@@ -961,8 +1066,8 @@
         
         <pubDate>Wed, 08 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-modifier</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-modifier</guid>
+        http://localhost:4000/w3schools-modifier</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-modifier</guid>
       </item>
       
     
@@ -976,8 +1081,8 @@
         
         <pubDate>Wed, 08 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/note-1project6</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-1project6</guid>
+        http://localhost:4000/note-1project6</link>
+        <guid isPermaLink="true">http://localhost:4000/note-1project6</guid>
       </item>
       
     
@@ -997,8 +1102,8 @@
         
         <pubDate>Wed, 08 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-overloading_string</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-overloading_string</guid>
+        http://localhost:4000/lecture-overloading_string</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-overloading_string</guid>
       </item>
       
     
@@ -1012,8 +1117,8 @@
         
         <pubDate>Tue, 07 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/note-1project4</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-1project4</guid>
+        http://localhost:4000/note-1project4</link>
+        <guid isPermaLink="true">http://localhost:4000/note-1project4</guid>
       </item>
       
     
@@ -1027,8 +1132,8 @@
         
         <pubDate>Mon, 06 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/portfolio-java_game</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/portfolio-java_game</guid>
+        http://localhost:4000/portfolio-java_game</link>
+        <guid isPermaLink="true">http://localhost:4000/portfolio-java_game</guid>
       </item>
       
     
@@ -1042,8 +1147,8 @@
         
         <pubDate>Mon, 06 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/note-1project1</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-1project1</guid>
+        http://localhost:4000/note-1project1</link>
+        <guid isPermaLink="true">http://localhost:4000/note-1project1</guid>
       </item>
       
     
@@ -1063,8 +1168,8 @@
         
         <pubDate>Mon, 06 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-package</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-package</guid>
+        http://localhost:4000/lecture-package</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-package</guid>
       </item>
       
     
@@ -1084,8 +1189,8 @@
         
         <pubDate>Wed, 01 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-constructor</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-constructor</guid>
+        http://localhost:4000/w3schools-constructor</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-constructor</guid>
       </item>
       
     
@@ -1105,8 +1210,8 @@
         
         <pubDate>Wed, 01 Dec 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-static_constructor</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-static_constructor</guid>
+        http://localhost:4000/lecture-static_constructor</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-static_constructor</guid>
       </item>
       
     
@@ -1126,8 +1231,8 @@
         
         <pubDate>Tue, 30 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-return</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-return</guid>
+        http://localhost:4000/lecture-return</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-return</guid>
       </item>
       
     
@@ -1140,8 +1245,8 @@
         
         <pubDate>Sat, 27 Nov 2021 22:40:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/note-test</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/note-test</guid>
+        http://localhost:4000/note-test</link>
+        <guid isPermaLink="true">http://localhost:4000/note-test</guid>
       </item>
       
     
@@ -1161,8 +1266,8 @@
         
         <pubDate>Fri, 26 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-class_static</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-class_static</guid>
+        http://localhost:4000/w3schools-class_static</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-class_static</guid>
       </item>
       
     
@@ -1182,8 +1287,8 @@
         
         <pubDate>Fri, 26 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-class</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-class</guid>
+        http://localhost:4000/lecture-class</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-class</guid>
       </item>
       
     
@@ -1203,8 +1308,8 @@
         
         <pubDate>Thu, 25 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-method</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-method</guid>
+        http://localhost:4000/w3schools-method</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-method</guid>
       </item>
       
     
@@ -1224,8 +1329,8 @@
         
         <pubDate>Thu, 25 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-method</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-method</guid>
+        http://localhost:4000/lecture-method</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-method</guid>
       </item>
       
     
@@ -1245,8 +1350,8 @@
         
         <pubDate>Wed, 24 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-array3</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-array3</guid>
+        http://localhost:4000/lecture-array3</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-array3</guid>
       </item>
       
     
@@ -1266,8 +1371,8 @@
         
         <pubDate>Mon, 22 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-array</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-array</guid>
+        http://localhost:4000/w3schools-array</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-array</guid>
       </item>
       
     
@@ -1287,8 +1392,8 @@
         
         <pubDate>Mon, 22 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-array2</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-array2</guid>
+        http://localhost:4000/lecture-array2</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-array2</guid>
       </item>
       
     
@@ -1308,8 +1413,8 @@
         
         <pubDate>Fri, 19 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-loop</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-loop</guid>
+        http://localhost:4000/w3schools-loop</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-loop</guid>
       </item>
       
     
@@ -1329,8 +1434,8 @@
         
         <pubDate>Fri, 19 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-array1</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-array1</guid>
+        http://localhost:4000/lecture-array1</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-array1</guid>
       </item>
       
     
@@ -1350,8 +1455,8 @@
         
         <pubDate>Thu, 18 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-conditional</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-conditional</guid>
+        http://localhost:4000/w3schools-conditional</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-conditional</guid>
       </item>
       
     
@@ -1371,8 +1476,8 @@
         
         <pubDate>Thu, 18 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-exam_prime</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-exam_prime</guid>
+        http://localhost:4000/lecture-exam_prime</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-exam_prime</guid>
       </item>
       
     
@@ -1392,8 +1497,8 @@
         
         <pubDate>Wed, 17 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-string_math</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-string_math</guid>
+        http://localhost:4000/w3schools-string_math</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-string_math</guid>
       </item>
       
     
@@ -1413,8 +1518,8 @@
         
         <pubDate>Wed, 17 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-loop_practice</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop_practice</guid>
+        http://localhost:4000/lecture-loop_practice</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-loop_practice</guid>
       </item>
       
     
@@ -1434,8 +1539,8 @@
         
         <pubDate>Tue, 16 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-operator</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-operator</guid>
+        http://localhost:4000/w3schools-operator</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-operator</guid>
       </item>
       
     
@@ -1455,8 +1560,8 @@
         
         <pubDate>Tue, 16 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-scanner</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-scanner</guid>
+        http://localhost:4000/lecture-scanner</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-scanner</guid>
       </item>
       
     
@@ -1476,8 +1581,8 @@
         
         <pubDate>Mon, 15 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-datatype</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-datatype</guid>
+        http://localhost:4000/w3schools-datatype</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-datatype</guid>
       </item>
       
     
@@ -1497,8 +1602,8 @@
         
         <pubDate>Mon, 15 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-loop</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-loop</guid>
+        http://localhost:4000/lecture-loop</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-loop</guid>
       </item>
       
     
@@ -1518,8 +1623,8 @@
         
         <pubDate>Fri, 12 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-variable</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-variable</guid>
+        http://localhost:4000/w3schools-variable</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-variable</guid>
       </item>
       
     
@@ -1539,8 +1644,8 @@
         
         <pubDate>Fri, 12 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-conditional</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-conditional</guid>
+        http://localhost:4000/lecture-conditional</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-conditional</guid>
       </item>
       
     
@@ -1560,8 +1665,8 @@
         
         <pubDate>Thu, 11 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-syntax</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-syntax</guid>
+        http://localhost:4000/w3schools-syntax</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-syntax</guid>
       </item>
       
     
@@ -1581,8 +1686,8 @@
         
         <pubDate>Thu, 11 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-operator</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-operator</guid>
+        http://localhost:4000/lecture-operator</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-operator</guid>
       </item>
       
     
@@ -1602,8 +1707,8 @@
         
         <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/w3schools-intro_setup</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/w3schools-intro_setup</guid>
+        http://localhost:4000/w3schools-intro_setup</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-intro_setup</guid>
       </item>
       
     
@@ -1616,8 +1721,8 @@
         
         <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/portfolio-first</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/portfolio-first</guid>
+        http://localhost:4000/portfolio-first</link>
+        <guid isPermaLink="true">http://localhost:4000/portfolio-first</guid>
       </item>
       
     
@@ -1637,8 +1742,8 @@
         
         <pubDate>Wed, 10 Nov 2021 18:00:00 +0900</pubDate>
         <link>
-        https://spongebob53.github.io/lecture-intro_var</link>
-        <guid isPermaLink="true">https://spongebob53.github.io/lecture-intro_var</guid>
+        http://localhost:4000/lecture-intro_var</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-intro_var</guid>
       </item>
       
     

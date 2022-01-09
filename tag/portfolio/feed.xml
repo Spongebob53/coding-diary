@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="https://spongebob53.github.io/tag/portfolio/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-31T19:31:59+09:00</updated>
-  <id>https://spongebob53.github.io/tag/portfolio/feed.xml</id>
+  <link href="http://localhost:4000/tag/portfolio/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2022-01-09T19:56:31+09:00</updated>
+  <id>http://localhost:4000/tag/portfolio/feed.xml</id>
 
   
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">Portfolio - Java Game</title>
-      <link href="https://spongebob53.github.io/portfolio-java_game" rel="alternate" type="text/html" title="Portfolio - Java Game" />
+      <link href="http://localhost:4000/portfolio-java_game" rel="alternate" type="text/html" title="Portfolio - Java Game" />
       <published>2021-12-06T18:00:00+09:00</published>
       <updated>2021-12-06T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/portfolio-java_game</id>
-      <content type="html" xml:base="https://spongebob53.github.io/portfolio-java_game">&lt;p&gt;&lt;a href=&quot;https://github.com/Spongebob53/Project1-king_of_dungeon_master&quot;&gt;결과물&lt;/a&gt;&lt;/p&gt;
+      <id>http://localhost:4000/portfolio-java_game</id>
+      <content type="html" xml:base="http://localhost:4000/portfolio-java_game">&lt;p&gt;&lt;a href=&quot;https://github.com/Spongebob53/Project1-king_of_dungeon_master&quot;&gt;결과물&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/hansoo0724&quot;&gt;팀원 블로그 바로가기&lt;/a&gt;&lt;/p&gt;
 
@@ -224,11 +224,11 @@
   
     <entry>
       <title type="html">Portfolio</title>
-      <link href="https://spongebob53.github.io/portfolio-first" rel="alternate" type="text/html" title="Portfolio" />
+      <link href="http://localhost:4000/portfolio-first" rel="alternate" type="text/html" title="Portfolio" />
       <published>2021-11-10T18:00:00+09:00</published>
       <updated>2021-11-10T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/portfolio-first</id>
-      <content type="html" xml:base="https://spongebob53.github.io/portfolio-first">&lt;p&gt;포트폴리오를 위한 페이지를 작성할 예정 입니다.&lt;/p&gt;</content>
+      <id>http://localhost:4000/portfolio-first</id>
+      <content type="html" xml:base="http://localhost:4000/portfolio-first">&lt;p&gt;포트폴리오를 위한 페이지를 작성할 예정 입니다.&lt;/p&gt;</content>
 
       
       

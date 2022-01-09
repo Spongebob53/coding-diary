@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="https://spongebob53.github.io/tag/reference/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-31T19:31:59+09:00</updated>
-  <id>https://spongebob53.github.io/tag/reference/feed.xml</id>
+  <link href="http://localhost:4000/tag/reference/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2022-01-09T19:56:31+09:00</updated>
+  <id>http://localhost:4000/tag/reference/feed.xml</id>
 
   
   
@@ -32,12 +32,194 @@
 
   
     <entry>
-      <title type="html">Reference - Java Math</title>
-      <link href="https://spongebob53.github.io/reference-java_math" rel="alternate" type="text/html" title="Reference - Java Math" />
+      <title type="html">Reference - Java String</title>
+      <link href="http://localhost:4000/reference-java_string" rel="alternate" type="text/html" title="Reference - Java String" />
       <published>2021-12-21T18:00:00+09:00</published>
       <updated>2021-12-21T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/reference-java_math</id>
-      <content type="html" xml:base="https://spongebob53.github.io/reference-java_math">&lt;h2 id=&quot;java-string-methods&quot;&gt;Java String methods&lt;/h2&gt;
+      <id>http://localhost:4000/reference-java_string</id>
+      <content type="html" xml:base="http://localhost:4000/reference-java_string">&lt;h2 id=&quot;java-math-methods&quot;&gt;Java Math methods&lt;/h2&gt;
+
+&lt;p&gt;methods that allows you to perform mathematical task on numbers&lt;/p&gt;
+
+&lt;p&gt;All methods are static&lt;/p&gt;
+
+&lt;h3 id=&quot;absx&quot;&gt;abs(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the absolute value of x&lt;/p&gt;
+
+&lt;h3 id=&quot;acosx&quot;&gt;acos(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the arccosine of x, in a radians&lt;/p&gt;
+
+&lt;h3 id=&quot;asinx&quot;&gt;asin(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the arcsine of x, in radians&lt;/p&gt;
+
+&lt;h3 id=&quot;atanx&quot;&gt;atan(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the arctangent of x as a numeric value between –PI/2 and PI/2 radians&lt;/p&gt;
+
+&lt;h3 id=&quot;atan2yx&quot;&gt;atan2(y,x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the angle theta from the conversion of rectangular coordinates(x,y) to polar coordinates(r, theta)&lt;/p&gt;
+
+&lt;h3 id=&quot;cbrtx&quot;&gt;cbrt(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the cube root of x&lt;/p&gt;
+
+&lt;h3 id=&quot;ceilx&quot;&gt;ceil(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the value of x rounded up to its nearest integer&lt;/p&gt;
+
+&lt;h3 id=&quot;copysignxy&quot;&gt;copySign(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Returns the first floating point x with the sigtn of the second floating point y&lt;/p&gt;
+
+&lt;h3 id=&quot;cosx&quot;&gt;cos(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the cosine of x(x is in radians)&lt;/p&gt;
+
+&lt;h3 id=&quot;coshx&quot;&gt;cosh(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the hyperbolic cosine of a double value&lt;/p&gt;
+
+&lt;h3 id=&quot;expx&quot;&gt;exp(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the value of E^x&lt;/p&gt;
+
+&lt;h3 id=&quot;expm1x&quot;&gt;expm1(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns e^x-1&lt;/p&gt;
+
+&lt;h3 id=&quot;floorx&quot;&gt;floor(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the value of x rounded down to its nearest integer&lt;/p&gt;
+
+&lt;h3 id=&quot;getexponentx&quot;&gt;getExponent(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the unbiased exponent used in x&lt;/p&gt;
+
+&lt;h3 id=&quot;hypotxy&quot;&gt;hypot(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Returns sqrt(x^2+y^2) without intermediate overflow or underflow&lt;/p&gt;
+
+&lt;h3 id=&quot;ieeeremainderxy&quot;&gt;IEEEremainder(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Computes the remainder operation on x and y as prescribed by the IEEE 754 standard&lt;/p&gt;
+
+&lt;h3 id=&quot;logx&quot;&gt;log(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the natural logarithm (base E) of x&lt;/p&gt;
+
+&lt;h3 id=&quot;log10x&quot;&gt;log10(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the base 10 logarithm of x&lt;/p&gt;
+
+&lt;h3 id=&quot;log1px&quot;&gt;log1p(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the natural logarithm (base E) of the sum of x and 1&lt;/p&gt;
+
+&lt;h3 id=&quot;maxxy&quot;&gt;max(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Returns the number with the highest value&lt;/p&gt;
+
+&lt;h3 id=&quot;minxy&quot;&gt;min(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Returns the number with the lowest value&lt;/p&gt;
+
+&lt;h3 id=&quot;nextafterxy&quot;&gt;nextAfter(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Returns the floating point number adjacent to x in the direction of y&lt;/p&gt;
+
+&lt;h3 id=&quot;nextupx&quot;&gt;nextUp(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the floating point value adjacent to x in the direction of positive infinity&lt;/p&gt;
+
+&lt;h3 id=&quot;powxy&quot;&gt;pow(x,y)&lt;/h3&gt;
+
+&lt;p&gt;Returns the value of x to the power of y&lt;/p&gt;
+
+&lt;h3 id=&quot;random&quot;&gt;random()&lt;/h3&gt;
+
+&lt;p&gt;Returns a random number between 0 and 1&lt;/p&gt;
+
+&lt;h3 id=&quot;roundx&quot;&gt;round(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the value of x rounded to its nearest integer&lt;/p&gt;
+
+&lt;h3 id=&quot;rint&quot;&gt;rint()&lt;/h3&gt;
+
+&lt;p&gt;Returns the double value that is closest to x and equal to a mathematical integer&lt;/p&gt;
+
+&lt;h3 id=&quot;signumx&quot;&gt;signum(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the sign of x&lt;/p&gt;
+
+&lt;h3 id=&quot;sinx&quot;&gt;sin(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the sine of x (x is in radians)&lt;/p&gt;
+
+&lt;h3 id=&quot;sinhx&quot;&gt;sinh(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the hyperbolic sine of a double value&lt;/p&gt;
+
+&lt;h3 id=&quot;sqrtx&quot;&gt;sqrt(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the square root of x&lt;/p&gt;
+
+&lt;h3 id=&quot;tanx&quot;&gt;tan(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the tangent of an angle&lt;/p&gt;
+
+&lt;h3 id=&quot;tanhx&quot;&gt;tanh(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the hyperbolic tangent of a double value&lt;/p&gt;
+
+&lt;h3 id=&quot;todegreesx&quot;&gt;toDegrees(x)&lt;/h3&gt;
+
+&lt;p&gt;Converts and angle measured in radians to an approx. equivalent angle measured in degrees&lt;/p&gt;
+
+&lt;h3 id=&quot;toradiansx&quot;&gt;toRadians(x)&lt;/h3&gt;
+
+&lt;p&gt;Converts an angle measured in degrees to an approx. angle measured in radians&lt;/p&gt;
+
+&lt;h3 id=&quot;ulpx&quot;&gt;ulp(x)&lt;/h3&gt;
+
+&lt;p&gt;Returns the size of the unit of least precision (ulp) of x&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">Java Math methods</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Java Math</title>
+      <link href="http://localhost:4000/reference-java_math" rel="alternate" type="text/html" title="Reference - Java Math" />
+      <published>2021-12-21T18:00:00+09:00</published>
+      <updated>2021-12-21T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-java_math</id>
+      <content type="html" xml:base="http://localhost:4000/reference-java_math">&lt;h2 id=&quot;java-string-methods&quot;&gt;Java String methods&lt;/h2&gt;
 
 &lt;p&gt;A set of built-in methods that you can use on strings&lt;/p&gt;
 
@@ -220,194 +402,12 @@
     </entry>
   
     <entry>
-      <title type="html">Reference - Java String</title>
-      <link href="https://spongebob53.github.io/reference-java_string" rel="alternate" type="text/html" title="Reference - Java String" />
-      <published>2021-12-21T18:00:00+09:00</published>
-      <updated>2021-12-21T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/reference-java_string</id>
-      <content type="html" xml:base="https://spongebob53.github.io/reference-java_string">&lt;h2 id=&quot;java-math-methods&quot;&gt;Java Math methods&lt;/h2&gt;
-
-&lt;p&gt;methods that allows you to perform mathematical task on numbers&lt;/p&gt;
-
-&lt;p&gt;All methods are static&lt;/p&gt;
-
-&lt;h3 id=&quot;absx&quot;&gt;abs(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the absolute value of x&lt;/p&gt;
-
-&lt;h3 id=&quot;acosx&quot;&gt;acos(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the arccosine of x, in a radians&lt;/p&gt;
-
-&lt;h3 id=&quot;asinx&quot;&gt;asin(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the arcsine of x, in radians&lt;/p&gt;
-
-&lt;h3 id=&quot;atanx&quot;&gt;atan(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the arctangent of x as a numeric value between –PI/2 and PI/2 radians&lt;/p&gt;
-
-&lt;h3 id=&quot;atan2yx&quot;&gt;atan2(y,x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the angle theta from the conversion of rectangular coordinates(x,y) to polar coordinates(r, theta)&lt;/p&gt;
-
-&lt;h3 id=&quot;cbrtx&quot;&gt;cbrt(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the cube root of x&lt;/p&gt;
-
-&lt;h3 id=&quot;ceilx&quot;&gt;ceil(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the value of x rounded up to its nearest integer&lt;/p&gt;
-
-&lt;h3 id=&quot;copysignxy&quot;&gt;copySign(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Returns the first floating point x with the sigtn of the second floating point y&lt;/p&gt;
-
-&lt;h3 id=&quot;cosx&quot;&gt;cos(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the cosine of x(x is in radians)&lt;/p&gt;
-
-&lt;h3 id=&quot;coshx&quot;&gt;cosh(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the hyperbolic cosine of a double value&lt;/p&gt;
-
-&lt;h3 id=&quot;expx&quot;&gt;exp(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the value of E^x&lt;/p&gt;
-
-&lt;h3 id=&quot;expm1x&quot;&gt;expm1(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns e^x-1&lt;/p&gt;
-
-&lt;h3 id=&quot;floorx&quot;&gt;floor(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the value of x rounded down to its nearest integer&lt;/p&gt;
-
-&lt;h3 id=&quot;getexponentx&quot;&gt;getExponent(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the unbiased exponent used in x&lt;/p&gt;
-
-&lt;h3 id=&quot;hypotxy&quot;&gt;hypot(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Returns sqrt(x^2+y^2) without intermediate overflow or underflow&lt;/p&gt;
-
-&lt;h3 id=&quot;ieeeremainderxy&quot;&gt;IEEEremainder(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Computes the remainder operation on x and y as prescribed by the IEEE 754 standard&lt;/p&gt;
-
-&lt;h3 id=&quot;logx&quot;&gt;log(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the natural logarithm (base E) of x&lt;/p&gt;
-
-&lt;h3 id=&quot;log10x&quot;&gt;log10(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the base 10 logarithm of x&lt;/p&gt;
-
-&lt;h3 id=&quot;log1px&quot;&gt;log1p(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the natural logarithm (base E) of the sum of x and 1&lt;/p&gt;
-
-&lt;h3 id=&quot;maxxy&quot;&gt;max(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Returns the number with the highest value&lt;/p&gt;
-
-&lt;h3 id=&quot;minxy&quot;&gt;min(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Returns the number with the lowest value&lt;/p&gt;
-
-&lt;h3 id=&quot;nextafterxy&quot;&gt;nextAfter(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Returns the floating point number adjacent to x in the direction of y&lt;/p&gt;
-
-&lt;h3 id=&quot;nextupx&quot;&gt;nextUp(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the floating point value adjacent to x in the direction of positive infinity&lt;/p&gt;
-
-&lt;h3 id=&quot;powxy&quot;&gt;pow(x,y)&lt;/h3&gt;
-
-&lt;p&gt;Returns the value of x to the power of y&lt;/p&gt;
-
-&lt;h3 id=&quot;random&quot;&gt;random()&lt;/h3&gt;
-
-&lt;p&gt;Returns a random number between 0 and 1&lt;/p&gt;
-
-&lt;h3 id=&quot;roundx&quot;&gt;round(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the value of x rounded to its nearest integer&lt;/p&gt;
-
-&lt;h3 id=&quot;rint&quot;&gt;rint()&lt;/h3&gt;
-
-&lt;p&gt;Returns the double value that is closest to x and equal to a mathematical integer&lt;/p&gt;
-
-&lt;h3 id=&quot;signumx&quot;&gt;signum(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the sign of x&lt;/p&gt;
-
-&lt;h3 id=&quot;sinx&quot;&gt;sin(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the sine of x (x is in radians)&lt;/p&gt;
-
-&lt;h3 id=&quot;sinhx&quot;&gt;sinh(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the hyperbolic sine of a double value&lt;/p&gt;
-
-&lt;h3 id=&quot;sqrtx&quot;&gt;sqrt(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the square root of x&lt;/p&gt;
-
-&lt;h3 id=&quot;tanx&quot;&gt;tan(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the tangent of an angle&lt;/p&gt;
-
-&lt;h3 id=&quot;tanhx&quot;&gt;tanh(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the hyperbolic tangent of a double value&lt;/p&gt;
-
-&lt;h3 id=&quot;todegreesx&quot;&gt;toDegrees(x)&lt;/h3&gt;
-
-&lt;p&gt;Converts and angle measured in radians to an approx. equivalent angle measured in degrees&lt;/p&gt;
-
-&lt;h3 id=&quot;toradiansx&quot;&gt;toRadians(x)&lt;/h3&gt;
-
-&lt;p&gt;Converts an angle measured in degrees to an approx. angle measured in radians&lt;/p&gt;
-
-&lt;h3 id=&quot;ulpx&quot;&gt;ulp(x)&lt;/h3&gt;
-
-&lt;p&gt;Returns the size of the unit of least precision (ulp) of x&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="reference" />
-      
-
-      
-        <summary type="html">Java Math methods</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">Reference - Java Keyword</title>
-      <link href="https://spongebob53.github.io/reference-java_keyword" rel="alternate" type="text/html" title="Reference - Java Keyword" />
+      <link href="http://localhost:4000/reference-java_keyword" rel="alternate" type="text/html" title="Reference - Java Keyword" />
       <published>2021-12-19T18:00:00+09:00</published>
       <updated>2021-12-19T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/reference-java_keyword</id>
-      <content type="html" xml:base="https://spongebob53.github.io/reference-java_keyword">&lt;h2 id=&quot;java-reserved-keywords&quot;&gt;Java reserved keywords&lt;/h2&gt;
+      <id>http://localhost:4000/reference-java_keyword</id>
+      <content type="html" xml:base="http://localhost:4000/reference-java_keyword">&lt;h2 id=&quot;java-reserved-keywords&quot;&gt;Java reserved keywords&lt;/h2&gt;
 
 &lt;h3 id=&quot;abstract&quot;&gt;abstract&lt;/h3&gt;
 

@@ -2,10 +2,10 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom" >
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
-  <link href="https://spongebob53.github.io/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
-  <link href="https://spongebob53.github.io/" rel="alternate" type="text/html" />
-  <updated>2021-12-31T19:31:59+09:00</updated>
-  <id>https://spongebob53.github.io/tag/w3schools/feed.xml</id>
+  <link href="http://localhost:4000/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2022-01-09T19:56:31+09:00</updated>
+  <id>http://localhost:4000/tag/w3schools/feed.xml</id>
 
   
   
@@ -32,114 +32,12 @@
 
   
     <entry>
-      <title type="html">W3schools - HTML_Class / Id</title>
-      <link href="https://spongebob53.github.io/w3schools-html_id_class" rel="alternate" type="text/html" title="W3schools - HTML_Class / Id" />
-      <published>2021-12-27T18:00:00+09:00</published>
-      <updated>2021-12-27T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_id_class</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_id_class">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;id&quot;&gt;ID&lt;/h3&gt;
-
-&lt;p&gt;Is used to specify a unique id for an HTML element&lt;/p&gt;
-
-&lt;p&gt;The value of the id attribute must be unique within the HTML document&lt;/p&gt;
-
-&lt;p&gt;Is used to point to a specific style declaration in a style sheet&lt;/p&gt;
-
-&lt;p&gt;Is used by JS to access and manipulate the element with the specific id&lt;/p&gt;
-
-&lt;p&gt;CSS Syntax : #IdName{…}&lt;/p&gt;
-
-&lt;p&gt;Id name is case sensitive, it must contain at least one character, can’t start with number, and must not contain whitespace&lt;/p&gt;
-
-&lt;p&gt;HTML bookmarks with Id and links&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-/* Add a link to the bookmark, from within the same page */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”#C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Jump to Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-/* from another page */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;herf=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”html_demo.html#C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; Jump to Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;class&quot;&gt;Class&lt;/h3&gt;
-
-&lt;p&gt;Is used to specify a class for an HTML element&lt;/p&gt;
-
-&lt;p&gt;Multiple HTML elements can share the same class&lt;/p&gt;
-
-&lt;p&gt;Is often used to point to a class name in a style sheet&lt;/p&gt;
-
-&lt;p&gt;Can also be used by a JavaScript to access and manipulate elements with the specific class name&lt;/p&gt;
-
-&lt;p&gt;Can be used on any HTML element, and is case sensitive&lt;/p&gt;
-
-&lt;p&gt;CSS Syntax : .className{…}&lt;/p&gt;
-
-&lt;p&gt;Different elements cans share same class&lt;/p&gt;
-
-&lt;p&gt;Multiple classes&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;HTML elements can belong to more than one class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To define multiple classes, separate the class names with a space&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The element will be styled according to all the classes specified&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”main&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">W3schools - HTML_Style Guide</title>
-      <link href="https://spongebob53.github.io/w3schools-html_style_guide" rel="alternate" type="text/html" title="W3schools - HTML_Style Guide" />
+      <link href="http://localhost:4000/w3schools-html_style_guide" rel="alternate" type="text/html" title="W3schools - HTML_Style Guide" />
       <published>2021-12-27T18:00:00+09:00</published>
       <updated>2021-12-27T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_style_guide</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_style_guide">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-html_style_guide</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_style_guide">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -334,12 +232,114 @@
     </entry>
   
     <entry>
+      <title type="html">W3schools - HTML_Class / Id</title>
+      <link href="http://localhost:4000/w3schools-html_id_class" rel="alternate" type="text/html" title="W3schools - HTML_Class / Id" />
+      <published>2021-12-27T18:00:00+09:00</published>
+      <updated>2021-12-27T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-html_id_class</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_id_class">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;id&quot;&gt;ID&lt;/h3&gt;
+
+&lt;p&gt;Is used to specify a unique id for an HTML element&lt;/p&gt;
+
+&lt;p&gt;The value of the id attribute must be unique within the HTML document&lt;/p&gt;
+
+&lt;p&gt;Is used to point to a specific style declaration in a style sheet&lt;/p&gt;
+
+&lt;p&gt;Is used by JS to access and manipulate the element with the specific id&lt;/p&gt;
+
+&lt;p&gt;CSS Syntax : #IdName{…}&lt;/p&gt;
+
+&lt;p&gt;Id name is case sensitive, it must contain at least one character, can’t start with number, and must not contain whitespace&lt;/p&gt;
+
+&lt;p&gt;HTML bookmarks with Id and links&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+/* Add a link to the bookmark, from within the same page */
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”#C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Jump to Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+/* from another page */
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;herf=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”html_demo.html#C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; Jump to Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;class&quot;&gt;Class&lt;/h3&gt;
+
+&lt;p&gt;Is used to specify a class for an HTML element&lt;/p&gt;
+
+&lt;p&gt;Multiple HTML elements can share the same class&lt;/p&gt;
+
+&lt;p&gt;Is often used to point to a class name in a style sheet&lt;/p&gt;
+
+&lt;p&gt;Can also be used by a JavaScript to access and manipulate elements with the specific class name&lt;/p&gt;
+
+&lt;p&gt;Can be used on any HTML element, and is case sensitive&lt;/p&gt;
+
+&lt;p&gt;CSS Syntax : .className{…}&lt;/p&gt;
+
+&lt;p&gt;Different elements cans share same class&lt;/p&gt;
+
+&lt;p&gt;Multiple classes&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;HTML elements can belong to more than one class&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To define multiple classes, separate the class names with a space&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The element will be styled according to all the classes specified&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”main&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">W3schools - HTML_Layout</title>
-      <link href="https://spongebob53.github.io/w3schools-html_layout" rel="alternate" type="text/html" title="W3schools - HTML_Layout" />
+      <link href="http://localhost:4000/w3schools-html_layout" rel="alternate" type="text/html" title="W3schools - HTML_Layout" />
       <published>2021-12-26T18:00:00+09:00</published>
       <updated>2021-12-26T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_layout</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_layout">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-html_layout</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_layout">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -576,12 +576,113 @@
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Head</title>
-      <link href="https://spongebob53.github.io/w3schools-html_head" rel="alternate" type="text/html" title="W3schools - HTML_Head" />
+      <title type="html">W3schools - HTML_Responsive</title>
+      <link href="http://localhost:4000/w3schools-html_responsive" rel="alternate" type="text/html" title="W3schools - HTML_Responsive" />
       <published>2021-12-25T18:00:00+09:00</published>
       <updated>2021-12-25T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_head</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_head">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-html_responsive</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_responsive">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices(like setting the viewport)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Use percent&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;width:100%;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;will be responsive and scale up and down, but the tag can be scaled up to be larger than its original size&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;better solution will be to use the max-width&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;if max-width property is set to 100%, never scale up to be larger than its original size&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vw&lt;/code&gt; unit&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Means the “viewport width”, 1vw = 1% of viewport width&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;media-queries&quot;&gt;Media Queries&lt;/h3&gt;
+
+&lt;p&gt;With media queries you can define completely different styles for different browser sizes&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;60%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* use a media query to add a breakpoint at 800px */&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;800px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - HTML_Head</title>
+      <link href="http://localhost:4000/w3schools-html_head" rel="alternate" type="text/html" title="W3schools - HTML_Head" />
+      <published>2021-12-25T18:00:00+09:00</published>
+      <updated>2021-12-25T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-html_head</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_head">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -721,11 +822,11 @@ is first loaded by the browser */
   
     <entry>
       <title type="html">W3schools - HTML_Encode / Charset</title>
-      <link href="https://spongebob53.github.io/w3schools-html_encode_charset" rel="alternate" type="text/html" title="W3schools - HTML_Encode / Charset" />
+      <link href="http://localhost:4000/w3schools-html_encode_charset" rel="alternate" type="text/html" title="W3schools - HTML_Encode / Charset" />
       <published>2021-12-25T18:00:00+09:00</published>
       <updated>2021-12-25T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_encode_charset</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_encode_charset">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-html_encode_charset</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_encode_charset">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -881,113 +982,12 @@ is first loaded by the browser */
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Responsive</title>
-      <link href="https://spongebob53.github.io/w3schools-html_responsive" rel="alternate" type="text/html" title="W3schools - HTML_Responsive" />
-      <published>2021-12-25T18:00:00+09:00</published>
-      <updated>2021-12-25T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_responsive</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_responsive">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices(like setting the viewport)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Use percent&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;width:100%;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;will be responsive and scale up and down, but the tag can be scaled up to be larger than its original size&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;better solution will be to use the max-width&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;if max-width property is set to 100%, never scale up to be larger than its original size&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vw&lt;/code&gt; unit&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Means the “viewport width”, 1vw = 1% of viewport width&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;media-queries&quot;&gt;Media Queries&lt;/h3&gt;
-
-&lt;p&gt;With media queries you can define completely different styles for different browser sizes&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;60%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/* use a media query to add a breakpoint at 800px */&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;800px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">W3schools - HTML_Intro</title>
-      <link href="https://spongebob53.github.io/w3schools-html_intro" rel="alternate" type="text/html" title="W3schools - HTML_Intro" />
+      <link href="http://localhost:4000/w3schools-html_intro" rel="alternate" type="text/html" title="W3schools - HTML_Intro" />
       <published>2021-12-24T18:00:00+09:00</published>
       <updated>2021-12-24T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-html_intro</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-html_intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-html_intro</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-html_intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -1194,11 +1194,11 @@ In some situations, when the attribute value itself contains double quotes, it i
   
     <entry>
       <title type="html">W3schools - Thread / Lambda</title>
-      <link href="https://spongebob53.github.io/w3schools-thread_lambda" rel="alternate" type="text/html" title="W3schools - Thread / Lambda" />
+      <link href="http://localhost:4000/w3schools-thread_lambda" rel="alternate" type="text/html" title="W3schools - Thread / Lambda" />
       <published>2021-12-23T18:00:00+09:00</published>
       <updated>2021-12-23T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-thread_lambda</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-thread_lambda">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-thread_lambda</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-thread_lambda">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -1340,11 +1340,11 @@ In some situations, when the attribute value itself contains double quotes, it i
   
     <entry>
       <title type="html">W3schools - RegEx</title>
-      <link href="https://spongebob53.github.io/w3schools-regex" rel="alternate" type="text/html" title="W3schools - RegEx" />
+      <link href="http://localhost:4000/w3schools-regex" rel="alternate" type="text/html" title="W3schools - RegEx" />
       <published>2021-12-22T18:00:00+09:00</published>
       <updated>2021-12-22T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-regex</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-regex">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-regex</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-regex">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -1479,11 +1479,11 @@ In some situations, when the attribute value itself contains double quotes, it i
   
     <entry>
       <title type="html">W3schools - Exception</title>
-      <link href="https://spongebob53.github.io/w3schools-exception" rel="alternate" type="text/html" title="W3schools - Exception" />
+      <link href="http://localhost:4000/w3schools-exception" rel="alternate" type="text/html" title="W3schools - Exception" />
       <published>2021-12-21T18:00:00+09:00</published>
       <updated>2021-12-21T18:00:00+09:00</updated>
-      <id>https://spongebob53.github.io/w3schools-exception</id>
-      <content type="html" xml:base="https://spongebob53.github.io/w3schools-exception">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <id>http://localhost:4000/w3schools-exception</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-exception">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;

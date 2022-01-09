@@ -86,8 +86,8 @@
 
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="개발 기록" />
-    <link rel="shortcut icon" href="https://spongebob53.github.io/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="https://spongebob53.github.io/search" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/search" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
@@ -95,14 +95,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Search Result" />
     <meta property="og:description" content="개발 기록" />
-    <meta property="og:url" content="https://spongebob53.github.io/search" />
-    <meta property="og:image" content="https://spongebob53.github.io/assets/built/images/blog-cover1.png" />
+    <meta property="og:url" content="http://localhost:4000/search" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Search Result" />
     <meta name="twitter:description" content="개발 기록" />
-    <meta name="twitter:url" content="https://spongebob53.github.io/" />
-    <meta name="twitter:image" content="https://spongebob53.github.io/assets/built/images/blog-cover1.png" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/blog-cover1.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Coding Diary" />
     <meta name="twitter:site" content="@" />
@@ -117,18 +117,18 @@
     "publisher": {
         "@type": "Organization",
         "name": "Coding Diary",
-        "logo": "https://spongebob53.github.io/"
+        "logo": "http://localhost:4000/"
     },
-    "url": "https://spongebob53.github.io/search",
+    "url": "http://localhost:4000/search",
     "image": {
         "@type": "ImageObject",
-        "url": "https://spongebob53.github.io/assets/built/images/blog-cover1.png",
+        "url": "http://localhost:4000/assets/built/images/blog-cover1.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://spongebob53.github.io/search"
+        "@id": "http://localhost:4000/search"
     },
     "description": "개발 기록"
 }
@@ -161,7 +161,7 @@ into the {body} of the default.hbs template -->
         <nav class="site-nav">
   <div class="site-nav-left">
      
-    <a class="site-nav-logo" href="https://spongebob53.github.io/"
+    <a class="site-nav-logo" href="http://localhost:4000/"
       >Coding Diary</a
     >
        <ul class="nav" role="menu">
@@ -234,11 +234,56 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-js-window-event": {
+      "title": "JS - Window / Event",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요40일차 수업========복습========요소 추가  appendChild(), insertBefore()속성, 텍스트 변경  nodeValue, innerHTML, value, setAttribute()변경할 대상을 선택  id, class, TagName, 또는 관계를 통해서 선택======== 끝 ========40일차 수업window 객체BOM(Browser Object Model), 모델 안에 있는 객체, 웹 표준은 아님웹브라우저의 창, 전역객체, DOM 요소들은 모두 window 객체의 propertywindow.innerHeight;\t// 현재 윈도우의 높이window.open(“https://spongebob53.github.io/”,“_blank”, “width=400px, height=400px”);// window.open(url, name, space, replace);// url : 보여줄 페이지// name : 속성(어떻게 창을 열 것인지 설정), _blank(새창,기본값), _self(현재창), _parent(부모프레임)// space : 페이지 열릴 때 창의 크기, 스크롤 여부, 크기변경 여부 설정.close(); // 창 닫기location.href;\t// 현재 페이지의 주소를 가져오거나, 새로운 문서를 불러올 때 사용웹 표준HTML, CSS, JS : Java 처럼 규칙이 엄격하지 않고 유연함, 개발자의 개성에 따라 코드가 천차만별관리 측면에서 불안함을 해소하기 위해 W3C에서 웹 표준을 만듬개발자의 사용성, 접근성 증가history브라우저의 사용했던 내역을 저장window.history.back();\t// 이전페이지 가기window.history.go(-1);\t// 음수에 따라 뒤로가기window.history.forward();\t// 다음페이지 가기Screen, Navigator 객체대화상자, 화면에 출력하는 것보다 우선적으로 실행alert(); : 경고창, 사용자에게 메세지를 보여주고, 확인을 기다리는창  대화 상자의 확인을 눌러야지만 다음 작업이 진행prompt(); : 메세지를 보여주고, 사용자가 입력한 “문자열”을 반환한다confirm(); : 메세지를 보여주고, 확인 or 취소를 기다리는 창, 결과값을 참거짓으로 반환한다EventHTML 요소 안에서의 사건 발생, 사건이 발생했을 때 특정 동작을 하겠다이벤트를 발생시키는 조건 : 키보드, 마우스, DOM or window(요소나 페이지의 focus 등)JS 에서 이벤트에 대한 것들을 미리 정의해 놓음var btn = document.querySelector(“#btn”);btn.onclick = function() { … }; // 1 방법function btnclick(){ … };\t// 2 방법btn.onclick = btnclick();// 위의 두가지 방법은 이벤트를 다중으로 받지 못하는 단점btn.addEventListener(“click”,btnclick);\t// 대상.addEventListener(이벤트명,함수명);function btnclick(event){var target = event.target;\t// event 인자로 사용가능, 이벤트 정보에 대해 미리 정의된 변수}TimerJava에서 sleep과 비슷한 기능함수가 일정 시간 뒤에 호출이 되도록 딜레이를 주는 방법setTimeout(호출함수, 지연시간 ms); : 일정 시간 뒤에 시작, clearTimeout(대상);으로 종료setInterval(호출함수, 반복주기 ms); : 일정 시간마다 반복, clearInterval(대상);으로 종료Mouse eventclick : 마우스 클릭 시mouseover : 마우스 커서가 해당 태그 위로 올라왔을 때mouseout : 마우스 커서가 해당 태그 위에서 떠났을 때mousedown : 마우스를 눌렀을 때mouseup : 마우스를 떼었을 때onclick처럼 on 을 붙이면 태그 안에서도 바로 작성 가능Keyboard eventkeydown : 키보드를 누르는 순간keyup : 키보드를 떼는 순간keypress : 키보드를 누르는 동안(문자가 연결되는 상황)focus : 요소에 집중하고 있을 때, 요소를 선택하거나 입력 준비 중일때blur : focus의 반대form전달 과정을 지원해주는 태그      시작태그와 종료태그 사이에 있는 input 태그 안에 들어있는 값은 전부 전달        데이터를 보여주기 뿐만 아니라 사용자에게 입력받는 행위        현재 페이지 결과를 처리, 다른 페이지에 전달  form 안에서만 작동하는 type      input type =“submit” : 데이터 제출        input type =“reset” : 데이터 초기화  URL 살펴보기http://주소:8080/파일경로/파일명.html?속성명=속성값&amp;속성명=속성값…파일명 다음에 나오는 ‘?’ : 구분선, 이후에 나오는 글자는 키쌍의 형태로 전달될 데이터데이터의 모양은 “속성명=속성값”, 여러개의 속성일 경우 &amp;로 구분속성: form 태그에 작성된 input 태그의 순서대로 나열, 속성명은 input의 name 속성값을 가져옴속성 값 : 해당 input태그의 입력값데이터 전달&lt;form action = “ 입력할 데이터를 처리할 페이지 주소” method = “방식 선택”&gt;method : 데이터를 주고 받는 방식get      주소에 데이터를 추가하여 전달하는 방식        전달하는 데이터가 주소창에 보이기 때문에 보안상 좋지 않음        주소창의 길이가 제한적이기 때문에 전달할 수 있는 데이터가 한정되어있음        전달할 수 있는 데이터는 문자열        속도가 빠름  post      데이터를 별도로 첨부하여 전달하는 방식        데이터가 외부에서 보이지 않음        전달할 수 있는 데이터 제한이 없음        데이터의 자료형도 자유로움  ",
+      "url": "/lecture-JS-window_event"
+  }
+  ,
+  
+  "lecture-js-node": {
+      "title": "JS - Node",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요39일차 수업========복습========배열선언 방법 : 배열이름 =  [];인덱스 자유롭게 선언 가능 // 5개의 크기를 가진 배열에 인덱스99 부여 가능, 그 사이는 빈공간배열 안에 넣을 수 있는 자료형은 제한 없음함수선언 방법 : function 함수명(파라미터){ 실행부 };Java 의 메소드 선언 형태와 비슷호출 방법 : 함수명();언제나 시작하는 코드가 아니라, 특정 상황, 특정 시점 등에 호출을 통해서 실행할 목적구현할 기능이 반복적으로 사용이 되는 경우에 선언매개변수와 인자      함수를 선언할 때 입력받아야할 변수(파라미터), 함수 내에서 사용하는 변수(인자)        함수내부에서 외부로 전달하는 방법 : return 키워드  JS 특징함수의 매개변수, 인자가 정해놓은 규칙을 지키지 않아도 사용 가능하도록 구현      디폴트 매개변수 : 입력 받아야할 파라미터 값이 없을 때 기본 값을 설정(파라미터 = 기본값)        나머지 매개변수 : 입력 받기로한 파라미터보다 더 받았을 때 저장하는 배열(…배열명)  Object“키 : 값” 으로 구성된 property의 집합, 값으로 함수도 올 수 있음값 호출 방법      객체명.키;        객체명[‘키’];        객체명.함수명();  NodeDOM(Document Object Model)을 이용해서 노드를 탐색      Id, class, tagName, name 등을 통해서 접근 가능        관계를 통해서 접근 가능  ======== 끝 ========39일차 수업Add Nodevar parent = document.getElementById(“list”);var p = document.createElement(“p”);\t// 새로운 노드 만들기var ptext = document.createTextNode(“추가된 p”);p.appendChild(ptext);\t\t// 해당 노드의 마지막 자식으로 추가parent.\tappendChild(p);parent.insertBefore(p,select);\t// 부모노드.insertBefore(insert할 태그, 기준 태그); vice versaNodeinnerHTML : 시작 태그와 종료 태그 사이에 있는 글씨value : 태그 내의 value 속성요소 노드는 직접 텍스트 값을 가지지 않음, 항상 자식인 텍스트 노드에 저장var p = document.getElementById(“text”);// p.innerHTML 또는 p.firstChild.nodeValue 로 태그 안  텍스트 접근 가능p.setAttribute(“class”, “test”);\t// 속성 생성 or 변경, (속성이름, 속성값)",
+      "url": "/lecture-JS-node"
+  }
+  ,
+  
+  "lecture-js-array-function-node": {
+      "title": "JS - Array / Function / Node",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요38일차 수업배열구성 : 배열의 요소(값) + 위치를 가르키는 index인덱스는 항상 0 부터 시작, 2의 32승까지 있음var arr1 = [ ];\t// 크기 설정 불가능var arr2 = Array(10);\t// 생성과 동시에 크기 설정 가능, 10칸 배열 생성 예시var arr3 = new Array(9);\t// 생성과 동시에 크기 설정 가능,var arr4 = new Array(1,2,3,[88,99], “문자열);\t// 배열 요소 넣어주면 초기값으로 생성 가능var arr5 = [1,2,3, [99,88], “문자열”];\t// 배열의 요소의 타입이 고정되지 않는다var arr6 = [ ];arr4[0];\t// 배열 요소 선택, 배열명[인덱스];arr6.push(“3”);\t// 배열에 요소 추가하기\t배열명.push(값);arr6[4] = “3”;\t\t//  배열에 요소 추가하기\t배열명[인덱스] = 값;arr6[99] = 1;\t// 인덱스가 연속적이지 않아도 됨, 비어있는 값도 존재, 크기가 가변적delete arr6 [4];\t// 해당 인덱스의 요소만 지움arr6.pop();\t\t// 해당 배열의 끝자리부터 요소와 함께 인덱스까지 지움arr7 = [ [ ] , [ ] , [ ] ];\t// 2차원 배열 만들기function함수, 하나의 작업을 수행하도록 설계된 독립적인 블록 { … }      함수 내 실행문에서의 변수는 독립적인 블록이라 지역 변수        외부의, 전역변수를 호출할 때는 java의 this 처럼 window로 구분  필요한 경우에 함수를 호출하여 작업을 반복 수행하나의 데이터 타입처럼 존재, 변수나 배열, 함수에 함수를 넣을 수 있음// 함수 선언 : function 함수 이름 (매개변수…){ 실행문 }function add(x,y){return x + y;};// return 은 함수의 실행을 멈추고 return 키워드 다음에 명시된 표현 값을 호출한 대상에게 반환한다var plus = add();\t// 함수명 변경가능Hoisting코드를 실행하기 전에 변수 선언 / 함수 선언이 프로그램이 구현되는 부분에서 최상단으로 끌어 올려진 것같은 현상, JS의 특징이러한 문제를 예방하기 위해서 변수선언을 항상 상단에 적어준다var num = 10;function print(){    console.log(num);\t// output undefined    var num = 20;    console.log(num);\t// output 20}Parameterfunction을 정의할 때 전달받고자 하는 데이터를 괄호 안에 정의argument : parameter를 통해 전달받은 데이터JS에서는 default 값을 정할 수 있음function test(a,b=1,c){ … };test(1,2,3,4);test(1,2);\t// 선언된 parameter만큼 작성하지 않아도 됨test(1);\t\t// b의 값이 주어지지 않으면 default 인 1로 대체function(…args){  };\t// parameter 제한없이 모두 args 배열에 넣어 argument로 이용할 수 있음Object숫자, 문자, Boolean, undefined 를 제외한 모든 것var person = {\t// object 선언name : “스폰지밥”,\t// 키와 값으로 구성, propertyage : 30,\t\t// 키는 문자열, 값은 일반적인 값, 각 property는 comma로 구분id : function() {…},\t// 함수 : 메소드, 이름은 키가 대체하기 때문에 작성할 필요없음};person.age;\t// property 값 호출하기, 객체이름.property;person[‘name’];\t// property값 호출하기, 객체이름[property];person.id();\t// 함수 호출하기, 객체이름.함수이름();Node계층 구조에 들어있는 정보문서 노드 : HTML 전체를 나타내는 노드, document요소 노드 : HTML 태그속성 노드 : 요소 노드(태그)에 대한 정보를 가진 노드, 자식으로 포함이 안됨텍스트 노드 : 모든 텍스트를 나타내는 노드, 시작태그와 종료태그 사이 공백도 해당주석 노드 : 주석을 나타내는 노드DOM노드 간에 연결선을 만들어주면 노드 트리document 안에 담겨져 있는 노드를 관리하는 것이 목적Node루트 노드 : 최상단 노드, 모든 노드의 부모, 유일하게 부모가 없음일반 노드 : 단하나의 부모 노드 존재, 자식은 자유롭게 가짐Node 관계형제 노드 : 같은 부모를 가진 노드조상 노드 : 현재 노드를 기준으로 상위에 존재하는 모든 노드자손 노드 : 현재 노드를 기준으로 하위에 존재하는 모든 노드Access NodegetElementByTagName() 등 요소와 관련된 메소드를 이용하여 접근 가능노드 관계를 활용해 접근하는 방법      parentNode : 부모 노드        childnodes : 자식 노드 리스트        firstChild : 첫 번째 자식 노드        lastChild : 마지막 자식 노드        nextSibling : 다음 형제 노드        previousSibling : 이전 형제 노드  접근한 노드 데이터 가져오기      nodeName : 노드의 태그 이름, 속성 이름        nodeValue : 노드의 담긴 값, 문자열        nodeType : 노드의 타입  // In HTML&lt;!DOCTYPE html&gt;&lt;html lang=”ko”&gt;\t&lt;head&gt;\t&lt;/head&gt;\t&lt;body&gt;\t\t&lt;p id = “nodeTest”&gt;&lt;/p&gt;\t&lt;/body&gt;&lt;/html&gt;// In JSfunction nodeTest(){document.getElementById(“nodeTest”).innerText = document.children[0].children[1].children[0].nodeName;\t// output BODY// children은 비 요소들을 제외해준다, 그래서 childNodes를 더 안쓰게 됨",
+      "url": "/lecture-JS-array_function_node"
+  }
+  ,
+  
+  "lecture-js-array-dom": {
+      "title": "JS - Array / DOM",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요37일차 수업========복습========JavaScript변수 관련 굉장히 유연한 언어보통 &lt;/body&gt; 밑에 작성타입은 5가지 : number, string, boolean, undefined, object적용방식      내부 : &lt;script type=”text/javascript”&gt;js 작성 공간&lt;/script&gt;        외부 : &lt;script src=”js 파일 경로”&gt;&lt;/script&gt;  출력방식console.log(“blahblah”);\t\t// Debug 콘솔로 확인alert(“blahblah”);\t\t\t// 웹브라우저의 경고창document.write(“blahblah”);\t// 웹브라우저의 body 태그에 적기innerHTML(“blahblah”);\t\t// 웹브라우저의 요소에 적는 방법연산자,제어문 : 자바와 비슷== : 동등연산자, equal, 값이 서로 같은지 비교두 값을 비교할 때 js 에서 강제로 형변환을 해줌=== : 일치연산자, strict equal, 값도 같고 타입도 같아야함var x = 3;var y = “3”;document.write(x == y);\t// output truedocument.write(x === y);\t// output false======== 끝 ========37일차 수업배열  Java의 arrayList 와 비슷한 느낌, 가변적var arr = [];\t// 0칸 배열var arr = new Array(10);\t// 10칸 배열var arr = [1, 2, 3,”길동”,”둘리”];\t// 선언과 대입을 동시에, 타입 무관var arr = new Array(1, 2, 3,”길동”,”둘리”);arr.push(“아이스크림”);\t// 배열의 끝에 데이터 추가arr[arr.length] = “아이스크림”;\t// 배열의 끝에 데이터 추가arr[index] = “아이스크림”;\t\t// 특정 인덱스에 데이터 입력DOM페이지 안에 구조를 만들고, 구조에 대한 값(value or 태그 사이에 있는 값) 추출조건문이나 제어문으로 데이터를 가공, 그에 따라서 기능을 입히거나 등등..HTML 구조 : DOM, 문서객체 모델, Document Object ModelDocumentHTML 태그 덩어리, 웹페이지 그 자체HTML의 새로운 요소나 존재하는 요소의 속성을 추가, 제거CSS 스타일 or 이벤트, 추가 or 제어 가능선택자document.getElementsByTagName(태그이름);\t// 태그 이름 선택 가능document.getElementById(아이디);\t\t\t// id 선택 가능document.getElemnetsByClassName(클래스이름);\t// class 선택 가능document.getElementsByName(name속성값);\t// name 선택 가능document.querySelectorAll(선택자)\t\t\t// CSS 선택자 선택 가능",
+      "url": "/lecture-JS-array_DOM"
+  }
+  ,
+  
+  "lecture-js-intro": {
+      "title": "JS - Intro",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요36일차 수업========복습========HTML웹페이지의 구조를 설계하고 구성하는 언어&lt; &gt; 태그를 이용해서 계층 구조를 만듦CSS웹페이지의 디자인을 입히는 스타일 시트 언어&lt; &gt; 태그에 원하는 스타일 적용박스의 형태: 마진, 테두리, 패딩, 내용Body 안의 구조화된 태그들을 우리가 원하는 크기, 위치, 정렬 등등으로 구성배치 : display, position, float 등등..선택자 : 구조화된 태그에서 적용해야할 태그들을 선택하는 방법자식(use &gt;), 자손(use space), 일반 등위(use ~), 인접 등위(use +)가상 클래스(pseudo class)선택하려는 대상의 동작, 현재 상태를 선택선택자 뒤에 colon, :가상클래스이름 으로 작성동작 상태 : a 태그의 기능 쪼개기, link, visited, hover, active, focus 등현재 상태 : checked, disabled구조 상태 : first-child, nth-child, first-of-type, nth-of-type 등가상 요소(pseudo element)HTML 요소 중에 특정 부분을 선택before, after : 해당 요소의 내용 부분 바로 앞, 뒤 다른 요소를 삽입, * content와 같이 사용======== 끝 ========36일차 수업JavaScript객체지향 언어, 기초 문법은 Java와 동일웹의 동작 구현, 웹페이지의 기능을 구현하는 언어 * 프로그래밍 언어한 줄 한 줄 실행하는 언어,인터프리터 언어자료형의 경우 var 하나로 대체 가능, 타입을 명시하지 않음HTML의 내용, 속성, 스타일을 바꿀 수 있음HTML의 &lt;script&gt; 안에서 구동이 됨&lt;body&gt;의 속성을 제대로 인식하지 못하는 경우가 있어서 &lt;body&gt; 뒤에 작성하는 것이 일반적// 주석 다는 방법출력법var ii = 10;var result = ii + 10;var str = “안녕하세요”;document.write(“ii”);\t// 웹페이지를 통해 보여주기alert(“result”)\t\t// 경고창을 통해 보여주기console.log(str);\t\t// 콘솔창을 이용해서 보여주기varvar 선언으로 변수 선언타입 종류 : 숫자(number), 문자열(String), 불리언(boolean), undefined, symbol, 객체(object)// 숫자형 선언에 제약이 없음var n1 = 10;var n2 = 10.1;var n3 = 10e3;var n4 = 10e-3;// 싱글쿼터, 더블쿼터 무관, 짝만 맞으면 됨var s1 = “안녕”;var s2 = ‘안녕’;var s3 = “안녕 ‘하세요’”;var b1 = true;var un;\t// 정의된 것이 없음, type undefinedvar nul = null;\t// 타입은 있으나 값이 정해지지 않은 상태// 자료형에 대해서 관대하기 때문에 확인 명령어 : typeofvar test = 10;console.log(typeof test);\t// output numbervar test = “문자”;console.log(typeof test);\t// output String, 기존 선언된 test를 없에고 다시 재선언된 것// 한 변수명에 다른 타입의 값으로 여러 번 대입해서 사용 가능// 한번 사용한 변수명은 재선언만 해서는 사용 불가능, 대입까지 해줘야함",
+      "url": "/lecture-JS-intro"
+  }
+  ,
+  
   "lecture-css-pseudo-path": {
       "title": "CSS - Pseudo / Path",
           "author": "Spongebob53",
           "category": "",
-          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요33일차 수업========복습========선택자A B : 자손 (상위 태그 밑에 모든 하위 태그 선택)A &gt; B : 자식 (상위 태그 바로 밑에 모든 하위태그 선택)A ~ B : 일반 동위A + B : 인접 동위전체(*), 태그, 아이디(#), 클래스(.), 그룹( ‘,’ 으로 구분), 결합, 동위구조 가상 클래스계층 구조 간에서 선택을 자유롭게 사용하기 위한 방법:first-child 선택된 요소가 자식 중에 첫번째:last-child 선택된 요소가 자식 중에 마지막:nth-child(a) 선택된 요소가 자식 중에 a번째:nth-last-child(a) 선택된 요소가 자식 중에 뒤에서 a번째:first-of-type 선택된 요소가 자식 중에 첫번째로 나오는 동일한 타입:last-of-type 선택된 요소가 자식 중에 마지막으로 나오는 동일한 타입:nth-of-type(a) 선택된 요소가 자식 중에 a번째로 나오는 동일한 타입:nth-last-of-type(a)선택된 요소가 자식 중에서 뒤에서 a번째로 나오는 동일한 타입======== 끝 ========33일차 수업PseudoPseudo class 가상 클래스, HTML의 상태를 명시할 때 :로 선택Pseudo element : HTML 요소의 특정 부분만 선택 ::로 선택대표적인 예시      ::before : 선언된 태그가 만들어지기 전에 바로 앞에 실행          실제 내용 바로 앞에 생성되는 자식 요소            ::after : 선언된 태그가 만들어진 후에 바로 뒤에 실행          실제 내용 바로 뒤에 생성되는 자식 요소      위 가상 요소를 사용할 때는 content 속성을 꼭 사용해야함  content : 가짜 속성, html 문서에 포함되는 요소를 새롭게 생성해주는 속성속성 선택자HTML 안에 있는 특정 속성을 가지고 있는 요소를 찾아주는 선택자, [ ] 로 선택함사용방법      [속성 이름]        [속성 이름=”속성값”]  속성 이름과 속성 값을 모두 외울 수 없기 때문에 속성을 검색할 수 있는 기능이 있음      [속성이름~=”속성값”] “속성값” 단어가 포함되어있는 요소들을 선택, 띄어쓰기 구분                                [속성이름          =”속성값”] “속성값” 단어로 시작되는 요소들를 선택, 하나의 단어                          [속성이름^=”속성값”] “속성값” 문자열로 시작하는 요소들을 선택        [속성이름$=”속성값”] “속성값” 문자열로 끝나는 요소들을 선택    [속성이름*=”속성값”] “속성값” 문자열이 포함되어있는 요소들을 선택절대경로 상대경로명령어를 통해 현재 작업 공간에서 다른 파일을 참고하거나, 불러올 때 지정하는 경로 선언 방식배경지식      Windows : GUI(Graphical User Interface), 마우스 제어        Linux : CLI(Command Line Interface), 명령어 제어  절대경로 : 항상 최정상에서 출발상대경로 : 내 위치에서부터 출발Slash(/)의 역할 : 경로 간의 구분자, 경로작성시 맨 앞에 작성되면 루트(최상위 폴더)라는 의미를 가짐Dot(.)의 역할 : ./는 현재 폴더를 의미, ../는 상위폴더를 의미",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요35일차 수업========복습========선택자A B : 자손 (상위 태그 밑에 모든 하위 태그 선택)A &gt; B : 자식 (상위 태그 바로 밑에 모든 하위태그 선택)A ~ B : 일반 동위A + B : 인접 동위전체(*), 태그, 아이디(#), 클래스(.), 그룹( ‘,’ 으로 구분), 결합, 동위구조 가상 클래스계층 구조 간에서 선택을 자유롭게 사용하기 위한 방법:first-child 선택된 요소가 자식 중에 첫번째:last-child 선택된 요소가 자식 중에 마지막:nth-child(a) 선택된 요소가 자식 중에 a번째:nth-last-child(a) 선택된 요소가 자식 중에 뒤에서 a번째:first-of-type 선택된 요소가 자식 중에 첫번째로 나오는 동일한 타입:last-of-type 선택된 요소가 자식 중에 마지막으로 나오는 동일한 타입:nth-of-type(a) 선택된 요소가 자식 중에 a번째로 나오는 동일한 타입:nth-last-of-type(a)선택된 요소가 자식 중에서 뒤에서 a번째로 나오는 동일한 타입======== 끝 ========35일차 수업PseudoPseudo class 가상 클래스, HTML의 상태를 명시할 때 :로 선택Pseudo element : HTML 요소의 특정 부분만 선택 ::로 선택대표적인 예시      ::before : 선언된 태그가 만들어지기 전에 바로 앞에 실행          실제 내용 바로 앞에 생성되는 자식 요소            ::after : 선언된 태그가 만들어진 후에 바로 뒤에 실행          실제 내용 바로 뒤에 생성되는 자식 요소      위 가상 요소를 사용할 때는 content 속성을 꼭 사용해야함  content : 가짜 속성, html 문서에 포함되는 요소를 새롭게 생성해주는 속성속성 선택자HTML 안에 있는 특정 속성을 가지고 있는 요소를 찾아주는 선택자, [ ] 로 선택함사용방법      [속성 이름]        [속성 이름=”속성값”]  속성 이름과 속성 값을 모두 외울 수 없기 때문에 속성을 검색할 수 있는 기능이 있음      [속성이름~=”속성값”] “속성값” 단어가 포함되어있는 요소들을 선택, 띄어쓰기 구분                                [속성이름          =”속성값”] “속성값” 단어로 시작되는 요소들를 선택, 하나의 단어                          [속성이름^=”속성값”] “속성값” 문자열로 시작하는 요소들을 선택        [속성이름$=”속성값”] “속성값” 문자열로 끝나는 요소들을 선택    [속성이름*=”속성값”] “속성값” 문자열이 포함되어있는 요소들을 선택절대경로 상대경로명령어를 통해 현재 작업 공간에서 다른 파일을 참고하거나, 불러올 때 지정하는 경로 선언 방식배경지식      Windows : GUI(Graphical User Interface), 마우스 제어        Linux : CLI(Command Line Interface), 명령어 제어  절대경로 : 항상 최정상에서 출발상대경로 : 내 위치에서부터 출발Slash(/)의 역할 : 경로 간의 구분자, 경로작성시 맨 앞에 작성되면 루트(최상위 폴더)라는 의미를 가짐Dot(.)의 역할 : ./는 현재 폴더를 의미, ../는 상위폴더를 의미",
       "url": "/lecture-css_pseudo_path"
   }
   ,
@@ -247,7 +292,7 @@ into the {body} of the default.hbs template -->
       "title": "CSS - Selector",
           "author": "Spongebob53",
           "category": "",
-          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요33일차 수업========복습========태그는 박스 형태를 띔      마진 : 테두리 외부와 다른 요소 까지의 공간        테두리 : 내용과 패딩을 감싼 공간        패딩 : 내용과 테두리 사이에 있는 공간        내용 : 실질적인 공간  display화면 상에 보이는 것을 관리하는 속성블록 속성 : 너비를 화면의 너비만큼 가짐, 항상 새로운 라인에서 시작인라인 속성 : 내용에 따른 너비를 가짐, 현재 라인에서 시작  inline-block 속성 : 블록 속성처럼 크기 조절 가능, 인라인 속성처럼 현재 라인에서 시작position화면 상에 위치하는 것을 관리하는 속성      static : 기본값, 기본 흐름(상담에서 하단으로, 좌측에서 우측으로)대로 요소들을 배치        relative : 원래 static 위치 기준으로 해당 요소의 변경될 위치로 배치        fixed : 사용자한테 보여지는 화면(viewport)을 기준으로 위치 배치  z-index : 요소 간에 겹쳐져서 쌓여있을 때 순서를 설정하는 속성, 숫자가 클수록 앞쪽absolute : 자신의 상위 태그를 기준으로 위치를 배치, 없을 경우 &lt;body&gt; 태그가 기준float이 속성을 가진 태그는 공중에 떠있다, 기본흐름에서 빠져나온다left : 왼쪽에 떠있는 블록 태그를 만든다, vice versa이 이후에 작성되는 태그는 float의 영향을 받는다, clear을 통해서 해제할 수 있음======== 끝 ========33일차 수업Style 적용법태그 안에 작성을 하는 인라인 스타일 방법은 코드의 재활용이 어려움내부스타일 시트, 외부 스타일 시트 방법이 있음선택자내부 혹은 외부 스타일 시트 방법에서어떤 태그에 어떤 스타일을 입힐지 작성하기위해 태그를 선택하는 방법- 전체 선택자 : *- 태그 선택자 : 태그명{…}- id 선택자 : #아이디명{…}- class 선택자 : .class명{…}- 그룹 선택자 : 여러 선택자를 사용하고자 할 때, 쉼표로 구분자손 선택자해당 태그에서 하위 태그 중에 특정 타입을 선택하는 선택자, 공백으로 구분  상위선택자 하위선택자{…}자식 선택자해당 태그에서 바로 밑 하위 태그 중 특정 타입을 선택하는 선택자, &gt; 으로 구분  상위선택자 &gt; 하위선택자{…}동위 선택자sibiling, 형제요소, 기준 태그보다 뒤에 존재하는 태그로만 선택됨일반 동위 선택자 : 기준 요소와 동위 요소를 찾는 선택자, ~으로 구분인접 동위 선택자 : 기준 요소와 바로 뒤에 동위 요소를 찾는 선택자, +으로 구분&lt;style&gt;  div ~ p {    background-color: tomato;  }  div + p {    color: teal;  }&lt;/style&gt;&lt;body&gt;  &lt;div&gt;    &lt;p&gt;&lt;/p&gt;    &lt;div&gt;      &lt;p&gt;&lt;/p&gt;    &lt;/div&gt;    &lt;p&gt;~p, +p 때문에 tomato, teal&lt;/p&gt;    &lt;p&gt;~p 때문에 tomato&lt;/p&gt;  &lt;/div&gt;  &lt;p&gt;~p, +p 때문에 tomato, teal&lt;/p&gt;  &lt;p&gt;~p 때문에 tomato&lt;/p&gt;&lt;/body&gt;pseudo-class의사 클래스, 가상 클래스선택하고자 하는 태그의 상태를 명시할 때 사용하는 문법, 기능태그의 상태에 따른 효과들에게 CSS 스타일을 적용시키는 기능문법  태그 :가상클래스명{…}종류동적 가상 클래스  link, visited, hover, active, focus상태 가상 클래스  checked, enabled, disabled구조 가상 클래스  first, last, child, type기타 가상 클래스  not, lang구조 가상 클래스계층 구조에서 특정 위치를 선택하기 위한 기능:nth-child(a) 모든 자식 태그 중에 a 번째에 있는 태그 선택, n 사용 가능:nth-of-type(a) 모든 자식 태그 중에 a 번째에 있는 특정 타입의 태그",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요34일차 수업========복습========태그는 박스 형태를 띔      마진 : 테두리 외부와 다른 요소 까지의 공간        테두리 : 내용과 패딩을 감싼 공간        패딩 : 내용과 테두리 사이에 있는 공간        내용 : 실질적인 공간  display화면 상에 보이는 것을 관리하는 속성블록 속성 : 너비를 화면의 너비만큼 가짐, 항상 새로운 라인에서 시작인라인 속성 : 내용에 따른 너비를 가짐, 현재 라인에서 시작  inline-block 속성 : 블록 속성처럼 크기 조절 가능, 인라인 속성처럼 현재 라인에서 시작position화면 상에 위치하는 것을 관리하는 속성      static : 기본값, 기본 흐름(상담에서 하단으로, 좌측에서 우측으로)대로 요소들을 배치        relative : 원래 static 위치 기준으로 해당 요소의 변경될 위치로 배치        fixed : 사용자한테 보여지는 화면(viewport)을 기준으로 위치 배치  z-index : 요소 간에 겹쳐져서 쌓여있을 때 순서를 설정하는 속성, 숫자가 클수록 앞쪽absolute : 자신의 상위 태그를 기준으로 위치를 배치, 없을 경우 &lt;body&gt; 태그가 기준float이 속성을 가진 태그는 공중에 떠있다, 기본흐름에서 빠져나온다left : 왼쪽에 떠있는 블록 태그를 만든다, vice versa이 이후에 작성되는 태그는 float의 영향을 받는다, clear을 통해서 해제할 수 있음======== 끝 ========34일차 수업Style 적용법태그 안에 작성을 하는 인라인 스타일 방법은 코드의 재활용이 어려움내부스타일 시트, 외부 스타일 시트 방법이 있음선택자내부 혹은 외부 스타일 시트 방법에서어떤 태그에 어떤 스타일을 입힐지 작성하기위해 태그를 선택하는 방법- 전체 선택자 : *- 태그 선택자 : 태그명{…}- id 선택자 : #아이디명{…}- class 선택자 : .class명{…}- 그룹 선택자 : 여러 선택자를 사용하고자 할 때, 쉼표로 구분자손 선택자해당 태그에서 하위 태그 중에 특정 타입을 선택하는 선택자, 공백으로 구분  상위선택자 하위선택자{…}자식 선택자해당 태그에서 바로 밑 하위 태그 중 특정 타입을 선택하는 선택자, &gt; 으로 구분  상위선택자 &gt; 하위선택자{…}동위 선택자sibiling, 형제요소, 기준 태그보다 뒤에 존재하는 태그로만 선택됨일반 동위 선택자 : 기준 요소와 동위 요소를 찾는 선택자, ~으로 구분인접 동위 선택자 : 기준 요소와 바로 뒤에 동위 요소를 찾는 선택자, +으로 구분&lt;style&gt;  div ~ p {    background-color: tomato;  }  div + p {    color: teal;  }&lt;/style&gt;&lt;body&gt;  &lt;div&gt;    &lt;p&gt;&lt;/p&gt;    &lt;div&gt;      &lt;p&gt;&lt;/p&gt;    &lt;/div&gt;    &lt;p&gt;~p, +p 때문에 tomato, teal&lt;/p&gt;    &lt;p&gt;~p 때문에 tomato&lt;/p&gt;  &lt;/div&gt;  &lt;p&gt;~p, +p 때문에 tomato, teal&lt;/p&gt;  &lt;p&gt;~p 때문에 tomato&lt;/p&gt;&lt;/body&gt;pseudo-class의사 클래스, 가상 클래스선택하고자 하는 태그의 상태를 명시할 때 사용하는 문법, 기능태그의 상태에 따른 효과들에게 CSS 스타일을 적용시키는 기능문법  태그 :가상클래스명{…}종류동적 가상 클래스  link, visited, hover, active, focus상태 가상 클래스  checked, enabled, disabled구조 가상 클래스  first, last, child, type기타 가상 클래스  not, lang구조 가상 클래스계층 구조에서 특정 위치를 선택하기 위한 기능:nth-child(a) 모든 자식 태그 중에 a 번째에 있는 태그 선택, n 사용 가능:nth-of-type(a) 모든 자식 태그 중에 a 번째에 있는 특정 타입의 태그",
       "url": "/lecture-css_selector"
   }
   ,
@@ -1021,8 +1066,8 @@ $(function() {
       <footer class="site-footer outer">
         <div class="site-footer-content inner">
           <section class="copyright">
-            <a href="https://spongebob53.github.io/">Coding Diary</a>
-            &copy; 2021
+            <a href="http://localhost:4000/">Coding Diary</a>
+            &copy; 2022
           </section>
           <section class="poweredby">
             Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
