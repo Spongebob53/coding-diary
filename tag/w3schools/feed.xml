@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-09T19:56:31+09:00</updated>
+  <updated>2022-01-15T13:48:32+09:00</updated>
   <id>http://localhost:4000/tag/w3schools/feed.xml</id>
 
   
@@ -32,12 +32,12 @@
 
   
     <entry>
-      <title type="html">W3schools - HTML_Style Guide</title>
-      <link href="http://localhost:4000/w3schools-html_style_guide" rel="alternate" type="text/html" title="W3schools - HTML_Style Guide" />
-      <published>2021-12-27T18:00:00+09:00</published>
-      <updated>2021-12-27T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_style_guide</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_style_guide">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - SQL_LIKE / Alias</title>
+      <link href="http://localhost:4000/w3schools-sql-like_alias" rel="alternate" type="text/html" title="W3schools - SQL_LIKE / Alias" />
+      <published>2022-01-13T18:00:00+09:00</published>
+      <updated>2022-01-13T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-like_alias</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-like_alias">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -51,159 +51,687 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;always-declare-document-type&quot;&gt;Always declare document type&lt;/h3&gt;
+&lt;h3 id=&quot;like&quot;&gt;LIKE&lt;/h3&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;p&gt;Is used in a WHERE clause to search for a specified pattern in a column&lt;/p&gt;
+
+&lt;p&gt;Two wildcards often used in conjunction with the LIKE operator&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The percent sign(%) represents zero, one, or multiple characters&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The underscore sign(_) represents on, single character&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Can also be used in combinations&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columnN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;use-lowercase-element-attribute-names&quot;&gt;Use lowercase element, attribute names&lt;/h3&gt;
+&lt;h3 id=&quot;wild-card&quot;&gt;Wild card&lt;/h3&gt;
 
-&lt;p&gt;HTML allows mixing uppercase and lowercase in names&lt;/p&gt;
+&lt;p&gt;Is used to substitute one or more chars in a string&lt;/p&gt;
 
-&lt;p&gt;However, W3C recommend using lowercase element names&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Symbol&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Desc&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;%&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Represents zero or more chars&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;_&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Represents a single char&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Represents any single char within the brackets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;^&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Represents any char not in the brackets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Represents any single char within the specified range&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;h3 id=&quot;close-all-html-elements&quot;&gt;Close all HTML elements&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Pattern&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Desc&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘a%’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘%a’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that end with “a”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘%a%’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that have “a” in any position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘_a%’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that have “a” in the second position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘a_%’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a” and are at least 2 chars in length&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘a__%’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a” and are at least 3 chars in length&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;‘a%o’&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a” and ends with “o”&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;In HTML, do not have to close all elements (like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+&lt;h3 id=&quot;in&quot;&gt;IN&lt;/h3&gt;
 
-&lt;p&gt;However, we strongly recommend closing all HTML elements&lt;/p&gt;
+&lt;p&gt;Allows to specify multiple values in a WHERE clause&lt;/p&gt;
 
-&lt;h3 id=&quot;always-quote-attribute-values&quot;&gt;Always quote attribute values&lt;/h3&gt;
+&lt;p&gt;Is shorthand for multiple OR conditions&lt;/p&gt;
 
-&lt;p&gt;HTML allows attribute values without quotes&lt;/p&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;However, we recommend quoting attribute value&lt;/p&gt;
-
-&lt;h3 id=&quot;always-specify-alt-width-and-height-for-images&quot;&gt;Always specify alt, width, and height for images&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alt&lt;/code&gt; attribute is important if the image for some reason can’t be displayed&lt;/p&gt;
-
-&lt;p&gt;Defines the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;height&lt;/code&gt; of images, this reduce flickering&lt;/p&gt;
-
-&lt;h3 id=&quot;spaces-and-equal-signs&quot;&gt;Spaces and Equal Signs&lt;/h3&gt;
-
-&lt;p&gt;HTML allows spaces around equal signs&lt;/p&gt;
-
-&lt;p&gt;But space-less is easier to read and groups entities better together&lt;/p&gt;
-
-&lt;h3 id=&quot;avoid-long-code-lines&quot;&gt;Avoid long code lines&lt;/h3&gt;
-
-&lt;h3 id=&quot;blank-lines-and-indentation&quot;&gt;Blank lines and indentation&lt;/h3&gt;
-
-&lt;p&gt;Do not add blank lines, spaces, or indentations without reason&lt;/p&gt;
-
-&lt;p&gt;For readability, add blank lines to separate large or logical code blocks&lt;/p&gt;
-
-&lt;p&gt;Never skip the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&lt;/code&gt; element&lt;/p&gt;
-
-&lt;p&gt;The contents of a page title is vert important for SEO(Search Engine Optimization)&lt;/p&gt;
-
-&lt;h3 id=&quot;always-add-the-html-and-body-tags&quot;&gt;Always add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tags&lt;/h3&gt;
-
-&lt;p&gt;Omitting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; can produce errors in older browsers&lt;/p&gt;
-
-&lt;p&gt;Omitting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; can also crash DOM and XML software&lt;/p&gt;
-
-&lt;h3 id=&quot;omitting-head&quot;&gt;Omitting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt;?&lt;/h3&gt;
-
-&lt;p&gt;Browsers will add all elements before &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt;, to a default &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; element&lt;/p&gt;
-
-&lt;p&gt;However, we recommend using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
-
-&lt;h3 id=&quot;close-empty-html-elements&quot;&gt;Close empty HTML elements?&lt;/h3&gt;
-
-&lt;p&gt;It is optional to close empty elements&lt;/p&gt;
-
-&lt;p&gt;Closing slash(/) is required in XML and XHTML&lt;/p&gt;
-
-&lt;h3 id=&quot;add-the-lang-attribute&quot;&gt;Add the lang attribute&lt;/h3&gt;
-
-&lt;p&gt;Should always include the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lang&lt;/code&gt; attribute inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag, to declare the lang of the Web page&lt;/p&gt;
-
-&lt;p&gt;This is meant to assist search engines and browsers&lt;/p&gt;
-
-&lt;h3 id=&quot;meta-data&quot;&gt;Meta data&lt;/h3&gt;
-
-&lt;p&gt;To ensure proper interpretation and correct search engine indexing, both the lang and the char encoding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta charset=”charset”&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Should be defined as early as possible in an HTML document&lt;/p&gt;
-
-&lt;h3 id=&quot;viewport&quot;&gt;Viewport&lt;/h3&gt;
-
-&lt;p&gt;Is the user’s visible area of a web page, it varies with the device&lt;/p&gt;
-
-&lt;p&gt;Should include the following &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta&amp;gt;&lt;/code&gt; element in all your web pages&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”viewport”&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”width&quot;&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;=&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;device-width&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;initial-scale=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0”&quot;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- or&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;STATEMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This gives the browser instructions on how to control the page’s dimensions and scaling&lt;/p&gt;
+&lt;h3 id=&quot;between&quot;&gt;BETWEEN&lt;/h3&gt;
 
-&lt;h3 id=&quot;html-comments&quot;&gt;HTML comments&lt;/h3&gt;
+&lt;p&gt;Selects values within a given range. The values cans be numbers, text, or dates&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- This is a comment --&amp;gt;&lt;/span&gt;
+&lt;p&gt;Is inclusive: begin and end values are included&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BETWEEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;using-style-sheets&quot;&gt;Using style sheets&lt;/h3&gt;
+&lt;h3 id=&quot;alias&quot;&gt;Alias&lt;/h3&gt;
 
-&lt;p&gt;Use linking to style sheets(the type attribute is not necessary)&lt;/p&gt;
+&lt;p&gt;Is used to give a table, or a column in a table, a temporary name&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”stylesheet”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”style.css”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;p&gt;Only exists for the duration of that query&lt;/p&gt;
+
+&lt;p&gt;Is created with the AS keyword&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alias_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;css-rules&quot;&gt;CSS rules&lt;/h3&gt;
+&lt;p&gt;It requires double quotation marks or square brackets if the alias name contains spaces&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.intro&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Verdana&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* short CSS rules can be written compressed */&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/* long CSS rules should be written over multiple lines */&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;lightgrey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Creates an alias named “Address” that combine four columns&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PostalCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Address&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Alias for tables&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Around&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Horn&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustormerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_INSERT / Math_Function</title>
+      <link href="http://localhost:4000/w3schools-sql-insert_mathfunc" rel="alternate" type="text/html" title="W3schools - SQL_INSERT / Math_Function" />
+      <published>2022-01-12T18:00:00+09:00</published>
+      <updated>2022-01-12T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-insert_mathfunc</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-insert_mathfunc">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;insert-into&quot;&gt;INSERT INTO&lt;/h3&gt;
+
+&lt;p&gt;Is used to insert new records in a table&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Specify both the column names and the values to be inserted&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;--- If add values for all the columns of the table, do not need to specify the column names in the SQL query&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;null&quot;&gt;NULL&lt;/h3&gt;
+
+&lt;p&gt;A field with a NULL is a field with no value&lt;/p&gt;
+
+&lt;p&gt;If a field in a table is optional, it is possible to insert a new record or update a record without adding a value to this field&lt;/p&gt;
+
+&lt;p&gt;Then, the field will be saved with a NULL value&lt;/p&gt;
+
+&lt;p&gt;It is different from a zero value or a field that contains space&lt;/p&gt;
+
+&lt;p&gt;A field with a NULL value is one that has been left blank during record creation&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NULL&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NOT NULL&lt;/code&gt; operator can test for NULL values&lt;/p&gt;
+
+&lt;h3 id=&quot;update&quot;&gt;UPDATE&lt;/h3&gt;
+
+&lt;p&gt;Is used to modify the existing records in a table&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;delete&quot;&gt;DELETE&lt;/h3&gt;
+
+&lt;p&gt;Is used to delete existing records in a table&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;select-top&quot;&gt;SELECT TOP&lt;/h3&gt;
+
+&lt;p&gt;Is used to specify the number of records to return&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FETCH&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FIRST&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROWS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ONLY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Can use `PERCENT` instead of number ex) 50 PERCENT&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;min--max&quot;&gt;MIN() / MAX()&lt;/h3&gt;
+
+&lt;p&gt;Return the smallest / largest value of the seleted column&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;count--avg--sum&quot;&gt;COUNT() / AVG() / SUM()&lt;/h3&gt;
+
+&lt;p&gt;COUNT() : returns the number of rows that matches a specified criterion&lt;/p&gt;
+
+&lt;p&gt;AVG() : returns the average value of a numeric column&lt;/p&gt;
+
+&lt;p&gt;SUM() : returns the total sum of a numeric column&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_SELECT / WHERE</title>
+      <link href="http://localhost:4000/w3schools-sql-select_where" rel="alternate" type="text/html" title="W3schools - SQL_SELECT / WHERE" />
+      <published>2022-01-11T18:00:00+09:00</published>
+      <updated>2022-01-11T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-select_where</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-select_where">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;select&quot;&gt;SELECT&lt;/h3&gt;
+
+&lt;p&gt;Is used to select data from a database&lt;/p&gt;
+
+&lt;p&gt;The data returned is stored in a result table, called the result-set&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- if you want to select all the fields available in the table&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;select-distinct&quot;&gt;SELECT DISTINCT&lt;/h3&gt;
+
+&lt;p&gt;Is used to return only distinct values&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Can count, It is not supported in MS Access&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Is the workaround for MS Access&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Distinctcolumn1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;where&quot;&gt;WHERE&lt;/h3&gt;
+
+&lt;p&gt;Is used filter records&lt;/p&gt;
+
+&lt;p&gt;Is used to extract only those records that fulfill a specified condition&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;SQL requires single quotes around text values&lt;/p&gt;
+
+&lt;p&gt;Numeric fields should not be enclosed in quotes&lt;/p&gt;
+
+&lt;h3 id=&quot;operators-in-where&quot;&gt;Operators in WHERE&lt;/h3&gt;
+
+&lt;p&gt;WHERE clause can be combined with AND, OR, NOT operators&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Operator&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Equal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Greater than&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Less than&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Greater than or equal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;=&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Less than or equal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt; &amp;gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Not equal, is some versions of SQL this operator may be !=&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BETWEEN ‘A’ AND ‘B’&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Between a certain range&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;LIKE ‘pattern’&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Search for a pattern&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;IN(value1,value2)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;To specify multiple possible values for a column&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;If you omit the WHERE clause, all records in the table will be apply&lt;/p&gt;
+
+&lt;h3 id=&quot;order-by&quot;&gt;ORDER BY&lt;/h3&gt;
+
+&lt;p&gt;Is used to sort the result-set in ascending or descending order&lt;/p&gt;
+
+&lt;p&gt;It sorts the records in ascending order by default&lt;/p&gt;
+
+&lt;p&gt;To sort the records in descending order, use the DESC keyword&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ASC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Can use both, ORDER BY column1 ASC, column2 DESC;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_Intro</title>
+      <link href="http://localhost:4000/w3schools-sql-intro" rel="alternate" type="text/html" title="W3schools - SQL_Intro" />
+      <published>2022-01-11T18:00:00+09:00</published>
+      <updated>2022-01-11T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-intro</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;sql&quot;&gt;SQL&lt;/h3&gt;
+
+&lt;p&gt;Is standard lang for storing, manipulating and retrieving data in databases&lt;/p&gt;
+
+&lt;p&gt;Is stands for Structured Query Language&lt;/p&gt;
+
+&lt;h3 id=&quot;using-sql-in-web-site&quot;&gt;Using SQL in web site&lt;/h3&gt;
+
+&lt;p&gt;Need&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;An RDBMS database program(SQL server, MySQL …)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To use a server-side scripting language(PHP, ASP…)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To use SQL to get the data&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To use HTML&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h3&gt;
+
+&lt;p&gt;Relational Database Management System&lt;/p&gt;
+
+&lt;p&gt;Is the basis for SQL&lt;/p&gt;
+
+&lt;p&gt;The data in RDBMS is stored in database objects called tables&lt;/p&gt;
+
+&lt;p&gt;A table is a collection of related data entries and it consists of columns and rows&lt;/p&gt;
+
+&lt;p&gt;Every table is broken up into smaller entities called fields&lt;/p&gt;
+
+&lt;p&gt;A field is a column in a table that is designed to maintain specific information about every record in the table&lt;/p&gt;
+
+&lt;p&gt;A record, also called a row, is each individual entry that exists in a table&lt;/p&gt;
+
+&lt;p&gt;A record is a horizontal entity in a table&lt;/p&gt;
+
+&lt;p&gt;A column is a vertical entity in a table that contains all information associated with a specific field in a table&lt;/p&gt;
+
+&lt;h3 id=&quot;database-table&quot;&gt;DataBase Table&lt;/h3&gt;
+
+&lt;p&gt;A database most often contains one or more tables&lt;/p&gt;
+
+&lt;p&gt;Each table is identified by a name&lt;/p&gt;
+
+&lt;p&gt;Tables contain records with data&lt;/p&gt;
+
+&lt;h3 id=&quot;sql-statement&quot;&gt;SQL Statement&lt;/h3&gt;
+
+&lt;p&gt;Most of the actions you need to perform on a database are done with SQL statements&lt;/p&gt;
+
+&lt;p&gt;SQL keywords are not case sensitive&lt;/p&gt;
+
+&lt;p&gt;Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server&lt;/p&gt;
+
+&lt;h3 id=&quot;commands&quot;&gt;Commands&lt;/h3&gt;
+
+&lt;p&gt;SELECT : extracts data from a database&lt;/p&gt;
+
+&lt;p&gt;UPDATE : updates data in a database&lt;/p&gt;
+
+&lt;p&gt;DELETE : deletes data from a database&lt;/p&gt;
+
+&lt;p&gt;INSERT INTO : inserts new data into a database&lt;/p&gt;
+
+&lt;p&gt;CREATE DATABASE : creates a new database&lt;/p&gt;
+
+&lt;p&gt;ALTER DATABASE : modifies a database&lt;/p&gt;
+
+&lt;p&gt;CREATE TABLE : creates a new table&lt;/p&gt;
+
+&lt;p&gt;ALTER TABLE : modifies a table&lt;/p&gt;
+
+&lt;p&gt;DROP TABLE : deletes a table&lt;/p&gt;
+
+&lt;p&gt;CREATE INDEX : creates an index (search key)&lt;/p&gt;
+
+&lt;p&gt;DROP INDEX : deletes an index&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - CSS_Math Function</title>
+      <link href="http://localhost:4000/w3schools-css-mathfunction" rel="alternate" type="text/html" title="W3schools - CSS_Math Function" />
+      <published>2022-01-02T18:00:00+09:00</published>
+      <updated>2022-01-02T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-css-mathfunction</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-css-mathfunction">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;math-functions&quot;&gt;Math functions&lt;/h3&gt;
+
+&lt;p&gt;Allow mathematical expressions to be as property values&lt;/p&gt;
+
+&lt;p&gt;calc()	: Allows to perform calculations to determine CSS property values&lt;/p&gt;
+
+&lt;p&gt;max()	: Uses the largest value, from a comma-separated list of values, as the property value&lt;/p&gt;
+
+&lt;p&gt;min()	: Uses the smallest value, from a comma-separated list of values, as the property value&lt;/p&gt;
+
+&lt;h3 id=&quot;variables&quot;&gt;Variables&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var()&lt;/code&gt; function is used to insert the value of a CSS variable&lt;/p&gt;
+
+&lt;p&gt;Syntax : var(–name, value)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;name : Required. The variable name(must start with two dashes)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;value : Optional. The fallback value(used if the variable is not found)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;var-works&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var()&lt;/code&gt; works&lt;/h3&gt;
+
+&lt;p&gt;CSS variables can have a global or local scope&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Global var can be accessed/used through the entire document&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Local variables can be used only used only inside the selector where it is declared&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To create a var with global scope, declare it inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:root&lt;/code&gt; selector&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:root&lt;/code&gt;: selector matches the document’s root element&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To create a var with local scope, declare it inside the selector that is going to use it&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;--blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#1e90ff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;loading-javascript-in-html&quot;&gt;Loading JavaScript in HTML&lt;/h3&gt;
+&lt;h3 id=&quot;media-query&quot;&gt;Media query&lt;/h3&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;”myscript.js”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* loading external scripts */&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;use-lower-case-file-names&quot;&gt;Use lower case file names&lt;/h3&gt;
-
-&lt;p&gt;Some web servers (Apache,Unix) are case sensitive about file names&lt;/p&gt;
-
-&lt;p&gt;Other web servers (Microsoft, IIS) are not case sensitive&lt;/p&gt;
-
-&lt;p&gt;To avoid problems, always use lowercase file names&lt;/p&gt;
-
-&lt;h3 id=&quot;file-extensions&quot;&gt;File extensions&lt;/h3&gt;
-
-&lt;p&gt;HTML files should have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.html&lt;/code&gt; extension(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.htm&lt;/code&gt; is allowed)&lt;/p&gt;
-
-&lt;p&gt;CSS files should have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.css&lt;/code&gt; extension&lt;/p&gt;
-
-&lt;p&gt;JavaScript files should have a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.js&lt;/code&gt; extension&lt;/p&gt;
-
-&lt;h3 id=&quot;difference-between-htm-and-html&quot;&gt;Difference between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.htm&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.html&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;No difference between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.html&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.htm&lt;/code&gt; file extensions&lt;/p&gt;
-
-&lt;h3 id=&quot;default-file-names&quot;&gt;Default file names&lt;/h3&gt;
-
-&lt;p&gt;When a URL doesn’t specify a file name at the end, the server just add a default filename, such as “index.html”, or “default.html”&lt;/p&gt;
-
-&lt;p&gt;If your server is configured only with “index.html” as the default file name,&lt;/p&gt;
-
-&lt;p&gt;your file name must be named “index.html” and not “default.html”&lt;/p&gt;
-
-&lt;p&gt;However, servers can be configured with more than one default file name&lt;/p&gt;</content>
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@media&lt;/code&gt; rule made it possible to define style rules for different media type&lt;/p&gt;</content>
 
       
       
@@ -232,12 +760,12 @@
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Class / Id</title>
-      <link href="http://localhost:4000/w3schools-html_id_class" rel="alternate" type="text/html" title="W3schools - HTML_Class / Id" />
-      <published>2021-12-27T18:00:00+09:00</published>
-      <updated>2021-12-27T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_id_class</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_id_class">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - CSS_Unit / Specificity</title>
+      <link href="http://localhost:4000/w3schools-css-unit_specificity" rel="alternate" type="text/html" title="W3schools - CSS_Unit / Specificity" />
+      <published>2022-01-01T18:00:00+09:00</published>
+      <updated>2022-01-01T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-css-unit_specificity</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-css-unit_specificity">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -251,61 +779,104 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;id&quot;&gt;ID&lt;/h3&gt;
+&lt;h3 id=&quot;unit&quot;&gt;Unit&lt;/h3&gt;
 
-&lt;p&gt;Is used to specify a unique id for an HTML element&lt;/p&gt;
+&lt;p&gt;CSS has several different units for expressing a length&lt;/p&gt;
 
-&lt;p&gt;The value of the id attribute must be unique within the HTML document&lt;/p&gt;
+&lt;p&gt;A whitespace can’t appear between the number and the unit&lt;/p&gt;
 
-&lt;p&gt;Is used to point to a specific style declaration in a style sheet&lt;/p&gt;
+&lt;p&gt;However, if the value is 0, the unit can be omitted&lt;/p&gt;
 
-&lt;p&gt;Is used by JS to access and manipulate the element with the specific id&lt;/p&gt;
+&lt;h3 id=&quot;absolute-length&quot;&gt;Absolute length&lt;/h3&gt;
 
-&lt;p&gt;CSS Syntax : #IdName{…}&lt;/p&gt;
+&lt;p&gt;Are fixed and a length expressed in any of these will appear as exactly that size&lt;/p&gt;
 
-&lt;p&gt;Id name is case sensitive, it must contain at least one character, can’t start with number, and must not contain whitespace&lt;/p&gt;
+&lt;p&gt;Are not recommended for use on screen, because screen sizes vary so much&lt;/p&gt;
 
-&lt;p&gt;HTML bookmarks with Id and links&lt;/p&gt;
+&lt;p&gt;However, they can be used if the output medium is known, such as for print layout&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-/* Add a link to the bookmark, from within the same page */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”#C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Jump to Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-/* from another page */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;herf=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”html_demo.html#C4”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; Jump to Chapter 4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;class&quot;&gt;Class&lt;/h3&gt;
-
-&lt;p&gt;Is used to specify a class for an HTML element&lt;/p&gt;
-
-&lt;p&gt;Multiple HTML elements can share the same class&lt;/p&gt;
-
-&lt;p&gt;Is often used to point to a class name in a style sheet&lt;/p&gt;
-
-&lt;p&gt;Can also be used by a JavaScript to access and manipulate elements with the specific class name&lt;/p&gt;
-
-&lt;p&gt;Can be used on any HTML element, and is case sensitive&lt;/p&gt;
-
-&lt;p&gt;CSS Syntax : .className{…}&lt;/p&gt;
-
-&lt;p&gt;Different elements cans share same class&lt;/p&gt;
-
-&lt;p&gt;Multiple classes&lt;/p&gt;
-
+&lt;p&gt;| Unit | Description |
+|:—–|:———–:|
+| cm   | centimeters |
+| mm   | millimeters |
+| in   |   inches    |
+| px   |   pixels    |
+| pt   |   points    |
+| pc   |    picas    |&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;HTML elements can belong to more than one class&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To define multiple classes, separate the class names with a space&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The element will be styled according to all the classes specified&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;pixels Are relative to the viewing device, for low-dpi devices, 1px is one device pixel of the display&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”main&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;h3 id=&quot;relative-length&quot;&gt;Relative length&lt;/h3&gt;
+
+&lt;p&gt;Specify a length relative to another length property&lt;/p&gt;
+
+&lt;p&gt;Scales better between different rendering mediums&lt;/p&gt;
+
+&lt;p&gt;| Unit |                                                Description |
+|:—-:|———————————————————–:|
+|  em  |                   Relative to the font-size of the element |
+|  ex  | Relative to the x-height of the current font (rarely used) |
+|  ch  |                                 Ralative to width of the 0 |
+| rem  |                  Relative to font-size of the root element |
+|  vw  |                Relative to 1% of the width of the viewport |
+|  vh  |               Relative to 1% of the height of the viewport |
+| vmin |             Relative to 1% of viewport’s smaller dimension |
+| vmax |              Relative to 1% of viewport’s larger dimension |
+|  %   |                             Relative to the parent element |&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;2em means 2 times the size of the current font&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;specificity&quot;&gt;Specificity&lt;/h3&gt;
+
+&lt;p&gt;If there are two or more conflicting CSS rules that poing to the same element,&lt;/p&gt;
+
+&lt;p&gt;The browser follows some rules to determine which one is most specific and therefore wins out&lt;/p&gt;
+
+&lt;p&gt;Every selector has its place in the specificity hierarchy&lt;/p&gt;
+
+&lt;h3 id=&quot;inline-styles&quot;&gt;Inline styles&lt;/h3&gt;
+
+&lt;p&gt;An inline style is attached directly to the element to be styled&lt;/p&gt;
+
+&lt;h3 id=&quot;ids&quot;&gt;IDs&lt;/h3&gt;
+
+&lt;p&gt;An ID is a unique identifier for the page elements&lt;/p&gt;
+
+&lt;p&gt;Classes, attributes and pseudo-classes&lt;/p&gt;
+
+&lt;p&gt;Elements and pseudo-elements&lt;/p&gt;
+
+&lt;h3 id=&quot;calculate&quot;&gt;Calculate&lt;/h3&gt;
+
+&lt;p&gt;Add 1000 for style attribute&lt;/p&gt;
+
+&lt;p&gt;Add 100 for each ID&lt;/p&gt;
+
+&lt;p&gt;Add 10 for each attribute, class or pseudo-class&lt;/p&gt;
+
+&lt;p&gt;Add 1 for each element name or pseudo-element&lt;/p&gt;
+
+&lt;p&gt;Greater level of specificity will be applied&lt;/p&gt;
+
+&lt;h3 id=&quot;specificity-rules&quot;&gt;Specificity Rules&lt;/h3&gt;
+
+&lt;p&gt;Equal specificity : the latest rule counts&lt;/p&gt;
+
+&lt;p&gt;Id selectors have a higher specificity than attribute selectors&lt;/p&gt;
+
+&lt;p&gt;Contextual selectors are more specific than a single element selector&lt;/p&gt;
+
+&lt;p&gt;A class selector beats any number of element selectors&lt;/p&gt;
+
+&lt;p&gt;The universal selector and inherited values have a specificity of 0&lt;/p&gt;
+
+&lt;h3 id=&quot;important&quot;&gt;!important&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!important&lt;/code&gt; rule in CSS is used to add more importance to a property / value than normal&lt;/p&gt;
+
+&lt;p&gt;It will override All previous styling rules for that specific property on that element&lt;/p&gt;</content>
 
       
       
@@ -334,12 +905,12 @@
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Layout</title>
-      <link href="http://localhost:4000/w3schools-html_layout" rel="alternate" type="text/html" title="W3schools - HTML_Layout" />
-      <published>2021-12-26T18:00:00+09:00</published>
-      <updated>2021-12-26T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_layout</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_layout">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - CSS_Combinator</title>
+      <link href="http://localhost:4000/w3schools-css-combinator" rel="alternate" type="text/html" title="W3schools - CSS_Combinator" />
+      <published>2021-12-31T18:00:00+09:00</published>
+      <updated>2021-12-31T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-css-combinator</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-css-combinator">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -353,201 +924,124 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;block-inline&quot;&gt;Block Inline&lt;/h3&gt;
+&lt;h3 id=&quot;combinator&quot;&gt;Combinator&lt;/h3&gt;
 
-&lt;p&gt;Every HTML element has a default display value, depending on what type of element is&lt;/p&gt;
+&lt;p&gt;Is something that explains the relationship between the selectors&lt;/p&gt;
 
-&lt;p&gt;There are two display values : block and inline&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;selector&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Example&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;element element&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;div p&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Select all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;element&amp;gt;element&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;div&amp;gt;p&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Select all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements where the parent is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; element&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;element+element&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;div+p&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Select the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element that are placed immediately after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;element1~element2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;p~ul&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Select every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; element that are preceded by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;An inline element can’t contain a block-level element&lt;/p&gt;
+&lt;h3 id=&quot;pseudo-class&quot;&gt;pseudo-class&lt;/h3&gt;
 
-&lt;h3 id=&quot;block-level-elements&quot;&gt;Block-level elements&lt;/h3&gt;
-
-&lt;p&gt;Starts on a new line&lt;/p&gt;
-
-&lt;p&gt;Takes up the full width available&lt;/p&gt;
-
-&lt;p&gt;Has a top and a bottom margin, whereas an inline element doesn’t&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Is used to define a special state of an element&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Is often used as a container for other HTML elements&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Has no required attributes, but style, class and id are common&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;With CSS, it can be used to style block of content&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Ex) Style an element when a user mouses over it, Style an element when it gets focus ..&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;inline-elements&quot;&gt;Inline elements&lt;/h3&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;An inline element doesn’t start on a new line&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:pseudo-class&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Only takes up as much width as necessary&lt;/p&gt;
+&lt;p&gt;https://www.w3schools.com/css/css_pseudo_classes.asp&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;pseudo-element&quot;&gt;pseudo-element&lt;/h3&gt;
+
+&lt;p&gt;Is used to style specified parts of an element&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Is an inline container used to mark up a part of a text, or a part of a document&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Has no required attributes but style, class, and id are common&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;With CSS, it can be used to style parts of the text&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;ex) style the first letter, or line, of an element, or insert content before, or after, the content of an element&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;layout&quot;&gt;Layout&lt;/h3&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;HTML has several semantic elements that define the different parts of a web page&lt;/p&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;Selector&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::pseudo-element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;Property&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;header&amp;gt;&lt;/code&gt; : Defines a header for a document or a section&lt;/p&gt;
+&lt;h3 id=&quot;attribute-selector&quot;&gt;Attribute selector&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; : Defines a set of navigation links&lt;/p&gt;
+&lt;p&gt;To style HTML elements that have specific attributes or attributes values&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;section&amp;gt;&lt;/code&gt; : Defines a section in a document&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;article&amp;gt;&lt;/code&gt; : Defines an independent, self-contained content&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;aside&amp;gt;&lt;/code&gt; : Defines content aside from the content&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;footer&amp;gt;&lt;/code&gt; : Defines a footer for a document or a section&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;details&amp;gt;&lt;/code&gt; : Defines additional details that the user can open and close on demand&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;summary&amp;gt;&lt;/code&gt; : Defines a heading for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;details&amp;gt;&lt;/code&gt; element&lt;/p&gt;
-
-&lt;h3 id=&quot;technique&quot;&gt;Technique&lt;/h3&gt;
-
-&lt;p&gt;framework&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;To create layout fast, use a CSS framework, like Bootstrap or Foundation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;float property&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Is common to do entire web layouts using the CSS &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Is easy to learn, but is tied to the document flow, which may harm the flexibility&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;flexbox&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;grid&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;offers a grid-based layout system, with rows and columns&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Making it easier to design web pages without having to use floats and positioning&lt;/p&gt;
-
-&lt;h3 id=&quot;semantic&quot;&gt;Semantic&lt;/h3&gt;
-
-&lt;p&gt;Clearly describes its meaning to both the browser and the developer&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;section&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Defines a section in a document&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Is a thematic grouping of content, typically with a heading&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ex) Chapters, Introduction, News items, Contact information&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;article&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Specifies independent, self-contained content&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Should make sense on its own, and it should be possible to distribute is independently from the rest of the web site&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ex) Forum posts, Blog posts, User comments, Product cards, Newspaper articles&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;header&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Represents a container for introductory content or a set of navigational links&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Can have several &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;header&amp;gt;&lt;/code&gt; elements in one HTML document&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;However, It can’t be placed within a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;address&amp;gt;&lt;/code&gt; or another &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;header&amp;gt;&lt;/code&gt; element&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ex) one or more heading elements, logo or icon, authorship information&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;footer&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Defines a footer for a document or section&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ex) authorship info, copyright info, contact info, sitemap, back to top links, related documents&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Defines a set of navigation links&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;It is intended only for major block of nav&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;aside&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Defines some content aside from the content it is placed in&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;It should be indirectly related to the surrounding content&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; specifies self-contained content, ex) illustrations, diagrams, photos, code listings&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/code&gt; defines a caption for a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; element&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Selector&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Example&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;[target]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with a target attribute&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute=value]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;[target=_blank]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with target=”_blank”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute~=value]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;[title~=flower]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with a title attribute containing the word “flower”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute|=value]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;[lang|=en]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with a lang attribute value starting with “en”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute^=value]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;a[href^=”https”]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element whose href attribute value begins with “https”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute$=value]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;a[href$=”.pdf”]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element whose href attribute value ends with “.pdf”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;[attribute*=value]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;a[href*=”w3schools”]&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Selects every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element whose href attribute value contains the substring “w3schools”&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
 
       
       
@@ -576,12 +1070,12 @@
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Responsive</title>
-      <link href="http://localhost:4000/w3schools-html_responsive" rel="alternate" type="text/html" title="W3schools - HTML_Responsive" />
-      <published>2021-12-25T18:00:00+09:00</published>
-      <updated>2021-12-25T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_responsive</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_responsive">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - CSS_Position</title>
+      <link href="http://localhost:4000/w3schools-css-position" rel="alternate" type="text/html" title="W3schools - CSS_Position" />
+      <published>2021-12-30T18:00:00+09:00</published>
+      <updated>2021-12-30T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-css-position</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-css-position">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -595,60 +1089,92 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
+&lt;h3 id=&quot;position&quot;&gt;Position&lt;/h3&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices(like setting the viewport)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Specifies the type of positioning method used for an element&lt;/p&gt;
 
-&lt;p&gt;Use percent&lt;/p&gt;
+&lt;p&gt;Elements are then positioned using the top, bottom, left, and right properties&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;width:100%;
+&lt;p&gt;However, these properties will not work unless the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;position&lt;/code&gt; property is set first&lt;/p&gt;
+
+&lt;p&gt;They also work differently depending on the position value&lt;/p&gt;
+
+&lt;p&gt;Five different position values : static, relative, fixed, absolute, sticky&lt;/p&gt;
+
+&lt;h3 id=&quot;positionstatic&quot;&gt;Position:static;&lt;/h3&gt;
+
+&lt;p&gt;HTML elements are positioned static by default&lt;/p&gt;
+
+&lt;p&gt;An element with this, is not positioned in any special way;&lt;/p&gt;
+
+&lt;p&gt;It is always positioned according to the normal flow of the page&lt;/p&gt;
+
+&lt;h3 id=&quot;positionrelative&quot;&gt;Position:relative;&lt;/h3&gt;
+
+&lt;p&gt;An element with this, is positioned relative to its normal position&lt;/p&gt;
+
+&lt;p&gt;Setting the properties(like top, right ..) of a relatively-positioned element will cause it to be adjusted away from its normal position&lt;/p&gt;
+
+&lt;p&gt;Other content will not be adjusted to fit into any gap left by the element&lt;/p&gt;
+
+&lt;h3 id=&quot;positionfixed&quot;&gt;Position:fixed;&lt;/h3&gt;
+
+&lt;p&gt;An element with this, is positioned relative to the viewport&lt;/p&gt;
+
+&lt;p&gt;Which means it always stays in the same place even if the page is scrolled&lt;/p&gt;
+
+&lt;p&gt;The top~~left properties are used to position the element&lt;/p&gt;
+
+&lt;h3 id=&quot;positionabsolute&quot;&gt;Position:absolute;&lt;/h3&gt;
+
+&lt;p&gt;An element with this, Is positioned relative to the nearest positioned ancestor&lt;/p&gt;
+
+&lt;p&gt;However, if an absolute element has no positioned ancestors, it uses the document body&lt;/p&gt;
+
+&lt;p&gt;Absolute positioned elements are removed form the normal flow, and can overlap elements&lt;/p&gt;
+
+&lt;h3 id=&quot;positionsticky&quot;&gt;Position:sticky;&lt;/h3&gt;
+
+&lt;p&gt;An element with this, is positioned based on the user’s scroll position&lt;/p&gt;
+
+&lt;p&gt;It toggles between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;relative&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fixed&lt;/code&gt;, depending on the scroll position&lt;/p&gt;
+
+&lt;p&gt;It is positioned relative until a given offset position is met in the viewport – then it “sticks” in place&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.sticky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-webkit-sticky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Safari requires a -webkit- prefix */&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sticky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;/* must also specify at least one of top~left for sticky positioning to work*/&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;will be responsive and scale up and down, but the tag can be scaled up to be larger than its original size&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;better solution will be to use the max-width&lt;/p&gt;
+&lt;h3 id=&quot;z-index&quot;&gt;z-index&lt;/h3&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;if max-width property is set to 100%, never scale up to be larger than its original size&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+&lt;p&gt;When element are positioned, they can overlap other elements&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index&lt;/code&gt; property specifies the stack order of an element&lt;/p&gt;
+
+&lt;p&gt;It only works on positioned elements and flex items&lt;/p&gt;
+
+&lt;p&gt;An element can have a positive or negative stack order&lt;/p&gt;
+
+&lt;h3 id=&quot;float-clear&quot;&gt;float, clear&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property specifies how an element should float&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; property specifies what elements can float beside the cleared element and on which side&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property is used for positioning and formatting content, and can have one of the following value&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Left, right, none, inherit&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vw&lt;/code&gt; unit&lt;/p&gt;
+&lt;p&gt;When use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property, and we want the next element below we will have to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; property&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Means the “viewport width”, 1vw = 1% of viewport width&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; property specifies what should happen with the element that is next to a floating element&lt;/p&gt;
 
-&lt;h3 id=&quot;media-queries&quot;&gt;Media Queries&lt;/h3&gt;
-
-&lt;p&gt;With media queries you can define completely different styles for different browser sizes&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;60%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/* use a media query to add a breakpoint at 800px */&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;800px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;p&gt;When clearing floats, should match the clear to the float&lt;/p&gt;</content>
 
       
       
@@ -677,12 +1203,12 @@
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Head</title>
-      <link href="http://localhost:4000/w3schools-html_head" rel="alternate" type="text/html" title="W3schools - HTML_Head" />
-      <published>2021-12-25T18:00:00+09:00</published>
-      <updated>2021-12-25T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_head</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_head">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - CSS_Color / Box model</title>
+      <link href="http://localhost:4000/w3schools-css-color_boxmodel" rel="alternate" type="text/html" title="W3schools - CSS_Color / Box model" />
+      <published>2021-12-29T18:00:00+09:00</published>
+      <updated>2021-12-29T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-css-color_boxmodel</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-css-color_boxmodel">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -696,103 +1222,110 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;head&quot;&gt;Head&lt;/h3&gt;
+&lt;h3 id=&quot;colorsname-rgb-hex-hsl--advanced-color&quot;&gt;Colors(name, rgb, hex, hsl) – advanced color&lt;/h3&gt;
 
-&lt;p&gt;Is a container for the following elements : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;base&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values&lt;/p&gt;
 
-&lt;p&gt;Is a container for metadata (data about data)&lt;/p&gt;
+&lt;h3 id=&quot;color-name&quot;&gt;Color name&lt;/h3&gt;
 
-&lt;p&gt;Is placed between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; tag&lt;/p&gt;
+&lt;p&gt;Predefined color name ex) Tomato, SlateBlue … CSS support 140 standard color names&lt;/p&gt;
 
-&lt;h3 id=&quot;title&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;color-values&quot;&gt;Color values&lt;/h3&gt;
 
-&lt;p&gt;Defines the title of the document&lt;/p&gt;
-
-&lt;p&gt;The title must be text-only&lt;/p&gt;
-
-&lt;p&gt;It is shown in the browser’s title bar or in the page’s tab&lt;/p&gt;
-
-&lt;p&gt;Is required in HTML documents&lt;/p&gt;
-
-&lt;p&gt;Is very important for SEO(Search Engine Optimization)&lt;/p&gt;
+&lt;p&gt;Same as color name “Tomato”&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;used by search engine algorithms to decide the order when listing pages in search results&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;RGB : rgb(255,99,71)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HEX : #ff6347&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HSL : hsl(9, 100%, 64%)&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Spooonge bob&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;RGBA, HSLA have alpha parameter is a number between 0.0(fully transparent) and 1.0 (not transparent at all)&lt;/p&gt;
 
-&lt;h3 id=&quot;style&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;rgb&quot;&gt;RGB&lt;/h3&gt;
 
-&lt;p&gt;Defines style information for a single HTML page&lt;/p&gt;
+&lt;p&gt;RGB color value represents Red, Green, Blue light sources&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;teal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;wheat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Using this formula : rgb(red,green,blue)&lt;/p&gt;
 
-&lt;h3 id=&quot;link&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Each parameter defines the intensity of the color between 0 and 255&lt;/p&gt;
 
-&lt;p&gt;Defines the relationship between the current document and an external resource&lt;/p&gt;
+&lt;h3 id=&quot;hex&quot;&gt;HEX&lt;/h3&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“stylesheet”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“mystyle.css”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt; /* most often used to link to
-external style sheets */
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Is specified with : #RRGGBB&lt;/p&gt;
 
-&lt;h3 id=&quot;meta&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;meta&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Where the RR(red), GG(green), and BB(blue) hexadecimal integers specify the components of the color&lt;/p&gt;
 
-&lt;p&gt;Is used to specify the character set, page description, keywords, author of the document, and viewport settings&lt;/p&gt;
+&lt;p&gt;Between 00 and ff( same as decimal 0-255)&lt;/p&gt;
 
-&lt;p&gt;Will not be displayed on the page, but are used by browser&lt;/p&gt;
+&lt;p&gt;3-digit hex value&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“UTF-8”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-/* Define the char set used */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“keywords”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“HTML,&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;CSS&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;JavaScript&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-/* Define keywords for search engines */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”description”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”Free&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Web&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;tutorials&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-/* define a description of your web page */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”author”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”John&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Doe&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-/*define the author of a page */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http-equiv=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”refresh”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”30”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-/*Refresh document every 30 seconds */
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”viewport”&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;”width&quot;&lt;/span&gt;
-  &lt;span class=&quot;err&quot;&gt;=&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;device-width&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&quot;&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;initial-scale=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0”&quot;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-/* Setting the viewport to make your website look good on all devices Viewport
-is the user’s visible area of a web page(It varies with the device)
-`width=device-width` part sets the width of the page to follow the screen-width
-of the device `initial-scale=1.0` part sets the initial zoom level when the page
-is first loaded by the browser */
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Is a shorthand for some 6-digit hex code&lt;/p&gt;
 
-&lt;h3 id=&quot;script&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Can only be used when both the value are the same for each component&lt;/p&gt;
 
-&lt;p&gt;Defines client-side JavaScripts&lt;/p&gt;
+&lt;h3 id=&quot;hsl&quot;&gt;HSL&lt;/h3&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-  	&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JavaScript&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Using this form : hsl(hue, saturation, lightness)&lt;/p&gt;
 
-&lt;h3 id=&quot;base&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;base&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Hue is a degree on the color wheel from 0 to 360, 0 is red, 120 is green, and 240 is blue&lt;/p&gt;
 
-&lt;p&gt;Specifies the base URL and/ or target for all relative URLs in a page&lt;/p&gt;
+&lt;p&gt;Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color&lt;/p&gt;
 
-&lt;p&gt;Can only be one single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;base&amp;gt;&lt;/code&gt; element in a document&lt;/p&gt;</content>
+&lt;p&gt;Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white&lt;/p&gt;
+
+&lt;h3 id=&quot;box-model&quot;&gt;Box model&lt;/h3&gt;
+
+&lt;p&gt;All elements can be considered as boxes&lt;/p&gt;
+
+&lt;p&gt;The term “box model” is used when talking about design and layout&lt;/p&gt;
+
+&lt;p&gt;The box model is essentially a box that wraps around every HTML element&lt;/p&gt;
+
+&lt;p&gt;It consists of: margins, borders, padding, and the actual content&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Content - The content of the box, where text and images appear&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Padding - Clears an area around the content, the padding is transparent&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Border - A border that goes around the padding and content&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Margin - Clears an area outside the border, the margin is transparent&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you set the width and height properties of an element with CSS, you just set the width and height of the content area&lt;/p&gt;
+
+&lt;p&gt;To calculate the full size of an element, you must also add padding, borders and margins&lt;/p&gt;
+
+&lt;h3 id=&quot;display&quot;&gt;Display&lt;/h3&gt;
+
+&lt;p&gt;Specifies if/how an element is displayed&lt;/p&gt;
+
+&lt;p&gt;Every HTML elements has a default display value depending on what type of element it is&lt;/p&gt;
+
+&lt;p&gt;The default display value for most elements is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;However, Can override this, Changing an inline element to a block element, or vice versa&lt;/p&gt;
+
+&lt;p&gt;Setting the display property of an element only changes how the element is displayed, not what kind of element it is.&lt;/p&gt;
+
+&lt;p&gt;So, an inline element with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display:block;&lt;/code&gt; is not allowed to have other block elements inside it&lt;/p&gt;
+
+&lt;h3 id=&quot;displaynone&quot;&gt;Display:none;&lt;/h3&gt;
+
+&lt;p&gt;Is commonly used with JS to hide and show elements without deleting and recreating them&lt;/p&gt;</content>
 
       
       
@@ -821,12 +1354,12 @@ is first loaded by the browser */
     </entry>
   
     <entry>
-      <title type="html">W3schools - HTML_Encode / Charset</title>
-      <link href="http://localhost:4000/w3schools-html_encode_charset" rel="alternate" type="text/html" title="W3schools - HTML_Encode / Charset" />
-      <published>2021-12-25T18:00:00+09:00</published>
-      <updated>2021-12-25T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_encode_charset</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_encode_charset">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">W3schools - CSS_Intro</title>
+      <link href="http://localhost:4000/w3schools-css-intro" rel="alternate" type="text/html" title="W3schools - CSS_Intro" />
+      <published>2021-12-28T18:00:00+09:00</published>
+      <updated>2021-12-28T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-css-intro</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-css-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -840,731 +1373,161 @@ is first loaded by the browser */
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;url-encode&quot;&gt;URL encode&lt;/h3&gt;
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
-&lt;p&gt;Is another word for a web address&lt;/p&gt;
+&lt;p&gt;CSS(Cascading Style Sheets) is the lang we use to style a Web page&lt;/p&gt;
 
-&lt;p&gt;Can be composed of words(w3schools.com) or an Internet Protocol(IP) address(192.68.20.50)&lt;/p&gt;
+&lt;p&gt;It describes how HTML elements are to be displayed on media&lt;/p&gt;
 
-&lt;h3 id=&quot;url&quot;&gt;URL&lt;/h3&gt;
+&lt;p&gt;It can control the layout of multiple web page all at once&lt;/p&gt;
 
-&lt;p&gt;Uniform Resource Locator&lt;/p&gt;
+&lt;p&gt;External stylesheets are stored in CSS files&lt;/p&gt;
 
-&lt;p&gt;Web browsers request pages from web servers by using a URL&lt;/p&gt;
+&lt;p&gt;With an external stylesheet file, you can change the look of an entire website by changing just one file&lt;/p&gt;
 
-&lt;p&gt;URL is used to address a document(or other data) on the web&lt;/p&gt;
+&lt;h3 id=&quot;history-of-css&quot;&gt;History of CSS&lt;/h3&gt;
 
-&lt;p&gt;Web address syntax rule&lt;/p&gt;
+&lt;p&gt;HTML was never intended to contain tags for formatting a web page&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- scheme://prefix.domain:port/path/filename
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Tags like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;font&amp;gt;&lt;/code&gt;, and color attributes were added to the HTML 3.2,&lt;/p&gt;
 
-&lt;p&gt;Explanation&lt;/p&gt;
+&lt;p&gt;Development of large websites, where fonts and color information were added to every single page. became a long and expensive process&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;scheme : defines the type of Internet service&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;prefix : defines a domain prefix&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;domain : defines the Internet domain name&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;port : defines the port number at the host&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;path : defines a path at the server&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;filename : defines the name of a document or resource&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;To solve this problem, the W3C created CSS&lt;/p&gt;
 
-&lt;h3 id=&quot;common-url-schemes&quot;&gt;Common URL schemes&lt;/h3&gt;
+&lt;p&gt;CSS removed the style formatting from the HTML page&lt;/p&gt;
 
-&lt;p&gt;http(Hyper Text Transfer Protocol) : Common web pages, not encrypted&lt;/p&gt;
+&lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;/h3&gt;
 
-&lt;p&gt;https(Secure Hyper Text Transfer Protocol) : Secure web pages, encryted&lt;/p&gt;
+&lt;p&gt;CSS rule consists of a selector and a declaration block&lt;/p&gt;
 
-&lt;p&gt;ftp(File Transfer Protocol) : Downloading or uploading files&lt;/p&gt;
+&lt;p&gt;Selector {property : value ; property : value; …. }&lt;/p&gt;
 
-&lt;p&gt;file : A file on your computer&lt;/p&gt;
+&lt;p&gt;The selector points to the HTML element you want to style&lt;/p&gt;
 
-&lt;h3 id=&quot;charset&quot;&gt;charset&lt;/h3&gt;
+&lt;p&gt;Each declaration includes a CSS property name and a value, separated by a colon&lt;/p&gt;
 
-&lt;p&gt;To display an HTML page correctly, a web browser must know the char set used in the page&lt;/p&gt;
+&lt;p&gt;Declaration blocks and surrounded by curly braces&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“UTF-8”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Multiple CSS declarations are separated with semicolons&lt;/p&gt;
 
-&lt;h3 id=&quot;from-ascii-to-utf-8&quot;&gt;From ASCII to UTF-8&lt;/h3&gt;
+&lt;h3 id=&quot;selector&quot;&gt;Selector&lt;/h3&gt;
 
-&lt;p&gt;ASCII was the first char encoding standard&lt;/p&gt;
+&lt;p&gt;Divide CSS selectors into five categories&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;It defined 128 different char that could be used on the internet(numbers, English letters, some special char)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Simple selectors(select elements based on name, in, class)&lt;/p&gt;
 
-&lt;p&gt;ISO-8859-1 was the default char set for HTML4&lt;/p&gt;
+&lt;p&gt;Combinator selectors(select elements based on a specific relationship between them)&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;It supported 256 different char codes&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Pseudo-class selectors(select elements based on a certain state)&lt;/p&gt;
 
-&lt;p&gt;ANSI(Windows-1252) was the original Windows char set&lt;/p&gt;
+&lt;p&gt;Pseudo-elements selectors(select and style a part of an element)&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;It is identical to ISO-8859-1, except that ANSI has 32 extra chars&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Attribute selectors(select elements based on an attribute or attribute value)&lt;/p&gt;
 
-&lt;p&gt;The HTML5 specification encourages web developers to use the UTF-8 char set,&lt;/p&gt;
+&lt;h3 id=&quot;simple-selector&quot;&gt;Simple Selector&lt;/h3&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;It covers almost all of the chars and symbols in the world&lt;/li&gt;
-&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Selector&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Example&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;#id&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;#firstname&lt;/td&gt;
+      &lt;td&gt;Selects the element with id=”firstname”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;.class&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;.intro&lt;/td&gt;
+      &lt;td&gt;Selects all elements with class=”intro”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;elements.class&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;p.intro&lt;/td&gt;
+      &lt;td&gt;Selects only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements with class=”intro”&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;*&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;*&lt;/td&gt;
+      &lt;td&gt;Selects all elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;element&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;p&lt;/td&gt;
+      &lt;td&gt;Selects all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;element,element,…&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;div,p&lt;/td&gt;
+      &lt;td&gt;Selects all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements and all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;h3 id=&quot;entities&quot;&gt;Entities&lt;/h3&gt;
+&lt;h3 id=&quot;how-to-css&quot;&gt;How to CSS&lt;/h3&gt;
 
-&lt;p&gt;Char entities are used to display reserved chars in HTML&lt;/p&gt;
+&lt;p&gt;Three ways of inserting a style sheet&lt;/p&gt;
 
-&lt;p&gt;syntax&lt;/p&gt;
+&lt;p&gt;External CSS&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;ni&quot;&gt;&amp;amp;entity_name;&lt;/span&gt; or &lt;span class=&quot;ni&quot;&gt;&amp;amp;#entity_number;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- An entity name is easy to remember, but browser may not support all entity names --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Internal CSS&lt;/p&gt;
 
-&lt;p&gt;Non-breaking space&lt;/p&gt;
+&lt;p&gt;Inline CSS&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;A commonly used entity in HTML is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;nbsp&lt;/code&gt;;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;That will not break into a new line&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;If you write 10 spaces in your text, the browser will remove 9 of them&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;To add real spaces to your text, use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;nbsp&lt;/code&gt;;&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
+&lt;h3 id=&quot;external-css&quot;&gt;External CSS&lt;/h3&gt;
 
-      
-        <category term="w3schools" />
-      
+&lt;p&gt;An external style sheet can be written in any text editor, and must be saved with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.css&lt;/code&gt; extension&lt;/p&gt;
 
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
+&lt;p&gt;The external &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.css&lt;/code&gt; file should not contain any HTML tags&lt;/p&gt;
 
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - HTML_Intro</title>
-      <link href="http://localhost:4000/w3schools-html_intro" rel="alternate" type="text/html" title="W3schools - HTML_Intro" />
-      <published>2021-12-24T18:00:00+09:00</published>
-      <updated>2021-12-24T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-html_intro</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-html_intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;p&gt;Each HTML page must include a reference to the external style sheet file inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt; element, inside the head section&lt;/p&gt;
 
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
+&lt;p&gt;Ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link rel=”stylesheet” href=”mystyle.css”&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;h3 id=&quot;internal-css&quot;&gt;Internal CSS&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;An internal style sheet may be used if one single HTML page has a unique style&lt;/p&gt;
 
-&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
+&lt;p&gt;The internal style is defined inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt; element, inside the head section&lt;/p&gt;
 
-&lt;p&gt;Stands for Hyper Text Markup Language&lt;/p&gt;
+&lt;p&gt;Ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt; body{color: maroon;} &amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Is the standard markup language for Web pages&lt;/p&gt;
+&lt;h3 id=&quot;inline-css&quot;&gt;Inline CSS&lt;/h3&gt;
 
-&lt;p&gt;Describes the structure of a Web page&lt;/p&gt;
+&lt;p&gt;An inline style may be used to apply a unique style for a single element&lt;/p&gt;
 
-&lt;p&gt;Consists of a series of elements&lt;/p&gt;
+&lt;p&gt;To use inline styles, add the style attribute to the relevant element.&lt;/p&gt;
 
-&lt;p&gt;Elements tell the broswer how to display the content&lt;/p&gt;
+&lt;p&gt;An inline style loses many of the advantages of a style sheet, use this method sparingly&lt;/p&gt;
 
-&lt;p&gt;Elements label pieces of content&lt;/p&gt;
+&lt;p&gt;The style attribute can contain any CSS property&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- declaration defines that this document is an HTML5 document --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Is the root element of an HTML page --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- contains metha information about the HTML page --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Page title&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- specifies a titile for the HTML page(which is shown in the broser’s title bar or in the page’s tab --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- defines the document’s body, and is a container for all the visible --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;My First Heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- defines a large heading --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;My frist paragraph&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- defines a paragraph --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“https://www.w3schools.com”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;This is a link&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- defines a link, it’s destination is specified in the href attribute --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“w3schools.jpg”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- defines a image, source file is provided as attribute --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h1 style=”color:blue;”&amp;gt;Heading&amp;lt;/h1&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;html-element&quot;&gt;HTML element&lt;/h3&gt;
+&lt;h3 id=&quot;multiple-style-sheets&quot;&gt;Multiple style sheets&lt;/h3&gt;
 
-&lt;p&gt;Is defined by a start tag, some content, and an end tag&lt;/p&gt;
+&lt;p&gt;If some properties have been defined for the same selector in different style sheets, the value from the last read style sheet will be used&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;tagname&amp;gt;&lt;/span&gt;Content goes here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/tagname&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;cascading-order&quot;&gt;Cascading order&lt;/h3&gt;
 
-&lt;p&gt;Some HTML elements have no content(like the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;&lt;/code&gt; element)&lt;/p&gt;
+&lt;p&gt;All the styles in a page will “cascade” into a new “virtual” style sheet by the following rules&lt;/p&gt;
 
-&lt;p&gt;These elements are called empty elements that do not have an end tag&lt;/p&gt;
+&lt;p&gt;Inline &amp;gt; External and Internal &amp;gt; Browser default&lt;/p&gt;
 
-&lt;h3 id=&quot;web-browser&quot;&gt;Web browser&lt;/h3&gt;
+&lt;p&gt;Inline style has the highest priority, and will override external and internal styles and browser defaults&lt;/p&gt;
 
-&lt;p&gt;The purpose of web browser is to read HTML documents and display&lt;/p&gt;
+&lt;h3 id=&quot;comment&quot;&gt;Comment&lt;/h3&gt;
 
-&lt;p&gt;Browser doesn’t display the HTML tags but uses them to determine how to display the document&lt;/p&gt;
+&lt;p&gt;Comments are used to explain the code, and may help when you edit the source code at a later date&lt;/p&gt;
 
-&lt;h3 id=&quot;how-to-view-html-source&quot;&gt;How to view HTML source&lt;/h3&gt;
+&lt;p&gt;Comments are ignored by browsers&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Right-click in an HTML page and select “View Page Source” or similar
-This will open a window containing the HTML source code of the page&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Right-click on an element and choose “Inspect” or similar to see what elements are made up of
-Can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;nested-html-elements&quot;&gt;Nested HTML elements&lt;/h3&gt;
-
-&lt;p&gt;This means that elements can contain other elements&lt;/p&gt;
-
-&lt;p&gt;All HTML documents consist of nested HTML elements&lt;/p&gt;
-
-&lt;h3 id=&quot;never-skip-the-end-tag&quot;&gt;Never skip the end tag&lt;/h3&gt;
-
-&lt;p&gt;Some HTML elements will display correctly, even if you forget the end tag&lt;/p&gt;
-
-&lt;p&gt;However, never rely on this&lt;/p&gt;
-
-&lt;h3 id=&quot;empty-html-elements&quot;&gt;Empty HTML elements&lt;/h3&gt;
-
-&lt;p&gt;HTML elements with no content are called empty elements&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;&lt;/code&gt; tag defines a line break, and is an empty element withdout a closing tag&lt;/p&gt;
-
-&lt;h3 id=&quot;html-is-not-case-sensitive&quot;&gt;HTML is not case sensitive&lt;/h3&gt;
-
-&lt;p&gt;HTML tags aren’t sensitive, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;P&amp;gt;&lt;/code&gt; means the same as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;But, W3C recommends lowercase in HTML&lt;/p&gt;
-
-&lt;p&gt;And demands lowercase for stricter document types like XHTML&lt;/p&gt;
-
-&lt;h3 id=&quot;attribute&quot;&gt;Attribute&lt;/h3&gt;
-
-&lt;p&gt;Provide additional information about HTML elements&lt;/p&gt;
-
-&lt;p&gt;All elements can have attributes&lt;/p&gt;
-
-&lt;p&gt;Are always specifited in the start tag&lt;/p&gt;
-
-&lt;p&gt;Usually come in name/value pairs&lt;/p&gt;
-
-&lt;p&gt;href attribute&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;specifies the URL of the page the link goes to&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;src attribute&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;specifies the path&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;url-in-the-src-attribute&quot;&gt;URL in the src attribute&lt;/h3&gt;
-
-&lt;p&gt;Absolute URL – Links to an external image that is hosted on another website&lt;/p&gt;
-
-&lt;p&gt;note – External images might be under copyright&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In addition, can’t control external image, it can suddenly be removed or changed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;src = “https://www.w3schools.com/images/img_girl.jpg”
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Relative URL – Links to an image that is hosted within the website&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the URL begins without a slash, it will be relative to the current page&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the URL begins with a slash, it will be relative to the domain&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;lang&quot;&gt;Lang&lt;/h3&gt;
-
-&lt;p&gt;You should always include the lang attribute inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag, to declare the language of the Web page&lt;/p&gt;
-
-&lt;p&gt;This is meant to assist search engines and browsers&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“en”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Country codes can also be added to the language code in the lang attribute&lt;/p&gt;
-
-&lt;p&gt;first two chars define the lang of the HTML page&lt;/p&gt;
-
-&lt;p&gt;last two chars define the country&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“en-US”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;always-quote-attribute-values&quot;&gt;Always quote attribute values&lt;/h3&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTML standard does not require quotes around attribute values
-However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML
-Double quotes around attribute values are the most commno in HTML, but single quotes can also be used
-In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“John&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ShotGun&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Nelson&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- or vice versa --&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;‘John&quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ShotGun&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Nelson&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - Thread / Lambda</title>
-      <link href="http://localhost:4000/w3schools-thread_lambda" rel="alternate" type="text/html" title="W3schools - Thread / Lambda" />
-      <published>2021-12-23T18:00:00+09:00</published>
-      <updated>2021-12-23T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-thread_lambda</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-thread_lambda">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;thread&quot;&gt;Thread&lt;/h3&gt;
-
-&lt;p&gt;Allows a program to operate more efficiently by doing multiple things at the same time&lt;/p&gt;
-
-&lt;p&gt;Can be used to perform complicated tasks in the background without interrupting the main program&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Be created by extending the Thread&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thrd&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// overriding run() method&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// to implements the Runnable interface&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Inter&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Runnable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
-		&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// running Thread&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;Thrd&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thrd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;thread1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// running Thread&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;Inter&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Inter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The major difference is that when a class extends the Thread class, you can’t any other class,&lt;/p&gt;
-
-&lt;p&gt;But by implementing the Runnable interface, it is possibel to extend from anoteher class as well&lt;/p&gt;
-
-&lt;h3 id=&quot;concurrency-problems&quot;&gt;Concurrency Problems&lt;/h3&gt;
-
-&lt;p&gt;Threads run at the same time as other parts of the program, there is no way to know in which order the code will run&lt;/p&gt;
-
-&lt;p&gt;When the threads and main program are reading and writing the same var, the value are unpredictable&lt;/p&gt;
-
-&lt;p&gt;The problems that result from this are called concurrency problems&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Wait for the thread to finish&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isAlive&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// to avoid concurrency problems&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// use isAlive() method of the thread to check whether the thread has finished running before using any attributes that the thread can change&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Waiting...&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// Update amount and print its value&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Main: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Main: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;amount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;lambda&quot;&gt;Lambda&lt;/h3&gt;
-
-&lt;p&gt;Is a short block of code which takes in parameters and returns a value&lt;/p&gt;
-
-&lt;p&gt;They do not need a name and they can be implemented right in the body of a method&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;Expression&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;limited&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;They&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;immediately&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;variables&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assignments&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;statements&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;complex&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operations&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;used&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curly&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;braces&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;nc&quot;&gt;If&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;needs&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;block&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;statement&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;ex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Lambda expressions are usually passed as parameters to a function&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;myNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);});&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Lambda expressions can be stored in var if the var’s type is an interface which has only one method&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;Consumer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Interger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);};&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;myNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Create a method witch takes a lambda expression as a parameter&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringFunction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// In main method&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;StringFunction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;?&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;printFormatted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ask&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;// In Main class&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;printFormatted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringFunction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - RegEx</title>
-      <link href="http://localhost:4000/w3schools-regex" rel="alternate" type="text/html" title="W3schools - RegEx" />
-      <published>2021-12-22T18:00:00+09:00</published>
-      <updated>2021-12-22T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-regex</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-regex">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;regular-expressions&quot;&gt;Regular Expressions&lt;/h3&gt;
-
-&lt;p&gt;Is a sequence of characters that forms a search pattern&lt;/p&gt;
-
-&lt;p&gt;When you search for data in a text, you can use this pattern to describe what you searching for&lt;/p&gt;
-
-&lt;p&gt;Find out if there are any occurrences of the word “w3schools” in a sentence:&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.regex.Matcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// Used to search for the pattern&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.regex.Pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// Defines a pattern&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// another class(PatternSyntaxException) : Indicate syntax error in a regular expression pattern&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// “w3schools” is being searched for in a sentence&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Pattern&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;w3schools&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;CASE_INSENSITIVE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// create pattern, use the Pattern.compile() method&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// first parameter indicates which pattern is being searched for&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// second parameter(optional) has a flag to indicates that the search should be case-insensitive&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Matcher&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matcher&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;matcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Visit W3Schools!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// matcher() method is used to search for the pattern in a string&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// It returns Matcher objext which contains information about the search that was perfromed&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matchFound&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matcher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// It returns true if the pattern was found in the string&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matchFound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Match found&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Match not found&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Output will be Match found&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;flags&quot;&gt;Flags&lt;/h3&gt;
-
-&lt;p&gt;In the compile() method change how the search is performed&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pattern.CASE_INSENSITIVE : The case of letters will be ignored&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pattern.LITERAL : Special characters in the pattern will not have any special meaning&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pattern.UNICODE_CASE : Use it together with the CASE_INSENSITIVE flag to also ignore the case the case of letters outside of the English alphabet&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;patterns&quot;&gt;Patterns&lt;/h3&gt;
-
-&lt;p&gt;[abc] : Find one character from the options between the brackets&lt;/p&gt;
-
-&lt;p&gt;[^abc] : Find one character NOT between the brackets&lt;/p&gt;
-
-&lt;p&gt;[0-9] : Find one character from the range 0 to 9&lt;/p&gt;
-
-&lt;h3 id=&quot;metacharacters&quot;&gt;Metacharacters&lt;/h3&gt;
-
-&lt;p&gt;Are characters with a special meaning&lt;/p&gt;
-
-&lt;p&gt;| : Find a match for any one of the patters separated by | as in: cat|dog|fish&lt;/p&gt;
-
-&lt;p&gt;. : Find just on instance of any character&lt;/p&gt;
-
-&lt;p&gt;^ : Finds a match as the beginning of a string as in: ^Hello&lt;/p&gt;
-
-&lt;p&gt;$ : Finds a match at the end of the string as in: World$&lt;/p&gt;
-
-&lt;p&gt;\d : Find a digit&lt;/p&gt;
-
-&lt;p&gt;\s : Find a whitespace character&lt;/p&gt;
-
-&lt;p&gt;\b : Find a match at the beginning of a word: \bWORD, or at the end of a word: WORD\b&lt;/p&gt;
-
-&lt;p&gt;\uxxxx : Find the Unicode character specified by the hexadecimal number xxxx&lt;/p&gt;
-
-&lt;h3 id=&quot;quantifiers&quot;&gt;Quantifiers&lt;/h3&gt;
-
-&lt;p&gt;Define quantities&lt;/p&gt;
-
-&lt;p&gt;n+ : Matches any string that contains at least one n&lt;/p&gt;
-
-&lt;p&gt;n* : Matches any string that contains zero or more occrrences of n&lt;/p&gt;
-
-&lt;p&gt;n? : Matches any string that contains zero or one occurences of n&lt;/p&gt;
-
-&lt;p&gt;n{x} : Matches any string that contains a sequence of X n’s&lt;/p&gt;
-
-&lt;p&gt;n{x,y} : Matches any string that contains a sequence of X to Y n’s&lt;/p&gt;
-
-&lt;p&gt;n{x,} : Matches any string that contains a sequence of at least X n’s&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - Exception</title>
-      <link href="http://localhost:4000/w3schools-exception" rel="alternate" type="text/html" title="W3schools - Exception" />
-      <published>2021-12-21T18:00:00+09:00</published>
-      <updated>2021-12-21T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-exception</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-exception">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;exception--try-catch&quot;&gt;Exception – try catch&lt;/h3&gt;
-
-&lt;p&gt;When an error occurs, Java will normally stop and generate an error message&lt;/p&gt;
-
-&lt;p&gt;The techinal term for this is : Java will throw an exception&lt;/p&gt;
-
-&lt;h3 id=&quot;try-and-catch&quot;&gt;try and catch&lt;/h3&gt;
-
-&lt;p&gt;try statement&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;allows you to define a code block to be tested for errors while is being executed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;catch statement&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;allows you to define a code block to be executed, if an error occurs in the try block&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;try and catch keywords come in pairs&lt;/p&gt;
-
-&lt;p&gt;finally statement&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;lets you execute code, after try-catch, regardless of the result&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myNumbers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
-			&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myNumbers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Something&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;went&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrong&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\‘&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\’&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;finished&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The output will be&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Something went wrong.
-The ‘try catch’ is finished.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;throw&quot;&gt;throw&lt;/h3&gt;
-
-&lt;p&gt;Allows you to create a custom error&lt;/p&gt;
-
-&lt;p&gt;Is used together with an exception type&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;checkAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ArithmeticException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;denied&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;least&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;years&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;old&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;granted&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;–&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;old&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enough&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;if you call checkAge(15); in main method, the output will be&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Exception in thread “main” java.lang.ArithmeticException : Access denied – You must be at least 18 years old.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;p&gt;Starts with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; and ends with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt;&lt;/p&gt;</content>
 
       
       

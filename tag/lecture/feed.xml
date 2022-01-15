@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-09T19:56:31+09:00</updated>
+  <updated>2022-01-15T13:48:32+09:00</updated>
   <id>http://localhost:4000/tag/lecture/feed.xml</id>
 
   
@@ -30,6 +30,868 @@
   
   
 
+  
+    <entry>
+      <title type="html">JSP - Function</title>
+      <link href="http://localhost:4000/lecture-SQL-function" rel="alternate" type="text/html" title="JSP - Function" />
+      <published>2022-01-13T18:00:00+09:00</published>
+      <updated>2022-01-13T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-SQL-function</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-SQL-function">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;44일차-수업&quot;&gt;44일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;정렬&quot;&gt;정렬&lt;/h3&gt;
+
+&lt;p&gt;SELECT 명령어를 쓰면 검색된 결과가 출력, 출력 순서는 출력할 때마다 다를 수도 있음&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SELECT 문장 맨 마지막에 “ORDER BY 정렬 기준 컬럼명 ASC&lt;/td&gt;
+      &lt;td&gt;DESC;”&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ASC : 오름차순, 기본값, 작은값에서 큰값 순으로 출력, NULL을 맨 마지막으로&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DESC : 필요 시 작성 필수, 큰값에서 작은 값 순으로 출력&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;정렬 기준은 여러개 가능, 여러개 쓸 경우에 정렬 순서가 중요!&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
+
+&lt;p&gt;출력 당시 중복인 데이터를 지우고 싶을 때,&lt;/p&gt;
+
+&lt;p&gt;작성 위치는 SELECT 다음에 작성, WHERE 에는 작성 못함&lt;/p&gt;
+
+&lt;p&gt;DISTINCT 뒤에 컬럼을 여러개 작성하면, 작성된 컬럼의 내용이 모두 같은 경우에만 중복제거&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;as&quot;&gt;AS&lt;/h3&gt;
+
+&lt;p&gt;별칭, 컬럼명이 복잡해 질 때 사용, “” 감싸는 것을 권장, 공백이나 특수문자는 필수로&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;job&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“직업&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;부서”&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;연결-연산자&quot;&gt;연결 연산자&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt; : 기존 컬럼의 값에 문자열을 추가하고 싶을 때 사용&lt;/p&gt;
+
+&lt;h3 id=&quot;숫자형-함수&quot;&gt;숫자형 함수&lt;/h3&gt;
+
+&lt;p&gt;ABS(n) : 절대값&lt;/p&gt;
+
+&lt;p&gt;FLOOR(n) : 소수점 내림&lt;/p&gt;
+
+&lt;p&gt;ROUND(n,i) : 숫자 n 을 소수점 i자리에서 반올림&lt;/p&gt;
+
+&lt;p&gt;TRUNC(n,i) : 숫자 n을 소수점 i자리에서 버림&lt;/p&gt;
+
+&lt;p&gt;MOD(n/i) : 숫자 n을 i로 나누고 남은 나머지, i가 음수일 경우 0 앞쪽 대상&lt;/p&gt;
+
+&lt;p&gt;SIGN(n) : 양수(1) 음수(-1) 0 을 구분해주는 함수&lt;/p&gt;
+
+&lt;p&gt;CEIL(n) : 소수점 올림&lt;/p&gt;
+
+&lt;p&gt;POWER(n) : 제곱&lt;/p&gt;
+
+&lt;p&gt;SORT(n) : 제곱근&lt;/p&gt;
+
+&lt;h3 id=&quot;dual&quot;&gt;dual&lt;/h3&gt;
+
+&lt;p&gt;산술연산, 가상의 컬럼에 값을 한번만 출력하고 싶을 때 사용하는 가상 테이블&lt;/p&gt;
+
+&lt;h3 id=&quot;문자형-함수&quot;&gt;문자형 함수&lt;/h3&gt;
+
+&lt;p&gt;LOWER(str), UPPER(str), INITCAP(str) : 소문자, 대문자, 첫글자 대문자&lt;/p&gt;
+
+&lt;p&gt;CONCAT(str1, str2) : 문자열 합치기&lt;/p&gt;
+
+&lt;p&gt;SUBSTR(str,i,n) : str을 i번째부터 n개를 선택&lt;/p&gt;
+
+&lt;p&gt;INSTR(str,ch,n,i) : str 문자열 중에 ch 문자를 n번째 위치부터 i번째인 데이터 출력&lt;/p&gt;
+
+&lt;p&gt;LENGTH(str) : 문자열 길이&lt;/p&gt;
+
+&lt;p&gt;LPAD(str, n, ch), RPAD(str, n, ch) : 기존 값 포함해서 n자리수만큼 오른쪽 또는 왼쪽을 ch로 채운다&lt;/p&gt;
+
+&lt;p&gt;TRIM / LTRIM / RTRIM : 문자의 공백을 제거&lt;/p&gt;
+
+&lt;p&gt;TRANSLATE(str, str1,str2) : str 담긴 문자열 중에 str1 에 해당하는 글자를 str2로 대체&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;글자 하나하나 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;REPLACE(str, str1, str2) : str 담긴 문자열 중에 str1에 해당하는 글자를 str2로 대체&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문자열 전체로 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;날짜형-함수&quot;&gt;날짜형 함수&lt;/h3&gt;
+
+&lt;p&gt;SYSDATE : 실제 컴퓨터의 시간을 가져오는 키워드&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;다른 표현의 키워드들 : CURRENT_DATE, SYSTIMESTAMP, CURRENT_TIMESTAMP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DATE와 숫자 연산의 결과는 DATE 라는 날짜 자료형으로 출력&lt;/p&gt;
+
+&lt;p&gt;DATE - DATE의 연산 결과는 숫자로 출력&lt;/p&gt;
+
+&lt;p&gt;DATE + 숫자/24 는 날짜 + 시간&lt;/p&gt;
+
+&lt;p&gt;MONTHS_BETWEEN(date1,date2) : 두 날짜의 월 수를 계산&lt;/p&gt;
+
+&lt;p&gt;ADD_MONTHS(date, n) : 날짜에 월을 더하기&lt;/p&gt;
+
+&lt;p&gt;NEXT_DAY(date, n) : 날짜를 기준으로 다음 해당 요일을 찾아줌(일요일 시작 기준 1~7)&lt;/p&gt;
+
+&lt;p&gt;LAST_DAY(date) : 해당 월의 마지막 날&lt;/p&gt;
+
+&lt;p&gt;ROUND() : 날짜를 반올림&lt;/p&gt;
+
+&lt;p&gt;TRUNC() : 날짜를 버림&lt;/p&gt;
+
+&lt;h3 id=&quot;자료형-변환-함수&quot;&gt;자료형 변환 함수&lt;/h3&gt;
+
+&lt;p&gt;TO_CHAR(값), TO_NUMBER(), TO_DATE()&lt;/p&gt;
+
+&lt;p&gt;TO_DATE() : 날짜 관련해서 굉장히 유연하게 처리해줌&lt;/p&gt;
+
+&lt;h3 id=&quot;조건-함수&quot;&gt;조건 함수&lt;/h3&gt;
+
+&lt;p&gt;DECODE : 일치 연산자, 케이스가 같냐 다르냐 판단&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DECODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;CASE WHEN ~ THEN : 다른 연산자 사용이 가능&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">JSP - CONSTRAINT / CONDITION</title>
+      <link href="http://localhost:4000/lecture-SQL-constraint_condition" rel="alternate" type="text/html" title="JSP - CONSTRAINT / CONDITION" />
+      <published>2022-01-12T18:00:00+09:00</published>
+      <updated>2022-01-12T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-SQL-constraint_condition</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-SQL-constraint_condition">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;43일차-수업&quot;&gt;43일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;h3 id=&quot;ddl&quot;&gt;DDL&lt;/h3&gt;
+
+&lt;p&gt;정의 명령어&lt;/p&gt;
+
+&lt;p&gt;CREATE : 생성&lt;/p&gt;
+
+&lt;p&gt;DROP : 제거&lt;/p&gt;
+
+&lt;p&gt;ALTER : 수정(추가, 변경, 삭제)&lt;/p&gt;
+
+&lt;h3 id=&quot;dml&quot;&gt;DML&lt;/h3&gt;
+
+&lt;p&gt;조작 명령어&lt;/p&gt;
+
+&lt;p&gt;SELECT 컬럼명,컬럼명,… FROM 테이블명 WHERE 조건&lt;/p&gt;
+
+&lt;p&gt;INSERT INTO 테이블명 VALUES 값&lt;/p&gt;
+
+&lt;p&gt;UPDATE 테이블명 SET 컬럼 = 값, … WHERE 조건&lt;/p&gt;
+
+&lt;p&gt;DELETE FROM 테이블명 WHERE 조건&lt;/p&gt;
+
+&lt;h3 id=&quot;dcl&quot;&gt;DCL&lt;/h3&gt;
+
+&lt;p&gt;접근 제어 명령어&lt;/p&gt;
+
+&lt;p&gt;GRANT : 권한 주기&lt;/p&gt;
+
+&lt;p&gt;REVOK : 권한 박탈&lt;/p&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;43일차-수업-1&quot;&gt;43일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;제약-조건&quot;&gt;제약 조건&lt;/h3&gt;
+
+&lt;p&gt;데이터를 추가할 때 필요한 값만 허용하도록 하는 조건&lt;/p&gt;
+
+&lt;p&gt;NOT NULL : NULL값을 허용하지 않는다&lt;/p&gt;
+
+&lt;p&gt;UNIQUE : 유일한 값만 허용, 중복을 허용하지 않음, NULL은 허용&lt;/p&gt;
+
+&lt;p&gt;PRIMARY KEY : 유일키, 기본키(UNIQUE + NOT NULL), 모든 테이블은 하나 이상의 기본키를 가짐&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;여러개일 경우 그룹화 되어 기본키의 역할을 수행&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;FOREIGN KEY : 외래키, 참조키, 테이블 간의 연결점을 만들 때 사용, 다른 테이블의 pk컬럼을 참조&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;참조키 조건이 설정된 컬럼은 다른 테이블의 pk 컬럼에 있는 데이터만 입력가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CHECK : 입력 값을 정할 수 있는 제약 조건&lt;/p&gt;
+
+&lt;p&gt;DEFAULT : 입력 값을 작성하지 않았을 때 기본값으로 변경&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- 컬럼 레벨 제약 조건 선언 방식&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;UNIQUE&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- 테이블 레벨 제약 조건 선언 방식&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hobby&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varchar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘없음’&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;-- DEFAULT 는 보통 NOT NULL 이랑 같이 씀&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- 제약 조건에 대한 이름을 설정할 수 있음&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CONSTRAINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pk_id&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PRIMARY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CONSTRAINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chk_gender&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CHECK&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gender&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘남’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘여’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ALTER TABLE 을 통해서 제약 조건 추가 수정 삭제 가능&lt;/p&gt;
+
+&lt;h3 id=&quot;조건&quot;&gt;조건&lt;/h3&gt;
+
+&lt;p&gt;다른언어들의 기본 연산자와 거의 동일&lt;/p&gt;
+
+&lt;p&gt;AND, OR, NOT&lt;/p&gt;
+
+&lt;p&gt;LIKE : 컬럼에 저장된 데이터가 일치하면 조회하는 연산자&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;와일드 카드 : 우리가 찾고자 하는 데이터를 정확히 모를 때 쓰는 키워드&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; : 어떤 문자가 오든 상관없다는 의미&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_&lt;/code&gt; : 단 한문자에 대한 와일드 카드&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;LIKE ‘%\%%’ ESCAPE ‘\’; : 특수문자를 와일드 카드로 사용하고 싶을때, ESCAPE 를 통해 명시&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;: 문자열 합치는 연산자, 산술연산자와 함께 컬럼에도 사용 가능&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;NVL(대상컬럼, 변할 값) : 대상 컬럼 담긴 값이 null 이면 변할 값으로 변경시켜주는 함수&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">SQL - Intro</title>
+      <link href="http://localhost:4000/lecture-SQL-intro" rel="alternate" type="text/html" title="SQL - Intro" />
+      <published>2022-01-11T18:00:00+09:00</published>
+      <updated>2022-01-11T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-SQL-intro</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-SQL-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;42일차-수업&quot;&gt;42일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;주석&quot;&gt;주석&lt;/h3&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*
+*	다중 주석
+*/&lt;/span&gt;
+
+	&lt;span class=&quot;c1&quot;&gt;-- 단일 주석&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;database1&quot;&gt;DataBase1&lt;/h3&gt;
+
+&lt;p&gt;우리가 저장해야하는 정보를 저장하는 공간, 데이터의 집합&lt;/p&gt;
+
+&lt;p&gt;항상 같은 정보를 유지함으로써 식별 가능, 검색이 용이&lt;/p&gt;
+
+&lt;p&gt;활용 : 중복된 정보를 처리하는 것이 목표, 관련성 있는 데이터들끼리의 그룹화&lt;/p&gt;
+
+&lt;p&gt;행과 열, 트리 구조 데이터 베이스 &amp;gt; 관계형 데이터 베이스, 객체 지향 데이터 베이스&lt;/p&gt;
+
+&lt;p&gt;파일로 관리할 경우 중복, 보안, 경제성, 무결성 등의 문제&lt;/p&gt;
+
+&lt;h3 id=&quot;database2&quot;&gt;DataBase2&lt;/h3&gt;
+
+&lt;p&gt;통합 데이터 : 여러 부서에서 사용하는 데이터를 한 곳에 공동 관리&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;동일한 데이터는 중복 허용하지 않고, 검색의 효율성을 위해 최소한의 중복만 허용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;저장 데이터 : 컴퓨터가 접근할 수 있는 저장매체에 저장된 것&lt;/p&gt;
+
+&lt;p&gt;운영 데이터 : 조직의 운영에 기본적으로 반드시 필요한 데이터를 저장하는 것&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;언제나 필요한 정보는 운영 데이터에 저장&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;공용 데이터 : 한 조직의 여러 프로그램들이 공동으로 사용하는 것&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;여러 사용자가 서로 다른 목적으로 공유한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;database3&quot;&gt;DataBase3&lt;/h3&gt;
+
+&lt;p&gt;실시간 접근성 : 비정형적인 질의를 실시간 처리&lt;/p&gt;
+
+&lt;p&gt;계속적인 변화 : 데이터를 추가, 삭제, 갱신할 때 항상 변하고, 변화된 데이터를 정확하게 유지&lt;/p&gt;
+
+&lt;p&gt;동시 공유 : 같은 내용의 데이터를 여러 사람이 다른 방법을 동시에 공유해야 함&lt;/p&gt;
+
+&lt;p&gt;내용에 의한 참조 : 데이터가 저장 되어있던 메모리,  주소, 위치에 의해서 참조하는 것이 아니라&lt;/p&gt;
+
+&lt;p&gt;사용자가 요구하는 데이터의 내용에 따라 참조&lt;/p&gt;
+
+&lt;h3 id=&quot;용어&quot;&gt;용어&lt;/h3&gt;
+
+&lt;p&gt;DBMS : 데이터 베이스 관리 시스템&lt;/p&gt;
+
+&lt;p&gt;RDBMS : 관계형 데이터 베이스 관리 시스템 : 오라클, MYSQL, MariaDB, MSSQL 등등..&lt;/p&gt;
+
+&lt;p&gt;DBA : 데이터 베이스 관리자, 데이터 베이스를 생성, 변경 관리 제어자&lt;/p&gt;
+
+&lt;p&gt;응용 프로그래머 : 개발자, 인터페이스, 응용프로그램 개발 + 데이터 베이스 설계 + 데이터 저장&lt;/p&gt;
+
+&lt;h3 id=&quot;sql&quot;&gt;SQL&lt;/h3&gt;
+
+&lt;p&gt;Structured Query Language, 프로그래밍이 아닌 조작 명령어&lt;/p&gt;
+
+&lt;p&gt;데이터 베이스 관리(조회, 입력, 수정, 삭제 등)할 때 사용하는 언어&lt;/p&gt;
+
+&lt;p&gt;명령어의 끝은 항상 세미콜론&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;DDL : Data Definition Language, 데이터 정의 언어&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DML : Data Manipulation Language, 데이터 조작 언어&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DCL : Data Control Language, 데이터 제어 언어&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;데이터타입&quot;&gt;데이터타입&lt;/h3&gt;
+
+&lt;p&gt;varchar2(m) : 가변 길이 문자 데이터 (4000byte), 크기가 입력한 크기만큼 줄어듬&lt;/p&gt;
+
+&lt;p&gt;char(n) : 고정 길이 문자 데이터 (2000byte), 입력한 크기와 무관하게 크기 고정&lt;/p&gt;
+
+&lt;p&gt;number(p,s) : 숫자만 입력 가능한 데이터 타입 전체 자리(p) 중 소수점 이하 s 자리까지&lt;/p&gt;
+
+&lt;p&gt;DATE, LONG, BLOB, CLOB 있음&lt;/p&gt;
+
+&lt;h3 id=&quot;ddl&quot;&gt;DDL&lt;/h3&gt;
+
+&lt;p&gt;테이블 생성&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;테이블 명으로 첫 글자는 문자, _ $ # 사용가능, 길이 1~30, 예약어는 불가, 소문자와 언더바 이용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+     &lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;속성&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+     &lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;속성&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;테이블 변경&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;modify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 변경대상이 있어야 함&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;변경 주의 사항&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터 타입 변경할 수 없음, 기존 데이터의 훼손이 일어남&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;같은 이유로 크기를 늘릴 수 있지만 줄일 수는 없음&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;모든 데이터가 null 혹은 행이 존재하지 않는다면 줄이거나 타입을 변경할 수 있음&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Default 옵션 : 기본 값을 설정하는 옵션&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Not null 옵션 : 옵션 추가를 하려면 모든 데이터가 null이 없어야 함&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;테이블 삭제&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CONSTRAINTS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 삭제가 되면 복구 불가능 (history 일정 부분 복구 가능)&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CONSTRAINTS&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 삭제가 되면 복구가 불가능, (history 일정부분 복구 가능), 제약조건과 무관하게 삭제&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;purge&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 삭제 시에 완전 삭제&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;제약조건&quot;&gt;제약조건&lt;/h3&gt;
+
+&lt;p&gt;가능한 것과 불가능한 것을 구분 짓도록 하는 조건, 제약 조건을 지킨 값만 허용&lt;/p&gt;
+
+&lt;p&gt;NOT NULL : 이 컬럼에는 null이 안됨&lt;/p&gt;
+
+&lt;p&gt;UNIQUE : 이 컬럼은 중복이 안됨&lt;/p&gt;
+
+&lt;p&gt;PRIMARY KEY : null, 중복 허용 안함&lt;/p&gt;
+
+&lt;p&gt;FOREIGN KEY : 나중에 배울 것&lt;/p&gt;
+
+&lt;p&gt;CHECK : 제한적인 입력 처리&lt;/p&gt;
+
+&lt;p&gt;DEFAULT : 제약 조건 아니지만, null로 입력한 값에 자동으로 기본값을 입력&lt;/p&gt;
+
+&lt;h3 id=&quot;dml&quot;&gt;DML&lt;/h3&gt;
+
+&lt;p&gt;조건이 없으면 테이블 내의 모든 데이터에 적용&lt;/p&gt;
+
+&lt;p&gt;조회 : SELECT 컬럼명, 컬럼명… FROM 테이블명 WHERE 조건식&lt;/p&gt;
+
+&lt;p&gt;입력 : INSERT INTO 테이블명(컬럼명, 컬럼명…) VALUES (컬럼값, 컬럼값..)&lt;/p&gt;
+
+&lt;p&gt;수정 : UPDATE 테이블명 SET 컬럼명 = 변경값 WHERE 조건식&lt;/p&gt;
+
+&lt;p&gt;삭제 : DELETE FROM 테이블명 WHERE 조건식&lt;/p&gt;
+
+&lt;h3 id=&quot;commit--현재-상태를-저장하는-명령어&quot;&gt;COMMIT : 현재 상태를 저장하는 명령어&lt;/h3&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">JSP - Intro</title>
+      <link href="http://localhost:4000/lecture-JSP-intro" rel="alternate" type="text/html" title="JSP - Intro" />
+      <published>2022-01-10T18:00:00+09:00</published>
+      <updated>2022-01-10T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-JSP-intro</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-JSP-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;41일차-수업&quot;&gt;41일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;h3 id=&quot;dom&quot;&gt;DOM&lt;/h3&gt;
+
+&lt;p&gt;document를 객체 명으로 전역으로 선언 되어 있음&lt;/p&gt;
+
+&lt;p&gt;HTML 요소들을 선택해서 동적으로 수정 or 변경, 데이터 가져오기 등 가능&lt;/p&gt;
+
+&lt;h3 id=&quot;node&quot;&gt;Node&lt;/h3&gt;
+
+&lt;p&gt;document 선택 대상(요소, 속성, 문서, 텍스트, 주석 등)&lt;/p&gt;
+
+&lt;p&gt;대상에게 어떤 변화를 적용&lt;/p&gt;
+
+&lt;p&gt;관계로 선택 가능(child, of type 등등)&lt;/p&gt;
+
+&lt;p&gt;속성으로 선택 가능(id, class 등등)&lt;/p&gt;
+
+&lt;h3 id=&quot;event&quot;&gt;Event&lt;/h3&gt;
+
+&lt;p&gt;마우스, 키보드, form, 컴퓨터에서 일하는 모든 행동&lt;/p&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;41일차-수업-1&quot;&gt;41일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;js&quot;&gt;JS&lt;/h3&gt;
+
+&lt;p&gt;파일 내의 데이터는 등록, 수정, 변경 가능하나 내용을 다른 파일로 전달할 때 한계가 있음&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;서버 사이드 스크립트 언어의 도움이 필요&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;과정 : 특정 페이지 » 정리된 데이터 » submit(서버의 관여) » 다른 페이지&lt;/p&gt;
+
+&lt;h3 id=&quot;웹-프로그래밍&quot;&gt;웹 프로그래밍&lt;/h3&gt;
+
+&lt;h3 id=&quot;기초-지식&quot;&gt;기초 지식&lt;/h3&gt;
+
+&lt;p&gt;인터넷 : 지구에 있는 모든 컴퓨터를 하나의 시스템처럼 연결해주는 통신망&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;www : 인터넷 서비스 중 하나&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;웹 : HTML 문서 + http(공개화 해주는 기술)&lt;/p&gt;
+
+&lt;p&gt;서버 : 인터넷 시스템을 제공하는 프로그램이나 컴퓨터&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;항상 실행되야 하고, 21~24도 유지, 습도 50 내외, UPS 정전 나도 30분~2시간 버텨줌&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;클라이언트 : 인터넷 시스템을 이용하는 사용자나 사용자의 기기&lt;/p&gt;
+
+&lt;p&gt;웹브라우저 : 내용을 우리가 알 수 있도록 변화시켜주는 프로그램&lt;/p&gt;
+
+&lt;p&gt;http : 서버와 클라이언트 간에 데이터를 주고 받기 위한 통신 약속&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HyperText Transfer Protocol&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ip : 웹서버의 주소, 255.255.255.255 까지 등록&lt;/p&gt;
+
+&lt;p&gt;DNS : ip를 우리가 알기 쉽게 단어로 바꿔주는 서비스, Domain Name Service&lt;/p&gt;
+
+&lt;h3 id=&quot;인터넷-과정&quot;&gt;인터넷 과정&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;요청 : 클라이언트(웹브라우저)가 URL 형태의 http 요청»&amp;gt; 웹 서버&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;응답 : 웹 서버가 해당 파일 전송 » 클라이언트 응답 받은 파일을 화면에 실행&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;서버&quot;&gt;서버&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;웹 서버 : 정적인 페이지(HTML, image, CSS 등), Apache 등&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;앱 서버 : 로그인 등 DB의 데이터를 처리하고 결과를 전달, tomcat, jboss 등&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jsp&quot;&gt;JSP&lt;/h3&gt;
+
+&lt;p&gt;Java Server Page, HTML 내에서 자바 코드를 삽입하여 서버에서 동적으로 웹페이지를 생성하거나 브라우저를 실행할 수 있도록 돕는 언어&lt;/p&gt;
+
+&lt;p&gt;자바 언어를 기반으로 하는 스크립트 언어&lt;/p&gt;
+
+&lt;p&gt;서블릿 표준을 따름&lt;/p&gt;
+
+&lt;p&gt;HTTP 프로토콜에 따라 클라이언트 요청을 처리하고 응답&lt;/p&gt;
+
+&lt;p&gt;자바 언어의 특성인 플랫폼 독립성의 장점&lt;/p&gt;
+
+&lt;h3 id=&quot;과정&quot;&gt;과정&lt;/h3&gt;
+
+&lt;p&gt;클라이언트가 jsp 파일을 요청하면, java파일로 변환 후 컴파일을 거쳐서 실행결과를 전송&lt;/p&gt;
+
+&lt;p&gt;동일한 요청이 들어오면 서블릿 클래스 파일만 바로 실행하여 기존 CGI방식보다 효율성을 높임&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;language=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;”java”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;contentType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;”text/html;charset=”UTF-8”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;pageEncoding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;”EUC-KR”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!--
+Directive
+jsp페이지에 대한 정보를 저장, lang은 java가 default 생략가능
+contentType 을 통해 jsp 에서 생성할 문서 형식, 문자셋 설정
+이 페이지 자체의 문자셋을 지정하고자 할 때는 pageEncoding에 지정
+--&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%!&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Declaration, 멤버변수, 함수 선언 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“홍길동”;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Scriptlet, 자바 코드 기술 부분 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;JSP&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;주석&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Java&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;주석&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%=&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Expression, 결과값 출력 --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;error-page&quot;&gt;Error Page&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;errorPage=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“error.jsp”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 예외가 발생하면 error.jsp파일을 실행한다 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;isErrorPage=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“true”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!--
+error.jsp는 다른 페이지의 예외를 받는 에러페이지로 지정되어야 함
+위의 방법은 각 에러 상황에 따른 페이지를 설정하지 못하는 단점이 있음
+--&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- web.xml에서 각 에러별 에러페이지를 지정할 수 있음, 에러 코드별 설정 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;error-page&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;error-code&amp;gt;&lt;/span&gt;500&lt;span class=&quot;nt&quot;&gt;&amp;lt;/error-code&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;location&amp;gt;&lt;/span&gt;error.jsp&lt;span class=&quot;nt&quot;&gt;&amp;lt;/location&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/error-page&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 에러 타입별 설정 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;error-page&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;exception-type&amp;gt;&lt;/span&gt;java.lang.SQLException&lt;span class=&quot;nt&quot;&gt;&amp;lt;/exception-type&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;location&amp;gt;&lt;/span&gt;error.jsp&lt;span class=&quot;nt&quot;&gt;&amp;lt;/location&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/error-page&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 에러페이지 우선순위 : internal(페이지 내) &amp;gt; external(type) &amp;gt; external(code) &amp;gt; 웹컨테이너 기본 --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;error-code&quot;&gt;Error code&lt;/h3&gt;
+
+&lt;p&gt;4xx : 클라이언트 문제&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;403 : 접근 권한이 없는 것&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;303 : 찾을 수 없는 것&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5xx : 서버 문제&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;500 : 서버의 내부 코드가 문제&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;form&quot;&gt;Form&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;action=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“a.jsp”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;method=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“get”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    // form 태그의 action 속성으로 지정한 페이지 요청, 방식은 get으로
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“User”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“text”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“Pass”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“password”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“submit”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“login”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;form&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;url-뜯어보기&quot;&gt;URL 뜯어보기&lt;/h3&gt;
+
+&lt;p&gt;위의 과정을 거쳐 웹서버가 응답하면 해당 URL로 이동&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8080 /First/01_basic/01_next.jsp?User=kim&amp;amp;pass=1234&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;http : 프로토콜&lt;/p&gt;
+
+&lt;p&gt;localhost : 서버명(도메인 명)&lt;/p&gt;
+
+&lt;p&gt;8080 : 서버의 포트번호&lt;/p&gt;
+
+&lt;p&gt;/First/01_basic : 해당 디렉토리&lt;/p&gt;
+
+&lt;p&gt;01_next.jsp : 요청한 파일명&lt;/p&gt;
+
+&lt;p&gt;‘?’ 뒤 : 전송할 데이터(파라미터), 전송할 데이터 사이의 구분은 &amp;amp;으로 함&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;작성된 input 태그 순으로 해당 name속성의 “속성값= 입력값”으로 구성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;데이터를 가져올 때는 request.getParameter(속성값); 으로 접근&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Get&lt;/td&gt;
+      &lt;td&gt;Post&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;:–:&lt;/td&gt;
+      &lt;td&gt;–:&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;URL 의 뒷부분에 파라미터를 전송&lt;/td&gt;
+      &lt;td&gt;URL 뒷부분 전송 아님&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;HTTP 프로토콜의 헤더 영역에서 전송&lt;/td&gt;
+      &lt;td&gt;HTTP 프로토콜의 데이터 영역에서 전송&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;전송 데이터 길이&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;제한&lt;/td&gt;
+      &lt;td&gt;전송 데이터 길이 제한 없음&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;전송데이터 노출&lt;/td&gt;
+      &lt;td&gt;전송데이터를 감출 수 있음&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">JS - Window / Event</title>
@@ -1116,768 +1978,6 @@
 &lt;p&gt;Slash(/)의 역할 : 경로 간의 구분자, 경로작성시 맨 앞에 작성되면 루트(최상위 폴더)라는 의미를 가짐&lt;/p&gt;
 
 &lt;p&gt;Dot(.)의 역할 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./&lt;/code&gt;는 현재 폴더를 의미, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;../&lt;/code&gt;는 상위폴더를 의미&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">CSS - Selector</title>
-      <link href="http://localhost:4000/lecture-css_selector" rel="alternate" type="text/html" title="CSS - Selector" />
-      <published>2021-12-30T18:00:00+09:00</published>
-      <updated>2021-12-30T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-css_selector</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-css_selector">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;34일차-수업&quot;&gt;34일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;p&gt;태그는 박스 형태를 띔&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;마진 : 테두리 외부와 다른 요소 까지의 공간&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;테두리 : 내용과 패딩을 감싼 공간&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;패딩 : 내용과 테두리 사이에 있는 공간&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;내용 : 실질적인 공간&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;display&quot;&gt;display&lt;/h3&gt;
-
-&lt;p&gt;화면 상에 보이는 것을 관리하는 속성&lt;/p&gt;
-
-&lt;p&gt;블록 속성 : 너비를 화면의 너비만큼 가짐, 항상 새로운 라인에서 시작&lt;/p&gt;
-
-&lt;p&gt;인라인 속성 : 내용에 따른 너비를 가짐, 현재 라인에서 시작&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;inline-block 속성 : 블록 속성처럼 크기 조절 가능, 인라인 속성처럼 현재 라인에서 시작&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;position&quot;&gt;position&lt;/h3&gt;
-
-&lt;p&gt;화면 상에 위치하는 것을 관리하는 속성&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;static : 기본값, 기본 흐름(상담에서 하단으로, 좌측에서 우측으로)대로 요소들을 배치&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;relative : 원래 static 위치 기준으로 해당 요소의 변경될 위치로 배치&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;fixed : 사용자한테 보여지는 화면(viewport)을 기준으로 위치 배치&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;z-index : 요소 간에 겹쳐져서 쌓여있을 때 순서를 설정하는 속성, 숫자가 클수록 앞쪽&lt;/p&gt;
-
-&lt;p&gt;absolute : 자신의 상위 태그를 기준으로 위치를 배치, 없을 경우 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; 태그가 기준&lt;/p&gt;
-
-&lt;h3 id=&quot;float&quot;&gt;float&lt;/h3&gt;
-
-&lt;p&gt;이 속성을 가진 태그는 공중에 떠있다, 기본흐름에서 빠져나온다&lt;/p&gt;
-
-&lt;p&gt;left : 왼쪽에 떠있는 블록 태그를 만든다, vice versa&lt;/p&gt;
-
-&lt;p&gt;이 이후에 작성되는 태그는 float의 영향을 받는다, clear을 통해서 해제할 수 있음&lt;/p&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;34일차-수업-1&quot;&gt;34일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;style-적용법&quot;&gt;Style 적용법&lt;/h3&gt;
-
-&lt;p&gt;태그 안에 작성을 하는 인라인 스타일 방법은 코드의 재활용이 어려움&lt;/p&gt;
-
-&lt;p&gt;내부스타일 시트, 외부 스타일 시트 방법이 있음&lt;/p&gt;
-
-&lt;h3 id=&quot;선택자&quot;&gt;선택자&lt;/h3&gt;
-
-&lt;p&gt;내부 혹은 외부 스타일 시트 방법에서&lt;/p&gt;
-
-&lt;p&gt;어떤 태그에 어떤 스타일을 입힐지 작성하기위해 태그를 선택하는 방법&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 전체 선택자 : *
-
-- 태그 선택자 : 태그명{…}
-
-- id 선택자 : #아이디명{…}
-
-- class 선택자 : .class명{…}
-
-- 그룹 선택자 : 여러 선택자를 사용하고자 할 때, 쉼표로 구분
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;자손-선택자&quot;&gt;자손 선택자&lt;/h3&gt;
-
-&lt;p&gt;해당 태그에서 하위 태그 중에 특정 타입을 선택하는 선택자, 공백으로 구분&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;상위선택자 하위선택자{…}&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;자식-선택자&quot;&gt;자식 선택자&lt;/h3&gt;
-
-&lt;p&gt;해당 태그에서 바로 밑 하위 태그 중 특정 타입을 선택하는 선택자, &amp;gt; 으로 구분&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;상위선택자 &amp;gt; 하위선택자{…}&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;동위-선택자&quot;&gt;동위 선택자&lt;/h3&gt;
-
-&lt;p&gt;sibiling, 형제요소, 기준 태그보다 뒤에 존재하는 태그로만 선택됨&lt;/p&gt;
-
-&lt;p&gt;일반 동위 선택자 : 기준 요소와 동위 요소를 찾는 선택자, ~으로 구분&lt;/p&gt;
-
-&lt;p&gt;인접 동위 선택자 : 기준 요소와 바로 뒤에 동위 요소를 찾는 선택자, +으로 구분&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;teal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;~p, +p 때문에 tomato, teal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;~p 때문에 tomato&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;~p, +p 때문에 tomato, teal&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;~p 때문에 tomato&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;pseudo-class&quot;&gt;pseudo-class&lt;/h3&gt;
-
-&lt;p&gt;의사 클래스, 가상 클래스&lt;/p&gt;
-
-&lt;p&gt;선택하고자 하는 태그의 상태를 명시할 때 사용하는 문법, 기능&lt;/p&gt;
-
-&lt;p&gt;태그의 상태에 따른 효과들에게 CSS 스타일을 적용시키는 기능&lt;/p&gt;
-
-&lt;p&gt;문법&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;태그 :가상클래스명{…}&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;종류&quot;&gt;종류&lt;/h3&gt;
-
-&lt;p&gt;동적 가상 클래스&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;link, visited, hover, active, focus&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;상태 가상 클래스&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;checked, enabled, disabled&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;구조 가상 클래스&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;first, last, child, type&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;기타 가상 클래스&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;not, lang&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;구조-가상-클래스&quot;&gt;구조 가상 클래스&lt;/h3&gt;
-
-&lt;p&gt;계층 구조에서 특정 위치를 선택하기 위한 기능&lt;/p&gt;
-
-&lt;p&gt;:nth-child(a) 모든 자식 태그 중에 a 번째에 있는 태그 선택, n 사용 가능&lt;/p&gt;
-
-&lt;p&gt;:nth-of-type(a) 모든 자식 태그 중에 a 번째에 있는 특정 타입의 태그&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">CSS - Display / Position</title>
-      <link href="http://localhost:4000/lecture-css_display_position" rel="alternate" type="text/html" title="CSS - Display / Position" />
-      <published>2021-12-29T18:00:00+09:00</published>
-      <updated>2021-12-29T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-css_display_position</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-css_display_position">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;33일차-수업&quot;&gt;33일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;h3 id=&quot;css-박스모델&quot;&gt;CSS 박스모델&lt;/h3&gt;
-
-&lt;p&gt;Content : 실질적 내용 부분&lt;/p&gt;
-
-&lt;p&gt;Padding : 테두리와 내용 사이에 있는 공간&lt;/p&gt;
-
-&lt;p&gt;Border : 패딩과 내용을 담고 있는 선&lt;/p&gt;
-
-&lt;p&gt;Margin : 테두리 밖부터 다른 요소까지의 공간&lt;/p&gt;
-
-&lt;p&gt;Width, height : 인라인과 블록 태그의 크기를 정하는 옵션&lt;/p&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;33일차-수업-1&quot;&gt;33일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;display&quot;&gt;display&lt;/h3&gt;
-
-&lt;p&gt;블록 태그 : 언제나 새로운 라인에서 시작, 모든 라인을 너비로 차지&lt;/p&gt;
-
-&lt;p&gt;인라인 태그 : 현재 라인에서 시작, 너비 내용만큼의 너비 차지&lt;/p&gt;
-
-&lt;p&gt;모든 태그에는 display 옵션의 속성이 정해져 있습니다 &amp;gt; 속성 값이 있다&lt;/p&gt;
-
-&lt;p&gt;display 속성값을 바꾼다면 블록을 인라인으로, 혹은 인라인을 블록으로&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;인라인 태그의 display를 블록으로 바꾼다 하더라도 다른 요소를 포함할 수는 없음&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;inline-block : 라인을 차지하는 행동은 inline처럼, 크기 마진 등은 블록 요소처럼 사용 가능&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;/* 너비와 높이는 내용에 맞춰서 설정 되기 때문에 크기가 설정이 안됨 */&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inline-block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;/* block처럼 너비와 높이가 가능하고, inline처럼 가로 정렬이 가능 */&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;/* 태그를 숨기는 속성 레이아웃 상에도 영향 없음*/&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;visibility&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;/* 태그를 숨기는 속성, 레이아웃 상에는 존재 */&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;position&quot;&gt;position&lt;/h3&gt;
-
-&lt;p&gt;위치를 선정하는 속성&lt;/p&gt;
-
-&lt;p&gt;static : 웹페이지의 흐름대로 요소들이 위치하는 방식, 기본값&lt;/p&gt;
-
-&lt;p&gt;relative : 정적 위치를 대상으로 위치를 재설정하는 방식&lt;/p&gt;
-
-&lt;p&gt;fixed : 위치를 항상 같은 곳에 위치하는 방식&lt;/p&gt;
-
-&lt;p&gt;absolute : 상위 태그의 위치에 따라 고정 위치를 설정, 없다면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; 태그를 기준으로 설정&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* relative의 기준이 되는 태그 명시*/&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  	&lt;span class=&quot;c&quot;&gt;/* 배치하려는 위치에 대한 재정의 좌표를 적어줘야함 */&lt;/span&gt;
-  	&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;fixed&lt;/span&gt;
-  	&lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  	&lt;span class=&quot;c&quot;&gt;/* 배치하려는 위치에 대한 재정의 좌표를 적어줘야함 */&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;float : 요소가 잘 어울리게 만들어주는 기능, 레이아웃 작성할 때 자주 사용&lt;/p&gt;
-
-&lt;p&gt;overflow : 요소가 밖으로 흘러넘칠 때 자동으로 요소를 감쌀 수 있도록 도와주는 속성&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.left&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.right&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;both&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* float가 영향이 없도록 해제 */&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">CSS - Intro</title>
-      <link href="http://localhost:4000/lecture-css_intro" rel="alternate" type="text/html" title="CSS - Intro" />
-      <published>2021-12-28T18:00:00+09:00</published>
-      <updated>2021-12-28T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-css_intro</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-css_intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;32일차-수업&quot;&gt;32일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
-
-&lt;p&gt;HTML 요소(태그) 사용자들에게 어떻게 보이게 할 것이냐를 정의하는 언어&lt;/p&gt;
-
-&lt;p&gt;웹페이지의 스타일과 내용적인 부분을 분리하기 위한 스타일 시트,&lt;/p&gt;
-
-&lt;p&gt;HTML에서 세부적인 스타일을 적용시킬 때는 각각 따로 지정을 해주어야 했던 단점이 있음&lt;/p&gt;
-
-&lt;p&gt;이러한 단점을 보안하고자 W3C에서 만든 언어 CSS&lt;/p&gt;
-
-&lt;p&gt;내용적인 부분을 제외하고 스타일을 담당하기 위한 언어&lt;/p&gt;
-
-&lt;p&gt;Cascading Style Sheets&lt;/p&gt;
-
-&lt;p&gt;장점&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;내용과 별도로 스타일 관리&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;전체 적용과 개별 적용 가능&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;별도의 파일로 관리하기 때문에 다른 페이지에도 일괄 적용이 가능&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;문법&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 태그 내 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt; 태그 안에서 적용시킬 스타일에 대한 정의 선언&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;선택자&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;속성명&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;속성값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;속성명&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;속성값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;...;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;&amp;lt;!--
-선택자
-	id 선택자 (#), 하나의 대상에게만 적용
-	class 선택자 (.), 하나의 그룹에게만 적용 
-	group 선택자 (*(전체) 또는 ,), 여러 선택자를 ‘,’ 로 구분해서 일괄 적용
---&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;스타일-적용-방법&quot;&gt;스타일 적용 방법&lt;/h3&gt;
-
-&lt;p&gt;인라인 스타일&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;태그 안에 style = “”&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;해당 요소에만 적용하는 스타일을 작성할 때 사용&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;내부 스타일 시트&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 태그 내 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt; 태그를 만들어서 사용&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;해당 문서에만 적용&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;외부 스타일 시트&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 태그 안에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt; 태그를 이용하여 외부에 있는 css 파일을 호출하여 사용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;우선순위&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;인라인 &amp;gt; 내부, 외부 스타일 &amp;gt; 웹브라우저 기본 스타일&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;property 중복 우선 순위&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;id &amp;gt; class &amp;gt; 가장 최근 작성 코드 순서로 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;color&quot;&gt;color&lt;/h3&gt;
-
-&lt;p&gt;색상 이름 : 140개 정의됨 (tomato, teal, …)&lt;/p&gt;
-
-&lt;p&gt;RGB : 255 255 255 Red Green Blue의 조합, 각 최댓값 255로 수치화 하여 표현 ( (0,0,0) )&lt;/p&gt;
-
-&lt;p&gt;HEX : RGB 의 세 값을 16진수로 두자리씩 총 6자리 표현, 최댓값은 FF로 치환 (#00ff00)&lt;/p&gt;
-
-&lt;h3 id=&quot;box&quot;&gt;box&lt;/h3&gt;
-
-&lt;p&gt;모든 요소(태그)는 박스의 모양으로 구성&lt;/p&gt;
-
-&lt;p&gt;블록 태그 : 가로 길이가 화면의 끝까지 채워져있는 태그&lt;/p&gt;
-
-&lt;p&gt;인라인 태그 : 가로 길이가 내용에 따라 길이가 정해지는 태그&lt;/p&gt;
-
-&lt;h3 id=&quot;box-model&quot;&gt;box model&lt;/h3&gt;
-
-&lt;p&gt;margin&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;테두리 밖에 있는 공간, 테두리와 다른 요소(태그) 간의 간격&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;상하 관계에서 마진끼리 중첩 가능, 마진 상쇄 현상&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;좌우 관계에서 마진끼리 중첩 안됨(*예외 존재)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;border&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;내용과 패딩을 감싼 테두리, 기본 0px&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;padding&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;테두리와 내용 간의 간격&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;상 하 좌 우 수치가 존재&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;4개 작성 시 상 우 하 좌&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;3개 작성 시 상 (좌우) 하&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;2개 작성 시 (상하) (좌우)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;1개 작성 시 모든 방향&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;content&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;텍스트나 이미지가 들어가는 실질적인 내용 부분&lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">HTML - Input / Semantic</title>
-      <link href="http://localhost:4000/lecture-html_input_semantic" rel="alternate" type="text/html" title="HTML - Input / Semantic" />
-      <published>2021-12-27T18:00:00+09:00</published>
-      <updated>2021-12-27T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-html_input_semantic</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-html_input_semantic">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;31일차-수업&quot;&gt;31일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;h3 id=&quot;웹의-구조&quot;&gt;웹의 구조&lt;/h3&gt;
-
-&lt;p&gt;클라이언트(사용자, 크롬)의 요청 » 서버(공급자, 톰캣) 응답&lt;/p&gt;
-
-&lt;p&gt;클라이언트가 원하는 페이지를 요청하면 서버는 미리 준비된 페이지를 보여줍니다
-서버에서 미리 준비된 페이지를 만들기 위한 수업!&lt;/p&gt;
-
-&lt;h3 id=&quot;웹페이지의-구조&quot;&gt;웹페이지의 구조&lt;/h3&gt;
-
-&lt;p&gt;HTML : 웹페이지를 만들기 위한 구조 담당&lt;/p&gt;
-
-&lt;p&gt;CSS : 웹페이지에 만들어진 구조를 꾸미는 스타일, 디자인 담당&lt;/p&gt;
-
-&lt;p&gt;JavaScript : 웹페이지에 만들어진 구조에 대한 기능 구현 담당&lt;/p&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;31일차-수업-1&quot;&gt;31일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;input-type-attribute-value&quot;&gt;Input type attribute value&lt;/h3&gt;
-
-&lt;p&gt;text : text 입력&lt;/p&gt;
-
-&lt;p&gt;password : password 입력, 입력값을 *로 표시함&lt;/p&gt;
-
-&lt;p&gt;radio : 같은 name의 radio 선택지 중 하나만 선택 가능&lt;/p&gt;
-
-&lt;p&gt;checkbox : checkbox&lt;/p&gt;
-
-&lt;p&gt;file : 파일 첨부&lt;/p&gt;
-
-&lt;p&gt;button : button&lt;/p&gt;
-
-&lt;p&gt;submit : 브라우저에서 사용자가 입력한 값을 서버로 전달&lt;/p&gt;
-
-&lt;p&gt;reset : 사용자가 입력한 태그 내의 값들을 초기화&lt;/p&gt;
-
-&lt;h3 id=&quot;input-attribute&quot;&gt;Input attribute&lt;/h3&gt;
-
-&lt;p&gt;name : input 태그의 이름, 보통 이름이 같으면 같은 기능을 하도록 구현&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이 태그들을 클라이언트에서부터 서버, DB까지 옮길 때 쓰는 이름&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;value : input 태그에 담긴 기본 값&lt;/p&gt;
-
-&lt;p&gt;placeholder : 안내 메시지&lt;/p&gt;
-
-&lt;p&gt;readonly : 읽기 전용&lt;/p&gt;
-
-&lt;p&gt;size : input 창 크기 조절&lt;/p&gt;
-
-&lt;p&gt;maxlength : 입력 최댓값&lt;/p&gt;
-
-&lt;p&gt;disabled : 사용불가&lt;/p&gt;
-
-&lt;p&gt;accept : file type과 함께 사용할 시 입력받는 파일의 확장자 초기 값을 정할 수 있다 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image/*&lt;/code&gt; 대표적&lt;/p&gt;
-
-&lt;h3 id=&quot;textarea&quot;&gt;textarea&lt;/h3&gt;
-
-&lt;p&gt;여러 줄 입력, 시작 태그와 종료 태그 안에서는 무조건 text 치환해서 적용&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;textarea&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rows=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“3”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;cols=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“10”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;기본 내용&lt;span class=&quot;nt&quot;&gt;&amp;lt;/textarea&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;select&quot;&gt;select&lt;/h3&gt;
-
-&lt;p&gt;선택지 태그&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;select&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“fruit”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;option&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;selected=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“selected”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;선택해주세요&lt;span class=&quot;nt&quot;&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 초기값 설정 --&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;option&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“apple”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;사과&lt;span class=&quot;nt&quot;&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;option&amp;gt;&lt;/span&gt;배&lt;span class=&quot;nt&quot;&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;option&amp;gt;&lt;/span&gt;감&lt;span class=&quot;nt&quot;&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;option&amp;gt;&lt;/span&gt;오렌지&lt;span class=&quot;nt&quot;&gt;&amp;lt;/option&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/select&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;fieldset&quot;&gt;fieldset&lt;/h3&gt;
-
-&lt;p&gt;input tag 요소들을 한 곳에 모아주는 역할&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;fieldset&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“width:100px;”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;legend&amp;gt;&lt;/span&gt;회원가입&lt;span class=&quot;nt&quot;&gt;&amp;lt;/legend&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 필드셋의 제목을 정해주는 태그 --&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“text”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“password”&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/fieldset&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;label&quot;&gt;label&lt;/h3&gt;
-
-&lt;p&gt;input 태그들의 요소와 아닌 요소들을 묶어줄 때 사용하는 태그&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;사용자가 해당 텍스트를 클릭할 경우 &lt;label&gt; 요소와 연결된 요소를 곧바로 선택할 수 있도록 도와줌&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“man”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“radio”&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“gender&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;label&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;for=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;“man”&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 남자 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/label&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;form&quot;&gt;form&lt;/h3&gt;
-
-&lt;p&gt;웹 페이지에서 사용자가 입력한 데이터들을 하나의 큰 요소로 모으는 태그&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;서버에 사용자의 입력값을 하나씩 보내는 것이 아니라 묶어서 보냄으로써 효율성 증대&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;id-class-name&quot;&gt;id, class, name&lt;/h3&gt;
-
-&lt;p&gt;서버와 통신할 때 사용하는 속성&lt;/p&gt;
-
-&lt;p&gt;서버 통신은 물론 CSS, JS 등을 이용해 id, class, name을 선택 후 value에 넣어서 사용&lt;/p&gt;
-
-&lt;p&gt;id : 모든 태그의 유일한 값&lt;/p&gt;
-
-&lt;p&gt;class : 태그의 기능 별로 묶는데 사용&lt;/p&gt;
-
-&lt;p&gt;name : 태그의 기능 별로 묶는데 사용&lt;/p&gt;
-
-&lt;h3 id=&quot;layout&quot;&gt;layout&lt;/h3&gt;
-
-&lt;p&gt;공간을 보기 좋게 배치하기 위한 작업&lt;/p&gt;
-
-&lt;h3 id=&quot;semantic-tag&quot;&gt;semantic tag&lt;/h3&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;header&amp;gt;&lt;/span&gt;전체 문서의 header&lt;span class=&quot;nt&quot;&gt;&amp;lt;/header&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&amp;gt;&lt;/span&gt;navigation bar&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
-  웹페이지의 main
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;section&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;aside&amp;gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;footer&amp;gt;&lt;/span&gt;꼬리말&lt;span class=&quot;nt&quot;&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       

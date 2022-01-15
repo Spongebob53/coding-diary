@@ -8,6 +8,134 @@
 
     
     <url>
+        <loc>http://localhost:4000/w3schools-sql-like_alias.html</loc>
+        
+        <lastmod>2022-01-13T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/lecture-SQL-function.html</loc>
+        
+        <lastmod>2022-01-13T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-sql-insert_mathfunc.html</loc>
+        
+        <lastmod>2022-01-12T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/lecture-SQL-constraint_condition.html</loc>
+        
+        <lastmod>2022-01-12T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-sql-select_where.html</loc>
+        
+        <lastmod>2022-01-11T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-sql-intro.html</loc>
+        
+        <lastmod>2022-01-11T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/lecture-SQL-intro.html</loc>
+        
+        <lastmod>2022-01-11T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/lecture-JSP-intro.html</loc>
+        
+        <lastmod>2022-01-10T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-JS-window_event.html</loc>
         
         <lastmod>2022-01-07T18:00:00+09:00</lastmod>
@@ -88,9 +216,73 @@
     </url>
     
     <url>
+        <loc>http://localhost:4000/w3schools-css-mathfunction.html</loc>
+        
+        <lastmod>2022-01-02T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-css-unit_specificity.html</loc>
+        
+        <lastmod>2022-01-01T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-css-combinator.html</loc>
+        
+        <lastmod>2021-12-31T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-css_pseudo_path.html</loc>
         
         <lastmod>2021-12-31T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-css-position.html</loc>
+        
+        <lastmod>2021-12-30T18:00:00+09:00</lastmod>
         
 
         
@@ -120,9 +312,41 @@
     </url>
     
     <url>
+        <loc>http://localhost:4000/w3schools-css-color_boxmodel.html</loc>
+        
+        <lastmod>2021-12-29T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-css_display_position.html</loc>
         
         <lastmod>2021-12-29T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-css-intro.html</loc>
+        
+        <lastmod>2021-12-28T18:00:00+09:00</lastmod>
         
 
         
