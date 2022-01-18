@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-15T13:48:32+09:00</updated>
+  <updated>2022-01-18T22:26:37+09:00</updated>
   <id>http://localhost:4000/tag/w3schools/feed.xml</id>
 
   
@@ -30,6 +30,300 @@
   
   
 
+  
+    <entry>
+      <title type="html">W3schools - SQL_EXISTS / ANY / ALL</title>
+      <link href="http://localhost:4000/w3schools-sql-exists_any_all" rel="alternate" type="text/html" title="W3schools - SQL_EXISTS / ANY / ALL" />
+      <published>2022-01-18T18:00:00+09:00</published>
+      <updated>2022-01-18T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-exists_any_all</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-exists_any_all">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;exists&quot;&gt;EXISTS&lt;/h3&gt;
+
+&lt;p&gt;Is used to test for the existence of any record in a subquery&lt;/p&gt;
+
+&lt;p&gt;Returns TRUE if the subquery returns one or more records&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;any--all&quot;&gt;ANY / ALL&lt;/h3&gt;
+
+&lt;p&gt;Allow to perform a comparison between a single column value and a range of other values&lt;/p&gt;
+
+&lt;h3 id=&quot;any&quot;&gt;ANY&lt;/h3&gt;
+
+&lt;p&gt;Means that the condition will be true if the operation is true for any of the values in the range&lt;/p&gt;
+
+&lt;p&gt;Returns TRUE if ANY of the subquery values meet the condition&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ANY&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;all&quot;&gt;ALL&lt;/h3&gt;
+
+&lt;p&gt;Means that the condition will be true only if the operation is true for all values in the range&lt;/p&gt;
+
+&lt;p&gt;Is used with SELECT, WHERE and HAVING statements&lt;/p&gt;
+
+&lt;p&gt;Returns TRUE if ALL of the subquery values meet the condition&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- with WHERE or HAVING&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_UNION / GROUP BY</title>
+      <link href="http://localhost:4000/w3schools-sql-union_groupby" rel="alternate" type="text/html" title="W3schools - SQL_UNION / GROUP BY" />
+      <published>2022-01-17T18:00:00+09:00</published>
+      <updated>2022-01-17T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-union_groupby</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-union_groupby">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;union&quot;&gt;UNION&lt;/h3&gt;
+
+&lt;p&gt;Is used to combine the result-set two or more SELECT statements&lt;/p&gt;
+
+&lt;p&gt;Every SELECT statement within UNION must have same number of columns&lt;/p&gt;
+
+&lt;p&gt;The columns must also have similar data types&lt;/p&gt;
+
+&lt;p&gt;The columns in every SELECT statement must be also be in the same order&lt;/p&gt;
+
+&lt;p&gt;The column names in the result-set are usually equal to the column names in the first SELECT statement&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- UNION selects only distinct values by default. To allow duplicate values, use ALL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
+
+&lt;p&gt;Groups rows that have the same values into summary rows&lt;/p&gt;
+
+&lt;p&gt;Is often used with aggregate functions(like COUNT(), AVG(),..) to group the result-set by one or more columns&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
+
+&lt;p&gt;Was added to SQL because the WHERE keyword cannot be used with aggregate functions&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conlumn_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_JOIN</title>
+      <link href="http://localhost:4000/w3schools-sql-join" rel="alternate" type="text/html" title="W3schools - SQL_JOIN" />
+      <published>2022-01-17T18:00:00+09:00</published>
+      <updated>2022-01-17T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-join</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-join">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;join&quot;&gt;JOIN&lt;/h3&gt;
+
+&lt;p&gt;Is used to combine rows from two or more tables, based on a related column between them&lt;/p&gt;
+
+&lt;p&gt;(INNER) JOIN : Returns records that have matching values in both tables&lt;/p&gt;
+
+&lt;p&gt;LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table&lt;/p&gt;
+
+&lt;p&gt;RIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the table left table&lt;/p&gt;
+
+&lt;p&gt;FULL (OUTER) JOIN : Returns all records when there is a match in either left or right table&lt;/p&gt;
+
+&lt;h3 id=&quot;inner-join&quot;&gt;INNER JOIN&lt;/h3&gt;
+
+&lt;p&gt;Selects records that have matching values in both tables&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;left-join&quot;&gt;LEFT JOIN&lt;/h3&gt;
+
+&lt;p&gt;Returns all records from the left table (table1), and the matching records from the right table(table2)&lt;/p&gt;
+
+&lt;p&gt;The result is 0 records from the right side, if there is no match&lt;/p&gt;
+
+&lt;p&gt;In some databases LEFT JOIN is called LEFT OUTER JOIN&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;full-join&quot;&gt;FULL JOIN&lt;/h3&gt;
+
+&lt;p&gt;Returns all matching records from both tables whether the other table matches or not&lt;/p&gt;
+
+&lt;p&gt;Can potentially return very large result-sets&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FULL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OUTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- FULL OUTER JOIN and FULL JOIN are the same&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;self-join&quot;&gt;Self JOIN&lt;/h3&gt;
+
+&lt;p&gt;Is a regular join, but the table is joined with itself&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">W3schools - SQL_LIKE / Alias</title>
@@ -1042,492 +1336,6 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - CSS_Position</title>
-      <link href="http://localhost:4000/w3schools-css-position" rel="alternate" type="text/html" title="W3schools - CSS_Position" />
-      <published>2021-12-30T18:00:00+09:00</published>
-      <updated>2021-12-30T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-css-position</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-css-position">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;position&quot;&gt;Position&lt;/h3&gt;
-
-&lt;p&gt;Specifies the type of positioning method used for an element&lt;/p&gt;
-
-&lt;p&gt;Elements are then positioned using the top, bottom, left, and right properties&lt;/p&gt;
-
-&lt;p&gt;However, these properties will not work unless the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;position&lt;/code&gt; property is set first&lt;/p&gt;
-
-&lt;p&gt;They also work differently depending on the position value&lt;/p&gt;
-
-&lt;p&gt;Five different position values : static, relative, fixed, absolute, sticky&lt;/p&gt;
-
-&lt;h3 id=&quot;positionstatic&quot;&gt;Position:static;&lt;/h3&gt;
-
-&lt;p&gt;HTML elements are positioned static by default&lt;/p&gt;
-
-&lt;p&gt;An element with this, is not positioned in any special way;&lt;/p&gt;
-
-&lt;p&gt;It is always positioned according to the normal flow of the page&lt;/p&gt;
-
-&lt;h3 id=&quot;positionrelative&quot;&gt;Position:relative;&lt;/h3&gt;
-
-&lt;p&gt;An element with this, is positioned relative to its normal position&lt;/p&gt;
-
-&lt;p&gt;Setting the properties(like top, right ..) of a relatively-positioned element will cause it to be adjusted away from its normal position&lt;/p&gt;
-
-&lt;p&gt;Other content will not be adjusted to fit into any gap left by the element&lt;/p&gt;
-
-&lt;h3 id=&quot;positionfixed&quot;&gt;Position:fixed;&lt;/h3&gt;
-
-&lt;p&gt;An element with this, is positioned relative to the viewport&lt;/p&gt;
-
-&lt;p&gt;Which means it always stays in the same place even if the page is scrolled&lt;/p&gt;
-
-&lt;p&gt;The top~~left properties are used to position the element&lt;/p&gt;
-
-&lt;h3 id=&quot;positionabsolute&quot;&gt;Position:absolute;&lt;/h3&gt;
-
-&lt;p&gt;An element with this, Is positioned relative to the nearest positioned ancestor&lt;/p&gt;
-
-&lt;p&gt;However, if an absolute element has no positioned ancestors, it uses the document body&lt;/p&gt;
-
-&lt;p&gt;Absolute positioned elements are removed form the normal flow, and can overlap elements&lt;/p&gt;
-
-&lt;h3 id=&quot;positionsticky&quot;&gt;Position:sticky;&lt;/h3&gt;
-
-&lt;p&gt;An element with this, is positioned based on the user’s scroll position&lt;/p&gt;
-
-&lt;p&gt;It toggles between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;relative&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fixed&lt;/code&gt;, depending on the scroll position&lt;/p&gt;
-
-&lt;p&gt;It is positioned relative until a given offset position is met in the viewport – then it “sticks” in place&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.sticky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-webkit-sticky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* Safari requires a -webkit- prefix */&lt;/span&gt;
-&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sticky&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;/* must also specify at least one of top~left for sticky positioning to work*/&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;z-index&quot;&gt;z-index&lt;/h3&gt;
-
-&lt;p&gt;When element are positioned, they can overlap other elements&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;z-index&lt;/code&gt; property specifies the stack order of an element&lt;/p&gt;
-
-&lt;p&gt;It only works on positioned elements and flex items&lt;/p&gt;
-
-&lt;p&gt;An element can have a positive or negative stack order&lt;/p&gt;
-
-&lt;h3 id=&quot;float-clear&quot;&gt;float, clear&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property specifies how an element should float&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; property specifies what elements can float beside the cleared element and on which side&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property is used for positioning and formatting content, and can have one of the following value&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Left, right, none, inherit&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; property, and we want the next element below we will have to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; property&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clear&lt;/code&gt; property specifies what should happen with the element that is next to a floating element&lt;/p&gt;
-
-&lt;p&gt;When clearing floats, should match the clear to the float&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - CSS_Color / Box model</title>
-      <link href="http://localhost:4000/w3schools-css-color_boxmodel" rel="alternate" type="text/html" title="W3schools - CSS_Color / Box model" />
-      <published>2021-12-29T18:00:00+09:00</published>
-      <updated>2021-12-29T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-css-color_boxmodel</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-css-color_boxmodel">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;colorsname-rgb-hex-hsl--advanced-color&quot;&gt;Colors(name, rgb, hex, hsl) – advanced color&lt;/h3&gt;
-
-&lt;p&gt;Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values&lt;/p&gt;
-
-&lt;h3 id=&quot;color-name&quot;&gt;Color name&lt;/h3&gt;
-
-&lt;p&gt;Predefined color name ex) Tomato, SlateBlue … CSS support 140 standard color names&lt;/p&gt;
-
-&lt;h3 id=&quot;color-values&quot;&gt;Color values&lt;/h3&gt;
-
-&lt;p&gt;Same as color name “Tomato”&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;RGB : rgb(255,99,71)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;HEX : #ff6347&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;HSL : hsl(9, 100%, 64%)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;RGBA, HSLA have alpha parameter is a number between 0.0(fully transparent) and 1.0 (not transparent at all)&lt;/p&gt;
-
-&lt;h3 id=&quot;rgb&quot;&gt;RGB&lt;/h3&gt;
-
-&lt;p&gt;RGB color value represents Red, Green, Blue light sources&lt;/p&gt;
-
-&lt;p&gt;Using this formula : rgb(red,green,blue)&lt;/p&gt;
-
-&lt;p&gt;Each parameter defines the intensity of the color between 0 and 255&lt;/p&gt;
-
-&lt;h3 id=&quot;hex&quot;&gt;HEX&lt;/h3&gt;
-
-&lt;p&gt;Is specified with : #RRGGBB&lt;/p&gt;
-
-&lt;p&gt;Where the RR(red), GG(green), and BB(blue) hexadecimal integers specify the components of the color&lt;/p&gt;
-
-&lt;p&gt;Between 00 and ff( same as decimal 0-255)&lt;/p&gt;
-
-&lt;p&gt;3-digit hex value&lt;/p&gt;
-
-&lt;p&gt;Is a shorthand for some 6-digit hex code&lt;/p&gt;
-
-&lt;p&gt;Can only be used when both the value are the same for each component&lt;/p&gt;
-
-&lt;h3 id=&quot;hsl&quot;&gt;HSL&lt;/h3&gt;
-
-&lt;p&gt;Using this form : hsl(hue, saturation, lightness)&lt;/p&gt;
-
-&lt;p&gt;Hue is a degree on the color wheel from 0 to 360, 0 is red, 120 is green, and 240 is blue&lt;/p&gt;
-
-&lt;p&gt;Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color&lt;/p&gt;
-
-&lt;p&gt;Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white&lt;/p&gt;
-
-&lt;h3 id=&quot;box-model&quot;&gt;Box model&lt;/h3&gt;
-
-&lt;p&gt;All elements can be considered as boxes&lt;/p&gt;
-
-&lt;p&gt;The term “box model” is used when talking about design and layout&lt;/p&gt;
-
-&lt;p&gt;The box model is essentially a box that wraps around every HTML element&lt;/p&gt;
-
-&lt;p&gt;It consists of: margins, borders, padding, and the actual content&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Content - The content of the box, where text and images appear&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Padding - Clears an area around the content, the padding is transparent&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Border - A border that goes around the padding and content&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Margin - Clears an area outside the border, the margin is transparent&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When you set the width and height properties of an element with CSS, you just set the width and height of the content area&lt;/p&gt;
-
-&lt;p&gt;To calculate the full size of an element, you must also add padding, borders and margins&lt;/p&gt;
-
-&lt;h3 id=&quot;display&quot;&gt;Display&lt;/h3&gt;
-
-&lt;p&gt;Specifies if/how an element is displayed&lt;/p&gt;
-
-&lt;p&gt;Every HTML elements has a default display value depending on what type of element it is&lt;/p&gt;
-
-&lt;p&gt;The default display value for most elements is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inline&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;However, Can override this, Changing an inline element to a block element, or vice versa&lt;/p&gt;
-
-&lt;p&gt;Setting the display property of an element only changes how the element is displayed, not what kind of element it is.&lt;/p&gt;
-
-&lt;p&gt;So, an inline element with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;display:block;&lt;/code&gt; is not allowed to have other block elements inside it&lt;/p&gt;
-
-&lt;h3 id=&quot;displaynone&quot;&gt;Display:none;&lt;/h3&gt;
-
-&lt;p&gt;Is commonly used with JS to hide and show elements without deleting and recreating them&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - CSS_Intro</title>
-      <link href="http://localhost:4000/w3schools-css-intro" rel="alternate" type="text/html" title="W3schools - CSS_Intro" />
-      <published>2021-12-28T18:00:00+09:00</published>
-      <updated>2021-12-28T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-css-intro</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-css-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;CSS(Cascading Style Sheets) is the lang we use to style a Web page&lt;/p&gt;
-
-&lt;p&gt;It describes how HTML elements are to be displayed on media&lt;/p&gt;
-
-&lt;p&gt;It can control the layout of multiple web page all at once&lt;/p&gt;
-
-&lt;p&gt;External stylesheets are stored in CSS files&lt;/p&gt;
-
-&lt;p&gt;With an external stylesheet file, you can change the look of an entire website by changing just one file&lt;/p&gt;
-
-&lt;h3 id=&quot;history-of-css&quot;&gt;History of CSS&lt;/h3&gt;
-
-&lt;p&gt;HTML was never intended to contain tags for formatting a web page&lt;/p&gt;
-
-&lt;p&gt;Tags like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;font&amp;gt;&lt;/code&gt;, and color attributes were added to the HTML 3.2,&lt;/p&gt;
-
-&lt;p&gt;Development of large websites, where fonts and color information were added to every single page. became a long and expensive process&lt;/p&gt;
-
-&lt;p&gt;To solve this problem, the W3C created CSS&lt;/p&gt;
-
-&lt;p&gt;CSS removed the style formatting from the HTML page&lt;/p&gt;
-
-&lt;h3 id=&quot;syntax&quot;&gt;Syntax&lt;/h3&gt;
-
-&lt;p&gt;CSS rule consists of a selector and a declaration block&lt;/p&gt;
-
-&lt;p&gt;Selector {property : value ; property : value; …. }&lt;/p&gt;
-
-&lt;p&gt;The selector points to the HTML element you want to style&lt;/p&gt;
-
-&lt;p&gt;Each declaration includes a CSS property name and a value, separated by a colon&lt;/p&gt;
-
-&lt;p&gt;Declaration blocks and surrounded by curly braces&lt;/p&gt;
-
-&lt;p&gt;Multiple CSS declarations are separated with semicolons&lt;/p&gt;
-
-&lt;h3 id=&quot;selector&quot;&gt;Selector&lt;/h3&gt;
-
-&lt;p&gt;Divide CSS selectors into five categories&lt;/p&gt;
-
-&lt;p&gt;Simple selectors(select elements based on name, in, class)&lt;/p&gt;
-
-&lt;p&gt;Combinator selectors(select elements based on a specific relationship between them)&lt;/p&gt;
-
-&lt;p&gt;Pseudo-class selectors(select elements based on a certain state)&lt;/p&gt;
-
-&lt;p&gt;Pseudo-elements selectors(select and style a part of an element)&lt;/p&gt;
-
-&lt;p&gt;Attribute selectors(select elements based on an attribute or attribute value)&lt;/p&gt;
-
-&lt;h3 id=&quot;simple-selector&quot;&gt;Simple Selector&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Selector&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Example&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;#id&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;#firstname&lt;/td&gt;
-      &lt;td&gt;Selects the element with id=”firstname”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;.class&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;.intro&lt;/td&gt;
-      &lt;td&gt;Selects all elements with class=”intro”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;elements.class&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;p.intro&lt;/td&gt;
-      &lt;td&gt;Selects only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements with class=”intro”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;*&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;*&lt;/td&gt;
-      &lt;td&gt;Selects all elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;element&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;p&lt;/td&gt;
-      &lt;td&gt;Selects all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;element,element,…&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;div,p&lt;/td&gt;
-      &lt;td&gt;Selects all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements and all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;how-to-css&quot;&gt;How to CSS&lt;/h3&gt;
-
-&lt;p&gt;Three ways of inserting a style sheet&lt;/p&gt;
-
-&lt;p&gt;External CSS&lt;/p&gt;
-
-&lt;p&gt;Internal CSS&lt;/p&gt;
-
-&lt;p&gt;Inline CSS&lt;/p&gt;
-
-&lt;h3 id=&quot;external-css&quot;&gt;External CSS&lt;/h3&gt;
-
-&lt;p&gt;An external style sheet can be written in any text editor, and must be saved with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.css&lt;/code&gt; extension&lt;/p&gt;
-
-&lt;p&gt;The external &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.css&lt;/code&gt; file should not contain any HTML tags&lt;/p&gt;
-
-&lt;p&gt;Each HTML page must include a reference to the external style sheet file inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt; element, inside the head section&lt;/p&gt;
-
-&lt;p&gt;Ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;link rel=”stylesheet” href=”mystyle.css”&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;internal-css&quot;&gt;Internal CSS&lt;/h3&gt;
-
-&lt;p&gt;An internal style sheet may be used if one single HTML page has a unique style&lt;/p&gt;
-
-&lt;p&gt;The internal style is defined inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt; element, inside the head section&lt;/p&gt;
-
-&lt;p&gt;Ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;style&amp;gt; body{color: maroon;} &amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;inline-css&quot;&gt;Inline CSS&lt;/h3&gt;
-
-&lt;p&gt;An inline style may be used to apply a unique style for a single element&lt;/p&gt;
-
-&lt;p&gt;To use inline styles, add the style attribute to the relevant element.&lt;/p&gt;
-
-&lt;p&gt;An inline style loses many of the advantages of a style sheet, use this method sparingly&lt;/p&gt;
-
-&lt;p&gt;The style attribute can contain any CSS property&lt;/p&gt;
-
-&lt;p&gt;Ex) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h1 style=”color:blue;”&amp;gt;Heading&amp;lt;/h1&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;multiple-style-sheets&quot;&gt;Multiple style sheets&lt;/h3&gt;
-
-&lt;p&gt;If some properties have been defined for the same selector in different style sheets, the value from the last read style sheet will be used&lt;/p&gt;
-
-&lt;h3 id=&quot;cascading-order&quot;&gt;Cascading order&lt;/h3&gt;
-
-&lt;p&gt;All the styles in a page will “cascade” into a new “virtual” style sheet by the following rules&lt;/p&gt;
-
-&lt;p&gt;Inline &amp;gt; External and Internal &amp;gt; Browser default&lt;/p&gt;
-
-&lt;p&gt;Inline style has the highest priority, and will override external and internal styles and browser defaults&lt;/p&gt;
-
-&lt;h3 id=&quot;comment&quot;&gt;Comment&lt;/h3&gt;
-
-&lt;p&gt;Comments are used to explain the code, and may help when you edit the source code at a later date&lt;/p&gt;
-
-&lt;p&gt;Comments are ignored by browsers&lt;/p&gt;
-
-&lt;p&gt;Starts with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; and ends with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt;&lt;/p&gt;</content>
 
       
       

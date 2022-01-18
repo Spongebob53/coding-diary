@@ -234,6 +234,51 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "w3schools-sql-exists-any-all": {
+      "title": "W3schools - SQL_EXISTS / ANY / ALL",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요EXISTSIs used to test for the existence of any record in a subqueryReturns TRUE if the subquery returns one or more recordsSELECT column_name(s)FROM table_nameWHERE EXISTS(SELECT column_name FROM table_name WHERE condition);ANY / ALLAllow to perform a comparison between a single column value and a range of other valuesANYMeans that the condition will be true if the operation is true for any of the values in the rangeReturns TRUE if ANY of the subquery values meet the conditionSELECT column_name(s)FROM table_nameWHERE column_name operator ANY(SELECT column_nameFROM table_nameWHERE condition);ALLMeans that the condition will be true only if the operation is true for all values in the rangeIs used with SELECT, WHERE and HAVING statementsReturns TRUE if ALL of the subquery values meet the conditionSELECT ALL column_name(s)FROM table_nameWHERE condition;-- with WHERE or HAVINGSELECT column_name(s)FROM table_nameWHERE column_name operator ALL(SELECT column_nameFROM table_nameWHERE condition);",
+      "url": "/w3schools-sql-exists_any_all"
+  }
+  ,
+  
+  "lecture-sql-subquery": {
+      "title": "SQL - Subquery",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요47일차 수업SubquerySQL 문장 내에 존재하는 또 다른 SELECT 문장쿼리에서 나오는 결과를 이용하여 메인쿼리에 적용을 하고자 할 때 사용하는 것서브쿼리를 먼저 실행 후 메인 쿼리를 실행한다      가독성을 위해 서브쿼리는 ()로 묶는다        메인쿼리의 연산자 오른쪽에 작성한다  서브쿼리 종류      스칼라 서브쿼리 : SELECT 안 서브쿼리, 보통 단일행 서브쿼리        인라인 뷰 : FROM 안 서브쿼리, 보통 다중 컬럼 서브쿼리, 테이블명이 존재 하지 않기 때문에 별칭 필수, 컬럼명이 메인쿼리와 중복되거나 그룹함수를 사용할 경우에도 별칭을 필수로 작성해준다        서브쿼리 : WHERE 안 서브쿼리  IN, ANY, ALL, EXISTS : 다중행 서브쿼리의 결과를 이용하여 메인 쿼리 내의 활용을 목적으로 함      IN : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력 주로 등호 연산자        ANY : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 만족하면 출력 주로 부등호 연산자        ALL : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과가 모두 참이라면 출력        EXISTS : 메인 쿼리의 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력, Row 가 존재하는지만 확인하기 때문에 결과값까지 확인하는 IN 보다 쿼리상의 속도가 빠르다  ",
+      "url": "/lecture-SQL-subquery"
+  }
+  ,
+  
+  "w3schools-sql-union-groupby": {
+      "title": "W3schools - SQL_UNION / GROUP BY",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요UNIONIs used to combine the result-set two or more SELECT statementsEvery SELECT statement within UNION must have same number of columnsThe columns must also have similar data typesThe columns in every SELECT statement must be also be in the same orderThe column names in the result-set are usually equal to the column names in the first SELECT statementSELECT column_name(s) FROM table1UNIONSELECT column_name(s) FROM table2;-- UNION selects only distinct values by default. To allow duplicate values, use ALLSELECT column_name(s) FROM table1UNION ALLSELECT column_name(s) FROM table2;GROUP BYGroups rows that have the same values into summary rowsIs often used with aggregate functions(like COUNT(), AVG(),..) to group the result-set by one or more columnsSELECT column_name(s)FROM table_nameWHERE conditionGROUP BY column_name(s)ORDER BY column_name(s);HAVINGWas added to SQL because the WHERE keyword cannot be used with aggregate functionsSELECT column_name(s)FROM table_nameWHERE conditionGROUP BY conlumn_name(s)HAVING conditionORDER BY column_name(s);",
+      "url": "/w3schools-sql-union_groupby"
+  }
+  ,
+  
+  "w3schools-sql-join": {
+      "title": "W3schools - SQL_JOIN",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다  W3schoolsLecture에서 배웠던 내용을 복습하며 작성했습니다  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요JOINIs used to combine rows from two or more tables, based on a related column between them(INNER) JOIN : Returns records that have matching values in both tablesLEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right tableRIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the table left tableFULL (OUTER) JOIN : Returns all records when there is a match in either left or right tableINNER JOINSelects records that have matching values in both tablesSELECT column_name(s)FROM table1INNER JOIN table2ON table1.column_name = table2.column_name;LEFT JOINReturns all records from the left table (table1), and the matching records from the right table(table2)The result is 0 records from the right side, if there is no matchIn some databases LEFT JOIN is called LEFT OUTER JOINSELECT colum_name(s)FROM table1LEFT JOIN table2ON table1.column_name = table2.column_name;-- vice versaFULL JOINReturns all matching records from both tables whether the other table matches or notCan potentially return very large result-setsSELECT column_name(s)FROM table1FULL OUTER JOIN table2ON table.column_name = table2.column_nameWHERE condition;-- FULL OUTER JOIN and FULL JOIN are the sameSelf JOINIs a regular join, but the table is joined with itselfSELECT column_name(s)FROM table1 T1, table1 T2WHERE condition;",
+      "url": "/w3schools-sql-join"
+  }
+  ,
+  
+  "lecture-sql-join": {
+      "title": "SQL - JOIN",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요46일차 수업========복습========DDL테이블을 정의한다  CREATE, ALTER, DROPDML테이블을 조작한다SELECT 컬럼명 FROM 테이블명 WHERE 조건식;INSERT INTO 테이블명 (컬럼명) VALUES (값);UPDATE 테이블명 SET 컬럼명 = 변경값 WHERE 조건식;DELETE FROM 테이블명 WHERE 조건식;DCLGRANT : 권한 부여REVOKE : 권환 회수함수숫자함수, 문자함수, 날짜함수형변환 : TO_NUMBER() &gt; TO_CHAR() &gt; TO_DATE()NVL() : NULL 체크If 처럼 사용할 수 있는 함수 DECODE(), CASE – WHEN – THEN – END그룹함수 : 하나의 테이블에서 하나 이상의 행을 그룹으로 묶어서 나타내는 함수======== 끝 ========46일차 수업그룹함수sum() : 합계 합수count() : 집계함수avg() : 평균 함수min/max() : 가장 작은/ 큰 값round() : 반올림 함수GROUP BY특정 컬럼을 기준으로 그룹화를 해주는 명령어select 문에 그룹함수가 있으면 다른 컬럼과 행 차이가 생기기 때문에 오류가 남SELECT column1, max(column2)FROM tableGroup by column1;JOIN2개의 테이블 간에 기준 값을 정하여 하나 이상의 테이블을 검색하는 기술  자기 자신과도 조인이 가능함내부조인 : 조인 대상인 두 테이블에 있는 컬럼 중에 조인 기준으로 선정한 컬럼 내에 같은 값을 가진 행만 조회하는 기법, 데이터의 훼손이 일어남SELECT 컬럼명FROM 테이블1 별칭1, 테이블2 별칭2WHERE 별칭1.컬럼명 = 별칭2.컬럼명;-- ANSI 조인 (표준화)SELECT 컬럼명FROM 테이블1  별칭1 INNER JOIN 테이블2 별칭2ON 별칭1.컬럼명 = 별칭2.컬럼명;-- 조인 하고자 하는 테이블 내의 컬럼명이 같은 경우SELECT 컬럼명FROM 테이블1 별칭1 INNER JOIN 테이블2 별칭2USING(컬럼명);-- 동일한 타입, 동일한 컬럼명일 경우SELECT 컬럼명FROM 테이블1 별칭1 NATURAL JOIN 테이블2 별칭2;외부조인 : 내부 조인 결과 + 기준 테이블에만 있는 데이터를 포함하여 조회      LEFT : 왼쪽 테이블에는 있고, 오른쪽 테이블에는 없는 값을 출력, vice versa        FULL : 둘다 상관없이 모두 출력  -- LEFT JOINSELECT 컬럼명FROM 테이블1 별칭1, 테이블2 별칭2WHERE 별칭1.컬럼명 = 별칭2.컬럼명(+);-- LEFT JOIN ANSISELECT 컬럼명FROM 테이블1 별칭1 LEFT OUTER JOIN 테이블2 별칭2ON 별칭1.컬럼명 = 별칭2.컬럼명;-- vice versaUNION컬럼의 형태로 조합하는 JOIN과 달리 row의 형태로 조합하는 기능때문에 select 컬럼의 수가 반드시 같아야함SELECT 컬럼 FROM 테이블 WHERE 조건UNIONSELECT 컬럼 FROM 테이블 WHERE 조건;-- UNION ALL 키워드를 사용하면 중복되는 교집합도 한번 더 출력-- UNION 외에도 INTERSECT, MINUS 가 있다",
+      "url": "/lecture-SQL-join"
+  }
+  ,
+  
   "w3schools-sql-like-alias": {
       "title": "W3schools - SQL_LIKE / Alias",
           "author": "Spongebob53",
@@ -244,7 +289,7 @@ into the {body} of the default.hbs template -->
   ,
   
   "lecture-sql-function": {
-      "title": "JSP - Function",
+      "title": "SQL - Function",
           "author": "Spongebob53",
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요44일차 수업정렬SELECT 명령어를 쓰면 검색된 결과가 출력, 출력 순서는 출력할 때마다 다를 수도 있음            SELECT 문장 맨 마지막에 “ORDER BY 정렬 기준 컬럼명 ASC      DESC;”            ASC : 오름차순, 기본값, 작은값에서 큰값 순으로 출력, NULL을 맨 마지막으로        DESC : 필요 시 작성 필수, 큰값에서 작은 값 순으로 출력  정렬 기준은 여러개 가능, 여러개 쓸 경우에 정렬 순서가 중요!SELECT * FROM WHERE 1=1 ORDER BY ename DESC;DISTINCT출력 당시 중복인 데이터를 지우고 싶을 때,작성 위치는 SELECT 다음에 작성, WHERE 에는 작성 못함DISTINCT 뒤에 컬럼을 여러개 작성하면, 작성된 컬럼의 내용이 모두 같은 경우에만 중복제거SELECT DISTINCT deptno FROM emp ORDER BY deptno;AS별칭, 컬럼명이 복잡해 질 때 사용, “” 감싸는 것을 권장, 공백이나 특수문자는 필수로SELECT job + deptno AS “직업 부서” FROM emp;연결 연산자|| : 기존 컬럼의 값에 문자열을 추가하고 싶을 때 사용숫자형 함수ABS(n) : 절대값FLOOR(n) : 소수점 내림ROUND(n,i) : 숫자 n 을 소수점 i자리에서 반올림TRUNC(n,i) : 숫자 n을 소수점 i자리에서 버림MOD(n/i) : 숫자 n을 i로 나누고 남은 나머지, i가 음수일 경우 0 앞쪽 대상SIGN(n) : 양수(1) 음수(-1) 0 을 구분해주는 함수CEIL(n) : 소수점 올림POWER(n) : 제곱SORT(n) : 제곱근dual산술연산, 가상의 컬럼에 값을 한번만 출력하고 싶을 때 사용하는 가상 테이블문자형 함수LOWER(str), UPPER(str), INITCAP(str) : 소문자, 대문자, 첫글자 대문자CONCAT(str1, str2) : 문자열 합치기SUBSTR(str,i,n) : str을 i번째부터 n개를 선택INSTR(str,ch,n,i) : str 문자열 중에 ch 문자를 n번째 위치부터 i번째인 데이터 출력LENGTH(str) : 문자열 길이LPAD(str, n, ch), RPAD(str, n, ch) : 기존 값 포함해서 n자리수만큼 오른쪽 또는 왼쪽을 ch로 채운다TRIM / LTRIM / RTRIM : 문자의 공백을 제거TRANSLATE(str, str1,str2) : str 담긴 문자열 중에 str1 에 해당하는 글자를 str2로 대체  글자 하나하나 적용REPLACE(str, str1, str2) : str 담긴 문자열 중에 str1에 해당하는 글자를 str2로 대체  문자열 전체로 적용날짜형 함수SYSDATE : 실제 컴퓨터의 시간을 가져오는 키워드  다른 표현의 키워드들 : CURRENT_DATE, SYSTIMESTAMP, CURRENT_TIMESTAMPDATE와 숫자 연산의 결과는 DATE 라는 날짜 자료형으로 출력DATE - DATE의 연산 결과는 숫자로 출력DATE + 숫자/24 는 날짜 + 시간MONTHS_BETWEEN(date1,date2) : 두 날짜의 월 수를 계산ADD_MONTHS(date, n) : 날짜에 월을 더하기NEXT_DAY(date, n) : 날짜를 기준으로 다음 해당 요일을 찾아줌(일요일 시작 기준 1~7)LAST_DAY(date) : 해당 월의 마지막 날ROUND() : 날짜를 반올림TRUNC() : 날짜를 버림자료형 변환 함수TO_CHAR(값), TO_NUMBER(), TO_DATE()TO_DATE() : 날짜 관련해서 굉장히 유연하게 처리해줌조건 함수DECODE : 일치 연산자, 케이스가 같냐 다르냐 판단DECODE(조건문, 케이스1, 출력문 1, 케이스2, 출력문2,…디폴트 출력문)CASE WHEN ~ THEN : 다른 연산자 사용이 가능CASE 조건문 WHEN 케이스1 THEN 출력문1        WHEN 케이스2 THEN 출력문 2        ELSE 디폴트 출력문END",
@@ -262,7 +307,7 @@ into the {body} of the default.hbs template -->
   ,
   
   "lecture-sql-constraint-condition": {
-      "title": "JSP - CONSTRAINT / CONDITION",
+      "title": "SQL - CONSTRAINT / CONDITION",
           "author": "Spongebob53",
           "category": "",
           "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요43일차 수업========복습========DDL정의 명령어CREATE : 생성DROP : 제거ALTER : 수정(추가, 변경, 삭제)DML조작 명령어SELECT 컬럼명,컬럼명,… FROM 테이블명 WHERE 조건INSERT INTO 테이블명 VALUES 값UPDATE 테이블명 SET 컬럼 = 값, … WHERE 조건DELETE FROM 테이블명 WHERE 조건DCL접근 제어 명령어GRANT : 권한 주기REVOK : 권한 박탈======== 끝 ========43일차 수업제약 조건데이터를 추가할 때 필요한 값만 허용하도록 하는 조건NOT NULL : NULL값을 허용하지 않는다UNIQUE : 유일한 값만 허용, 중복을 허용하지 않음, NULL은 허용PRIMARY KEY : 유일키, 기본키(UNIQUE + NOT NULL), 모든 테이블은 하나 이상의 기본키를 가짐  여러개일 경우 그룹화 되어 기본키의 역할을 수행FOREIGN KEY : 외래키, 참조키, 테이블 간의 연결점을 만들 때 사용, 다른 테이블의 pk컬럼을 참조  참조키 조건이 설정된 컬럼은 다른 테이블의 pk 컬럼에 있는 데이터만 입력가능CHECK : 입력 값을 정할 수 있는 제약 조건DEFAULT : 입력 값을 작성하지 않았을 때 기본값으로 변경-- 컬럼 레벨 제약 조건 선언 방식CREATE TABLE test (id varchar2(100) PRIMARY KEY,name varchar2(10) UNIQUE);-- 테이블 레벨 제약 조건 선언 방식CREATE TABLE test2(id varchar2(10),gender varchar2(10),hobby varchar2(10) DEFAULT ‘없음’ NOT NULL,\t-- DEFAULT 는 보통 NOT NULL 이랑 같이 씀-- 제약 조건에 대한 이름을 설정할 수 있음CONSTRAINT pk_id PRIMARY KEY (id),CONSTRAINT chk_gender CHECK (gender IN (‘남’, ‘여’)));ALTER TABLE 을 통해서 제약 조건 추가 수정 삭제 가능조건다른언어들의 기본 연산자와 거의 동일AND, OR, NOTLIKE : 컬럼에 저장된 데이터가 일치하면 조회하는 연산자      와일드 카드 : 우리가 찾고자 하는 데이터를 정확히 모를 때 쓰는 키워드        % : 어떤 문자가 오든 상관없다는 의미        _ : 단 한문자에 대한 와일드 카드        LIKE ‘%\\%%’ ESCAPE ‘\\’; : 특수문자를 와일드 카드로 사용하고 싶을때, ESCAPE 를 통해 명시                     : 문자열 합치는 연산자, 산술연산자와 함께 컬럼에도 사용 가능      NVL(대상컬럼, 변할 값) : 대상 컬럼 담긴 값이 null 이면 변할 값으로 변경시켜주는 함수",

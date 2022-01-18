@@ -8,6 +8,111 @@
     
       
       <item>
+        <title>W3schools - SQL_EXISTS / ANY / ALL</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 18 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-sql-exists_any_all</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-sql-exists_any_all</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SQL - Subquery</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 18 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-SQL-subquery</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-SQL-subquery</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - SQL_UNION / GROUP BY</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 17 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-sql-union_groupby</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-sql-union_groupby</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - SQL_JOIN</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 17 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-sql-join</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-sql-join</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>SQL - JOIN</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 17 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-SQL-join</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-SQL-join</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>W3schools - SQL_LIKE / Alias</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -29,7 +134,7 @@
     
       
       <item>
-        <title>JSP - Function</title>
+        <title>SQL - Function</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
@@ -71,7 +176,7 @@
     
       
       <item>
-        <title>JSP - CONSTRAINT / CONDITION</title>
+        <title>SQL - CONSTRAINT / CONDITION</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
