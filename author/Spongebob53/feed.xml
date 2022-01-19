@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-18T22:26:37+09:00</updated>
+  <updated>2022-01-19T23:49:38+09:00</updated>
   <id>http://localhost:4000/author/Spongebob53/feed.xml</id>
 
   
@@ -30,6 +30,250 @@
   
   
 
+  
+    <entry>
+      <title type="html">SQL - DB Modeling</title>
+      <link href="http://localhost:4000/lecture-SQL-dbmodeling" rel="alternate" type="text/html" title="SQL - DB Modeling" />
+      <published>2022-01-19T18:00:00+09:00</published>
+      <updated>2022-01-19T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-SQL-dbmodeling</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-SQL-dbmodeling">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;48일차-수업&quot;&gt;48일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;view&quot;&gt;View&lt;/h3&gt;
+
+&lt;p&gt;현재 시점으로 SQL 데이터를 가상 테이블화 시켜 쿼리의 결과를 저장하는 기술&lt;/p&gt;
+
+&lt;p&gt;실제 데이터가 하드웨어에 저장되는 것은 아님&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;VIEW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- SELECT 결과가 view_name 이라는 가상의 테이블에 저장됨&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;db-모델링&quot;&gt;DB 모델링&lt;/h2&gt;
+
+&lt;h3 id=&quot;방법론&quot;&gt;방법론&lt;/h3&gt;
+
+&lt;p&gt;정보 시스템을 개발할 때 정해진 방법과 절차에 의해 단계적으로 수행하는 작업&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;DFD : Data Flow Diagram, 구조론적 방법론&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ERD : Entity Relationship Diagram, 정보공학 방법론&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Class Diagram : 객체지향 방법론&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;필요성&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;다수 개발자 간의 의사소통의 수단&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;정보 시스템의 품질보증(QA) 수단&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;생산성의 향상&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;재사용의 가능성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;효과적인 프로젝트의 관리&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기술 수준의 향상&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;정보시스템의 개발 단계&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;계획 : 세부 추진 일정 수립, 현업 담당자와 업무 회의&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;자료 수집 계획 (요구분석 및 입출력 장표 수집)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;분석 : 장표와 업무회의 자료 등을 바탕으로 데이터 분석, 개념적 데이터 모델링 및 ERD 작성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;설계 : ERD를 기반으로 테이블 설계서 작성, 물리적 구조 설계, 화면 설계서 작성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;구축 : 테이블 설계서를 기반으로 테이블 생성, 화면설계서를 기반으로 코딩&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;개념적-모델링&quot;&gt;개념적 모델링&lt;/h3&gt;
+
+&lt;p&gt;요구사항이나 입출력 장표 등을 통해 수집된 기초 데이터를 도형과 기호로 체계적으로 모형화 하는 과정&lt;/p&gt;
+
+&lt;p&gt;목적&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;사용자 요구사항에 대한 정확한 이해&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;사용자, 설계자, 개발자 간의 의사소통의 수단&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;고품질의 시스템과 유지보수 비용의 감소 효과&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;용어&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Entity : 실체, 기업에서 지속적으로 저장하고 관리해야 할 대상&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Attribute : 속성, 하나의 Entity가 구성하는 여러 개의 요소&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UID : 식별자, 하나의 Entity를 구성하는 속성 중에서 해당 Entity를 대표하는 속성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Relationship : 관계, Entity 끼리의 상관관계&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;erd-만드는-과정&quot;&gt;ERD 만드는 과정&lt;/h3&gt;
+
+&lt;p&gt;사용자 요구사항에서 명사형 단어를 추출한다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Attribute가  없는 단어는 Entity가 될 수 없으므로 버린다&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;같은 의미이지만 다르게 표현되는 단어는 하나로 정하고 버린다&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Entity는 하나 이상의 Attribute를 가진다&lt;/p&gt;
+
+&lt;p&gt;Attribute는 여러 개의 구성 요소를 갖지 않는 명사를 의미한다&lt;/p&gt;
+
+&lt;p&gt;하나의 Entity는 반드시 하나의 UID를 갖는다&lt;/p&gt;
+
+&lt;p&gt;사용자 요구사항에서 동사형 단어들이 relationship이 될 수 있다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1:1, 1:N, N:M 관계로 Entity와의 관계 형태를 표시한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;normalization&quot;&gt;Normalization&lt;/h3&gt;
+
+&lt;p&gt;정규화, 개념적 모델링 과정에서 정의된 각각의 Entity에서 데이터 중복성을 제거하고 새로운 Entity나 Attribute를 추가하는 단계&lt;/p&gt;
+
+&lt;p&gt;이유 : 개념적 모델링 작업을 거쳐 실세계의 내용을 분석한 결과가 제대로 되었는지 확인하기 위해&lt;/p&gt;
+
+&lt;p&gt;제 1 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entity 내의 모든 속성은 반드시 하나의 값을 가진다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;제 2 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entity 내의 모든 속성은 반드시 UID에 종속되어야 한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;제 3 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entity 내의 UID를 제외한 모든 속성은 종속 관계를 가질 수 없다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;정규화 작업은 6단계 이지만 일반적으로 3단계까지 수행, 과도한 정규화는 조회 성능을 저하시킬 수 있음&lt;/p&gt;
+
+&lt;p&gt;반 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;성능 향상을 위해 정규화된 데이터 모델에서 중복, 통합, 분리 등을 수행하는 모든 과정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;논리적-모델링&quot;&gt;논리적 모델링&lt;/h3&gt;
+
+&lt;p&gt;개념적 모델링 단계를 거친 ERD와 RDBMS를 매핑하는 단계&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;개념적 모델링&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;물리적 DB 설계&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Entity&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TABLE&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Attribute&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;COLUMN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UID&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;PRIMARY KEY&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Relationship&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;FOREIGN KEY&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">SQL - Subquery</title>
@@ -596,202 +840,6 @@
     </entry>
   
     <entry>
-      <title type="html">SQL - Function</title>
-      <link href="http://localhost:4000/lecture-SQL-function" rel="alternate" type="text/html" title="SQL - Function" />
-      <published>2022-01-13T18:00:00+09:00</published>
-      <updated>2022-01-13T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-SQL-function</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-SQL-function">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;44일차-수업&quot;&gt;44일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;정렬&quot;&gt;정렬&lt;/h3&gt;
-
-&lt;p&gt;SELECT 명령어를 쓰면 검색된 결과가 출력, 출력 순서는 출력할 때마다 다를 수도 있음&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;SELECT 문장 맨 마지막에 “ORDER BY 정렬 기준 컬럼명 ASC&lt;/td&gt;
-      &lt;td&gt;DESC;”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;ASC : 오름차순, 기본값, 작은값에서 큰값 순으로 출력, NULL을 맨 마지막으로&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;DESC : 필요 시 작성 필수, 큰값에서 작은 값 순으로 출력&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;정렬 기준은 여러개 가능, 여러개 쓸 경우에 정렬 순서가 중요!&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
-
-&lt;p&gt;출력 당시 중복인 데이터를 지우고 싶을 때,&lt;/p&gt;
-
-&lt;p&gt;작성 위치는 SELECT 다음에 작성, WHERE 에는 작성 못함&lt;/p&gt;
-
-&lt;p&gt;DISTINCT 뒤에 컬럼을 여러개 작성하면, 작성된 컬럼의 내용이 모두 같은 경우에만 중복제거&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;as&quot;&gt;AS&lt;/h3&gt;
-
-&lt;p&gt;별칭, 컬럼명이 복잡해 질 때 사용, “” 감싸는 것을 권장, 공백이나 특수문자는 필수로&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;job&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“직업&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;부서”&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;연결-연산자&quot;&gt;연결 연산자&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt; : 기존 컬럼의 값에 문자열을 추가하고 싶을 때 사용&lt;/p&gt;
-
-&lt;h3 id=&quot;숫자형-함수&quot;&gt;숫자형 함수&lt;/h3&gt;
-
-&lt;p&gt;ABS(n) : 절대값&lt;/p&gt;
-
-&lt;p&gt;FLOOR(n) : 소수점 내림&lt;/p&gt;
-
-&lt;p&gt;ROUND(n,i) : 숫자 n 을 소수점 i자리에서 반올림&lt;/p&gt;
-
-&lt;p&gt;TRUNC(n,i) : 숫자 n을 소수점 i자리에서 버림&lt;/p&gt;
-
-&lt;p&gt;MOD(n/i) : 숫자 n을 i로 나누고 남은 나머지, i가 음수일 경우 0 앞쪽 대상&lt;/p&gt;
-
-&lt;p&gt;SIGN(n) : 양수(1) 음수(-1) 0 을 구분해주는 함수&lt;/p&gt;
-
-&lt;p&gt;CEIL(n) : 소수점 올림&lt;/p&gt;
-
-&lt;p&gt;POWER(n) : 제곱&lt;/p&gt;
-
-&lt;p&gt;SORT(n) : 제곱근&lt;/p&gt;
-
-&lt;h3 id=&quot;dual&quot;&gt;dual&lt;/h3&gt;
-
-&lt;p&gt;산술연산, 가상의 컬럼에 값을 한번만 출력하고 싶을 때 사용하는 가상 테이블&lt;/p&gt;
-
-&lt;h3 id=&quot;문자형-함수&quot;&gt;문자형 함수&lt;/h3&gt;
-
-&lt;p&gt;LOWER(str), UPPER(str), INITCAP(str) : 소문자, 대문자, 첫글자 대문자&lt;/p&gt;
-
-&lt;p&gt;CONCAT(str1, str2) : 문자열 합치기&lt;/p&gt;
-
-&lt;p&gt;SUBSTR(str,i,n) : str을 i번째부터 n개를 선택&lt;/p&gt;
-
-&lt;p&gt;INSTR(str,ch,n,i) : str 문자열 중에 ch 문자를 n번째 위치부터 i번째인 데이터 출력&lt;/p&gt;
-
-&lt;p&gt;LENGTH(str) : 문자열 길이&lt;/p&gt;
-
-&lt;p&gt;LPAD(str, n, ch), RPAD(str, n, ch) : 기존 값 포함해서 n자리수만큼 오른쪽 또는 왼쪽을 ch로 채운다&lt;/p&gt;
-
-&lt;p&gt;TRIM / LTRIM / RTRIM : 문자의 공백을 제거&lt;/p&gt;
-
-&lt;p&gt;TRANSLATE(str, str1,str2) : str 담긴 문자열 중에 str1 에 해당하는 글자를 str2로 대체&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;글자 하나하나 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;REPLACE(str, str1, str2) : str 담긴 문자열 중에 str1에 해당하는 글자를 str2로 대체&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;문자열 전체로 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;날짜형-함수&quot;&gt;날짜형 함수&lt;/h3&gt;
-
-&lt;p&gt;SYSDATE : 실제 컴퓨터의 시간을 가져오는 키워드&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;다른 표현의 키워드들 : CURRENT_DATE, SYSTIMESTAMP, CURRENT_TIMESTAMP&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;DATE와 숫자 연산의 결과는 DATE 라는 날짜 자료형으로 출력&lt;/p&gt;
-
-&lt;p&gt;DATE - DATE의 연산 결과는 숫자로 출력&lt;/p&gt;
-
-&lt;p&gt;DATE + 숫자/24 는 날짜 + 시간&lt;/p&gt;
-
-&lt;p&gt;MONTHS_BETWEEN(date1,date2) : 두 날짜의 월 수를 계산&lt;/p&gt;
-
-&lt;p&gt;ADD_MONTHS(date, n) : 날짜에 월을 더하기&lt;/p&gt;
-
-&lt;p&gt;NEXT_DAY(date, n) : 날짜를 기준으로 다음 해당 요일을 찾아줌(일요일 시작 기준 1~7)&lt;/p&gt;
-
-&lt;p&gt;LAST_DAY(date) : 해당 월의 마지막 날&lt;/p&gt;
-
-&lt;p&gt;ROUND() : 날짜를 반올림&lt;/p&gt;
-
-&lt;p&gt;TRUNC() : 날짜를 버림&lt;/p&gt;
-
-&lt;h3 id=&quot;자료형-변환-함수&quot;&gt;자료형 변환 함수&lt;/h3&gt;
-
-&lt;p&gt;TO_CHAR(값), TO_NUMBER(), TO_DATE()&lt;/p&gt;
-
-&lt;p&gt;TO_DATE() : 날짜 관련해서 굉장히 유연하게 처리해줌&lt;/p&gt;
-
-&lt;h3 id=&quot;조건-함수&quot;&gt;조건 함수&lt;/h3&gt;
-
-&lt;p&gt;DECODE : 일치 연산자, 케이스가 같냐 다르냐 판단&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DECODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;CASE WHEN ~ THEN : 다른 연산자 사용이 가능&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">W3schools - SQL_LIKE / Alias</title>
       <link href="http://localhost:4000/w3schools-sql-like_alias" rel="alternate" type="text/html" title="W3schools - SQL_LIKE / Alias" />
       <published>2022-01-13T18:00:00+09:00</published>
@@ -985,6 +1033,202 @@
 
       
         <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">SQL - Function</title>
+      <link href="http://localhost:4000/lecture-SQL-function" rel="alternate" type="text/html" title="SQL - Function" />
+      <published>2022-01-13T18:00:00+09:00</published>
+      <updated>2022-01-13T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-SQL-function</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-SQL-function">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;44일차-수업&quot;&gt;44일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;정렬&quot;&gt;정렬&lt;/h3&gt;
+
+&lt;p&gt;SELECT 명령어를 쓰면 검색된 결과가 출력, 출력 순서는 출력할 때마다 다를 수도 있음&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SELECT 문장 맨 마지막에 “ORDER BY 정렬 기준 컬럼명 ASC&lt;/td&gt;
+      &lt;td&gt;DESC;”&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ASC : 오름차순, 기본값, 작은값에서 큰값 순으로 출력, NULL을 맨 마지막으로&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DESC : 필요 시 작성 필수, 큰값에서 작은 값 순으로 출력&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;정렬 기준은 여러개 가능, 여러개 쓸 경우에 정렬 순서가 중요!&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
+
+&lt;p&gt;출력 당시 중복인 데이터를 지우고 싶을 때,&lt;/p&gt;
+
+&lt;p&gt;작성 위치는 SELECT 다음에 작성, WHERE 에는 작성 못함&lt;/p&gt;
+
+&lt;p&gt;DISTINCT 뒤에 컬럼을 여러개 작성하면, 작성된 컬럼의 내용이 모두 같은 경우에만 중복제거&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;as&quot;&gt;AS&lt;/h3&gt;
+
+&lt;p&gt;별칭, 컬럼명이 복잡해 질 때 사용, “” 감싸는 것을 권장, 공백이나 특수문자는 필수로&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;job&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“직업&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;부서”&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;연결-연산자&quot;&gt;연결 연산자&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt; : 기존 컬럼의 값에 문자열을 추가하고 싶을 때 사용&lt;/p&gt;
+
+&lt;h3 id=&quot;숫자형-함수&quot;&gt;숫자형 함수&lt;/h3&gt;
+
+&lt;p&gt;ABS(n) : 절대값&lt;/p&gt;
+
+&lt;p&gt;FLOOR(n) : 소수점 내림&lt;/p&gt;
+
+&lt;p&gt;ROUND(n,i) : 숫자 n 을 소수점 i자리에서 반올림&lt;/p&gt;
+
+&lt;p&gt;TRUNC(n,i) : 숫자 n을 소수점 i자리에서 버림&lt;/p&gt;
+
+&lt;p&gt;MOD(n/i) : 숫자 n을 i로 나누고 남은 나머지, i가 음수일 경우 0 앞쪽 대상&lt;/p&gt;
+
+&lt;p&gt;SIGN(n) : 양수(1) 음수(-1) 0 을 구분해주는 함수&lt;/p&gt;
+
+&lt;p&gt;CEIL(n) : 소수점 올림&lt;/p&gt;
+
+&lt;p&gt;POWER(n) : 제곱&lt;/p&gt;
+
+&lt;p&gt;SORT(n) : 제곱근&lt;/p&gt;
+
+&lt;h3 id=&quot;dual&quot;&gt;dual&lt;/h3&gt;
+
+&lt;p&gt;산술연산, 가상의 컬럼에 값을 한번만 출력하고 싶을 때 사용하는 가상 테이블&lt;/p&gt;
+
+&lt;h3 id=&quot;문자형-함수&quot;&gt;문자형 함수&lt;/h3&gt;
+
+&lt;p&gt;LOWER(str), UPPER(str), INITCAP(str) : 소문자, 대문자, 첫글자 대문자&lt;/p&gt;
+
+&lt;p&gt;CONCAT(str1, str2) : 문자열 합치기&lt;/p&gt;
+
+&lt;p&gt;SUBSTR(str,i,n) : str을 i번째부터 n개를 선택&lt;/p&gt;
+
+&lt;p&gt;INSTR(str,ch,n,i) : str 문자열 중에 ch 문자를 n번째 위치부터 i번째인 데이터 출력&lt;/p&gt;
+
+&lt;p&gt;LENGTH(str) : 문자열 길이&lt;/p&gt;
+
+&lt;p&gt;LPAD(str, n, ch), RPAD(str, n, ch) : 기존 값 포함해서 n자리수만큼 오른쪽 또는 왼쪽을 ch로 채운다&lt;/p&gt;
+
+&lt;p&gt;TRIM / LTRIM / RTRIM : 문자의 공백을 제거&lt;/p&gt;
+
+&lt;p&gt;TRANSLATE(str, str1,str2) : str 담긴 문자열 중에 str1 에 해당하는 글자를 str2로 대체&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;글자 하나하나 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;REPLACE(str, str1, str2) : str 담긴 문자열 중에 str1에 해당하는 글자를 str2로 대체&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문자열 전체로 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;날짜형-함수&quot;&gt;날짜형 함수&lt;/h3&gt;
+
+&lt;p&gt;SYSDATE : 실제 컴퓨터의 시간을 가져오는 키워드&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;다른 표현의 키워드들 : CURRENT_DATE, SYSTIMESTAMP, CURRENT_TIMESTAMP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DATE와 숫자 연산의 결과는 DATE 라는 날짜 자료형으로 출력&lt;/p&gt;
+
+&lt;p&gt;DATE - DATE의 연산 결과는 숫자로 출력&lt;/p&gt;
+
+&lt;p&gt;DATE + 숫자/24 는 날짜 + 시간&lt;/p&gt;
+
+&lt;p&gt;MONTHS_BETWEEN(date1,date2) : 두 날짜의 월 수를 계산&lt;/p&gt;
+
+&lt;p&gt;ADD_MONTHS(date, n) : 날짜에 월을 더하기&lt;/p&gt;
+
+&lt;p&gt;NEXT_DAY(date, n) : 날짜를 기준으로 다음 해당 요일을 찾아줌(일요일 시작 기준 1~7)&lt;/p&gt;
+
+&lt;p&gt;LAST_DAY(date) : 해당 월의 마지막 날&lt;/p&gt;
+
+&lt;p&gt;ROUND() : 날짜를 반올림&lt;/p&gt;
+
+&lt;p&gt;TRUNC() : 날짜를 버림&lt;/p&gt;
+
+&lt;h3 id=&quot;자료형-변환-함수&quot;&gt;자료형 변환 함수&lt;/h3&gt;
+
+&lt;p&gt;TO_CHAR(값), TO_NUMBER(), TO_DATE()&lt;/p&gt;
+
+&lt;p&gt;TO_DATE() : 날짜 관련해서 굉장히 유연하게 처리해줌&lt;/p&gt;
+
+&lt;h3 id=&quot;조건-함수&quot;&gt;조건 함수&lt;/h3&gt;
+
+&lt;p&gt;DECODE : 일치 연산자, 케이스가 같냐 다르냐 판단&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DECODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;CASE WHEN ~ THEN : 다른 연산자 사용이 가능&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
       
 
       
@@ -1250,173 +1494,6 @@
 &lt;p&gt;AVG() : returns the average value of a numeric column&lt;/p&gt;
 
 &lt;p&gt;SUM() : returns the total sum of a numeric column&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_SELECT / WHERE</title>
-      <link href="http://localhost:4000/w3schools-sql-select_where" rel="alternate" type="text/html" title="W3schools - SQL_SELECT / WHERE" />
-      <published>2022-01-11T18:00:00+09:00</published>
-      <updated>2022-01-11T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-select_where</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-select_where">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;select&quot;&gt;SELECT&lt;/h3&gt;
-
-&lt;p&gt;Is used to select data from a database&lt;/p&gt;
-
-&lt;p&gt;The data returned is stored in a result table, called the result-set&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- if you want to select all the fields available in the table&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;select-distinct&quot;&gt;SELECT DISTINCT&lt;/h3&gt;
-
-&lt;p&gt;Is used to return only distinct values&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Can count, It is not supported in MS Access&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Is the workaround for MS Access&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Distinctcolumn1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;where&quot;&gt;WHERE&lt;/h3&gt;
-
-&lt;p&gt;Is used filter records&lt;/p&gt;
-
-&lt;p&gt;Is used to extract only those records that fulfill a specified condition&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;SQL requires single quotes around text values&lt;/p&gt;
-
-&lt;p&gt;Numeric fields should not be enclosed in quotes&lt;/p&gt;
-
-&lt;h3 id=&quot;operators-in-where&quot;&gt;Operators in WHERE&lt;/h3&gt;
-
-&lt;p&gt;WHERE clause can be combined with AND, OR, NOT operators&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Operator&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;=&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Greater than&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Less than&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;=&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Greater than or equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;=&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Less than or equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt; &amp;gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Not equal, is some versions of SQL this operator may be !=&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;BETWEEN ‘A’ AND ‘B’&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Between a certain range&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;LIKE ‘pattern’&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Search for a pattern&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;IN(value1,value2)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;To specify multiple possible values for a column&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;If you omit the WHERE clause, all records in the table will be apply&lt;/p&gt;
-
-&lt;h3 id=&quot;order-by&quot;&gt;ORDER BY&lt;/h3&gt;
-
-&lt;p&gt;Is used to sort the result-set in ascending or descending order&lt;/p&gt;
-
-&lt;p&gt;It sorts the records in ascending order by default&lt;/p&gt;
-
-&lt;p&gt;To sort the records in descending order, use the DESC keyword&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ASC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Can use both, ORDER BY column1 ASC, column2 DESC;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       

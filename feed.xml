@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-18T22:26:37+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">SQL - Subquery</title><link href="http://localhost:4000/lecture-SQL-subquery" rel="alternate" type="text/html" title="SQL - Subquery" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-subquery</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-subquery">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-19T23:49:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">SQL - DB Modeling</title><link href="http://localhost:4000/lecture-SQL-dbmodeling" rel="alternate" type="text/html" title="SQL - DB Modeling" /><published>2022-01-19T18:00:00+09:00</published><updated>2022-01-19T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-dbmodeling</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-dbmodeling">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
@@ -12,55 +12,203 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;47일차-수업&quot;&gt;47일차 수업&lt;/h2&gt;
+&lt;h2 id=&quot;48일차-수업&quot;&gt;48일차 수업&lt;/h2&gt;
 
-&lt;h3 id=&quot;subquery&quot;&gt;Subquery&lt;/h3&gt;
+&lt;h3 id=&quot;view&quot;&gt;View&lt;/h3&gt;
 
-&lt;p&gt;SQL 문장 내에 존재하는 또 다른 SELECT 문장&lt;/p&gt;
+&lt;p&gt;현재 시점으로 SQL 데이터를 가상 테이블화 시켜 쿼리의 결과를 저장하는 기술&lt;/p&gt;
 
-&lt;p&gt;쿼리에서 나오는 결과를 이용하여 메인쿼리에 적용을 하고자 할 때 사용하는 것&lt;/p&gt;
+&lt;p&gt;실제 데이터가 하드웨어에 저장되는 것은 아님&lt;/p&gt;
 
-&lt;p&gt;서브쿼리를 먼저 실행 후 메인 쿼리를 실행한다&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;VIEW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- SELECT 결과가 view_name 이라는 가상의 테이블에 저장됨&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;db-모델링&quot;&gt;DB 모델링&lt;/h2&gt;
+
+&lt;h3 id=&quot;방법론&quot;&gt;방법론&lt;/h3&gt;
+
+&lt;p&gt;정보 시스템을 개발할 때 정해진 방법과 절차에 의해 단계적으로 수행하는 작업&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;가독성을 위해 서브쿼리는 ()로 묶는다&lt;/p&gt;
+    &lt;p&gt;DFD : Data Flow Diagram, 구조론적 방법론&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;메인쿼리의 연산자 오른쪽에 작성한다&lt;/p&gt;
+    &lt;p&gt;ERD : Entity Relationship Diagram, 정보공학 방법론&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Class Diagram : 객체지향 방법론&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;서브쿼리 종류&lt;/p&gt;
+&lt;p&gt;필요성&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;스칼라 서브쿼리 : SELECT 안 서브쿼리, 보통 단일행 서브쿼리&lt;/p&gt;
+    &lt;p&gt;다수 개발자 간의 의사소통의 수단&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;인라인 뷰 : FROM 안 서브쿼리, 보통 다중 컬럼 서브쿼리, 테이블명이 존재 하지 않기 때문에 별칭 필수, 컬럼명이 메인쿼리와 중복되거나 그룹함수를 사용할 경우에도 별칭을 필수로 작성해준다&lt;/p&gt;
+    &lt;p&gt;정보 시스템의 품질보증(QA) 수단&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;서브쿼리 : WHERE 안 서브쿼리&lt;/p&gt;
+    &lt;p&gt;생산성의 향상&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;재사용의 가능성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;효과적인 프로젝트의 관리&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기술 수준의 향상&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;IN, ANY, ALL, EXISTS : 다중행 서브쿼리의 결과를 이용하여 메인 쿼리 내의 활용을 목적으로 함&lt;/p&gt;
+&lt;p&gt;정보시스템의 개발 단계&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;IN : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력 주로 등호 연산자&lt;/p&gt;
+    &lt;p&gt;계획 : 세부 추진 일정 수립, 현업 담당자와 업무 회의&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;ANY : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 만족하면 출력 주로 부등호 연산자&lt;/p&gt;
+    &lt;p&gt;자료 수집 계획 (요구분석 및 입출력 장표 수집)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;ALL : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과가 모두 참이라면 출력&lt;/p&gt;
+    &lt;p&gt;분석 : 장표와 업무회의 자료 등을 바탕으로 데이터 분석, 개념적 데이터 모델링 및 ERD 작성&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;EXISTS : 메인 쿼리의 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력, Row 가 존재하는지만 확인하기 때문에 결과값까지 확인하는 IN 보다 쿼리상의 속도가 빠르다&lt;/p&gt;
+    &lt;p&gt;설계 : ERD를 기반으로 테이블 설계서 작성, 물리적 구조 설계, 화면 설계서 작성&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_EXISTS / ANY / ALL</title><link href="http://localhost:4000/w3schools-sql-exists_any_all" rel="alternate" type="text/html" title="W3schools - SQL_EXISTS / ANY / ALL" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-exists_any_all</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-exists_any_all">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+  &lt;li&gt;
+    &lt;p&gt;구축 : 테이블 설계서를 기반으로 테이블 생성, 화면설계서를 기반으로 코딩&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;개념적-모델링&quot;&gt;개념적 모델링&lt;/h3&gt;
+
+&lt;p&gt;요구사항이나 입출력 장표 등을 통해 수집된 기초 데이터를 도형과 기호로 체계적으로 모형화 하는 과정&lt;/p&gt;
+
+&lt;p&gt;목적&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;사용자 요구사항에 대한 정확한 이해&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;사용자, 설계자, 개발자 간의 의사소통의 수단&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;고품질의 시스템과 유지보수 비용의 감소 효과&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;용어&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Entity : 실체, 기업에서 지속적으로 저장하고 관리해야 할 대상&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Attribute : 속성, 하나의 Entity가 구성하는 여러 개의 요소&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;UID : 식별자, 하나의 Entity를 구성하는 속성 중에서 해당 Entity를 대표하는 속성&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Relationship : 관계, Entity 끼리의 상관관계&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;erd-만드는-과정&quot;&gt;ERD 만드는 과정&lt;/h3&gt;
+
+&lt;p&gt;사용자 요구사항에서 명사형 단어를 추출한다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Attribute가  없는 단어는 Entity가 될 수 없으므로 버린다&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;같은 의미이지만 다르게 표현되는 단어는 하나로 정하고 버린다&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Entity는 하나 이상의 Attribute를 가진다&lt;/p&gt;
+
+&lt;p&gt;Attribute는 여러 개의 구성 요소를 갖지 않는 명사를 의미한다&lt;/p&gt;
+
+&lt;p&gt;하나의 Entity는 반드시 하나의 UID를 갖는다&lt;/p&gt;
+
+&lt;p&gt;사용자 요구사항에서 동사형 단어들이 relationship이 될 수 있다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1:1, 1:N, N:M 관계로 Entity와의 관계 형태를 표시한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;normalization&quot;&gt;Normalization&lt;/h3&gt;
+
+&lt;p&gt;정규화, 개념적 모델링 과정에서 정의된 각각의 Entity에서 데이터 중복성을 제거하고 새로운 Entity나 Attribute를 추가하는 단계&lt;/p&gt;
+
+&lt;p&gt;이유 : 개념적 모델링 작업을 거쳐 실세계의 내용을 분석한 결과가 제대로 되었는지 확인하기 위해&lt;/p&gt;
+
+&lt;p&gt;제 1 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entity 내의 모든 속성은 반드시 하나의 값을 가진다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;제 2 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entity 내의 모든 속성은 반드시 UID에 종속되어야 한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;제 3 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entity 내의 UID를 제외한 모든 속성은 종속 관계를 가질 수 없다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;정규화 작업은 6단계 이지만 일반적으로 3단계까지 수행, 과도한 정규화는 조회 성능을 저하시킬 수 있음&lt;/p&gt;
+
+&lt;p&gt;반 정규화&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;성능 향상을 위해 정규화된 데이터 모델에서 중복, 통합, 분리 등을 수행하는 모든 과정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;논리적-모델링&quot;&gt;논리적 모델링&lt;/h3&gt;
+
+&lt;p&gt;개념적 모델링 단계를 거친 ERD와 RDBMS를 매핑하는 단계&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;개념적 모델링&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;물리적 DB 설계&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Entity&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TABLE&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Attribute&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;COLUMN&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UID&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;PRIMARY KEY&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Relationship&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;FOREIGN KEY&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_EXISTS / ANY / ALL</title><link href="http://localhost:4000/w3schools-sql-exists_any_all" rel="alternate" type="text/html" title="W3schools - SQL_EXISTS / ANY / ALL" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-exists_any_all</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-exists_any_all">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -122,6 +270,198 @@
 &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - Subquery</title><link href="http://localhost:4000/lecture-SQL-subquery" rel="alternate" type="text/html" title="SQL - Subquery" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-subquery</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-subquery">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;47일차-수업&quot;&gt;47일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;subquery&quot;&gt;Subquery&lt;/h3&gt;
+
+&lt;p&gt;SQL 문장 내에 존재하는 또 다른 SELECT 문장&lt;/p&gt;
+
+&lt;p&gt;쿼리에서 나오는 결과를 이용하여 메인쿼리에 적용을 하고자 할 때 사용하는 것&lt;/p&gt;
+
+&lt;p&gt;서브쿼리를 먼저 실행 후 메인 쿼리를 실행한다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;가독성을 위해 서브쿼리는 ()로 묶는다&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;메인쿼리의 연산자 오른쪽에 작성한다&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;서브쿼리 종류&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;스칼라 서브쿼리 : SELECT 안 서브쿼리, 보통 단일행 서브쿼리&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;인라인 뷰 : FROM 안 서브쿼리, 보통 다중 컬럼 서브쿼리, 테이블명이 존재 하지 않기 때문에 별칭 필수, 컬럼명이 메인쿼리와 중복되거나 그룹함수를 사용할 경우에도 별칭을 필수로 작성해준다&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;서브쿼리 : WHERE 안 서브쿼리&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;IN, ANY, ALL, EXISTS : 다중행 서브쿼리의 결과를 이용하여 메인 쿼리 내의 활용을 목적으로 함&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;IN : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력 주로 등호 연산자&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ANY : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 만족하면 출력 주로 부등호 연산자&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ALL : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과가 모두 참이라면 출력&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;EXISTS : 메인 쿼리의 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력, Row 가 존재하는지만 확인하기 때문에 결과값까지 확인하는 IN 보다 쿼리상의 속도가 빠르다&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_JOIN</title><link href="http://localhost:4000/w3schools-sql-join" rel="alternate" type="text/html" title="W3schools - SQL_JOIN" /><published>2022-01-17T18:00:00+09:00</published><updated>2022-01-17T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-join</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-join">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;join&quot;&gt;JOIN&lt;/h3&gt;
+
+&lt;p&gt;Is used to combine rows from two or more tables, based on a related column between them&lt;/p&gt;
+
+&lt;p&gt;(INNER) JOIN : Returns records that have matching values in both tables&lt;/p&gt;
+
+&lt;p&gt;LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table&lt;/p&gt;
+
+&lt;p&gt;RIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the table left table&lt;/p&gt;
+
+&lt;p&gt;FULL (OUTER) JOIN : Returns all records when there is a match in either left or right table&lt;/p&gt;
+
+&lt;h3 id=&quot;inner-join&quot;&gt;INNER JOIN&lt;/h3&gt;
+
+&lt;p&gt;Selects records that have matching values in both tables&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;left-join&quot;&gt;LEFT JOIN&lt;/h3&gt;
+
+&lt;p&gt;Returns all records from the left table (table1), and the matching records from the right table(table2)&lt;/p&gt;
+
+&lt;p&gt;The result is 0 records from the right side, if there is no match&lt;/p&gt;
+
+&lt;p&gt;In some databases LEFT JOIN is called LEFT OUTER JOIN&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;full-join&quot;&gt;FULL JOIN&lt;/h3&gt;
+
+&lt;p&gt;Returns all matching records from both tables whether the other table matches or not&lt;/p&gt;
+
+&lt;p&gt;Can potentially return very large result-sets&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FULL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OUTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- FULL OUTER JOIN and FULL JOIN are the same&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;self-join&quot;&gt;Self JOIN&lt;/h3&gt;
+
+&lt;p&gt;Is a regular join, but the table is joined with itself&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">W3schools - SQL_UNION / GROUP BY</title><link href="http://localhost:4000/w3schools-sql-union_groupby" rel="alternate" type="text/html" title="W3schools - SQL_UNION / GROUP BY" /><published>2022-01-17T18:00:00+09:00</published><updated>2022-01-17T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-union_groupby</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-union_groupby">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;union&quot;&gt;UNION&lt;/h3&gt;
+
+&lt;p&gt;Is used to combine the result-set two or more SELECT statements&lt;/p&gt;
+
+&lt;p&gt;Every SELECT statement within UNION must have same number of columns&lt;/p&gt;
+
+&lt;p&gt;The columns must also have similar data types&lt;/p&gt;
+
+&lt;p&gt;The columns in every SELECT statement must be also be in the same order&lt;/p&gt;
+
+&lt;p&gt;The column names in the result-set are usually equal to the column names in the first SELECT statement&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- UNION selects only distinct values by default. To allow duplicate values, use ALL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
+
+&lt;p&gt;Groups rows that have the same values into summary rows&lt;/p&gt;
+
+&lt;p&gt;Is often used with aggregate functions(like COUNT(), AVG(),..) to group the result-set by one or more columns&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
+
+&lt;p&gt;Was added to SQL because the WHERE keyword cannot be used with aggregate functions&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conlumn_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - JOIN</title><link href="http://localhost:4000/lecture-SQL-join" rel="alternate" type="text/html" title="SQL - JOIN" /><published>2022-01-17T18:00:00+09:00</published><updated>2022-01-17T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-join</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-join">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
@@ -262,71 +602,13 @@
 &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;컬럼&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;-- UNION ALL 키워드를 사용하면 중복되는 교집합도 한번 더 출력&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;-- UNION 외에도 INTERSECT, MINUS 가 있다&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_UNION / GROUP BY</title><link href="http://localhost:4000/w3schools-sql-union_groupby" rel="alternate" type="text/html" title="W3schools - SQL_UNION / GROUP BY" /><published>2022-01-17T18:00:00+09:00</published><updated>2022-01-17T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-union_groupby</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-union_groupby">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">SQL - Function</title><link href="http://localhost:4000/lecture-SQL-function" rel="alternate" type="text/html" title="SQL - Function" /><published>2022-01-13T18:00:00+09:00</published><updated>2022-01-13T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-function</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-function">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;union&quot;&gt;UNION&lt;/h3&gt;
-
-&lt;p&gt;Is used to combine the result-set two or more SELECT statements&lt;/p&gt;
-
-&lt;p&gt;Every SELECT statement within UNION must have same number of columns&lt;/p&gt;
-
-&lt;p&gt;The columns must also have similar data types&lt;/p&gt;
-
-&lt;p&gt;The columns in every SELECT statement must be also be in the same order&lt;/p&gt;
-
-&lt;p&gt;The column names in the result-set are usually equal to the column names in the first SELECT statement&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- UNION selects only distinct values by default. To allow duplicate values, use ALL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
-
-&lt;p&gt;Groups rows that have the same values into summary rows&lt;/p&gt;
-
-&lt;p&gt;Is often used with aggregate functions(like COUNT(), AVG(),..) to group the result-set by one or more columns&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
-
-&lt;p&gt;Was added to SQL because the WHERE keyword cannot be used with aggregate functions&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conlumn_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">W3schools - SQL_JOIN</title><link href="http://localhost:4000/w3schools-sql-join" rel="alternate" type="text/html" title="W3schools - SQL_JOIN" /><published>2022-01-17T18:00:00+09:00</published><updated>2022-01-17T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-join</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-join">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
@@ -334,65 +616,155 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;join&quot;&gt;JOIN&lt;/h3&gt;
+&lt;h2 id=&quot;44일차-수업&quot;&gt;44일차 수업&lt;/h2&gt;
 
-&lt;p&gt;Is used to combine rows from two or more tables, based on a related column between them&lt;/p&gt;
+&lt;h3 id=&quot;정렬&quot;&gt;정렬&lt;/h3&gt;
 
-&lt;p&gt;(INNER) JOIN : Returns records that have matching values in both tables&lt;/p&gt;
+&lt;p&gt;SELECT 명령어를 쓰면 검색된 결과가 출력, 출력 순서는 출력할 때마다 다를 수도 있음&lt;/p&gt;
 
-&lt;p&gt;LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SELECT 문장 맨 마지막에 “ORDER BY 정렬 기준 컬럼명 ASC&lt;/td&gt;
+      &lt;td&gt;DESC;”&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;RIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the table left table&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ASC : 오름차순, 기본값, 작은값에서 큰값 순으로 출력, NULL을 맨 마지막으로&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;DESC : 필요 시 작성 필수, 큰값에서 작은 값 순으로 출력&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;FULL (OUTER) JOIN : Returns all records when there is a match in either left or right table&lt;/p&gt;
+&lt;p&gt;정렬 기준은 여러개 가능, 여러개 쓸 경우에 정렬 순서가 중요!&lt;/p&gt;
 
-&lt;h3 id=&quot;inner-join&quot;&gt;INNER JOIN&lt;/h3&gt;
-
-&lt;p&gt;Selects records that have matching values in both tables&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;left-join&quot;&gt;LEFT JOIN&lt;/h3&gt;
+&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
 
-&lt;p&gt;Returns all records from the left table (table1), and the matching records from the right table(table2)&lt;/p&gt;
+&lt;p&gt;출력 당시 중복인 데이터를 지우고 싶을 때,&lt;/p&gt;
 
-&lt;p&gt;The result is 0 records from the right side, if there is no match&lt;/p&gt;
+&lt;p&gt;작성 위치는 SELECT 다음에 작성, WHERE 에는 작성 못함&lt;/p&gt;
 
-&lt;p&gt;In some databases LEFT JOIN is called LEFT OUTER JOIN&lt;/p&gt;
+&lt;p&gt;DISTINCT 뒤에 컬럼을 여러개 작성하면, 작성된 컬럼의 내용이 모두 같은 경우에만 중복제거&lt;/p&gt;
 
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;full-join&quot;&gt;FULL JOIN&lt;/h3&gt;
+&lt;h3 id=&quot;as&quot;&gt;AS&lt;/h3&gt;
 
-&lt;p&gt;Returns all matching records from both tables whether the other table matches or not&lt;/p&gt;
+&lt;p&gt;별칭, 컬럼명이 복잡해 질 때 사용, “” 감싸는 것을 권장, 공백이나 특수문자는 필수로&lt;/p&gt;
 
-&lt;p&gt;Can potentially return very large result-sets&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FULL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OUTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- FULL OUTER JOIN and FULL JOIN are the same&lt;/span&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;job&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“직업&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;부서”&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;self-join&quot;&gt;Self JOIN&lt;/h3&gt;
+&lt;h3 id=&quot;연결-연산자&quot;&gt;연결 연산자&lt;/h3&gt;
 
-&lt;p&gt;Is a regular join, but the table is joined with itself&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt; : 기존 컬럼의 값에 문자열을 추가하고 싶을 때 사용&lt;/p&gt;
 
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">W3schools - SQL_LIKE / Alias</title><link href="http://localhost:4000/w3schools-sql-like_alias" rel="alternate" type="text/html" title="W3schools - SQL_LIKE / Alias" /><published>2022-01-13T18:00:00+09:00</published><updated>2022-01-13T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-like_alias</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-like_alias">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;h3 id=&quot;숫자형-함수&quot;&gt;숫자형 함수&lt;/h3&gt;
+
+&lt;p&gt;ABS(n) : 절대값&lt;/p&gt;
+
+&lt;p&gt;FLOOR(n) : 소수점 내림&lt;/p&gt;
+
+&lt;p&gt;ROUND(n,i) : 숫자 n 을 소수점 i자리에서 반올림&lt;/p&gt;
+
+&lt;p&gt;TRUNC(n,i) : 숫자 n을 소수점 i자리에서 버림&lt;/p&gt;
+
+&lt;p&gt;MOD(n/i) : 숫자 n을 i로 나누고 남은 나머지, i가 음수일 경우 0 앞쪽 대상&lt;/p&gt;
+
+&lt;p&gt;SIGN(n) : 양수(1) 음수(-1) 0 을 구분해주는 함수&lt;/p&gt;
+
+&lt;p&gt;CEIL(n) : 소수점 올림&lt;/p&gt;
+
+&lt;p&gt;POWER(n) : 제곱&lt;/p&gt;
+
+&lt;p&gt;SORT(n) : 제곱근&lt;/p&gt;
+
+&lt;h3 id=&quot;dual&quot;&gt;dual&lt;/h3&gt;
+
+&lt;p&gt;산술연산, 가상의 컬럼에 값을 한번만 출력하고 싶을 때 사용하는 가상 테이블&lt;/p&gt;
+
+&lt;h3 id=&quot;문자형-함수&quot;&gt;문자형 함수&lt;/h3&gt;
+
+&lt;p&gt;LOWER(str), UPPER(str), INITCAP(str) : 소문자, 대문자, 첫글자 대문자&lt;/p&gt;
+
+&lt;p&gt;CONCAT(str1, str2) : 문자열 합치기&lt;/p&gt;
+
+&lt;p&gt;SUBSTR(str,i,n) : str을 i번째부터 n개를 선택&lt;/p&gt;
+
+&lt;p&gt;INSTR(str,ch,n,i) : str 문자열 중에 ch 문자를 n번째 위치부터 i번째인 데이터 출력&lt;/p&gt;
+
+&lt;p&gt;LENGTH(str) : 문자열 길이&lt;/p&gt;
+
+&lt;p&gt;LPAD(str, n, ch), RPAD(str, n, ch) : 기존 값 포함해서 n자리수만큼 오른쪽 또는 왼쪽을 ch로 채운다&lt;/p&gt;
+
+&lt;p&gt;TRIM / LTRIM / RTRIM : 문자의 공백을 제거&lt;/p&gt;
+
+&lt;p&gt;TRANSLATE(str, str1,str2) : str 담긴 문자열 중에 str1 에 해당하는 글자를 str2로 대체&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;글자 하나하나 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;REPLACE(str, str1, str2) : str 담긴 문자열 중에 str1에 해당하는 글자를 str2로 대체&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;문자열 전체로 적용&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;날짜형-함수&quot;&gt;날짜형 함수&lt;/h3&gt;
+
+&lt;p&gt;SYSDATE : 실제 컴퓨터의 시간을 가져오는 키워드&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;다른 표현의 키워드들 : CURRENT_DATE, SYSTIMESTAMP, CURRENT_TIMESTAMP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DATE와 숫자 연산의 결과는 DATE 라는 날짜 자료형으로 출력&lt;/p&gt;
+
+&lt;p&gt;DATE - DATE의 연산 결과는 숫자로 출력&lt;/p&gt;
+
+&lt;p&gt;DATE + 숫자/24 는 날짜 + 시간&lt;/p&gt;
+
+&lt;p&gt;MONTHS_BETWEEN(date1,date2) : 두 날짜의 월 수를 계산&lt;/p&gt;
+
+&lt;p&gt;ADD_MONTHS(date, n) : 날짜에 월을 더하기&lt;/p&gt;
+
+&lt;p&gt;NEXT_DAY(date, n) : 날짜를 기준으로 다음 해당 요일을 찾아줌(일요일 시작 기준 1~7)&lt;/p&gt;
+
+&lt;p&gt;LAST_DAY(date) : 해당 월의 마지막 날&lt;/p&gt;
+
+&lt;p&gt;ROUND() : 날짜를 반올림&lt;/p&gt;
+
+&lt;p&gt;TRUNC() : 날짜를 버림&lt;/p&gt;
+
+&lt;h3 id=&quot;자료형-변환-함수&quot;&gt;자료형 변환 함수&lt;/h3&gt;
+
+&lt;p&gt;TO_CHAR(값), TO_NUMBER(), TO_DATE()&lt;/p&gt;
+
+&lt;p&gt;TO_DATE() : 날짜 관련해서 굉장히 유연하게 처리해줌&lt;/p&gt;
+
+&lt;h3 id=&quot;조건-함수&quot;&gt;조건 함수&lt;/h3&gt;
+
+&lt;p&gt;DECODE : 일치 연산자, 케이스가 같냐 다르냐 판단&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DECODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;CASE WHEN ~ THEN : 다른 연산자 사용이 가능&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_LIKE / Alias</title><link href="http://localhost:4000/w3schools-sql-like_alias" rel="alternate" type="text/html" title="W3schools - SQL_LIKE / Alias" /><published>2022-01-13T18:00:00+09:00</published><updated>2022-01-13T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-like_alias</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-like_alias">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -558,261 +930,7 @@
 &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Around&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Horn&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustormerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - Function</title><link href="http://localhost:4000/lecture-SQL-function" rel="alternate" type="text/html" title="SQL - Function" /><published>2022-01-13T18:00:00+09:00</published><updated>2022-01-13T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-function</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-function">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;44일차-수업&quot;&gt;44일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;정렬&quot;&gt;정렬&lt;/h3&gt;
-
-&lt;p&gt;SELECT 명령어를 쓰면 검색된 결과가 출력, 출력 순서는 출력할 때마다 다를 수도 있음&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;SELECT 문장 맨 마지막에 “ORDER BY 정렬 기준 컬럼명 ASC&lt;/td&gt;
-      &lt;td&gt;DESC;”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;ASC : 오름차순, 기본값, 작은값에서 큰값 순으로 출력, NULL을 맨 마지막으로&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;DESC : 필요 시 작성 필수, 큰값에서 작은 값 순으로 출력&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;정렬 기준은 여러개 가능, 여러개 쓸 경우에 정렬 순서가 중요!&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;distinct&quot;&gt;DISTINCT&lt;/h3&gt;
-
-&lt;p&gt;출력 당시 중복인 데이터를 지우고 싶을 때,&lt;/p&gt;
-
-&lt;p&gt;작성 위치는 SELECT 다음에 작성, WHERE 에는 작성 못함&lt;/p&gt;
-
-&lt;p&gt;DISTINCT 뒤에 컬럼을 여러개 작성하면, 작성된 컬럼의 내용이 모두 같은 경우에만 중복제거&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;as&quot;&gt;AS&lt;/h3&gt;
-
-&lt;p&gt;별칭, 컬럼명이 복잡해 질 때 사용, “” 감싸는 것을 권장, 공백이나 특수문자는 필수로&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;job&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deptno&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“직업&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;부서”&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;연결-연산자&quot;&gt;연결 연산자&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;||&lt;/code&gt; : 기존 컬럼의 값에 문자열을 추가하고 싶을 때 사용&lt;/p&gt;
-
-&lt;h3 id=&quot;숫자형-함수&quot;&gt;숫자형 함수&lt;/h3&gt;
-
-&lt;p&gt;ABS(n) : 절대값&lt;/p&gt;
-
-&lt;p&gt;FLOOR(n) : 소수점 내림&lt;/p&gt;
-
-&lt;p&gt;ROUND(n,i) : 숫자 n 을 소수점 i자리에서 반올림&lt;/p&gt;
-
-&lt;p&gt;TRUNC(n,i) : 숫자 n을 소수점 i자리에서 버림&lt;/p&gt;
-
-&lt;p&gt;MOD(n/i) : 숫자 n을 i로 나누고 남은 나머지, i가 음수일 경우 0 앞쪽 대상&lt;/p&gt;
-
-&lt;p&gt;SIGN(n) : 양수(1) 음수(-1) 0 을 구분해주는 함수&lt;/p&gt;
-
-&lt;p&gt;CEIL(n) : 소수점 올림&lt;/p&gt;
-
-&lt;p&gt;POWER(n) : 제곱&lt;/p&gt;
-
-&lt;p&gt;SORT(n) : 제곱근&lt;/p&gt;
-
-&lt;h3 id=&quot;dual&quot;&gt;dual&lt;/h3&gt;
-
-&lt;p&gt;산술연산, 가상의 컬럼에 값을 한번만 출력하고 싶을 때 사용하는 가상 테이블&lt;/p&gt;
-
-&lt;h3 id=&quot;문자형-함수&quot;&gt;문자형 함수&lt;/h3&gt;
-
-&lt;p&gt;LOWER(str), UPPER(str), INITCAP(str) : 소문자, 대문자, 첫글자 대문자&lt;/p&gt;
-
-&lt;p&gt;CONCAT(str1, str2) : 문자열 합치기&lt;/p&gt;
-
-&lt;p&gt;SUBSTR(str,i,n) : str을 i번째부터 n개를 선택&lt;/p&gt;
-
-&lt;p&gt;INSTR(str,ch,n,i) : str 문자열 중에 ch 문자를 n번째 위치부터 i번째인 데이터 출력&lt;/p&gt;
-
-&lt;p&gt;LENGTH(str) : 문자열 길이&lt;/p&gt;
-
-&lt;p&gt;LPAD(str, n, ch), RPAD(str, n, ch) : 기존 값 포함해서 n자리수만큼 오른쪽 또는 왼쪽을 ch로 채운다&lt;/p&gt;
-
-&lt;p&gt;TRIM / LTRIM / RTRIM : 문자의 공백을 제거&lt;/p&gt;
-
-&lt;p&gt;TRANSLATE(str, str1,str2) : str 담긴 문자열 중에 str1 에 해당하는 글자를 str2로 대체&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;글자 하나하나 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;REPLACE(str, str1, str2) : str 담긴 문자열 중에 str1에 해당하는 글자를 str2로 대체&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;문자열 전체로 적용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;날짜형-함수&quot;&gt;날짜형 함수&lt;/h3&gt;
-
-&lt;p&gt;SYSDATE : 실제 컴퓨터의 시간을 가져오는 키워드&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;다른 표현의 키워드들 : CURRENT_DATE, SYSTIMESTAMP, CURRENT_TIMESTAMP&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;DATE와 숫자 연산의 결과는 DATE 라는 날짜 자료형으로 출력&lt;/p&gt;
-
-&lt;p&gt;DATE - DATE의 연산 결과는 숫자로 출력&lt;/p&gt;
-
-&lt;p&gt;DATE + 숫자/24 는 날짜 + 시간&lt;/p&gt;
-
-&lt;p&gt;MONTHS_BETWEEN(date1,date2) : 두 날짜의 월 수를 계산&lt;/p&gt;
-
-&lt;p&gt;ADD_MONTHS(date, n) : 날짜에 월을 더하기&lt;/p&gt;
-
-&lt;p&gt;NEXT_DAY(date, n) : 날짜를 기준으로 다음 해당 요일을 찾아줌(일요일 시작 기준 1~7)&lt;/p&gt;
-
-&lt;p&gt;LAST_DAY(date) : 해당 월의 마지막 날&lt;/p&gt;
-
-&lt;p&gt;ROUND() : 날짜를 반올림&lt;/p&gt;
-
-&lt;p&gt;TRUNC() : 날짜를 버림&lt;/p&gt;
-
-&lt;h3 id=&quot;자료형-변환-함수&quot;&gt;자료형 변환 함수&lt;/h3&gt;
-
-&lt;p&gt;TO_CHAR(값), TO_NUMBER(), TO_DATE()&lt;/p&gt;
-
-&lt;p&gt;TO_DATE() : 날짜 관련해서 굉장히 유연하게 처리해줌&lt;/p&gt;
-
-&lt;h3 id=&quot;조건-함수&quot;&gt;조건 함수&lt;/h3&gt;
-
-&lt;p&gt;DECODE : 일치 연산자, 케이스가 같냐 다르냐 판단&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DECODE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;CASE WHEN ~ THEN : 다른 연산자 사용이 가능&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건문&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;케이스&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;디폴트&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;출력문&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_INSERT / Math_Function</title><link href="http://localhost:4000/w3schools-sql-insert_mathfunc" rel="alternate" type="text/html" title="W3schools - SQL_INSERT / Math_Function" /><published>2022-01-12T18:00:00+09:00</published><updated>2022-01-12T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-insert_mathfunc</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-insert_mathfunc">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;insert-into&quot;&gt;INSERT INTO&lt;/h3&gt;
-
-&lt;p&gt;Is used to insert new records in a table&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Specify both the column names and the values to be inserted&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;--- If add values for all the columns of the table, do not need to specify the column names in the SQL query&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;null&quot;&gt;NULL&lt;/h3&gt;
-
-&lt;p&gt;A field with a NULL is a field with no value&lt;/p&gt;
-
-&lt;p&gt;If a field in a table is optional, it is possible to insert a new record or update a record without adding a value to this field&lt;/p&gt;
-
-&lt;p&gt;Then, the field will be saved with a NULL value&lt;/p&gt;
-
-&lt;p&gt;It is different from a zero value or a field that contains space&lt;/p&gt;
-
-&lt;p&gt;A field with a NULL value is one that has been left blank during record creation&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NULL&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NOT NULL&lt;/code&gt; operator can test for NULL values&lt;/p&gt;
-
-&lt;h3 id=&quot;update&quot;&gt;UPDATE&lt;/h3&gt;
-
-&lt;p&gt;Is used to modify the existing records in a table&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;delete&quot;&gt;DELETE&lt;/h3&gt;
-
-&lt;p&gt;Is used to delete existing records in a table&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;select-top&quot;&gt;SELECT TOP&lt;/h3&gt;
-
-&lt;p&gt;Is used to specify the number of records to return&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FETCH&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FIRST&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROWS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ONLY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Can use `PERCENT` instead of number ex) 50 PERCENT&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;min--max&quot;&gt;MIN() / MAX()&lt;/h3&gt;
-
-&lt;p&gt;Return the smallest / largest value of the seleted column&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;count--avg--sum&quot;&gt;COUNT() / AVG() / SUM()&lt;/h3&gt;
-
-&lt;p&gt;COUNT() : returns the number of rows that matches a specified criterion&lt;/p&gt;
-
-&lt;p&gt;AVG() : returns the average value of a numeric column&lt;/p&gt;
-
-&lt;p&gt;SUM() : returns the total sum of a numeric column&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - CONSTRAINT / CONDITION</title><link href="http://localhost:4000/lecture-SQL-constraint_condition" rel="alternate" type="text/html" title="SQL - CONSTRAINT / CONDITION" /><published>2022-01-12T18:00:00+09:00</published><updated>2022-01-12T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-constraint_condition</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-constraint_condition">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - CONSTRAINT / CONDITION</title><link href="http://localhost:4000/lecture-SQL-constraint_condition" rel="alternate" type="text/html" title="SQL - CONSTRAINT / CONDITION" /><published>2022-01-12T18:00:00+09:00</published><updated>2022-01-12T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-constraint_condition</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-constraint_condition">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
@@ -938,7 +1056,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;NVL(대상컬럼, 변할 값) : 대상 컬럼 담긴 값이 null 이면 변할 값으로 변경시켜주는 함수&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_Intro</title><link href="http://localhost:4000/w3schools-sql-intro" rel="alternate" type="text/html" title="W3schools - SQL_Intro" /><published>2022-01-11T18:00:00+09:00</published><updated>2022-01-11T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-intro</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;p&gt;NVL(대상컬럼, 변할 값) : 대상 컬럼 담긴 값이 null 이면 변할 값으로 변경시켜주는 함수&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_INSERT / Math_Function</title><link href="http://localhost:4000/w3schools-sql-insert_mathfunc" rel="alternate" type="text/html" title="W3schools - SQL_INSERT / Math_Function" /><published>2022-01-12T18:00:00+09:00</published><updated>2022-01-12T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-insert_mathfunc</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-insert_mathfunc">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -952,87 +1070,82 @@
 우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;sql&quot;&gt;SQL&lt;/h3&gt;
+&lt;h3 id=&quot;insert-into&quot;&gt;INSERT INTO&lt;/h3&gt;
 
-&lt;p&gt;Is standard lang for storing, manipulating and retrieving data in databases&lt;/p&gt;
+&lt;p&gt;Is used to insert new records in a table&lt;/p&gt;
 
-&lt;p&gt;Is stands for Structured Query Language&lt;/p&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;h3 id=&quot;using-sql-in-web-site&quot;&gt;Using SQL in web site&lt;/h3&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Specify both the column names and the values to be inserted&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;--- If add values for all the columns of the table, do not need to specify the column names in the SQL query&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Need&lt;/p&gt;
+&lt;h3 id=&quot;null&quot;&gt;NULL&lt;/h3&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;An RDBMS database program(SQL server, MySQL …)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To use a server-side scripting language(PHP, ASP…)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To use SQL to get the data&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To use HTML&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;A field with a NULL is a field with no value&lt;/p&gt;
 
-&lt;h3 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h3&gt;
+&lt;p&gt;If a field in a table is optional, it is possible to insert a new record or update a record without adding a value to this field&lt;/p&gt;
 
-&lt;p&gt;Relational Database Management System&lt;/p&gt;
+&lt;p&gt;Then, the field will be saved with a NULL value&lt;/p&gt;
 
-&lt;p&gt;Is the basis for SQL&lt;/p&gt;
+&lt;p&gt;It is different from a zero value or a field that contains space&lt;/p&gt;
 
-&lt;p&gt;The data in RDBMS is stored in database objects called tables&lt;/p&gt;
+&lt;p&gt;A field with a NULL value is one that has been left blank during record creation&lt;/p&gt;
 
-&lt;p&gt;A table is a collection of related data entries and it consists of columns and rows&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NULL&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NOT NULL&lt;/code&gt; operator can test for NULL values&lt;/p&gt;
 
-&lt;p&gt;Every table is broken up into smaller entities called fields&lt;/p&gt;
+&lt;h3 id=&quot;update&quot;&gt;UPDATE&lt;/h3&gt;
 
-&lt;p&gt;A field is a column in a table that is designed to maintain specific information about every record in the table&lt;/p&gt;
+&lt;p&gt;Is used to modify the existing records in a table&lt;/p&gt;
 
-&lt;p&gt;A record, also called a row, is each individual entry that exists in a table&lt;/p&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;A record is a horizontal entity in a table&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;A column is a vertical entity in a table that contains all information associated with a specific field in a table&lt;/p&gt;
+&lt;h3 id=&quot;delete&quot;&gt;DELETE&lt;/h3&gt;
 
-&lt;h3 id=&quot;database-table&quot;&gt;DataBase Table&lt;/h3&gt;
+&lt;p&gt;Is used to delete existing records in a table&lt;/p&gt;
 
-&lt;p&gt;A database most often contains one or more tables&lt;/p&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;Each table is identified by a name&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Tables contain records with data&lt;/p&gt;
+&lt;h3 id=&quot;select-top&quot;&gt;SELECT TOP&lt;/h3&gt;
 
-&lt;h3 id=&quot;sql-statement&quot;&gt;SQL Statement&lt;/h3&gt;
+&lt;p&gt;Is used to specify the number of records to return&lt;/p&gt;
 
-&lt;p&gt;Most of the actions you need to perform on a database are done with SQL statements&lt;/p&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;SQL keywords are not case sensitive&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FETCH&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FIRST&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROWS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ONLY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Can use `PERCENT` instead of number ex) 50 PERCENT&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server&lt;/p&gt;
+&lt;h3 id=&quot;min--max&quot;&gt;MIN() / MAX()&lt;/h3&gt;
 
-&lt;h3 id=&quot;commands&quot;&gt;Commands&lt;/h3&gt;
+&lt;p&gt;Return the smallest / largest value of the seleted column&lt;/p&gt;
 
-&lt;p&gt;SELECT : extracts data from a database&lt;/p&gt;
+&lt;p&gt;Syntax&lt;/p&gt;
 
-&lt;p&gt;UPDATE : updates data in a database&lt;/p&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;DELETE : deletes data from a database&lt;/p&gt;
+&lt;h3 id=&quot;count--avg--sum&quot;&gt;COUNT() / AVG() / SUM()&lt;/h3&gt;
 
-&lt;p&gt;INSERT INTO : inserts new data into a database&lt;/p&gt;
+&lt;p&gt;COUNT() : returns the number of rows that matches a specified criterion&lt;/p&gt;
 
-&lt;p&gt;CREATE DATABASE : creates a new database&lt;/p&gt;
+&lt;p&gt;AVG() : returns the average value of a numeric column&lt;/p&gt;
 
-&lt;p&gt;ALTER DATABASE : modifies a database&lt;/p&gt;
-
-&lt;p&gt;CREATE TABLE : creates a new table&lt;/p&gt;
-
-&lt;p&gt;ALTER TABLE : modifies a table&lt;/p&gt;
-
-&lt;p&gt;DROP TABLE : deletes a table&lt;/p&gt;
-
-&lt;p&gt;CREATE INDEX : creates an index (search key)&lt;/p&gt;
-
-&lt;p&gt;DROP INDEX : deletes an index&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry></feed>
+&lt;p&gt;SUM() : returns the total sum of a numeric column&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry></feed>
