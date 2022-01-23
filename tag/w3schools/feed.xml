@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-19T23:49:38+09:00</updated>
+  <updated>2022-01-23T18:38:04+09:00</updated>
   <id>http://localhost:4000/tag/w3schools/feed.xml</id>
 
   
@@ -30,6 +30,597 @@
   
   
 
+  
+    <entry>
+      <title type="html">W3schools - SQL_INDEX / VIEW</title>
+      <link href="http://localhost:4000/w3schools-sql-index_view" rel="alternate" type="text/html" title="W3schools - SQL_INDEX / VIEW" />
+      <published>2022-01-22T18:00:00+09:00</published>
+      <updated>2022-01-22T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-index_view</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-index_view">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;index&quot;&gt;INDEX&lt;/h3&gt;
+
+&lt;p&gt;Is used to create indexes in tables&lt;/p&gt;
+
+&lt;p&gt;Are used to retrieve data from the database more quickly than otherwise&lt;/p&gt;
+
+&lt;p&gt;User can’t see the indexes, they are just used to speed up searches/queries&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Updating a table with indexes takes more time than updating a table without(because the indexes also need an update), So only create indexes on columns that will be frequently searched against&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INDEX&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;auto-increment-field&quot;&gt;AUTO INCREMENT Field&lt;/h3&gt;
+
+&lt;p&gt;Allows a unique number to be generated automatically when a new record is inserted into a table&lt;/p&gt;
+
+&lt;p&gt;Often this is the primary key field that we would like to be created automatically every time a new record is inserted&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Have to create an auto-increment field with the sequence object&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SEQUENCE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seq_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;MINVALUE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;START&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INCREMENT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CACHE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- it specifies how many sequence values will be stored in memory for faster access&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- To insert a new record into the table, we will have to use the nextval function&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seq_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nextval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- This function retrieves the next value from seq_name sequence&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;view&quot;&gt;VIEW&lt;/h3&gt;
+
+&lt;p&gt;Is a virtual table based on the result-set of an SQL statement&lt;/p&gt;
+
+&lt;p&gt;Always shows up-to-date data, The DB engine recreates the view, every time a user queries it&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;VIEW&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Can be updated with the ‘CREATE OR REPLACE VIEW’&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sql-injection&quot;&gt;SQL Injection&lt;/h3&gt;
+
+&lt;p&gt;Is a code injection technique that might destroy DB&lt;/p&gt;
+
+&lt;p&gt;Is one of the most common web hacking techniques&lt;/p&gt;
+
+&lt;p&gt;Is the placement of malicious code in SQL statements, via web page input&lt;/p&gt;
+
+&lt;p&gt;It usually occurs when you ask a user for input, the user gives you an SQL statement that you will unknowingly run on your DB&lt;/p&gt;
+
+&lt;h3 id=&quot;hosting&quot;&gt;Hosting&lt;/h3&gt;
+
+&lt;p&gt;If you want your web site to be able to store and retrieve data from a DB, your web server should have access to a database-system that uses the SQL lang&lt;/p&gt;
+
+&lt;p&gt;If your web server is hosted by an ISP(Internet Service Provider) you will have to look for SQL hosting plans&lt;/p&gt;
+
+&lt;p&gt;The most common SQL hosting DB are MS SQL Server, Oracle, MySQL, and MS Access&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_CONSTRAINT</title>
+      <link href="http://localhost:4000/w3schools-sql-constraint" rel="alternate" type="text/html" title="W3schools - SQL_CONSTRAINT" />
+      <published>2022-01-21T18:00:00+09:00</published>
+      <updated>2022-01-21T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-constraint</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-constraint">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;constraint&quot;&gt;CONSTRAINT&lt;/h3&gt;
+
+&lt;p&gt;Are used to specify rules for data in a table&lt;/p&gt;
+
+&lt;p&gt;Are used to limit the type of data that can go into a table&lt;/p&gt;
+
+&lt;p&gt;This ensures the accuracy and reliable of the data in the table&lt;/p&gt;
+
+&lt;p&gt;Can be specified when the table is created with the CREATE TABLE statement&lt;/p&gt;
+
+&lt;p&gt;Or after the table is created with the ALTER TABLE statement&lt;/p&gt;
+
+&lt;h3 id=&quot;create&quot;&gt;CREATE&lt;/h3&gt;
+
+&lt;p&gt;Can be column level or table level&lt;/p&gt;
+
+&lt;p&gt;Column level constraints apply to a column, and table level constraints apply to the whole table&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;CONSTRAINT&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;desc&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;NOT NULL&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Ensures that a column cannot have a NULL value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;UNIQUE&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Ensures that all values in a column are different&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;PRIMARY KEY&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;A combination of a NOT NULL and UNIQUE&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;FOREIGN KEY&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Prevents actions that would destroy links between tables&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;CHECK&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Ensures that the values in a column satisfies a specific condition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;DEFAULT&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Sets a default value for a column if no value is specified&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;CREATE INDEX&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Used to create and retrieve data from the database very quickly&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- column level&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constraint_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constraint_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- table level&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- NOT NULL only column level&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- table level&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;constraint_type&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- to name a constraint&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CONSTRAINT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;constraint_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constraint_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;not-null&quot;&gt;NOT NULL&lt;/h3&gt;
+
+&lt;p&gt;By default, a column can hold NULL values&lt;/p&gt;
+
+&lt;p&gt;The NOT NULL CONSTRAINT enforces a column to NOT accept NULL values&lt;/p&gt;
+
+&lt;p&gt;This enforces a field to always contain a value, which means that you can’t insert a new record, or update a record without adding a value to this field&lt;/p&gt;
+
+&lt;h3 id=&quot;unique&quot;&gt;UNIQUE&lt;/h3&gt;
+
+&lt;p&gt;Both the UNIQUE and PRIMARY KEY CONSTRAINTs provide a guarantee for uniqueness for a column or set of columns&lt;/p&gt;
+
+&lt;p&gt;PRIMARY KEY automatically has a UNIQUE&lt;/p&gt;
+
+&lt;p&gt;However you can have many UNIQUE per table, but only one PRIMARY KEY per table&lt;/p&gt;
+
+&lt;h3 id=&quot;primary-key&quot;&gt;PRIMARY KEY&lt;/h3&gt;
+
+&lt;p&gt;It Uniquely identifies each record in a table&lt;/p&gt;
+
+&lt;p&gt;Must contain UNIQUE values, and can’t contain NULL values&lt;/p&gt;
+
+&lt;p&gt;A table can have only one primary key; and in the table, this primary key can consist of single or multiple columns(fields)&lt;/p&gt;
+
+&lt;h3 id=&quot;foreign-key&quot;&gt;FOREIGN KEY&lt;/h3&gt;
+
+&lt;p&gt;Is used to prevent actions that would destroy links between tables&lt;/p&gt;
+
+&lt;p&gt;Is a field (or collection of field) in one table, that refers to the PRIMARY KEY in another table&lt;/p&gt;
+
+&lt;p&gt;The table with the foreign key is called the child table, and the table with primary key is called the referenced or parent table&lt;/p&gt;
+
+&lt;p&gt;Is prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the parent table&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;child_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FOREIGN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;REFERENCES&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent_table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk_column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- Naming of a FOREIGN KEY&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;child_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CONSTRAINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fk_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FOREIGN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;REFERENCES&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parent_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk_column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;check&quot;&gt;CHECK&lt;/h3&gt;
+
+&lt;p&gt;Is used to limit the value range that can be placed in a column&lt;/p&gt;
+
+&lt;p&gt;Allow only certain values for this column&lt;/p&gt;
+
+&lt;p&gt;It can limit the values in certain columns based on values in other columns in the row&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CHECK&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Naming of a CHECK&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CONSTRAINT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chk_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CHECK&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;default&quot;&gt;DEFAULT&lt;/h3&gt;
+
+&lt;p&gt;Is used to set a default value for a column&lt;/p&gt;
+
+&lt;p&gt;The default value will be added to all new records, if no other value is specified&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_value&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_DDL</title>
+      <link href="http://localhost:4000/w3schools-sql-ddl" rel="alternate" type="text/html" title="W3schools - SQL_DDL" />
+      <published>2022-01-20T18:00:00+09:00</published>
+      <updated>2022-01-20T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-ddl</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-ddl">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;create-database&quot;&gt;CREATE DATABASE&lt;/h3&gt;
+
+&lt;p&gt;Is used to create a new SQL database&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databasename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Make sure you have admin privilege before creating any database.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;drop-database&quot;&gt;DROP DATABASE&lt;/h3&gt;
+
+&lt;p&gt;Is used to drop an existing SQL database&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databasename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;backup-database&quot;&gt;BACKUP DATABASE&lt;/h3&gt;
+
+&lt;p&gt;Is used in SQL Server to create a full back up of an existing SQL database&lt;/p&gt;
+
+&lt;p&gt;Always back up the database to a different drive than the actual database&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Then, if you get a disk crash, you will not lose your backup file along with the database&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;BACKUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databasename&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;TO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DISK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filepath&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- A differential back up only backs up the parts of the database that have changed since the last full database backup&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;BACKUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DATABASE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databasename&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;TO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DISK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filepath&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WITH&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DIFFERENTIAL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;create-table&quot;&gt;CREATE TABLE&lt;/h3&gt;
+
+&lt;p&gt;Is used to create a new table in a database&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- Using another table&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;existing_table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- The column parameters specify the names of the column of the table&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- The datatype parameter specifies the type of data the column can hold&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;drop-table&quot;&gt;DROP TABLE&lt;/h3&gt;
+
+&lt;p&gt;Is used to drop an existing table in a database&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;truncate-table&quot;&gt;TRUNCATE TABLE&lt;/h3&gt;
+
+&lt;p&gt;Is used to delete the data inside a table, but not the table itself&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;TRUNCATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;alter-table&quot;&gt;ALTER TABLE&lt;/h3&gt;
+
+&lt;p&gt;Is used to add, delete, or modify columns in a existing table&lt;/p&gt;
+
+&lt;p&gt;Is also used to add and drop various constraints on an existing table&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- ADD&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ADD&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- DROP&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- MODIFY&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;MODIFY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - SQL_CASE / PROCEDURE</title>
+      <link href="http://localhost:4000/w3schools-sql-case_procedure" rel="alternate" type="text/html" title="W3schools - SQL_CASE / PROCEDURE" />
+      <published>2022-01-19T18:00:00+09:00</published>
+      <updated>2022-01-19T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-sql-case_procedure</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-sql-case_procedure">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;select-into&quot;&gt;SELECT INTO&lt;/h3&gt;
+
+&lt;p&gt;Copies data from one table into a new table&lt;/p&gt;
+
+&lt;p&gt;The new table will be created with the column-names and types as defined in the old table&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can create new column names using the AS clause&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Syntax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newtable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;externaldb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oldtable&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;insert-into-select&quot;&gt;INSERT INTO SELECT&lt;/h3&gt;
+
+&lt;p&gt;Copies data from one table and inserts it into another table&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The existing records in the target table are unaffected&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Requires that the data types in source and target tables match&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Syntax&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;case&quot;&gt;CASE&lt;/h3&gt;
+
+&lt;p&gt;Goes through conditions and returns a value when the first condition is met&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Like an if-then-else statement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once a condition is true, it will stop reading and return the result&lt;/p&gt;
+
+&lt;p&gt;If no conditions are true, it returns the value in the ELSE clause&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If there is no ELSE part and no conditions are true, it returns NULL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result2&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;result&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;null-function&quot;&gt;NULL Function&lt;/h3&gt;
+
+&lt;p&gt;Lets you return an alternative value when an expression is NULL&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;NVL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alternative&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;procedure&quot;&gt;PROCEDURE&lt;/h3&gt;
+
+&lt;p&gt;A stored procedure is a prepared SQL code that you can save, so the code can be reused&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Stored procedure&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PROCEDURE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;procedure_name&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameter_name1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter_type1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;var_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var_type&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt;   
+    &lt;span class=&quot;n&quot;&gt;sql_statement&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-- Execute a stored procedure&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;EXEC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;procedure_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;comments&quot;&gt;Comments&lt;/h3&gt;
+
+&lt;p&gt;Are used to explain sections of SQL statements, or to prevent execution of SQL statements&lt;/p&gt;
+
+&lt;p&gt;Single line comments&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;It start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Any text between – and the end of the line will be ignored&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Multi-line comments&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;It start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; and end with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Any text between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; will be ignored&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">W3schools - SQL_EXISTS / ANY / ALL</title>
@@ -791,551 +1382,6 @@
 &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ASC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;-- Can use both, ORDER BY column1 ASC, column2 DESC;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_Intro</title>
-      <link href="http://localhost:4000/w3schools-sql-intro" rel="alternate" type="text/html" title="W3schools - SQL_Intro" />
-      <published>2022-01-11T18:00:00+09:00</published>
-      <updated>2022-01-11T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-intro</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;sql&quot;&gt;SQL&lt;/h3&gt;
-
-&lt;p&gt;Is standard lang for storing, manipulating and retrieving data in databases&lt;/p&gt;
-
-&lt;p&gt;Is stands for Structured Query Language&lt;/p&gt;
-
-&lt;h3 id=&quot;using-sql-in-web-site&quot;&gt;Using SQL in web site&lt;/h3&gt;
-
-&lt;p&gt;Need&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;An RDBMS database program(SQL server, MySQL …)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To use a server-side scripting language(PHP, ASP…)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To use SQL to get the data&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To use HTML&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;rdbms&quot;&gt;RDBMS&lt;/h3&gt;
-
-&lt;p&gt;Relational Database Management System&lt;/p&gt;
-
-&lt;p&gt;Is the basis for SQL&lt;/p&gt;
-
-&lt;p&gt;The data in RDBMS is stored in database objects called tables&lt;/p&gt;
-
-&lt;p&gt;A table is a collection of related data entries and it consists of columns and rows&lt;/p&gt;
-
-&lt;p&gt;Every table is broken up into smaller entities called fields&lt;/p&gt;
-
-&lt;p&gt;A field is a column in a table that is designed to maintain specific information about every record in the table&lt;/p&gt;
-
-&lt;p&gt;A record, also called a row, is each individual entry that exists in a table&lt;/p&gt;
-
-&lt;p&gt;A record is a horizontal entity in a table&lt;/p&gt;
-
-&lt;p&gt;A column is a vertical entity in a table that contains all information associated with a specific field in a table&lt;/p&gt;
-
-&lt;h3 id=&quot;database-table&quot;&gt;DataBase Table&lt;/h3&gt;
-
-&lt;p&gt;A database most often contains one or more tables&lt;/p&gt;
-
-&lt;p&gt;Each table is identified by a name&lt;/p&gt;
-
-&lt;p&gt;Tables contain records with data&lt;/p&gt;
-
-&lt;h3 id=&quot;sql-statement&quot;&gt;SQL Statement&lt;/h3&gt;
-
-&lt;p&gt;Most of the actions you need to perform on a database are done with SQL statements&lt;/p&gt;
-
-&lt;p&gt;SQL keywords are not case sensitive&lt;/p&gt;
-
-&lt;p&gt;Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server&lt;/p&gt;
-
-&lt;h3 id=&quot;commands&quot;&gt;Commands&lt;/h3&gt;
-
-&lt;p&gt;SELECT : extracts data from a database&lt;/p&gt;
-
-&lt;p&gt;UPDATE : updates data in a database&lt;/p&gt;
-
-&lt;p&gt;DELETE : deletes data from a database&lt;/p&gt;
-
-&lt;p&gt;INSERT INTO : inserts new data into a database&lt;/p&gt;
-
-&lt;p&gt;CREATE DATABASE : creates a new database&lt;/p&gt;
-
-&lt;p&gt;ALTER DATABASE : modifies a database&lt;/p&gt;
-
-&lt;p&gt;CREATE TABLE : creates a new table&lt;/p&gt;
-
-&lt;p&gt;ALTER TABLE : modifies a table&lt;/p&gt;
-
-&lt;p&gt;DROP TABLE : deletes a table&lt;/p&gt;
-
-&lt;p&gt;CREATE INDEX : creates an index (search key)&lt;/p&gt;
-
-&lt;p&gt;DROP INDEX : deletes an index&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - CSS_Math Function</title>
-      <link href="http://localhost:4000/w3schools-css-mathfunction" rel="alternate" type="text/html" title="W3schools - CSS_Math Function" />
-      <published>2022-01-02T18:00:00+09:00</published>
-      <updated>2022-01-02T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-css-mathfunction</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-css-mathfunction">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;math-functions&quot;&gt;Math functions&lt;/h3&gt;
-
-&lt;p&gt;Allow mathematical expressions to be as property values&lt;/p&gt;
-
-&lt;p&gt;calc()	: Allows to perform calculations to determine CSS property values&lt;/p&gt;
-
-&lt;p&gt;max()	: Uses the largest value, from a comma-separated list of values, as the property value&lt;/p&gt;
-
-&lt;p&gt;min()	: Uses the smallest value, from a comma-separated list of values, as the property value&lt;/p&gt;
-
-&lt;h3 id=&quot;variables&quot;&gt;Variables&lt;/h3&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var()&lt;/code&gt; function is used to insert the value of a CSS variable&lt;/p&gt;
-
-&lt;p&gt;Syntax : var(–name, value)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;name : Required. The variable name(must start with two dashes)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;value : Optional. The fallback value(used if the variable is not found)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;var-works&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var()&lt;/code&gt; works&lt;/h3&gt;
-
-&lt;p&gt;CSS variables can have a global or local scope&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Global var can be accessed/used through the entire document&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Local variables can be used only used only inside the selector where it is declared&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To create a var with global scope, declare it inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:root&lt;/code&gt; selector&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:root&lt;/code&gt;: selector matches the document’s root element&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To create a var with local scope, declare it inside the selector that is going to use it&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;--blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#1e90ff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;Color&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;media-query&quot;&gt;Media query&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@media&lt;/code&gt; rule made it possible to define style rules for different media type&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - CSS_Unit / Specificity</title>
-      <link href="http://localhost:4000/w3schools-css-unit_specificity" rel="alternate" type="text/html" title="W3schools - CSS_Unit / Specificity" />
-      <published>2022-01-01T18:00:00+09:00</published>
-      <updated>2022-01-01T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-css-unit_specificity</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-css-unit_specificity">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;unit&quot;&gt;Unit&lt;/h3&gt;
-
-&lt;p&gt;CSS has several different units for expressing a length&lt;/p&gt;
-
-&lt;p&gt;A whitespace can’t appear between the number and the unit&lt;/p&gt;
-
-&lt;p&gt;However, if the value is 0, the unit can be omitted&lt;/p&gt;
-
-&lt;h3 id=&quot;absolute-length&quot;&gt;Absolute length&lt;/h3&gt;
-
-&lt;p&gt;Are fixed and a length expressed in any of these will appear as exactly that size&lt;/p&gt;
-
-&lt;p&gt;Are not recommended for use on screen, because screen sizes vary so much&lt;/p&gt;
-
-&lt;p&gt;However, they can be used if the output medium is known, such as for print layout&lt;/p&gt;
-
-&lt;p&gt;| Unit | Description |
-|:—–|:———–:|
-| cm   | centimeters |
-| mm   | millimeters |
-| in   |   inches    |
-| px   |   pixels    |
-| pt   |   points    |
-| pc   |    picas    |&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;pixels Are relative to the viewing device, for low-dpi devices, 1px is one device pixel of the display&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;relative-length&quot;&gt;Relative length&lt;/h3&gt;
-
-&lt;p&gt;Specify a length relative to another length property&lt;/p&gt;
-
-&lt;p&gt;Scales better between different rendering mediums&lt;/p&gt;
-
-&lt;p&gt;| Unit |                                                Description |
-|:—-:|———————————————————–:|
-|  em  |                   Relative to the font-size of the element |
-|  ex  | Relative to the x-height of the current font (rarely used) |
-|  ch  |                                 Ralative to width of the 0 |
-| rem  |                  Relative to font-size of the root element |
-|  vw  |                Relative to 1% of the width of the viewport |
-|  vh  |               Relative to 1% of the height of the viewport |
-| vmin |             Relative to 1% of viewport’s smaller dimension |
-| vmax |              Relative to 1% of viewport’s larger dimension |
-|  %   |                             Relative to the parent element |&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;2em means 2 times the size of the current font&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;specificity&quot;&gt;Specificity&lt;/h3&gt;
-
-&lt;p&gt;If there are two or more conflicting CSS rules that poing to the same element,&lt;/p&gt;
-
-&lt;p&gt;The browser follows some rules to determine which one is most specific and therefore wins out&lt;/p&gt;
-
-&lt;p&gt;Every selector has its place in the specificity hierarchy&lt;/p&gt;
-
-&lt;h3 id=&quot;inline-styles&quot;&gt;Inline styles&lt;/h3&gt;
-
-&lt;p&gt;An inline style is attached directly to the element to be styled&lt;/p&gt;
-
-&lt;h3 id=&quot;ids&quot;&gt;IDs&lt;/h3&gt;
-
-&lt;p&gt;An ID is a unique identifier for the page elements&lt;/p&gt;
-
-&lt;p&gt;Classes, attributes and pseudo-classes&lt;/p&gt;
-
-&lt;p&gt;Elements and pseudo-elements&lt;/p&gt;
-
-&lt;h3 id=&quot;calculate&quot;&gt;Calculate&lt;/h3&gt;
-
-&lt;p&gt;Add 1000 for style attribute&lt;/p&gt;
-
-&lt;p&gt;Add 100 for each ID&lt;/p&gt;
-
-&lt;p&gt;Add 10 for each attribute, class or pseudo-class&lt;/p&gt;
-
-&lt;p&gt;Add 1 for each element name or pseudo-element&lt;/p&gt;
-
-&lt;p&gt;Greater level of specificity will be applied&lt;/p&gt;
-
-&lt;h3 id=&quot;specificity-rules&quot;&gt;Specificity Rules&lt;/h3&gt;
-
-&lt;p&gt;Equal specificity : the latest rule counts&lt;/p&gt;
-
-&lt;p&gt;Id selectors have a higher specificity than attribute selectors&lt;/p&gt;
-
-&lt;p&gt;Contextual selectors are more specific than a single element selector&lt;/p&gt;
-
-&lt;p&gt;A class selector beats any number of element selectors&lt;/p&gt;
-
-&lt;p&gt;The universal selector and inherited values have a specificity of 0&lt;/p&gt;
-
-&lt;h3 id=&quot;important&quot;&gt;!important&lt;/h3&gt;
-
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!important&lt;/code&gt; rule in CSS is used to add more importance to a property / value than normal&lt;/p&gt;
-
-&lt;p&gt;It will override All previous styling rules for that specific property on that element&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - CSS_Combinator</title>
-      <link href="http://localhost:4000/w3schools-css-combinator" rel="alternate" type="text/html" title="W3schools - CSS_Combinator" />
-      <published>2021-12-31T18:00:00+09:00</published>
-      <updated>2021-12-31T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-css-combinator</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-css-combinator">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;combinator&quot;&gt;Combinator&lt;/h3&gt;
-
-&lt;p&gt;Is something that explains the relationship between the selectors&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;selector&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Example&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;element element&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;div p&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Select all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements inside &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;element&amp;gt;element&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;div&amp;gt;p&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Select all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; elements where the parent is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; element&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;element+element&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;div+p&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Select the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element that are placed immediately after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;element1~element2&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;p~ul&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Select every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; element that are preceded by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; element&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;pseudo-class&quot;&gt;pseudo-class&lt;/h3&gt;
-
-&lt;p&gt;Is used to define a special state of an element&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ex) Style an element when a user mouses over it, Style an element when it gets focus ..&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:pseudo-class&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;https://www.w3schools.com/css/css_pseudo_classes.asp&lt;/p&gt;
-
-&lt;h3 id=&quot;pseudo-element&quot;&gt;pseudo-element&lt;/h3&gt;
-
-&lt;p&gt;Is used to style specified parts of an element&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ex) style the first letter, or line, of an element, or insert content before, or after, the content of an element&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;Selector&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::pseudo-element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;Property&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;attribute-selector&quot;&gt;Attribute selector&lt;/h3&gt;
-
-&lt;p&gt;To style HTML elements that have specific attributes or attributes values&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Selector&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Example&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;[target]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with a target attribute&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute=value]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;[target=_blank]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with target=”_blank”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute~=value]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;[title~=flower]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with a title attribute containing the word “flower”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute|=value]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;[lang|=en]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects all elements with a lang attribute value starting with “en”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute^=value]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;a[href^=”https”]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element whose href attribute value begins with “https”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute$=value]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;a[href$=”.pdf”]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element whose href attribute value ends with “.pdf”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[attribute*=value]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;a[href*=”w3schools”]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Selects every &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; element whose href attribute value contains the substring “w3schools”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content>
 
       
       
