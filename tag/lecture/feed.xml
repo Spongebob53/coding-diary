@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-24T23:26:01+09:00</updated>
+  <updated>2022-01-25T23:29:21+09:00</updated>
   <id>http://localhost:4000/tag/lecture/feed.xml</id>
 
   
@@ -30,6 +30,154 @@
   
   
 
+  
+    <entry>
+      <title type="html">JDBC - Pattern</title>
+      <link href="http://localhost:4000/lecture-JDBC-pattern" rel="alternate" type="text/html" title="JDBC - Pattern" />
+      <published>2022-01-25T18:00:00+09:00</published>
+      <updated>2022-01-25T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-JDBC-pattern</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-JDBC-pattern">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;52일차-수업&quot;&gt;52일차 수업&lt;/h2&gt;
+
+&lt;p&gt;사용자에게 입력받은 데이터를 DB에 저장하는 과정&lt;/p&gt;
+
+&lt;p&gt;웹페이지(HTML, CSS, JS) -&amp;gt; JAVA -&amp;gt; DB(오라클, mysql 등등)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터 저장을 위해 JAVA로 DB를 호출할 때마다 객체를 생성하게 되면, 자원을 고갈시키는 원인이 됨&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;싱글톤-패턴&quot;&gt;싱글톤 패턴&lt;/h3&gt;
+
+&lt;p&gt;위의 문제를 해결하기 위해 동일한 인스턴스를 사용하는 기법&lt;/p&gt;
+
+&lt;p&gt;생성자는 다른 클래스에서 인스턴스화하지 못하도록 private로 선언&lt;/p&gt;
+
+&lt;p&gt;본인 클래스의 자료형으로 객체를 담을 변수를 미리 선언후, public static 메소드로 객체 생성 전에 기존 객체 유무 확인 과정을 거침&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;미리 선언한 객체를 담는 변수가 null이면 객체를 생성하고, 값이 있다면 기존 객체를 반환&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dao&quot;&gt;DAO&lt;/h3&gt;
+
+&lt;p&gt;Data Access Object&lt;/p&gt;
+
+&lt;p&gt;DB라는 공간에 직접적으로 연결하는 객체&lt;/p&gt;
+
+&lt;p&gt;프로그램을 만들 때 DB를 사용하고, 데이터를 조회하고 조작하는 기능을 담당하는 오브젝트&lt;/p&gt;
+
+&lt;p&gt;6단계로 나눠지는 기존의 방식에서 DB와 관련이 있는 단계를 DAO클래스로 만든다&lt;/p&gt;
+
+&lt;h3 id=&quot;디자인-패턴&quot;&gt;디자인 패턴&lt;/h3&gt;
+
+&lt;p&gt;바퀴를 다시 만들지 마라&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;이미 잘 만들어져서 잘되는 것을 처음부터 다시 작성하지 말자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;개발을 할 때 서로 공통되는 설계 문제가 존재하면, 공통되는 해결책이 있다(패턴화)&lt;/p&gt;
+
+&lt;p&gt;문제가 있는 것을 다음과 같은 방식으로 단계를 구분 짓고 규칙화 하자&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;콘텍스트 : 문제가 발생되는 상황&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;문제 : 해결을 해야할 이슈&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;해결 : 해결을 하도록 설계하고 관계를 연결하고, 등등.. 지침서, 템플릿&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mvc-패턴&quot;&gt;MVC 패턴&lt;/h3&gt;
+
+&lt;p&gt;웹 개발을 할 때 가장 많이 사용하는 디자인 패턴&lt;/p&gt;
+
+&lt;p&gt;Model(데이터) : 프로젝트의 정보와 데이터들을 나타내는 영역, 변수, DB에 저장할 값&lt;/p&gt;
+
+&lt;p&gt;View(사용자 인터페이스) : 프로젝트에서 화면에 보여주는 영역, JSP 영역&lt;/p&gt;
+
+&lt;p&gt;Controller : 데이터와 사용자 인터페이스 간의 다리 역할, 사용자의 이벤트 발생 처리하고, 데이터를 이용하여 결과를 도출하는 영역(DAO)&lt;/p&gt;
+
+&lt;p&gt;각각의 맡은 바에만 집중하도록 설계&lt;/p&gt;
+
+&lt;p&gt;유지보수성이 상승, 프로젝트의 확장성, 유연성, 중복코딩이 줄어듬&lt;/p&gt;
+
+&lt;h3 id=&quot;vo&quot;&gt;VO&lt;/h3&gt;
+
+&lt;p&gt;Value Object, 변수를 모아 둔 곳&lt;/p&gt;
+
+&lt;p&gt;DB의 컬럼과 대응하는 자바 클래스&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt;  &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmpVO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setEmpno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;empno&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;}&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getEmpno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// DAO 에서 VO 이용하기&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;EmpVO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DriverManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+		&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(?)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;prepareStatement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEmpno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+		&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;executeUpdate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// jsp 에서 return을 받은 값으로 insert가 실행이 됬는지 조건을 걸 수 있음&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">JDBC - Intro / DAO</title>
@@ -1937,266 +2085,6 @@ error.jsp는 다른 페이지의 예외를 받는 에러페이지로 지정되�
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">JS - Window / Event</title>
-      <link href="http://localhost:4000/lecture-JS-window_event" rel="alternate" type="text/html" title="JS - Window / Event" />
-      <published>2022-01-07T18:00:00+09:00</published>
-      <updated>2022-01-07T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-JS-window_event</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-JS-window_event">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;40일차-수업&quot;&gt;40일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
-
-&lt;p&gt;요소 추가&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;appendChild(), insertBefore()&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;속성, 텍스트 변경&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nodeValue, innerHTML, value, setAttribute()&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;변경할 대상을 선택&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;id, class, TagName, 또는 관계를 통해서 선택&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
-
-&lt;h2 id=&quot;40일차-수업-1&quot;&gt;40일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;window-객체&quot;&gt;window 객체&lt;/h3&gt;
-
-&lt;p&gt;BOM(Browser Object Model), 모델 안에 있는 객체, 웹 표준은 아님&lt;/p&gt;
-
-&lt;p&gt;웹브라우저의 창, 전역객체, DOM 요소들은 모두 window 객체의 property&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 현재 윈도우의 높이&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//spongebob53.github.io/”,“_blank”, “width=400px, height=400px”);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// window.open(url, name, space, replace);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// url : 보여줄 페이지&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// name : 속성(어떻게 창을 열 것인지 설정), _blank(새창,기본값), _self(현재창), _parent(부모프레임)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// space : 페이지 열릴 때 창의 크기, 스크롤 여부, 크기변경 여부 설정&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 창 닫기&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 현재 페이지의 주소를 가져오거나, 새로운 문서를 불러올 때 사용&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;웹-표준&quot;&gt;웹 표준&lt;/h3&gt;
-
-&lt;p&gt;HTML, CSS, JS : Java 처럼 규칙이 엄격하지 않고 유연함, 개발자의 개성에 따라 코드가 천차만별&lt;/p&gt;
-
-&lt;p&gt;관리 측면에서 불안함을 해소하기 위해 W3C에서 웹 표준을 만듬&lt;/p&gt;
-
-&lt;p&gt;개발자의 사용성, 접근성 증가&lt;/p&gt;
-
-&lt;h3 id=&quot;history&quot;&gt;history&lt;/h3&gt;
-
-&lt;p&gt;브라우저의 사용했던 내역을 저장&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 이전페이지 가기&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;go&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 음수에 따라 뒤로가기&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forward&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 다음페이지 가기&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;screen-navigator-객체&quot;&gt;Screen, Navigator 객체&lt;/h3&gt;
-
-&lt;p&gt;대화상자, 화면에 출력하는 것보다 우선적으로 실행&lt;/p&gt;
-
-&lt;p&gt;alert(); : 경고창, 사용자에게 메세지를 보여주고, 확인을 기다리는창&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;대화 상자의 확인을 눌러야지만 다음 작업이 진행&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;prompt(); : 메세지를 보여주고, 사용자가 입력한 “문자열”을 반환한다&lt;/p&gt;
-
-&lt;p&gt;confirm(); : 메세지를 보여주고, 확인 or 취소를 기다리는 창, 결과값을 참거짓으로 반환한다&lt;/p&gt;
-
-&lt;h3 id=&quot;event&quot;&gt;Event&lt;/h3&gt;
-
-&lt;p&gt;HTML 요소 안에서의 사건 발생, 사건이 발생했을 때 특정 동작을 하겠다&lt;/p&gt;
-
-&lt;p&gt;이벤트를 발생시키는 조건 : 키보드, 마우스, DOM or window(요소나 페이지의 focus 등)&lt;/p&gt;
-
-&lt;p&gt;JS 에서 이벤트에 대한 것들을 미리 정의해 놓음&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onclick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;…&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 1 방법&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;btnclick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;…&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 2 방법&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onclick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;btnclick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 위의 두가지 방법은 이벤트를 다중으로 받지 못하는 단점&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;btnclick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// 대상.addEventListener(이벤트명,함수명);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;btnclick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// event 인자로 사용가능, 이벤트 정보에 대해 미리 정의된 변수&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;timer&quot;&gt;Timer&lt;/h3&gt;
-
-&lt;p&gt;Java에서 sleep과 비슷한 기능&lt;/p&gt;
-
-&lt;p&gt;함수가 일정 시간 뒤에 호출이 되도록 딜레이를 주는 방법&lt;/p&gt;
-
-&lt;p&gt;setTimeout(호출함수, 지연시간 ms); : 일정 시간 뒤에 시작, clearTimeout(대상);으로 종료&lt;/p&gt;
-
-&lt;p&gt;setInterval(호출함수, 반복주기 ms); : 일정 시간마다 반복, clearInterval(대상);으로 종료&lt;/p&gt;
-
-&lt;h3 id=&quot;mouse-event&quot;&gt;Mouse event&lt;/h3&gt;
-
-&lt;p&gt;click : 마우스 클릭 시&lt;/p&gt;
-
-&lt;p&gt;mouseover : 마우스 커서가 해당 태그 위로 올라왔을 때&lt;/p&gt;
-
-&lt;p&gt;mouseout : 마우스 커서가 해당 태그 위에서 떠났을 때&lt;/p&gt;
-
-&lt;p&gt;mousedown : 마우스를 눌렀을 때&lt;/p&gt;
-
-&lt;p&gt;mouseup : 마우스를 떼었을 때&lt;/p&gt;
-
-&lt;p&gt;onclick처럼 on 을 붙이면 태그 안에서도 바로 작성 가능&lt;/p&gt;
-
-&lt;h3 id=&quot;keyboard-event&quot;&gt;Keyboard event&lt;/h3&gt;
-
-&lt;p&gt;keydown : 키보드를 누르는 순간&lt;/p&gt;
-
-&lt;p&gt;keyup : 키보드를 떼는 순간&lt;/p&gt;
-
-&lt;p&gt;keypress : 키보드를 누르는 동안(문자가 연결되는 상황)&lt;/p&gt;
-
-&lt;p&gt;focus : 요소에 집중하고 있을 때, 요소를 선택하거나 입력 준비 중일때&lt;/p&gt;
-
-&lt;p&gt;blur : focus의 반대&lt;/p&gt;
-
-&lt;h3 id=&quot;form&quot;&gt;form&lt;/h3&gt;
-
-&lt;p&gt;전달 과정을 지원해주는 태그&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;시작태그와 종료태그 사이에 있는 input 태그 안에 들어있는 값은 전부 전달&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;데이터를 보여주기 뿐만 아니라 사용자에게 입력받는 행위&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;현재 페이지 결과를 처리, 다른 페이지에 전달&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;form 안에서만 작동하는 type&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;input type =“submit” : 데이터 제출&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;input type =“reset” : 데이터 초기화&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;url-살펴보기&quot;&gt;URL 살펴보기&lt;/h3&gt;
-
-&lt;p&gt;http://주소:8080/파일경로/파일명.html?속성명=속성값&amp;amp;속성명=속성값…&lt;/p&gt;
-
-&lt;p&gt;파일명 다음에 나오는 ‘?’ : 구분선, 이후에 나오는 글자는 키쌍의 형태로 전달될 데이터&lt;/p&gt;
-
-&lt;p&gt;데이터의 모양은 “속성명=속성값”, 여러개의 속성일 경우 &amp;amp;로 구분&lt;/p&gt;
-
-&lt;p&gt;속성: form 태그에 작성된 input 태그의 순서대로 나열, 속성명은 input의 name 속성값을 가져옴&lt;/p&gt;
-
-&lt;p&gt;속성 값 : 해당 input태그의 입력값&lt;/p&gt;
-
-&lt;h3 id=&quot;데이터-전달&quot;&gt;데이터 전달&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;form action = “ 입력할 데이터를 처리할 페이지 주소” method = “방식 선택”&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;method : 데이터를 주고 받는 방식&lt;/p&gt;
-
-&lt;p&gt;get&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;주소에 데이터를 추가하여 전달하는 방식&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;전달하는 데이터가 주소창에 보이기 때문에 보안상 좋지 않음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;주소창의 길이가 제한적이기 때문에 전달할 수 있는 데이터가 한정되어있음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;전달할 수 있는 데이터는 문자열&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;속도가 빠름&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;post&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;데이터를 별도로 첨부하여 전달하는 방식&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;데이터가 외부에서 보이지 않음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;전달할 수 있는 데이터 제한이 없음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;데이터의 자료형도 자유로움&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
 
       
       

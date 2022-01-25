@@ -8,6 +8,22 @@
 
     
     <url>
+        <loc>http://localhost:4000/lecture-JDBC-pattern.html</loc>
+        
+        <lastmod>2022-01-25T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-JDBC-intro.html</loc>
         
         <lastmod>2022-01-24T18:00:00+09:00</lastmod>
