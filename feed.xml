@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-25T23:29:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">JDBC - Pattern</title><link href="http://localhost:4000/lecture-JDBC-pattern" rel="alternate" type="text/html" title="JDBC - Pattern" /><published>2022-01-25T18:00:00+09:00</published><updated>2022-01-25T18:00:00+09:00</updated><id>http://localhost:4000/lecture-JDBC-pattern</id><content type="html" xml:base="http://localhost:4000/lecture-JDBC-pattern">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-26T22:48:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Coding Diary</title><subtitle>개발 기록</subtitle><entry><title type="html">JDBC - DAO / VO</title><link href="http://localhost:4000/lecture-JDBC-dao_vo" rel="alternate" type="text/html" title="JDBC - DAO / VO" /><published>2022-01-26T18:00:00+09:00</published><updated>2022-01-26T18:00:00+09:00</updated><id>http://localhost:4000/lecture-JDBC-dao_vo</id><content type="html" xml:base="http://localhost:4000/lecture-JDBC-dao_vo">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;53일차-수업&quot;&gt;53일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;dao와-vo&quot;&gt;DAO와 VO&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.sql.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmpDAO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dbDriver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oracle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;jdbc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OracleDriver&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jdbc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;oracle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;thin:&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@db주소&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;db&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;계정&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;db&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;암호&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmpDAO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empDAO&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmpDAO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;Return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;EmpDAO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;forName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dbDriver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;insert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;EmpVO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DriverManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			
+			&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(?,?)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+			
+			&lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;prepareStatement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEmpno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+
+			&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;executeUpdate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// finally 로 ps와 conn 닫기&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;EmpVO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+		&lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;EmpVO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ArrayList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;// 값이 없을 경우 emptyList를 반환해주기 위해 List로 선언,&lt;/span&gt;
+		&lt;span class=&quot;nc&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isEmpty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;c1&quot;&gt;// 값이 없을 경우를 구분하기 위한 변수&lt;/span&gt;
+
+		&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DriverManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;prepareStatement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;executeQuery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+			
+			&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()){&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;isEmpty&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;nc&quot;&gt;EmpVO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmpVO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setEmpno&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empno&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setEname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ename&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+
+				&lt;span class=&quot;n&quot;&gt;eList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+				&lt;span class=&quot;c1&quot;&gt;// row당 하나의 클래스를 인스턴스로 만들어 배열에 넣기&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Collections&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;emptyList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;request&quot;&gt;Request&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 서버의 정보를 얻어오기 --&amp;gt;&lt;/span&gt;
+요청정보 프로토콜 = &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getProtocol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--HTTP/1.1 --&amp;gt;&lt;/span&gt;
+요청정보 전송방식 = &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getMethod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- GET --&amp;gt;&lt;/span&gt;
+요청 URI = &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRequestURI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--- /learning_war_exploded/3_objects/01_requestInfo.jsp --&amp;gt;&lt;/span&gt;
+컨텍스트 경로 = &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getContextPath&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /learning_war_exploded --&amp;gt;&lt;/span&gt;
+서버이름 = &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getServerName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- localhost --&amp;gt;&lt;/span&gt;
+서버포트 = &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getServerPort&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 8080 --&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 리다이렉트 페이지 이동 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;sendRedirect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_responseSecond&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;jsp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- 파일 불러오기 --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;len&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;FileReader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;파일경로&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">JDBC - Pattern</title><link href="http://localhost:4000/lecture-JDBC-pattern" rel="alternate" type="text/html" title="JDBC - Pattern" /><published>2022-01-25T18:00:00+09:00</published><updated>2022-01-25T18:00:00+09:00</updated><id>http://localhost:4000/lecture-JDBC-pattern</id><content type="html" xml:base="http://localhost:4000/lecture-JDBC-pattern">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
 
@@ -483,7 +599,115 @@
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;default_value&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">W3schools - SQL_DDL</title><link href="http://localhost:4000/w3schools-sql-ddl" rel="alternate" type="text/html" title="W3schools - SQL_DDL" /><published>2022-01-20T18:00:00+09:00</published><updated>2022-01-20T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-ddl</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-ddl">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - PL/SQL / ACCESS DB</title><link href="http://localhost:4000/lecture-SQL-plsql_accessdb" rel="alternate" type="text/html" title="SQL - PL/SQL / ACCESS DB" /><published>2022-01-20T18:00:00+09:00</published><updated>2022-01-20T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-plsql_accessdb</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-plsql_accessdb">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;49일차-수업&quot;&gt;49일차 수업&lt;/h3&gt;
+
+&lt;h3 id=&quot;regexp_like&quot;&gt;REGEXP_LIKE&lt;/h3&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;REGEXP_LIKE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;plsql&quot;&gt;PL/SQL&lt;/h3&gt;
+
+&lt;p&gt;SQL 순차적 처리하기 위한 확장된 언어&lt;/p&gt;
+
+&lt;p&gt;여러 SQL 문장들을 하나의 블록으로 묶어서 한번에 처리하기때문에 성능이 향상됨&lt;/p&gt;
+
+&lt;p&gt;유형&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;익명 블록 : 이름 없이 1회 실행하는 유형&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;프로시저 : 이름이 있고, 반복된 로직을 실행하는 유형&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;함수 : 리턴 개념까지 사용하는 유형&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DECLARE&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- PL/SQL에서 사용하는 모든 변수나 상수를 선언하는 영역&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;변수이름&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- 해당 컬럼의 데이터 타입과 동일하게 선언하고 싶다면 ‘테이블명.컬럼명%TYPE’으로 선언&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;변수이름&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;변수이름&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;기본값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- 순차적으로 실행할 SQL문을 작성하는 영역, 제어문, 반복문, 함수 등등&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;-----------------&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- IF&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건식&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ELSIF&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건식&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;-- 반복문&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건식&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EXIT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;-- FOR&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;FOR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxnum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;EXCEPTION&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;-- 에러가 발생했을 때 처리하는 영역&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-----------------&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;-- 종료 선언&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;PL/SQL 을 통해 실행 시, 세부 실행 내용은 나오지 않고 실행되었는지, 오류났는지만 출력 기본 설정으로 되어있음&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;출력하고싶을 때 : SET serveroutput ON 으로 경로를 재지정해준 다음, DBMS_OUTPUT.PUT_LINE(‘출력할 내용’); 으로 원하는 내용 출력&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jsp-프로젝트에서-오라클-데이터베이스-접근하기&quot;&gt;JSP 프로젝트에서 오라클 데이터베이스 접근하기&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;%@ page &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;contentType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“text/html;charset=UTF-8”&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; language=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“java”%&lt;/span&gt;&amp;gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;import=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“java.sql.*”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%@ page &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;import=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“java.io.*”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;드라이버&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;로딩&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Class.forName&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;oracle.jdbc.OracleDriver&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”);&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;연결&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;객체를&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;선언하고&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;드라이버로부터&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;가져온다&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;conn = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;DriverManager.getConnection(“jdbc:oracle:thin:데이터베이스”,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;계정&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;비밀번호&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”);&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;SQL&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;문장&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;만들기&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sql = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“select&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;SQL&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;문장&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;실행시키기&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ps = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;conn.prepareStatement(sql);&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;반복코드를&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;실행할&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;때&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;한번만&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;처음부터&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;컴파일하고&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;그&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;다음부터는&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;캐시&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Statement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;반복&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;코드를&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;실행할&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;때마다&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;항상&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;처음부터&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;다시&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;만든다&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;호출&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rs = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ps.executeQuery();&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;jdbc&quot;&gt;JDBC&lt;/h3&gt;
+
+&lt;p&gt;자바에서 데이터베이스에 접근하기 위해 만든 API&lt;/p&gt;
+
+&lt;p&gt;위의 과정을 하기 위해서는 데이터베이스에 맞는 jar 파일이 필요함&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_DDL</title><link href="http://localhost:4000/w3schools-sql-ddl" rel="alternate" type="text/html" title="W3schools - SQL_DDL" /><published>2022-01-20T18:00:00+09:00</published><updated>2022-01-20T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-ddl</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-ddl">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -577,115 +801,7 @@
 &lt;span class=&quot;c1&quot;&gt;-- MODIFY&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;MODIFY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">SQL - PL/SQL / ACCESS DB</title><link href="http://localhost:4000/lecture-SQL-plsql_accessdb" rel="alternate" type="text/html" title="SQL - PL/SQL / ACCESS DB" /><published>2022-01-20T18:00:00+09:00</published><updated>2022-01-20T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-plsql_accessdb</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-plsql_accessdb">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;49일차-수업&quot;&gt;49일차 수업&lt;/h3&gt;
-
-&lt;h3 id=&quot;regexp_like&quot;&gt;REGEXP_LIKE&lt;/h3&gt;
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;REGEXP_LIKE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;plsql&quot;&gt;PL/SQL&lt;/h3&gt;
-
-&lt;p&gt;SQL 순차적 처리하기 위한 확장된 언어&lt;/p&gt;
-
-&lt;p&gt;여러 SQL 문장들을 하나의 블록으로 묶어서 한번에 처리하기때문에 성능이 향상됨&lt;/p&gt;
-
-&lt;p&gt;유형&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;익명 블록 : 이름 없이 1회 실행하는 유형&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;프로시저 : 이름이 있고, 반복된 로직을 실행하는 유형&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;함수 : 리턴 개념까지 사용하는 유형&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DECLARE&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- PL/SQL에서 사용하는 모든 변수나 상수를 선언하는 영역&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;변수이름&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- 해당 컬럼의 데이터 타입과 동일하게 선언하고 싶다면 ‘테이블명.컬럼명%TYPE’으로 선언&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;변수이름&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;변수이름&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DEFAULT&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;기본값&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- 순차적으로 실행할 SQL문을 작성하는 영역, 제어문, 반복문, 함수 등등&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;-----------------&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- IF&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건식&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;ELSIF&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건식&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;-- 반복문&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;조건식&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EXIT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;-- FOR&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;FOR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxnum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;
-    &lt;span class=&quot;err&quot;&gt;실행문&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;END&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LOOP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;EXCEPTION&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;-- 에러가 발생했을 때 처리하는 영역&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-----------------&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- 종료 선언&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;PL/SQL 을 통해 실행 시, 세부 실행 내용은 나오지 않고 실행되었는지, 오류났는지만 출력 기본 설정으로 되어있음&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;출력하고싶을 때 : SET serveroutput ON 으로 경로를 재지정해준 다음, DBMS_OUTPUT.PUT_LINE(‘출력할 내용’); 으로 원하는 내용 출력&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;jsp-프로젝트에서-오라클-데이터베이스-접근하기&quot;&gt;JSP 프로젝트에서 오라클 데이터베이스 접근하기&lt;/h3&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;contentType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“text/html;charset=UTF-8”&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;language=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“java”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;import=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“java.sql.*”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%@&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;import=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“java.io.*”%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;드라이버&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;로딩&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;Class.forName&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;oracle.jdbc.OracleDriver&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”);&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;연결&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;객체를&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;선언하고&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;드라이버로부터&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;가져온다&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;Connection&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;conn = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;DriverManager.getConnection(“jdbc:oracle:thin:데이터베이스”,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;계정&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;비밀번호&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”);&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;SQL&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;문장&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;만들기&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sql = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“select&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;emp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”;&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;SQL&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;문장&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;실행시키기&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ps = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;conn.prepareStatement(sql);&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;PreparedStatement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;반복코드를&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;실행할&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;때&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;한번만&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;처음부터&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;컴파일하고&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;그&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;다음부터는&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;캐시&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Statement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;반복&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;코드를&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;실행할&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;때마다&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;항상&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;처음부터&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;다시&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;만든다&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;호출&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;ResultSet&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rs = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ps.executeQuery();&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;jdbc&quot;&gt;JDBC&lt;/h3&gt;
-
-&lt;p&gt;자바에서 데이터베이스에 접근하기 위해 만든 API&lt;/p&gt;
-
-&lt;p&gt;위의 과정을 하기 위해서는 데이터베이스에 맞는 jar 파일이 필요함&lt;/p&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_CASE / PROCEDURE</title><link href="http://localhost:4000/w3schools-sql-case_procedure" rel="alternate" type="text/html" title="W3schools - SQL_CASE / PROCEDURE" /><published>2022-01-19T18:00:00+09:00</published><updated>2022-01-19T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-case_procedure</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-case_procedure">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Spongebob53</name></author><category term="w3schools" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary></entry><entry><title type="html">W3schools - SQL_CASE / PROCEDURE</title><link href="http://localhost:4000/w3schools-sql-case_procedure" rel="alternate" type="text/html" title="W3schools - SQL_CASE / PROCEDURE" /><published>2022-01-19T18:00:00+09:00</published><updated>2022-01-19T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-case_procedure</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-case_procedure">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
@@ -1274,69 +1390,7 @@
       &lt;td style=&quot;text-align: center&quot;&gt;FOREIGN KEY&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">SQL - Subquery</title><link href="http://localhost:4000/lecture-SQL-subquery" rel="alternate" type="text/html" title="SQL - Subquery" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/lecture-SQL-subquery</id><content type="html" xml:base="http://localhost:4000/lecture-SQL-subquery">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;47일차-수업&quot;&gt;47일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;subquery&quot;&gt;Subquery&lt;/h3&gt;
-
-&lt;p&gt;SQL 문장 내에 존재하는 또 다른 SELECT 문장&lt;/p&gt;
-
-&lt;p&gt;쿼리에서 나오는 결과를 이용하여 메인쿼리에 적용을 하고자 할 때 사용하는 것&lt;/p&gt;
-
-&lt;p&gt;서브쿼리를 먼저 실행 후 메인 쿼리를 실행한다&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;가독성을 위해 서브쿼리는 ()로 묶는다&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;메인쿼리의 연산자 오른쪽에 작성한다&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;서브쿼리 종류&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;스칼라 서브쿼리 : SELECT 안 서브쿼리, 보통 단일행 서브쿼리&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;인라인 뷰 : FROM 안 서브쿼리, 보통 다중 컬럼 서브쿼리, 테이블명이 존재 하지 않기 때문에 별칭 필수, 컬럼명이 메인쿼리와 중복되거나 그룹함수를 사용할 경우에도 별칭을 필수로 작성해준다&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;서브쿼리 : WHERE 안 서브쿼리&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;IN, ANY, ALL, EXISTS : 다중행 서브쿼리의 결과를 이용하여 메인 쿼리 내의 활용을 목적으로 함&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;IN : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력 주로 등호 연산자&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ANY : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 만족하면 출력 주로 부등호 연산자&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ALL : 메인 쿼리 비교 조건 중에서 서브 쿼리의 결과가 모두 참이라면 출력&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;EXISTS : 메인 쿼리의 비교 조건 중에서 서브 쿼리의 결과 중 하나라도 일치하면 출력, Row 가 존재하는지만 확인하기 때문에 결과값까지 확인하는 IN 보다 쿼리상의 속도가 빠르다&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_EXISTS / ANY / ALL</title><link href="http://localhost:4000/w3schools-sql-exists_any_all" rel="alternate" type="text/html" title="W3schools - SQL_EXISTS / ANY / ALL" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-exists_any_all</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-exists_any_all">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+&lt;/table&gt;</content><author><name>Spongebob53</name></author><category term="lecture" /><summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary></entry><entry><title type="html">W3schools - SQL_EXISTS / ANY / ALL</title><link href="http://localhost:4000/w3schools-sql-exists_any_all" rel="alternate" type="text/html" title="W3schools - SQL_EXISTS / ANY / ALL" /><published>2022-01-18T18:00:00+09:00</published><updated>2022-01-18T18:00:00+09:00</updated><id>http://localhost:4000/w3schools-sql-exists_any_all</id><content type="html" xml:base="http://localhost:4000/w3schools-sql-exists_any_all">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
 
 &lt;div&gt;
   &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;

@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-jdbc-dao-vo": {
+      "title": "JDBC - DAO / VO",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요53일차 수업DAO와 VOimport java.sql.*;import java.util.*;public class EmpDAO{private static final String dbDriver = “oracle.jdbc.OracleDriver”;private static final String url = “jdbc.oracle:thin:@db주소”;private static final String id = “db 계정”;private static final String pw = “db 암호”;\tprivate EmpDAO instance;\tprivate Connection conn;\tpublic static empDAO getInstance() throws Exception{\t\tif(instance == null){\t\t\tinstance = new EmpDAO();\t\t}\t\tReturn instance;\t}\tprivate EmpDAO() throws Exception{\t\tClass.forName(dbDriver);\t}\tpublic int insert(EmpVO vo) throws Exception{\t\tPreparedStatement ps = null;\t\ttry{\t\t\tint result = 0;\t\t\tconn = DriverManager.getConnection(url,id,pw);\t\t\t\t\t\tString sql = “INSERT INTO emp(empno, ename) VALUES(?,?)”;\t\t\t\t\t\tps = conn.prepareStatement(sql);\t\t\tps.setInt(1, vo.getEmpno());\t\t\tps.setString(2,vo.getEname());\t\t\tresult = ps.executeUpdate();\t\t\treturn result;\t\t}\t// finally 로 ps와 conn 닫기\t}\tpublic List&lt;temp.EmpVO&gt; select() throws Exception {\t\tPreparedStatement ps = null;\t\tResultSet rs = null;\t\tString sql = “SELECT * FROM emp”;\t\tList&lt;EmpVO&gt; eList = new ArrayList();\t\t// 값이 없을 경우 emptyList를 반환해주기 위해 List로 선언,\t\tBoolean isEmpty = true;\t\t// 값이 없을 경우를 구분하기 위한 변수\t\ttry{\t\t\tconn = DriverManager.getConnection(url,id,pw);\t\t\tps = conn.prepareStatement(sql);\t\t\trs = ps.executeQuery();\t\t\t\t\t\twhile (rs.next()){\t\t\t\tisEmpty = false;\t\t\t\tEmpVO e = new EmpVO();\t\t\t\te.setEmpno(rs.getInt(“empno”));\t\t\t\te.setEname(rs.getString(“ename”));\t\t\t\teList.add(e);\t\t\t\t// row당 하나의 클래스를 인스턴스로 만들어 배열에 넣기\t\t\t}\t\t}\t\t\tif(isEmpty){\t\t\t\treturn Collections.emptyList();\t\t\t}\t\t\treturn eList;\t}}Request&lt;!-- 서버의 정보를 얻어오기 --&gt;요청정보 프로토콜 = &lt;%= request.getProtocol() %&gt;&lt;br&gt;&lt;!--HTTP/1.1 --&gt;요청정보 전송방식 = &lt;%= request.getMethod() %&gt;&lt;br&gt;&lt;!-- GET --&gt;요청 URI = &lt;%= request.getRequestURI() %&gt;&lt;br&gt;&lt;!--- /learning_war_exploded/3_objects/01_requestInfo.jsp --&gt;컨텍스트 경로 = &lt;%= request.getContextPath() %&gt;&lt;br&gt;&lt;!-- /learning_war_exploded --&gt;서버이름 = &lt;%= request.getServerName() %&gt;&lt;br&gt;&lt;!-- localhost --&gt;서버포트 = &lt;%= request.getServerPort() %&gt;&lt;br&gt;&lt;!-- 8080 --&gt;&lt;!-- 리다이렉트 페이지 이동 --&gt;&lt;% response.sendRedirect(“04_responseSecond.jsp”); %&gt;&lt;!-- 파일 불러오기 --&gt;&lt;%char[] buff = new char[1024];int len = -1;FileReader fr = new FileReader(“파일경로”);\twhile ((len = fr.read(buff)) != -1){\t\tout.print(new String(buff,0,len));\t}\tfr.close();%&gt;",
+      "url": "/lecture-JDBC-dao_vo"
+  }
+  ,
+  
   "lecture-jdbc-pattern": {
       "title": "JDBC - Pattern",
           "author": "Spongebob53",

@@ -11,7 +11,7 @@
 
 
     <title>
-      Practice - 문자열 내림차순으로 배치하기
+      JDBC - DAO / VO
     </title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -87,30 +87,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="개발 기록" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/practice-string_descending" />
+    <link rel="canonical" href="http://localhost:4000/lecture-JDBC-dao_vo" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Coding Diary" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Practice - 문자열 내림차순으로 배치하기" />
-    <meta property="og:description" content="programmers 바로가기 문제 문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요. s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다. 입출력 예 s return “Zbcdefg” “gfedcbZ” 풀이 import java.util.Arrays; class Solution { public String solution(String s) { String[] arr = new String[s.length()]; for(int" />
-    <meta property="og:url" content="http://localhost:4000/practice-string_descending" />
-    <meta property="og:image" content="http://localhost:4000/assets/built/images/background-practice.png" />
+    <meta property="og:title" content="JDBC - DAO / VO" />
+    <meta property="og:description" content="이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18. 찾으시는 정보가 있으시다면 주제별reference를 이용하시거나 우측 상단에 있는 검색기능을 이용해주세요 53일차 수업 DAO와 VO import java.sql.*; import java.util.*; public class EmpDAO{ private static final String dbDriver = “oracle.jdbc.OracleDriver”; private static final" />
+    <meta property="og:url" content="http://localhost:4000/lecture-JDBC-dao_vo" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/background-lecture.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2021-12-16T18:00:00+09:00" />
-    <meta property="article:modified_time" content="2021-12-16T18:00:00+09:00" />
-    <meta property="article:tag" content="Practice" />
+    <meta property="article:published_time" content="2022-01-26T18:00:00+09:00" />
+    <meta property="article:modified_time" content="2022-01-26T18:00:00+09:00" />
+    <meta property="article:tag" content="Lecture" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Practice - 문자열 내림차순으로 배치하기" />
-    <meta name="twitter:description" content="programmers 바로가기 문제 문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요. s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다. 입출력 예 s return “Zbcdefg” “gfedcbZ” 풀이 import java.util.Arrays; class Solution { public String solution(String s) { String[] arr = new String[s.length()]; for(int" />
+    <meta name="twitter:title" content="JDBC - DAO / VO" />
+    <meta name="twitter:description" content="이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18. 찾으시는 정보가 있으시다면 주제별reference를 이용하시거나 우측 상단에 있는 검색기능을 이용해주세요 53일차 수업 DAO와 VO import java.sql.*; import java.util.*; public class EmpDAO{ private static final String dbDriver = “oracle.jdbc.OracleDriver”; private static final" />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/background-practice.png" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/background-lecture.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Coding Diary" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Practice" />
+    <meta name="twitter:data2" content="Lecture" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -125,18 +125,18 @@
         "name": "Coding Diary",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/practice-string_descending",
+    "url": "http://localhost:4000/lecture-JDBC-dao_vo",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/built/images/background-practice.png",
+        "url": "http://localhost:4000/assets/built/images/background-lecture.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/practice-string_descending"
+        "@id": "http://localhost:4000/lecture-JDBC-dao_vo"
     },
-    "description": "programmers 바로가기 문제 문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요. s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다. 입출력 예 s return “Zbcdefg” “gfedcbZ” 풀이 import java.util.Arrays; class Solution { public String solution(String s) { String[] arr = new String[s.length()]; for(int"
+    "description": "이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18. 찾으시는 정보가 있으시다면 주제별reference를 이용하시거나 우측 상단에 있는 검색기능을 이용해주세요 53일차 수업 DAO와 VO import java.sql.*; import java.util.*; public class EmpDAO{ private static final String dbDriver = “oracle.jdbc.OracleDriver”; private static final"
 }
     </script>
 
@@ -149,7 +149,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Practice - 문자열 내림차순으로 배치하기" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="JDBC - DAO / VO" href="/feed.xml" />
 
   </head>
   <body
@@ -221,98 +221,149 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-practice post tag-practice ">
+        <article class="post-full  tag-lecture post tag-lecture ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="16 December 2021">16 December 2021</time>
+                    <time class="post-full-meta-date" datetime="26 January 2022">26 January 2022</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/practice/'>PRACTICE</a>
+                               <a href='/tag/lecture/'>LECTURE</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Practice - 문자열 내림차순으로 배치하기</h1>
+                <h1 class="post-full-title">JDBC - DAO / VO</h1>
             </header>
 
             <!--
             
-            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-practice.png)">
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-lecture.png)">
             </figure>
             
             -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p><a href="https://programmers.co.kr/">programmers 바로가기</a></p>
+                    <div>이 페이지는 다음에 대한 공부 기록입니다</div>
 
-<h3 id="문제">문제</h3>
+<div><h3>JAVA(자바), Python(파이썬) 기반의</h3></div>
 
-<p>문자열 s에 나타나는 문자를 큰것부터 작은 순으로 정렬해 새로운 문자열을 리턴하는 함수, solution을 완성해주세요.</p>
+<div><h3>AI 활용 응용 소프트웨어 개발자 양성 과정</h3></div>
 
-<p>s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보다 작은 것으로 간주합니다.</p>
+<div style="margin-bottom: 20px">2021.11.10. ~ 2022.05.18.</div>
 
-<p>입출력 예</p>
+<blockquote>
+  <p>찾으시는 정보가 있으시다면<br />
+주제별<a href="./tag/reference/">reference</a>를 이용하시거나<br />
+우측 상단에 있는 검색기능을 이용해주세요</p>
+</blockquote>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">s</th>
-      <th style="text-align: center">return</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">“Zbcdefg”</td>
-      <td style="text-align: center">“gfedcbZ”</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="53일차-수업">53일차 수업</h2>
 
-<h3 id="풀이">풀이</h3>
+<h3 id="dao와-vo">DAO와 VO</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.sql.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
 
-<span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">solution</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">String</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">[</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()];</span>
-        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">i</span> <span class="o">++){</span>
-            <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">i</span><span class="o">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">);</span>
-        <span class="o">}</span>
-        <span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
-        <span class="nc">String</span> <span class="n">answer</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
-        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">--){</span>
-            <span class="n">answer</span> <span class="o">+=</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
-        <span class="o">}</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EmpDAO</span><span class="o">{</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">dbDriver</span> <span class="o">=</span> <span class="err">“</span><span class="n">oracle</span><span class="o">.</span><span class="na">jdbc</span><span class="o">.</span><span class="na">OracleDriver</span><span class="err">”</span><span class="o">;</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="err">“</span><span class="n">jdbc</span><span class="o">.</span><span class="na">oracle</span><span class="o">:</span><span class="nl">thin:</span><span class="nd">@db주소</span><span class="err">”</span><span class="o">;</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">id</span> <span class="o">=</span> <span class="err">“</span><span class="n">db</span> <span class="n">계정</span><span class="err">”</span><span class="o">;</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">String</span> <span class="n">pw</span> <span class="o">=</span> <span class="err">“</span><span class="n">db</span> <span class="n">암호</span><span class="err">”</span><span class="o">;</span>
 
-        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span>
-    <span class="o">}</span>
+	<span class="kd">private</span> <span class="nc">EmpDAO</span> <span class="n">instance</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="nc">Connection</span> <span class="n">conn</span><span class="o">;</span>
+
+	<span class="kd">public</span> <span class="kd">static</span> <span class="n">empDAO</span> <span class="nf">getInstance</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">Exception</span><span class="o">{</span>
+		<span class="k">if</span><span class="o">(</span><span class="n">instance</span> <span class="o">==</span> <span class="kc">null</span><span class="o">){</span>
+			<span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">EmpDAO</span><span class="o">();</span>
+		<span class="o">}</span>
+		<span class="nc">Return</span> <span class="n">instance</span><span class="o">;</span>
+	<span class="o">}</span>
+
+	<span class="kd">private</span> <span class="nf">EmpDAO</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">Exception</span><span class="o">{</span>
+		<span class="nc">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">dbDriver</span><span class="o">);</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">insert</span><span class="o">(</span><span class="nc">EmpVO</span> <span class="n">vo</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span><span class="o">{</span>
+		<span class="nc">PreparedStatement</span> <span class="n">ps</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+		<span class="k">try</span><span class="o">{</span>
+			<span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+			<span class="n">conn</span> <span class="o">=</span> <span class="nc">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">url</span><span class="o">,</span><span class="n">id</span><span class="o">,</span><span class="n">pw</span><span class="o">);</span>
+			
+			<span class="nc">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="err">“</span><span class="no">INSERT</span> <span class="no">INTO</span> <span class="nf">emp</span><span class="o">(</span><span class="n">empno</span><span class="o">,</span> <span class="n">ename</span><span class="o">)</span> <span class="no">VALUES</span><span class="o">(?,?)</span><span class="err">”</span><span class="o">;</span>
+			
+			<span class="n">ps</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">sql</span><span class="o">);</span>
+			<span class="n">ps</span><span class="o">.</span><span class="na">setInt</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">vo</span><span class="o">.</span><span class="na">getEmpno</span><span class="o">());</span>
+			<span class="n">ps</span><span class="o">.</span><span class="na">setString</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="n">vo</span><span class="o">.</span><span class="na">getEname</span><span class="o">());</span>
+
+			<span class="n">result</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">();</span>
+			<span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+		<span class="o">}</span>	<span class="c1">// finally 로 ps와 conn 닫기</span>
+	<span class="o">}</span>
+
+	<span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="n">temp</span><span class="o">.</span><span class="na">EmpVO</span><span class="o">&gt;</span> <span class="nf">select</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+		<span class="nc">PreparedStatement</span> <span class="n">ps</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+		<span class="nc">ResultSet</span> <span class="n">rs</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+
+		<span class="nc">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="err">“</span><span class="no">SELECT</span> <span class="o">*</span> <span class="no">FROM</span> <span class="n">emp</span><span class="err">”</span><span class="o">;</span>
+
+		<span class="nc">List</span><span class="o">&lt;</span><span class="nc">EmpVO</span><span class="o">&gt;</span> <span class="n">eList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">();</span>
+		<span class="c1">// 값이 없을 경우 emptyList를 반환해주기 위해 List로 선언,</span>
+		<span class="nc">Boolean</span> <span class="n">isEmpty</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+		<span class="c1">// 값이 없을 경우를 구분하기 위한 변수</span>
+
+		<span class="k">try</span><span class="o">{</span>
+			<span class="n">conn</span> <span class="o">=</span> <span class="nc">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">url</span><span class="o">,</span><span class="n">id</span><span class="o">,</span><span class="n">pw</span><span class="o">);</span>
+			<span class="n">ps</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="na">prepareStatement</span><span class="o">(</span><span class="n">sql</span><span class="o">);</span>
+			<span class="n">rs</span> <span class="o">=</span> <span class="n">ps</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">();</span>
+			
+			<span class="k">while</span> <span class="o">(</span><span class="n">rs</span><span class="o">.</span><span class="na">next</span><span class="o">()){</span>
+				<span class="n">isEmpty</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+				<span class="nc">EmpVO</span> <span class="n">e</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">EmpVO</span><span class="o">();</span>
+				<span class="n">e</span><span class="o">.</span><span class="na">setEmpno</span><span class="o">(</span><span class="n">rs</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="err">“</span><span class="n">empno</span><span class="err">”</span><span class="o">));</span>
+				<span class="n">e</span><span class="o">.</span><span class="na">setEname</span><span class="o">(</span><span class="n">rs</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="err">“</span><span class="n">ename</span><span class="err">”</span><span class="o">));</span>
+
+				<span class="n">eList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+				<span class="c1">// row당 하나의 클래스를 인스턴스로 만들어 배열에 넣기</span>
+			<span class="o">}</span>
+		<span class="o">}</span>
+			<span class="k">if</span><span class="o">(</span><span class="n">isEmpty</span><span class="o">){</span>
+				<span class="k">return</span> <span class="nc">Collections</span><span class="o">.</span><span class="na">emptyList</span><span class="o">();</span>
+			<span class="o">}</span>
+			<span class="k">return</span> <span class="n">eList</span><span class="o">;</span>
+	<span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
 
-<h3 id="개선점">개선점</h3>
+<h3 id="request">Request</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">[]</span> <span class="n">sol</span> <span class="o">=</span> <span class="n">str</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">();</span>
-<span class="nc">Arrays</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">sol</span><span class="o">);</span>
-<span class="k">return</span> <span class="k">new</span> <span class="nf">StringBuilder</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">sol</span><span class="o">)).</span><span class="na">reverse</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+<div class="language-jsp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 서버의 정보를 얻어오기 --&gt;</span>
+요청정보 프로토콜 = <span class="nt">&lt;%=</span> <span class="n">request</span><span class="o">.</span><span class="na">getProtocol</span><span class="o">()</span> <span class="nt">%&gt;&lt;br&gt;</span><span class="c">&lt;!--HTTP/1.1 --&gt;</span>
+요청정보 전송방식 = <span class="nt">&lt;%=</span> <span class="n">request</span><span class="o">.</span><span class="na">getMethod</span><span class="o">()</span> <span class="nt">%&gt;&lt;br&gt;</span><span class="c">&lt;!-- GET --&gt;</span>
+요청 URI = <span class="nt">&lt;%=</span> <span class="n">request</span><span class="o">.</span><span class="na">getRequestURI</span><span class="o">()</span> <span class="nt">%&gt;&lt;br&gt;</span><span class="c">&lt;!--- /learning_war_exploded/3_objects/01_requestInfo.jsp --&gt;</span>
+컨텍스트 경로 = <span class="nt">&lt;%=</span> <span class="n">request</span><span class="o">.</span><span class="na">getContextPath</span><span class="o">()</span> <span class="nt">%&gt;&lt;br&gt;</span><span class="c">&lt;!-- /learning_war_exploded --&gt;</span>
+서버이름 = <span class="nt">&lt;%=</span> <span class="n">request</span><span class="o">.</span><span class="na">getServerName</span><span class="o">()</span> <span class="nt">%&gt;&lt;br&gt;</span><span class="c">&lt;!-- localhost --&gt;</span>
+서버포트 = <span class="nt">&lt;%=</span> <span class="n">request</span><span class="o">.</span><span class="na">getServerPort</span><span class="o">()</span> <span class="nt">%&gt;&lt;br&gt;</span><span class="c">&lt;!-- 8080 --&gt;</span>
+
+<span class="c">&lt;!-- 리다이렉트 페이지 이동 --&gt;</span>
+<span class="nt">&lt;%</span> <span class="n">response</span><span class="o">.</span><span class="na">sendRedirect</span><span class="o">(</span><span class="err">“</span><span class="mo">04</span><span class="n">_responseSecond</span><span class="o">.</span><span class="na">jsp</span><span class="err">”</span><span class="o">);</span> <span class="nt">%&gt;</span>
+
+<span class="c">&lt;!-- 파일 불러오기 --&gt;</span>
+<span class="nt">&lt;%</span>
+<span class="kt">char</span><span class="o">[]</span> <span class="n">buff</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="mi">1024</span><span class="o">];</span>
+<span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+<span class="nc">FileReader</span> <span class="n">fr</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="err">“</span><span class="n">파일경로</span><span class="err">”</span><span class="o">);</span>
+
+	<span class="k">while</span> <span class="o">((</span><span class="n">len</span> <span class="o">=</span> <span class="n">fr</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buff</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">){</span>
+		<span class="n">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">buff</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="n">len</span><span class="o">));</span>
+	<span class="o">}</span>
+	<span class="n">fr</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="nt">%&gt;</span>
 </code></pre></div></div>
-
-<p>toCharArray() 메소드는 문자열을 한글자씩 쪼개서 char 타입의 배열에 넣어준다</p>
-
-<p>new String(char배열)을 해주면 String으로 만들 수도 있다</p>
-
-<p>String도 클래스! 때문에 String 배열에 연산 등의 변화를 줄 때 인스턴스 생성 등의 불필요한 작업이 생겨 과부하가 올 수 있다</p>
-
-<p>그럴 때 이용하는게 StringBuilder 클래스!</p>
-
-<p>공간을 넉넉하게 만들어 연산 과정에서 새로운 인스턴스를 생성하지 않으면서 변화를 줄 수 있다</p>
-
-<p>끝나고 toString()메소드 거치는 과정 필요</p>
-
-<p>문자열 뒤집어주는 reverse 메소드 제공! String 클래스는 안해줌</p>
 
                 </div>
             </section>
@@ -384,9 +435,9 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'http://localhost:4000/practice-string_descending';
-                            var this_page_identifier = '/practice-string_descending';
-                            var this_page_title = 'Practice - 문자열 내림차순으로 배치하기';
+                            var this_page_url = 'http://localhost:4000/lecture-JDBC-dao_vo';
+                            var this_page_identifier = '/lecture-JDBC-dao_vo';
+                            var this_page_title = 'JDBC - DAO / VO';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
@@ -420,7 +471,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Coding Diary &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/practice/">Practice</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/lecture/">Lecture</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -430,121 +481,25 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
-                                
+                                    
                                   
                                 
                                   
-                                
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-JDBC-pattern">JDBC - Pattern</a></li>
+                                        
+                                    
                                   
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-JDBC-intro">JDBC - Intro / DAO</a></li>
+                                        
+                                    
                                   
                                 
                                   
@@ -555,13 +510,67 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/lecture-SQL-plsql_accessdb">SQL - PL/SQL / ACCESS DB</a></li>
+                                        
+                                    
+                                  
+                                
                                   
                                 
                                   
                                     
                                         
                                         
-                                            <li><a href="/practice-squarestar">Practice - 직사각형 별찍기</a></li>
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
                                         
                                     
                                   
@@ -570,16 +579,12 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/practice-squareroot">Practice - 정수 제곱근 판별</a></li>
-                                        
                                     
                                   
                                 
                                   
                                     
                                         
-                                        
-                                            <li><a href="/practice-makeprime">Practice - 소수 만들기</a></li>
                                         
                                     
                                   
@@ -619,6 +624,209 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
                                 
                                   
                                     
@@ -648,7 +856,89 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
                                 
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                                   
@@ -656,77 +946,18 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/practice/">
+                            <a href="/tag/lecture/">
                                 
-                                    See all 10 posts  →
+                                    See all 46 posts  →
                                 
                             </a>
                         </footer>
@@ -736,63 +967,6 @@ into the {body} of the default.hbs template -->
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
-                
-
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/w3schools-enum">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/background-w3schools.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/w3schools-enum">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">W3schools</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">W3schools - Enum</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>이 페이지는 다음에 대한 공부 기록입니다
-
-
-  W3schools
-
-
-Lecture에서 배웠던 내용을 복습하며 작성했습니다
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/Spongebob53/">Spongebob53</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -800,26 +974,32 @@ Lecture에서 배웠던 내용을 복습하며 작성했습니다
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/practice-squarestar">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/background-practice.png)"></div>
+            <a class="post-card-image-link" href="/lecture-JDBC-pattern">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/practice-squarestar">
+            <a class="post-card-content-link" href="/lecture-JDBC-pattern">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Practice</span>
+                                <span class="post-card-tags">Lecture</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Practice - 직사각형 별찍기</h2>
+                    <h2 class="post-card-title">JDBC - Pattern</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>programmers 바로가기
+                        <p>이 페이지는 다음에 대한 공부 기록입니다
+
+JAVA(자바), Python(파이썬) 기반의
+
+AI 활용 응용 소프트웨어 개발자 양성 과정
+
+2021.11.10. ~ 2022.05.18.
 
 </p>
                     
@@ -861,18 +1041,18 @@ Lecture에서 배웠던 내용을 복습하며 작성했습니다
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Practice - 문자열 내림차순으로 배치하기</div>
+    <div class="floating-header-title">JDBC - DAO / VO</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Practice+-+%EB%AC%B8%EC%9E%90%EC%97%B4+%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C+%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0&amp;url=https://spongebob53.github.iopractice-string_descending"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=JDBC+-+DAO+%2F+VO&amp;url=https://spongebob53.github.iolecture-JDBC-dao_vo"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://spongebob53.github.iopractice-string_descending"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://spongebob53.github.iolecture-JDBC-dao_vo"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
