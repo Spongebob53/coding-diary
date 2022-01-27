@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-jsp-cookie-actiontag": {
+      "title": "JSP - Cookie / Action tag",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요54일차 수업액션태그&lt;jsp:include page=“파일경로”/&gt;&lt;jsp:forward page=“파일경로”/&gt;&lt;jsp:forward page=“파일경로”&gt;&lt;jsp:param name=“name값” value=“value값”&gt;Bean액션 태그 내의 빈이라는 기술을 사용하려면 빈즈의 형태를 가지는 클래스가 존재해야함필수 조건은 private변수, 기본 생성자, getter와 setter 존재변수는 form으로 부터 넘어오는 getParameter(“변수명”)과 동일해야함필수 조건을 맞추면 JSP 액션 태그가 자동으로 변수들을 매칭 시켜준다Ex)&lt;jsp:useBean id=“빈 변수명” class=“클래스 파일”&gt;&lt;jsp:setProperty name=“빈 변수명” property=“매칭하고자 하는 파라미터명”&gt;&lt;/jsp:useBean&gt;&lt;jsp:getProperty property=“해당 변수명(파라미터)” name=“빈 변수명”/&gt;&lt;%= 빈변수명.getName()%&gt;",
+      "url": "/lecture-JSP-cookie_actiontag"
+  }
+  ,
+  
   "lecture-jdbc-dao-vo": {
       "title": "JDBC - DAO / VO",
           "author": "Spongebob53",

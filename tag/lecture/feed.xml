@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-01-26T22:48:35+09:00</updated>
+  <updated>2022-01-27T23:33:38+09:00</updated>
   <id>http://localhost:4000/tag/lecture/feed.xml</id>
 
   
@@ -30,6 +30,79 @@
   
   
 
+  
+    <entry>
+      <title type="html">JSP - Cookie / Action tag</title>
+      <link href="http://localhost:4000/lecture-JSP-cookie_actiontag" rel="alternate" type="text/html" title="JSP - Cookie / Action tag" />
+      <published>2022-01-27T18:00:00+09:00</published>
+      <updated>2022-01-27T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-JSP-cookie_actiontag</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-JSP-cookie_actiontag">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;54일차-수업&quot;&gt;54일차 수업&lt;/h2&gt;
+
+&lt;p&gt;액션태그
+&lt;!-- 페이지 삽입, 해당 위치에 삽입 --&gt;
+&amp;lt;jsp:include page=“파일경로”/&amp;gt;
+&lt;!-- 페이지 이동, 주소는 그대로고 내용만 바꿔줌 --&gt;
+&amp;lt;jsp:forward page=“파일경로”/&amp;gt;
+&lt;!-- param과 같이 사용하기, 파라미터를 지정할 수 있음--&gt;
+&amp;lt;jsp:forward page=“파일경로”&amp;gt;
+&amp;lt;jsp:param name=“name값” value=“value값”&amp;gt;&lt;/p&gt;
+&lt;jsp:forward /&gt;
+
+&lt;p&gt;Bean
+액션 태그 내의 빈이라는 기술을 사용하려면 빈즈의 형태를 가지는 클래스가 존재해야함
+필수 조건은 private변수, 기본 생성자, getter와 setter 존재
+변수는 form으로 부터 넘어오는 getParameter(“변수명”)과 동일해야함
+필수 조건을 맞추면 JSP 액션 태그가 자동으로 변수들을 매칭 시켜준다
+Ex)
+&amp;lt;jsp:useBean id=“빈 변수명” class=“클래스 파일”&amp;gt;
+&amp;lt;jsp:setProperty name=“빈 변수명” property=“매칭하고자 하는 파라미터명”&amp;gt;
+&amp;lt;/jsp:useBean&amp;gt;&lt;/p&gt;
+
+&lt;!-- 값 가져오기 --&gt;
+&lt;p&gt;&amp;lt;jsp:getProperty property=“해당 변수명(파라미터)” name=“빈 변수명”/&amp;gt;
+&lt;!-- 짧아서 getter를 더 자주 씀--&gt;
+&amp;lt;%= 빈변수명.getName()%&amp;gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">JDBC - DAO / VO</title>
@@ -1737,227 +1810,6 @@
 &lt;/table&gt;
 
 &lt;p&gt;NVL(대상컬럼, 변할 값) : 대상 컬럼 담긴 값이 null 이면 변할 값으로 변경시켜주는 함수&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">SQL - Intro</title>
-      <link href="http://localhost:4000/lecture-SQL-intro" rel="alternate" type="text/html" title="SQL - Intro" />
-      <published>2022-01-11T18:00:00+09:00</published>
-      <updated>2022-01-11T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-SQL-intro</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-SQL-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;42일차-수업&quot;&gt;42일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;주석&quot;&gt;주석&lt;/h3&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/*
-*	다중 주석
-*/&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;-- 단일 주석&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;database1&quot;&gt;DataBase1&lt;/h3&gt;
-
-&lt;p&gt;우리가 저장해야하는 정보를 저장하는 공간, 데이터의 집합&lt;/p&gt;
-
-&lt;p&gt;항상 같은 정보를 유지함으로써 식별 가능, 검색이 용이&lt;/p&gt;
-
-&lt;p&gt;활용 : 중복된 정보를 처리하는 것이 목표, 관련성 있는 데이터들끼리의 그룹화&lt;/p&gt;
-
-&lt;p&gt;행과 열, 트리 구조 데이터 베이스 &amp;gt; 관계형 데이터 베이스, 객체 지향 데이터 베이스&lt;/p&gt;
-
-&lt;p&gt;파일로 관리할 경우 중복, 보안, 경제성, 무결성 등의 문제&lt;/p&gt;
-
-&lt;h3 id=&quot;database2&quot;&gt;DataBase2&lt;/h3&gt;
-
-&lt;p&gt;통합 데이터 : 여러 부서에서 사용하는 데이터를 한 곳에 공동 관리&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;동일한 데이터는 중복 허용하지 않고, 검색의 효율성을 위해 최소한의 중복만 허용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;저장 데이터 : 컴퓨터가 접근할 수 있는 저장매체에 저장된 것&lt;/p&gt;
-
-&lt;p&gt;운영 데이터 : 조직의 운영에 기본적으로 반드시 필요한 데이터를 저장하는 것&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;언제나 필요한 정보는 운영 데이터에 저장&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;공용 데이터 : 한 조직의 여러 프로그램들이 공동으로 사용하는 것&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;여러 사용자가 서로 다른 목적으로 공유한다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;database3&quot;&gt;DataBase3&lt;/h3&gt;
-
-&lt;p&gt;실시간 접근성 : 비정형적인 질의를 실시간 처리&lt;/p&gt;
-
-&lt;p&gt;계속적인 변화 : 데이터를 추가, 삭제, 갱신할 때 항상 변하고, 변화된 데이터를 정확하게 유지&lt;/p&gt;
-
-&lt;p&gt;동시 공유 : 같은 내용의 데이터를 여러 사람이 다른 방법을 동시에 공유해야 함&lt;/p&gt;
-
-&lt;p&gt;내용에 의한 참조 : 데이터가 저장 되어있던 메모리,  주소, 위치에 의해서 참조하는 것이 아니라&lt;/p&gt;
-
-&lt;p&gt;사용자가 요구하는 데이터의 내용에 따라 참조&lt;/p&gt;
-
-&lt;h3 id=&quot;용어&quot;&gt;용어&lt;/h3&gt;
-
-&lt;p&gt;DBMS : 데이터 베이스 관리 시스템&lt;/p&gt;
-
-&lt;p&gt;RDBMS : 관계형 데이터 베이스 관리 시스템 : 오라클, MYSQL, MariaDB, MSSQL 등등..&lt;/p&gt;
-
-&lt;p&gt;DBA : 데이터 베이스 관리자, 데이터 베이스를 생성, 변경 관리 제어자&lt;/p&gt;
-
-&lt;p&gt;응용 프로그래머 : 개발자, 인터페이스, 응용프로그램 개발 + 데이터 베이스 설계 + 데이터 저장&lt;/p&gt;
-
-&lt;h3 id=&quot;sql&quot;&gt;SQL&lt;/h3&gt;
-
-&lt;p&gt;Structured Query Language, 프로그래밍이 아닌 조작 명령어&lt;/p&gt;
-
-&lt;p&gt;데이터 베이스 관리(조회, 입력, 수정, 삭제 등)할 때 사용하는 언어&lt;/p&gt;
-
-&lt;p&gt;명령어의 끝은 항상 세미콜론&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;DDL : Data Definition Language, 데이터 정의 언어&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;DML : Data Manipulation Language, 데이터 조작 언어&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;DCL : Data Control Language, 데이터 제어 언어&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터타입&quot;&gt;데이터타입&lt;/h3&gt;
-
-&lt;p&gt;varchar2(m) : 가변 길이 문자 데이터 (4000byte), 크기가 입력한 크기만큼 줄어듬&lt;/p&gt;
-
-&lt;p&gt;char(n) : 고정 길이 문자 데이터 (2000byte), 입력한 크기와 무관하게 크기 고정&lt;/p&gt;
-
-&lt;p&gt;number(p,s) : 숫자만 입력 가능한 데이터 타입 전체 자리(p) 중 소수점 이하 s 자리까지&lt;/p&gt;
-
-&lt;p&gt;DATE, LONG, BLOB, CLOB 있음&lt;/p&gt;
-
-&lt;h3 id=&quot;ddl&quot;&gt;DDL&lt;/h3&gt;
-
-&lt;p&gt;테이블 생성&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;테이블 명으로 첫 글자는 문자, _ $ # 사용가능, 길이 1~30, 예약어는 불가, 소문자와 언더바 이용&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-     &lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;속성&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-     &lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;속성&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;테이블 변경&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;modify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;데이터타입&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 변경대상이 있어야 함&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;컬럼명&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;변경 주의 사항&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;데이터 타입 변경할 수 없음, 기존 데이터의 훼손이 일어남&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;같은 이유로 크기를 늘릴 수 있지만 줄일 수는 없음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;모든 데이터가 null 혹은 행이 존재하지 않는다면 줄이거나 타입을 변경할 수 있음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Default 옵션 : 기본 값을 설정하는 옵션&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Not null 옵션 : 옵션 추가를 하려면 모든 데이터가 null이 없어야 함&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;테이블 삭제&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CONSTRAINTS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 삭제가 되면 복구 불가능 (history 일정 부분 복구 가능)&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CASCADE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;CONSTRAINTS&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 삭제가 되면 복구가 불가능, (history 일정부분 복구 가능), 제약조건과 무관하게 삭제&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;DROP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;테이블명&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;purge&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- 삭제 시에 완전 삭제&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;제약조건&quot;&gt;제약조건&lt;/h3&gt;
-
-&lt;p&gt;가능한 것과 불가능한 것을 구분 짓도록 하는 조건, 제약 조건을 지킨 값만 허용&lt;/p&gt;
-
-&lt;p&gt;NOT NULL : 이 컬럼에는 null이 안됨&lt;/p&gt;
-
-&lt;p&gt;UNIQUE : 이 컬럼은 중복이 안됨&lt;/p&gt;
-
-&lt;p&gt;PRIMARY KEY : null, 중복 허용 안함&lt;/p&gt;
-
-&lt;p&gt;FOREIGN KEY : 나중에 배울 것&lt;/p&gt;
-
-&lt;p&gt;CHECK : 제한적인 입력 처리&lt;/p&gt;
-
-&lt;p&gt;DEFAULT : 제약 조건 아니지만, null로 입력한 값에 자동으로 기본값을 입력&lt;/p&gt;
-
-&lt;h3 id=&quot;dml&quot;&gt;DML&lt;/h3&gt;
-
-&lt;p&gt;조건이 없으면 테이블 내의 모든 데이터에 적용&lt;/p&gt;
-
-&lt;p&gt;조회 : SELECT 컬럼명, 컬럼명… FROM 테이블명 WHERE 조건식&lt;/p&gt;
-
-&lt;p&gt;입력 : INSERT INTO 테이블명(컬럼명, 컬럼명…) VALUES (컬럼값, 컬럼값..)&lt;/p&gt;
-
-&lt;p&gt;수정 : UPDATE 테이블명 SET 컬럼명 = 변경값 WHERE 조건식&lt;/p&gt;
-
-&lt;p&gt;삭제 : DELETE FROM 테이블명 WHERE 조건식&lt;/p&gt;
-
-&lt;h3 id=&quot;commit--현재-상태를-저장하는-명령어&quot;&gt;COMMIT : 현재 상태를 저장하는 명령어&lt;/h3&gt;</content>
 
       
       
