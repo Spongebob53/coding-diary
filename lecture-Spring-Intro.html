@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>
+      Spring - Intro
+    </title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/screen.edited.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/syntax.css"
+    />
+
+    <!-- custom.css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/custom.css"
+    />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--webfont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--syntax.css 추가-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/built/syntax.css"
+    />
+
+    <!-- highlight.js -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+    />
+    <style>
+      .hljs {
+        background: none;
+      }
+    </style>
+
+    <!--[if IE]>
+      <style>
+        p,
+        ol,
+        ul {
+          width: 100%;
+        }
+        blockquote {
+          width: 100%;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="개발 기록" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/lecture-Spring-Intro" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Coding Diary" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Spring - Intro" />
+    <meta property="og:description" content="이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18. 찾으시는 정보가 있으시다면 주제별reference를 이용하시거나 우측 상단에 있는 검색기능을 이용해주세요 61일차 수업 Framework App들의 공통점을 찾아 기본 하부 구조를 제공해 줌 디자인 패턴과 함께 패턴이 적용 된 기반 클래스 라이브러리를 제공" />
+    <meta property="og:url" content="http://localhost:4000/lecture-Spring-Intro" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/background-lecture.png" />
+    <meta property="article:publisher" content="https://www.facebook.com/" />
+    <meta property="article:author" content="https://www.facebook.com/" />
+    <meta property="article:published_time" content="2022-02-08T18:00:00+09:00" />
+    <meta property="article:modified_time" content="2022-02-08T18:00:00+09:00" />
+    <meta property="article:tag" content="Lecture" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Spring - Intro" />
+    <meta name="twitter:description" content="이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18. 찾으시는 정보가 있으시다면 주제별reference를 이용하시거나 우측 상단에 있는 검색기능을 이용해주세요 61일차 수업 Framework App들의 공통점을 찾아 기본 하부 구조를 제공해 줌 디자인 패턴과 함께 패턴이 적용 된 기반 클래스 라이브러리를 제공" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/background-lecture.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Coding Diary" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Lecture" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:creator" content="@" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Coding Diary",
+        "logo": "http://localhost:4000/"
+    },
+    "url": "http://localhost:4000/lecture-Spring-Intro",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:4000/assets/built/images/background-lecture.png",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:4000/lecture-Spring-Intro"
+    },
+    "description": "이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18. 찾으시는 정보가 있으시다면 주제별reference를 이용하시거나 우측 상단에 있는 검색기능을 이용해주세요 61일차 수업 Framework App들의 공통점을 찾아 기본 하부 구조를 제공해 줌 디자인 패턴과 함께 패턴이 적용 된 기반 클래스 라이브러리를 제공"
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="Spring - Intro" href="/feed.xml" />
+
+  </head>
+  <body
+    class="post-template"
+  >
+    <div class="site-wrapper">
+      <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+      <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+  <div class="site-nav-left">
+     
+    <a class="site-nav-logo" href="http://localhost:4000/"
+      >Coding Diary</a
+    >
+       <ul class="nav" role="menu">
+  <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+  <li class="nav-about" role="menuitem">
+    <a href="/about/">About</a>
+  </li>
+  <li class="nav-lecture" role="menuitem">
+    <a href="/tag/lecture/">Lecture</a>
+  </li>
+  <li class="nav-w3schools" role="menuitem">
+    <a href="/tag/w3schools/">W3schools</a>
+  </li>
+  <li class="nav-note" role="menuitem">
+    <a href="/tag/note/">Note</a>
+  </li>
+  <li class="nav-portfolio" role="menuitem">
+    <a href="/tag/portfolio/">Portfolio</a>
+  </li>
+  <li class="nav-reference" role="menuitem">
+    <a href="/tag/reference/">Reference</a>
+  </li>
+  <li class="nav-practice" role="menuitem">
+    <a href="/tag/practice/">Practice</a>
+  </li>
+  <li class="nav-archive" role="menuitem">
+    <a href="/archive.html">All Posts</a>
+  </li>
+  <li class="nav-archive" role="menuitem">
+    <a href="/author_archive.html">Tag별 Posts</a>
+  </li>
+</ul>
+ 
+  </div>
+  <div class="site-nav-right">
+    <div class="social-links">
+       
+    </div>
+    
+    <a class="subscribe-button" href="#subscribe">Search</a>
+    
+  </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-lecture post tag-lecture ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime=" 8 February 2022"> 8 February 2022</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/lecture/'>LECTURE</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">Spring - Intro</h1>
+            </header>
+
+            <!--
+            
+            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-lecture.png)">
+            </figure>
+            
+            -->
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <div>이 페이지는 다음에 대한 공부 기록입니다</div>
+
+<div><h3>JAVA(자바), Python(파이썬) 기반의</h3></div>
+
+<div><h3>AI 활용 응용 소프트웨어 개발자 양성 과정</h3></div>
+
+<div style="margin-bottom: 20px">2021.11.10. ~ 2022.05.18.</div>
+
+<blockquote>
+  <p>찾으시는 정보가 있으시다면<br />
+주제별<a href="./tag/reference/">reference</a>를 이용하시거나<br />
+우측 상단에 있는 검색기능을 이용해주세요</p>
+</blockquote>
+
+<h2 id="61일차-수업">61일차 수업</h2>
+
+<h3 id="framework">Framework</h3>
+
+<p>App들의 공통점을 찾아 기본 하부 구조를 제공해 줌</p>
+
+<p>디자인 패턴과 함께 패턴이 적용 된 기반 클래스 라이브러리를 제공</p>
+
+<h3 id="spring">Spring</h3>
+
+<p>Java enterprise 개발을 편하게 해주는 app 프레임워크</p>
+
+<p>발전</p>
+
+<ol>
+  <li>
+    <p>EJB의 대안으로 소개, IoC(DI), AOP, XML 기반의 빈 정의</p>
+  </li>
+  <li>
+    <p>Spring security, DI 와 MVC를 Annotation 방식 설정</p>
+  </li>
+  <li>
+    <p>RESTful 프레임워크 사용</p>
+  </li>
+  <li>
+    <p>웹소켓</p>
+  </li>
+  <li>
+    <p>리액티브 프로그래밍</p>
+  </li>
+</ol>
+
+<p>주요 프로젝트 및 라이브러리</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">module</th>
+      <th style="text-align: right">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">spring-beans</td>
+      <td style="text-align: right">스프링 컨테이너를 이용해서 객체를 생성하는 기본 기능 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-context</td>
+      <td style="text-align: right">객체 생성, 라이프 사이클 처리, 스키마 확장 등의 기능 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-aop</td>
+      <td style="text-align: right">AOP 기능을 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-web</td>
+      <td style="text-align: right">REST Client, 데이터 변환처리, 서블릿 필터, 파일 업로드 지원등 웹 개발에 필요한 기반 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-webmvc</td>
+      <td style="text-align: right">스프링 기반의 MVC 프레임워크, 웹 앱을 개발하는데 필요한 controller, view 구현 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-websocket</td>
+      <td style="text-align: right">스프링 MVC에서 웹 소켓 연동을 지원</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-oxm</td>
+      <td style="text-align: right">트랜잭션 처리를 위한 추상 레이어를 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-jdbc</td>
+      <td style="text-align: right">jdbc 프로그래밍을 보다 쉽게 할 수 있는 템플릿을 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-orm</td>
+      <td style="text-align: right">하이버네이터,JPA, MyBatis 등과의 연동을 지원</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-jms</td>
+      <td style="text-align: right">JMS 서버와 메세지를 쉽게 주고 받을 수 있도록 하기위한 템플릿,어노테이션 등을 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">spring-context-support</td>
+      <td style="text-align: right">스케줄, 메일 발송, 캐시연동, 벨로시티 등 부가기능을 제공</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>IoC 컨테이너 기능을 제공</p>
+
+<ul>
+  <li>
+    <p>IoC(Invension of Control) : 객체의 생성, 생명주기의 관리까지 모든 객체에 대한 제어권이 바뀜</p>
+  </li>
+  <li>
+    <p>DL과 DI로 분류</p>
+  </li>
+</ul>
+
+<h3 id="di">DI</h3>
+
+<p>Dependency Injection</p>
+
+<p>Setter, Constructor, Method Injection</p>
+
+<p>각 클래스 간의 의존 관계를 bean 설정 정보를 바탕으로 컨테이너가 자동으로 연결해 주는 것</p>
+
+<ul>
+  <li>DL(Dependency Lookup) : 저장소에 저장되어있는 Bean에 접근하기 위해 컨테이너가 제공하는 API를 이용하여 Bean 을 Lookup하는 것, 사용시 컨테이너 종속성이 증가하여 주로 DI 사용</li>
+</ul>
+
+<p>객체 레퍼런스를 컨테이너로부터 주입 받아서, 실행 시에 동적으로 의존관계가 생성</p>
+
+<ul>
+  <li>코드가 단순해지고, 컴포넌트 간의 결합도가 제거 된다</li>
+</ul>
+
+<p>관련용어</p>
+
+<ul>
+  <li>
+    <p>Bean : 스프링이 IoC 방식으로 관리하는 객체, 직접 생성과 제어를 담당</p>
+  </li>
+  <li>
+    <p>BeanFactory : IoC를 담당하는 핵심 컨테이너</p>
+  </li>
+  <li>
+    <p>Application Context : BeanFactory를 확장한 IoC 컨테이너, 스프링의 부가서비스를 추가 제공</p>
+  </li>
+</ul>
+
+<h3 id="bean">Bean</h3>
+
+<p>XML 기반</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;bean&gt;</code> 요소로 Bean을 정의, <code class="language-plaintext highlighter-rouge">&lt;constructor-arg&gt;</code> 나 <code class="language-plaintext highlighter-rouge">&lt;property&gt;</code> 요소로 의존성을 주입</li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- applicationContext.xml 파일 에서--&gt;</span>
+<span class="nt">&lt;beans&gt;</span>
+    <span class="c">&lt;!-- 빈을 생성하는 다양한 방법들 --&gt;</span>
+    <span class="c">&lt;!-- DI : 빈 정의 --&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"ko"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MessageBeanKoImpl"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"en"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MessageBeanEnImpl"</span><span class="nt">/&gt;</span>
+
+    <span class="c">&lt;!-- 생성자의 인자로 빈을 생성--&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"member"</span> <span class="na">class=</span><span class="s">" aDI.firstTime.MemberBean"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;constructor-arg</span> <span class="na">value=</span><span class="s">"홍길국"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;constructor-arg</span> <span class="na">value=</span><span class="s">"23"</span> <span class="na">type=</span><span class="s">"int"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;constructor-arg&gt;</span>
+            <span class="nt">&lt;value&gt;</span>안녕하세요<span class="nt">&lt;/value&gt;</span>
+        <span class="nt">&lt;/constructor-arg&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+
+    <span class="c">&lt;!-- 생성자의 setter를 이용하여 생성--&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"member2"</span> <span class="na">class=</span><span class="s">" aDI.firstTime.MemberBean"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">value=</span><span class="s">"홍길도"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"age"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;value&gt;</span>55<span class="nt">&lt;/value&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"message"</span> <span class="na">value=</span><span class="s">"즐거운 스프링"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+
+    <span class="c">&lt;!--
+    생성자의 인자로 빈을 생성
+    DAO에서 활용할 memberBean의 형태로 만든 빈을 참조하는 방법
+    객체를 참조할때는 ref, 값을 입력할 때는 value
+    --&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"dao1"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MemberDAO"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;constructor-arg</span> <span class="na">ref=</span><span class="s">"member"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"dao2"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MemberDAO"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"member"</span> <span class="na">ref=</span><span class="s">"member2"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"beanList"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.ListBean"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"intList"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;list&gt;</span>
+                <span class="nt">&lt;value&gt;</span>22<span class="nt">&lt;/value&gt;</span>
+                <span class="nt">&lt;value&gt;</span>33<span class="nt">&lt;/value&gt;</span>
+                <span class="nt">&lt;value&gt;</span>44<span class="nt">&lt;/value&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"memberList"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;list&gt;</span>
+                <span class="nt">&lt;ref</span> <span class="na">bean=</span><span class="s">"m1"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;ref</span> <span class="na">bean=</span><span class="s">"m2"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MemberBean"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"m1"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MemberBean"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"m2"</span> <span class="na">class=</span><span class="s">"aDI.firstTime.MemberBean"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/beans&gt;</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;!--</span> <span class="nc">Class</span> <span class="n">에서</span><span class="o">--&gt;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainApp</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// 스프링의 설정파일을 연결</span>
+        <span class="nc">ApplicationContext</span> <span class="n">context</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ClassPathXmlApplicationContext</span><span class="o">(</span><span class="s">"member-context.xml"</span><span class="o">);</span>
+    
+        <span class="c1">// 빈(bean) 객체명은 클래스명과 동일하되 첫글자만 소문자</span>
+        <span class="c1">// 만일 BCyrup 처럼 두번째 글자가 대문자라면 객체명은 소문자 시작이 아닌 BCyrup 동일명으로  </span>
+        <span class="c1">// DI 컨테이너에서 빈 가져오기</span>
+        <span class="nc">MemberDAO</span> <span class="n">dao</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="na">getBean</span><span class="o">(</span><span class="s">"dao"</span><span class="o">,</span> <span class="nc">MemberDAO</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">dao</span><span class="o">.</span><span class="na">insert</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="annotation-기반">Annotation 기반</h3>
+
+<p>@Component 같은 어노테이션이 부여된 클래스를 탐색하여 DI 컨테이너에 빈을 등록</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Component</span> <span class="c1">// memberBean 앞자리 소문자로 해서 만들어 줌</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MemberBean</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">message</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="nd">@Component</span><span class="o">(</span><span class="s">"dao"</span><span class="o">)</span>	<span class="c1">// 이름을 지정할 수도 있음</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MemberDAO</span> <span class="o">{</span>
+
+    <span class="c1">// (3) 필드 기반 의존성 주입 방식</span>
+    <span class="nd">@Autowired</span> <span class="c1">// MemberBean 객체가 있으면 찾아서 주입</span>
+    <span class="kd">private</span> <span class="nc">MemberBean</span> <span class="n">member</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- applicationContext.xml 파일 에서, 컴포넌트 스캔 범위를 설정해줄 수 있다 --&gt;</span>
+<span class="c">&lt;!-- annotation이 붙은 클래스를 탐색하여 DI 컨테이너에 자동으로 등록 --&gt;</span>
+<span class="nt">&lt;context:component-scan</span> <span class="na">base-package=</span><span class="s">"lastlast.aDI"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h3 id="java-기반">Java 기반</h3>
+
+<p>자바 클래스에 @Configuration, 메소드에 @Bean 어노테이션을 사용해 빈을 정의</p>
+
+<p>의존성 주입 어노테이션</p>
+
+<ul>
+  <li>
+    <p>@Autowired : 스프링 제공, 생성자, 메소드, 변수 모두 사용가능 하지만 주로 변수에 설정하여 해당 타입의 객체를 자동으로 할당</p>
+  </li>
+  <li>
+    <p>@Qualifier : 스프링 제공, 특정 객체의 이름으로 의존성 주입할 때 사용</p>
+  </li>
+  <li>
+    <p>@Resource : javax.annotation.Resource, @Autowired 와 @Qualifier 기능을 결합한 역할</p>
+  </li>
+  <li>
+    <p>@Inject : java.inject.Inject, @Autowired와 동일한 기능</p>
+  </li>
+</ul>
+
+<p>@Component를 상속한 어노테이션</p>
+
+<ul>
+  <li>
+    <p>스프링에서 클래스를 분류하기 위해 제공</p>
+  </li>
+  <li>
+    <p>@Service : 비즈니스 로직을 처리하는 Service 클래스</p>
+  </li>
+  <li>
+    <p>@Repository : 데이터베이스 연동을 처리하는 DAO 클래스</p>
+  </li>
+  <li>
+    <p>@Controller : 사용자 요청을 제어하는 Controller 클래스</p>
+  </li>
+</ul>
+
+<h3 id="mvc">MVC</h3>
+
+<p>Model-View-Controller, 아키텍쳐 패턴, 주 목적은 Business 와 Presentation의 logic을 분리, 서로 영향을 최소화해 유지보수를 편리하게 하기 위함</p>
+
+<p>기본 흐름</p>
+
+<ul>
+  <li>
+    <p>클라이언트의 요청이 있으면 -&gt; 컨트롤러가 받아서 -&gt; 모델을 호출하고, 결과를 받아 -&gt; 뷰에게 화면생성을 요청하고 -&gt; 컨트롤러가 결과화면을 받아 클라이언트에게 응답</p>
+  </li>
+  <li>
+    <p>Model : app의 정보(data, Business logic)</p>
+  </li>
+  <li>
+    <p>View : 화면(Presentation logic)</p>
+  </li>
+  <li>
+    <p>Controller : M과 V 사이의 상호 작용 관리</p>
+  </li>
+</ul>
+
+<p>Spring MVC</p>
+
+<ul>
+  <li>
+    <p>DI, AOP, 서블릿 기반의 웹개발을 위한 MVC 프레임 워크 제공</p>
+  </li>
+  <li>
+    <p>주요 구성 요소</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">구성 요소</th>
+      <th style="text-align: right">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">DispatcherServlet</td>
+      <td style="text-align: right">클라이언트의 요청을 받아 Controller에게 전달, 결과값을 View에 전달, 응답 생성</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">HandlerMapping</td>
+      <td style="text-align: right">url과 요청정보를 기준으로 어떤 핸들러 객체를 사용할지 결정하는 객체</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Controller</td>
+      <td style="text-align: right">클라이언트 요청 처리한 뒤, model 호출하고 결과를 DispatcherServlet 에게 알려줌</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ModelAndView</td>
+      <td style="text-align: right">Controller가 처리한 데이터 및 화면에 대한 정보를 보유한 객체</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">View</td>
+      <td style="text-align: right">Controller의 처리 결과 화면에 대한 정보를 보유한 객체</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ViewResolver</td>
+      <td style="text-align: right">Controller가 리턴한 뷰 이름을 기반으로 Controller 처리 결과를 생성할 뷰를 결정</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="db-연결해보기">DB 연결해보기</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- database.properties 파일을 생성해 db정보를 입력해주고 --&gt;
+jdbc.dbDriver = oracle.jdbc.OracleDriver
+jdbc.dbUrl = jdbc:oracle:thin:@ ~~~
+jdbc.dbId = admin
+jdbc.dbPw = 1q2w3e4r5t^Y
+</code></pre></div></div>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- database-context.xml 파일을 생성해 --&gt;</span>
+<span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;beans</span> <span class="na">xmlns=</span><span class="s">"http://www.springframework.org/schema/beans"</span>
+       <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span>
+       <span class="na">xmlns:context=</span><span class="s">"http://www.springframework.org/schema/context"</span>
+       <span class="na">xsi:schemaLocation=</span><span class="s">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- 내가 만든 database에 관한 변수들을 현재 파일에서 사용하겠다--&gt;</span>
+    <span class="nt">&lt;context:property-placeholder</span> <span class="na">location=</span><span class="s">"classpath: database.properties"</span><span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- org.apache.commons.dbcp.BasicDataSource--&gt;</span>
+    <span class="c">&lt;!-- DataSource 설정 DB 와의 연결--&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"dataSource"</span> <span class="na">class=</span><span class="s">"org.apache.commons.dbcp.BasicDataSource"</span> <span class="na">destroy-method=</span><span class="s">"close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"driverClassName"</span> <span class="na">value=</span><span class="s">"${jdbc.dbDriver}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"url"</span> <span class="na">value=</span><span class="s">"${jdbc.dbUrl}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">value=</span><span class="s">"${jdbc.dbId}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">value=</span><span class="s">"${jdbc.dbPw}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+
+    <span class="c">&lt;!-- Spring JDBC 설정--&gt;</span>
+    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"jdbcTemplate"</span> <span class="na">class=</span><span class="s">"org.springframework.jdbc.core.JdbcTemplate"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"dataSource"</span> <span class="na">ref=</span><span class="s">"dataSource"</span><span class="nt">&gt;&lt;/property&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+
+    <span class="c">&lt;!-- 해당 경로에 존재하는 컴포넌트를 스캔하여 bean 객체를 생성--&gt;</span>
+    <span class="nt">&lt;context:component-scan</span> <span class="na">base-package=</span><span class="s">" lastlast.db.board"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/beans&gt;</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// DAO 클래스 파일에서</span>
+<span class="nd">@Repository</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">boardDAOSpring</span> <span class="o">{</span>
+
+    <span class="c1">// SQL 명령어들</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="nc">String</span> <span class="no">BOARD_INSERT</span> <span class="o">=</span> <span class="s">"insert into board(seq, title, writer, content,regdate, cnt) "</span>
+            <span class="o">+</span> <span class="s">" values(board_seq.nextval,?,?,?,sysdate, 0)"</span><span class="o">;</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="kd">private</span> <span class="nc">JdbcTemplate</span> <span class="n">jdbcTemplate</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">insertBoard</span><span class="o">(</span><span class="nc">BoardVO</span> <span class="n">vo</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"==&gt;&gt; JDBC를 통한 insert 기능"</span><span class="o">);</span>
+        <span class="n">jdbcTemplate</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="no">BOARD_INSERT</span><span class="o">,</span><span class="n">vo</span><span class="o">.</span><span class="na">getTitle</span><span class="o">(),</span><span class="n">vo</span><span class="o">.</span><span class="na">getWriter</span><span class="o">(),</span><span class="n">vo</span><span class="o">.</span><span class="na">getContent</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="mybatis-사용해-연결해보기">Mybatis 사용해 연결해보기</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- pom.xml 에 관련 dependency를 추가해준다--&gt;</span>
+<span class="c">&lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis --&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.mybatis<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>mybatis<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>3.4.6<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+
+        <span class="c">&lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring --&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+<span class="nt">&lt;groupId&gt;</span>org.mybatis<span class="nt">&lt;/groupId&gt;</span>
+<span class="nt">&lt;artifactId&gt;</span>mybatis-spring<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;version&gt;</span>1.3.1<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></div></div>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!—mybatis-config.xml 파일을 생성해 --&gt;</span>
+        <span class="cp">&lt;?xml version='1.0' encoding='UTF-8'?&gt;</span>
+        <span class="cp">&lt;!DOCTYPE configuration
+                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span>
+<span class="nt">&lt;configuration&gt;</span>
+<span class="c">&lt;!-- properties 설정--&gt;</span>
+<span class="nt">&lt;properties</span> <span class="na">resource=</span><span class="s">" database.properties"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!--alias 설정--&gt;</span>
+<span class="nt">&lt;typeAliases&gt;</span>
+    <span class="nt">&lt;typeAlias</span> <span class="na">type=</span><span class="s">"com.system.lastlast.A0208.db.board.BoardVO"</span> <span class="na">alias=</span><span class="s">"board"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/typeAliases&gt;</span>
+<span class="c">&lt;!-- dataSource 설정--&gt;</span>
+<span class="nt">&lt;environments</span> <span class="na">default=</span><span class="s">"development"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;environment</span> <span class="na">id=</span><span class="s">"development"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;transactionManager</span> <span class="na">type=</span><span class="s">"JDBC"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;dataSource</span> <span class="na">type=</span><span class="s">"POOLED"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"driver"</span> <span class="na">value=</span><span class="s">"${jdbc.dbDriver}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+            <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"url"</span> <span class="na">value=</span><span class="s">"${jdbc.dbUrl}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+            <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"username"</span> <span class="na">value=</span><span class="s">"${jdbc.dbId}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+            <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">value=</span><span class="s">"${jdbc.dbPw}"</span><span class="nt">&gt;&lt;/property&gt;</span>
+        <span class="nt">&lt;/dataSource&gt;</span>
+    <span class="nt">&lt;/environment&gt;</span>
+<span class="nt">&lt;/environments&gt;</span>
+
+<span class="c">&lt;!--sql mapper 설정--&gt;</span>
+<span class="nt">&lt;mappers&gt;</span>
+    <span class="nt">&lt;mapper</span> <span class="na">resource=</span><span class="s">"board-mapping.xml"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/mappers&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div></div>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- board-mapping.xml 파일을 생성해--&gt;</span>
+<span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="cp">&lt;!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;</span>
+<span class="c">&lt;!-- sql문을 작성해준다--&gt;</span>
+<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">"BoardDAO"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;insert</span> <span class="na">id=</span><span class="s">"insertBoard"</span> <span class="na">parametertype=</span><span class="s">"board"</span><span class="nt">&gt;</span>
+        INSERT INTO board(seq, title, writer, content, regdate, cnt)
+        VALUES (board_seq.nextval, #{title}, #{writer}, #{content}, SYSDATE, 0)
+    <span class="nt">&lt;/insert&gt;</span>
+<span class="nt">&lt;/mapper&gt;</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;!</span><span class="err">—</span><span class="nc">SqlSessionFactoryBean</span> <span class="n">담당하는</span> <span class="n">클래스를</span> <span class="n">하나</span> <span class="n">만들어주고</span><span class="o">--&gt;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SqlSessionFactoryBean</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">SqlSessionFactory</span> <span class="n">sessionFactory</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">sessionFactory</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">Reader</span> <span class="n">reader</span> <span class="o">=</span> <span class="nc">Resources</span><span class="o">.</span><span class="na">getResourceAsReader</span><span class="o">(</span><span class="s">"mybatis-config.xml"</span><span class="o">);</span>
+                <span class="n">sessionFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SqlSessionFactoryBuilder</span><span class="o">().</span><span class="na">build</span><span class="o">(</span><span class="n">reader</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="nc">SqlSession</span> <span class="nf">getSqlSessionInstance</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">sessionFactory</span><span class="o">.</span><span class="na">openSession</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;!</span><span class="err">—</span><span class="no">DAO</span> <span class="n">클래스에서</span><span class="o">--&gt;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BoardDAO</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="nc">SqlSession</span> <span class="n">mybatis</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">BoardDAO</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// 호출한다</span>
+        <span class="n">mybatis</span> <span class="o">=</span> <span class="nc">SqlSessionFactoryBean</span><span class="o">.</span><span class="na">getSqlSessionInstance</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">insertBoard</span><span class="o">(</span><span class="nc">BoardVO</span> <span class="n">vo</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">mybatis</span><span class="o">.</span><span class="na">insert</span><span class="o">(</span><span class="s">"BoardDAO.insertBoard"</span><span class="o">,</span> <span class="n">vo</span><span class="o">);</span>
+        <span class="n">mybatis</span><span class="o">.</span><span class="na">commit</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            <!--
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Coding Diary</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <span id="searchform" method="post" action="/subscribe/" class="">
+  <input class="confirm" type="hidden" name="confirm" />
+  <input class="location" type="hidden" name="location" />
+  <input class="referrer" type="hidden" name="referrer" />
+
+  <div class="form-group">
+    <input
+      class="subscribe-email"
+      onkeyup="myFunc()"
+      id="searchtext"
+      type="text"
+      name="searchtext"
+      placeholder="Search..."
+    />
+  </div>
+  <script type="text/javascript">
+    function myFunc() {
+      if (event.keyCode == 13) {
+        var url = encodeURIComponent($("#searchtext").val());
+        location.href = "/search.html?query=" + url;
+      }
+    }
+  </script>
+</span>
+
+                </section>
+            
+            -->
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/Spongebob53">Spongebob53</a></h4>
+                                
+                                    <p><a href="https://github.com/Spongebob53">Spongebob53 GitHub</a></p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/Spongebob53">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            var this_page_url = 'http://localhost:4000/lecture-Spring-Intro';
+                            var this_page_identifier = '/lecture-Spring-Intro';
+                            var this_page_title = 'Spring - Intro';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://coding-diary53.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/built/images/blog-cover1.png)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Coding Diary &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/lecture/">Lecture</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-Spring-FileUpload">Spring - File Upload</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-Spring-MVC">Spring - MVC</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/lecture-JSP-cookie_actiontag">JSP - Cookie / Action tag</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/lecture/">
+                                
+                                    See all 50 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/lecture-Spring-MVC">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/lecture-Spring-MVC">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Lecture</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Spring - MVC</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>이 페이지는 다음에 대한 공부 기록입니다
+
+JAVA(자바), Python(파이썬) 기반의
+
+AI 활용 응용 소프트웨어 개발자 양성 과정
+
+2021.11.10. ~ 2022.05.18.
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Spongebob53/">Spongebob53</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/lecture-JSP-cookie_actiontag">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/background-lecture.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/lecture-JSP-cookie_actiontag">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Lecture</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">JSP - Cookie / Action tag</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>이 페이지는 다음에 대한 공부 기록입니다
+
+JAVA(자바), Python(파이썬) 기반의
+
+AI 활용 응용 소프트웨어 개발자 양성 과정
+
+2021.11.10. ~ 2022.05.18.
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.png" alt="Spongebob53" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/Spongebob53/">Spongebob53</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      2 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="http://localhost:4000/">
+            
+            <span>Coding Diary</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Spring - Intro</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Spring+-+Intro&amp;url=https://spongebob53.github.iolecture-Spring-Intro"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://spongebob53.github.iolecture-Spring-Intro"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+      <!-- Previous/next page links - displayed on every page -->
+      
+
+      <!-- The footer at the very bottom of the screen -->
+      <footer class="site-footer outer">
+        <div class="site-footer-content inner">
+          <section class="copyright">
+            <a href="http://localhost:4000/">Coding Diary</a>
+            &copy; 2022
+          </section>
+          <section class="poweredby">
+            Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+            <a href="https://pages.github.com/" target="_blank" rel="noopener"
+              >GitHub Pages</a
+            >
+          </section>
+          <nav class="site-footer-nav">
+            <a
+              href="https://github.com/Spongebob53"
+              target="_blank"
+              rel="noopener"
+              >Spongebob53</a
+            >
+             
+            <a href="/">Latest Posts</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+    <div id="subscribe" class="subscribe-overlay">
+      <a class="subscribe-overlay-close" href="#"></a>
+      <div class="subscribe-overlay-content">
+        
+        <h1 class="subscribe-overlay-title">Search Coding Diary</h1>
+        <span id="searchform" method="post" action="/subscribe/" class="">
+  <input class="confirm" type="hidden" name="confirm" />
+  <input class="location" type="hidden" name="location" />
+  <input class="referrer" type="hidden" name="referrer" />
+
+  <div class="form-group">
+    <input
+      class="subscribe-email"
+      onkeyup="myFunc()"
+      id="searchtext"
+      type="text"
+      name="searchtext"
+      placeholder="Search..."
+    />
+  </div>
+  <script type="text/javascript">
+    function myFunc() {
+      if (event.keyCode == 13) {
+        var url = encodeURIComponent($("#searchtext").val());
+        location.href = "/search.html?query=" + url;
+      }
+    }
+  </script>
+</span>
+
+      </div>
+    </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("pre code").each(function (i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
+    </script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/js/jquery.fitvids.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"
+    ></script>
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '296491584', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+     <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+ 
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+  </body>
+</html>
