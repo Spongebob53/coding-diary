@@ -71,6 +71,90 @@
     
       
       <item>
+        <title>W3schools - JSP_Cookie</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 01 Feb 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-cookie</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-cookie</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Form</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 31 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-form</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-form</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Implicit</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 28 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-implicit</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-implicit</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Action</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 27 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-action</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-action</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>JSP - Cookie / Action tag</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -87,6 +171,27 @@
         <link>
         http://localhost:4000/lecture-JSP-cookie_actiontag</link>
         <guid isPermaLink="true">http://localhost:4000/lecture-JSP-cookie_actiontag</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Directive</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 26 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-directive</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-directive</guid>
       </item>
       
     
@@ -113,6 +218,27 @@
     
       
       <item>
+        <title>W3schools - JSP_Elements</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Tue, 25 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-element</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-element</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>JDBC - Pattern</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
@@ -129,6 +255,27 @@
         <link>
         http://localhost:4000/lecture-JDBC-pattern</link>
         <guid isPermaLink="true">http://localhost:4000/lecture-JDBC-pattern</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Intro</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 24 Jan 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-intro</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-intro</guid>
       </item>
       
     

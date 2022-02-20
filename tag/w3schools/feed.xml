@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/w3schools/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-02-13T12:33:43+09:00</updated>
+  <updated>2022-02-20T22:52:21+09:00</updated>
   <id>http://localhost:4000/tag/w3schools/feed.xml</id>
 
   
@@ -30,6 +30,1390 @@
   
   
 
+  
+    <entry>
+      <title type="html">W3schools - JSP_Cookie</title>
+      <link href="http://localhost:4000/w3schools-jsp-cookie" rel="alternate" type="text/html" title="W3schools - JSP_Cookie" />
+      <published>2022-02-01T18:00:00+09:00</published>
+      <updated>2022-02-01T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-cookie</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-cookie">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;cookies&quot;&gt;Cookies&lt;/h3&gt;
+
+&lt;p&gt;Are text files stored on the client computer and they are kept for various information tracking purposes&lt;/p&gt;
+
+&lt;p&gt;JSP transparently supports HTTP cookies using underlying servlet technology&lt;/p&gt;
+
+&lt;p&gt;3 Steps involved in identifying and returning users&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Server script sends a set of cookies to the browser&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Browser stores this information on the local machine for future use&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;When the next time the browser sends any request to the web server then it sends those cookies information to the server and server uses that information to identify the user&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cookies are usually set in an HTTP header (although JS can also set a cookie directly on a browser)&lt;/p&gt;
+
+&lt;p&gt;A JSP that sets a cookie might send headers&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP/1.1 200 OK
+Date: Fri,  18 Feb 2022 11:44:38 GMT
+Server : Apache/1.3.9 (UNIX) PHP / 4.0b3
+Set-Cookie: name = xyz; expires = Friday, 18-Feb-21 12:44:38 GMT;
+Path = /; domain = spongebob53.github.io
+Connection: close
+Content-Type: text/html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Name and value will be URL encoded&lt;/p&gt;
+
+&lt;p&gt;Expires field is an instruction to the browser to forget the cookie after the given time and date&lt;/p&gt;
+
+&lt;p&gt;If the browser is configured to store cookies, it will then keep this information until the expiry date&lt;/p&gt;
+
+&lt;p&gt;If the user points the browser at any page that matches the path and domain of the cookie,&lt;/p&gt;
+
+&lt;p&gt;It will resent the cookie to the server&lt;/p&gt;
+
+&lt;h3 id=&quot;servlet-cookies-method&quot;&gt;Servlet Cookies method&lt;/h3&gt;
+
+&lt;p&gt;setDomain(String pattern) : Sets the domain to which the cookie applies&lt;/p&gt;
+
+&lt;p&gt;getDomain() : Gets the domain to which the cookie applies&lt;/p&gt;
+
+&lt;p&gt;setMaxAge(int expiry) : Sets how much time (in seconds) should elapse before cookies expires. If you don’t set this, the cookie will last only for the current session&lt;/p&gt;
+
+&lt;p&gt;getMaxAge() : Returns the maximum age of the cookie, specified in seconds, By default -1 indicating the cookie will persist until the browser shutdown&lt;/p&gt;
+
+&lt;p&gt;getName() : Returns the name of the cookie. The name can’t be changed after the creation&lt;/p&gt;
+
+&lt;p&gt;setValue(String newValue) : Sets the value associated with the cookie&lt;/p&gt;
+
+&lt;p&gt;getValue() : Gets the value associated with the cookie&lt;/p&gt;
+
+&lt;p&gt;setPath(String uri) : Sets the path to which this cookie applies. If you don’t specify a path, the cookie is returned for all URLs in the same directory as the current page as well as all subdirectories&lt;/p&gt;
+
+&lt;p&gt;getPath() : Gets the path to which this cookie applies&lt;/p&gt;
+
+&lt;p&gt;setSecure(boolean flag) : Sets the Boolean value indicating whether the cookie should only be sent over encrypted(i.e, SSL) connections&lt;/p&gt;
+
+&lt;p&gt;setComment(String purpose) : Specifies a comment that describes a cookie’s purpose. The comment is useful if the browser presents the cookie to the user&lt;/p&gt;
+
+&lt;p&gt;getComment() : Returns the comment describing the purpose of this cookie, or null if the cookies has no comment&lt;/p&gt;
+
+&lt;h3 id=&quot;set-cookies&quot;&gt;Set Cookies&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Creating a Cookie object&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Cookie&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Setting the maximum age&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setMaxAge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Sending the Cookie into the HTTP response headers&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addCookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;reading-cookies&quot;&gt;Reading Cookies&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Cookie&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Get an array of Cookies associated with the this domain&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cookies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getCookies&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookies&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookies&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Name : &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;,  &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Value: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;)+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;);
+        }
+    } else {
+        out.println(&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;No&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cookies&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;founds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;delete-cookies&quot;&gt;Delete Cookies&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Read an already existing cookie and store it in Cookie object&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set cookie age as zero using the setMaxAge() to delete an existing cookie&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Add this cookie back into the response header&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - JSP_Form</title>
+      <link href="http://localhost:4000/w3schools-jsp-form" rel="alternate" type="text/html" title="W3schools - JSP_Form" />
+      <published>2022-01-31T18:00:00+09:00</published>
+      <updated>2022-01-31T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-form</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-form">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;form-processing&quot;&gt;Form processing&lt;/h2&gt;
+
+&lt;h3 id=&quot;get&quot;&gt;Get&lt;/h3&gt;
+
+&lt;p&gt;Sends the encoded user information appended to the page request&lt;/p&gt;
+
+&lt;p&gt;The page and the encoded information are separated by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?&lt;/code&gt; character&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://spongebob53.github.io/lecture?key1=value1&amp;amp;key2=value2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Is the default method to pass information from the browser to the web server and it produces a long string that appears in browser’s Location:box&lt;/p&gt;
+
+&lt;p&gt;If you have password or other sensitive information to pass to the server, it is better not used&lt;/p&gt;
+
+&lt;p&gt;It has size limitation : only 1024 characters can be in a request string&lt;/p&gt;
+
+&lt;p&gt;This information is passed using QUERY_STRING header and will be accessible through QUERY_STRING environment variable which can be handled using getQueryString() and getParameter() methods of request object&lt;/p&gt;
+
+&lt;h3 id=&quot;post&quot;&gt;Post&lt;/h3&gt;
+
+&lt;p&gt;More reliable method of passing information to a backend program&lt;/p&gt;
+
+&lt;p&gt;This method packages the information in exactly the same way as the GET method,&lt;/p&gt;
+
+&lt;p&gt;But instead of sending it as a text string after a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;?&lt;/code&gt; in the URL it sends it as a separate message&lt;/p&gt;
+
+&lt;p&gt;This message comes to the backend program in the form of the standard input which you can parse and use for your processing&lt;/p&gt;
+
+&lt;p&gt;JSP handles this type of requests using getParameter() to read simple parameters and getInputStream() to read binary stream coming from the client&lt;/p&gt;
+
+&lt;h3 id=&quot;reading-form-data&quot;&gt;Reading form data&lt;/h3&gt;
+
+&lt;p&gt;JSP handles form data parsing automatically using the following methods depending on the situation&lt;/p&gt;
+
+&lt;p&gt;getParameter() : Call request.getParameter() to get the value of a form parameter&lt;/p&gt;
+
+&lt;p&gt;getParameterValues() : If the parameter appears more than once and returns multiple values, for example checkbox&lt;/p&gt;
+
+&lt;p&gt;getParameterNames() : If you want a complete list of all parameters in the current request&lt;/p&gt;
+
+&lt;p&gt;getInputStream() : To read binary data stream coming from the client&lt;/p&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;p&gt;Following is an example that passes two values using the HTML FORM and the submit button&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;form&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;action = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;main.jsp&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;method = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Can use ‘post’ --&amp;gt;&lt;/span&gt;
+    First Name: &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;first_name&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    Last Name: &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;last_name&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;submit&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Submit&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The following URL will pass two values to Form program using the GET method&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://spongebob53.github.io/lecture.html?first_name=sponge&amp;amp;last_name=bob&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Below is the main.jsp JSP program to handle input given by web browser&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Using GET Method to Read Form Data&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;First Name:&lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getParameter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;first_name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- output will be “sponge” --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;b&amp;gt;&lt;/span&gt;Last Name:&lt;span class=&quot;nt&quot;&gt;&amp;lt;/b&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getParameter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;last_name&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;	&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- output will be “bob” --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;checkbox&quot;&gt;Checkbox&lt;/h3&gt;
+
+&lt;p&gt;Are used when more than one option is required to be selected&lt;/p&gt;
+
+&lt;p&gt;Uses getParameterNames() method of HttpServletRequest to read all the available form parameters&lt;/p&gt;
+
+&lt;p&gt;This method returns an Enumeration that contains the parameter names in an unspecified order&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;bgcolor = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#949494&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;th&amp;gt;&lt;/span&gt;Param Name&lt;span class=&quot;nt&quot;&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;th&amp;gt;&lt;/span&gt;Param Value(s)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Enumeration&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;paramNames&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getParameterNames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paramNames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hasMoreElements&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;paramName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paramNames&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;nextElement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;td&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; + paramName + &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;td&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;);
+            String paramValue = request.getHeader(paramName);
+            out.println(&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;td&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot; + paramValue + &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;td&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;\&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - JSP_Implicit</title>
+      <link href="http://localhost:4000/w3schools-jsp-implicit" rel="alternate" type="text/html" title="W3schools - JSP_Implicit" />
+      <published>2022-01-28T18:00:00+09:00</published>
+      <updated>2022-01-28T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-implicit</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-implicit">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;implicit-object&quot;&gt;Implicit Object&lt;/h3&gt;
+
+&lt;p&gt;These are the Java object that the JSP container makes available to the developers in each page and the developer can call them directly without being explicitly declared&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Object&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;request&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the HttpServletRequest object associated with the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;response&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the HttpServletResponse object associated with the response to the client&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;out&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the PrintWriter object used to send output to the client&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;session&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the HttpSession object associated with the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;application&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the ServletContext object associated with the application context&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;config&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the ServletConfig object associated with the page&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pageContext&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Encapsulates use of server-specific features like higher performance JspWriters&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;page&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is simply a synonym for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt;, and is used to call the methods defined by the translated servlet class&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Exception&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Allows the exception data to be accessed by designated JSP&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;request&quot;&gt;Request&lt;/h3&gt;
+
+&lt;p&gt;Is an instance of a javax.servlet.http.HttpServletRequest object&lt;/p&gt;
+
+&lt;p&gt;Each time a client requests a page the JSP engine creates a new object to represent that request&lt;/p&gt;
+
+&lt;p&gt;The request provides methods to get the HTTP header information including form data, cookies, HTTP methods…&lt;/p&gt;
+
+&lt;h3 id=&quot;response&quot;&gt;Response&lt;/h3&gt;
+
+&lt;p&gt;Is an instance of a javax.servlet.http.HttpServletResponse object&lt;/p&gt;
+
+&lt;p&gt;Just as the server creates the request object, it also creates an object to represent the response to the client&lt;/p&gt;
+
+&lt;p&gt;The response also defines the interfaces that deal with creating new HTTP headers&lt;/p&gt;
+
+&lt;p&gt;Through this object the JSP programmer can add new cookies or data stamps, HTTP status codes…&lt;/p&gt;
+
+&lt;h3 id=&quot;out&quot;&gt;Out&lt;/h3&gt;
+
+&lt;p&gt;Is an instance of a javax.servlet.jsp.JspWriter object&lt;/p&gt;
+
+&lt;p&gt;Is used to send content in a response&lt;/p&gt;
+
+&lt;p&gt;The initial JspWriter object is instantiated differently depending on whether the page is buffered or not&lt;/p&gt;
+
+&lt;p&gt;Buffering can be easily turned off by using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buffered = ‘false’&lt;/code&gt; attribute of the page directive&lt;/p&gt;
+
+&lt;p&gt;The JspWriter object contains most of the same methods as the java.io.PrintWriter class&lt;/p&gt;
+
+&lt;p&gt;However, JspWriter has some additional methods designed to deal with buffering&lt;/p&gt;
+
+&lt;p&gt;Unlike the PrintWriter object, JspWriter Throws IOExceptions&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;out.print(dataType dt)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Print a data type value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;out.println(dataType dt)&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Print a data type value then terminate the line with new line character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;out.flush()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Flush the stream&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;session&quot;&gt;Session&lt;/h3&gt;
+
+&lt;p&gt;Is an instance of javax.servlet.http.HttpSession&lt;/p&gt;
+
+&lt;p&gt;Behaves exactly the same way that session objects behave under Java Servlets&lt;/p&gt;
+
+&lt;p&gt;Is used to track client session between client requests&lt;/p&gt;
+
+&lt;h3 id=&quot;application&quot;&gt;Application&lt;/h3&gt;
+
+&lt;p&gt;Is direct wrapper around the ServletContext object for the generated Servlet and in reality an instance of a javax.servlet.ServletContext object&lt;/p&gt;
+
+&lt;p&gt;Is a representation of the JSP page through its entire lifecycle&lt;/p&gt;
+
+&lt;p&gt;Is created when the JSP page is initialized and will be removed when the JSP page is removed by the jspDestory() method&lt;/p&gt;
+
+&lt;p&gt;By adding an attribute to application, you can ensure that all JSP files that make up your web application have access to it&lt;/p&gt;
+
+&lt;h3 id=&quot;config&quot;&gt;Config&lt;/h3&gt;
+
+&lt;p&gt;Is an instantiation of javax.servlet.ServletConfig&lt;/p&gt;
+
+&lt;p&gt;Is a direct wrapper around the ServletConfig object for the generated servlet&lt;/p&gt;
+
+&lt;p&gt;Allows the JSP programmer access to the Servlet of JSP engine initialization parameters such as the paths or file locations …&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;config.getServletName();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It returns the servlet name, which is the string contained in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;servlet-name&amp;gt;&lt;/code&gt; element defined in the WEB-INF\web.xml file&lt;/p&gt;
+
+&lt;h3 id=&quot;pagecontext&quot;&gt;PageContext&lt;/h3&gt;
+
+&lt;p&gt;Is an instance of a javax.servlet.jsp.PageContext object&lt;/p&gt;
+
+&lt;p&gt;Is used to represent the entire JSP page&lt;/p&gt;
+
+&lt;p&gt;Is intended as a means to access information about the page while avoiding most of the implementation details&lt;/p&gt;
+
+&lt;p&gt;Stores references to the request and response objects for each request&lt;/p&gt;
+
+&lt;p&gt;Application, config, session and out object are derived by accessing attributes of this object&lt;/p&gt;
+
+&lt;p&gt;Also contains information about the directives issued to the JSP page, including the buffering information, the buffering information, the errorPageURL, and page scope&lt;/p&gt;
+
+&lt;p&gt;PageContext class defines several fields, including PAGE_SCOPE, REQUEST_SCOPE, SESSION_SCOPE, and APPLICATION_SCOPE, which identify the four scopes&lt;/p&gt;
+
+&lt;p&gt;Also supports more than 40 methods, about half of which are inherited from the javax.servlet.jsp.JspContext class&lt;/p&gt;
+
+&lt;h3 id=&quot;page&quot;&gt;Page&lt;/h3&gt;
+
+&lt;p&gt;Is an actual reference to the instance of the page&lt;/p&gt;
+
+&lt;p&gt;It can be thought of as an object that represents the entire JSP page&lt;/p&gt;
+
+&lt;p&gt;Is really a direct synonym for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt; object&lt;/p&gt;
+
+&lt;h3 id=&quot;exception&quot;&gt;Exception&lt;/h3&gt;
+
+&lt;p&gt;Is a wrapper containing the exception thrown from the previous page&lt;/p&gt;
+
+&lt;p&gt;Is used to generate an appropriate response to the error condition&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - JSP_Action</title>
+      <link href="http://localhost:4000/w3schools-jsp-action" rel="alternate" type="text/html" title="W3schools - JSP_Action" />
+      <published>2022-01-27T18:00:00+09:00</published>
+      <updated>2022-01-27T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-action</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-action">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;actions&quot;&gt;Actions&lt;/h3&gt;
+
+&lt;p&gt;Use constructs in XML syntax to control the behavior of the servlet engine&lt;/p&gt;
+
+&lt;p&gt;Can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:action&lt;/span&gt;_name attribute = “value”&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Action elements are basically predefined functions&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Syntax&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Purpose&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:include&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Includes a file at the time the page is requested&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:useBean&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Finds or instances a JavaBean&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:setProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Sets the property of a JavaBean&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:getProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Inserts the property of a JavaBean into the output&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:forward&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Forwards the requester to a new page&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:plugin&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:element&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Defines XML elements dynamically&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:attribute&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Defines dynamically-defined XML element’s attribute&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:body&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Defines dynamically-defined XML element’s body&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:text&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used to write template text in JSP pages and documents&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;common-attribute&quot;&gt;Common Attribute&lt;/h3&gt;
+
+&lt;p&gt;Two attributes that are common to all Action elements : id and scope&lt;/p&gt;
+
+&lt;p&gt;Id&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Uniquely identifies the Action element, and allows the action to be referenced inside the JSP page&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the Action creates an instance of an object, the id value can be used to reference it through the implicit object PageContext&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Scope&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Identifies the lifecycle of the Action element&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Id and Scope are directly related, as the Scope determines the lifespan of the object associated with the id&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Scope has four possible values : page, request, session application&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;include&quot;&gt;Include&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:include &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;page=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“relative&lt;/span&gt; URL” flush=“true”&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Unlike the include directive, which inserts the file at the time the JSP page is translated into a servlet, this action inserts the file at the time the page is requested&lt;/p&gt;
+
+&lt;p&gt;Page : The relative URL of the page to be include&lt;/p&gt;
+
+&lt;p&gt;Flush : The Boolean attribute determine whether the included resource has its buffer flushed before it is included&lt;/p&gt;
+
+&lt;h3 id=&quot;usebean&quot;&gt;useBean&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:useBean &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; class = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“package.class”/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Is quite versatile. It first searches for an existing object utilizing the id and scope variables&lt;/p&gt;
+
+&lt;p&gt;If an object is not found, it then tries to create the specified object&lt;/p&gt;
+
+&lt;p&gt;Once a bean class is loaded, Can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsp:setProperty&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jsp:getProgerty&lt;/code&gt; to modify and retrieve the bean properties&lt;/p&gt;
+
+&lt;p&gt;Class : Designates the full package name of the bean&lt;/p&gt;
+
+&lt;p&gt;Type : Specifies the type of the variable that will refer to the object&lt;/p&gt;
+
+&lt;p&gt;BeanName : Gives the name of the bean as specified by the instantiate () method of the java.beans.Beans class&lt;/p&gt;
+
+&lt;h3 id=&quot;setproperty&quot;&gt;setProperty&lt;/h3&gt;
+
+&lt;p&gt;Sets the properties of a Bean, the Bean must have been previously defined before this action&lt;/p&gt;
+
+&lt;p&gt;In this case, setProperty is executed regardless of whether a new bean was instantiated or an existing bean was found&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:useBean &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”……/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:setProperty &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; property = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“someProperty”…./&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In this case, setProperty is executed only if a new object was instantiated&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:useBean &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”&lt;/span&gt; …… &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:setProperty &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; property = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“someProperty”&lt;/span&gt; ….&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:useBean&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Name : Designates the bean the property of which will be set&lt;/p&gt;
+
+&lt;p&gt;Property : Indicates the property you want to set, A value of “*” means that all request parameters whose names match bean property names will be passed to the appropriate setter methods&lt;/p&gt;
+
+&lt;p&gt;Value : Is to be assigned to the given property, if the parameter’s value is null or does not exist, the setProperty action is ignored&lt;/p&gt;
+
+&lt;p&gt;Param : Is the name of the request parameter whose value the property is to receive&lt;/p&gt;
+
+&lt;h3 id=&quot;getproperty&quot;&gt;getProperty&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:useBean &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”…/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:getProperty &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“name”&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; property = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“someProperty”&lt;/span&gt; .…&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Is used to retrieve the value of a given property and converts it to a string, and finally inserts it into the output&lt;/p&gt;
+
+&lt;h3 id=&quot;forward&quot;&gt;Forward&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:forward &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;page = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“Relative&lt;/span&gt; URL”&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Terminates the action of the current page and forwards the request to another resource such as a static page, another JSP page or a Java Servlet&lt;/p&gt;
+
+&lt;h3 id=&quot;plugin&quot;&gt;Plugin&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:plugin &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;applet&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; codebase = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dirname&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; code = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;MyApplet.class&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; width = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;60&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; height = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;80&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:param &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fontcolor&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; value = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;red&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:param &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;background&quot;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; value = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;black&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:fallback&amp;gt;&lt;/span&gt;
+        Unable to initialize Java Plugin
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:fallback&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:plugin&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Is used to insert Java components into a JSP page&lt;/p&gt;
+
+&lt;p&gt;It determines the type of browser and inserts the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;object&amp;gt;&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;embed&amp;gt;&lt;/code&gt; tags as needed&lt;/p&gt;
+
+&lt;p&gt;If the needed plugin is note present, it downloads the plugin and then executes the Java component&lt;/p&gt;
+
+&lt;p&gt;The Java component can be either and Applet or a JavaBean&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;fallback&amp;gt;&lt;/code&gt; can be used to specify an error string to be sent to the user in case the component fails&lt;/p&gt;
+
+&lt;h3 id=&quot;element-attribute-body&quot;&gt;Element, attribute, body&lt;/h3&gt;
+
+&lt;p&gt;Are used to define XML elements dynamically&lt;/p&gt;
+
+&lt;p&gt;It means that the XML elements can be generated at request time rather than statically at compile time&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:element &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xmlElement&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:attribute &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;xmlElementAttr&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            Value for the attribute
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:attribute&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:body&amp;gt;&lt;/span&gt;
+            Body for XML element
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:element&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- this would produce the following HTML code at run time --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;xmlElement&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlElementAttr = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Value for the attribute&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        Body for XML element
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/xmlElement&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;text&quot;&gt;Text&lt;/h3&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:text&amp;gt;&lt;/span&gt;Template data &lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:text&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can be used to write the template text is JSP pages and documents&lt;/p&gt;
+
+&lt;p&gt;The body of the template can’t contain other elements;&lt;/p&gt;
+
+&lt;p&gt;It can only contain text and EL expressions(EL are explained in a subsequent chapter)&lt;/p&gt;
+
+&lt;p&gt;An alternative is to embed the value in a CDATA section&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:text&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;DTD/xhtml1-strict.dtd&quot;&amp;gt;]]&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:text&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;&lt;/span&gt;jsp:text action&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;books&amp;gt;&amp;lt;book&amp;gt;&amp;lt;jsp:text&amp;gt;&lt;/span&gt;  
+            Welcome to JSP Programming
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:text&amp;gt;&amp;lt;/book&amp;gt;&amp;lt;/books&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - JSP_Directive</title>
+      <link href="http://localhost:4000/w3schools-jsp-directive" rel="alternate" type="text/html" title="W3schools - JSP_Directive" />
+      <published>2022-01-26T18:00:00+09:00</published>
+      <updated>2022-01-26T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-directive</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-directive">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;directive&quot;&gt;Directive&lt;/h3&gt;
+
+&lt;p&gt;Provides directions and instructions to the container, telling it how to handle certain aspects of the JSP processing&lt;/p&gt;
+
+&lt;h3 id=&quot;page&quot;&gt;Page&lt;/h3&gt;
+
+&lt;p&gt;Is used to provide instructions to the container, pertain to the current JSP page&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;%@ page &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;attribute = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“value”%&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&amp;lt;!-- in XML --&amp;gt;
+&amp;lt;jsp:directive.page&lt;/span&gt;&lt;span class=&quot;na&quot;&gt; attribute = &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“value”&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;attribute&quot;&gt;Attribute&lt;/h3&gt;
+
+&lt;p&gt;buffer : Specifies a buffering model for the output stream&lt;/p&gt;
+
+&lt;p&gt;autoFlush : Controls the behavior of the servlet output buffer&lt;/p&gt;
+
+&lt;p&gt;contentType : Defines the character encoding scheme&lt;/p&gt;
+
+&lt;p&gt;errorPage : Defines the URL of another JSP that reports on Java unchecked runtime exceptions&lt;/p&gt;
+
+&lt;p&gt;isErrorPage : Indicates if this JSP page is a URL specified by another JSP page’s errorPage attribute&lt;/p&gt;
+
+&lt;p&gt;extends : Specifies a superclass that the generated servlet must extend&lt;/p&gt;
+
+&lt;p&gt;import : Specifies a list of package or classes for use in the JSP as the Java import statement does for Java classes&lt;/p&gt;
+
+&lt;p&gt;info : Defines a string that can be accessed with the servlet’s getServletInfo() method&lt;/p&gt;
+
+&lt;p&gt;isThreadSafe : Defines the threading model for the generated servlet&lt;/p&gt;
+
+&lt;p&gt;language : Defines the programming language used in the JSP page&lt;/p&gt;
+
+&lt;p&gt;session : Specifies whether or not the JSP page participates in HTTP sessions&lt;/p&gt;
+
+&lt;p&gt;isELIgnored : Specifies whether or not the EL expression within the JSP page will be ignored&lt;/p&gt;
+
+&lt;p&gt;isScriptingEnabled : Determines if the scripting elements are allowed for use&lt;/p&gt;
+
+&lt;h3 id=&quot;the-include-directive&quot;&gt;The include Directive&lt;/h3&gt;
+
+&lt;p&gt;Is used to include a file during the translation phase&lt;/p&gt;
+
+&lt;p&gt;This directive tells the container to merge the content of other external files with the current JSP during the translation phase&lt;/p&gt;
+
+&lt;p&gt;Can code the include directives anywhere in JSP page&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;%@include file = “relative url”&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The filename in the include directive is actually a relative URL&lt;/p&gt;
+
+&lt;p&gt;If just specify a filename with no associated path, JSP compiler assumes that the file is in the same directory&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;jsp:directive.include file = “relative url”&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can write the XML equivalent&lt;/p&gt;
+
+&lt;h3 id=&quot;the-taglib-directive&quot;&gt;The taglib Directive&lt;/h3&gt;
+
+&lt;p&gt;JSP pages API allow to define custom JSP tags that look like HTML or XML tags and a tag lib is a set of user-defined tags that implement custom behavior&lt;/p&gt;
+
+&lt;p&gt;The taglib directive declares that JSP page uses a set of custom tags, identifies the location of the lib, and provides means for identifying the custom tags in JSP page&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;%@ taglib uri = “uri” prefix = “prefixOfTag” &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can write the XML equivalent&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;jsp:directive.taglib uri = “uri” prefix = “prefixOfTag”/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - JSP_Elements</title>
+      <link href="http://localhost:4000/w3schools-jsp-element" rel="alternate" type="text/html" title="W3schools - JSP_Elements" />
+      <published>2022-01-25T18:00:00+09:00</published>
+      <updated>2022-01-25T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-element</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-element">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;elements&quot;&gt;Elements&lt;/h2&gt;
+
+&lt;h3 id=&quot;scriptlet&quot;&gt;Scriptlet&lt;/h3&gt;
+
+&lt;p&gt;Can contain any number of JAVA lang statements, variable or method declarations, or expressing that are valid in the page scripting lang&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Syntax --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fragment&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Can write the XML equivalent --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:scriptlet&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fragment&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:scriptlet&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!--- Any text, HTML or JSP elements you write must be outside the scriptlet --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+	Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Id&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getRemoteAddr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;declaration&quot;&gt;Declaration&lt;/h3&gt;
+
+&lt;p&gt;It declares one or more variables or methods that you can use in Java code later in the JSP file&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Must declare the variable or method before use it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Syntax --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%!&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Declaration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;declaration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;…&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;XML&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;equivalent&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:declaration&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;Code&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fragment&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:declaration&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!--  in jsp --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%!&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%!&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%!&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Circle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Circle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;expression&quot;&gt;Expression&lt;/h3&gt;
+
+&lt;p&gt;JSP expression element contains a scripting lang expression that is evaluated, converted to a String, and inserted where the expression appears in the JSP file&lt;/p&gt;
+
+&lt;p&gt;The expression element can contain any expression that is valid according to the Java lang Specification but you can’t use a semicolon to end an expression&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Syntax --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Can write the XML equivalent --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;jsp:expression&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;expression&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/jsp:expression&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- in jsp --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt; date : &lt;span class=&quot;nt&quot;&gt;&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;util&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toLocalString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;comment&quot;&gt;Comment&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;%-- This is JSP comment --%&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;directive&quot;&gt;Directive&lt;/h3&gt;
+
+&lt;p&gt;Directive affects the overall structure of the servlet class&lt;/p&gt;
+
+&lt;div class=&quot;language-jsp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;%&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;directive&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%@ page &lt;/span&gt;…. &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Defines page-dependent attributes(scripting lang, error page, buffering requirements…) --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%@ include &lt;/span&gt;…. &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- includes a file during the translation phase --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;%@ taglib &lt;/span&gt;…. &lt;span class=&quot;nt&quot;&gt;%&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!--- Declares a tag library, containing custom actions, used in the page --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;action&quot;&gt;Action&lt;/h3&gt;
+
+&lt;p&gt;It uses constructs in XML syntax to control the behavior of the servlet engine&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;jsp:action_name attribute=“value”&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Action elements are basically predefined functions&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Syntax&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Purpose&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:include&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Include a file at the time the page is requested&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:useBean&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Finds or instantiates a JavaBean&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:setProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Sets the property of a JavaBean&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:getProperty&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Inserts the property of a JavaBean into the output&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:forward&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Forwards the requester to a new page&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:plugin&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:element&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Defines XML elements dynamically&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:attribute&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Defines dynamically-defined XML element’s attribute&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:body&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Defines dynamically-defined XML element’s body&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;jsp:text&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used to write template text in JSP pages and documents&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;implicit-object&quot;&gt;Implicit Object&lt;/h3&gt;
+
+&lt;p&gt;JSP supports nine automatically defined variables, which are also called implicit&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Object&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;request&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the HttpServletRequest object associated with the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;response&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the HttpServletResponse object associated with the response to the client&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;out&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the PrintWriter object used to send output to the client&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;session&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the HttpSession object associated with the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;application&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the ServletContext object associated with the application context&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;config&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Is the ServletConfig object associated with the page&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pageContext&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Encapsulates use of server-specific features like higher performance JspWriters&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;page&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;This is simply a synonym for this, and is used to call the methods defined by the translated servlet class&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Exception&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;It is allows the exception data to be accessed by designated JSP&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;control-flow&quot;&gt;Control-Flow&lt;/h3&gt;
+
+&lt;p&gt;Can use all the APIs and building blocks of Java in JSP programming including decision-making statements, loops&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">W3schools - JSP_Intro</title>
+      <link href="http://localhost:4000/w3schools-jsp-intro" rel="alternate" type="text/html" title="W3schools - JSP_Intro" />
+      <published>2022-01-24T18:00:00+09:00</published>
+      <updated>2022-01-24T18:00:00+09:00</updated>
+      <id>http://localhost:4000/w3schools-jsp-intro</id>
+      <content type="html" xml:base="http://localhost:4000/w3schools-jsp-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;jsp&quot;&gt;JSP&lt;/h3&gt;
+
+&lt;p&gt;JSP(Java Server Pages) is a server-side programming technology that enables platform-independent method for building Web-based app&lt;/p&gt;
+
+&lt;p&gt;This helps developers insert java code in HTML pages by making use of special JSP tags, most of which start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;%&lt;/code&gt; and end with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Have access to the entire family of Java APIs, including the JDBC API to access enterprise DB&lt;/p&gt;
+
+&lt;p&gt;Is a type of Java servlet that is designed to fulfill the role of a UI for a Java web app&lt;/p&gt;
+
+&lt;p&gt;Using JSP, can collect input from users through Webpage forms, present records from a DB or another source&lt;/p&gt;
+
+&lt;p&gt;Can be used for a variety of purpose, sush as information from a DB or registering user preferences, accessing JavaBeans components, passing control between pages, and sharing information between requests, pages&lt;/p&gt;
+
+&lt;h3 id=&quot;why-to-learn-jsp&quot;&gt;Why to learn JSP?&lt;/h3&gt;
+
+&lt;p&gt;JSP often serve the same purpose as programs implemented using the CGI(Common Gateway Interface)&lt;/p&gt;
+
+&lt;p&gt;But JSP offers several advantages in comparison with the CGI&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Performance is significantly better than JSP allows embedding Dynamic Elements in HTML Pages itself instead of having separate CGI files&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JSP are always compiled before they are processed by the server unlike CGI/Perl which requires the server to load an interpreter and the target script each time the page is requested&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JavaServer Pages are built on top of the Java Servlets API, JSP also has access to all the powerful Enterprise Java APIs, including JDBC, JNDI, EJB, JAXP&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JSP pages can be used in combination with servlets that handle the business logic, the model supported by Java servlet template engines&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, JSP is an integral part of Java EE, a complete platform for enterprise class applications&lt;/p&gt;
+
+&lt;h3 id=&quot;environment-setup&quot;&gt;Environment Setup&lt;/h3&gt;
+
+&lt;p&gt;Setting up List&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JDK, Web server(Tomcat), CLASS PATH(must identify the servlet classes to the compiler)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;architecture&quot;&gt;Architecture&lt;/h3&gt;
+
+&lt;p&gt;The web server needs a JSP engine(i.e, a container to process JSP pages)&lt;/p&gt;
+
+&lt;p&gt;The JSP container is responsible for intercepting requests for JSP pages&lt;/p&gt;
+
+&lt;p&gt;JSP container works with the Web server to provide the runtime environment and other services a JSP needs&lt;/p&gt;
+
+&lt;h3 id=&quot;jsp-processing&quot;&gt;JSP processing&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;As with normal page, browser sends and HTTP request to the web server&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The web server recognizes that the HTTP request is for a JSP page and forwards it to a JSP engine&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is done by using the URL or JSP page which ends with .jsp instead of .html&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The JSP engine loads the JSP page from disk and converts it into a servlet content&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The conversion is simple in which all template text is converted to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;println()&lt;/code&gt; and all JSP elements are converted to Java code&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This code implements the corresponding dynamic behavior of the page&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The JSP engine compiles the servlet into a executable class and forwards the original request to a servlet engine&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;A part of the web server called the servlet engine loads the Servlet class and executes it&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;During execution, the servlet produces an output in HTML format&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The output is further passed on to the web server by the servlet engine inside an HTTP response&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The web server forwards the HTTP response to your browser in terms of static  HTML content&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finally, the web browser handles the dynamically-generated HTML page inside the HTTP response exactly as if it were a static page&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;lifecycle&quot;&gt;Lifecycle&lt;/h3&gt;
+
+&lt;p&gt;Compilation -&amp;gt; Initialization -&amp;gt; Execution -&amp;gt; Cleanup&lt;/p&gt;
+
+&lt;h3 id=&quot;compilation&quot;&gt;Compilation&lt;/h3&gt;
+
+&lt;p&gt;When a browser asks for a JSP, the JSP engine first checks to see whether it needs to compile the page&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If the page has never been compiled, of if the JSP has been modified since it was last compiled, the JSP engine compiles the page&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Process&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Parsing the JSP -&amp;gt; Turning the JSP into a servlet -&amp;gt; Compiling the servlet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;initialization&quot;&gt;Initialization&lt;/h3&gt;
+
+&lt;p&gt;When a container loads a JSP it invokes the jspInit() method before servicing any requests&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you need to perform JSP-specific initialization, override the jspInit()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Typically, it is performed only once and as with the servlet init method&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You generally initialize DB connections, open files, and create lookup tables in the jspInit method&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;execution&quot;&gt;Execution&lt;/h3&gt;
+
+&lt;p&gt;Represents all interactions with requests until the JSP is destroyed&lt;/p&gt;
+
+&lt;p&gt;Whenever a browser requests JSP and the page has been loaded and initialized&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JSP engine invokes the _jspService() method in the JSP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_jspService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;HttpServletRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HttpServletResponse&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Service handling code..&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;_jspService() of a JSP is invoked on request basis&lt;/p&gt;
+
+&lt;p&gt;This is responsible for generating the response for that request and this method is also responsible for generating responses to all seven of the HTTP methods, i.e, GET,POST,DELETE&lt;/p&gt;
+
+&lt;h3 id=&quot;cleanup&quot;&gt;Cleanup&lt;/h3&gt;
+
+&lt;p&gt;Destruction phase of the JSP life cycle represents when a JSP is being removed from use by a container&lt;/p&gt;
+
+&lt;p&gt;JspDestroy() method is the JSP equivalent of the destroy method for servlet&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Override jspDestroy when you need to perform any cleanup&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Such as releasing DB connections or closing open files&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;jspDestroy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Your cleanup code goes here&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="w3schools" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">W3schools - SQL_INDEX / VIEW</title>
@@ -441,946 +1825,6 @@
 &lt;span class=&quot;c1&quot;&gt;-- MODIFY&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;ALTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;MODIFY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datatype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_CASE / PROCEDURE</title>
-      <link href="http://localhost:4000/w3schools-sql-case_procedure" rel="alternate" type="text/html" title="W3schools - SQL_CASE / PROCEDURE" />
-      <published>2022-01-19T18:00:00+09:00</published>
-      <updated>2022-01-19T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-case_procedure</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-case_procedure">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;select-into&quot;&gt;SELECT INTO&lt;/h3&gt;
-
-&lt;p&gt;Copies data from one table into a new table&lt;/p&gt;
-
-&lt;p&gt;The new table will be created with the column-names and types as defined in the old table&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You can create new column names using the AS clause&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Syntax&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newtable&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;externaldb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oldtable&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;insert-into-select&quot;&gt;INSERT INTO SELECT&lt;/h3&gt;
-
-&lt;p&gt;Copies data from one table and inserts it into another table&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The existing records in the target table are unaffected&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Requires that the data types in source and target tables match&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Syntax&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;case&quot;&gt;CASE&lt;/h3&gt;
-
-&lt;p&gt;Goes through conditions and returns a value when the first condition is met&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Like an if-then-else statement&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once a condition is true, it will stop reading and return the result&lt;/p&gt;
-
-&lt;p&gt;If no conditions are true, it returns the value in the ELSE clause&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If there is no ELSE part and no conditions are true, it returns NULL&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CASE&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;THEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ELSE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;result&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;null-function&quot;&gt;NULL Function&lt;/h3&gt;
-
-&lt;p&gt;Lets you return an alternative value when an expression is NULL&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;NVL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alternative&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;procedure&quot;&gt;PROCEDURE&lt;/h3&gt;
-
-&lt;p&gt;A stored procedure is a prepared SQL code that you can save, so the code can be reused&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Stored procedure&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;PROCEDURE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;procedure_name&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parameter_name1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter_type1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;IS&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;var_name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var_type&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;BEGIN&lt;/span&gt;   
-    &lt;span class=&quot;n&quot;&gt;sql_statement&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;END&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;-- Execute a stored procedure&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;EXEC&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;procedure_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;comments&quot;&gt;Comments&lt;/h3&gt;
-
-&lt;p&gt;Are used to explain sections of SQL statements, or to prevent execution of SQL statements&lt;/p&gt;
-
-&lt;p&gt;Single line comments&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;It start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Any text between – and the end of the line will be ignored&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Multi-line comments&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;It start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; and end with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Any text between &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*/&lt;/code&gt; will be ignored&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_EXISTS / ANY / ALL</title>
-      <link href="http://localhost:4000/w3schools-sql-exists_any_all" rel="alternate" type="text/html" title="W3schools - SQL_EXISTS / ANY / ALL" />
-      <published>2022-01-18T18:00:00+09:00</published>
-      <updated>2022-01-18T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-exists_any_all</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-exists_any_all">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;exists&quot;&gt;EXISTS&lt;/h3&gt;
-
-&lt;p&gt;Is used to test for the existence of any record in a subquery&lt;/p&gt;
-
-&lt;p&gt;Returns TRUE if the subquery returns one or more records&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;EXISTS&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;any--all&quot;&gt;ANY / ALL&lt;/h3&gt;
-
-&lt;p&gt;Allow to perform a comparison between a single column value and a range of other values&lt;/p&gt;
-
-&lt;h3 id=&quot;any&quot;&gt;ANY&lt;/h3&gt;
-
-&lt;p&gt;Means that the condition will be true if the operation is true for any of the values in the range&lt;/p&gt;
-
-&lt;p&gt;Returns TRUE if ANY of the subquery values meet the condition&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ANY&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;all&quot;&gt;ALL&lt;/h3&gt;
-
-&lt;p&gt;Means that the condition will be true only if the operation is true for all values in the range&lt;/p&gt;
-
-&lt;p&gt;Is used with SELECT, WHERE and HAVING statements&lt;/p&gt;
-
-&lt;p&gt;Returns TRUE if ALL of the subquery values meet the condition&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- with WHERE or HAVING&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;operator&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_UNION / GROUP BY</title>
-      <link href="http://localhost:4000/w3schools-sql-union_groupby" rel="alternate" type="text/html" title="W3schools - SQL_UNION / GROUP BY" />
-      <published>2022-01-17T18:00:00+09:00</published>
-      <updated>2022-01-17T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-union_groupby</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-union_groupby">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;union&quot;&gt;UNION&lt;/h3&gt;
-
-&lt;p&gt;Is used to combine the result-set two or more SELECT statements&lt;/p&gt;
-
-&lt;p&gt;Every SELECT statement within UNION must have same number of columns&lt;/p&gt;
-
-&lt;p&gt;The columns must also have similar data types&lt;/p&gt;
-
-&lt;p&gt;The columns in every SELECT statement must be also be in the same order&lt;/p&gt;
-
-&lt;p&gt;The column names in the result-set are usually equal to the column names in the first SELECT statement&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- UNION selects only distinct values by default. To allow duplicate values, use ALL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;UNION&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ALL&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;group-by&quot;&gt;GROUP BY&lt;/h3&gt;
-
-&lt;p&gt;Groups rows that have the same values into summary rows&lt;/p&gt;
-
-&lt;p&gt;Is often used with aggregate functions(like COUNT(), AVG(),..) to group the result-set by one or more columns&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;having&quot;&gt;HAVING&lt;/h3&gt;
-
-&lt;p&gt;Was added to SQL because the WHERE keyword cannot be used with aggregate functions&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conlumn_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;HAVING&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_JOIN</title>
-      <link href="http://localhost:4000/w3schools-sql-join" rel="alternate" type="text/html" title="W3schools - SQL_JOIN" />
-      <published>2022-01-17T18:00:00+09:00</published>
-      <updated>2022-01-17T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-join</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-join">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;join&quot;&gt;JOIN&lt;/h3&gt;
-
-&lt;p&gt;Is used to combine rows from two or more tables, based on a related column between them&lt;/p&gt;
-
-&lt;p&gt;(INNER) JOIN : Returns records that have matching values in both tables&lt;/p&gt;
-
-&lt;p&gt;LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table&lt;/p&gt;
-
-&lt;p&gt;RIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the table left table&lt;/p&gt;
-
-&lt;p&gt;FULL (OUTER) JOIN : Returns all records when there is a match in either left or right table&lt;/p&gt;
-
-&lt;h3 id=&quot;inner-join&quot;&gt;INNER JOIN&lt;/h3&gt;
-
-&lt;p&gt;Selects records that have matching values in both tables&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;left-join&quot;&gt;LEFT JOIN&lt;/h3&gt;
-
-&lt;p&gt;Returns all records from the left table (table1), and the matching records from the right table(table2)&lt;/p&gt;
-
-&lt;p&gt;The result is 0 records from the right side, if there is no match&lt;/p&gt;
-
-&lt;p&gt;In some databases LEFT JOIN is called LEFT OUTER JOIN&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;LEFT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;full-join&quot;&gt;FULL JOIN&lt;/h3&gt;
-
-&lt;p&gt;Returns all matching records from both tables whether the other table matches or not&lt;/p&gt;
-
-&lt;p&gt;Can potentially return very large result-sets&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FULL&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OUTER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- FULL OUTER JOIN and FULL JOIN are the same&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;self-join&quot;&gt;Self JOIN&lt;/h3&gt;
-
-&lt;p&gt;Is a regular join, but the table is joined with itself&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T2&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_LIKE / Alias</title>
-      <link href="http://localhost:4000/w3schools-sql-like_alias" rel="alternate" type="text/html" title="W3schools - SQL_LIKE / Alias" />
-      <published>2022-01-13T18:00:00+09:00</published>
-      <updated>2022-01-13T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-like_alias</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-like_alias">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;like&quot;&gt;LIKE&lt;/h3&gt;
-
-&lt;p&gt;Is used in a WHERE clause to search for a specified pattern in a column&lt;/p&gt;
-
-&lt;p&gt;Two wildcards often used in conjunction with the LIKE operator&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;The percent sign(%) represents zero, one, or multiple characters&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The underscore sign(_) represents on, single character&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Can also be used in combinations&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columnN&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;wild-card&quot;&gt;Wild card&lt;/h3&gt;
-
-&lt;p&gt;Is used to substitute one or more chars in a string&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Symbol&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Desc&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;%&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Represents zero or more chars&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;_&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Represents a single char&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;[]&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Represents any single char within the brackets&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;^&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Represents any char not in the brackets&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Represents any single char within the specified range&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Pattern&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Desc&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘a%’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘%a’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that end with “a”&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘%a%’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that have “a” in any position&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘_a%’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that have “a” in the second position&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘a_%’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a” and are at least 2 chars in length&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘a__%’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a” and are at least 3 chars in length&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;‘a%o’&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;Find values that start with “a” and ends with “o”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;in&quot;&gt;IN&lt;/h3&gt;
-
-&lt;p&gt;Allows to specify multiple values in a WHERE clause&lt;/p&gt;
-
-&lt;p&gt;Is shorthand for multiple OR conditions&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- or&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;IN&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;STATEMENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;between&quot;&gt;BETWEEN&lt;/h3&gt;
-
-&lt;p&gt;Selects values within a given range. The values cans be numbers, text, or dates&lt;/p&gt;
-
-&lt;p&gt;Is inclusive: begin and end values are included&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BETWEEN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;alias&quot;&gt;Alias&lt;/h3&gt;
-
-&lt;p&gt;Is used to give a table, or a column in a table, a temporary name&lt;/p&gt;
-
-&lt;p&gt;Only exists for the duration of that query&lt;/p&gt;
-
-&lt;p&gt;Is created with the AS keyword&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alias_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It requires double quotation marks or square brackets if the alias name contains spaces&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Creates an alias named “Address” that combine four columns&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Address&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PostalCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;City&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Country&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Address&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Alias for tables&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OrderDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Customers&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Orders&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Around&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Horn&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustomerID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CustormerID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_INSERT / Math_Function</title>
-      <link href="http://localhost:4000/w3schools-sql-insert_mathfunc" rel="alternate" type="text/html" title="W3schools - SQL_INSERT / Math_Function" />
-      <published>2022-01-12T18:00:00+09:00</published>
-      <updated>2022-01-12T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-insert_mathfunc</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-insert_mathfunc">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;insert-into&quot;&gt;INSERT INTO&lt;/h3&gt;
-
-&lt;p&gt;Is used to insert new records in a table&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;-- Specify both the column names and the values to be inserted&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colum2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;--- If add values for all the columns of the table, do not need to specify the column names in the SQL query&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INTO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;VALUES&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;null&quot;&gt;NULL&lt;/h3&gt;
-
-&lt;p&gt;A field with a NULL is a field with no value&lt;/p&gt;
-
-&lt;p&gt;If a field in a table is optional, it is possible to insert a new record or update a record without adding a value to this field&lt;/p&gt;
-
-&lt;p&gt;Then, the field will be saved with a NULL value&lt;/p&gt;
-
-&lt;p&gt;It is different from a zero value or a field that contains space&lt;/p&gt;
-
-&lt;p&gt;A field with a NULL value is one that has been left blank during record creation&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NULL&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IS NOT NULL&lt;/code&gt; operator can test for NULL values&lt;/p&gt;
-
-&lt;h3 id=&quot;update&quot;&gt;UPDATE&lt;/h3&gt;
-
-&lt;p&gt;Is used to modify the existing records in a table&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;UPDATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;delete&quot;&gt;DELETE&lt;/h3&gt;
-
-&lt;p&gt;Is used to delete existing records in a table&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;DELETE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;select-top&quot;&gt;SELECT TOP&lt;/h3&gt;
-
-&lt;p&gt;Is used to specify the number of records to return&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FETCH&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FIRST&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ROWS&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ONLY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Can use `PERCENT` instead of number ex) 50 PERCENT&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;min--max&quot;&gt;MIN() / MAX()&lt;/h3&gt;
-
-&lt;p&gt;Return the smallest / largest value of the seleted column&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;MIN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;column_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;-- vice versa&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;count--avg--sum&quot;&gt;COUNT() / AVG() / SUM()&lt;/h3&gt;
-
-&lt;p&gt;COUNT() : returns the number of rows that matches a specified criterion&lt;/p&gt;
-
-&lt;p&gt;AVG() : returns the average value of a numeric column&lt;/p&gt;
-
-&lt;p&gt;SUM() : returns the total sum of a numeric column&lt;/p&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="w3schools" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 W3schools Lecture에서 배웠던 내용을 복습하며 작성했습니다</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">W3schools - SQL_SELECT / WHERE</title>
-      <link href="http://localhost:4000/w3schools-sql-select_where" rel="alternate" type="text/html" title="W3schools - SQL_SELECT / WHERE" />
-      <published>2022-01-11T18:00:00+09:00</published>
-      <updated>2022-01-11T18:00:00+09:00</updated>
-      <id>http://localhost:4000/w3schools-sql-select_where</id>
-      <content type="html" xml:base="http://localhost:4000/w3schools-sql-select_where">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;select&quot;&gt;SELECT&lt;/h3&gt;
-
-&lt;p&gt;Is used to select data from a database&lt;/p&gt;
-
-&lt;p&gt;The data returned is stored in a result table, called the result-set&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colum1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- if you want to select all the fields available in the table&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;select-distinct&quot;&gt;SELECT DISTINCT&lt;/h3&gt;
-
-&lt;p&gt;Is used to return only distinct values&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Can count, It is not supported in MS Access&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Is the workaround for MS Access&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Distinctcolumn1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;DISTINCT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;where&quot;&gt;WHERE&lt;/h3&gt;
-
-&lt;p&gt;Is used filter records&lt;/p&gt;
-
-&lt;p&gt;Is used to extract only those records that fulfill a specified condition&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;SQL requires single quotes around text values&lt;/p&gt;
-
-&lt;p&gt;Numeric fields should not be enclosed in quotes&lt;/p&gt;
-
-&lt;h3 id=&quot;operators-in-where&quot;&gt;Operators in WHERE&lt;/h3&gt;
-
-&lt;p&gt;WHERE clause can be combined with AND, OR, NOT operators&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;condition2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;OR&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Operator&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;=&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Greater than&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Less than&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;gt;=&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Greater than or equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt;=&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Less than or equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;&amp;lt; &amp;gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Not equal, is some versions of SQL this operator may be !=&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;BETWEEN ‘A’ AND ‘B’&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Between a certain range&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;LIKE ‘pattern’&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Search for a pattern&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;IN(value1,value2)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;To specify multiple possible values for a column&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;If you omit the WHERE clause, all records in the table will be apply&lt;/p&gt;
-
-&lt;h3 id=&quot;order-by&quot;&gt;ORDER BY&lt;/h3&gt;
-
-&lt;p&gt;Is used to sort the result-set in ascending or descending order&lt;/p&gt;
-
-&lt;p&gt;It sorts the records in ascending order by default&lt;/p&gt;
-
-&lt;p&gt;To sort the records in descending order, use the DESC keyword&lt;/p&gt;
-
-&lt;p&gt;Syntax&lt;/p&gt;
-
-&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;table_name&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ASC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;DESC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;-- Can use both, ORDER BY column1 ASC, column2 DESC;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
