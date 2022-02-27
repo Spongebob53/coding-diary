@@ -8,6 +8,54 @@
 
     
     <url>
+        <loc>http://localhost:4000/w3schools-python-function.html</loc>
+        
+        <lastmod>2022-02-27T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-python-if_loop.html</loc>
+        
+        <lastmod>2022-02-26T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-python-type.html</loc>
+        
+        <lastmod>2022-02-25T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-Python-comprehension_function.html</loc>
         
         <lastmod>2022-02-25T18:00:00+09:00</lastmod>
@@ -24,9 +72,41 @@
     </url>
     
     <url>
+        <loc>http://localhost:4000/w3schools-python-variable.html</loc>
+        
+        <lastmod>2022-02-24T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-Python-if_loop.html</loc>
         
         <lastmod>2022-02-24T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-python-intro.html</loc>
+        
+        <lastmod>2022-02-23T18:00:00+09:00</lastmod>
         
 
         
