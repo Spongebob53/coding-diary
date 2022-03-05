@@ -268,31 +268,31 @@ into the {body} of the default.hbs template -->
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">selector</th>
+      <th style="text-align: center">selector</th>
       <th style="text-align: center">Example</th>
-      <th style="text-align: right">description</th>
+      <th style="text-align: left">description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">element element</td>
+      <td style="text-align: center">element element</td>
       <td style="text-align: center">div p</td>
-      <td style="text-align: right">Select all <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> elements inside <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> elements</td>
+      <td style="text-align: left">Select all <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> elements inside <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> elements</td>
     </tr>
     <tr>
-      <td style="text-align: left">element&gt;element</td>
+      <td style="text-align: center">element&gt;element</td>
       <td style="text-align: center">div&gt;p</td>
-      <td style="text-align: right">Select all <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> elements where the parent is a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element</td>
+      <td style="text-align: left">Select all <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> elements where the parent is a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element</td>
     </tr>
     <tr>
-      <td style="text-align: left">element+element</td>
+      <td style="text-align: center">element+element</td>
       <td style="text-align: center">div+p</td>
-      <td style="text-align: right">Select the first <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> element that are placed immediately after <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> elements</td>
+      <td style="text-align: left">Select the first <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> element that are placed immediately after <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> elements</td>
     </tr>
     <tr>
-      <td style="text-align: left">element1~element2</td>
+      <td style="text-align: center">element1~element2</td>
       <td style="text-align: center">p~ul</td>
-      <td style="text-align: right">Select every <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> element that are preceded by a <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> element</td>
+      <td style="text-align: left">Select every <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> element that are preceded by a <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> element</td>
     </tr>
   </tbody>
 </table>
@@ -337,45 +337,45 @@ into the {body} of the default.hbs template -->
   <thead>
     <tr>
       <th style="text-align: center">Selector</th>
-      <th style="text-align: right">Example</th>
-      <th style="text-align: right">Description</th>
+      <th style="text-align: center">Example</th>
+      <th style="text-align: left">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center">[attribute]</td>
-      <td style="text-align: right">[target]</td>
-      <td style="text-align: right">Selects all elements with a target attribute</td>
+      <td style="text-align: center">[target]</td>
+      <td style="text-align: left">Selects all elements with a target attribute</td>
     </tr>
     <tr>
       <td style="text-align: center">[attribute=value]</td>
-      <td style="text-align: right">[target=_blank]</td>
-      <td style="text-align: right">Selects all elements with target=”_blank”</td>
+      <td style="text-align: center">[target=_blank]</td>
+      <td style="text-align: left">Selects all elements with target=”_blank”</td>
     </tr>
     <tr>
       <td style="text-align: center">[attribute~=value]</td>
-      <td style="text-align: right">[title~=flower]</td>
-      <td style="text-align: right">Selects all elements with a title attribute containing the word “flower”</td>
+      <td style="text-align: center">[title~=flower]</td>
+      <td style="text-align: left">Selects all elements with a title attribute containing the word “flower”</td>
     </tr>
     <tr>
       <td style="text-align: center">[attribute|=value]</td>
-      <td style="text-align: right">[lang|=en]</td>
-      <td style="text-align: right">Selects all elements with a lang attribute value starting with “en”</td>
+      <td style="text-align: center">[lang|=en]</td>
+      <td style="text-align: left">Selects all elements with a lang attribute value starting with “en”</td>
     </tr>
     <tr>
       <td style="text-align: center">[attribute^=value]</td>
-      <td style="text-align: right">a[href^=”https”]</td>
-      <td style="text-align: right">Selects every <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element whose href attribute value begins with “https”</td>
+      <td style="text-align: center">a[href^=”https”]</td>
+      <td style="text-align: left">Selects every <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element whose href attribute value begins with “https”</td>
     </tr>
     <tr>
       <td style="text-align: center">[attribute$=value]</td>
-      <td style="text-align: right">a[href$=”.pdf”]</td>
-      <td style="text-align: right">Selects every <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element whose href attribute value ends with “.pdf”</td>
+      <td style="text-align: center">a[href$=”.pdf”]</td>
+      <td style="text-align: left">Selects every <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element whose href attribute value ends with “.pdf”</td>
     </tr>
     <tr>
       <td style="text-align: center">[attribute*=value]</td>
-      <td style="text-align: right">a[href*=”w3schools”]</td>
-      <td style="text-align: right">Selects every <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element whose href attribute value contains the substring “w3schools”</td>
+      <td style="text-align: center">a[href*=”w3schools”]</td>
+      <td style="text-align: left">Selects every <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element whose href attribute value contains the substring “w3schools”</td>
     </tr>
   </tbody>
 </table>
@@ -494,6 +494,8 @@ into the {body} of the default.hbs template -->
                         <div class="read-next-card-content">
                             <ul>
                                 
+                                
+                                  
                                 
                                   
                                 
