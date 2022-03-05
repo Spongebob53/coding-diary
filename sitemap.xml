@@ -8,6 +8,86 @@
 
     
     <url>
+        <loc>http://localhost:4000/reference-python_string-method.html</loc>
+        
+        <lastmod>2022-03-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/reference-python_keyword.html</loc>
+        
+        <lastmod>2022-03-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/reference-python_function.html</loc>
+        
+        <lastmod>2022-03-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/reference-python_file-method.html</loc>
+        
+        <lastmod>2022-03-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/reference-python_collection-method.html</loc>
+        
+        <lastmod>2022-03-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-Python-path_db.html</loc>
         
         <lastmod>2022-03-02T18:00:00+09:00</lastmod>

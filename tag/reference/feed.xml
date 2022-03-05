@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/reference/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-03-02T22:16:14+09:00</updated>
+  <updated>2022-03-05T23:48:15+09:00</updated>
   <id>http://localhost:4000/tag/reference/feed.xml</id>
 
   
@@ -30,6 +30,1074 @@
   
   
 
+  
+    <entry>
+      <title type="html">Reference - Python String method</title>
+      <link href="http://localhost:4000/reference-python_string-method" rel="alternate" type="text/html" title="Reference - Python String method" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_string-method</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_string-method">&lt;h2 id=&quot;string-method&quot;&gt;String method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;capitalize()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts the first character to upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;casefold()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts string into lower case, Unicode text/user input&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;center()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a centered string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;count()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the number of times a specified value occurs in a string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;encode()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an encoded version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;endswith()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns true if the string ends with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;expandtabs()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Sets the tab size of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;find()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Searches the string for a specified value and returns the position of where it was found, if str is not found, raises an exception&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;format()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Formats specified values in a string, use primitive&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;format_map()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Formats specified values in a string, use dict&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;index()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Searches the string for a specified value and returns the position of where it was found, if str is not found, it returns -1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isalnum()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are alphanumeric&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isalpha()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are in the alphabet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isascii()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are ascii characters&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isdecimal()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are decimals&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isdigit()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are digits&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isidentifier()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if the string is an identifier&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;islower()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all character in the string are lower case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isnumeric()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are numeric&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isprintable()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are printable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isspace()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all characters in the string are whitespaces&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;istitle()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if the string follows the rules of a title&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isupper()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Retunrs True if all characters in the string are upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;join&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts the elements of an iterable into a string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ljust()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a left justified version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;lower()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts a string into lower case, Purely ASCII text&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;lstrip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a left trim version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;maketrans()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a translation table to be used in translations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;partition()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a tuple where the string is parted into three parts&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;replace()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a string where a specified value is replaced with a specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rfind()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Searches the string for a specified value and returns the last position of where it was found&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rindex()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Searches the string for a specified value and returns the last position of where it was found&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rjust()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a right justified version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rpartition()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a tuple where the string is parted into three parts&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rsplit()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Splits the string at the specified separator, and returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;rstrip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a right trim version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;split()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Splits the string at the specified separator, and returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;splitlines()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Splits the string at line breaks and returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;startwith()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns true if the string starts with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;strip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a trimmed version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;swapcase()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Swaps cases, lower case becomes upper case and vice versa&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;title()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts the first character of each word to upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;translate()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a translated string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;upper()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts a string into upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;zfill()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Fills the string with a specified number of 0 values at the beginning&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">String method</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Python Keyword</title>
+      <link href="http://localhost:4000/reference-python_keyword" rel="alternate" type="text/html" title="Reference - Python Keyword" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_keyword</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_keyword">&lt;h2 id=&quot;python-keywords&quot;&gt;Python keywords&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Keyword&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;and&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;as&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To create an alias&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;assert&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;For debugging&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;break&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To break out of a loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;class&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To defines a class&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;continue&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To continue to the next iteration of a loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;def&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To define a function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;del&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To delete an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;elif&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used in conditional statements, same as else if&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;else&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used in conditional statements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;except&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used with exceptions, what to do when an exception occurs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;False&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;finally&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used with exceptions,&lt;br /&gt; a block of code that will be executed no matter &lt;br /&gt;if there is an exception or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;for&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To create a for loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;from&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To import specific parts of a module&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;global&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To declare a global variable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;if&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To make a conditional statement&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;import&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To import a module&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;in&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To check if a value is present in a list, tuple, etc.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;is&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To test if two variables are equal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;lambda&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To create an anonymous function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;None&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Represents a null value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;nonlocal&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To declare a non-local variable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;not&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;or&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pass&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;A null statement, a statement that will do nothing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;raise&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To raise an exception&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;return&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To exit a function and return a value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;True&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;try&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To make a try..except statement&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;while&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To create a while loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;with&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Used to simplify exception handling&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;yield&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;To end a function, returns a generator&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">Python keywords</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Python Function</title>
+      <link href="http://localhost:4000/reference-python_function" rel="alternate" type="text/html" title="Reference - Python Function" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_function</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_function">&lt;h2 id=&quot;python-built-in-function&quot;&gt;Python Built-in Function&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Function&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;abs()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the absolute value of a number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;all()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if all items in an iterable object are true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;any()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if any item in an iterable object is true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ascii()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a readable version of an object. Replaces none-ascii characters with escape character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bin()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the binary version of a number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bool()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the Boolean value of the specified object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bytearray()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an array of bytes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;bytes()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a bytes object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;callable()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if the specified object is callable, otherwise False&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;chr()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a character from the specified Unicode code&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;classmethod()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts a method into a class method&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;compile()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the specified source as an object, ready to be executed&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;complex()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a complex number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;delattr()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Deltes the specified attribute(property of method) from the specified object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;dict()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a dictionary(Array)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;dir()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a list of the specified object’s properties and methods&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;divmod()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the quotient and the remainder when argument1 is divided by argument2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;enumerate()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Takes a collection (like tuple) and returns it as an enumerate object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;eval()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Evaluates and executes an expression&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;exec()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Executes the specified code(or object)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;filter()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Use a filter function to exclude items in an iterable object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;float()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a floating point number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;format()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Formats a specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;frozenset()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a frozenset object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;getattr()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the value of the specified attributes(property or method)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;globals()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the current global symbol table as a dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;hasattr()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if the specified object has the specified attribute(property/method)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;hash()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the hash value of a specified object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;help()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Executes the built-in help system&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;hex()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts a number into a hexadecimal value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;id()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the id of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;input()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Allowing user input&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;int()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an integer number&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isinstance()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if a specified object is an instance of a specified object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;issubclass()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns True if a specified class is a subclass of a specified object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;iter()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an iterator object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;len()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the length of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;list()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;locals()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an updated dictionary of the current local symbol table&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;map()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the specified iterator with the specified function applied to each item&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;max()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the largest item in an iterable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;memoryview()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a memory view object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;min()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the smallest item in an iterable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;next()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the next item in an iterable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;object()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a new object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;oct()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts a number into an octal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;open()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Opens a file and returns a file object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ord()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Convert an integer representing the Unicode of the specified character&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pow()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the value of x to the power of y&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;print()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Prints to the standard output device&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;property()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Gets, sets, deletes a property&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;range()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a sequence of numbers, starting from 0 and increments by 1 (by default)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;repr()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a readable version of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;reversed()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a reverse iterator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;round()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Rounds a numbers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;set()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a new set object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;setattr()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Sets an attribute (property/method) of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;slice()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a slice object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;sorted()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a sorted list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;staticmethod()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Converts a method into a static method&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;str()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a string object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;sum()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Sums the items of an iterator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;super()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an object that represents the parent class&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;tuple()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a tuple&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;type()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the type of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;vars()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;__dict__&lt;/code&gt; property of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;zip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns an iterator, from two or more iterators&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">Python Built-in Function</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Python File method</title>
+      <link href="http://localhost:4000/reference-python_file-method" rel="alternate" type="text/html" title="Reference - Python File method" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_file-method</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_file-method">&lt;h2 id=&quot;file-method&quot;&gt;File method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;close()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Closes the file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;detach()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the separated raw stream from the buffer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;fileno()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Retuns a number that represents the stream, &lt;br /&gt;from the operating system’s perspective&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;flush()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Flushes the internal buffer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;isatty()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns whether the file stream is interactive or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;read()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the file content&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;readable()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns whether the file stream can be read or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;readline()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns one line from the file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;readlines()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a list of lines from the file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;seek()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Change the file position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;seekable()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns whether the file allows us to change the file position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;tell()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the current file position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;truncate()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Resizes the file to a specified size&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;writable()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns whether the file can be written to or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;write()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Writes the specified string to the file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;writeslines()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Writes a list of strings to the file&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">File method</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Python Collection method</title>
+      <link href="http://localhost:4000/reference-python_collection-method" rel="alternate" type="text/html" title="Reference - Python Collection method" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_collection-method</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_collection-method">&lt;h2 id=&quot;list-method&quot;&gt;List method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;append()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Adds an element at the end of the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;clear()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes all the elements from the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;copy()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a copy of the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;count()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the number of elements with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;extend()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Add the elements of a list(or any iterable), to the end of the current list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;index()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the index of the first element with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;insert()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Adds an element at the specified position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pop()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the element at the specified position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;remove()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the first item with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;reverse()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Reverse the order of the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;sort()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Sorts the list&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;dictionary-method&quot;&gt;Dictionary method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;clear()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes all the elements from the dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;copy()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a copy of the dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;fromkeys()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a dictionary with the specified keys and value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;get()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the value of the specified key&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;items()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a list containing a tuple for each key value pair&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;keys()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a list containing the dictionary’s keys&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pop()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the element with the specified key&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;popitem()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the last inserted key-value pair&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;setdefault()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the value of the specified key. If the key doesn’y exist : insert the key, with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Updates the dictionary with the specified key-value pairs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;values()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a list of all the values in the dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;tuple-method&quot;&gt;Tuple method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;count()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns the number of times a specified value occurs in a tuple&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;index()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Searches the tuple for a specified value and returns the position of where it was found&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;set-method&quot;&gt;Set method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;add()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Adds an element to the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;clear()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes all the elements from the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;copy()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a copy of the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;difference()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a set containing the difference between two or more sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;difference_update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the items in this set that are also included in another,specified set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;discard()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Remove the specified item&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;intersection()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a set, that is the intersection of two or more sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;intersection_update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the items in this set that are not present in other specified set(s)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;indisjoint()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns whether two sets have a intersection or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;issubset()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns whether another set contains this set or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;pop()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes an element from the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;remove()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Removes the specified element&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;symmetric_difference()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a set with the symmetric difference of two sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;symmetric_difference_update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;inserts the symmetric differences from this set and another&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;union()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Returns a set containing the union of sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Update the set with another set, or any other iterable&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">List method</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Reference - Java String</title>
