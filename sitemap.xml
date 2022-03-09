@@ -376,6 +376,86 @@
     </url>
     
     <url>
+        <loc>http://localhost:4000/w3schools-jsp-database.html</loc>
+        
+        <lastmod>2022-02-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/reference-jsp_jstl.html</loc>
+        
+        <lastmod>2022-02-05T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-jsp-redirect_email.html</loc>
+        
+        <lastmod>2022-02-04T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-jsp-fileupload.html</loc>
+        
+        <lastmod>2022-02-03T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/w3schools-jsp-session.html</loc>
+        
+        <lastmod>2022-02-02T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/w3schools-jsp-cookie.html</loc>
         
         <lastmod>2022-02-01T18:00:00+09:00</lastmod>

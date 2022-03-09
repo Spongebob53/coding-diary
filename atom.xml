@@ -461,6 +461,105 @@
     
       
       <item>
+        <title>W3schools - JSP_Database</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Sat, 05 Feb 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-database</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-database</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Reference - JSP JSTL</title>
+        
+          <description>&lt;h3 id=&quot;jstl&quot;&gt;JSTL&lt;/h3&gt;
+
+</description>
+        
+        <pubDate>Sat, 05 Feb 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/reference-jsp_jstl</link>
+        <guid isPermaLink="true">http://localhost:4000/reference-jsp_jstl</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Redirect / Email</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Fri, 04 Feb 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-redirect_email</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-redirect_email</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_File Upload</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 03 Feb 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-fileupload</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-fileupload</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>W3schools - JSP_Session</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Wed, 02 Feb 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-jsp-session</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-jsp-session</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>W3schools - JSP_Cookie</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
