@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-03-12T20:19:35+09:00</updated>
+  <updated>2022-03-13T22:56:42+09:00</updated>
   <id>http://localhost:4000/author/Spongebob53/feed.xml</id>
 
   
@@ -1202,6 +1202,408 @@ export PATH=$ORACLE_HOME/bin:$PATH
     </entry>
   
     <entry>
+      <title type="html">Reference - Python Keyword</title>
+      <link href="http://localhost:4000/reference-python_keyword" rel="alternate" type="text/html" title="Reference - Python Keyword" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_keyword</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_keyword">&lt;h2 id=&quot;python-keywords&quot;&gt;Python keywords&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Keyword&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;and&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;as&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create an alias&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;assert&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;For debugging&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;break&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To break out of a loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;class&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To defines a class&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;continue&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To continue to the next iteration of a loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;def&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To define a function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;del&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To delete an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;elif&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements, same as else if&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;else&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;except&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions, what to do when an exception occurs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;False&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;finally&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions,&lt;br /&gt; a block of code that will be executed no matter &lt;br /&gt;if there is an exception or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;for&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create a for loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;from&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To import specific parts of a module&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;global&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To declare a global variable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;if&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To make a conditional statement&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;import&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To import a module&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;in&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To check if a value is present in a list, tuple, etc.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;is&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To test if two variables are equal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;lambda&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create an anonymous function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;None&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Represents a null value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;nonlocal&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To declare a non-local variable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;not&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;or&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;pass&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A null statement, a statement that will do nothing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;raise&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To raise an exception&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;return&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To exit a function and return a value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;True&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;try&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To make a try..except statement&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;while&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create a while loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;with&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used to simplify exception handling&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;yield&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To end a function, returns a generator&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">Python keywords</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Python String method</title>
+      <link href="http://localhost:4000/reference-python_string-method" rel="alternate" type="text/html" title="Reference - Python String method" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_string-method</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_string-method">&lt;h2 id=&quot;string-method&quot;&gt;String method&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;capitalize()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Converts the first character to upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;casefold()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Converts string into lower case, Unicode text/user input&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;center()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a centered string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;count()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns the number of times a specified value occurs in a string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;encode()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns an encoded version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;endswith()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns true if the string ends with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;expandtabs()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sets the tab size of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;find()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the position of where it was found,&lt;br /&gt;if str is not found, raises an exception&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;format()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Formats specified values in a string, use primitive&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;format_map()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Formats specified values in a string, use dict&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;index()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the position of where it was found,&lt;br /&gt;if str is not found, it returns -1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isalnum()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are alphanumeric&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isalpha()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are in the alphabet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isascii()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are ascii characters&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isdecimal()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are decimals&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isdigit()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are digits&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isidentifier()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if the string is an identifier&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;islower()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all character in the string are lower case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isnumeric()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are numeric&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isprintable()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are printable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isspace()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are whitespaces&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;istitle()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if the string follows the rules of a title&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;isupper()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Retunrs True if all characters in the string are upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;join&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Converts the elements of an iterable into a string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ljust()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a left justified version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;lower()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Converts a string into lower case, Purely ASCII text&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;lstrip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a left trim version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;maketrans()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a translation table to be used in translations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;partition()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a tuple where the string is parted into three parts&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;replace()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a string where a specified value is replaced with a specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rfind()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the last position of where it was found&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rindex()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the last position of where it was found&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rjust()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a right justified version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rpartition()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a tuple where the string is parted into three parts&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rsplit()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Splits the string at the specified separator, and returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;rstrip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a right trim version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;split()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Splits the string at the specified separator, and returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;splitlines()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Splits the string at line breaks and returns a list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;startwith()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns true if the string starts with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;strip()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a trimmed version of the string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;swapcase()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Swaps cases, lower case becomes upper case and vice versa&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;title()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Converts the first character of each word to upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;translate()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a translated string&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;upper()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Converts a string into upper case&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;zfill()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Fills the string with a specified number of 0 values at the beginning&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">String method</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
       <title type="html">Reference - Python Function</title>
       <link href="http://localhost:4000/reference-python_function" rel="alternate" type="text/html" title="Reference - Python Function" />
       <published>2022-03-05T18:00:00+09:00</published>
@@ -1508,408 +1910,6 @@ export PATH=$ORACLE_HOME/bin:$PATH
 
       
         <summary type="html">Python Built-in Function</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Reference - Python String method</title>
-      <link href="http://localhost:4000/reference-python_string-method" rel="alternate" type="text/html" title="Reference - Python String method" />
-      <published>2022-03-05T18:00:00+09:00</published>
-      <updated>2022-03-05T18:00:00+09:00</updated>
-      <id>http://localhost:4000/reference-python_string-method</id>
-      <content type="html" xml:base="http://localhost:4000/reference-python_string-method">&lt;h2 id=&quot;string-method&quot;&gt;String method&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;capitalize()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Converts the first character to upper case&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;casefold()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Converts string into lower case, Unicode text/user input&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;center()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a centered string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;count()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns the number of times a specified value occurs in a string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;encode()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns an encoded version of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;endswith()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns true if the string ends with the specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;expandtabs()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Sets the tab size of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;find()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the position of where it was found,&lt;br /&gt;if str is not found, raises an exception&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;format()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Formats specified values in a string, use primitive&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;format_map()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Formats specified values in a string, use dict&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;index()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the position of where it was found,&lt;br /&gt;if str is not found, it returns -1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isalnum()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are alphanumeric&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isalpha()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are in the alphabet&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isascii()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are ascii characters&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isdecimal()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are decimals&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isdigit()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are digits&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isidentifier()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if the string is an identifier&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;islower()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all character in the string are lower case&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isnumeric()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are numeric&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isprintable()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are printable&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isspace()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if all characters in the string are whitespaces&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;istitle()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns True if the string follows the rules of a title&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;isupper()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Retunrs True if all characters in the string are upper case&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;join&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Converts the elements of an iterable into a string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;ljust()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a left justified version of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;lower()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Converts a string into lower case, Purely ASCII text&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;lstrip()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a left trim version of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;maketrans()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a translation table to be used in translations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;partition()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a tuple where the string is parted into three parts&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;replace()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a string where a specified value is replaced with a specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;rfind()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the last position of where it was found&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;rindex()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Searches the string for a specified value&lt;br /&gt;and returns the last position of where it was found&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;rjust()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a right justified version of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;rpartition()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a tuple where the string is parted into three parts&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;rsplit()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Splits the string at the specified separator, and returns a list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;rstrip()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a right trim version of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;split()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Splits the string at the specified separator, and returns a list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;splitlines()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Splits the string at line breaks and returns a list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;startwith()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns true if the string starts with the specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;strip()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a trimmed version of the string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;swapcase()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Swaps cases, lower case becomes upper case and vice versa&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;title()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Converts the first character of each word to upper case&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;translate()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a translated string&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;upper()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Converts a string into upper case&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;zfill()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Fills the string with a specified number of 0 values at the beginning&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="reference" />
-      
-
-      
-        <summary type="html">String method</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Reference - Python Keyword</title>
-      <link href="http://localhost:4000/reference-python_keyword" rel="alternate" type="text/html" title="Reference - Python Keyword" />
-      <published>2022-03-05T18:00:00+09:00</published>
-      <updated>2022-03-05T18:00:00+09:00</updated>
-      <id>http://localhost:4000/reference-python_keyword</id>
-      <content type="html" xml:base="http://localhost:4000/reference-python_keyword">&lt;h2 id=&quot;python-keywords&quot;&gt;Python keywords&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Keyword&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;and&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;as&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create an alias&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;assert&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;For debugging&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;break&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To break out of a loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;class&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To defines a class&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;continue&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To continue to the next iteration of a loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;def&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To define a function&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;del&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To delete an object&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;elif&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements, same as else if&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;else&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;except&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions, what to do when an exception occurs&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;False&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;finally&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions,&lt;br /&gt; a block of code that will be executed no matter &lt;br /&gt;if there is an exception or not&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;for&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create a for loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;from&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To import specific parts of a module&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;global&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To declare a global variable&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;if&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To make a conditional statement&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;import&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To import a module&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;in&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To check if a value is present in a list, tuple, etc.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;is&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To test if two variables are equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;lambda&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create an anonymous function&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;None&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Represents a null value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;nonlocal&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To declare a non-local variable&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;not&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;or&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;pass&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A null statement, a statement that will do nothing&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;raise&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To raise an exception&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;return&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To exit a function and return a value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;True&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;try&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To make a try..except statement&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;while&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create a while loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;with&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used to simplify exception handling&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;yield&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To end a function, returns a generator&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="reference" />
-      
-
-      
-        <summary type="html">Python keywords</summary>
       
 
       
