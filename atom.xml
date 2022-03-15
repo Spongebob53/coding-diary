@@ -8,6 +8,27 @@
     
       
       <item>
+        <title>AWS - Intro</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Mon, 14 Mar 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/lecture-pandas-intro</link>
+        <guid isPermaLink="true">http://localhost:4000/lecture-pandas-intro</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Reference - Python Pandas</title>
         
           <description>&lt;p&gt;Reference&lt;/p&gt;

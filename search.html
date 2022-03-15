@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-pandas-intro": {
+      "title": "AWS - Intro",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요84일차 수업========복습========urllib, requests : 웹페이지(웹서버) 요청을 하여 응답을 통해 페이지 소스를 받아오는 라이브러리BeautifulSoup : 분석기(parser)를 이용하여 문자열 분석하는 라이브러리  html.parser를 이용하여 요청받아온 페이지를 분석하여 태그로 구분을 짓도록 만들어주는 도구selenium : 웹드라이버를 통해서 브라우저를 통제하여 기존에 작업하지 못한 마우스 클릭, 키입력 등 이벤트를 설정하여 마치 우리가 웹서핑을 하듯이 자동화 시키는 라이브러리pandas : 데이터 처리 라이브러리, 2차원 데이터 처리에 특화된 모듈      matplotlib : 시각화 도와주는 라이브러리를 같이 사용        seaborn : matplotlib의 코드가 길어지는 단점 보완 패키지  numpy : 행렬, 선형 대수, 통계 등을 지원하는 라이브러리  머신러닝할 때 자주 사용하는 라이브러리scipy : 자연과학과 통계 등을 지원하는 라이브러리======== 끝 ========84일차 수업pandas정의하는 자료 구조 2가지(Series, DataFrame)Seriesfrom pandas import Seriess1 = Series([10,20,30], index=[‘일’, ‘이’, ‘삼’])s2 = Series([2,4,6,8], index=[‘일’, ‘이’, ‘삼’, ‘사’])print(s1)“””output일\t10이\t20삼\t30dtype: int64“””print(s1+s2)# index가 다른 경우 NaN을 반환하고, 결과의 타입과 순서가 변한다“””output사\tNaN삼\t36.0이\t24.0일\t12.0dtype: float64“””DataFramefrom pandas import DataFrameimport numpy as npdf1 = DataFrame([[1,2,3],[4,5,6],[7,8,9]],index=[0, 1, 2])df2 = DataFrame({0: [1,2,3], 1:[4,5,6], 2:[7,8,9]})print(df1+df2)# 위와 같은 경우 데이터 관리 하기 어려움, 단순 더하기 보다 연산 함수를 사용하면 더 다양한 기능을 사용할 수 있음# 인자 fill_value에 값을 지정하여 매칭되지 않는 값이나, 없는 값을 채워 넣을 수도 있음DF FunctionDataFrame 객체 간 연산  sub() : 더하기, mul() : 곱하기, div() : 나누기, mod() : 나머지DataFrame 객체 내 연산  count(), sum() : 합, mean() : 평균, std() : 표준편차, var() : 분산, min() : 최소, max() : 최대describe() : 요약 통계cum-() : (cumsum, sumprod,…) 누적 연산데이터 분석순서 : 데이터 &gt; 필터링 &gt; 정제 &gt; 시각화 &gt; 분석필터링 : 분석에 필요한 데이터를 1차적으로 거르는 작업(데이터 추출)      열 단위 추출 : 내가 원하는 컬럼에 대한 값, df_name[‘column_name’]        행 단위 추출 : 내가 원하는 인덱스에 대한 값, df_name.loc[index], df_name.iloc[index]  결측치null : 데이터를 분석할 때 굉장히 큰 영향을 주는 값 중에 하나결측치를 확인하는 메소드 : isnull(), notnull()결측치를 처리하는 메소드 : dropna(), fillna()",
+      "url": "/lecture-pandas-intro"
+  }
+  ,
+  
   "reference-python-pandas": {
       "title": "Reference - Python Pandas",
           "author": "Spongebob53",

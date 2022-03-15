@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-03-14T04:57:41+09:00</updated>
+  <updated>2022-03-15T22:13:14+09:00</updated>
   <id>http://localhost:4000/author/Spongebob53/feed.xml</id>
 
   
@@ -30,6 +30,172 @@
   
   
 
+  
+    <entry>
+      <title type="html">AWS - Intro</title>
+      <link href="http://localhost:4000/lecture-pandas-intro" rel="alternate" type="text/html" title="AWS - Intro" />
+      <published>2022-03-14T18:00:00+09:00</published>
+      <updated>2022-03-14T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-pandas-intro</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-pandas-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;84일차-수업&quot;&gt;84일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;복습&quot;&gt;========복습========&lt;/h3&gt;
+
+&lt;p&gt;urllib, requests : 웹페이지(웹서버) 요청을 하여 응답을 통해 페이지 소스를 받아오는 라이브러리&lt;/p&gt;
+
+&lt;p&gt;BeautifulSoup : 분석기(parser)를 이용하여 문자열 분석하는 라이브러리&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;html.parser를 이용하여 요청받아온 페이지를 분석하여 태그로 구분을 짓도록 만들어주는 도구&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;selenium : 웹드라이버를 통해서 브라우저를 통제하여 기존에 작업하지 못한 마우스 클릭, 키입력 등 이벤트를 설정하여 마치 우리가 웹서핑을 하듯이 자동화 시키는 라이브러리&lt;/p&gt;
+
+&lt;p&gt;pandas : 데이터 처리 라이브러리, 2차원 데이터 처리에 특화된 모듈&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;matplotlib : 시각화 도와주는 라이브러리를 같이 사용&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;seaborn : matplotlib의 코드가 길어지는 단점 보완 패키지&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;numpy : 행렬, 선형 대수, 통계 등을 지원하는 라이브러리&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;머신러닝할 때 자주 사용하는 라이브러리&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;scipy : 자연과학과 통계 등을 지원하는 라이브러리&lt;/p&gt;
+
+&lt;h3 id=&quot;-끝-&quot;&gt;======== 끝 ========&lt;/h3&gt;
+
+&lt;h2 id=&quot;84일차-수업-1&quot;&gt;84일차 수업&lt;/h2&gt;
+
+&lt;h2 id=&quot;pandas&quot;&gt;pandas&lt;/h2&gt;
+
+&lt;p&gt;정의하는 자료 구조 2가지(Series, DataFrame)&lt;/p&gt;
+
+&lt;h3 id=&quot;series&quot;&gt;Series&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Series&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Series&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;일&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;이&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;삼&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Series&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;일&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;이&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;삼&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;사&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;일&lt;/span&gt;	&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;이&lt;/span&gt;	&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;삼&lt;/span&gt;	&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int64&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# index가 다른 경우 NaN을 반환하고, 결과의 타입과 순서가 변한다
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;사&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;NaN&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;삼&lt;/span&gt;	&lt;span class=&quot;mf&quot;&gt;36.0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;이&lt;/span&gt;	&lt;span class=&quot;mf&quot;&gt;24.0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;일&lt;/span&gt;	&lt;span class=&quot;mf&quot;&gt;12.0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;float64&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;dataframe&quot;&gt;DataFrame&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;df1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]})&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# 위와 같은 경우 데이터 관리 하기 어려움, 단순 더하기 보다 연산 함수를 사용하면 더 다양한 기능을 사용할 수 있음
+# 인자 fill_value에 값을 지정하여 매칭되지 않는 값이나, 없는 값을 채워 넣을 수도 있음
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;df-function&quot;&gt;DF Function&lt;/h3&gt;
+
+&lt;p&gt;DataFrame 객체 간 연산&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sub() : 더하기, mul() : 곱하기, div() : 나누기, mod() : 나머지&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DataFrame 객체 내 연산&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;count(), sum() : 합, mean() : 평균, std() : 표준편차, var() : 분산, min() : 최소, max() : 최대&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;describe() : 요약 통계&lt;/p&gt;
+
+&lt;p&gt;cum-() : (cumsum, sumprod,…) 누적 연산&lt;/p&gt;
+
+&lt;h3 id=&quot;데이터-분석&quot;&gt;데이터 분석&lt;/h3&gt;
+
+&lt;p&gt;순서 : 데이터 &amp;gt; 필터링 &amp;gt; 정제 &amp;gt; 시각화 &amp;gt; 분석&lt;/p&gt;
+
+&lt;p&gt;필터링 : 분석에 필요한 데이터를 1차적으로 거르는 작업(데이터 추출)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;열 단위 추출 : 내가 원하는 컬럼에 대한 값, df_name[‘column_name’]&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;행 단위 추출 : 내가 원하는 인덱스에 대한 값, df_name.loc[index], df_name.iloc[index]&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;결측치&quot;&gt;결측치&lt;/h3&gt;
+
+&lt;p&gt;null : 데이터를 분석할 때 굉장히 큰 영향을 주는 값 중에 하나&lt;/p&gt;
+
+&lt;p&gt;결측치를 확인하는 메소드 : isnull(), notnull()&lt;/p&gt;
+
+&lt;p&gt;결측치를 처리하는 메소드 : dropna(), fillna()&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Reference - Python Pandas</title>
@@ -1506,427 +1672,6 @@ export PATH=$ORACLE_HOME/bin:$PATH
     </entry>
   
     <entry>
-      <title type="html">Reference - Python Collection method</title>
-      <link href="http://localhost:4000/reference-python_collection-method" rel="alternate" type="text/html" title="Reference - Python Collection method" />
-      <published>2022-03-05T18:00:00+09:00</published>
-      <updated>2022-03-05T18:00:00+09:00</updated>
-      <id>http://localhost:4000/reference-python_collection-method</id>
-      <content type="html" xml:base="http://localhost:4000/reference-python_collection-method">&lt;h2 id=&quot;list-method&quot;&gt;List method&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;append()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Adds an element at the end of the list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;clear()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes all the elements from the list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;copy()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a copy of the list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;count()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns the number of elements with the specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;extend()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Add the elements of a list(or any iterable),&lt;br /&gt;to the end of the current list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;index()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns the index of the first element with the specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;insert()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Adds an element at the specified position&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;pop()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the element at the specified position&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;remove()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the first item with the specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;reverse()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Reverse the order of the list&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;sort()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Sorts the list&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;dictionary-method&quot;&gt;Dictionary method&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;clear()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes all the elements from the dictionary&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;copy()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a copy of the dictionary&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;fromkeys()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a dictionary with the specified keys and value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;get()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns the value of the specified key&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;items()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a list containing a tuple for each key value pair&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;keys()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a list containing the dictionary’s keys&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;pop()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the element with the specified key&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;popitem()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the last inserted key-value pair&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;setdefault()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns the value of the specified key.&lt;br /&gt;If the key doesn’y exist : insert the key, with the specified value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;update()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Updates the dictionary with the specified key-value pairs&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;values()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a list of all the values in the dictionary&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;tuple-method&quot;&gt;Tuple method&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;count()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns the number of times a specified value occurs in a tuple&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;index()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Searches the tuple for a specified value and returns the position of where it was found&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;set-method&quot;&gt;Set method&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;add()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Adds an element to the set&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;clear()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes all the elements from the set&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;copy()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a copy of the set&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;difference()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set containing the difference between two or more sets&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;difference_update()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the items in this set that are also included in another,specified set&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;discard()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Remove the specified item&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;intersection()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set, that is the intersection of two or more sets&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;intersection_update()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the items in this set that are not present in other specified set(s)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;indisjoint()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns whether two sets have a intersection or not&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;issubset()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns whether another set contains this set or not&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;pop()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes an element from the set&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;remove()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Removes the specified element&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;symmetric_difference()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set with the symmetric difference of two sets&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;symmetric_difference_update()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;inserts the symmetric differences from this set and another&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;union()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set containing the union of sets&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;update()&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Update the set with another set, or any other iterable&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="reference" />
-      
-
-      
-        <summary type="html">List method</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Reference - Python Keyword</title>
-      <link href="http://localhost:4000/reference-python_keyword" rel="alternate" type="text/html" title="Reference - Python Keyword" />
-      <published>2022-03-05T18:00:00+09:00</published>
-      <updated>2022-03-05T18:00:00+09:00</updated>
-      <id>http://localhost:4000/reference-python_keyword</id>
-      <content type="html" xml:base="http://localhost:4000/reference-python_keyword">&lt;h2 id=&quot;python-keywords&quot;&gt;Python keywords&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Keyword&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;and&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;as&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create an alias&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;assert&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;For debugging&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;break&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To break out of a loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;class&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To defines a class&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;continue&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To continue to the next iteration of a loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;def&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To define a function&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;del&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To delete an object&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;elif&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements, same as else if&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;else&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;except&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions, what to do when an exception occurs&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;False&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;finally&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions,&lt;br /&gt; a block of code that will be executed no matter &lt;br /&gt;if there is an exception or not&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;for&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create a for loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;from&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To import specific parts of a module&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;global&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To declare a global variable&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;if&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To make a conditional statement&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;import&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To import a module&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;in&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To check if a value is present in a list, tuple, etc.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;is&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To test if two variables are equal&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;lambda&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create an anonymous function&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;None&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Represents a null value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;nonlocal&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To declare a non-local variable&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;not&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;or&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;pass&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;A null statement, a statement that will do nothing&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;raise&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To raise an exception&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;return&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To exit a function and return a value&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;True&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;try&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To make a try..except statement&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;while&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To create a while loop&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;with&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Used to simplify exception handling&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;yield&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;To end a function, returns a generator&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="reference" />
-      
-
-      
-        <summary type="html">Python keywords</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
       <title type="html">Reference - Python String method</title>
       <link href="http://localhost:4000/reference-python_string-method" rel="alternate" type="text/html" title="Reference - Python String method" />
       <published>2022-03-05T18:00:00+09:00</published>
@@ -2145,6 +1890,183 @@ export PATH=$ORACLE_HOME/bin:$PATH
 
       
         <summary type="html">String method</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Reference - Python Keyword</title>
+      <link href="http://localhost:4000/reference-python_keyword" rel="alternate" type="text/html" title="Reference - Python Keyword" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_keyword</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_keyword">&lt;h2 id=&quot;python-keywords&quot;&gt;Python keywords&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Keyword&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;and&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;as&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create an alias&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;assert&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;For debugging&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;break&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To break out of a loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;class&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To defines a class&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;continue&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To continue to the next iteration of a loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;def&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To define a function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;del&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To delete an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;elif&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements, same as else if&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;else&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used in conditional statements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;except&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions, what to do when an exception occurs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;False&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;finally&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used with exceptions,&lt;br /&gt; a block of code that will be executed no matter &lt;br /&gt;if there is an exception or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;for&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create a for loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;from&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To import specific parts of a module&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;global&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To declare a global variable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;if&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To make a conditional statement&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;import&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To import a module&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;in&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To check if a value is present in a list, tuple, etc.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;is&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To test if two variables are equal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;lambda&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create an anonymous function&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;None&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Represents a null value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;nonlocal&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To declare a non-local variable&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;not&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;or&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A logical operator&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;pass&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;A null statement, a statement that will do nothing&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;raise&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To raise an exception&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;return&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To exit a function and return a value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;True&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Boolean value, result of comparison operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;try&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To make a try..except statement&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;while&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To create a while loop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;with&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Used to simplify exception handling&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;yield&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;To end a function, returns a generator&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="reference" />
+      
+
+      
+        <summary type="html">Python keywords</summary>
       
 
       
@@ -2574,228 +2496,222 @@ export PATH=$ORACLE_HOME/bin:$PATH
     </entry>
   
     <entry>
-      <title type="html">Python - Scraping_basic</title>
-      <link href="http://localhost:4000/lecture-Python-scraping_basic" rel="alternate" type="text/html" title="Python - Scraping_basic" />
-      <published>2022-03-04T18:00:00+09:00</published>
-      <updated>2022-03-04T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-Python-scraping_basic</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-Python-scraping_basic">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+      <title type="html">Reference - Python Collection method</title>
+      <link href="http://localhost:4000/reference-python_collection-method" rel="alternate" type="text/html" title="Reference - Python Collection method" />
+      <published>2022-03-05T18:00:00+09:00</published>
+      <updated>2022-03-05T18:00:00+09:00</updated>
+      <id>http://localhost:4000/reference-python_collection-method</id>
+      <content type="html" xml:base="http://localhost:4000/reference-python_collection-method">&lt;h2 id=&quot;list-method&quot;&gt;List method&lt;/h2&gt;
 
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;append()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Adds an element at the end of the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;clear()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes all the elements from the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;copy()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a copy of the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;count()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns the number of elements with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;extend()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Add the elements of a list(or any iterable),&lt;br /&gt;to the end of the current list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;index()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns the index of the first element with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;insert()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Adds an element at the specified position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;pop()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the element at the specified position&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;remove()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the first item with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;reverse()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reverse the order of the list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;sort()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sorts the list&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+&lt;h2 id=&quot;dictionary-method&quot;&gt;Dictionary method&lt;/h2&gt;
 
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;clear()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes all the elements from the dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;copy()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a copy of the dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;fromkeys()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a dictionary with the specified keys and value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;get()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns the value of the specified key&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;items()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a list containing a tuple for each key value pair&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;keys()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a list containing the dictionary’s keys&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;pop()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the element with the specified key&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;popitem()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the last inserted key-value pair&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;setdefault()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns the value of the specified key.&lt;br /&gt;If the key doesn’y exist : insert the key, with the specified value&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Updates the dictionary with the specified key-value pairs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;values()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a list of all the values in the dictionary&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&quot;tuple-method&quot;&gt;Tuple method&lt;/h2&gt;
 
-&lt;h2 id=&quot;78일차-수업&quot;&gt;78일차 수업&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;count()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns the number of times a specified value occurs in a tuple&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;index()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Searches the tuple for a specified value and returns the position of where it was found&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;h3 id=&quot;데이터&quot;&gt;데이터&lt;/h3&gt;
+&lt;h2 id=&quot;set-method&quot;&gt;Set method&lt;/h2&gt;
 
-&lt;p&gt;정량적 데이터 : 수치로 명확하게 표현, 도형, 기호 등&lt;/p&gt;
-
-&lt;p&gt;정성적 데이터 : 비정형 데이터, 언어, 문자 등&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;data : 데이터, 객관적인 사실 -&amp;gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;information : 정보, 데이터 간 연관 관계 속에서 도출된 의미 -&amp;gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;knowledge : 지식, 정보를 구조화하여 유의미한 정보로 분류 -&amp;gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;wisdom : 지혜, 지식의 축적, 아이디어&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;데이터-베이스&quot;&gt;데이터 베이스&lt;/h3&gt;
-
-&lt;p&gt;문자, 기호, 음성, 화상, 영상 등 상호 관련된 다수의 콘텐츠를 정보 처리 및 정보 통신 기기에 의하여 체계적으로 수집/ 축적 하여 다양한 용도와 방법으로 이용할 수 있도록 정리한 정보의 집합체&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;콘텐츠 : 데이터, 정보, 지식, 저작물 등의 인식 가능한 모든 자료&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;특징&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Integrated data, 통합된 데이터&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Stored data, 저장된 데이터&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Shared data, 공용 데이터&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;변화되는 데이터&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;빅데이터&quot;&gt;빅데이터&lt;/h3&gt;
-
-&lt;p&gt;크기 관점 :일반적인 데이터 베이스 소프트웨어로 저장, 관리, 분석할 수 있는 범위를 초과하는 규모의 데이터&lt;/p&gt;
-
-&lt;p&gt;분석 관점 : 다양한 종류의 대규모 데이터로부터 저렴한 비용으로 가치를 추출하고, 데이터의 초고속 수집, 발굴, 분석을 지원하도록 고안된 차세대 기술 및 아키텍처&lt;/p&gt;
-
-&lt;p&gt;구성&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Investment(투자비용 요소) : Volume(규모), Variety(유형), Velocity(속도)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Return(비즈니스 효과) : Value(비즈니스 가치)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;데이터-사이언스&quot;&gt;데이터 사이언스&lt;/h3&gt;
-
-&lt;p&gt;IT 영역 : 시스널 프로세싱, 프로그래밍, 데이터 엔지니어링, 데이터 웨어하우징, 고성능 컴퓨터&lt;/p&gt;
-
-&lt;p&gt;분석 영역 : 수학, 확률 모델, 머신러닝, 분석학, 패턴 인식과 학습&lt;/p&gt;
-
-&lt;p&gt;비즈니스 컨설팅 영역 : 커뮤니케이션, 프레젠테이션, 스토리텔링, 시각화 등&lt;/p&gt;
-
-&lt;h3 id=&quot;웹-크롤링&quot;&gt;웹 크롤링&lt;/h3&gt;
-
-&lt;p&gt;조직적, 자동화된 방법으로 탐색하는 컴퓨터 프로그램&lt;/p&gt;
-
-&lt;p&gt;여러 인터넷 사이트(html, jsp, 문서 등) 수집해서 분류&lt;/p&gt;
-
-&lt;p&gt;찾은 데이터를 저장하고 쉽게 찾을 수 있도록 인덱싱(정리)&lt;/p&gt;
-
-&lt;h3 id=&quot;웹-스크래핑&quot;&gt;웹 스크래핑&lt;/h3&gt;
-
-&lt;p&gt;여러 인터넷 사이트 내용을 가져오고 원하는 형태로 가공하는 행위&lt;/p&gt;
-
-&lt;p&gt;웹사이트의 데이터를 수집하는 모든 작업&lt;/p&gt;
-
-&lt;p&gt;스크래핑 기술의 일부 중 크롤링이 존재&lt;/p&gt;
-
-&lt;h3 id=&quot;웹-파싱&quot;&gt;웹 파싱&lt;/h3&gt;
-
-&lt;p&gt;페이지(문서, html 등) 원하는 데이터를 특정 패턴이나 순서로 추출하고 가공하는 행위&lt;/p&gt;
-
-&lt;p&gt;특정 문자열을 의미있는 토큰(Token)으로 분해&lt;/p&gt;
-
-&lt;p&gt;parse tree : xml파일이나 json 형태처럼 만들어줌&lt;/p&gt;
-
-&lt;p&gt;토큰을 통해서 받은 데이터를 내제된 자료 구조로 빌드하는 문법을 검사하는 역할&lt;/p&gt;
-
-&lt;p&gt;크롤링된 데이터를 우리가 보기 편하게 가공하는 것이 파싱&lt;/p&gt;
-
-&lt;p&gt;웹페이지에 요청을 할 수 있는 모듈(라이브러리)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;urllib : 내장모듈, 보내는 데이터의 형태에 따라서 get, post 구분, 인코딩된 바이너리 형태 구성&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;requests : 외장 모듈, 요청 메소드를 구분지을 수 있음, 딕셔너리 형태 구성&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;구조&quot;&gt;구조&lt;/h3&gt;
-
-&lt;p&gt;클라이언트의 요청과 서버의 응답으로 구성&lt;/p&gt;
-
-&lt;p&gt;요청&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;GET : 서버에게 정보를 가져오기 위해 요청&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;POST : 새로운 정보를 보내기 위해 요청&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;PUT : 수정할 정보를 보내기 위해 요청&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;DELETE : 정보를 제거하기 위해 요청&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 정규식
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;naver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;naver&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;query&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;파이썬&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;html_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 응답페이지 코드 반환, str 타입
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;firstWord&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;html_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;연관&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;검색어&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstWord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;firstWord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# output 연관검색어
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# output “&amp;lt;h2&amp;gt;파워링크&amp;lt;/h2&amp;gt;”
-&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.error&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URLError&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 예외 활용 가능
-# requests모듈도 requests.exceptions. 를 통해 에러 제어가능
-&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 웹문서 접근, 문서 객체
-&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datalab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;naver&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URLError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;잘못된&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;접근&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;byte_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 문서객체 읽기, 주어진 인자만큼을 데이터로 읽음
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;text_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;byte_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# 이미지 저장하기-1
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;이미지&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;경로&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;imgName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;저장할&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;경로&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;이름&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# 미리 만들어져있어야함
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;urlretrieve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imgName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# 이미지 저장하기-2
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;이미지&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;경로&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;이름&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wb&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;경로&quot;&gt;경로&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.parse&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;https://spongebob53.github.io/a/b&apos;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# &apos;/&apos; 기준으로 경로를 수정해줌 : 상대경로와 절대경로
-# 기준 경로에서 &apos;/&apos;로 끝나지 않고, 입력할 값도 &apos;/&apos;로 시작하지 않으면 서로 변경(b -&amp;gt; c)
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urljoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;c&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# output https://spongebob53.github.io/a/c
-# 기준 경로에서 &apos;/&apos;로 끝나지 않고, 입력할 값에 &apos;/&apos;로 시작한다면 경로 이후에 메인경로 &apos;/c&apos;로 변경
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urljoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;/c&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# output https://spongebob53.github.io/c
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spongebob53&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 기준 경로에서 &apos;/&apos;로 끝나고, 입력할 값도 &apos;/&apos;로 시작하지 않으면 이후 경로로 추가(b/c)
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urljoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;c&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# output https://spongebob53.github.io/a/b/c
-# 기준 경로에서 &apos;/&apos;로 끝나고, 입력할 값에 &apos;/&apos;로 시작한다면 경로 이후에 메인경로 &apos;/c&apos;로 변경
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urljoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;/c&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# output https://spongebob53.github.io/c
-&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 예외케이스, 아예 주소를 입력했을 때
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urljoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spongebob53&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# urllib.parse
-# 파싱을 도와주는 모듈 : 주소들을 가지고 우리가 원하는 대로 조작할 수 있도록 도와주는 모듈
-&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;https://blog.naver.com/korea91;a=1?b=2#b&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlparse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# output ParseResult(scheme=&apos;https&apos;, netloc=&apos;blog.naver.com&apos;, path=&apos;/korea91&apos;, params=&apos;a=1&apos;, query=&apos;b=2&apos;, fragment=&apos;b&apos;)
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlsplit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# output SplitResult(scheme=&apos;https&apos;, netloc=&apos;blog.naver.com&apos;, path=&apos;/korea91;a=1&apos;, query=&apos;b=2&apos;, fragment=&apos;b&apos;)
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Method&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;add()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Adds an element to the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;clear()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes all the elements from the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;copy()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a copy of the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;difference()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set containing the difference between two or more sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;difference_update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the items in this set that are also included in another,specified set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;discard()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Remove the specified item&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;intersection()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set, that is the intersection of two or more sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;intersection_update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the items in this set that are not present in other specified set(s)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;indisjoint()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns whether two sets have a intersection or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;issubset()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns whether another set contains this set or not&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;pop()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes an element from the set&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;remove()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Removes the specified element&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;symmetric_difference()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set with the symmetric difference of two sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;symmetric_difference_update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;inserts the symmetric differences from this set and another&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;union()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Returns a set containing the union of sets&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;update()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Update the set with another set, or any other iterable&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
 
       
       
@@ -2812,11 +2728,11 @@ export PATH=$ORACLE_HOME/bin:$PATH
       
 
       
-        <category term="lecture" />
+        <category term="reference" />
       
 
       
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+        <summary type="html">List method</summary>
       
 
       
