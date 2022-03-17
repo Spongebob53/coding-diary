@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-python-jupyter-selenium": {
+      "title": "Python - Jupyter &amp; Selenium",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요87일차 수업retina# retina 해상도 올려주는 옵션from matplotlib_inline.backend_inline import set_matplotlib_formatsset_matplotlib_formats('retina')참고 사이트seaborn : https://seaborn.pydata.org/index.htmlmatplot : https://matplotlib.org/stable/index.htmlcolor_palettesns.palplot(sns.color_palette('deep',10))sns.palplot(sns.color_palette('colorblind',10))sns.palplot(sns.color_palette('coolwarm',10))sns.palplot(sns.color_palette('BuGn_r',10))신뢰구간barplot : 데이터들의 중앙값을 찾아서 신뢰구간을 만드는 표, 인자 ci를 통해 지정가능ci : 신뢰구간, 믿을 수 있는 범위, 이 범위에는 내가 원하는 값이 다 들어있다ci 신뢰값을 통해서 막대가 길어질수록 데이터가 불규칙하다라는 의미      ci = 80 : 내가 가진 값 중에 80프로가 들어가는 범위        ci = ‘sd’ : 표준편차 &gt; 내가 가진 값의 범위  기본 설정 복습%matplotlib inlineimport pandas as pdimport matplotlib.pyplot as pltimport seaborn as sns# 출력컬럼 50개pd.options.display.max_columns = 50 # pd 열을 50개 보겠다# 한글폰트from matplotlib import rcrc('font', family='Malgun Gothic')rc('axes', unicode_minus=False)# 해상도%config InlineBackend.figure_format = 'retina'fmri = sns.load_dataset('fmri')fig, (ax1, ax2) = plt.subplots(ncols=2, nrows=1)fig.set_size_inches([14,3])# 신뢰구간을 표시하는 방법: band 속성# err_style 옵션을 통해서 신뢰구간을 표시하는 방법을 변경sns.lineplot(data=fmri, x='timepoint', y='signal', hue='event', ax=ax1, err_style='band')sns.lineplot(data=fmri, x='timepoint', y='signal', hue='event', ax=ax2, err_style='bars')# hue : 색상을 통해, size : 크기를 통해 데이터 구분plt.figure(figsize=[18, 18])sns.scatterplot(x=\"식전혈당(공복혈당)\", y=\"수축기혈압\",hue=\"허리둘레\", size=\"총콜레스테롤\", sizes=(30, 550),data=data[data['식전혈당(공복혈당)'] &lt; 150]);Selenium# ipynb형식의 파일을 인식해서 import하기 위한 모듈import import_ipynb# import_ipynb를 import하고 나면 모듈 인식 가능, 확장자 명은 생략import Ex05_func as danawaimport pandas as pdfrom selenium import webdriverfrom selenium.webdriver.chrome.service import Servicefrom webdriver_manager.chrome import ChromeDriverManagerimport timefrom bs4 import BeautifulSoup# 반복문을 실행할 때 진행상황을 보여주는 모듈from tqdm.notebook import tqdmdef set_chrome_driver():chrome_options = webdriver.ChromeOptions()driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)return driverdriver = set_chrome_driver()for page in tqdm(range(1,total_page+1)):    ~~~import_ipynbpip로 설치  pip install import_ipynbimport_ipynb 설치 후에도 모듈 인식이 안될경우jupyter이 사용하는 python 경로와 컴퓨터가 사용하는 python 경로가 일치하는지 확인      sys.executable로 확인 가능함, 각각 jupyter notebook과 cmd에서 실행 후 비교        다른 경우 cmd에 ‘python3 -m ipykernel install –user’ 을 입력해 jupyter에서 사용하는 python을 변경해준다  ",
+      "url": "/lecture-Python-jupyter_selenium"
+  }
+  ,
+  
   "lecture-python-plot2": {
       "title": "Python - Plot2",
           "author": "Spongebob53",
