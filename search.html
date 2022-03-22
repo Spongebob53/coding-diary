@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-python-concat-datetime": {
+      "title": "Python - Concat / Datetime",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요90일차 수업data 합치기concat() : 컬럼명이 모두 같으면 합쳐주는 함수merge() : 컬럼명이 같을 때, 다를 때 모두 사용할 수 있는 함수, 기본값은 inner joinimport pandas as pddata1 = pd.read_csv(‘201701.csv’)data2 = pd.read_csv(‘201702.csv’)data3 = pd.concat([data1,data2])# axis=1을 통해 concat 방법을 변경 할 수 있음# merge 사용하는 두가지 방법, 왼쪽 기준 컬럼과 오른쪽 기준 컬럼 명시data4 = pd.merge(data1, data2, left_on= ‘name’, right_on= ‘site’)data5 = data1.merge(data2, left_on= ‘name’, right_on= ‘site’)# inner join이 기본값이기 때문에 누락값이 생김# how= ‘outer’로 outer join을 할 수 있음NaN표현할 수 없는 값, 표현되지 않는 값, 알 수 없는 값      정의되지 않아 자체적으로 존재하지 않거나        데이터를 연결할 때 생기거나        오류로 인해 생기거나        데이터를 입력하지 않거나        데이터 추출, 연산 시 발생  처리 방법      누락값 확인 : isnull(), notnull()        누락 행 수 확인 : numpy 의 count_nonzero(), data.shape[0] - data.count()        누락값 처리 : dropna(), fillna()  from numpy import NaN, nan, NANprint(NaN == False)\t# output Falseprint(nan == 0)\t# output Falseprint(NAN == ‘’)\t# output Falseprint(NaN == NaN)\t# output Falsetsvimport pandas as pddata = pd.read_csv(‘countries.tsv’, sep= ‘\\t’)\t\t# separator을 tab으로missingnopip install missingnoimport pandas as pdimport numpy as npimport pandas as pdimport missingnodf = pd.DataFrame(np.random.rand(100,100))df = df[df&gt;0.1]missingno.matrix(df)\t# 결측치 시각화, 위치를 표시datetime시간관련 라이브러리 : date / time / datetime 등from datetime import datetime as dtprint(dt.now())\t# output 현재 시간print(dt.today())\t# output 현재 시간today = dt.now()print(today.year)\t# output 현재시간 년print(today.quarter)\t# output 현재시간 분기print(today.month)\t# output 현재시간 월print(today.hour)\t# output 현재시간 시print(today.minute)\t# output 현재시간 분print(today.second)\t# output 현재시간 초print(today.microsecond) # output 현재시간 밀리초aday = dt(2022,1,1)\t# 시간 특정가능print(today-aday)\t# 시간 연산 가능print(today.strftime(‘%Y-%m-%d’))\t# datetime 객체에서 string 으로 타입 변경하기pd.to_datetime(df[‘column’])\t# 반대로 string을 datetime 객체로 변경하기# 데이터를 불러올 때 변경하는 방법도 가능data = pd.read_csv(‘파일명’, parse_dates = [컬럼명,])",
+      "url": "/lecture-Python-concat_datetime"
+  }
+  ,
+  
   "lecture-python-scrapping-carrot": {
       "title": "Python - Scrapping",
           "author": "Spongebob53",
