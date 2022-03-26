@@ -308,6 +308,27 @@
     
       
       <item>
+        <title>W3schools - Python_Numpy Intro</title>
+        
+          <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;h3&gt;&lt;a href=&quot;https://www.w3schools.com/&quot;&gt;W3schools&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;margin: 20px&quot;&gt;Lecture에서 배웠던 내용을 복습하며 작성했습니다&lt;/div&gt;
+
+</description>
+        
+        <pubDate>Thu, 03 Mar 2022 18:00:00 +0900</pubDate>
+        <link>
+        http://localhost:4000/w3schools-python-numpy_intro</link>
+        <guid isPermaLink="true">http://localhost:4000/w3schools-python-numpy_intro</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>W3schools - Python_Pandas</title>
         
           <description>&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
