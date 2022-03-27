@@ -287,6 +287,7 @@ into the {body} of the default.hbs template -->
 <p>Install it using this command <code class="language-plaintext highlighter-rouge">pip install numpy</code></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="c1"># Check version
 </span><span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">__version__</span><span class="p">)</span>
 </code></pre></div></div>
@@ -294,6 +295,7 @@ into the {body} of the default.hbs template -->
 <h3 id="array">Array</h3>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
 <span class="c1"># np.array((1,2,3,4,5)), Can pass a list, it will be converted into an ndarray
 </span><span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>	<span class="c1"># output [1 2 3 4 5]
@@ -384,6 +386,7 @@ into the {body} of the default.hbs template -->
 </table>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="err">‘</span><span class="n">apple</span><span class="err">’</span><span class="p">,</span> <span class="err">‘</span><span class="n">banana</span><span class="err">’</span><span class="p">,</span> <span class="err">‘</span><span class="n">cherry</span><span class="err">’</span><span class="p">])</span>
 <span class="c1"># Check datatype
 </span><span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">dtype</span><span class="p">)</span>	<span class="c1"># output &lt;U6
@@ -426,6 +429,7 @@ into the {body} of the default.hbs template -->
 <p>Is the number of elements in each dimension</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
 
 <span class="c1"># Returns a tuple with each index having the number of corresponding elements
@@ -447,29 +451,30 @@ into the {body} of the default.hbs template -->
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Iterate on a n-D array it will go through n-1th dimension one by one
 # To return the actual values, the scalars, we have to iterate the arrays in each dimension
 </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]],</span> <span class="p">[[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]]])</span>
 <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
-<span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
-<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
 <span class="c1"># helping function that can be used iterations
 # Both are same result
 </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="p">.</span><span class="n">nditer</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="c1"># op_dtypes arg can pass it the expected datatype to change the datatype of elements while iterating
 </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="p">.</span><span class="n">nditer</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="p">[</span><span class="err">‘</span><span class="n">buffered</span><span class="err">’</span><span class="p">],</span> <span class="n">op_dtypes</span><span class="o">=</span><span class="p">[</span><span class="err">‘</span><span class="n">S</span><span class="err">’</span><span class="p">]):</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span> <span class="err">‘</span> <span class="err">’</span><span class="p">)</span>	<span class="c1"># output b‘1’ b‘2’ b‘3’
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span> <span class="err">‘</span> <span class="err">’</span><span class="p">)</span>	<span class="c1"># output b‘1’ b‘2’ b‘3’
 # Numpy doesn’t change the data type of the element in-place,
 # So needs some other space(buffer) to change dtype
 </span>
 <span class="c1"># Different step
 </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="p">.</span><span class="n">nditer</span><span class="p">(</span><span class="n">arr</span><span class="p">[:,::</span><span class="mi">2</span><span class="p">]):</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span> <span class="err">‘</span> <span class="err">’</span><span class="p">)</span>	<span class="c1"># output 1 2 3 7 8 9
+    <span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span> <span class="err">‘</span> <span class="err">’</span><span class="p">)</span>	<span class="c1"># output 1 2 3 7 8 9
 </span>
 <span class="c1"># Enumerated iteration
 </span><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="p">.</span><span class="n">ndenumerate</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
-<span class="k">print</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span> <span class="err">‘</span> <span class="err">’</span><span class="p">)</span>	<span class="c1"># output (0,0,0) 1 (0,0,1) 2 …(1,0,0) 7…(1,1,2) 12
+    <span class="k">print</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span> <span class="err">‘</span> <span class="err">’</span><span class="p">)</span>	<span class="c1"># output (0,0,0) 1 (0,0,1) 2 …(1,0,0) 7…(1,1,2) 12
 </span></code></pre></div></div>
 
 <h3 id="join">Join</h3>
@@ -479,6 +484,7 @@ into the {body} of the default.hbs template -->
 <p>If axis is not explicitly passed, it is taken as 0</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr1</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
 <span class="n">arr2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]])</span>
 <span class="n">arr3</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">arr1</span><span class="p">,</span><span class="n">arr2</span><span class="p">),</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>	<span class="c1"># output [[1 2 5 6] [3 4 7 8]]
@@ -516,6 +522,7 @@ into the {body} of the default.hbs template -->
 <h3 id="search">Search</h3>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">where</span><span class="p">(</span><span class="n">arr</span><span class="o">==</span><span class="mi">4</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>	<span class="c1"># output (array([3,5,6]),)
@@ -537,6 +544,7 @@ into the {body} of the default.hbs template -->
 <h3 id="filter">Filter</h3>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
 <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">41</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">44</span><span class="p">])</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">]</span>
 <span class="n">arr1</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
@@ -695,6 +703,15 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/w3schools-python-numpy_unfunc">W3schools - Python_Numpy Unfunc</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
                                 
                                   
                                     
@@ -723,8 +740,6 @@ into the {body} of the default.hbs template -->
                                   
                                     
                                         
-                                        
-                                            <li><a href="/w3schools-python-scope_module">W3schools - Python_Scope / Module</a></li>
                                         
                                     
                                   
@@ -1350,7 +1365,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/w3schools/">
                                 
-                                    See all 69 posts  →
+                                    See all 70 posts  →
                                 
                             </a>
                         </footer>
