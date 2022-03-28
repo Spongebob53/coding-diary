@@ -8,6 +8,22 @@
 
     
     <url>
+        <loc>http://localhost:4000/lecture-hadoop-intro.html</loc>
+        
+        <lastmod>2022-03-28T18:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/lecture-Python-concat_datetime.html</loc>
         
         <lastmod>2022-03-22T18:00:00+09:00</lastmod>

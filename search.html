@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-hadoop-intro": {
+      "title": "Hadoop - Intro",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요94일차 수업Hadoop 환경 구성하기M1 pro, parallels, centos 9 stream 사용prallels로 centos 를 고정 ip로 설정한 가상환경을 3개 생성 nn01, dn01, dn02각각의 가상환경 마다 적용protobuf 설치# yum update하기yum update# 필요 프로그램 설치yum install telnet svn git nc wget vim net-tools# 방화벽 끄기systemctl stop firewalldsystemctl disable firewalld# 필요한 프로그램 설치yum install -y autoconf automake libtool curl gcc-c++ unzip# 외부 프로그램 설치 protobuf 3.19.4# 하둡 내부 데몬 간의 데이터 통신을 위해 사용하는 라이브러리wget https://github.com/protocolbuffers/protobuf/releases/download/v3.19.4/protobuf-all-3.19.4.tar.gz# 압축풀기tar -zxvf protobuf-2.5.0.tar.gz# 위치 옮기고mv protobuf-2.5.0  /opt/# 폴더 이동cd /opt/protobuf-2.5.0/# 해당 폴더에서./configuremakemake install# 설치확인protoc --versionJDK 설치# tmp 폴더로 이동cd /tmp# 필요한 프로그램 설치yum install -y vim wget unzip# 확인 가능한 jdk 목록 보기yum list java*jdk-devel# 목록 중 원하는 버전의 jdk 설치yum install java-1.8.0-openjdk-devel.aarch64# 설치 확인java -version# 심볼릭링크를 이용하여 버전을 고정ln -s /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-9.el9.aarch64/jre/bin/java# yum를 이용하면 버전을 항상 고버전으로 적용하기때문에# 그것을 막기위해 alternativesalternatives --config java하둡설치# /tmp 디렉토리 이동cd /tmp# 하둡 다운로드wget  https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz# tar 명령어를 통해 압축파일 해제tar -xvzf hadoop-2.7.7.tar.gz# 압축해제파일을 옮기기위한 작업mkdir -p /opt/hadoop/2.7.7mv hadoop-2.7.7/* /opt/hadoop/2.7.7/# 하둡 버전관리를 위한 심볼릭 링크 생성ln -s /opt/hadoop/2.7.7 /opt/hadoop/current# 유저 hadoop 생성useradd hadoop# 유저 hadoop pw 생성passwd hadoop# 파일의 권한을 유저 hadoop에게로 바꿔주기chown -R hadoop:hadoop /opt/hadoop/# 설정파일 오픈visudo -f /etc/sudoers#명령모드에서 :100 을 입력하여 100번째 줄로 이동# 다음 2줄 추가, 모든 사용자 권한 설정hadoop ALL=(ALL) NOPASSWD: ALL%hadoop ALL=(ALL) NOPASSWD: ALL# hadoop 계정 접속# - : 홈디렉토리로 이동su - hadoop#. bash_profile 을 수정vi ~/.bash_profile# export PATH 이후에 다음 내용을 각각 붙여넣고 저장#### HADOOP 2.7.7 start ############PATH=$PATH:$HOME/binexport HADOOP_HOME=/opt/hadoop/currentexport PATH=$PATH:$HADOOP_HOME/binexport PATH=$PATH:$HADOOP_HOME/sbin#### HADOOP 2.7.7end################ JAVA 1.8.0 start#############export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-9.el9.aarch64/jreexport PATH=$PATH:$JAVA_HOME/bin#### JAVA 1.8.0 end############### 설정 적용source ~/.bash_profile# vi 편집기 설정파일vi /etc/vimrc# 마지막 쯤에 set nu 입력해서 파일 열면 자동으로 줄 넘버 나오게 설정# 3개의 노드끼리 연결하기위한 작업# 해당 ip를 입력하면 연결해주도록 작업vi /etc/hosts# 기존 ip 설정 지우고 다음 3줄 입력, 3개의 가상환경을 연결192.168.56.101 nn01192.168.56.102 dn01192.168.56.103 dn02# 비밀번호 없이 연결하기 위한 인증키 생성ssh-keygen# 서로의 인증키 등록ssh-copy-id hadoop@nn01ssh-copy-id hadoop@dn01ssh-copy-id hadoop@dn02# ssh 인증키를 통해 인증없이 로그인 가능ssh dn01",
+      "url": "/lecture-hadoop-intro"
+  }
+  ,
+  
   "lecture-python-concat-datetime": {
       "title": "Python - Concat / Datetime",
           "author": "Spongebob53",

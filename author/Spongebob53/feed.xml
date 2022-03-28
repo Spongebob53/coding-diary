@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/author/Spongebob53/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-03-27T12:13:21+09:00</updated>
+  <updated>2022-03-29T07:49:53+09:00</updated>
   <id>http://localhost:4000/author/Spongebob53/feed.xml</id>
 
   
@@ -30,6 +30,206 @@
   
   
 
+  
+    <entry>
+      <title type="html">Hadoop - Intro</title>
+      <link href="http://localhost:4000/lecture-hadoop-intro" rel="alternate" type="text/html" title="Hadoop - Intro" />
+      <published>2022-03-28T18:00:00+09:00</published>
+      <updated>2022-03-28T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-hadoop-intro</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-hadoop-intro">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;94일차-수업&quot;&gt;94일차 수업&lt;/h2&gt;
+
+&lt;h2 id=&quot;hadoop-환경-구성하기&quot;&gt;Hadoop 환경 구성하기&lt;/h2&gt;
+
+&lt;p&gt;M1 pro, parallels, centos 9 stream 사용&lt;/p&gt;
+
+&lt;p&gt;prallels로 centos 를 고정 ip로 설정한 가상환경을 3개 생성 nn01, dn01, dn02&lt;/p&gt;
+
+&lt;p&gt;각각의 가상환경 마다 적용&lt;/p&gt;
+
+&lt;h3 id=&quot;protobuf-설치&quot;&gt;protobuf 설치&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# yum update하기
+yum update
+
+# 필요 프로그램 설치
+yum install telnet svn git nc wget vim net-tools
+
+# 방화벽 끄기
+systemctl stop firewalld
+systemctl disable firewalld
+
+# 필요한 프로그램 설치
+yum install -y autoconf automake libtool curl gcc-c++ unzip
+
+# 외부 프로그램 설치 protobuf 3.19.4
+# 하둡 내부 데몬 간의 데이터 통신을 위해 사용하는 라이브러리
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.19.4/protobuf-all-3.19.4.tar.gz
+
+# 압축풀기
+tar -zxvf protobuf-2.5.0.tar.gz
+# 위치 옮기고
+mv protobuf-2.5.0  /opt/
+
+# 폴더 이동
+cd /opt/protobuf-2.5.0/
+
+# 해당 폴더에서
+./configure
+make
+make install
+
+# 설치확인
+protoc --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;jdk-설치&quot;&gt;JDK 설치&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# tmp 폴더로 이동
+cd /tmp
+
+# 필요한 프로그램 설치
+yum install -y vim wget unzip
+
+# 확인 가능한 jdk 목록 보기
+yum list java*jdk-devel
+
+# 목록 중 원하는 버전의 jdk 설치
+yum install java-1.8.0-openjdk-devel.aarch64
+
+# 설치 확인
+java -version
+
+# 심볼릭링크를 이용하여 버전을 고정
+ln -s /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-9.el9.aarch64/jre/bin/java
+
+# yum를 이용하면 버전을 항상 고버전으로 적용하기때문에
+# 그것을 막기위해 alternatives
+alternatives --config java
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;하둡설치&quot;&gt;하둡설치&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# /tmp 디렉토리 이동
+cd /tmp
+
+# 하둡 다운로드
+wget  https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz
+
+# tar 명령어를 통해 압축파일 해제
+tar -xvzf hadoop-2.7.7.tar.gz
+
+# 압축해제파일을 옮기기위한 작업
+mkdir -p /opt/hadoop/2.7.7
+mv hadoop-2.7.7/* /opt/hadoop/2.7.7/
+
+# 하둡 버전관리를 위한 심볼릭 링크 생성
+ln -s /opt/hadoop/2.7.7 /opt/hadoop/current
+
+# 유저 hadoop 생성
+useradd hadoop
+
+# 유저 hadoop pw 생성
+passwd hadoop
+
+# 파일의 권한을 유저 hadoop에게로 바꿔주기
+chown -R hadoop:hadoop /opt/hadoop/
+
+# 설정파일 오픈
+visudo -f /etc/sudoers
+
+#명령모드에서 :100 을 입력하여 100번째 줄로 이동
+# 다음 2줄 추가, 모든 사용자 권한 설정
+hadoop ALL=(ALL) NOPASSWD: ALL
+%hadoop ALL=(ALL) NOPASSWD: ALL
+
+# hadoop 계정 접속
+# - : 홈디렉토리로 이동
+su - hadoop
+
+#. bash_profile 을 수정
+vi ~/.bash_profile
+
+# export PATH 이후에 다음 내용을 각각 붙여넣고 저장
+#### HADOOP 2.7.7 start ############
+PATH=$PATH:$HOME/bin
+export HADOOP_HOME=/opt/hadoop/current
+export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/sbin
+#### HADOOP 2.7.7end############
+#### JAVA 1.8.0 start#############
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-9.el9.aarch64/jre
+export PATH=$PATH:$JAVA_HOME/bin
+#### JAVA 1.8.0 end##############
+
+# 설정 적용
+source ~/.bash_profile
+
+# vi 편집기 설정파일
+vi /etc/vimrc
+
+# 마지막 쯤에 set nu 입력해서 파일 열면 자동으로 줄 넘버 나오게 설정
+
+# 3개의 노드끼리 연결하기위한 작업
+# 해당 ip를 입력하면 연결해주도록 작업
+vi /etc/hosts
+
+# 기존 ip 설정 지우고 다음 3줄 입력, 3개의 가상환경을 연결
+192.168.56.101 nn01
+192.168.56.102 dn01
+192.168.56.103 dn02
+
+# 비밀번호 없이 연결하기 위한 인증키 생성
+ssh-keygen
+
+# 서로의 인증키 등록
+ssh-copy-id hadoop@nn01
+ssh-copy-id hadoop@dn01
+ssh-copy-id hadoop@dn02
+
+# ssh 인증키를 통해 인증없이 로그인 가능
+ssh dn01
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Python - Concat / Datetime</title>
@@ -2412,84 +2612,6 @@ export PATH=$ORACLE_HOME/bin:$PATH
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Python - BeautifulSoup</title>
-      <link href="http://localhost:4000/lecture-Python-beautifulsoup" rel="alternate" type="text/html" title="Python - BeautifulSoup" />
-      <published>2022-03-07T18:00:00+09:00</published>
-      <updated>2022-03-07T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-Python-beautifulsoup</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-Python-beautifulsoup">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;79일차-수업&quot;&gt;79일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;beautifulsoup&quot;&gt;BeautifulSoup&lt;/h3&gt;
-
-&lt;p&gt;데이터를 쉽게 추출할 수 있도록 도와주는 분석모듈(외부 모듈)&lt;/p&gt;
-
-&lt;p&gt;웹페이지에 있는 태그들을 parser를 활용해서 사용할 수 있도록 제공해주는 모듈&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bs4&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;BeautifulSoup&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        	&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;스크레이핑&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;연습&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        	&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;웹페이지&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;분석하자&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;데이터&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;정제하기&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spongebob53&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;블로그&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# 소스를 단순 문자가 아니라 html 문서의 계층 구조처럼 분석(태그, 속성, 계층 검색 가능)
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# output &amp;lt;class &apos;bs4.element.NavigableString&apos;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# output “스크레이핑 연습”
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# &amp;lt;class &apos;str&apos;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# output “스크레이핑 연습”
-&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 태그 안 속성 추출
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# output “블로그 : https://spongebob53.github.io/”
-# 요소를 선택하는 방법 : find(), select(), find_all(), select_one()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       
