@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/lecture/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2022-03-29T07:49:53+09:00</updated>
+  <updated>2022-03-30T17:42:57+09:00</updated>
   <id>http://localhost:4000/tag/lecture/feed.xml</id>
 
   
@@ -30,6 +30,335 @@
   
   
 
+  
+    <entry>
+      <title type="html">Hadoop - Connect</title>
+      <link href="http://localhost:4000/lecture-hadoop-connect" rel="alternate" type="text/html" title="Hadoop - Connect" />
+      <published>2022-03-29T18:00:00+09:00</published>
+      <updated>2022-03-29T18:00:00+09:00</updated>
+      <id>http://localhost:4000/lecture-hadoop-connect</id>
+      <content type="html" xml:base="http://localhost:4000/lecture-hadoop-connect">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
+
+&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
+주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
+우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;95일차-수업&quot;&gt;95일차 수업&lt;/h2&gt;
+
+&lt;h3 id=&quot;주요-명령어&quot;&gt;주요 명령어&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zetawiki.com/wiki/주요_리눅스_명령어&quot;&gt;참고 사이트&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 사용자 변경
+
+# 해당 계정으로 사용자 변경
+su 계정명
+
+# 해당 계정의 홈디렉토리로 이동하면서 변경
+su - 계정명
+
+# root 계정으로 변경
+su
+
+# 해당 계정의 패스워드를 변경
+passwd 계정
+
+# 다른 사용자의 보안 권한으로 관련 프로그램을 구동
+sudo 실행할 명령어
+
+# 파일 또는 폴더의 사용 권한 지정
+chmod 권한 파일명
+
+# 디렉토리를 생성
+mkdir 디렉토리명
+
+# 현재 위치 확인, 현재 폴더 확인
+pwd
+
+# 파일이 없을 때는 0 바이트 파일이 생성
+touch 파일명
+
+# 디렉토리 이동, / 부터시작하면 절대경로 아닐경우 상대경로
+cd 파일경로
+
+# 파일/디렉토리 삭제
+rm -rf 삭제할파일명
+
+# 파일/디렉토리 이동 및 이름 변경
+mv 이동할파일 이동할위치
+
+# 디렉토리 내용 목록보기, ls -al , ll  주로사용
+ls
+ 
+# 파일 내용을 출력하는 리눅스 명령어
+cat 파일명
+ 
+# 패키지 설치/삭제/업데이트 도구
+* yum install 패키지명
+
+# ip를 확인하는 명령어
+ifconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;hadoop-설명&quot;&gt;hadoop 설명&lt;/h3&gt;
+
+&lt;p&gt;core-site.xml&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;HDFS 와 맵리듀스에서 공통적으로 사용할 환경 정보를 설정한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;core-site.xml 에 설정값이 없을 경우 core-default.xml 에 있는 기본값을 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;hdfs-site.xml&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;HDFS 에서 사용할 환경 정보를 설정한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;hdfs-site.xml 에 설정값이 없을 경우 hdfs-default.xml 에 있는 기본값을 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;yarn-site.xml&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hadoop2 에서 자원관리하는 정보를 설정한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;mapred-site.xml&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;맵리듀스에서 사용할 환경 정보를 설정한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;mapred-site.xml 에 설정값이 없을 경우 mapred-default.xml 에 있는 기본값을 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;masters&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;보조 네임 노드를 실행할 서버를 설정한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;마스터노드 (즉, 네임노드)를 설정하는 것이 아니다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;slaves&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;데이터 노드를 실행할 서버를 설정한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;hadoop-env.sh ( hadoop1 )
+yarn-env.sh ( hadoop2 에서 추가 )&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;하둡을 실행하는 쉘 스크립트 파일에서 필요한 환경변수를 설정한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JDK 경로, classpath, 데몬 실행 옵션 등 환경변수를 설정한다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;실습&quot;&gt;실습&lt;/h3&gt;
+
+&lt;p&gt;hadoop 설정 경로 이동&lt;/p&gt;
+
+&lt;p&gt;아래 작업은 모두 한곳(nn01)에서&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /opt/hadoop/current/etc/hadoop/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi core-site.xml&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# &amp;lt;configuration&amp;gt; 안에서 설정해주기
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;fs.defaultFS&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;hdfs://nn01:9000&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi hdfs-site.xml&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# &amp;lt;configuration&amp;gt; 안에서 설정해주기
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.replication&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;1&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.namenode.http-address&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;nn01:50070&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.namenode.secondary.http-address&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;nn01:50090&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.namenode.name.dir&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;file:/home/hadoop/hadoop_data/hdfs/namenode&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.datanode.data.dir&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;file:/home/hadoop/hadoop_data/hdfs/datanode&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.namenode.checkpoint.dir&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;file:/home/hadoop/hadoop_data/hdfs/namesecondary&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;dfs.webhdfs.enabled&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;true&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi yarn-site.xml&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# &amp;lt;configuration&amp;gt; 안에서 설정해주기
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;yarn.nodemanager.aux-services&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;mapreduce_shuffle&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;yarn.nodemanager.aux-services.mapreduce.shuffle.class&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;org.apache.hadoop.mapred.ShuffleHandler&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;yarn.resourcemanager.scheduler.address&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;nn01:8030&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;yarn.resourcemanager.resource-tracker.address&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;nn01:8031&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;yarn.resourcemanager.address&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;nn01:8032&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;yarn.resourcemanager.hostname&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;nn01&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi mapred-site.xml&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# mapred-site.xml 파일이 없으면 생성
+cp /opt/hadoop/current/etc/hadoop/mapred-site.xml.template /opt/hadoop/current/etc/hadoop/mapred-site.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# &amp;lt;configuration&amp;gt; 안에서 설정해주기
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;mapreduce.framework.name&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;yarn&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;mapreduce.jobtracker.hosts.exclude.filename&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;$HADOOP_HOME/etc/hadoop/exclude&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&amp;lt;property&amp;gt;
+    &amp;lt;name&amp;gt;mapreduce.jobtracker.hosts.filename&amp;lt;/name&amp;gt;
+    &amp;lt;value&amp;gt;$HADOOP_HOME/etc/hadoop/include&amp;lt;/value&amp;gt;
+&amp;lt;/property&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi /opt/hadoop/current/etc/hadoop/masters&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# master 선언, nn01 작성
+nn01
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi /opt/hadoop/current/etc/hadoop/slaves&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# slaves 선언, dn01, dn02 작성
+dn01
+dn02
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;vi hadoop-env.sh
+vi yarn-env.sh&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 두 파일 모두 JAVA_HOME path 설정
+export JAVA_HOME=자바 경로
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;파일 옮기기&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# nn01에서 작성한 파일 dn01, dn02 두곳에 옮겨주기
+scp -r /opt/hadoop/* dn01:/opt/hadoop
+scp -r /opt/hadoop/* dn02:/opt/Hadoop
+
+# 오류 대비, dn01, dn02 에서 하둡 삭제하고 nn01 에서 다시 가져오기
+rm -rf /opt/hadoop/current
+ln -s /opt/hadoop/2.7.7 /opt/hadoop/current
+chown -R hadoop:hadoop /opt/hadoop/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;설정 마무리&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# nn01에서
+mkdir -p ~/hadoop_data/hdfs/namenode
+mkdir -p ~/hadoop_data/hdfs/namesecondary
+
+# dn01, dn02에서
+mkdir -p ~/hadoop_data/hdfs/datanode
+
+# xml을 통해 설정해둔 상태로 초기화 하는 작업, nn01에서
+hadoop namenode -format
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;실행하기&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# nn01에서 실행
+start-all.sh
+
+# dn01, dn02 에서
+jps
+# NodeManager 과 DataNode 가 생긴걸 확인할 수 있음
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Spongebob53</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="lecture" />
+      
+
+      
+        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Hadoop - Intro</title>
@@ -1955,84 +2284,6 @@ export PATH=$ORACLE_HOME/bin:$PATH
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</content>
-
-      
-      
-      
-      
-      
-
-      <author>
-          <name>Spongebob53</name>
-        
-        
-      </author>
-
-      
-
-      
-        <category term="lecture" />
-      
-
-      
-        <summary type="html">이 페이지는 다음에 대한 공부 기록입니다 JAVA(자바), Python(파이썬) 기반의 AI 활용 응용 소프트웨어 개발자 양성 과정 2021.11.10. ~ 2022.05.18.</summary>
-      
-
-      
-      
-    </entry>
-  
-    <entry>
-      <title type="html">Python - BeautifulSoup</title>
-      <link href="http://localhost:4000/lecture-Python-beautifulsoup" rel="alternate" type="text/html" title="Python - BeautifulSoup" />
-      <published>2022-03-07T18:00:00+09:00</published>
-      <updated>2022-03-07T18:00:00+09:00</updated>
-      <id>http://localhost:4000/lecture-Python-beautifulsoup</id>
-      <content type="html" xml:base="http://localhost:4000/lecture-Python-beautifulsoup">&lt;div&gt;이 페이지는 다음에 대한 공부 기록입니다&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;JAVA(자바), Python(파이썬) 기반의&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div&gt;&lt;h3&gt;AI 활용 응용 소프트웨어 개발자 양성 과정&lt;/h3&gt;&lt;/div&gt;
-
-&lt;div style=&quot;margin-bottom: 20px&quot;&gt;2021.11.10. ~ 2022.05.18.&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;찾으시는 정보가 있으시다면&lt;br /&gt;
-주제별&lt;a href=&quot;./tag/reference/&quot;&gt;reference&lt;/a&gt;를 이용하시거나&lt;br /&gt;
-우측 상단에 있는 검색기능을 이용해주세요&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;79일차-수업&quot;&gt;79일차 수업&lt;/h2&gt;
-
-&lt;h3 id=&quot;beautifulsoup&quot;&gt;BeautifulSoup&lt;/h3&gt;
-
-&lt;p&gt;데이터를 쉽게 추출할 수 있도록 도와주는 분석모듈(외부 모듈)&lt;/p&gt;
-
-&lt;p&gt;웹페이지에 있는 태그들을 parser를 활용해서 사용할 수 있도록 제공해주는 모듈&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bs4&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;BeautifulSoup&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        	&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;스크레이핑&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;연습&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        	&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;웹페이지&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;분석하자&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;데이터&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;정제하기&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spongebob53&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;블로그&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;“””&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# 소스를 단순 문자가 아니라 html 문서의 계층 구조처럼 분석(태그, 속성, 계층 검색 가능)
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parser&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# output &amp;lt;class &apos;bs4.element.NavigableString&apos;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# output “스크레이핑 연습”
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# &amp;lt;class &apos;str&apos;&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;# output “스크레이핑 연습”
-&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 태그 안 속성 추출
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;# output “블로그 : https://spongebob53.github.io/”
-# 요소를 선택하는 방법 : find(), select(), find_all(), select_one()
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
 
       
       
