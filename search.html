@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-python-sklearn": {
+      "title": "Python - Scikit-Learn",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요99일차 수업머신러닝수 많은 데이터를 통해서 패턴을 찾고, 패턴에 의해서 답을 내리는 기술을 컴퓨터에게 가르치는 것교사 학습교사가 문제를 제시하고 답을 알려주는 방식학습량이 많아질 수록 특정 유형에 따른 답을 찾을 확률이 높음비교사 학습답이 정해지지 않은 데이터 학습문제를 제시하고 &gt; 그룹화를 하는 방식으로 분석강화 학습현재 상태를 관찰해서 어떻게 대응해야 할 지 관련한 문제를 다루는 학습 방법답을 제공하지 않고, 최선의 선택을 하도록 학습을 유도선택에 따른 결과를 이용한 학습 방법연관 라이브러리scikit-learn : 머신러닝 라이브러리scipy : 과학적 연산에 필요한 기능을 제공하는 라이브러리XOR배타적 논리합from sklearn import svm, metricsimport pandas as pdxor_data = [    [0,0,0],    [0,1,1],    [1,0,1],    [1,1,0]]### 첫번째 방법data = []label = []for row in xor_data:    x = row[0]    y = row[1]    r = row[2]\tdata.append([x,y])\tlabel.append(r)print(data)\t# output [[0,0], [0,1], [1,0], [1,1]]print(label)\t# output [0,1,1,0]# 데이터 학습을 위한 모델 선택clf = svm.SVC()# 변수 설정 : fit(데이터, 값)clf.fit(data, label)pre = clf.predict(data)\t\t# output array([0,1,1,0])# 데이터를 기반으로 학습하고, 새로운 데이터가 주어졌을 때 추론data2 = [[0,2]]pre2 = clf.predict(data2)\t# output array([1])### 두번째 방법xor_df = pd.DataFrame(xor_data)xor_data = xor_df.loc[:,:1]xor_label = xor_df.loc[:,2]clf.fit(xor_data,xor_label)pre = clf.predict(xor_data)# 정답률 구하기ac_score = metrics.accuracy_score(xor_label, pre)데이터를 학습용과 테스트용으로 나누고 싶을 때import randomfrom sklearn.model_selection import train_test_split# random.shuffle(df)를 통해 데이터를 섞어주고 나누기(1/4를 테스트 데이터로 분할해줌)tran_data,test_data, train_label, test_label = train_test_split(csv_data, csv_label)",
+      "url": "/lecture-Python-sklearn"
+  }
+  ,
+  
   "lecture-hadoop-connect": {
       "title": "Hadoop - Connect",
           "author": "Spongebob53",
