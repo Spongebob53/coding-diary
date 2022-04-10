@@ -234,6 +234,15 @@ into the {body} of the default.hbs template -->
 <script>
   window.store = {
   
+  "lecture-python-svm": {
+      "title": "Python - SVM",
+          "author": "Spongebob53",
+          "category": "",
+          "content": "이 페이지는 다음에 대한 공부 기록입니다JAVA(자바), Python(파이썬) 기반의AI 활용 응용 소프트웨어 개발자 양성 과정2021.11.10. ~ 2022.05.18.  찾으시는 정보가 있으시다면주제별reference를 이용하시거나우측 상단에 있는 검색기능을 이용해주세요100일차 수업SVMSupport Vector Machine머신 러닝 학습 방법 중 하나주어진 데이터 집합을 바탕으로 새로운 데이터가 어떠한 집단으로 갈 지 정리해주는 모델주로 선형 분류, 비선형 분류도 가능from sklearn import svm, metricsfrom sklearn.model_selection import trian_test_splitimport pandas as pd# 미리 생성한 bmi 기록 가데이터tbl = pd.read_csv(‘bmi.csv’)weight = tbl[tbl.columns[1]]/100height = tbl[tbl.columns[0]]/100# 키와 몸무게에 따른 bmi 수치label = tbl[tbl.columns[2]]# label을 제거한 데이터wh = pd.concat([w,h],axis=1)# 학습데이터와 테스트 전용 데이터 나누기data_train, data_test, label_train, label_test = train_test_split(wh, label)clf = svm.SVC()# 오버피팅 문제# 학습 데이터 입력clf.fit(data_trian, label_train)# 테스트 데이터 입력pre = clf.predict(data_test)# 정답률 확인ac_score = metrics.accuracy_score(label_test,pre)# 리포트 확인cl_report = metrics.classification_report(label_test, pre)오버피팅학습 데이터의 결과만 따라가는 경향      전체적인 패턴을 유추해야하는 데 학습 데이터로 결과를 도출해버리는 상황        너무 세밀한 설정으로 전체적인 그림을 그리지 못하는 경우  from sklearn.ensemble import RandomForestClassifier# 오버피팅을 방지하고자 랜덤포레스트를 사용clf = RandomForestClassifier()# 여러개의 의사결정트리를 만들어 다수결로 결과를 결정하는 방식데이터 변환시 주의할 점데이터의 성질을 유지해야한다, 연속 변수인지 분류 변수인지Validationfrom sklearn import svm, model_selectionclf = svm.SVC()scores = model_selection.cross_val_score(clf, data, label, cv = 5)# cv : 교차 검증할 분할 개수print(scores)\t# output [0.96666667 0.96666667 0.96666667 0.93333333 1.        ]print(scores.mean())\t# output 0.9666666666666666GridSearchCV머신 러닝에서 학습 데이터를 입력할 때 분리의 유형, 오차의 범위, 이진트리의 깊이, 선의 곡률 등등을 파라미터로 정하는 방법테스트를 하고자 하는 데이터의 파라미터 값을 사전 정의하고 가장 최적의 변수를 찾는 방법from sklearn import svm, metricsfrom sklearn.model_selection import GridSearchCVparams = [{‘C’ : [1,10,100,1000], ‘kernel’ : [‘linear’]},{‘C’ : [1,10,100,1000], ‘kernel’ : [‘rbf’], ‘gamma’: [0.001,0.0001]}]“””SVM의 주요 파라미터C : cost, 오차 허용 범위kernel : 어떤 함수를 쓸 것인지, linear(선형)과 rbf(비선형), sigmoid, polygamma : 곡률이 있는 함수에 대해서 곡률 허용 범위“””clf = GridSearchCV(svm.SVC(), params, n_jobs=-1)# 학습을 내 컴퓨터가 할 수 있는 만큼 한번에 실행clf.fit(train_data, train_label)# 가장 좋은 학습 방법 알려줌print(clf.best_estimator_)\t# output SVC(C=1, kernel= ‘linear’)print(clf.best_score_)\t\t# output 0.877",
+      "url": "/lecture-Python-svm"
+  }
+  ,
+  
   "lecture-python-sklearn": {
       "title": "Python - Scikit-Learn",
           "author": "Spongebob53",
